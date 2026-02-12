@@ -1,0 +1,346 @@
+@charset "UTF-8";
+.p9225-masthead {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.p9225-masthead__content-left {
+  align-items: center;
+  display: flex;
+}
+
+.p9225-masthead__logo {
+  height: auto;
+  width: 200px;
+}
+
+@media screen and (min-width: 1270px) {
+  .p9225-masthead__logo {
+    height: auto;
+    width: 240px;
+  }
+}
+@media screen and (min-width: 1615px) {
+  .p9225-masthead__logo {
+    height: auto;
+    width: 240px;
+  }
+}
+.p9225-masthead__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-bottom: 6px;
+}
+
+.p9225-masthead__buttons .announce-container {
+  position: relative;
+}
+
+.p9225-masthead__buttons .announce {
+  color: #000;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.p9225-masthead__buttons .announce li {
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  margin-left: 12px;
+  max-width: 320px;
+  padding: 6px;
+}
+
+.p9225-masthead__buttons .announce .imgWrp {
+  margin-right: 6px;
+  position: relative;
+  width: 60px;
+}
+
+.p9225-masthead__buttons .announce .imgWrp img {
+  height: auto;
+  width: 100%;
+}
+
+.p9225-masthead__buttons .announce .imgWrp.imgWrp--ico::after {
+  border-radius: 2px;
+  color: white;
+  display: block;
+  font-weight: bold;
+  left: -3px;
+  line-height: 1;
+  padding: 1px 3px;
+  position: absolute;
+  top: -3px;
+}
+
+.p9225-masthead__buttons .announce .imgWrp.imgWrp--ico--mora::after {
+  background-color: #e74323;
+  content: "もら";
+}
+
+.p9225-masthead__buttons .announce .imgWrp.imgWrp--ico--tame::after {
+  background-color: #1994d3;
+  content: "ため";
+}
+
+.p9225-masthead__buttons .announce .imgWrp.imgWrp--ico--repo::after {
+  background-color: #ff6600;
+  content: "レポ";
+}
+
+.p9225-masthead__buttons .announce .imgWrp.imgWrp--ico--photobu::after {
+  background-color: #67c336;
+  content: "フォト部";
+}
+
+.p9225-masthead__buttons .announce .item-maker-name {
+  margin-top: 0.5em;
+  max-width: 247px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p9225-masthead__buttons .announce .item-name {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+
+.p9225-masthead__banner {
+  margin-left: 12px;
+}
+
+.p9225-masthead__button {
+  background-color: #8f837c;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: 12px;
+  margin-top: 6px;
+  padding: 6px 12px;
+}
+
+@media screen and (min-width: 1270px) {
+  .p9225-masthead__button {
+    font-size: 14px;
+    margin-left: 12px;
+    padding: 6px 24px;
+  }
+}
+@media screen and (min-width: 1615px) {
+  .p9225-masthead__button {
+    font-size: 18px;
+  }
+}
+.p9225-masthead__button:link,
+.p9225-masthead__button:hover,
+.p9225-masthead__button:active,
+.p9225-masthead__button:visited {
+  color: white;
+}
+
+.p9225-masthead__button.p9225-masthead__button--egistration {
+  background-color: #86bf23;
+}
+
+.p9225-global-nav {
+  background-color: white;
+}
+
+.p9225-global-nav__flex-container {
+  border-left: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.p9225-global-nav__item-container {
+  border-right: 1px solid #e2e2e2;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.p9225-global-nav__item {
+  border-style: none;
+  border-width: 0 0 3px;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
+.p9225-global-nav__item--mora {
+  border-color: #e74224;
+}
+
+.p9225-global-nav__item--mora:link,
+.p9225-global-nav__item--mora:hover,
+.p9225-global-nav__item--mora:active,
+.p9225-global-nav__item--mora:visited {
+  color: #e74224;
+}
+
+.p9225-global-nav__item--tame {
+  border-color: #1b94d3;
+}
+
+.p9225-global-nav__item--tame:link,
+.p9225-global-nav__item--tame:hover,
+.p9225-global-nav__item--tame:active,
+.p9225-global-nav__item--tame:visited {
+  color: #1b94d3;
+}
+
+.p9225-global-nav__item--mitsukeru {
+  border-color: #f5405f;
+}
+
+.p9225-global-nav__item--mitsukeru:link,
+.p9225-global-nav__item--mitsukeru:hover,
+.p9225-global-nav__item--mitsukeru:active,
+.p9225-global-nav__item--mitsukeru:visited {
+  color: #f5405f;
+}
+
+.p9225-global-nav__item--how-to-use {
+  border-color: #eb651a;
+}
+
+.p9225-global-nav__item--how-to-use:link,
+.p9225-global-nav__item--how-to-use:hover,
+.p9225-global-nav__item--how-to-use:active,
+.p9225-global-nav__item--how-to-use:visited {
+  color: #eb651a;
+}
+
+.p9225-global-nav__item--faq {
+  border-color: #86bf23;
+}
+
+.p9225-global-nav__item--faq:link,
+.p9225-global-nav__item--faq:hover,
+.p9225-global-nav__item--faq:active,
+.p9225-global-nav__item--faq:visited {
+  color: #86bf23;
+}
+
+.p9225-global-nav__meditame {
+  border-color: #69c09c;
+}
+
+.p9225-global-nav__meditame:link,
+.p9225-global-nav__meditame:hover,
+.p9225-global-nav__meditame:active,
+.p9225-global-nav__meditame:visited {
+  color: #69c09c;
+}
+
+.p9225-global-nav__feature {
+  border-color: #e7be22;
+}
+
+.p9225-global-nav__feature:link,
+.p9225-global-nav__feature:hover,
+.p9225-global-nav__feature:active,
+.p9225-global-nav__feature:visited {
+  color: #e7be22;
+}
+
+.p9225-side-login-text-1,
+.p9225-side-login-text-2,
+.p9225-side-login-button {
+  font-weight: bold;
+  text-align: center;
+}
+
+.p9225-side-login-text-1 {
+  color: #f8405f;
+}
+
+.contents--responsive .secondary .p9225-side-login-text-1 {
+  font-size: 15px;
+}
+
+.p9225-side-login-text-2 {
+  margin-top: 11.8px;
+}
+
+.contents--responsive .secondary .p9225-side-login-text-2 {
+  font-size: 14px;
+}
+
+.p9225-side-login-button {
+  background-color: #f8405f;
+  display: block;
+  line-height: 1;
+  margin-top: 24px;
+  padding: 12px 12px;
+  position: relative;
+}
+
+.p9225-side-login-button:link,
+.p9225-side-login-button:hover,
+.p9225-side-login-button:active,
+.p9225-side-login-button:visited {
+  color: white;
+}
+
+.contents--responsive .secondary .p9225-side-login-button {
+  font-size: 15px;
+}
+
+.p9225-side-login-button__badge {
+  align-items: center;
+  background-color: #ffdebe;
+  border-radius: 9999px;
+  color: #f8405f;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  left: 12px;
+  line-height: 1.25;
+  position: absolute;
+  top: -22px;
+  width: 45px;
+}
+
+.contents--responsive .secondary .p9225-side-login-button__badge {
+  font-size: 13px;
+}
+
+.p9225-side-login-button__badge::after {
+  border-color: transparent transparent #ffdfbe transparent;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  bottom: 4px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 4px;
+  width: 0;
+}
+
+.sdgs_sampling {
+  border-top: 20px solid #009944;
+}
+
+.sdgs_sampling .p9225-masthead__logo {
+  max-width: 335px;
+}
+
+@media screen and (min-width: 1270px) {
+  .sdgs_sampling .p9225-masthead__logo {
+    height: auto;
+    max-width: 335px;
+  }
+}

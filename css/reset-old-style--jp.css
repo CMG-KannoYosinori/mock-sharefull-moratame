@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*
+  @media only screen and (min-width: 1270px) // 1295px 以上
+  {
+    max-width: 1280px;
+  }
+
+  bootstrap
+
+  .col-xs 975px 以下
+  .col-sm 975px ~ 1294px
+  .col-md 1295px ~ 1614px
+  .col-lg 1615px 以上
+
+  参考サイズ
+
+  Mobile S: 320px;
+  Mobile M: 375px;
+  Mobile L: 425px;
+  Tablet: 768px;
+  Laptop: 1024px;
+  Laptop L: 1440px;
+  4k: 2560px;
+
+
+*/
+body.bgi {
+  background-image: none;
+}
+
+.se-status {
+  width: 100%;
+}
+
+.btnBean01 {
+  width: 160px;
+}
+
+.se-news .container .announcement {
+  width: auto;
+}
+
+.footerNav__row {
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.footerNav__col {
+  float: left;
+  box-sizing: border-box;
+  width: 33.3333%;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footerNav__heading {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ft-contents {
+  padding-bottom: 20px;
+}
+.ft-contents > .container--footer-bottom {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+.ft-contents > .container > .col-r {
+  width: auto;
+  margin-top: -20px;
+  padding: 0;
+}
+.ft-contents > .container > .col-r .unit {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.ft-contents > .container > .col-r .unit .container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.ft-contents > .container > .col-r .unit .container.container1 {
+  position: relative;
+  padding-left: 62px;
+}
+.ft-contents > .container > .col-r .unit .container.container1 > .col-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: none;
+  box-sizing: content-box;
+}
+.ft-contents > .container > .col-r .unit .container.container1 > .col-r {
+  float: none;
+  box-sizing: content-box;
+  width: auto;
+}
+.ft-contents > .container > .col-r .unit .container.container2 > .col-r,
+.ft-contents > .container > .col-r .unit .container.container2 > .col-l {
+  position: relative;
+  width: 50%;
+  padding-right: 5px;
+  padding-left: 42px;
+}
+.ft-contents > .container > .col-r .unit .container.container2 > .col-l > .col-r,
+.ft-contents > .container > .col-r .unit .container.container2 .col-r > .col-r {
+  width: auto;
+}
+.ft-contents > .container > .col-r .unit .container.container2 > .col-l .icoWrp,
+.ft-contents > .container > .col-r .unit .container.container2 .col-r .icoWrp {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heading__sub-title {
+  font-size: 12px;
+}
+@media only screen and (min-width: 1270px) {
+  .heading__sub-title {
+    font-size: 18px;
+  }
+}
+.heading.xx-large {
+  font-size: 18px;
+}
+@media only screen and (min-width: 1270px) {
+  .heading.xx-large {
+    font-size: 27px;
+  }
+}
+.heading.xx-large .icoWrap {
+  top: auto;
+  bottom: 0;
+}
+.heading.xx-large.enclosingBtn .btnWrap {
+  bottom: 0;
+}
+@media only screen and (min-width: 1270px) {
+  .heading.xx-large.enclosingBtn .btnWrap {
+    bottom: -4px;
+  }
+}
+
+.announcement .when {
+  color: red;
+}
+
+.footer {
+  font-size: 12px;
+}
+
+.pr-tame {
+  margin-top: 20px;
+}
+
+.unit--payment .col-card {
+  max-width: 63px;
+}
+
+.btnBean01:link, .btnBean01:visited {
+  color: #fff;
+}
+
+.pageTopScroll a:link, .pageTopScroll a:active, .pageTopScroll a:hover, .pageTopScroll a:visited {
+  color: #fff;
+}
+
+/*
+  ここからリニューアル商品ページ用のCSS
+--------------------- */
+/* ---------------------
+  ここまでリニューアル商品ページ用のCSS  
+*/
+/*
+  ここからトップページ用のCSS  
+--------------------- */
+.contents--responsive .btnBean01 {
+  font-size: 13px;
+}
+.contents--responsive .secondary * {
+  font-size: 13px;
+}
+.contents--responsive .secondary * .heading.large {
+  font-size: 21px;
+}
+
+/* ---------------------
+  ここまでトップページ用のCSS  
+*/
+.se-status .container {
+  box-sizing: border-box;
+  width: 278px;
+}
+.se-status .container .col-r {
+  width: 188px;
+}
