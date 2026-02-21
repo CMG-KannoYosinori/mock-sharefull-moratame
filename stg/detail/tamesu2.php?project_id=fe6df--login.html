@@ -1,316 +1,347 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ja">
-    <head>
-        <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
-        <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
-        <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
-        <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-        <title>ためせる商品アンケート回答｜Vポイントが貯まる・使える Vサンプル</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
+    <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
+    <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
+    <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.v3.3.7--scope.css?2026021912">
+    <title>ためせる商品アンケート回答｜Vポイントが貯まる・使える Vサンプル</title>
 
-        <link rel="stylesheet" type="text/css" href="/css/reset.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/properties.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/main.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/layout.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/module.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/style--common-sp-and-pc.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/reset-old-style--jp.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/style--pc.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/style--sp.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/t.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/pass_monitor.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/t-sample.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.v3.3.7--scope.css?2026021912">
 
-        <!-- Slick -->
-        <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/p9255-common--pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/properties.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/main.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/module.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/style--common-sp-and-pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/reset-old-style--jp.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/style--pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/style--sp.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/t.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/pass_monitor.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/t-sample.css?2026021912">
 
-        <!--slideUp Down-->
-        <script src="https://stg.tsample.tsite.jp/plugins/jquery/jquery-3.2.1.min.js"></script>
-        <script>
-            $(function(){
-                $('.slideup').click(function(){
-                    // スライドアップ
-                    $('.input_area').slideUp(200);
-                });
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/p9255-common--pc.css?2026021912">
 
-                $('.slidedown').click(function(){
-                    // スライドダウン
-                    $('.input_area').slideDown(300);
-                });
-            });
+    <!--slideUp Down-->
+    <script src="https://stg.tsample.tsite.jp/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function () {
+        $('.slideup').click(function () {
+          // スライドアップ
+          $('.input_area').slideUp(200);
+        });
 
-            $(function(){
-                $('.slideup2').click(function(){
-                    // スライドアップ
-                    $('.input_area2').slideUp(200);
-                });
+        $('.slidedown').click(function () {
+          // スライドダウン
+          $('.input_area').slideDown(300);
+        });
+      });
 
-                $('.slidedown2').click(function(){
-                    // スライドダウン
-                    $('.input_area2').slideDown(300);
-                });
-            });
+      $(function () {
+        $('.slideup2').click(function () {
+          // スライドアップ
+          $('.input_area2').slideUp(200);
+        });
 
-            $(function(){
-                $('.slideup3').click(function(){
-                    // スライドアップ
-                    $('.input_area3').slideUp(200);
-                });
+        $('.slidedown2').click(function () {
+          // スライドダウン
+          $('.input_area2').slideDown(300);
+        });
+      });
 
-                $('.slidedown3').click(function(){
-                    // スライドダウン
-                    $('.input_area3').slideDown(300);
-                });
-            });
-        </script>
+      $(function () {
+        $('.slideup3').click(function () {
+          // スライドアップ
+          $('.input_area3').slideUp(200);
+        });
 
-        
-        <!-- postalcode_address -->
-        <script src="/plugins/ajaxzip3/ajaxzip3.js"></script>
+        $('.slidedown3').click(function () {
+          // スライドダウン
+          $('.input_area3').slideDown(300);
+        });
+      });
+    </script>
 
-        <!-- FontAwesome -->
-        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-                    <!-- Google Tag Manager TSAMPLE-->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KHX6JPD');</script>
-            <!-- End Google Tag Manager -->
-        
-        
-                <link rel="stylesheet" type="text/css" href="/css/style.css?2026021912">
-                
-    </head>
-            <body class="bootstrap-v3-3-7--scope itemDetail itemApply">    
-            <!-- Google Tag Manager (noscript) TSAMPLE-->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-    
-            <div class="body-wrapper">
-                            <div class="p-masthead">
-                            <div class="l-conteiner">
-                    <header>
-                        <div class="p-masthead__top_box header-contents">
-                            <div class="p-masthead__top">
-                                <!-- logo -->
-                                <h1>
-                                    <a href="https://stg.tsample.tsite.jp/">
-                                        <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
-                                        <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://stg.tsample.tsite.jp/img/logo_v.png" width="792">
-                                    </a>
-                                </h1>
-                                                                                                    <div class="p-masthead__labels-sns-btns-wrap pc">
-                                        <ul class="p-masthead__text-links">
-                                            <li>
-                                                <a href="https://tsite.jp/">Vポイントサイト</a>
-                                            </li>
-                                        </ul>
-                                        <div class="p9225-masthead__buttons">
-                                            <ul class="p-masthead__labels announce-container">
-                                                                                                <li>
-                                                    <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/mymenu/basic.php">マイメニュー</a>
-                                                </li>
-                                                <li>
-                                                    <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/contents/logout.php">ログアウト</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                                                <!-- /topMenu_pc -->
-                                <!-- topMenu_sp -->
-                                                                    <div class="sp-header-menu sp">
-                                                                                <div class="sp-header-menu_component sp-header-menu_component-mymenu">
-                                            <a href="https://stg.tsample.tsite.jp/mymenu/basic.php"><img alt="マイメニュー" src="https://stg.tsample.tsite.jp/img/btn-mymenu.png"></a>
-                                        </div>
-                                        <div class="sp-header-menu_component sp-header-menu_component-logout">
-                                            <a href="https://stg.tsample.tsite.jp/contents/logout.php"><img alt="ログアウト" src="https://stg.tsample.tsite.jp/img/btn-logout.png"></a>
-                                        </div>
-                                        <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
-                                            MENU
-                                        </div>
-                                    </div>
-                                                                <!-- /topMenu_sp -->
-                            </div>
-                        </div>
-                    </header>
-                    <!-- HBGmenu_Open -->
-                    <div id="menu">
-                        <ul>
-                            <!-- category -->
-                            <li class="menu__item">    <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>    <ul class="submenu" style="display: none;"><li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>      <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li><li class="t-sidemenu-sub-ttl">お店でためす</li><li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>    </ul></li>                                                            <a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664"><li>家族配送（4）</li></a>                                                        <!-- /category -->
+    <!-- postalcode_address -->
+    <script src="../plugins/ajaxzip3/ajaxzip3.js"></script>
 
-                                                            <a href="https://stg.tsample.tsite.jp/mymenu/basic.php?c=review"><li>クチコミ一覧</li></a>
-                                                        <a href="https://stg.tsample.tsite.jp/contents/about.php"><li>Vサンプルとは</li></a>
-                            <a href="https://tsite.jp/pt/guide/about/index.pl"><li>Vポイントについて</li></a>
-                            <a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php"><li>Vポイントを使いたい</li></a>
-                            <a href="https://tsite.jp/"><li>Vポイントサイト</li></a>
-                            <a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite"><li>FAQ</li></a>
-                            <a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php"><li>Vサンプル事務局へのお問い合わせ</li></a>
-                            <a href="https://privacy.cccmkhd.co.jp/terms/sample/"><li>Vサンプル利用規約</li></a>
-                            <a href="https://stg.tsample.tsite.jp/contents/trade/index.php"><li>特定商取引表示</li></a>
-                        </ul>
-                    </div>
-                    <div class="menu-background"></div>
-                    <!-- /HBGmenu_Open -->
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-                    <!-- accordion-menu -->
-                    <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない　-->
-                                            <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-                                        <script>
-                        $(function(){
-                            $('.js-menu__item__link').each(function(){
-                                $(this).on('click',function(){
-                                    $(this).toggleClass('on');
-                                    $("+.submenu",this).slideToggle();
-                                    return false;
-                                });
-                            });
-                        });
-                    </script>
-                    <!-- /accordion-menu -->
+    <!-- Google Tag Manager TSAMPLE-->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KHX6JPD');</script>
+    <!-- End Google Tag Manager -->
 
-                    <script type="text/javascript">
-                        $('.p-masthead__soon').on('click', function() {
-                            $("#p-masthead__soon").toggle();
-                        });
-                        $(document).on('click', '.s_boxHeadline', function() {
-                            $("#p-masthead__soon").css("display", "none")
-                        });
-                    </script>
 
-                    <!-- topTabMenu_pc -->
-                                            <ul class="p-masthead__nav">
-                                            <li class="p-masthead__nav__top">
-                            <a href="https://stg.tsample.tsite.jp/">トップ</a>
-                        </li>
-                        <li class="p-masthead__nav__tame">
-                            <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
-                        </li>
-                        <li class="p-masthead__nav__mora">
-                            <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
-                        </li>
-                        <li class="p-masthead__nav__mise">
-                            <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
-                        </li>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?2026021912">
+
+  </head>
+
+  <body class="bootstrap-v3-3-7--scope itemDetail itemApply">
+    <!-- Google Tag Manager (noscript) TSAMPLE-->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="body-wrapper">
+      <div class="p-masthead">
+        <div class="l-conteiner">
+          <header>
+            <div class="p-masthead__top_box header-contents">
+              <div class="p-masthead__top">
+                <!-- logo -->
+                <h1>
+                  <a href="https://stg.tsample.tsite.jp/">
+                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
+                    <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
+                  </a>
+                </h1>
+                <div class="p-masthead__labels-sns-btns-wrap pc">
+                  <ul class="p-masthead__text-links">
+                    <li>
+                      <a href="https://tsite.jp/">Vポイントサイト</a>
+                    </li>
+                  </ul>
+                  <div class="p9225-masthead__buttons">
+                    <ul class="p-masthead__labels announce-container">
+                      <li>
+                        <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/mymenu/basic.php">マイメニュー</a>
+                      </li>
+                      <li>
+                        <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/contents/logout.php">ログアウト</a>
+                      </li>
                     </ul>
-                    <!-- /topTabMenu_pc -->
+                  </div>
                 </div>
+                <!-- /topMenu_pc -->
+                <!-- topMenu_sp -->
+                <div class="sp-header-menu sp">
+                  <div class="sp-header-menu_component sp-header-menu_component-mymenu">
+                    <a href="https://stg.tsample.tsite.jp/mymenu/basic.php"><img alt="マイメニュー" src="https://stg.tsample.tsite.jp/img/btn-mymenu.png"></a>
+                  </div>
+                  <div class="sp-header-menu_component sp-header-menu_component-logout">
+                    <a href="https://stg.tsample.tsite.jp/contents/logout.php"><img alt="ログアウト" src="https://stg.tsample.tsite.jp/img/btn-logout.png"></a>
+                  </div>
+                  <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
+                    MENU
+                  </div>
+                </div>
+                <!-- /topMenu_sp -->
+              </div>
             </div>
-            <!-- //p-masthead -->
-            <div class="main">
-                                <div class="contents cf contents--responsive">
-                    <div class="primary primary--responsive">
-                                                    <div id="F001" class="js-t-wrapper itemDetailBox">
-                            <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
-<script type="text/javascript">
-    function doSubmit() {
-                    // 3Dセキュアの第三者提供の同意
-            const agreementCheckbox = document.getElementById('agreement_3ds');
-            if (!agreementCheckbox || !agreementCheckbox.checked) {
-                alert('クレジットカードをご利用いただくために、3Dセキュアの利用規約に同意が必要です。');
-                return false;
-            }
+          </header>
+          <!-- HBGmenu_Open -->
+          <div id="menu">
+            <ul>
+              <!-- category -->
+              <li class="menu__item"> <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
+                <ul class="submenu" style="display: none;">
+                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li class="t-sidemenu-sub-ttl">お店でためす</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>
+                </ul>
+              </li> <a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664">
+                <li>家族配送（4）</li>
+              </a> <!-- /category -->
 
-            var pay_credit_chk = false;
-                            pay_credit_chk = true;
-                        if (pay_credit_chk == true) {
-                var card_ex1 = document.getElementById('card_ex1').value;
-                var card_ex2 = document.getElementById('card_ex2').value;
-                var card_no = document.getElementById('card_no').value;
-                var card_name = document.getElementById('card_name').value;
-                var card_sec = document.getElementById('card_sec').value;
-                if (card_ex1 != '' && card_ex2 != '' && card_no != '' && card_name != '' && card_sec != '') {
-                    var cc_ex = document.getElementById('card_ex2').value + document.getElementById('card_ex1').value;
-                    // トークン生成ロジック呼び出し
-                    com_sbps_system.generateToken({
-                        merchantId : '71234',
-                        serviceId : '002',
-                        ccNumber : document.getElementById('card_no').value,
-                        ccExpiration : cc_ex,
-                        securityCode : document.getElementById('card_sec').value
-                    }, function(response) {
+              <a href="https://stg.tsample.tsite.jp/mymenu/basic.php?c=review">
+                <li>クチコミ一覧</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/about.php">
+                <li>Vサンプルとは</li>
+              </a>
+              <a href="https://tsite.jp/pt/guide/about/index.pl">
+                <li>Vポイントについて</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php">
+                <li>Vポイントを使いたい</li>
+              </a>
+              <a href="https://tsite.jp/">
+                <li>Vポイントサイト</li>
+              </a>
+              <a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite">
+                <li>FAQ</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php">
+                <li>Vサンプル事務局へのお問い合わせ</li>
+              </a>
+              <a href="https://privacy.cccmkhd.co.jp/terms/sample/">
+                <li>Vサンプル利用規約</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/trade/index.php">
+                <li>特定商取引表示</li>
+              </a>
+            </ul>
+          </div>
+          <div class="menu-background"></div>
+          <!-- /HBGmenu_Open -->
+
+          <!-- accordion-menu -->
+          <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない　-->
+          <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+          <script>
+            $(function () {
+              $('.js-menu__item__link').each(function () {
+                $(this).on('click', function () {
+                  $(this).toggleClass('on');
+                  $("+.submenu", this).slideToggle();
+                  return false;
+                });
+              });
+            });
+          </script>
+          <!-- /accordion-menu -->
+
+          <script type="text/javascript">
+            $('.p-masthead__soon').on('click', function () {
+              $("#p-masthead__soon").toggle();
+            });
+            $(document).on('click', '.s_boxHeadline', function () {
+              $("#p-masthead__soon").css("display", "none")
+            });
+          </script>
+
+          <!-- topTabMenu_pc -->
+          <ul class="p-masthead__nav">
+            <li class="p-masthead__nav__top">
+              <a href="https://stg.tsample.tsite.jp/">トップ</a>
+            </li>
+            <li class="p-masthead__nav__tame">
+              <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
+            </li>
+            <li class="p-masthead__nav__mora">
+              <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
+            </li>
+            <li class="p-masthead__nav__mise">
+              <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
+            </li>
+          </ul>
+          <!-- /topTabMenu_pc -->
+        </div>
+      </div>
+      <!-- //p-masthead -->
+      <div class="main">
+        <div class="contents cf contents--responsive">
+          <div class="primary primary--responsive">
+            <div id="F001" class="js-t-wrapper itemDetailBox">
+              <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
+              <script type="text/javascript">
+                function doSubmit() {
+                  // 3Dセキュアの第三者提供の同意
+                  const agreementCheckbox = document.getElementById('agreement_3ds');
+                  if (!agreementCheckbox || !agreementCheckbox.checked) {
+                    alert('クレジットカードをご利用いただくために、3Dセキュアの利用規約に同意が必要です。');
+                    return false;
+                  }
+
+                  var pay_credit_chk = false;
+                  pay_credit_chk = true;
+                  if (pay_credit_chk == true) {
+                    var card_ex1 = document.getElementById('card_ex1').value;
+                    var card_ex2 = document.getElementById('card_ex2').value;
+                    var card_no = document.getElementById('card_no').value;
+                    var card_name = document.getElementById('card_name').value;
+                    var card_sec = document.getElementById('card_sec').value;
+                    if (card_ex1 != '' && card_ex2 != '' && card_no != '' && card_name != '' && card_sec != '') {
+                      var cc_ex = document.getElementById('card_ex2').value + document.getElementById('card_ex1').value;
+                      // トークン生成ロジック呼び出し
+                      com_sbps_system.generateToken({
+                        merchantId: '71234',
+                        serviceId: '002',
+                        ccNumber: document.getElementById('card_no').value,
+                        ccExpiration: cc_ex,
+                        securityCode: document.getElementById('card_sec').value
+                      }, function (response) {
                         if (response.result == "OK") {
-                            document.getElementById('token').value = response.tokenResponse.token;
-                            document.getElementById('token_key').value = response.tokenResponse.tokenKey;
-                            // カード番号をマスキング
-                            document.getElementById('masked_card_no').value = response.tokenResponse.maskedCcNumber;
-                            nextPage();
+                          document.getElementById('token').value = response.tokenResponse.token;
+                          document.getElementById('token_key').value = response.tokenResponse.tokenKey;
+                          // カード番号をマスキング
+                          document.getElementById('masked_card_no').value = response.tokenResponse.maskedCcNumber;
+                          nextPage();
                         } else {
-                            document.getElementById('token_error').value = 'true';
-                            nextPage();
+                          document.getElementById('token_error').value = 'true';
+                          nextPage();
                         }
-                    });
-                } else {
+                      });
+                    } else {
+                      nextPage();
+                    }
+                  } else {
                     nextPage();
+                  }
                 }
-            } else {
-                nextPage();
-            }
-            }
-</script>
+              </script>
 
-<script language="javascript">
-function chgExclusion(chgType, exclusion_name, my_name) {
-    // 排他制御 無効化
-    if (chgType == 0 || (chgType == 1 && document.frmtame2.elements[my_name].checked == false)) {
-        for (i = 0; i <= document.frmtame2.length - 1; i++) {
-            if (document.frmtame2.elements[i].type == "checkbox") {
-                if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1 ){
-                    document.frmtame2.elements[i].disabled = false;
+              <script language="javascript">
+                function chgExclusion(chgType, exclusion_name, my_name) {
+                  // 排他制御 無効化
+                  if (chgType == 0 || (chgType == 1 && document.frmtame2.elements[my_name].checked == false)) {
+                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                      if (document.frmtame2.elements[i].type == "checkbox") {
+                        if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
+                          document.frmtame2.elements[i].disabled = false;
+                        }
+                      }
+                    }
+                  } else {
+                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                      if (document.frmtame2.elements[i].type == "checkbox") {
+                        if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1 && document.frmtame2.elements[i].name != my_name) {
+                          document.frmtame2.elements[i].disabled = true;
+                          document.frmtame2.elements[i].checked = false;
+                        }
+                      }
+                    }
+                  }
                 }
-            }
-        }
-    } else {
-        for (i = 0; i <= document.frmtame2.length - 1; i++) {
-            if (document.frmtame2.elements[i].type == "checkbox") {
-                if (document.frmtame2.elements[i].name.indexOf( exclusion_name ) != -1 && document.frmtame2.elements[i].name != my_name) {
-                    document.frmtame2.elements[i].disabled = true;
-                    document.frmtame2.elements[i].checked = false;
+
+                function chgExclusion2(exclusion_name, my_name, limit) {
+                  var selectCount;
+                  selectCount = 0;
+
+                  for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                    if (document.frmtame2.elements[i].type == "checkbox") {
+                      if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
+                        if (document.frmtame2.elements[i].checked == true) {
+                          selectCount++;
+                        }
+                      }
+                    }
+                  }
+
+                  if (selectCount > limit) {
+                    alert(limit + "つまで選択できます");
+
+                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                      if (document.frmtame2.elements[i].type == "checkbox") {
+                        if (document.frmtame2.elements[i].name == my_name) {
+                          document.frmtame2.elements[i].checked = false;
+                        }
+                      }
+                    }
+                  }
                 }
-            }
-        }
-    }
-}
 
-function chgExclusion2(exclusion_name, my_name, limit) {
-    var selectCount;
-    selectCount = 0;
-
-        for (i = 0; i <= document.frmtame2.length - 1; i++) {
-        if (document.frmtame2.elements[i].type == "checkbox") {
-            if (document.frmtame2.elements[i].name.indexOf( exclusion_name) != -1) {
-                if (document.frmtame2.elements[i].checked == true) {
-                    selectCount++;
-                }
-            }
-        }
-    }
-
-        if (selectCount > limit) {
-                alert(limit + "つまで選択できます");
-
-        for (i = 0; i <= document.frmtame2.length - 1; i++) {
-            if (document.frmtame2.elements[i].type == "checkbox") {
-                if (document.frmtame2.elements[i].name == my_name) {
-                    document.frmtame2.elements[i].checked = false;
-                }
-            }
-        }
-    }
-}
-
-</script>
-<script language="JavaScript" type="text/JavaScript">
+              </script>
+              <script language="JavaScript" type="text/JavaScript">
 <!--
 function nextPage() {
     // 名前のスペースを除去する
@@ -334,509 +365,533 @@ function removeSpace(str) {
 document.addEventListener('DOMContentLoaded', function() {
     // フォーカスが外れたらスペースを削除する
     const elements = document.getElementsByClassName('js-nonspace');
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].addEventListener('blur', function () {
-            this.value = removeSpace(this.value);
-        });
-    }
-});
-</script>
-<!-- breadCrumbs -->
-    <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ためせる商品詳細</a> ＞ためせる商品アンケート回答</p>
-<!-- /breadCrumbs -->
-<!--contents-->
-<div id="anchor01" class="whiteContainer fz_14">
-    <div class="t-text">
-        <div class=" c-section-heading enq-section-heading t-text__middle">
-            <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
-        </div>
-    </div>
-    <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
-        <input type="hidden" name="project_id" id="project_rand" value="fe6df">
-        <input type="hidden" name="test" value="">
-        <input type="hidden" name="user_order_status" value="0">
-        <input type="hidden" name="fst" value="">
-        <input type="hidden" name="enq_mode" value="">
-        <input type="hidden" name="enq_pg" value="">
-        <input type="hidden" name="last_credit_card_flg" value="0">
-        <input type="hidden" name="last_card_no" value="">
-        <input type="hidden" name="last_card_ex" value="">
-        <input type="hidden" name="token" id="token" value="">
-        <input type="hidden" name="token_key" id="token_key" value="">
-        <input type="hidden" name="masked_card_no" id="masked_card_no" value="">
-        <input type="hidden" name="token_error" id="token_error" value="false">
-        <input type="hidden" name="shipment_area" id="shipment_area" value="">
-                    <input type="hidden" name="address" id="address" value="0">
-                                <!-- enquete start -->
-                                                                <a name="enqNo0"></a>
-                <input type="hidden" name="enq_no[0]" value="0">
-                                    <section class="select-box select-area">
-                                    <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q1】お好きなモラタメキャラクターを選択してください。</h2>
+    for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } }); </script>
+                <!-- breadCrumbs -->
+                <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ためせる商品詳細</a> ＞ためせる商品アンケート回答</p>
+                <!-- /breadCrumbs -->
+                <!--contents-->
+                <div id="anchor01" class="whiteContainer fz_14">
+                  <div class="t-text">
+                    <div class=" c-section-heading enq-section-heading t-text__middle">
+                      <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
                     </div>
-                                                            <ul><input type="hidden" name="ans[0][key][0]" value="ポッケ"><li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ポッケ" ID="radio_0_0"  ><label for="radio_0_0">ポッケ</label></li><input type="hidden" name="ans[0][key][1]" value="ケット"><li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ケット" ID="radio_0_1"  ><label for="radio_0_1">ケット</label></li><input type="hidden" name="ans[0][key][2]" value="ナップ"><li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ナップ" ID="radio_0_2"  ><label for="radio_0_2">ナップ</label></li><input type="hidden" name="ans[0][key][3]" value="ザック"><li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ザック" ID="radio_0_3"  ><label for="radio_0_3">ザック</label></li></ul>                </section>
-                                                    <!-- enquete end -->
+                  </div>
+                  <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
+                    <input type="hidden" name="project_id" id="project_rand" value="fe6df">
+                    <input type="hidden" name="test" value="">
+                    <input type="hidden" name="user_order_status" value="0">
+                    <input type="hidden" name="fst" value="">
+                    <input type="hidden" name="enq_mode" value="">
+                    <input type="hidden" name="enq_pg" value="">
+                    <input type="hidden" name="last_credit_card_flg" value="0">
+                    <input type="hidden" name="last_card_no" value="">
+                    <input type="hidden" name="last_card_ex" value="">
+                    <input type="hidden" name="token" id="token" value="">
+                    <input type="hidden" name="token_key" id="token_key" value="">
+                    <input type="hidden" name="masked_card_no" id="masked_card_no" value="">
+                    <input type="hidden" name="token_error" id="token_error" value="false">
+                    <input type="hidden" name="shipment_area" id="shipment_area" value="">
+                    <input type="hidden" name="address" id="address" value="0">
+                    <!-- enquete start -->
+                    <a name="enqNo0"></a>
+                    <input type="hidden" name="enq_no[0]" value="0">
+                    <section class="select-box select-area">
+                      <div class="c-section-heading t-text__middle">
+                        <h2 class="fs-16">【Q1】お好きなモラタメキャラクターを選択してください。</h2>
+                      </div>
+                      <ul><input type="hidden" name="ans[0][key][0]" value="ポッケ">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ポッケ" ID="radio_0_0"><label for="radio_0_0">ポッケ</label></li><input type="hidden" name="ans[0][key][1]" value="ケット">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ケット" ID="radio_0_1"><label for="radio_0_1">ケット</label></li><input type="hidden" name="ans[0][key][2]" value="ナップ">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ナップ" ID="radio_0_2"><label for="radio_0_2">ナップ</label></li><input type="hidden" name="ans[0][key][3]" value="ザック">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ザック" ID="radio_0_3"><label for="radio_0_3">ザック</label></li>
+                      </ul>
+                    </section>
+                    <!-- enquete end -->
 
                     <!-- payment start -->
-            <div class="item-part">
-                <p class="fz_14 cart-heading--gray mb_5 fw_b">支払い方法</p>
-                <p class="mb_5">Vポイントのご利用は、次のページで入力できます。全額Vポイントをご利用になる場合でもクレジットカードのご登録は必要となります。</p>
-                                <ul class="paymentOption--1">
-                                        <li id="pay_scredit_new">
-                        <label>
+                    <div class="item-part">
+                      <p class="fz_14 cart-heading--gray mb_5 fw_b">支払い方法</p>
+                      <p class="mb_5">Vポイントのご利用は、次のページで入力できます。全額Vポイントをご利用になる場合でもクレジットカードのご登録は必要となります。</p>
+                      <ul class="paymentOption--1">
+                        <li id="pay_scredit_new">
+                          <label>
                             <input name="payment" type="radio" value="2" class="on-off--2 slidedown2" checked>
                             新規クレジットカード
-                            <div class="credit-form input_area2" >
-                                <table class="st-table01" id="return">
-                                    <tbody>
-                                        <tr>
-                                            <th class="bd-raw">利用可能なクレジットカード</th>
-                                            <td class="bd-raw">
-                                                <p class="cards">
-                                                    <img alt="" height="62" src="https://stg.tsample.tsite.jp/img/availableCards.gif" width="332">
-                                                </p>
-                                                <p class="fz_12">※Visa、Master、JCB、AMEX、Diners の国際ブランドがついているデビットカードも利用可能</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="bd-raw">クレジットカード番号</th>
-                                            <td class="bd-raw">
-                                                <p>
-                                                    <input class="form-control form-control_paid-point" id="card_no" name="card_no" placeholder="クレジットカード番号" size="38" type="text" value="" autocomplete="cc-number">
-                                                </p>
-                                                <p class="fz_12">(例)1234123412341234<br>
-                                                半角英数字のみで入力。カードの銘柄の入力は、不要です。</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="bd-raw">クレジットカード有効期限</th>
-                                            <td class="bd-raw">
-                                                <select class="form-control form-control_paid-point" id="card_ex1" name="card_ex1" style="width: auto; display: inline-block;" autocomplete="cc-exp-month">
-                                                                                                            <option value="01" >
-                                                            01                                                        </option>
-                                                                                                            <option value="02" >
-                                                            02                                                        </option>
-                                                                                                            <option value="03" >
-                                                            03                                                        </option>
-                                                                                                            <option value="04" >
-                                                            04                                                        </option>
-                                                                                                            <option value="05" >
-                                                            05                                                        </option>
-                                                                                                            <option value="06" >
-                                                            06                                                        </option>
-                                                                                                            <option value="07" >
-                                                            07                                                        </option>
-                                                                                                            <option value="08" >
-                                                            08                                                        </option>
-                                                                                                            <option value="09" >
-                                                            09                                                        </option>
-                                                                                                            <option value="10" >
-                                                            10                                                        </option>
-                                                                                                            <option value="11" >
-                                                            11                                                        </option>
-                                                                                                            <option value="12" >
-                                                            12                                                        </option>
-                                                                                                    </select><label class="control-label">月</label>
-                                                <select class="form-control form-control_paid-point" id="card_ex2" name="card_ex2" style="width: auto; display: inline-block;" autocomplete="cc-exp-year">
-                                                                                                            <option value="2026" >
-                                                            2026                                                        </option>
-                                                                                                            <option value="2027" >
-                                                            2027                                                        </option>
-                                                                                                            <option value="2028" >
-                                                            2028                                                        </option>
-                                                                                                            <option value="2029" >
-                                                            2029                                                        </option>
-                                                                                                            <option value="2030" >
-                                                            2030                                                        </option>
-                                                                                                            <option value="2031" >
-                                                            2031                                                        </option>
-                                                                                                            <option value="2032" >
-                                                            2032                                                        </option>
-                                                                                                            <option value="2033" >
-                                                            2033                                                        </option>
-                                                                                                            <option value="2034" >
-                                                            2034                                                        </option>
-                                                                                                            <option value="2035" >
-                                                            2035                                                        </option>
-                                                                                                            <option value="2036" >
-                                                            2036                                                        </option>
-                                                                                                            <option value="2037" >
-                                                            2037                                                        </option>
-                                                                                                            <option value="2038" >
-                                                            2038                                                        </option>
-                                                                                                            <option value="2039" >
-                                                            2039                                                        </option>
-                                                                                                            <option value="2040" >
-                                                            2040                                                        </option>
-                                                                                                            <option value="2041" >
-                                                            2041                                                        </option>
-                                                                                                            <option value="2042" >
-                                                            2042                                                        </option>
-                                                                                                            <option value="2043" >
-                                                            2043                                                        </option>
-                                                                                                            <option value="2044" >
-                                                            2044                                                        </option>
-                                                                                                            <option value="2045" >
-                                                            2045                                                        </option>
-                                                                                                    </select><label class="control-label">年</label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="bd-raw">クレジットカード名義人<br>
-                                                <span class="fz_12 fw_n">半角英字のみ</span>
-                                            </th>
-                                            <td class="bd-raw">
-                                                <p>
-                                                    <input class="form-control form-control_paid-point" id="card_name" maxlength="32" name="card_name" placeholder="クレジットカード名義人" type="text" value="" autocomplete="cc-name">
-                                                </p>
-                                                <p class="fz_12 c_red">例：TARO MORATAME</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>クレジットカードセキュリティコード<br>
-                                                <span class="fz_12 fw_n">半角数字のみ</span>
-                                            </th>
-                                            <td>
-                                                <p>
-                                                    <input class="form-control form-control_paid-point" id="card_sec" max="9999" name="card_sec" placeholder="クレジットカードセキュリティコード" type="number" value="" autocomplete="cc-csc">
-                                                </p>
-                                                <p class="fz_12 c_red">カード裏面のご署名欄に印刷された右端3桁（または4桁）がセキュリティコードです。<br>
-                                                ※お客様の暗証番号ではありません。</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="credit-form input_area2">
+                              <table class="st-table01" id="return">
+                                <tbody>
+                                  <tr>
+                                    <th class="bd-raw">利用可能なクレジットカード</th>
+                                    <td class="bd-raw">
+                                      <p class="cards">
+                                        <img alt="" height="62" src="https://stg.tsample.tsite.jp/img/availableCards.gif" width="332">
+                                      </p>
+                                      <p class="fz_12">※Visa、Master、JCB、AMEX、Diners の国際ブランドがついているデビットカードも利用可能</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="bd-raw">クレジットカード番号</th>
+                                    <td class="bd-raw">
+                                      <p>
+                                        <input class="form-control form-control_paid-point" id="card_no" name="card_no" placeholder="クレジットカード番号" size="38" type="text" value="" autocomplete="cc-number">
+                                      </p>
+                                      <p class="fz_12">(例)1234123412341234<br>
+                                        半角英数字のみで入力。カードの銘柄の入力は、不要です。</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="bd-raw">クレジットカード有効期限</th>
+                                    <td class="bd-raw">
+                                      <select class="form-control form-control_paid-point" id="card_ex1" name="card_ex1" style="width: auto; display: inline-block;" autocomplete="cc-exp-month">
+                                        <option value="01">
+                                          01 </option>
+                                        <option value="02">
+                                          02 </option>
+                                        <option value="03">
+                                          03 </option>
+                                        <option value="04">
+                                          04 </option>
+                                        <option value="05">
+                                          05 </option>
+                                        <option value="06">
+                                          06 </option>
+                                        <option value="07">
+                                          07 </option>
+                                        <option value="08">
+                                          08 </option>
+                                        <option value="09">
+                                          09 </option>
+                                        <option value="10">
+                                          10 </option>
+                                        <option value="11">
+                                          11 </option>
+                                        <option value="12">
+                                          12 </option>
+                                      </select><label class="control-label">月</label>
+                                      <select class="form-control form-control_paid-point" id="card_ex2" name="card_ex2" style="width: auto; display: inline-block;" autocomplete="cc-exp-year">
+                                        <option value="2026">
+                                          2026 </option>
+                                        <option value="2027">
+                                          2027 </option>
+                                        <option value="2028">
+                                          2028 </option>
+                                        <option value="2029">
+                                          2029 </option>
+                                        <option value="2030">
+                                          2030 </option>
+                                        <option value="2031">
+                                          2031 </option>
+                                        <option value="2032">
+                                          2032 </option>
+                                        <option value="2033">
+                                          2033 </option>
+                                        <option value="2034">
+                                          2034 </option>
+                                        <option value="2035">
+                                          2035 </option>
+                                        <option value="2036">
+                                          2036 </option>
+                                        <option value="2037">
+                                          2037 </option>
+                                        <option value="2038">
+                                          2038 </option>
+                                        <option value="2039">
+                                          2039 </option>
+                                        <option value="2040">
+                                          2040 </option>
+                                        <option value="2041">
+                                          2041 </option>
+                                        <option value="2042">
+                                          2042 </option>
+                                        <option value="2043">
+                                          2043 </option>
+                                        <option value="2044">
+                                          2044 </option>
+                                        <option value="2045">
+                                          2045 </option>
+                                      </select><label class="control-label">年</label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="bd-raw">クレジットカード名義人<br>
+                                      <span class="fz_12 fw_n">半角英字のみ</span>
+                                    </th>
+                                    <td class="bd-raw">
+                                      <p>
+                                        <input class="form-control form-control_paid-point" id="card_name" maxlength="32" name="card_name" placeholder="クレジットカード名義人" type="text" value="" autocomplete="cc-name">
+                                      </p>
+                                      <p class="fz_12 c_red">例：TARO MORATAME</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>クレジットカードセキュリティコード<br>
+                                      <span class="fz_12 fw_n">半角数字のみ</span>
+                                    </th>
+                                    <td>
+                                      <p>
+                                        <input class="form-control form-control_paid-point" id="card_sec" max="9999" name="card_sec" placeholder="クレジットカードセキュリティコード" type="number" value="" autocomplete="cc-csc">
+                                      </p>
+                                      <p class="fz_12 c_red">カード裏面のご署名欄に印刷された右端3桁（または4桁）がセキュリティコードです。<br>
+                                        ※お客様の暗証番号ではありません。</p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <!-- payment end -->
-        <style>
-    ul.coupon p {
-        display:inline;
-    }
-    ul.coupon li {
-        text-indent: -1.3em;
-        padding-left:1.3em;
-        line-height: 2em;
-    }
-    ul.coupon label {
-        padding: 0.5em 0.5em 0.5em 0;
-    }
-    ul.coupon em {
-        margin-left: 0.5em;
-        color: #f76b1f;
-    }
-    ul.coupon input[type=text] {
-        border-radius: 4px;
-        border: 1px solid #ccc;
-        margin:0.5em 0 0.5em 1.5em;
-        padding: 0 1em 0 1em;
-    }
-    ul.coupon input:checked + p {
-        font-weight: bold;
-    }
-    #input_coupon_code {
-        display:inline;
-        margin: 0 0 0 10px;
-    }
-</style>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- payment end -->
+                    <style>
+                      ul.coupon p {
+                        display: inline;
+                      }
+
+                      ul.coupon li {
+                        text-indent: -1.3em;
+                        padding-left: 1.3em;
+                        line-height: 2em;
+                      }
+
+                      ul.coupon label {
+                        padding: 0.5em 0.5em 0.5em 0;
+                      }
+
+                      ul.coupon em {
+                        margin-left: 0.5em;
+                        color: #f76b1f;
+                      }
+
+                      ul.coupon input[type=text] {
+                        border-radius: 4px;
+                        border: 1px solid #ccc;
+                        margin: 0.5em 0 0.5em 1.5em;
+                        padding: 0 1em 0 1em;
+                      }
+
+                      ul.coupon input:checked+p {
+                        font-weight: bold;
+                      }
+
+                      #input_coupon_code {
+                        display: inline;
+                        margin: 0 0 0 10px;
+                      }
+                    </style>
 
                     <!-- coupon start -->
-                        <div class="item-part">
-                <p class="fz_14 cart-heading--gray mb_5 fw_b">クーポン</p>
-                <ul class="coupon">
-                    
-                    <li>
-                        <label>
+                    <div class="item-part">
+                      <p class="fz_14 cart-heading--gray mb_5 fw_b">クーポン</p>
+                      <ul class="coupon">
+
+                        <li>
+                          <label>
                             <input name="coupon_code" type="radio" value="" class="" checked>
                             <p>
-                                クーポンを使用しない
+                              クーポンを使用しない
                             </p>
-                        </label>
-                    </li>
-                    
-                                <li id="input_coupon" style="display: none">
-                <label style="background-color: #e6effc;">
-                    <input id="input_coupon_radio" name="coupon_code" type="radio" value="" class="">
-                    <p id="discount_display">入力クーポン<em>0円引き</em></p>
-                </label>
-            </li>
+                          </label>
+                        </li>
 
-            <li style="padding-top: 0.4em;">
-                <label>
-                    <input type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力">
-                    <span id="apply_coupon_code">
-                        <input type="button" name="coupon_check" value="適用する" onclick="javascript:check_coupon();">
-                    </span>
-                </label>
-                <span id="coupon_error_msg" class="c_red02" style="display: none;text-indent:initial">
-                    エラー文言
-                </spam>
-            </li>
-                </ul>
-            </div>            <!-- coupon end -->
-        
-        
-                
-        <!-- destination -->
-                <!-- destination end -->
+                        <li id="input_coupon" style="display: none">
+                          <label style="background-color: #e6effc;">
+                            <input id="input_coupon_radio" name="coupon_code" type="radio" value="" class="">
+                            <p id="discount_display">入力クーポン<em>0円引き</em></p>
+                          </label>
+                        </li>
+
+                        <li style="padding-top: 0.4em;">
+                          <label>
+                            <input type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力">
+                            <span id="apply_coupon_code">
+                              <input type="button" name="coupon_check" value="適用する" onclick="javascript:check_coupon();">
+                            </span>
+                          </label>
+                          <span id="coupon_error_msg" class="c_red02" style="display: none;text-indent:initial">
+                            エラー文言
+                            </spam>
+                        </li>
+                      </ul>
+                    </div> <!-- coupon end -->
+
+
+
+                    <!-- destination -->
+                    <!-- destination end -->
 
                     <div class="item-part">
-                <p class="c-section-heading fs-16">
-                    安全にクレジットカードをご利用いただくため、個人情報保護法に基づく個人データの第三者提供の同意が必要です。<br>
-                    <br>
-                    ・クレジットカード利用上の注意<br>
-                    クレジットカード番号などの情報の盗用による不正利用を防ぐため、当社がお客様から収集した以下の個人情報等は、お客様が利用されているカード発行会社へ提供させていただきます。<br>
-                    「IPアドレス」「デバイス情報」「インターネット利用環境に関する情報」<br>
-                    <br>
-                    ・個人情報の第三者提供<br>
-                    お客様が利用されているカードの発行会社が外国にある場合、これらの情報は当該発行会社が所属する国に移転される場合があります。<br>
-                    お客様が未成年の場合、親権者または後見人の承諾を得た上で、本サービスを利用するものとします。
-                </p>
-                <div class="t-checkbox">
-                    <input type="checkbox" id="agreement_3ds" name="agreement_3ds" class="t-checkbox__item" value="1">
-                    <label for="agreement_3ds">同意する</label>
+                      <p class="c-section-heading fs-16">
+                        安全にクレジットカードをご利用いただくため、個人情報保護法に基づく個人データの第三者提供の同意が必要です。<br>
+                        <br>
+                        ・クレジットカード利用上の注意<br>
+                        クレジットカード番号などの情報の盗用による不正利用を防ぐため、当社がお客様から収集した以下の個人情報等は、お客様が利用されているカード発行会社へ提供させていただきます。<br>
+                        「IPアドレス」「デバイス情報」「インターネット利用環境に関する情報」<br>
+                        <br>
+                        ・個人情報の第三者提供<br>
+                        お客様が利用されているカードの発行会社が外国にある場合、これらの情報は当該発行会社が所属する国に移転される場合があります。<br>
+                        お客様が未成年の場合、親権者または後見人の承諾を得た上で、本サービスを利用するものとします。
+                      </p>
+                      <div class="t-checkbox">
+                        <input type="checkbox" id="agreement_3ds" name="agreement_3ds" class="t-checkbox__item" value="1">
+                        <label for="agreement_3ds">同意する</label>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="t-button">
+                    <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
+                  </div>
+                  <!-- /contents -->
                 </div>
+                <!-- footer -->
             </div>
-            </form>
-    <div class="t-button">
-        <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
-    </div>
-    <!-- /contents -->
-</div>
-<!-- footer -->
-                    </div>
 
-                                        <!-- footBnr -->
-                    <div class="footBnr">
-                        <ul>
-                                                                                                                                                        </ul>
-                    </div>
-                    <!-- footBnr / -->
-                    
-                    <!-- /id="F001" class="js-t-wrapper itemDetailBox"-->
-                </div><!-- /primary primary--responsive -->
-                <!-- secondary -->
-                                    <div class="secondary">
-                                    <!-- category -->
-                    <div class="se-news t-sidemenu">
-<h1 class="heading">カテゴリ</h1>
-<div class="container">
-<ul class="newsListWrap t-sidemenu-list">
-<li class="t-sidemenu-sub-ttl">ためせる・もらえる</li><li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058" title="食品"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
-<li class="t-sidemenu-sub-ttl">お店でためす</li><li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php" title="全て"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li></ul>
-</div>
-</div>                    <!-- project-schedule -->
-                                        <!--  /project-schedule -->
-                                        <div class="se-news t-sidemenu">
-                        <h1 class="heading">お届け先</h1>
-                        <div class="container">
-                            <ul class="newsListWrap t-sidemenu-list">
-                                <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664" title="家族配送"><img src="https://stg.tsample.tsite.jp/img/ico29.png" width="18" height="18" alt="">家族配送（4）</a></li>                            </ul>
-                        </div>
-                    </div>
-                                        <!-- /category -->
-                    <!-- non-review-list -->
-                                            <div class="se-news t-sidemenu">
-    <h1 class="heading">未投稿クチコミ　0件</h1>
-    <div class="container">
-        <ul class="cf">
-                    </ul>
-        <a href="https://stg.tsample.tsite.jp/mymenu/basic.php?c=review" class="NotPostedList">
-            <p>クチコミ一覧へ</p>
-        </a>
-    </div>
-</div>
-<style>
-    .reviewContainer {
-        padding: 8px 0;
-        width: auto;
-        position: relative;
-    }
-    .col-l {
-        width: auto;
-        float: left;
-    }
-    .col-l.sideReviewReception p.dlineIco {
-        border: #ff340c dotted 1px;
-        border-radius: 25px;
-        box-sizing: border-box;
-        color: #ff340c;
-        display: inline-block;
-        font-size: 10px !important;
-        height: 50px;
-        line-height: 1.2;
-        padding-top: 9px;
-        text-align: center;
-        width: 50px;
-    }
-    .col-l.sideReviewReception p.dlineIco span {
-        font-size: 13px;
-    }
-    .col-l.sideReviewReception img {
-        display: inline-block;
-        vertical-align: top;
-        width: 50px;
-        height: 50px;
-    }
-    .col-l.sideReviewReception p.dlineIco_ex {
-        background: #ff340c;
-        color: #fff;
-        height: 50px;
-        width: 50px;
-    }
-    .col-r {
-        width: auto;
-        float: right;
-    }
-    .col-r.sideReviewReception p {
-        padding: 0;
-        width: 150px;
-    }
-    .col-r.sideReviewButton a {
-        background: #8cc900;
-        border-radius: 5px;
-        color: #fff;
-        display: inline-block;
-        font-size: 10px;
-        margin-top: 8px;
-        width: 83px;
-        height: 22px;
-    }
-    .col-r.sideReviewButton a p {
-        font-size: 10px;
-        padding: 6px 5px;
-        text-align: center;
-    }
-    .col-r.sideReviewButton a:hover {
-        opacity: 0.8;
-        text-decoration: none;
-    }
-    a.NotPostedList {
-        background-color: #eee;
-        border-radius: 5px;
-        display: block;
-        padding: 10px;
-        text-align: center;
-        -moz-transition: background-color 0.2s linear;
-        -o-transition: background-color 0.2s linear;
-        -webkit-transition: background-color 0.2s linear;
-        transition: background-color 0.2s linear;
-    }
-    a.NotPostedList:hover {
-        background-color: #f7d806;
-    }
-    a.NotPostedList:active {
-        background-color: #f79e05;
-    }
-    a.NotPostedList p {
-        color: #313131;
-    }
-</style>
-                                        <!-- /non-review-list -->
-                    <!-- t-support-menu -->
-                    <div class="se-news t-sidemenu">
-                        <h1 class="heading">サポート</h1>
-                        <div class="container">
-                            <ul class="newsListWrap t-sidemenu-list">
-                                <li><a href="https://stg.tsample.tsite.jp/contents/about.php">Vサンプルとは</a></li>
-                                <li><a href="https://tsite.jp/pt/guide/about/index.pl" target="_blank">Vポイントについて</a></li>
-                                <li><a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php">Vポイントを使いたい</a></li>
-                                <li><a href="https://tsite.jp/" target="_blank">Vポイントサイト</a></li>
-                                <li><a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite" target="_blank">FAQ</a></li>
-                                <li><a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php">Vサンプル事務局へのお問い合わせ</a></li>
-                                <li><a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a></li>
-                                <li><a href="https://stg.tsample.tsite.jp/contents/trade/index.php">特定商取引表示</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /t-support-menu -->
+            <!-- footBnr -->
+            <div class="footBnr">
+              <ul>
+              </ul>
+            </div>
+            <!-- footBnr / -->
 
-                                        <!-- sideBnr -->
-                    <div class="sideBnr">
-                        <ul>
-                                                                                                                                                        <li class="sideBnr-list">
-                                    <a href="http://www.jipc.jp/%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88/" target="_blank" rel="noopener noreferrer">
-                                        <p>
-                                            <img src="https://stg.tsample.tsite.jp/img/side_banner/safety_point.png" alt="あんしんポイント">
-                                        </p>
-                                    </a>
-                                </li>
-                                                                                    </ul>
-                    </div>
-                    <!-- sideBnr / -->
-                    
-                    
+            <!-- /id="F001" class="js-t-wrapper itemDetailBox"-->
+          </div><!-- /primary primary--responsive -->
+          <!-- secondary -->
+          <div class="secondary">
+            <!-- category -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">カテゴリ</h1>
+              <div class="container">
+                <ul class="newsListWrap t-sidemenu-list">
+                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058" title="食品"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li class="t-sidemenu-sub-ttl">お店でためす</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php" title="全て"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>
+                </ul>
+              </div>
+            </div> <!-- project-schedule -->
+            <!--  /project-schedule -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">お届け先</h1>
+              <div class="container">
+                <ul class="newsListWrap t-sidemenu-list">
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664" title="家族配送"><img src="https://stg.tsample.tsite.jp/img/ico29.png" width="18" height="18" alt="">家族配送（4）</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /category -->
+            <!-- non-review-list -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">未投稿クチコミ　0件</h1>
+              <div class="container">
+                <ul class="cf">
+                </ul>
+                <a href="https://stg.tsample.tsite.jp/mymenu/basic.php?c=review" class="NotPostedList">
+                  <p>クチコミ一覧へ</p>
+                </a>
+              </div>
+            </div>
+            <style>
+              .reviewContainer {
+                padding: 8px 0;
+                width: auto;
+                position: relative;
+              }
 
-                </div>
-                <!-- /secondary -->
-                </div><!-- /contents cf contents--responsive -->
+              .col-l {
+                width: auto;
+                float: left;
+              }
 
-                                
-                                
-                                            </div><!-- /main-->
-            <!-- footer -->
-            <footer>
-                <div id="footer">
-                    <ul class="footer-global__nav">
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/">トップ</a>
-                        </li>
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
-                        </li>
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
-                        </li>
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/" target="_blank">プライバシーセンター</a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/terms/" target="_blank">各種規約について</a>
-                        </li>
-                        <li style="border: none;">
-                            <a href="https://privacy.cccmkhd.co.jp/data-transfer/" target="_blank">利用者情報の外部送信について</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://www.cccmkhd.co.jp/" target="_blank">CCCMKホールディングス株式会社</a>
-                        </li>
-                        <li>
-                            <a href="https://www.cccmkhd.co.jp/finance/" target="_blank">CCCライフパートナーズ株式会社</a>
-                        </li>
-                        <li>
-                            <a href="https://tsite.jp/fs/contact/index.pl" target="_blank">Vポイント加盟店の募集</a>
-                        </li>
-                        <li style="border: none;">
-                            <a href="https://tsite.jp/" target="_blank">Vポイントサイト</a>
-                        </li>
-                    </ul>
-                    <p> &copy; CCC MK HOLDINGS Co.,Ltd.</p>
-                </div>
-            </footer>
-            <!-- /footer -->
-            <!-- pageTopScroll -->
-            <p class="pageTopScroll" style="display: none;">
-                <a href=https://stg.tsample.tsite.jp/ "#pageTop">▲ページトップへ</a>
-            </p>
+              .col-l.sideReviewReception p.dlineIco {
+                border: #ff340c dotted 1px;
+                border-radius: 25px;
+                box-sizing: border-box;
+                color: #ff340c;
+                display: inline-block;
+                font-size: 10px !important;
+                height: 50px;
+                line-height: 1.2;
+                padding-top: 9px;
+                text-align: center;
+                width: 50px;
+              }
+
+              .col-l.sideReviewReception p.dlineIco span {
+                font-size: 13px;
+              }
+
+              .col-l.sideReviewReception img {
+                display: inline-block;
+                vertical-align: top;
+                width: 50px;
+                height: 50px;
+              }
+
+              .col-l.sideReviewReception p.dlineIco_ex {
+                background: #ff340c;
+                color: #fff;
+                height: 50px;
+                width: 50px;
+              }
+
+              .col-r {
+                width: auto;
+                float: right;
+              }
+
+              .col-r.sideReviewReception p {
+                padding: 0;
+                width: 150px;
+              }
+
+              .col-r.sideReviewButton a {
+                background: #8cc900;
+                border-radius: 5px;
+                color: #fff;
+                display: inline-block;
+                font-size: 10px;
+                margin-top: 8px;
+                width: 83px;
+                height: 22px;
+              }
+
+              .col-r.sideReviewButton a p {
+                font-size: 10px;
+                padding: 6px 5px;
+                text-align: center;
+              }
+
+              .col-r.sideReviewButton a:hover {
+                opacity: 0.8;
+                text-decoration: none;
+              }
+
+              a.NotPostedList {
+                background-color: #eee;
+                border-radius: 5px;
+                display: block;
+                padding: 10px;
+                text-align: center;
+                -moz-transition: background-color 0.2s linear;
+                -o-transition: background-color 0.2s linear;
+                -webkit-transition: background-color 0.2s linear;
+                transition: background-color 0.2s linear;
+              }
+
+              a.NotPostedList:hover {
+                background-color: #f7d806;
+              }
+
+              a.NotPostedList:active {
+                background-color: #f79e05;
+              }
+
+              a.NotPostedList p {
+                color: #313131;
+              }
+            </style>
+            <!-- /non-review-list -->
+            <!-- t-support-menu -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">サポート</h1>
+              <div class="container">
+                <ul class="newsListWrap t-sidemenu-list">
+                  <li><a href="https://stg.tsample.tsite.jp/contents/about.php">Vサンプルとは</a></li>
+                  <li><a href="https://tsite.jp/pt/guide/about/index.pl" target="_blank">Vポイントについて</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php">Vポイントを使いたい</a></li>
+                  <li><a href="https://tsite.jp/" target="_blank">Vポイントサイト</a></li>
+                  <li><a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite" target="_blank">FAQ</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php">Vサンプル事務局へのお問い合わせ</a></li>
+                  <li><a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/contents/trade/index.php">特定商取引表示</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /t-support-menu -->
+
+            <!-- sideBnr -->
+            <div class="sideBnr">
+              <ul>
+                <li class="sideBnr-list">
+                  <a href="http://www.jipc.jp/%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88/" target="_blank" rel="noopener noreferrer">
+                    <p>
+                      <img src="https://stg.tsample.tsite.jp/img/side_banner/safety_point.png" alt="あんしんポイント">
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- sideBnr / -->
+
+
+
+          </div>
+          <!-- /secondary -->
+        </div><!-- /contents cf contents--responsive -->
+
+
+
+      </div><!-- /main-->
+      <!-- footer -->
+      <footer>
+        <div id="footer">
+          <ul class="footer-global__nav">
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/">トップ</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/" target="_blank">プライバシーセンター</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/" target="_blank">各種規約について</a>
+            </li>
+            <li style="border: none;">
+              <a href="https://privacy.cccmkhd.co.jp/data-transfer/" target="_blank">利用者情報の外部送信について</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://www.cccmkhd.co.jp/" target="_blank">CCCMKホールディングス株式会社</a>
+            </li>
+            <li>
+              <a href="https://www.cccmkhd.co.jp/finance/" target="_blank">CCCライフパートナーズ株式会社</a>
+            </li>
+            <li>
+              <a href="https://tsite.jp/fs/contact/index.pl" target="_blank">Vポイント加盟店の募集</a>
+            </li>
+            <li style="border: none;">
+              <a href="https://tsite.jp/" target="_blank">Vポイントサイト</a>
+            </li>
+          </ul>
+          <p> &copy; CCC MK HOLDINGS Co.,Ltd.</p>
         </div>
-        <!--  //body-wrapper -->
+      </footer>
+      <!-- /footer -->
+      <!-- pageTopScroll -->
+      <p class="pageTopScroll" style="display: none;">
+        <a href=https://stg.tsample.tsite.jp/ "#pageTop">▲ページトップへ</a>
+      </p>
+    </div>
+    <!--  //body-wrapper -->
 
-        <script language="JavaScript" type="text/JavaScript">
+    <script language="JavaScript" type="text/JavaScript">
     function check_coupon() {
         $('input[name=coupon_take_flg]').val('1');
         var url = 'coupon.exec.php';
@@ -892,45 +947,46 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 </script>
-        <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
-                    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-                <script src="/js/t.js"></script>
-        <script src="/js/announce_toggle.js?2026021912" async></script>
-        <!-- hamburgerMenu -->
-        <script>
-            $(document).ready(function(){
-                // メインコンテンツをヘッダーの高さ分だけずらす
-                var headerHeight = $('header').outerHeight();
-                $('main').css('padding-top', headerHeight + 'px');
-                $('#menu').css('margin-top', headerHeight + 'px');
+    <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/t.js"></script>
+    <script src="../js/announce_toggle.js?2026021912" async></script>
+    <!-- hamburgerMenu -->
+    <script>
+      $(document).ready(function () {
+        // メインコンテンツをヘッダーの高さ分だけずらす
+        var headerHeight = $('header').outerHeight();
+        $('main').css('padding-top', headerHeight + 'px');
+        $('#menu').css('margin-top', headerHeight + 'px');
 
-                // MENUボタンがクリックされたときの処理
-                $('#menu_btn').on('click', function(){
-                    if($(this).hasClass('active')) {
-                        $(this).removeClass('active');
-                        $(this).text('MENU');
-                        $('#menu').removeClass('open');
-                        $('.menu-background').removeClass('open');
-                    } else {
-                        $(this).addClass('active');
-                        $(this).text('CLOSE');
-                        $('#menu').addClass('open');
-                        $('.menu-background').addClass('open');
-                    }
-                });
+        // MENUボタンがクリックされたときの処理
+        $('#menu_btn').on('click', function () {
+          if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).text('MENU');
+            $('#menu').removeClass('open');
+            $('.menu-background').removeClass('open');
+          } else {
+            $(this).addClass('active');
+            $(this).text('CLOSE');
+            $('#menu').addClass('open');
+            $('.menu-background').addClass('open');
+          }
+        });
 
-                // メニューの背景がクリックされたときの処理
-                $('.menu-background').on('click', function(){
-                    if($(this).hasClass('open')) {
-                        $(this).removeClass('open');
-                        $('#menu_btn').removeClass('active').text('MENU');
-                        $('#menu').removeClass('open');
-                    }
-                });
-            });
-        </script>
+        // メニューの背景がクリックされたときの処理
+        $('.menu-background').on('click', function () {
+          if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('#menu_btn').removeClass('active').text('MENU');
+            $('#menu').removeClass('open');
+          }
+        });
+      });
+    </script>
 
-        
-    </body>
+
+  </body>
+
 </html>

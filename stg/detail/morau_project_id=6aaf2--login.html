@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
     <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-    <title>申し込み内容確認 | Vサンプル｜Vポイントが貯まる・使える Vサンプル</title>
+    <title>モラご確認用A もらえる｜Vポイントが貯まる・使える Vサンプル</title>
 
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.v3.3.7--scope.css?2026021912">
 
@@ -91,10 +91,55 @@
     <!-- End Google Tag Manager -->
 
 
+    <script>
+      $(function () {
+        $(document).on('click', "[id^='order-button']", function () {
+          var $adultPermission = $('#adult-permission');
+
+          if ($adultPermission.length && !$adultPermission.prop('checked')) {
+            alert('20歳以上の方はチェックを入れてください');
+            return;
+          }
+
+          location.href = "https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=6aaf2";
+        });
+
+        $(document).on("change", "[id^='adult-permission']", function () {
+          if ($("#" + this.id).prop('checked')) {
+            $("[id^='adult-permission']").prop("checked", true);
+          } else {
+            $("[id^='adult-permission']").prop("checked", false);
+          }
+        });
+      });
+    </script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script async src="https://fam.adingo.jp/bid-strap/tsample/pb.js"></script>
+    <script>
+      var bsttag = window.bsttag || { cmd: [] };
+      bsttag.failSafeTimeout = 3000; //header bidding全体のタイムアウト
+      bsttag.launchAuction = function (slots) {
+
+        var hbm = {};
+        bsttag.cmd.push(function (cmd) {
+          hbm = cmd.requestBids({ adUnits: slots });
+        });
+
+        setTimeout(function () {
+          if (hbm.isRequestSent) {
+            return;
+          }
+          hbm.isRequestSent = true;
+          googletag.cmd.push(function () {
+            googletag.pubads().refresh(slots);
+          });
+        }, bsttag.failSafeTimeout);
+      };
+    </script>
 
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
+  <body class="bootstrap-v3-3-7--scope itemDetail itemDetail-mora">
     <!-- Google Tag Manager (noscript) TSAMPLE-->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -108,7 +153,7 @@
                 <!-- logo -->
                 <h1>
                   <a href="https://stg.tsample.tsite.jp/">
-                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
+                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
                     <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
                   </a>
                 </h1>
@@ -241,311 +286,180 @@
         <div class="contents cf contents--responsive">
           <div class="primary primary--responsive">
             <div id="F001" class="js-t-wrapper itemDetailBox">
-              <script language="Javascript" type="text/JavaScript">
-    <!--
-    var gflg = true;
-    function go_next() {
-        var c = gflg;
-        if (c) {
-            gflg = false;
-            document.frm.submit();
-        }
-        return false;
-    }
-
-    function back() {
-        document.frm.action = "https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df";
-        document.frm.submit();
-    }
-    //-->
-</script>
               <!-- breadCrumbs -->
-              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ためせる商品詳細</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df">ためせる商品アンケート回答</a> ＞ためせる商品申し込み内容確認</p>
+              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる商品一覧</a> ＞もらえる商品情報</p>
               <!-- /breadCrumbs -->
               <!-- sub header -->
               <div class="t-sub-header">
-                <h2>配送先・申し込み内容確認</h2>
+                <h2>商品詳細</h2>
               </div>
               <!-- /sub header -->
-              <p style="padding:15px;color:red;border:1px solid red;font-size:13px;text-align:center;margin-bottom:12px;">
-                別タブなどで他のページを開くと、申し込みのお手続きがやり直しとなりますのでご注意ください。
-              </p>
               <!-- contents -->
-              <div id="select-address">
-                <fieldset>
-                  <div class="t-radio input radio">
-                    <div class="t-table">
-                      <table class="t-table__block" width="100%">
-                        <tbody>
-                          <tr>
-                            <th>お名前</th>
-                            <td>岩井　貴寛</td>
-                          </tr>
-                          <tr>
-                            <th>フリガナ</th>
-                            <td>イワイ　タカヒロ</td>
-                          </tr>
-                          <tr>
-                            <th>郵便番号</th>
-                            <td>134-0084</td>
-                          </tr>
-                          <tr>
-                            <th>都道府県</th>
-                            <td>東京都</td>
-                          </tr>
-                          <tr>
-                            <th>市区町村・番地</th>
-                            <td>江戸川区東葛西8-32</td>
-                          </tr>
-                          <tr>
-                            <th>建物名・<br>部屋番号等</th>
-                            <td>a</td>
-                          </tr>
-                          <tr>
-                            <th>電話番号</th>
-                            <td>03-5486-3530</td>
-                          </tr>
-                          <tr>
-                            <th>メールアドレス</th>
-                            <td>mod_develop+vsample202500105_2@cm-group.co.jp</td>
-                          </tr>
-                        </tbody>
-                      </table>
+              <div class="t-head">
+                <h2 class="t-head__text">
+                  モラご確認用A </h2>
+              </div>
+              <!-- carousel -->
+              <div class="t-bx__wrapper">
+                <div class="t-bx__viewport">
+                  <div class="bx">
+                    <div class="t-bx__slide">
+                      <div>
+                        <a href="javascript:;">
+                          <img src="https://stg.tsample.tsite.jp/img/project/2304_20260213_184437.png">
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </fieldset>
+                </div>
               </div>
+              <!-- /carousel -->
               <div class="t-crosshead">
                 <div class="t-crosshead__inner">
-                  <h2 class="t-crosshead__text">申し込み内容</h2>
+                  <h2 class="t-crosshead__text">商品情報</h2>
                 </div>
               </div>
-              <ul class="t-media">
-                <li>
-                  <div class="t-media__inner">
-                    <div class="t-media__img">
-                      <img src="https://stg.tsample.tsite.jp/img/project/" width="80" alt="">
-                    </div>
-                    <div class="t-media__body">
-                      <p class="t-media__body-title">
-                        <span><em>ギフトコードK5 200件</em>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <form name="frm" id="frm" method="post" action="https://stg.tsample.tsite.jp/detail/order_sbps_pay.php" class="t-form">
-                <div class="t-table">
-                  <table class="t-table__block">
-                    <tbody>
-                      <tr>
-                        <th>ギフトコード価格</th>
-                        <td>198円</td>
-                      </tr>
-                      <tr>
-                        <th>合計</th>
-                        <td class="cell-strong">198円</td>
-                      </tr>
-                      <tr class="t-point-border">
-                        <th>ご利用Vポイント</th>
-                        <td>
-                          <input type="tel" max="198" min="0" id="use_point" name="use_point" style="width: 6rem;margin-bottom: 10px;" placeholder="0" value="">
-                          <br><button type="button" id="all_point" style="box-shadow: 1px 1px #000000;margin-bottom: 10px;border-radius: 30px;">全額Vポイントで支払い</button>
+              <div class="t-table">
+                <table class="t-table__block">
+                  <tbody>
+                    <tr>
+                      <th>提供元</th>
+                      <td>テスト</td>
+                    </tr>
+                    <tr>
+                      <th>アンケート</th>
+                      <td>「お申し込み前」回答</td>
+                    </tr>
+                    <tr>
+                      <th>応募期間</th>
+                      <td>2026年02月13日(金)18:44&nbsp;～<br>2027年02月13日(土)23:59</td>
+                    </tr>
+                    <tr>
+                      <th>当選数</th>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <th>発送予定日</th>
+                      <td>2027年02月13日(土)</td>
+                    </tr>
 
-                          <script>
-
-                            $(function () {
-                              $('#use_point').change(function () {
-                                val_check();
-                              });
-
-                              $('#use_point').keyup(function () {
-                                val_check();
-                              });
-
-                              $('#all_point').click(function () {
-                                all_point();
-                              });
-
-                              $('#all_point_use').click(function () {
-                                all_point_use();
-                              });
-
-                              // エンターキーを無効化
-                              $("input").keydown(function (e) {
-                                if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
-                                  return false;
-                                } else {
-                                  return true;
-                                }
-                              });
-
-                              $('#use_point').trigger('change');
-                            });
-
-
-                            // 全額ポイント支払い
-                            function all_point() {
-                              $('#use_point').val($('#pay_sum_def').val());
-                              val_check();
-                            }
-
-                            // ポイント全部使用
-                            function all_point_use() {
-                              $('#use_point').val(198);
-                              val_check();
-                            }
-
-                            // 半角数値以外は認めない
-                            function hankaku2Zenkaku(str) {
-                              if (!String(str).match(/^\d+$/)) {
-
-                                if ($('#use_point').val() != "") {
-                                  $('#use_point').val("");
-                                  window.alert("ポイント数に半角の数値以外は入力できません。");
-                                }
-                                return 0;
-                              } else {
-                                return 1;
-                              }
-                            }
-
-                            function val_check() {
-
-                              var tmp = $('#use_point').val();
-
-                              // マイナス削除処理
-                              tmp = tmp.replace("ー", "");
-                              tmp = tmp.replace("−", "");
-
-                              // ゼロ始まりの数値はあり得ないので、入力禁止
-                              if (tmp[0] == "0") {
-                                tmp = "";
-                              }
-
-                              $('#use_point').val(tmp);
-
-                              // 半角数値以外は認めない
-                              hankaku2Zenkaku($('#use_point').val())
-
-                              // 合計金額計算
-                              var pay_sum = $('#pay_sum_def').val() - $('#use_point').val();
-
-                              // 0円以下にはできないようにする
-                              if (pay_sum < 0) {
-                                pay_sum = 0;
-                                $('#use_point').val($('#pay_sum_def').val());
-                              }
-
-                              // 保有ポイント以上の処理はできないようにする
-                              if ($('#use_point').val() > 198) {
-                                pay_sum = $('#pay_sum_def').val() - 198;
-                                $('#use_point').val(198);
-                              }
-
-
-                              // カンマ区切り表示に変更
-                              var v_pay_sum = new Intl.NumberFormat('ja-JP').format(pay_sum);
-                              // 計算結果を反映
-                              $("#pay_sum").html(v_pay_sum + "");
-
-                              if (pay_sum == 0) {
-                                $("#pay_type").html("ポイント払い");
-                                $("#card_number").css('display', 'none');
-                              } else {
-                                $("#pay_type").html("クレジットカード一括払い");
-                                $("#card_number").css('display', '');
-                              }
-
-                              if (pay_sum < 10 && pay_sum != 0) {
-                                $("#submit_btn").html('<button type="button" class="t-button__default t-button__smallText t-button--disable">決済金額をご確認ください</button>');
-                                $("#err_msg").html("Vポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにVポイントのご利用数を変更してください。");
-                              } else {
-                                $("#submit_btn").html('<button onclick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue">申し込みを確定する</button>');
-                                $("#err_msg").html("");
-                              }
-
-                            }
-
-                          </script>
-                          <br><span>(Vポイント：10,000ポイント保有)</span>
-
-
-
-                        </td>
-                      </tr>
-                      <tr class="t-point-border">
-                        <th>合計</th>
-                        <input type="hidden" id="pay_sum_def" value="198">
-                        <td class="cell-strong">
-                          <span class="t-point__point"><span id="pay_sum" class="t-point__point__num">198</span>円（税込）</span><br>
-                          <span style="" class="t-table__t-point__notice" id="pay_sum_msg">Vポイントをご利用の場合、「合計」が1～9円となる決済ができません。「合計」が0円または、10円以上になるようにVポイントを利用してください。</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>獲得Vポイント<br></th>
-                        <td>0 ポイント</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="t-table">
-                  <table class="t-table__block">
-                    <tbody>
-                      <tr>
-                        <th>支払方法</th>
-                        <td id="pay_type">クレジットカード一括払い</td>
-                      </tr>
-                      <tr id="card_number">
-                        <th>カード番号</th>
-                        <td>****-****-****-0004</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div style="border: solid;border-color: red;color: red;padding: 1rem;">
-                  <p style="font-weight: bold;margin-bottom: 15px;">特定商取引の表示についてのご案内</p>
-                  <p>◆支払の時期・方法について</p>
-                  <p style="margin-bottom: 0.5rem;">各クレジットカード会社の引き落とし日及び支払い方法に準ずる</p>
-                  <p>◆引渡時期・提供時間</p>
-                  <p style="margin-bottom: 0.5rem;">各商品詳細ページでご案内している発送予定日から約3日以内。※お届け日、時間指定は承っておりません</p>
-                  <p>◆申込みの期間</p>
-                  <p style="margin-bottom: 0.5rem;">2026年01月08日　から 2028年01月08日</p>
-                  <p>◆申込みの撤回・解除に関する事項</p>
-                  <p style="margin-bottom: 2rem;">会員様都合でのご返品はお受け出来ません。
-                    万が一、商品が破損していた場合には、商品到着後3日以内に事務局へのメールにてお問い合わせください。
-                    商品破損の場合、ご返品の際の送料およびご返金に必要な手数料は弊社の負担とさせていただきます）。</p>
-
-                  <p><a href="https://tsample.tsite.jp/contents/trade/index.php">&gt;特定商取引に基づく表記</a></p>
-                </div>
-
-                <div class="t-text" style="margin-top:0;">
-                  <div class="t-text__small monitor-text__red">
-                    <p>※こちらの商品の発送は、1個口で発送になります。</p>
+                  </tbody>
+                </table>
+              </div>
+              <form id="form-order" method="post" action="https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=6aaf2" class="t-form">
+                <div class="t-text t-attention-terms">
+                  <div class="t-text">
+                    <p class="t-text__middle">※<a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                   </div>
                 </div>
-                <input type="hidden" name="project_id" value="fe6df">
-                <input type="hidden" name="amount" value="198" />
-                <input type="hidden" name="pay" value="5" />
-                <input type="hidden" name="commodity" value="" />
-                <input type="hidden" name="ship_option" value="" />
-
-
-
-
-                <div class="t-button" id="submit_btn">
-                  <button onClick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue" id="submit_btn">申し込みを確定する</button>
-                </div>
-                <div style="text-align: center;color: red;"><span id="err_msg"></span></div>
-                <div class="t-button">
-                  <div class="t-arrow_left">
-                    <button class="t-button__default t-button__smallText" onClick="javascript:back()">戻る</button>
-                  </div>
-                </div>
-                <input type="hidden" name="order_tmp_id" value="2131">
+                <div class="t-button"><button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button></div>
               </form>
-              <!-- /contents -->
+              <div class="t-crosshead">
+                <div class="t-crosshead__inner">
+                  <h2 class="t-crosshead__text">商品説明</h2>
+                </div>
+              </div>
+              <div class="t-text">
+                <div id="g3">
+                  <div class="t-text">
+                    <div class="t-text__middle">
+                      <!-- contentsarea__box -->
+                      <div class="monitor-contentsarea__box">
+                        <section class="monitor-caption__box">
+                          <div class="t-subhead">
+                            <h3 class="t-subhead__text">
+                              <span style="font-weight: bold;">新しい季節もビールで華やかに♪春の全国ビール共通券プレゼントキャンペーン
+
+                              </span>
+                            </h3>
+                          </div>
+                          <div class="t-text">
+                            <p>お好きなアサヒ・キリン・サッポロ・サントリーの缶ビールいずれか2本と交換できる！<br><br>全国のコンビニエンスストア、スーパーマーケット、デパート等の缶ビール商品取扱店で交換できます。<br><br>
+                              ※本券の有効期限は【2033年3月31日】です。<br>
+                              ※販売価格や消費税の影響により、ビール券の額面を上回る場合がございます。<br>
+                              ※その際は、不足分を現金でお支払いいただく場合がございます。ご利用前に店舗にて、差額の有無をご確認ください。</p>
+                          </div>
+                        </section>
+                      </div>
+                      <!-- /contentsarea__box -->
+                      <!-- attention__box1 -->
+                      <div class="monitor-contentsarea__box">
+                        <div class="monitor-attention__box">
+                          <div class="t-text">
+                            <p class="t-text">
+                              <span style="font-weight: bold;">【ご注意事項】</span>
+                            </p>
+                            <p class="t-text__small">
+                              ・当選者の発表は商品の発送を持って代えさせていただきます。<br>
+                              ・本企画の当選可否についてのお問い合わせはお答えできませんのでご了承下さい。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /attention__box1 -->
+                      <!-- attention2__box -->
+                      <div class="t-crosshead">
+                        <div class="t-crosshead__inner">
+                          <h2 class="t-crosshead__text">配送に関する注意事項</h2>
+                        </div>
+                      </div>
+                      <!--accordion-->
+                      <div class="t-accordion t-border-top">
+                        <dl id="faq01">
+                          <dt class="t-accordion__title js-t-accordion t-arrow_down fs_16">
+                            <font size="2">1.配送方法</font>
+                          </dt>
+                          <dd class="t-accordion__items" style="display: none;">
+                            <div class="t-accordion__item">
+                              本商品は「普通郵便」でのお届けを予定しております。<br>
+                              ※投函後の盗難、紛失・破損した場合でも補償はございません。予めご了承ください。<br>
+                              ※万が一、配送に伴うトラブルが発生した場合におきましても、Vサンプル事務局でお荷物の追跡等ができない場合があります。あらかじめご了承ください。
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <!--/accordion-->
+                      <!-- /attention2__box -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="t-text t-attention-terms">
+                <div class="t-text">
+                  <p class="t-text__middle">※<a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
+                </div>
+              </div>
+              <div class="t-button"><button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button></div><!-- /contents -->
+              <div class="t-button t-button2" style="margin: 0 0 40px;;">
+                <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">
+                  クチコミを投稿する
+                </button>
+              </div>
+              <script>
+                $(function () {
+                  $(document).on('click', "[id^='review-button']", function () {
+                    window.location.href = 'https://stg.tsample.tsite.jp/detail/cmt.php?project_id=6aaf2#anchor01';
+                  });
+                });
+              </script>
+              <style>
+                .t-button__yellow {
+                  display: block;
+                  margin: auto;
+                  width: 90%;
+                  border: none;
+                  background: #fff100;
+                  background: -webkit-gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
+                  background: gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
+                  color: #000000;
+                  cursor: pointer;
+                }
+
+                .disabled {
+                  height: initial;
+                  border: initial;
+                }
+              </style>
               <!-- footer -->
             </div>
 
@@ -726,12 +640,92 @@
             </div>
             <!-- sideBnr / -->
 
+            <!-- PC版サイドメニュー下部 -->
+            <script>
+              window.googletag = window.googletag || { cmd: [] };
+              googletag.cmd.push(function () {
+                var slots = [];
+                slots.push(
+                  googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-rightcolumn-under_30195', [[200, 200], [300, 250]], 'pc_tsample_all-pages-rightcolumn-under').addService(googletag.pubads())
+                )
+
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
+                googletag.enableServices();
+                bsttag.launchAuction(slots);
+
+                googletag.display('pc_tsample_all-pages-rightcolumn-under');
+              });
+            </script>
+            <!-- //PC版サイドメニュー下部 -->
+
+            <!-- Google広告表示部分 PC版サイドメニュー下部 -->
+            <p style="text-align: center; margin-bottom:5px;">&lt;PR&gt;</p>
+            <div id="pc_tsample_all-pages-rightcolumn-under"></div>
+            <!-- //Google広告表示部分 PC版サイドメニュー下部 -->
+
 
 
           </div>
           <!-- /secondary -->
         </div><!-- /contents cf contents--responsive -->
 
+        <!-- Google広告表示部分 ページ下部 -->
+        <p style="text-align: center; margin-top: 100px; margin-bottom:5px;">&lt;PR&gt;</p>
+        <div id="sp_tsample_all-pages-site-under1" class="sp-under-gas"></div>
+        <div id="pc-tsample-all-pages-site-container">
+          <div id="pc_tsample_all-pages-site-under1"></div>
+          <div id="pc_tsample_all-pages-site-under2"></div>
+        </div>
+        <p style="padding-top: 50px;"></p>
+        <!-- //Google広告表示部分 ページ下部 -->
+
+        <script>
+          window.googletag = window.googletag || { cmd: [] };
+          googletag.cmd.push(function () {
+
+            function randomInt(min, max) {
+              return Math.floor(Math.random() * (max + 1 - min)) + min;
+            }
+
+            var slots = [];
+            var isPC = window.innerWidth > 960;
+
+            if (isPC) {
+              var pcContainer = document.getElementById("pc-tsample-all-pages-site-container");
+              pcContainer.style.justifyContent = "center";
+              pcContainer.style.textAlign = "center";
+              var ad1 = document.getElementById("pc_tsample_all-pages-site-under1");
+              var ad2 = document.getElementById("pc_tsample_all-pages-site-under2");
+
+              pcContainer.style.display = "flex";
+              ad1.style.marginRight = "20px";
+              ad2.style.marginLeft = "20px";
+              slots.push(
+                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under1_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under1').addService(googletag.pubads()),
+                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under2_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under2').addService(googletag.pubads())
+              )
+            } else {
+              slots.push(
+                googletag.defineSlot('/62532913,22528941850/s_tsample_300x250_all-pages-site-under1_30196', [[250, 250], [336, 280], [320, 50], [320, 480], 'fluid', [300, 250], [320, 180], [336, 180], [200, 200], [300, 280], [320, 100], [300, 300], [300, 600], [240, 400], [300, 360]], 'sp_tsample_all-pages-site-under1').addService(googletag.pubads())
+              )
+            }
+
+            googletag.pubads().setTargeting("fluct_ad_group", String(randomInt(1, 10)));
+            googletag.pubads().disableInitialLoad();
+            googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
+            googletag.enableServices();
+            bsttag.launchAuction(slots);
+
+            if (isPC) {
+              googletag.display('pc_tsample_all-pages-site-under1');
+              googletag.display('pc_tsample_all-pages-site-under2');
+            } else {
+              googletag.display('sp_tsample_all-pages-site-under1');
+            }
+          });
+        </script>
+        <!-- 全ページ下部 -->
 
 
       </div><!-- /main-->

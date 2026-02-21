@@ -1,810 +1,844 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ja">
-    <head>
-        <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
-        <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
-        <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
-        <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-        <title>少額でためせる商品一覧 - 申し込み受付中！｜Vポイントが貯まる・使える Vサンプル</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
+    <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
+    <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
+    <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.v3.3.7--scope.css?2026021912">
+    <title>少額でためせる商品一覧 - 申し込み受付中！｜Vポイントが貯まる・使える Vサンプル</title>
 
-        <link rel="stylesheet" type="text/css" href="/css/reset.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/properties.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/main.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/layout.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/module.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/style--common-sp-and-pc.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/reset-old-style--jp.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/style--pc.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/style--sp.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/t.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/pass_monitor.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/t-sample.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.v3.3.7--scope.css?2026021912">
 
-        <!-- Slick -->
-        <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026021912">
-        <link rel="stylesheet" type="text/css" href="/css/p9255-common--pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/properties.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/main.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/module.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/style--common-sp-and-pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/reset-old-style--jp.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/style--pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/style--sp.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/t.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/pass_monitor.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/t-sample.css?2026021912">
 
-        <!--slideUp Down-->
-        <script src="https://stg.tsample.tsite.jp/plugins/jquery/jquery-3.2.1.min.js"></script>
-        <script>
-            $(function(){
-                $('.slideup').click(function(){
-                    // スライドアップ
-                    $('.input_area').slideUp(200);
-                });
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="../css/p9255-common--pc.css?2026021912">
 
-                $('.slidedown').click(function(){
-                    // スライドダウン
-                    $('.input_area').slideDown(300);
-                });
-            });
+    <!--slideUp Down-->
+    <script src="https://stg.tsample.tsite.jp/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function () {
+        $('.slideup').click(function () {
+          // スライドアップ
+          $('.input_area').slideUp(200);
+        });
 
-            $(function(){
-                $('.slideup2').click(function(){
-                    // スライドアップ
-                    $('.input_area2').slideUp(200);
-                });
+        $('.slidedown').click(function () {
+          // スライドダウン
+          $('.input_area').slideDown(300);
+        });
+      });
 
-                $('.slidedown2').click(function(){
-                    // スライドダウン
-                    $('.input_area2').slideDown(300);
-                });
-            });
+      $(function () {
+        $('.slideup2').click(function () {
+          // スライドアップ
+          $('.input_area2').slideUp(200);
+        });
 
-            $(function(){
-                $('.slideup3').click(function(){
-                    // スライドアップ
-                    $('.input_area3').slideUp(200);
-                });
+        $('.slidedown2').click(function () {
+          // スライドダウン
+          $('.input_area2').slideDown(300);
+        });
+      });
 
-                $('.slidedown3').click(function(){
-                    // スライドダウン
-                    $('.input_area3').slideDown(300);
-                });
-            });
-        </script>
+      $(function () {
+        $('.slideup3').click(function () {
+          // スライドアップ
+          $('.input_area3').slideUp(200);
+        });
 
-        
-        <!-- postalcode_address -->
-        <script src="/plugins/ajaxzip3/ajaxzip3.js"></script>
+        $('.slidedown3').click(function () {
+          // スライドダウン
+          $('.input_area3').slideDown(300);
+        });
+      });
+    </script>
 
-        <!-- FontAwesome -->
-        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-                    <!-- Google Tag Manager TSAMPLE-->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KHX6JPD');</script>
-            <!-- End Google Tag Manager -->
-        
-        
-            <link rel="stylesheet" type="text/css" href="/css/triangle.css?2026021912">
+    <!-- postalcode_address -->
+    <script src="../plugins/ajaxzip3/ajaxzip3.js"></script>
+
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Google Tag Manager TSAMPLE-->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KHX6JPD');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <link rel="stylesheet" type="text/css" href="../css/triangle.css?2026021912">
     <script type="text/javascript" src="https://stg.tsample.tsite.jp/js/heightLine.js"></script><!--ブロックレベル要素の高さを揃える-->
-                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script async src="https://fam.adingo.jp/bid-strap/tsample/pb.js"></script>
-<script>
-    var bsttag = window.bsttag || {cmd: []};
-    bsttag.failSafeTimeout = 3000; //header bidding全体のタイムアウト
-    bsttag.launchAuction = function (slots) {
-        
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script async src="https://fam.adingo.jp/bid-strap/tsample/pb.js"></script>
+    <script>
+      var bsttag = window.bsttag || { cmd: [] };
+      bsttag.failSafeTimeout = 3000; //header bidding全体のタイムアウト
+      bsttag.launchAuction = function (slots) {
+
         var hbm = {};
-        bsttag.cmd.push(function(cmd) {
-            hbm = cmd.requestBids({adUnits: slots});
+        bsttag.cmd.push(function (cmd) {
+          hbm = cmd.requestBids({ adUnits: slots });
         });
 
         setTimeout(function () {
-            if (hbm.isRequestSent) {
-                return;
-            }
-            hbm.isRequestSent = true;
-            googletag.cmd.push(function() {
-                googletag.pubads().refresh(slots);
-            });
+          if (hbm.isRequestSent) {
+            return;
+          }
+          hbm.isRequestSent = true;
+          googletag.cmd.push(function () {
+            googletag.pubads().refresh(slots);
+          });
         }, bsttag.failSafeTimeout);
-    };
-</script>
+      };
+    </script>
 
-    </head>
-            <body id="itemList" class="bootstrap-v3-3-7--scope">    
-            <!-- Google Tag Manager (noscript) TSAMPLE-->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-    
-            <div class="body-wrapper">
-                            <div class="p-masthead">
-                            <div class="l-conteiner">
-                    <header>
-                        <div class="p-masthead__top_box header-contents">
-                            <div class="p-masthead__top">
-                                <!-- logo -->
-                                <h1>
-                                    <a href="https://stg.tsample.tsite.jp/">
-                                        <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
-                                        <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://stg.tsample.tsite.jp/img/logo_v.png" width="792">
-                                    </a>
-                                </h1>
-                                                                                                    <div class="p-masthead__labels-sns-btns-wrap pc">
-                                        <ul class="p-masthead__text-links">
-                                            <li>
-                                                <a href="https://tsite.jp/">Vポイントサイト</a>
-                                            </li>
-                                        </ul>
-                                        <div class="p9225-masthead__buttons">
-                                            <ul class="p-masthead__labels announce-container">
-                                                                                                <li>
-                                                    <a href="https://stg.tsample.tsite.jp/contents/about.php" class="c-label--masthead"><img src="https://stg.tsample.tsite.jp/img/wakaba-mark.png" width="11" height="15" alt=""/>はじめての方へ</a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://stg.tsite.jp/tm/pc/auth/STKIp1101000.do?net_id=2162&s=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param=&s_back=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param_back=QD0x5IACH6bllxbounBHiA%3D%3D" class="c-label--masthead">
-                                                        ログイン
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                                                <!-- /topMenu_pc -->
-                                <!-- topMenu_sp -->
-                                                                    <div class="sp-header-menu sp">
-                                                                                <div class="sp-header-menu_component sp-header-menu_component-wakaba">
-                                            <a href="https://stg.tsample.tsite.jp/contents/about.php">
-                                                <img src="https://stg.tsample.tsite.jp/img/btn-wakaba.png" alt="初めての方へ"/>
-                                            </a>
-                                        </div>
-                                        <div class="sp-header-menu_component sp-header-menu_component-login">
-                                                                                            <a href="https://stg.tsite.jp/tm/pc/auth/STKIp1101000.do?net_id=2162&s=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param=&s_back=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param_back=QD0x5IACH6bllxbounBHiA%3D%3D">
-                                                    <img src="/img/btn-login.png" alt="ログイン"/>
-                                                </a>
-                                                                                    </div>
-                                        <div id="menu_btn" class="sp-header-menu_component sp-header-menu_component-hbg">MENU</div>
-                                    </div>
-                                                                <!-- /topMenu_sp -->
-                            </div>
-                        </div>
-                    </header>
-                    <!-- HBGmenu_Open -->
-                    <div id="menu">
-                        <ul>
-                            <!-- category -->
-                            <li class="menu__item">    <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>    <ul class="submenu" style="display: none;"><li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>      <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li><li class="t-sidemenu-sub-ttl">お店でためす</li><li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>    </ul></li>                                                            <a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664"><li>家族配送（4）</li></a>                                                        <!-- /category -->
+  </head>
 
-                                                        <a href="https://stg.tsample.tsite.jp/contents/about.php"><li>Vサンプルとは</li></a>
-                            <a href="https://tsite.jp/pt/guide/about/index.pl"><li>Vポイントについて</li></a>
-                            <a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php"><li>Vポイントを使いたい</li></a>
-                            <a href="https://tsite.jp/"><li>Vポイントサイト</li></a>
-                            <a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite"><li>FAQ</li></a>
-                            <a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php"><li>Vサンプル事務局へのお問い合わせ</li></a>
-                            <a href="https://privacy.cccmkhd.co.jp/terms/sample/"><li>Vサンプル利用規約</li></a>
-                            <a href="https://stg.tsample.tsite.jp/contents/trade/index.php"><li>特定商取引表示</li></a>
-                        </ul>
-                    </div>
-                    <div class="menu-background"></div>
-                    <!-- /HBGmenu_Open -->
+  <body id="itemList" class="bootstrap-v3-3-7--scope">
+    <!-- Google Tag Manager (noscript) TSAMPLE-->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-                    <!-- accordion-menu -->
-                    <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない　-->
-                                            <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-                                        <script>
-                        $(function(){
-                            $('.js-menu__item__link').each(function(){
-                                $(this).on('click',function(){
-                                    $(this).toggleClass('on');
-                                    $("+.submenu",this).slideToggle();
-                                    return false;
-                                });
-                            });
-                        });
-                    </script>
-                    <!-- /accordion-menu -->
-
-                    <script type="text/javascript">
-                        $('.p-masthead__soon').on('click', function() {
-                            $("#p-masthead__soon").toggle();
-                        });
-                        $(document).on('click', '.s_boxHeadline', function() {
-                            $("#p-masthead__soon").css("display", "none")
-                        });
-                    </script>
-
-                    <!-- topTabMenu_pc -->
-                                            <ul class="p-masthead__nav p-masthead__nav_tamepage">
-                                            <li class="p-masthead__nav__top">
-                            <a href="https://stg.tsample.tsite.jp/">トップ</a>
-                        </li>
-                        <li class="p-masthead__nav__tame">
-                            <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
-                        </li>
-                        <li class="p-masthead__nav__mora">
-                            <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
-                        </li>
-                        <li class="p-masthead__nav__mise">
-                            <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
-                        </li>
+    <div class="body-wrapper">
+      <div class="p-masthead">
+        <div class="l-conteiner">
+          <header>
+            <div class="p-masthead__top_box header-contents">
+              <div class="p-masthead__top">
+                <!-- logo -->
+                <h1>
+                  <a href="https://stg.tsample.tsite.jp/">
+                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
+                    <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
+                  </a>
+                </h1>
+                <div class="p-masthead__labels-sns-btns-wrap pc">
+                  <ul class="p-masthead__text-links">
+                    <li>
+                      <a href="https://tsite.jp/">Vポイントサイト</a>
+                    </li>
+                  </ul>
+                  <div class="p9225-masthead__buttons">
+                    <ul class="p-masthead__labels announce-container">
+                      <li>
+                        <a href="https://stg.tsample.tsite.jp/contents/about.php" class="c-label--masthead"><img src="https://stg.tsample.tsite.jp/img/wakaba-mark.png" width="11" height="15" alt="" />はじめての方へ</a>
+                      </li>
+                      <li>
+                        <a href="https://stg.tsite.jp/tm/pc/auth/STKIp1101000.do?net_id=2162&s=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param=&s_back=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param_back=QD0x5IACH6bllxbounBHiA%3D%3D" class="c-label--masthead">
+                          ログイン
+                        </a>
+                      </li>
                     </ul>
-                    <!-- /topTabMenu_pc -->
+                  </div>
                 </div>
+                <!-- /topMenu_pc -->
+                <!-- topMenu_sp -->
+                <div class="sp-header-menu sp">
+                  <div class="sp-header-menu_component sp-header-menu_component-wakaba">
+                    <a href="https://stg.tsample.tsite.jp/contents/about.php">
+                      <img src="https://stg.tsample.tsite.jp/img/btn-wakaba.png" alt="初めての方へ" />
+                    </a>
+                  </div>
+                  <div class="sp-header-menu_component sp-header-menu_component-login">
+                    <a href="https://stg.tsite.jp/tm/pc/auth/STKIp1101000.do?net_id=2162&s=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param=&s_back=ZldbSy2E63CaY1IQyDSKLA%3D%3D&url_param_back=QD0x5IACH6bllxbounBHiA%3D%3D">
+                      <img src="https://tsample.tsite.jp//img/btn-login.png" alt="ログイン" />
+                    </a>
+                  </div>
+                  <div id="menu_btn" class="sp-header-menu_component sp-header-menu_component-hbg">MENU</div>
+                </div>
+                <!-- /topMenu_sp -->
+              </div>
             </div>
-            <!-- //p-masthead -->
-            <div class="main">
-                                <div class="contents cf contents--responsive">
-                    <div class="primary primary--responsive">
-                                                    <div id="F001" class="js-t-wrapper itemDetailBox">
-                            <!-- breadCrumbs -->
-<p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞ ためせる商品一覧</p>
-<!-- /breadCrumbs -->
-<!-- pr-tame -->
-<div class="pr-tame pr-content" style="margin-top: 0;">
-    <!-- headGroup -->
-    <div class="heading xx-large enclosingBtn withIcon">
-        <h1>
-            <span class="icoWrap">
-                <img alt="" height="79" src="https://stg.tsample.tsite.jp/img/icon-tame.png" width="64">
-            </span>
-            <span class="">少額でためせる商品一覧</span>
-        </h1>
-    </div>
-    <!-- /headGroup -->
-    <!-- categorySelect -->
-        <!-- /categorySelect -->
-    <!-- itemList -->
-    <ul class="list14 clearfix p-project-lists c-grid--row c-grid--row--no-gutter" id="top_p_list">
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d" onclick="ga('send','event','sp_top','click_tame','4477d');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="ギフトコード10件B" height="320" src="https://stg.tsample.tsite.jp/img/project/2300_item_20260204_161934.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">モラタメ編集部</dt>
-                        <dt class="sp_top_project_sname">ギフトコード10件B</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">9</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=64b89" onclick="ga('send','event','sp_top','click_tame','64b89');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="ギフトコード10件A" height="320" src="https://stg.tsample.tsite.jp/img/project/2300_20260204_161903.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">モラタメ編集部</dt>
-                        <dt class="sp_top_project_sname">ギフトコード10件A</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">9</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca5d4" onclick="ga('send','event','sp_top','click_tame','ca5d4');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="ギフトコードPJT0120" height="320" src="https://stg.tsample.tsite.jp/img/project/2277_20260109_154838.jpg" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">リニューアルVサンプ&hellip;</dt>
-                        <dt class="sp_top_project_sname">ギフトコードPJT0120</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">97</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca0d1" onclick="ga('send','event','sp_top','click_tame','ca0d1');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="CCCMK様ご確認用ギフトコードPJT" height="320" src="https://stg.tsample.tsite.jp/img/project/2277_20260109_154838.jpg" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">リニューアルVサンプ&hellip;</dt>
-                        <dt class="sp_top_project_sname">CCCMK様ご確認用ギフトコードPJT</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">97</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df" onclick="ga('send','event','sp_top','click_tame','fe6df');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                                            <h2>
-                        <img alt="ギフトコードK5 200件" height="320" src="https://stg.tsample.tsite.jp/img/project/2276_item_20260108_143335.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">クーポンクライアント&hellip;</dt>
-                        <dt class="sp_top_project_sname">ギフトコードK5 200件</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">198</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2" onclick="ga('send','event','sp_top','click_tame','fb0e2');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="MTSD-14548 少数クーポンB" height="320" src="https://stg.tsample.tsite.jp/img/project/2273_item_20251226_180832.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">クーポンクライアント&hellip;</dt>
-                        <dt class="sp_top_project_sname">MTSD-14548 少数クーポンB</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">8</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=6d933" onclick="ga('send','event','sp_top','click_tame','6d933');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="MTSD-14548 少数クーポンA" height="320" src="https://stg.tsample.tsite.jp/img/project/2273_item_20251226_180832.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">クーポンクライアント&hellip;</dt>
-                        <dt class="sp_top_project_sname">MTSD-14548 少数クーポンA</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">9</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=56642" onclick="ga('send','event','sp_top','click_tame','56642');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--favorite">オススメ</span>
-                                                            <h2>
-                        <img alt="ギフトコード3万件" height="320" src="https://stg.tsample.tsite.jp/img/project/2258_20251113_105926.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">リニューアルVサンプ&hellip;</dt>
-                        <dt class="sp_top_project_sname">ギフトコード3万件</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">29,995</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=af9ac" onclick="ga('send','event','sp_top','click_tame','af9ac');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--few">残りわずか</span>
-                                                            <h2>
-                        <img alt="クーポンテスト2" height="320" src="https://stg.tsample.tsite.jp/img/project/2253_20251106_144715.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">モラタメ編集部</dt>
-                        <dt class="sp_top_project_sname">クーポンテスト2</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">4</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=0d996" onclick="ga('send','event','sp_top','click_tame','0d996');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                                            <h2>
-                        <img alt="LORETTA AIMER ミストケアオイル" height="320" src="https://stg.tsample.tsite.jp/img/project/2242_20250930_103849.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">テスト</dt>
-                        <dt class="sp_top_project_sname">LORETTA AIMER ミストケアオイル</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">997</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8" onclick="ga('send','event','sp_top','click_tame','fadd8');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                                            <h2>
-                        <img alt="重複OK2" height="320" src="https://stg.tsample.tsite.jp/img/project/1486_item_20230616_143850.gif" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">テスト</dt>
-                        <dt class="sp_top_project_sname">重複OK2</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">4,972</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a" onclick="ga('send','event','sp_top','click_tame','60c8a');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                                            <h2>
-                        <img alt="重複OK" height="320" src="https://stg.tsample.tsite.jp/img/project/2217_20250623_150908.jpg" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">テスト</dt>
-                        <dt class="sp_top_project_sname">重複OK</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">4,974</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9" onclick="ga('send','event','sp_top','click_tame','14ca9');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                                            <h2>
-                        <img alt="プロファイルチェック用Attoos（大阪除外）" height="320" src="https://stg.tsample.tsite.jp/img/project/1877_20241211_164449.jpg" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">小林製薬　</dt>
-                        <dt class="sp_top_project_sname">プロファイルチェック用Attoos（大阪除外）</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">495</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20" onclick="ga('send','event','sp_top','click_tame','41e20');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--favorite">オススメ</span>
-                                                            <h2>
-                        <img alt="ポイント決済用少額" height="320" src="https://stg.tsample.tsite.jp/img/project/1132_20211110_145638.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">テスト</dt>
-                        <dt class="sp_top_project_sname">ポイント決済用少額</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">9,931</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li class="c-grid--col">
-        <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fdb68" onclick="ga('send','event','sp_top','click_tame','fdb68');" rel="external" tabindex="0">
-            <div class="p-project-list p-project-list--tame">
-                <div class="p-project-lists__thumbnail-wrap">
-                                            <span class="c-label-2 c-label-2--favorite">オススメ</span>
-                                                            <h2>
-                        <img alt="重複有り,家族有り" height="320" src="https://stg.tsample.tsite.jp/img/project/1092_20200320_191054.png" width="320" loading="lazy">
-                    </h2>
-                </div>
-                <div class="p-project-lists__block">
-                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                        <dt class="sp_top_project_company">テスト</dt>
-                        <dt class="sp_top_project_sname">重複有り,家族有り</dt>
-                        <dt class="sp_top_project_count">残り<span class="fw_b c_red">9,844</span></dt>
-                    </dl>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-    <!-- /itemList -->
-    <!-- btnGroup -->
-    <div class="mt_20">
-        <p class="btnSquare01wrap">
-            <a href="https://stg.tsample.tsite.jp/detail/tamesupast.php" class="btnSquare01 btnBeige01 medium">
-                受付終了商品一覧はこちら
-                <span class="arrow">
-                    <img src="https://stg.tsample.tsite.jp/img/arrow03.png" alt="" width="20" height="32">
-                </span>
-            </a>
-        </p>
-    </div>
-    <!-- /btnGroup -->
-</div>
-<!-- footer -->
-                    </div>
+          </header>
+          <!-- HBGmenu_Open -->
+          <div id="menu">
+            <ul>
+              <!-- category -->
+              <li class="menu__item"> <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
+                <ul class="submenu" style="display: none;">
+                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li class="t-sidemenu-sub-ttl">お店でためす</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>
+                </ul>
+              </li> <a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664">
+                <li>家族配送（4）</li>
+              </a> <!-- /category -->
 
-                                        <!-- footBnr -->
-                    <div class="footBnr">
-                        <ul>
-                                                                                                                                                        </ul>
-                    </div>
-                    <!-- footBnr / -->
-                    
-                    <!-- /id="F001" class="js-t-wrapper itemDetailBox"-->
-                </div><!-- /primary primary--responsive -->
-                <!-- secondary -->
-                                    <div class="secondary">
-                                    <!-- category -->
-                    <div class="se-news t-sidemenu">
-<h1 class="heading">カテゴリ</h1>
-<div class="container">
-<ul class="newsListWrap t-sidemenu-list">
-<li class="t-sidemenu-sub-ttl">ためせる・もらえる</li><li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058" title="食品"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
-<li class="t-sidemenu-sub-ttl">お店でためす</li><li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php" title="全て"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li></ul>
-</div>
-</div>                    <!-- project-schedule -->
-                                        <!--  /project-schedule -->
-                                        <div class="se-news t-sidemenu">
-                        <h1 class="heading">お届け先</h1>
-                        <div class="container">
-                            <ul class="newsListWrap t-sidemenu-list">
-                                <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664" title="家族配送"><img src="https://stg.tsample.tsite.jp/img/ico29.png" width="18" height="18" alt="">家族配送（4）</a></li>                            </ul>
-                        </div>
-                    </div>
-                                        <!-- /category -->
-                    <!-- non-review-list -->
-                                        <!-- /non-review-list -->
-                    <!-- t-support-menu -->
-                    <div class="se-news t-sidemenu">
-                        <h1 class="heading">サポート</h1>
-                        <div class="container">
-                            <ul class="newsListWrap t-sidemenu-list">
-                                <li><a href="https://stg.tsample.tsite.jp/contents/about.php">Vサンプルとは</a></li>
-                                <li><a href="https://tsite.jp/pt/guide/about/index.pl" target="_blank">Vポイントについて</a></li>
-                                <li><a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php">Vポイントを使いたい</a></li>
-                                <li><a href="https://tsite.jp/" target="_blank">Vポイントサイト</a></li>
-                                <li><a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite" target="_blank">FAQ</a></li>
-                                <li><a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php">Vサンプル事務局へのお問い合わせ</a></li>
-                                <li><a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a></li>
-                                <li><a href="https://stg.tsample.tsite.jp/contents/trade/index.php">特定商取引表示</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /t-support-menu -->
+              <a href="https://stg.tsample.tsite.jp/contents/about.php">
+                <li>Vサンプルとは</li>
+              </a>
+              <a href="https://tsite.jp/pt/guide/about/index.pl">
+                <li>Vポイントについて</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php">
+                <li>Vポイントを使いたい</li>
+              </a>
+              <a href="https://tsite.jp/">
+                <li>Vポイントサイト</li>
+              </a>
+              <a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite">
+                <li>FAQ</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php">
+                <li>Vサンプル事務局へのお問い合わせ</li>
+              </a>
+              <a href="https://privacy.cccmkhd.co.jp/terms/sample/">
+                <li>Vサンプル利用規約</li>
+              </a>
+              <a href="https://stg.tsample.tsite.jp/contents/trade/index.php">
+                <li>特定商取引表示</li>
+              </a>
+            </ul>
+          </div>
+          <div class="menu-background"></div>
+          <!-- /HBGmenu_Open -->
 
-                                        <!-- sideBnr -->
-                    <div class="sideBnr">
-                        <ul>
-                                                                                                                                                        <li class="sideBnr-list">
-                                    <a href="http://www.jipc.jp/%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88/" target="_blank" rel="noopener noreferrer">
-                                        <p>
-                                            <img src="https://stg.tsample.tsite.jp/img/side_banner/safety_point.png" alt="あんしんポイント">
-                                        </p>
-                                    </a>
-                                </li>
-                                                                                    </ul>
-                    </div>
-                    <!-- sideBnr / -->
-                    
-                    <!-- PC版サイドメニュー下部 -->
-<script>
-    window.googletag = window.googletag || {cmd: []};
-    googletag.cmd.push(function() {
-        var slots = [];
-        slots.push(
-            googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-rightcolumn-under_30195', [[200, 200], [300, 250]], 'pc_tsample_all-pages-rightcolumn-under').addService(googletag.pubads())
-        )
-
-        googletag.pubads().disableInitialLoad();
-                    googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
-                googletag.enableServices();
-        bsttag.launchAuction(slots);
-
-        googletag.display('pc_tsample_all-pages-rightcolumn-under');
-    });
-</script>
-<!-- //PC版サイドメニュー下部 -->
-
-<!-- Google広告表示部分 PC版サイドメニュー下部 -->
-<p style="text-align: center; margin-bottom:5px;">&lt;PR&gt;</p>
-<div id="pc_tsample_all-pages-rightcolumn-under"></div>
-<!-- //Google広告表示部分 PC版サイドメニュー下部 -->
-
-
-
-                </div>
-                <!-- /secondary -->
-                </div><!-- /contents cf contents--responsive -->
-
-                                <!-- Google広告表示部分 ページ下部 -->
-<p style="text-align: center; margin-top: 100px; margin-bottom:5px;">&lt;PR&gt;</p>
-<div id="sp_tsample_all-pages-site-under1" class="sp-under-gas"></div>
-<div id="pc-tsample-all-pages-site-container">
-    <div id="pc_tsample_all-pages-site-under1"></div>
-    <div id="pc_tsample_all-pages-site-under2"></div>
-</div>
-<p style="padding-top: 50px;"></p>
-<!-- //Google広告表示部分 ページ下部 -->
-
-<script>
-window.googletag = window.googletag || {cmd: []};
-googletag.cmd.push(function() {
-
-    function randomInt(min, max) {
-        return Math.floor( Math.random() * (max + 1 - min) ) + min;
-    }
-
-    var slots = [];
-    var isPC = window.innerWidth > 960;
-    
-    if (isPC) {
-        var pcContainer = document.getElementById("pc-tsample-all-pages-site-container");
-        pcContainer.style.justifyContent = "center";
-        pcContainer.style.textAlign = "center";
-        var ad1 = document.getElementById("pc_tsample_all-pages-site-under1");
-        var ad2 = document.getElementById("pc_tsample_all-pages-site-under2");
-    
-        pcContainer.style.display = "flex";
-        ad1.style.marginRight = "20px";
-        ad2.style.marginLeft = "20px";
-        slots.push(
-            googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under1_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under1').addService(googletag.pubads()),
-            googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under2_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under2').addService(googletag.pubads())
-        )
-    } else {
-        slots.push(
-            googletag.defineSlot('/62532913,22528941850/s_tsample_300x250_all-pages-site-under1_30196', [[250, 250], [336, 280], [320, 50], [320, 480], 'fluid', [300, 250], [320, 180], [336, 180], [200, 200], [300, 280], [320, 100], [300, 300], [300, 600], [240, 400], [300, 360]], 'sp_tsample_all-pages-site-under1').addService(googletag.pubads())
-        )
-    }
-    
-    googletag.pubads().setTargeting("fluct_ad_group", String(randomInt(1, 10)));
-    googletag.pubads().disableInitialLoad();
-            googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
-        googletag.enableServices();
-    bsttag.launchAuction(slots);
-    
-    if (isPC) {
-        googletag.display('pc_tsample_all-pages-site-under1');
-        googletag.display('pc_tsample_all-pages-site-under2');
-    } else {
-        googletag.display('sp_tsample_all-pages-site-under1');
-    }
-});
-</script>
-<!-- 全ページ下部 -->
-
-                                
-                                            </div><!-- /main-->
-            <!-- footer -->
-            <footer>
-                <div id="footer">
-                    <ul class="footer-global__nav">
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/">トップ</a>
-                        </li>
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
-                        </li>
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
-                        </li>
-                        <li class="footer-global__nav-list">
-                            <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/" target="_blank">プライバシーセンター</a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a>
-                        </li>
-                        <li>
-                            <a href="https://privacy.cccmkhd.co.jp/terms/" target="_blank">各種規約について</a>
-                        </li>
-                        <li style="border: none;">
-                            <a href="https://privacy.cccmkhd.co.jp/data-transfer/" target="_blank">利用者情報の外部送信について</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://www.cccmkhd.co.jp/" target="_blank">CCCMKホールディングス株式会社</a>
-                        </li>
-                        <li>
-                            <a href="https://www.cccmkhd.co.jp/finance/" target="_blank">CCCライフパートナーズ株式会社</a>
-                        </li>
-                        <li>
-                            <a href="https://tsite.jp/fs/contact/index.pl" target="_blank">Vポイント加盟店の募集</a>
-                        </li>
-                        <li style="border: none;">
-                            <a href="https://tsite.jp/" target="_blank">Vポイントサイト</a>
-                        </li>
-                    </ul>
-                    <p> &copy; CCC MK HOLDINGS Co.,Ltd.</p>
-                </div>
-            </footer>
-            <!-- /footer -->
-            <!-- pageTopScroll -->
-            <p class="pageTopScroll" style="display: none;">
-                <a href=https://stg.tsample.tsite.jp/ "#pageTop">▲ページトップへ</a>
-            </p>
-        </div>
-        <!--  //body-wrapper -->
-
-                <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
-                    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-                <script src="/js/t.js"></script>
-        <script src="/js/announce_toggle.js?2026021912" async></script>
-        <!-- hamburgerMenu -->
-        <script>
-            $(document).ready(function(){
-                // メインコンテンツをヘッダーの高さ分だけずらす
-                var headerHeight = $('header').outerHeight();
-                $('main').css('padding-top', headerHeight + 'px');
-                $('#menu').css('margin-top', headerHeight + 'px');
-
-                // MENUボタンがクリックされたときの処理
-                $('#menu_btn').on('click', function(){
-                    if($(this).hasClass('active')) {
-                        $(this).removeClass('active');
-                        $(this).text('MENU');
-                        $('#menu').removeClass('open');
-                        $('.menu-background').removeClass('open');
-                    } else {
-                        $(this).addClass('active');
-                        $(this).text('CLOSE');
-                        $('#menu').addClass('open');
-                        $('.menu-background').addClass('open');
-                    }
+          <!-- accordion-menu -->
+          <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない　-->
+          <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+          <script>
+            $(function () {
+              $('.js-menu__item__link').each(function () {
+                $(this).on('click', function () {
+                  $(this).toggleClass('on');
+                  $("+.submenu", this).slideToggle();
+                  return false;
                 });
-
-                // メニューの背景がクリックされたときの処理
-                $('.menu-background').on('click', function(){
-                    if($(this).hasClass('open')) {
-                        $(this).removeClass('open');
-                        $('#menu_btn').removeClass('active').text('MENU');
-                        $('#menu').removeClass('open');
-                    }
-                });
+              });
             });
-        </script>
+          </script>
+          <!-- /accordion-menu -->
 
-        
-    </body>
+          <script type="text/javascript">
+            $('.p-masthead__soon').on('click', function () {
+              $("#p-masthead__soon").toggle();
+            });
+            $(document).on('click', '.s_boxHeadline', function () {
+              $("#p-masthead__soon").css("display", "none")
+            });
+          </script>
+
+          <!-- topTabMenu_pc -->
+          <ul class="p-masthead__nav p-masthead__nav_tamepage">
+            <li class="p-masthead__nav__top">
+              <a href="https://stg.tsample.tsite.jp/">トップ</a>
+            </li>
+            <li class="p-masthead__nav__tame">
+              <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
+            </li>
+            <li class="p-masthead__nav__mora">
+              <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
+            </li>
+            <li class="p-masthead__nav__mise">
+              <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
+            </li>
+          </ul>
+          <!-- /topTabMenu_pc -->
+        </div>
+      </div>
+      <!-- //p-masthead -->
+      <div class="main">
+        <div class="contents cf contents--responsive">
+          <div class="primary primary--responsive">
+            <div id="F001" class="js-t-wrapper itemDetailBox">
+              <!-- breadCrumbs -->
+              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞ ためせる商品一覧</p>
+              <!-- /breadCrumbs -->
+              <!-- pr-tame -->
+              <div class="pr-tame pr-content" style="margin-top: 0;">
+                <!-- headGroup -->
+                <div class="heading xx-large enclosingBtn withIcon">
+                  <h1>
+                    <span class="icoWrap">
+                      <img alt="" height="79" src="https://stg.tsample.tsite.jp/img/icon-tame.png" width="64">
+                    </span>
+                    <span class="">少額でためせる商品一覧</span>
+                  </h1>
+                </div>
+                <!-- /headGroup -->
+                <!-- categorySelect -->
+                <!-- /categorySelect -->
+                <!-- itemList -->
+                <ul class="list14 clearfix p-project-lists c-grid--row c-grid--row--no-gutter" id="top_p_list">
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d" onclick="ga('send','event','sp_top','click_tame','4477d');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="ギフトコード10件B" height="320" src="https://stg.tsample.tsite.jp/img/project/2300_item_20260204_161934.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">モラタメ編集部</dt>
+                            <dt class="sp_top_project_sname">ギフトコード10件B</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">9</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=64b89" onclick="ga('send','event','sp_top','click_tame','64b89');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="ギフトコード10件A" height="320" src="https://stg.tsample.tsite.jp/img/project/2300_20260204_161903.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">モラタメ編集部</dt>
+                            <dt class="sp_top_project_sname">ギフトコード10件A</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">9</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca5d4" onclick="ga('send','event','sp_top','click_tame','ca5d4');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="ギフトコードPJT0120" height="320" src="https://stg.tsample.tsite.jp/img/project/2277_20260109_154838.jpg" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">リニューアルVサンプ&hellip;</dt>
+                            <dt class="sp_top_project_sname">ギフトコードPJT0120</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">97</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca0d1" onclick="ga('send','event','sp_top','click_tame','ca0d1');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="CCCMK様ご確認用ギフトコードPJT" height="320" src="https://stg.tsample.tsite.jp/img/project/2277_20260109_154838.jpg" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">リニューアルVサンプ&hellip;</dt>
+                            <dt class="sp_top_project_sname">CCCMK様ご確認用ギフトコードPJT</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">97</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df" onclick="ga('send','event','sp_top','click_tame','fe6df');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <h2>
+                            <img alt="ギフトコードK5 200件" height="320" src="https://stg.tsample.tsite.jp/img/project/2276_item_20260108_143335.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">クーポンクライアント&hellip;</dt>
+                            <dt class="sp_top_project_sname">ギフトコードK5 200件</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">198</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2" onclick="ga('send','event','sp_top','click_tame','fb0e2');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="MTSD-14548 少数クーポンB" height="320" src="https://stg.tsample.tsite.jp/img/project/2273_item_20251226_180832.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">クーポンクライアント&hellip;</dt>
+                            <dt class="sp_top_project_sname">MTSD-14548 少数クーポンB</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">8</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=6d933" onclick="ga('send','event','sp_top','click_tame','6d933');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="MTSD-14548 少数クーポンA" height="320" src="https://stg.tsample.tsite.jp/img/project/2273_item_20251226_180832.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">クーポンクライアント&hellip;</dt>
+                            <dt class="sp_top_project_sname">MTSD-14548 少数クーポンA</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">9</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=56642" onclick="ga('send','event','sp_top','click_tame','56642');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--favorite">オススメ</span>
+                          <h2>
+                            <img alt="ギフトコード3万件" height="320" src="https://stg.tsample.tsite.jp/img/project/2258_20251113_105926.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">リニューアルVサンプ&hellip;</dt>
+                            <dt class="sp_top_project_sname">ギフトコード3万件</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">29,995</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=af9ac" onclick="ga('send','event','sp_top','click_tame','af9ac');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--few">残りわずか</span>
+                          <h2>
+                            <img alt="クーポンテスト2" height="320" src="https://stg.tsample.tsite.jp/img/project/2253_20251106_144715.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">モラタメ編集部</dt>
+                            <dt class="sp_top_project_sname">クーポンテスト2</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">4</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=0d996" onclick="ga('send','event','sp_top','click_tame','0d996');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <h2>
+                            <img alt="LORETTA AIMER ミストケアオイル" height="320" src="https://stg.tsample.tsite.jp/img/project/2242_20250930_103849.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">テスト</dt>
+                            <dt class="sp_top_project_sname">LORETTA AIMER ミストケアオイル</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">997</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8" onclick="ga('send','event','sp_top','click_tame','fadd8');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <h2>
+                            <img alt="重複OK2" height="320" src="https://stg.tsample.tsite.jp/img/project/1486_item_20230616_143850.gif" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">テスト</dt>
+                            <dt class="sp_top_project_sname">重複OK2</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">4,972</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a" onclick="ga('send','event','sp_top','click_tame','60c8a');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <h2>
+                            <img alt="重複OK" height="320" src="https://stg.tsample.tsite.jp/img/project/2217_20250623_150908.jpg" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">テスト</dt>
+                            <dt class="sp_top_project_sname">重複OK</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">4,974</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9" onclick="ga('send','event','sp_top','click_tame','14ca9');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <h2>
+                            <img alt="プロファイルチェック用Attoos（大阪除外）" height="320" src="https://stg.tsample.tsite.jp/img/project/1877_20241211_164449.jpg" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">小林製薬　</dt>
+                            <dt class="sp_top_project_sname">プロファイルチェック用Attoos（大阪除外）</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">495</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20" onclick="ga('send','event','sp_top','click_tame','41e20');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--favorite">オススメ</span>
+                          <h2>
+                            <img alt="ポイント決済用少額" height="320" src="https://stg.tsample.tsite.jp/img/project/1132_20211110_145638.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">テスト</dt>
+                            <dt class="sp_top_project_sname">ポイント決済用少額</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">9,931</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="c-grid--col">
+                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fdb68" onclick="ga('send','event','sp_top','click_tame','fdb68');" rel="external" tabindex="0">
+                      <div class="p-project-list p-project-list--tame">
+                        <div class="p-project-lists__thumbnail-wrap">
+                          <span class="c-label-2 c-label-2--favorite">オススメ</span>
+                          <h2>
+                            <img alt="重複有り,家族有り" height="320" src="https://stg.tsample.tsite.jp/img/project/1092_20200320_191054.png" width="320" loading="lazy">
+                          </h2>
+                        </div>
+                        <div class="p-project-lists__block">
+                          <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                            <dt class="sp_top_project_company">テスト</dt>
+                            <dt class="sp_top_project_sname">重複有り,家族有り</dt>
+                            <dt class="sp_top_project_count">残り<span class="fw_b c_red">9,844</span></dt>
+                          </dl>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- /itemList -->
+                <!-- btnGroup -->
+                <div class="mt_20">
+                  <p class="btnSquare01wrap">
+                    <a href="https://stg.tsample.tsite.jp/detail/tamesupast.php" class="btnSquare01 btnBeige01 medium">
+                      受付終了商品一覧はこちら
+                      <span class="arrow">
+                        <img src="https://stg.tsample.tsite.jp/img/arrow03.png" alt="" width="20" height="32">
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <!-- /btnGroup -->
+              </div>
+              <!-- footer -->
+            </div>
+
+            <!-- footBnr -->
+            <div class="footBnr">
+              <ul>
+              </ul>
+            </div>
+            <!-- footBnr / -->
+
+            <!-- /id="F001" class="js-t-wrapper itemDetailBox"-->
+          </div><!-- /primary primary--responsive -->
+          <!-- secondary -->
+          <div class="secondary">
+            <!-- category -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">カテゴリ</h1>
+              <div class="container">
+                <ul class="newsListWrap t-sidemenu-list">
+                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058" title="食品"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li class="t-sidemenu-sub-ttl">お店でためす</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php" title="全て"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>
+                </ul>
+              </div>
+            </div> <!-- project-schedule -->
+            <!--  /project-schedule -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">お届け先</h1>
+              <div class="container">
+                <ul class="newsListWrap t-sidemenu-list">
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664" title="家族配送"><img src="https://stg.tsample.tsite.jp/img/ico29.png" width="18" height="18" alt="">家族配送（4）</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /category -->
+            <!-- non-review-list -->
+            <!-- /non-review-list -->
+            <!-- t-support-menu -->
+            <div class="se-news t-sidemenu">
+              <h1 class="heading">サポート</h1>
+              <div class="container">
+                <ul class="newsListWrap t-sidemenu-list">
+                  <li><a href="https://stg.tsample.tsite.jp/contents/about.php">Vサンプルとは</a></li>
+                  <li><a href="https://tsite.jp/pt/guide/about/index.pl" target="_blank">Vポイントについて</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/contents/t-sample-t-point.php">Vポイントを使いたい</a></li>
+                  <li><a href="https://tsite.jp/" target="_blank">Vポイントサイト</a></li>
+                  <li><a href="https://ssl.help.tsite.jp/category/show/5725?site_domain=qa-tsite" target="_blank">FAQ</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/contents/inquiry/index.php">Vサンプル事務局へのお問い合わせ</a></li>
+                  <li><a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/contents/trade/index.php">特定商取引表示</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /t-support-menu -->
+
+            <!-- sideBnr -->
+            <div class="sideBnr">
+              <ul>
+                <li class="sideBnr-list">
+                  <a href="http://www.jipc.jp/%e3%81%82%e3%82%93%e3%81%97%e3%82%93%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88/" target="_blank" rel="noopener noreferrer">
+                    <p>
+                      <img src="https://stg.tsample.tsite.jp/img/side_banner/safety_point.png" alt="あんしんポイント">
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- sideBnr / -->
+
+            <!-- PC版サイドメニュー下部 -->
+            <script>
+              window.googletag = window.googletag || { cmd: [] };
+              googletag.cmd.push(function () {
+                var slots = [];
+                slots.push(
+                  googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-rightcolumn-under_30195', [[200, 200], [300, 250]], 'pc_tsample_all-pages-rightcolumn-under').addService(googletag.pubads())
+                )
+
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
+                googletag.enableServices();
+                bsttag.launchAuction(slots);
+
+                googletag.display('pc_tsample_all-pages-rightcolumn-under');
+              });
+            </script>
+            <!-- //PC版サイドメニュー下部 -->
+
+            <!-- Google広告表示部分 PC版サイドメニュー下部 -->
+            <p style="text-align: center; margin-bottom:5px;">&lt;PR&gt;</p>
+            <div id="pc_tsample_all-pages-rightcolumn-under"></div>
+            <!-- //Google広告表示部分 PC版サイドメニュー下部 -->
+
+
+
+          </div>
+          <!-- /secondary -->
+        </div><!-- /contents cf contents--responsive -->
+
+        <!-- Google広告表示部分 ページ下部 -->
+        <p style="text-align: center; margin-top: 100px; margin-bottom:5px;">&lt;PR&gt;</p>
+        <div id="sp_tsample_all-pages-site-under1" class="sp-under-gas"></div>
+        <div id="pc-tsample-all-pages-site-container">
+          <div id="pc_tsample_all-pages-site-under1"></div>
+          <div id="pc_tsample_all-pages-site-under2"></div>
+        </div>
+        <p style="padding-top: 50px;"></p>
+        <!-- //Google広告表示部分 ページ下部 -->
+
+        <script>
+          window.googletag = window.googletag || { cmd: [] };
+          googletag.cmd.push(function () {
+
+            function randomInt(min, max) {
+              return Math.floor(Math.random() * (max + 1 - min)) + min;
+            }
+
+            var slots = [];
+            var isPC = window.innerWidth > 960;
+
+            if (isPC) {
+              var pcContainer = document.getElementById("pc-tsample-all-pages-site-container");
+              pcContainer.style.justifyContent = "center";
+              pcContainer.style.textAlign = "center";
+              var ad1 = document.getElementById("pc_tsample_all-pages-site-under1");
+              var ad2 = document.getElementById("pc_tsample_all-pages-site-under2");
+
+              pcContainer.style.display = "flex";
+              ad1.style.marginRight = "20px";
+              ad2.style.marginLeft = "20px";
+              slots.push(
+                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under1_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under1').addService(googletag.pubads()),
+                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under2_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under2').addService(googletag.pubads())
+              )
+            } else {
+              slots.push(
+                googletag.defineSlot('/62532913,22528941850/s_tsample_300x250_all-pages-site-under1_30196', [[250, 250], [336, 280], [320, 50], [320, 480], 'fluid', [300, 250], [320, 180], [336, 180], [200, 200], [300, 280], [320, 100], [300, 300], [300, 600], [240, 400], [300, 360]], 'sp_tsample_all-pages-site-under1').addService(googletag.pubads())
+              )
+            }
+
+            googletag.pubads().setTargeting("fluct_ad_group", String(randomInt(1, 10)));
+            googletag.pubads().disableInitialLoad();
+            googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
+            googletag.enableServices();
+            bsttag.launchAuction(slots);
+
+            if (isPC) {
+              googletag.display('pc_tsample_all-pages-site-under1');
+              googletag.display('pc_tsample_all-pages-site-under2');
+            } else {
+              googletag.display('sp_tsample_all-pages-site-under1');
+            }
+          });
+        </script>
+        <!-- 全ページ下部 -->
+
+
+      </div><!-- /main-->
+      <!-- footer -->
+      <footer>
+        <div id="footer">
+          <ul class="footer-global__nav">
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/">トップ</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/" target="_blank">プライバシーセンター</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/" target="_blank">各種規約について</a>
+            </li>
+            <li style="border: none;">
+              <a href="https://privacy.cccmkhd.co.jp/data-transfer/" target="_blank">利用者情報の外部送信について</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://www.cccmkhd.co.jp/" target="_blank">CCCMKホールディングス株式会社</a>
+            </li>
+            <li>
+              <a href="https://www.cccmkhd.co.jp/finance/" target="_blank">CCCライフパートナーズ株式会社</a>
+            </li>
+            <li>
+              <a href="https://tsite.jp/fs/contact/index.pl" target="_blank">Vポイント加盟店の募集</a>
+            </li>
+            <li style="border: none;">
+              <a href="https://tsite.jp/" target="_blank">Vポイントサイト</a>
+            </li>
+          </ul>
+          <p> &copy; CCC MK HOLDINGS Co.,Ltd.</p>
+        </div>
+      </footer>
+      <!-- /footer -->
+      <!-- pageTopScroll -->
+      <p class="pageTopScroll" style="display: none;">
+        <a href=https://stg.tsample.tsite.jp/ "#pageTop">▲ページトップへ</a>
+      </p>
+    </div>
+    <!--  //body-wrapper -->
+
+    <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/t.js"></script>
+    <script src="../js/announce_toggle.js?2026021912" async></script>
+    <!-- hamburgerMenu -->
+    <script>
+      $(document).ready(function () {
+        // メインコンテンツをヘッダーの高さ分だけずらす
+        var headerHeight = $('header').outerHeight();
+        $('main').css('padding-top', headerHeight + 'px');
+        $('#menu').css('margin-top', headerHeight + 'px');
+
+        // MENUボタンがクリックされたときの処理
+        $('#menu_btn').on('click', function () {
+          if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).text('MENU');
+            $('#menu').removeClass('open');
+            $('.menu-background').removeClass('open');
+          } else {
+            $(this).addClass('active');
+            $(this).text('CLOSE');
+            $('#menu').addClass('open');
+            $('.menu-background').addClass('open');
+          }
+        });
+
+        // メニューの背景がクリックされたときの処理
+        $('.menu-background').on('click', function () {
+          if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('#menu_btn').removeClass('active').text('MENU');
+            $('#menu').removeClass('open');
+          }
+        });
+      });
+    </script>
+
+
+  </body>
+
 </html>
