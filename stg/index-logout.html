@@ -79,49 +79,11 @@
     <!-- FontAwesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-    <!-- Google Tag Manager TSAMPLE-->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-KHX6JPD');</script>
-    <!-- End Google Tag Manager -->
 
-
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script async src="https://fam.adingo.jp/bid-strap/tsample/pb.js"></script>
-    <script>
-      var bsttag = window.bsttag || { cmd: [] };
-      bsttag.failSafeTimeout = 3000; //header bidding全体のタイムアウト
-      bsttag.launchAuction = function (slots) {
-
-        var hbm = {};
-        bsttag.cmd.push(function (cmd) {
-          hbm = cmd.requestBids({ adUnits: slots });
-        });
-
-        setTimeout(function () {
-          if (hbm.isRequestSent) {
-            return;
-          }
-          hbm.isRequestSent = true;
-          googletag.cmd.push(function () {
-            googletag.pubads().refresh(slots);
-          });
-        }, bsttag.failSafeTimeout);
-      };
-    </script>
 
   </head>
 
   <body id="pageTop" class="bootstrap-v3-3-7--scope toppage">
-    <!-- Google Tag Manager (noscript) TSAMPLE-->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <div class="body-wrapper">
       <div class="p-masthead">
         <div class="l-conteiner">
@@ -798,92 +760,12 @@
             </div>
             <!-- sideBnr / -->
 
-            <!-- PC版サイドメニュー下部 -->
-            <script>
-              window.googletag = window.googletag || { cmd: [] };
-              googletag.cmd.push(function () {
-                var slots = [];
-                slots.push(
-                  googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-rightcolumn-under_30195', [[200, 200], [300, 250]], 'pc_tsample_all-pages-rightcolumn-under').addService(googletag.pubads())
-                )
-
-                googletag.pubads().disableInitialLoad();
-                googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
-                googletag.enableServices();
-                bsttag.launchAuction(slots);
-
-                googletag.display('pc_tsample_all-pages-rightcolumn-under');
-              });
-            </script>
-            <!-- //PC版サイドメニュー下部 -->
-
-            <!-- Google広告表示部分 PC版サイドメニュー下部 -->
-            <p style="text-align: center; margin-bottom:5px;">&lt;PR&gt;</p>
-            <div id="pc_tsample_all-pages-rightcolumn-under"></div>
-            <!-- //Google広告表示部分 PC版サイドメニュー下部 -->
-
 
 
           </div>
           <!-- /secondary -->
         </div><!-- /contents cf contents--responsive -->
 
-        <!-- Google広告表示部分 ページ下部 -->
-        <p style="text-align: center; margin-top: 100px; margin-bottom:5px;">&lt;PR&gt;</p>
-        <div id="sp_tsample_all-pages-site-under1" class="sp-under-gas"></div>
-        <div id="pc-tsample-all-pages-site-container">
-          <div id="pc_tsample_all-pages-site-under1"></div>
-          <div id="pc_tsample_all-pages-site-under2"></div>
-        </div>
-        <p style="padding-top: 50px;"></p>
-        <!-- //Google広告表示部分 ページ下部 -->
-
-        <script>
-          window.googletag = window.googletag || { cmd: [] };
-          googletag.cmd.push(function () {
-
-            function randomInt(min, max) {
-              return Math.floor(Math.random() * (max + 1 - min)) + min;
-            }
-
-            var slots = [];
-            var isPC = window.innerWidth > 960;
-
-            if (isPC) {
-              var pcContainer = document.getElementById("pc-tsample-all-pages-site-container");
-              pcContainer.style.justifyContent = "center";
-              pcContainer.style.textAlign = "center";
-              var ad1 = document.getElementById("pc_tsample_all-pages-site-under1");
-              var ad2 = document.getElementById("pc_tsample_all-pages-site-under2");
-
-              pcContainer.style.display = "flex";
-              ad1.style.marginRight = "20px";
-              ad2.style.marginLeft = "20px";
-              slots.push(
-                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under1_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under1').addService(googletag.pubads()),
-                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under2_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under2').addService(googletag.pubads())
-              )
-            } else {
-              slots.push(
-                googletag.defineSlot('/62532913,22528941850/s_tsample_300x250_all-pages-site-under1_30196', [[250, 250], [336, 280], [320, 50], [320, 480], 'fluid', [300, 250], [320, 180], [336, 180], [200, 200], [300, 280], [320, 100], [300, 300], [300, 600], [240, 400], [300, 360]], 'sp_tsample_all-pages-site-under1').addService(googletag.pubads())
-              )
-            }
-
-            googletag.pubads().setTargeting("fluct_ad_group", String(randomInt(1, 10)));
-            googletag.pubads().disableInitialLoad();
-            googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
-            googletag.enableServices();
-            bsttag.launchAuction(slots);
-
-            if (isPC) {
-              googletag.display('pc_tsample_all-pages-site-under1');
-              googletag.display('pc_tsample_all-pages-site-under2');
-            } else {
-              googletag.display('sp_tsample_all-pages-site-under1');
-            }
-          });
-        </script>
-        <!-- 全ページ下部 -->
 
 
       </div><!-- /main-->
