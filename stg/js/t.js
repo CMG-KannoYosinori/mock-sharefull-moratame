@@ -163,7 +163,7 @@
       $elem: a(".js-t-historyback")
     };
     f.ref || f.$elem.hide(),
-      a(window).on("unload beforeunload", function () {
+      a(window).on("beforeunload", function () {
         f.bs = !0
       }),
       f.re = new RegExp(location.hostname, "i"),
@@ -228,4 +228,11 @@
           })
       })
   }(jQuery),
-  document.write('<script src="../js/CheckDeteredDevice.js"></script>');
+  function () {
+    var src = "https://tsample.tsite.jp/js/CheckDeteredDevice.js";
+    if (document.querySelector('script[src="' + src + '"]')) return;
+    var script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    document.head.appendChild(script);
+  }();
