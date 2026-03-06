@@ -222,7 +222,9 @@
       a(function () {
         UA.webView ? (a("#webview, .webview").css("display", "block"),
           a(".t-footer--webview-none + .t-footer__copyright").css("margin-top", "10px")) : (a("#browser, .browser").css("display", "block"),
+
             a(".js-t-footer--webview-none").css("display", "block")),
+
           a(".js-t-totop").on("click", function () {
             window.scrollTo(0, 0)
           })

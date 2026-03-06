@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
     <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-    <title>もらえる商品アンケート回答｜Vポイントが貯まる・使える Vサンプル</title>
+    <title>ためせる商品アンケート回答｜Vポイントが貯まる・使える Vサンプル</title>
 
     <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/bootstrap.v3.3.7--scope.css?2026021912">
 
@@ -95,7 +95,7 @@
                 <!-- logo -->
                 <h1>
                   <a href="https://stg.tsample.tsite.jp/">
-                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
+                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
                     <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
                   </a>
                 </h1>
@@ -231,7 +231,48 @@
               <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
               <script type="text/javascript">
                 function doSubmit() {
-                  nextPage();
+                  // 3Dセキュアの第三者提供の同意
+                  const agreementCheckbox = document.getElementById('agreement_3ds');
+                  if (!agreementCheckbox || !agreementCheckbox.checked) {
+                    alert('クレジットカードをご利用いただくために、3Dセキュアの利用規約に同意が必要です。');
+                    return false;
+                  }
+
+                  var pay_credit_chk = false;
+                  pay_credit_chk = true;
+                  if (pay_credit_chk == true) {
+                    var card_ex1 = document.getElementById('card_ex1').value;
+                    var card_ex2 = document.getElementById('card_ex2').value;
+                    var card_no = document.getElementById('card_no').value;
+                    var card_name = document.getElementById('card_name').value;
+                    var card_sec = document.getElementById('card_sec').value;
+                    if (card_ex1 != '' && card_ex2 != '' && card_no != '' && card_name != '' && card_sec != '') {
+                      var cc_ex = document.getElementById('card_ex2').value + document.getElementById('card_ex1').value;
+                      // トークン生成ロジック呼び出し
+                      com_sbps_system.generateToken({
+                        merchantId: '71234',
+                        serviceId: '002',
+                        ccNumber: document.getElementById('card_no').value,
+                        ccExpiration: cc_ex,
+                        securityCode: document.getElementById('card_sec').value
+                      }, function (response) {
+                        if (response.result == "OK") {
+                          document.getElementById('token').value = response.tokenResponse.token;
+                          document.getElementById('token_key').value = response.tokenResponse.tokenKey;
+                          // カード番号をマスキング
+                          document.getElementById('masked_card_no').value = response.tokenResponse.maskedCcNumber;
+                          nextPage();
+                        } else {
+                          document.getElementById('token_error').value = 'true';
+                          nextPage();
+                        }
+                      });
+                    } else {
+                      nextPage();
+                    }
+                  } else {
+                    nextPage();
+                  }
                 }
               </script>
 
@@ -312,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const elements = document.getElementsByClassName('js-nonspace');
     for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } }); </script>
                 <!-- breadCrumbs -->
-                <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=6aaf2">もらえる商品詳細</a> ＞もらえる商品アンケート回答</p>
+                <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ためせる商品詳細</a> ＞ためせる商品アンケート回答</p>
                 <!-- /breadCrumbs -->
                 <!--contents-->
                 <div id="anchor01" class="whiteContainer fz_14">
@@ -322,10 +363,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                   </div>
                   <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
-                    <input type="hidden" name="project_id" id="project_rand" value="6aaf2">
+                    <input type="hidden" name="project_id" id="project_rand" value="fe6df">
                     <input type="hidden" name="test" value="">
-                    <input type="hidden" name="user_order_status" value="">
-                    <input type="hidden" name="fst" value="1">
+                    <input type="hidden" name="user_order_status" value="0">
+                    <input type="hidden" name="fst" value="">
                     <input type="hidden" name="enq_mode" value="">
                     <input type="hidden" name="enq_pg" value="">
                     <input type="hidden" name="last_credit_card_flg" value="0">
@@ -342,76 +383,152 @@ document.addEventListener('DOMContentLoaded', function() {
                     <input type="hidden" name="enq_no[0]" value="0">
                     <section class="select-box select-area">
                       <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q1】あなたの性別をお答えください。</h2>
+                        <h2 class="fs-16">【Q1】お好きなモラタメキャラクターを選択してください。</h2>
                       </div>
-                      <ul><input type="hidden" name="ans[0][key][0]" value="男性">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="男性" ID="radio_0_0"><label for="radio_0_0">男性</label></li><input type="hidden" name="ans[0][key][1]" value="女性">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="女性" ID="radio_0_1"><label for="radio_0_1">女性</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo1"></a>
-                    <input type="hidden" name="enq_no[1]" value="1">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q2】あなたの年代をお答えください。</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[1][key][0]" value="20代以下">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="20代以下" ID="radio_1_0"><label for="radio_1_0">20代以下</label></li><input type="hidden" name="ans[1][key][1]" value="30代">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="30代" ID="radio_1_1"><label for="radio_1_1">30代</label></li><input type="hidden" name="ans[1][key][2]" value="40代">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="40代" ID="radio_1_2"><label for="radio_1_2">40代</label></li><input type="hidden" name="ans[1][key][3]" value="50代">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="50代" ID="radio_1_3"><label for="radio_1_3">50代</label></li><input type="hidden" name="ans[1][key][4]" value="60代以上">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="60代以上" ID="radio_1_4"><label for="radio_1_4">60代以上</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo2"></a>
-                    <input type="hidden" name="enq_no[2]" value="2">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q3】あなたのご職業をお答えください。<br />
-                          ※専業主婦・主夫⇒パートも含む<br />
-                          ※専門職1⇒SOHO、デザイナー、アーティストなど<br />
-                          ※専門職2⇒弁護士、会計士、医師など</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[2][key][0]" value="専業主婦・主夫">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="専業主婦・主夫" ID="radio_2_0"><label for="radio_2_0">専業主婦・主夫</label></li><input type="hidden" name="ans[2][key][1]" value="会社員">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="会社員" ID="radio_2_1"><label for="radio_2_1">会社員</label></li><input type="hidden" name="ans[2][key][2]" value="会社経営・役員">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="会社経営・役員" ID="radio_2_2"><label for="radio_2_2">会社経営・役員</label></li><input type="hidden" name="ans[2][key][3]" value="公務員">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="公務員" ID="radio_2_3"><label for="radio_2_3">公務員</label></li><input type="hidden" name="ans[2][key][4]" value="自営業">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="自営業" ID="radio_2_4"><label for="radio_2_4">自営業</label></li><input type="hidden" name="ans[2][key][5]" value="教職">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="教職" ID="radio_2_5"><label for="radio_2_5">教職</label></li><input type="hidden" name="ans[2][key][6]" value="専門職1">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="専門職1" ID="radio_2_6"><label for="radio_2_6">専門職1</label></li><input type="hidden" name="ans[2][key][7]" value="専門職2">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="専門職2" ID="radio_2_7"><label for="radio_2_7">専門職2</label></li><input type="hidden" name="ans[2][key][8]" value="アルバイト">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="アルバイト" ID="radio_2_8"><label for="radio_2_8">アルバイト</label></li><input type="hidden" name="ans[2][key][9]" value="無職">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="無職" ID="radio_2_9"><label for="radio_2_9">無職</label></li><input type="hidden" name="ans[2][key][10]" value="学生">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="学生" ID="radio_2_10"><label for="radio_2_10">学生</label></li><input type="hidden" name="ans[2][key][11]" value="その他">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="その他" ID="radio_2_11"><label for="radio_2_11">その他</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo3"></a>
-                    <input type="hidden" name="enq_no[3]" value="3">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q4】あなたの婚姻状況についてお答えください。</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[3][key][0]" value="未婚">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[3][val]" value="未婚" ID="radio_3_0"><label for="radio_3_0">未婚</label></li><input type="hidden" name="ans[3][key][1]" value="既婚">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[3][val]" value="既婚" ID="radio_3_1"><label for="radio_3_1">既婚</label></li><input type="hidden" name="ans[3][key][2]" value="その他">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[3][val]" value="その他" ID="radio_3_2"><label for="radio_3_2">その他</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo4"></a>
-                    <input type="hidden" name="enq_no[4]" value="4">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q5】あなたにお子様はいらっしゃいますか？</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[4][key][0]" value="いる">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[4][val]" value="いる" ID="radio_4_0"><label for="radio_4_0">いる</label></li><input type="hidden" name="ans[4][key][1]" value="いない">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[4][val]" value="いない" ID="radio_4_1"><label for="radio_4_1">いない</label></li>
+                      <ul><input type="hidden" name="ans[0][key][0]" value="ポッケ">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ポッケ" ID="radio_0_0"><label for="radio_0_0">ポッケ</label></li><input type="hidden" name="ans[0][key][1]" value="ケット">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ケット" ID="radio_0_1"><label for="radio_0_1">ケット</label></li><input type="hidden" name="ans[0][key][2]" value="ナップ">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ナップ" ID="radio_0_2"><label for="radio_0_2">ナップ</label></li><input type="hidden" name="ans[0][key][3]" value="ザック">
+                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="ザック" ID="radio_0_3"><label for="radio_0_3">ザック</label></li>
                       </ul>
                     </section>
                     <!-- enquete end -->
 
+                    <!-- payment start -->
+                    <div class="item-part">
+                      <p class="fz_14 cart-heading--gray mb_5 fw_b">支払い方法</p>
+                      <p class="mb_5">Vポイントのご利用は、次のページで入力できます。全額Vポイントをご利用になる場合でもクレジットカードのご登録は必要となります。</p>
+                      <ul class="paymentOption--1">
+                        <li id="pay_scredit_new">
+                          <label>
+                            <input name="payment" type="radio" value="2" class="on-off--2 slidedown2" checked>
+                            新規クレジットカード
+                            <div class="credit-form input_area2">
+                              <table class="st-table01" id="return">
+                                <tbody>
+                                  <tr>
+                                    <th class="bd-raw">利用可能なクレジットカード</th>
+                                    <td class="bd-raw">
+                                      <p class="cards">
+                                        <img alt="" height="62" src="https://stg.tsample.tsite.jp/img/availableCards.gif" width="332">
+                                      </p>
+                                      <p class="fz_12">※Visa、Master、JCB、AMEX、Diners の国際ブランドがついているデビットカードも利用可能</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="bd-raw">クレジットカード番号</th>
+                                    <td class="bd-raw">
+                                      <p>
+                                        <input class="form-control form-control_paid-point" id="card_no" name="card_no" placeholder="クレジットカード番号" size="38" type="text" value="" autocomplete="cc-number">
+                                      </p>
+                                      <p class="fz_12">(例)1234123412341234<br>
+                                        半角英数字のみで入力。カードの銘柄の入力は、不要です。</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="bd-raw">クレジットカード有効期限</th>
+                                    <td class="bd-raw">
+                                      <select class="form-control form-control_paid-point" id="card_ex1" name="card_ex1" style="width: auto; display: inline-block;" autocomplete="cc-exp-month">
+                                        <option value="01">
+                                          01 </option>
+                                        <option value="02">
+                                          02 </option>
+                                        <option value="03">
+                                          03 </option>
+                                        <option value="04">
+                                          04 </option>
+                                        <option value="05">
+                                          05 </option>
+                                        <option value="06">
+                                          06 </option>
+                                        <option value="07">
+                                          07 </option>
+                                        <option value="08">
+                                          08 </option>
+                                        <option value="09">
+                                          09 </option>
+                                        <option value="10">
+                                          10 </option>
+                                        <option value="11">
+                                          11 </option>
+                                        <option value="12">
+                                          12 </option>
+                                      </select><label class="control-label">月</label>
+                                      <select class="form-control form-control_paid-point" id="card_ex2" name="card_ex2" style="width: auto; display: inline-block;" autocomplete="cc-exp-year">
+                                        <option value="2026">
+                                          2026 </option>
+                                        <option value="2027">
+                                          2027 </option>
+                                        <option value="2028">
+                                          2028 </option>
+                                        <option value="2029">
+                                          2029 </option>
+                                        <option value="2030">
+                                          2030 </option>
+                                        <option value="2031">
+                                          2031 </option>
+                                        <option value="2032">
+                                          2032 </option>
+                                        <option value="2033">
+                                          2033 </option>
+                                        <option value="2034">
+                                          2034 </option>
+                                        <option value="2035">
+                                          2035 </option>
+                                        <option value="2036">
+                                          2036 </option>
+                                        <option value="2037">
+                                          2037 </option>
+                                        <option value="2038">
+                                          2038 </option>
+                                        <option value="2039">
+                                          2039 </option>
+                                        <option value="2040">
+                                          2040 </option>
+                                        <option value="2041">
+                                          2041 </option>
+                                        <option value="2042">
+                                          2042 </option>
+                                        <option value="2043">
+                                          2043 </option>
+                                        <option value="2044">
+                                          2044 </option>
+                                        <option value="2045">
+                                          2045 </option>
+                                      </select><label class="control-label">年</label>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th class="bd-raw">クレジットカード名義人<br>
+                                      <span class="fz_12 fw_n">半角英字のみ</span>
+                                    </th>
+                                    <td class="bd-raw">
+                                      <p>
+                                        <input class="form-control form-control_paid-point" id="card_name" maxlength="32" name="card_name" placeholder="クレジットカード名義人" type="text" value="" autocomplete="cc-name">
+                                      </p>
+                                      <p class="fz_12 c_red">例：TARO MORATAME</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th>クレジットカードセキュリティコード<br>
+                                      <span class="fz_12 fw_n">半角数字のみ</span>
+                                    </th>
+                                    <td>
+                                      <p>
+                                        <input class="form-control form-control_paid-point" id="card_sec" max="9999" name="card_sec" placeholder="クレジットカードセキュリティコード" type="number" value="" autocomplete="cc-csc">
+                                      </p>
+                                      <p class="fz_12 c_red">カード裏面のご署名欄に印刷された右端3桁（または4桁）がセキュリティコードです。<br>
+                                        ※お客様の暗証番号ではありません。</p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- payment end -->
                     <style>
                       ul.coupon p {
                         display: inline;
@@ -449,12 +566,63 @@ document.addEventListener('DOMContentLoaded', function() {
                       }
                     </style>
 
+                    <!-- coupon start -->
+                    <div class="item-part">
+                      <p class="fz_14 cart-heading--gray mb_5 fw_b">クーポン</p>
+                      <ul class="coupon">
+
+                        <li>
+                          <label>
+                            <input name="coupon_code" type="radio" value="" class="" checked>
+                            <p>
+                              クーポンを使用しない
+                            </p>
+                          </label>
+                        </li>
+
+                        <li id="input_coupon" style="display: none">
+                          <label style="background-color: #e6effc;">
+                            <input id="input_coupon_radio" name="coupon_code" type="radio" value="" class="">
+                            <p id="discount_display">入力クーポン<em>0円引き</em></p>
+                          </label>
+                        </li>
+
+                        <li style="padding-top: 0.4em;">
+                          <label>
+                            <input type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力">
+                            <span id="apply_coupon_code">
+                              <input type="button" name="coupon_check" value="適用する" onclick="javascript:check_coupon();">
+                            </span>
+                          </label>
+                          <span id="coupon_error_msg" class="c_red02" style="display: none;text-indent:initial">
+                            エラー文言
+                            </spam>
+                        </li>
+                      </ul>
+                    </div> <!-- coupon end -->
 
 
 
                     <!-- destination -->
                     <!-- destination end -->
 
+                    <div class="item-part">
+                      <p class="c-section-heading fs-16">
+                        安全にクレジットカードをご利用いただくため、個人情報保護法に基づく個人データの第三者提供の同意が必要です。<br>
+                        <br>
+                        ・クレジットカード利用上の注意<br>
+                        クレジットカード番号などの情報の盗用による不正利用を防ぐため、当社がお客様から収集した以下の個人情報等は、お客様が利用されているカード発行会社へ提供させていただきます。<br>
+                        「IPアドレス」「デバイス情報」「インターネット利用環境に関する情報」<br>
+                        <br>
+                        ・個人情報の第三者提供<br>
+                        お客様が利用されているカードの発行会社が外国にある場合、これらの情報は当該発行会社が所属する国に移転される場合があります。<br>
+                        お客様が未成年の場合、親権者または後見人の承諾を得た上で、本サービスを利用するものとします。
+                      </p>
+                      <div class="t-checkbox">
+                        <input type="checkbox" id="agreement_3ds" name="agreement_3ds" class="t-checkbox__item" value="1">
+                        <label for="agreement_3ds">同意する</label>
+                      </div>
+                    </div>
                   </form>
                   <div class="t-button">
                     <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
