@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
     <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-    <title>もらえる商品アンケート回答｜Vポイントが貯まる・使える Vサンプル</title>
+    <title>申し込み内容確認 | Vサンプル｜Vポイントが貯まる・使える Vサンプル</title>
 
     <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/bootstrap.v3.3.7--scope.css?2026021912">
 
@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/p9255-common--pc.css?2026021912">
 
     <!--slideUp Down-->
-    <script src="https://stg.tsample.tsite.jp/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../assets/vendor/jqyery/jquery-3.2.1.min.js"></script>
     <script>
       $(function () {
         $('.slideup').click(function () {
@@ -81,11 +81,10 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/style.css?2026021912">
 
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail itemApply">
+  <body class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
     <div class="body-wrapper">
       <div class="p-masthead">
         <div class="l-conteiner">
@@ -95,7 +94,7 @@
                 <!-- logo -->
                 <h1>
                   <a href="https://stg.tsample.tsite.jp/">
-                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
+                    <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
                     <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
                   </a>
                 </h1>
@@ -228,240 +227,312 @@
         <div class="contents cf contents--responsive">
           <div class="primary primary--responsive">
             <div id="F001" class="js-t-wrapper itemDetailBox">
-              <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
-              <script type="text/javascript">
-                function doSubmit() {
-                  nextPage();
-                }
-              </script>
-
-              <script language="javascript">
-                function chgExclusion(chgType, exclusion_name, my_name) {
-                  // 排他制御 無効化
-                  if (chgType == 0 || (chgType == 1 && document.frmtame2.elements[my_name].checked == false)) {
-                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                      if (document.frmtame2.elements[i].type == "checkbox") {
-                        if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
-                          document.frmtame2.elements[i].disabled = false;
-                        }
-                      }
-                    }
-                  } else {
-                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                      if (document.frmtame2.elements[i].type == "checkbox") {
-                        if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1 && document.frmtame2.elements[i].name != my_name) {
-                          document.frmtame2.elements[i].disabled = true;
-                          document.frmtame2.elements[i].checked = false;
-                        }
-                      }
-                    }
-                  }
-                }
-
-                function chgExclusion2(exclusion_name, my_name, limit) {
-                  var selectCount;
-                  selectCount = 0;
-
-                  for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                    if (document.frmtame2.elements[i].type == "checkbox") {
-                      if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
-                        if (document.frmtame2.elements[i].checked == true) {
-                          selectCount++;
-                        }
-                      }
-                    }
-                  }
-
-                  if (selectCount > limit) {
-                    alert(limit + "つまで選択できます");
-
-                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                      if (document.frmtame2.elements[i].type == "checkbox") {
-                        if (document.frmtame2.elements[i].name == my_name) {
-                          document.frmtame2.elements[i].checked = false;
-                        }
-                      }
-                    }
-                  }
-                }
-
-              </script>
-              <script language="JavaScript" type="text/JavaScript">
-<!--
-function nextPage() {
-    // 名前のスペースを除去する
-    const elements = document.getElementsByClassName('js-nonspace');
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].value = removeSpace(elements[i].value);
+              <script language="Javascript" type="text/JavaScript">
+    <!--
+    var gflg = true;
+    function go_next() {
+        var c = gflg;
+        if (c) {
+            gflg = false;
+            document.frm.submit();
+        }
+        return false;
     }
 
-    
-    document.frmtame2.submit();
-        return false;
-
-}
--->
-// 文字列中に含まれる空白文字をすべて削除する
-function removeSpace(str) {
-    return str.replace(/\s+/g, '');
-}
-
-// DOMの準備ができたら実行
-document.addEventListener('DOMContentLoaded', function() {
-    // フォーカスが外れたらスペースを削除する
-    const elements = document.getElementsByClassName('js-nonspace');
-    for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } }); </script>
-                <!-- breadCrumbs -->
-                <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=6aaf2">もらえる商品詳細</a> ＞もらえる商品アンケート回答</p>
-                <!-- /breadCrumbs -->
-                <!--contents-->
-                <div id="anchor01" class="whiteContainer fz_14">
-                  <div class="t-text">
-                    <div class=" c-section-heading enq-section-heading t-text__middle">
-                      <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
+    function back() {
+        document.frm.action = "https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df";
+        document.frm.submit();
+    }
+    //-->
+</script>
+              <!-- breadCrumbs -->
+              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ためせる商品詳細</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df">ためせる商品アンケート回答</a> ＞ためせる商品申し込み内容確認</p>
+              <!-- /breadCrumbs -->
+              <!-- sub header -->
+              <div class="t-sub-header">
+                <h2>配送先・申し込み内容確認</h2>
+              </div>
+              <!-- /sub header -->
+              <p style="padding:15px;color:red;border:1px solid red;font-size:13px;text-align:center;margin-bottom:12px;">
+                別タブなどで他のページを開くと、申し込みのお手続きがやり直しとなりますのでご注意ください。
+              </p>
+              <!-- contents -->
+              <div id="select-address">
+                <fieldset>
+                  <div class="t-radio input radio">
+                    <div class="t-table">
+                      <table class="t-table__block" width="100%">
+                        <tbody>
+                          <tr>
+                            <th>お名前</th>
+                            <td>岩井　貴寛</td>
+                          </tr>
+                          <tr>
+                            <th>フリガナ</th>
+                            <td>イワイ　タカヒロ</td>
+                          </tr>
+                          <tr>
+                            <th>郵便番号</th>
+                            <td>134-0084</td>
+                          </tr>
+                          <tr>
+                            <th>都道府県</th>
+                            <td>東京都</td>
+                          </tr>
+                          <tr>
+                            <th>市区町村・番地</th>
+                            <td>江戸川区東葛西8-32</td>
+                          </tr>
+                          <tr>
+                            <th>建物名・<br>部屋番号等</th>
+                            <td>a</td>
+                          </tr>
+                          <tr>
+                            <th>電話番号</th>
+                            <td>03-5486-3530</td>
+                          </tr>
+                          <tr>
+                            <th>メールアドレス</th>
+                            <td>mod_develop+vsample202500105_2@cm-group.co.jp</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                  <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
-                    <input type="hidden" name="project_id" id="project_rand" value="6aaf2">
-                    <input type="hidden" name="test" value="">
-                    <input type="hidden" name="user_order_status" value="">
-                    <input type="hidden" name="fst" value="1">
-                    <input type="hidden" name="enq_mode" value="">
-                    <input type="hidden" name="enq_pg" value="">
-                    <input type="hidden" name="last_credit_card_flg" value="0">
-                    <input type="hidden" name="last_card_no" value="">
-                    <input type="hidden" name="last_card_ex" value="">
-                    <input type="hidden" name="token" id="token" value="">
-                    <input type="hidden" name="token_key" id="token_key" value="">
-                    <input type="hidden" name="masked_card_no" id="masked_card_no" value="">
-                    <input type="hidden" name="token_error" id="token_error" value="false">
-                    <input type="hidden" name="shipment_area" id="shipment_area" value="">
-                    <input type="hidden" name="address" id="address" value="0">
-                    <!-- enquete start -->
-                    <a name="enqNo0"></a>
-                    <input type="hidden" name="enq_no[0]" value="0">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q1】あなたの性別をお答えください。</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[0][key][0]" value="男性">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="男性" ID="radio_0_0"><label for="radio_0_0">男性</label></li><input type="hidden" name="ans[0][key][1]" value="女性">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[0][val]" value="女性" ID="radio_0_1"><label for="radio_0_1">女性</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo1"></a>
-                    <input type="hidden" name="enq_no[1]" value="1">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q2】あなたの年代をお答えください。</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[1][key][0]" value="20代以下">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="20代以下" ID="radio_1_0"><label for="radio_1_0">20代以下</label></li><input type="hidden" name="ans[1][key][1]" value="30代">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="30代" ID="radio_1_1"><label for="radio_1_1">30代</label></li><input type="hidden" name="ans[1][key][2]" value="40代">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="40代" ID="radio_1_2"><label for="radio_1_2">40代</label></li><input type="hidden" name="ans[1][key][3]" value="50代">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="50代" ID="radio_1_3"><label for="radio_1_3">50代</label></li><input type="hidden" name="ans[1][key][4]" value="60代以上">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[1][val]" value="60代以上" ID="radio_1_4"><label for="radio_1_4">60代以上</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo2"></a>
-                    <input type="hidden" name="enq_no[2]" value="2">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q3】あなたのご職業をお答えください。<br />
-                          ※専業主婦・主夫⇒パートも含む<br />
-                          ※専門職1⇒SOHO、デザイナー、アーティストなど<br />
-                          ※専門職2⇒弁護士、会計士、医師など</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[2][key][0]" value="専業主婦・主夫">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="専業主婦・主夫" ID="radio_2_0"><label for="radio_2_0">専業主婦・主夫</label></li><input type="hidden" name="ans[2][key][1]" value="会社員">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="会社員" ID="radio_2_1"><label for="radio_2_1">会社員</label></li><input type="hidden" name="ans[2][key][2]" value="会社経営・役員">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="会社経営・役員" ID="radio_2_2"><label for="radio_2_2">会社経営・役員</label></li><input type="hidden" name="ans[2][key][3]" value="公務員">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="公務員" ID="radio_2_3"><label for="radio_2_3">公務員</label></li><input type="hidden" name="ans[2][key][4]" value="自営業">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="自営業" ID="radio_2_4"><label for="radio_2_4">自営業</label></li><input type="hidden" name="ans[2][key][5]" value="教職">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="教職" ID="radio_2_5"><label for="radio_2_5">教職</label></li><input type="hidden" name="ans[2][key][6]" value="専門職1">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="専門職1" ID="radio_2_6"><label for="radio_2_6">専門職1</label></li><input type="hidden" name="ans[2][key][7]" value="専門職2">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="専門職2" ID="radio_2_7"><label for="radio_2_7">専門職2</label></li><input type="hidden" name="ans[2][key][8]" value="アルバイト">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="アルバイト" ID="radio_2_8"><label for="radio_2_8">アルバイト</label></li><input type="hidden" name="ans[2][key][9]" value="無職">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="無職" ID="radio_2_9"><label for="radio_2_9">無職</label></li><input type="hidden" name="ans[2][key][10]" value="学生">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="学生" ID="radio_2_10"><label for="radio_2_10">学生</label></li><input type="hidden" name="ans[2][key][11]" value="その他">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[2][val]" value="その他" ID="radio_2_11"><label for="radio_2_11">その他</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo3"></a>
-                    <input type="hidden" name="enq_no[3]" value="3">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q4】あなたの婚姻状況についてお答えください。</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[3][key][0]" value="未婚">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[3][val]" value="未婚" ID="radio_3_0"><label for="radio_3_0">未婚</label></li><input type="hidden" name="ans[3][key][1]" value="既婚">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[3][val]" value="既婚" ID="radio_3_1"><label for="radio_3_1">既婚</label></li><input type="hidden" name="ans[3][key][2]" value="その他">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[3][val]" value="その他" ID="radio_3_2"><label for="radio_3_2">その他</label></li>
-                      </ul>
-                    </section>
-                    <a name="enqNo4"></a>
-                    <input type="hidden" name="enq_no[4]" value="4">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q5】あなたにお子様はいらっしゃいますか？</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[4][key][0]" value="いる">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[4][val]" value="いる" ID="radio_4_0"><label for="radio_4_0">いる</label></li><input type="hidden" name="ans[4][key][1]" value="いない">
-                        <li><input data-role="none" class="answer" type="radio" name="ans[4][val]" value="いない" ID="radio_4_1"><label for="radio_4_1">いない</label></li>
-                      </ul>
-                    </section>
-                    <!-- enquete end -->
-
-                    <style>
-                      ul.coupon p {
-                        display: inline;
-                      }
-
-                      ul.coupon li {
-                        text-indent: -1.3em;
-                        padding-left: 1.3em;
-                        line-height: 2em;
-                      }
-
-                      ul.coupon label {
-                        padding: 0.5em 0.5em 0.5em 0;
-                      }
-
-                      ul.coupon em {
-                        margin-left: 0.5em;
-                        color: #f76b1f;
-                      }
-
-                      ul.coupon input[type=text] {
-                        border-radius: 4px;
-                        border: 1px solid #ccc;
-                        margin: 0.5em 0 0.5em 1.5em;
-                        padding: 0 1em 0 1em;
-                      }
-
-                      ul.coupon input:checked+p {
-                        font-weight: bold;
-                      }
-
-                      #input_coupon_code {
-                        display: inline;
-                        margin: 0 0 0 10px;
-                      }
-                    </style>
-
-
-
-
-                    <!-- destination -->
-                    <!-- destination end -->
-
-                  </form>
-                  <div class="t-button">
-                    <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
-                  </div>
-                  <!-- /contents -->
+                </fieldset>
+              </div>
+              <div class="t-crosshead">
+                <div class="t-crosshead__inner">
+                  <h2 class="t-crosshead__text">申し込み内容</h2>
                 </div>
-                <!-- footer -->
+              </div>
+              <ul class="t-media">
+                <li>
+                  <div class="t-media__inner">
+                    <div class="t-media__img">
+                      <img src="https://stg.tsample.tsite.jp/img/project/" width="80" alt="">
+                    </div>
+                    <div class="t-media__body">
+                      <p class="t-media__body-title">
+                        <span><em>ギフトコードK5 200件</em>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <form name="frm" id="frm" method="post" action="https://stg.tsample.tsite.jp/detail/order_sbps_pay.php" class="t-form">
+                <div class="t-table">
+                  <table class="t-table__block">
+                    <tbody>
+                      <tr>
+                        <th>ギフトコード価格</th>
+                        <td>198円</td>
+                      </tr>
+                      <tr>
+                        <th>合計</th>
+                        <td class="cell-strong">198円</td>
+                      </tr>
+                      <tr class="t-point-border">
+                        <th>ご利用Vポイント</th>
+                        <td>
+                          <input type="tel" max="198" min="0" id="use_point" name="use_point" style="width: 6rem;margin-bottom: 10px;" placeholder="0" value="">
+                          <br><button type="button" id="all_point" style="box-shadow: 1px 1px #000000;margin-bottom: 10px;border-radius: 30px;">全額Vポイントで支払い</button>
+
+                          <script>
+
+                            $(function () {
+                              $('#use_point').change(function () {
+                                val_check();
+                              });
+
+                              $('#use_point').keyup(function () {
+                                val_check();
+                              });
+
+                              $('#all_point').click(function () {
+                                all_point();
+                              });
+
+                              $('#all_point_use').click(function () {
+                                all_point_use();
+                              });
+
+                              // エンターキーを無効化
+                              $("input").keydown(function (e) {
+                                if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
+                                  return false;
+                                } else {
+                                  return true;
+                                }
+                              });
+
+                              $('#use_point').trigger('change');
+                            });
+
+
+                            // 全額ポイント支払い
+                            function all_point() {
+                              $('#use_point').val($('#pay_sum_def').val());
+                              val_check();
+                            }
+
+                            // ポイント全部使用
+                            function all_point_use() {
+                              $('#use_point').val(198);
+                              val_check();
+                            }
+
+                            // 半角数値以外は認めない
+                            function hankaku2Zenkaku(str) {
+                              if (!String(str).match(/^\d+$/)) {
+
+                                if ($('#use_point').val() != "") {
+                                  $('#use_point').val("");
+                                  window.alert("ポイント数に半角の数値以外は入力できません。");
+                                }
+                                return 0;
+                              } else {
+                                return 1;
+                              }
+                            }
+
+                            function val_check() {
+
+                              var tmp = $('#use_point').val();
+
+                              // マイナス削除処理
+                              tmp = tmp.replace("ー", "");
+                              tmp = tmp.replace("−", "");
+
+                              // ゼロ始まりの数値はあり得ないので、入力禁止
+                              if (tmp[0] == "0") {
+                                tmp = "";
+                              }
+
+                              $('#use_point').val(tmp);
+
+                              // 半角数値以外は認めない
+                              hankaku2Zenkaku($('#use_point').val())
+
+                              // 合計金額計算
+                              var pay_sum = $('#pay_sum_def').val() - $('#use_point').val();
+
+                              // 0円以下にはできないようにする
+                              if (pay_sum < 0) {
+                                pay_sum = 0;
+                                $('#use_point').val($('#pay_sum_def').val());
+                              }
+
+                              // 保有ポイント以上の処理はできないようにする
+                              if ($('#use_point').val() > 198) {
+                                pay_sum = $('#pay_sum_def').val() - 198;
+                                $('#use_point').val(198);
+                              }
+
+
+                              // カンマ区切り表示に変更
+                              var v_pay_sum = new Intl.NumberFormat('ja-JP').format(pay_sum);
+                              // 計算結果を反映
+                              $("#pay_sum").html(v_pay_sum + "");
+
+                              if (pay_sum == 0) {
+                                $("#pay_type").html("ポイント払い");
+                                $("#card_number").css('display', 'none');
+                              } else {
+                                $("#pay_type").html("クレジットカード一括払い");
+                                $("#card_number").css('display', '');
+                              }
+
+                              if (pay_sum < 10 && pay_sum != 0) {
+                                $("#submit_btn").html('<button type="button" class="t-button__default t-button__smallText t-button--disable">決済金額をご確認ください</button>');
+                                $("#err_msg").html("Vポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにVポイントのご利用数を変更してください。");
+                              } else {
+                                $("#submit_btn").html('<button onclick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue">申し込みを確定する</button>');
+                                $("#err_msg").html("");
+                              }
+
+                            }
+
+                          </script>
+                          <br><span>(Vポイント：10,000ポイント保有)</span>
+
+
+
+                        </td>
+                      </tr>
+                      <tr class="t-point-border">
+                        <th>合計</th>
+                        <input type="hidden" id="pay_sum_def" value="198">
+                        <td class="cell-strong">
+                          <span class="t-point__point"><span id="pay_sum" class="t-point__point__num">198</span>円（税込）</span><br>
+                          <span style="" class="t-table__t-point__notice" id="pay_sum_msg">Vポイントをご利用の場合、「合計」が1～9円となる決済ができません。「合計」が0円または、10円以上になるようにVポイントを利用してください。</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>獲得Vポイント<br></th>
+                        <td>0 ポイント</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="t-table">
+                  <table class="t-table__block">
+                    <tbody>
+                      <tr>
+                        <th>支払方法</th>
+                        <td id="pay_type">クレジットカード一括払い</td>
+                      </tr>
+                      <tr id="card_number">
+                        <th>カード番号</th>
+                        <td>****-****-****-0004</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div style="border: solid;border-color: red;color: red;padding: 1rem;">
+                  <p style="font-weight: bold;margin-bottom: 15px;">特定商取引の表示についてのご案内</p>
+                  <p>◆支払の時期・方法について</p>
+                  <p style="margin-bottom: 0.5rem;">各クレジットカード会社の引き落とし日及び支払い方法に準ずる</p>
+                  <p>◆引渡時期・提供時間</p>
+                  <p style="margin-bottom: 0.5rem;">各商品詳細ページでご案内している発送予定日から約3日以内。※お届け日、時間指定は承っておりません</p>
+                  <p>◆申込みの期間</p>
+                  <p style="margin-bottom: 0.5rem;">2026年01月08日　から 2028年01月08日</p>
+                  <p>◆申込みの撤回・解除に関する事項</p>
+                  <p style="margin-bottom: 2rem;">会員様都合でのご返品はお受け出来ません。
+                    万が一、商品が破損していた場合には、商品到着後3日以内に事務局へのメールにてお問い合わせください。
+                    商品破損の場合、ご返品の際の送料およびご返金に必要な手数料は弊社の負担とさせていただきます）。</p>
+
+                  <p><a href="https://tsample.tsite.jp/contents/trade/index.php">&gt;特定商取引に基づく表記</a></p>
+                </div>
+
+                <div class="t-text" style="margin-top:0;">
+                  <div class="t-text__small monitor-text__red">
+                    <p>※こちらの商品の発送は、1個口で発送になります。</p>
+                  </div>
+                </div>
+                <input type="hidden" name="project_id" value="fe6df">
+                <input type="hidden" name="amount" value="198" />
+                <input type="hidden" name="pay" value="5" />
+                <input type="hidden" name="commodity" value="" />
+                <input type="hidden" name="ship_option" value="" />
+
+
+
+
+                <div class="t-button" id="submit_btn">
+                  <button onClick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue" id="submit_btn">申し込みを確定する</button>
+                </div>
+                <div style="text-align: center;color: red;"><span id="err_msg"></span></div>
+                <div class="t-button">
+                  <div class="t-arrow_left">
+                    <button class="t-button__default t-button__smallText" onClick="javascript:back()">戻る</button>
+                  </div>
+                </div>
+                <input type="hidden" name="order_tmp_id" value="2131">
+              </form>
+              <!-- /contents -->
+              <!-- footer -->
             </div>
 
             <!-- footBnr -->
@@ -709,66 +780,10 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <!--  //body-wrapper -->
 
-    <script language="JavaScript" type="text/JavaScript">
-    function check_coupon() {
-        $('input[name=coupon_take_flg]').val('1');
-        var url = 'coupon.exec.php';
-        var request = {
-            project_rand: $("#project_rand").val(),
-            coupon_code: $("#input_coupon_code").val(),
-        };
-        var params =  new URLSearchParams(request).toString();
-
-        $.post( url , {params:params} , function( data , status ) {
-            if (! data.hasOwnProperty('status')) {
-                data = {
-                    status: '0',
-                    message: 'クーポン情報の取得に失敗しました。'
-                }
-            }
-            if ( data.status == '0' ) {
-                coupon_error(data);
-            } else if ( data.status == '1' ) {
-                use_coupon(data);
-            }
-        }
-        , 'json'
-        );
-
-        return false;
-    }
-
-    function coupon_error(data){
-        $("#input_coupon").css("display", "none");
-        $("#input_coupon_radio").prop('disabled', true);
-        $('input[name=coupon_code]').eq(0).prop('checked', true);
-        $("#input_coupon_code").css({
-            "background-color":"#ffdddd",
-            "outline":"solid 1px #ff6666"
-        });
-        $("#coupon_error_msg").css("display", "block").html(data.message);
-
-    }
-    function use_coupon(data){
-        $("#coupon_error_msg").css("display", "none");
-        $("#input_coupon").css("display", "block");
-        $("#input_coupon_radio").prop('disabled', false).prop('checked', true)
-            .val($("#input_coupon_code").val());
-        $("#discount_display").text(data.coupon_name);
-        if (data.hasOwnProperty("residue")) {
-            $("#discount_display").append($("<span>", {text: "（残り" + data.residue + "回）"}));
-        }
-        $("#discount_display").append($("<em>", {text: data.message}));
-        $("#input_coupon_code").css({
-            "background-color":"initial",
-            "outline":"initial"
-        });
-    }
-</script>
     <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="../js/t.js"></script>
+    <script src="../assets/js/t.js"></script>
     <script src="https://tsample.tsite.jp/js/announce_toggle.js?2026021912" async></script>
     <!-- hamburgerMenu -->
     <script>
