@@ -1,0 +1,67 @@
+.cbxbd1_0, .cbxbd1_1, .cbxbd1_2, .cbxbd1_3, .cbxbd1_4, .cbxbd1_5, .cbxbd1_6, .cbxbd1_7, .cbxbd1_8, .cbxbd1_9 {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: url(/s/images/common/radioBtn.png) no-repeat left top;
+  background-size: 30px 60px;
+  line-height: 30px;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  color: #868686;
+}
+/* Wee add */
+.pr-message {
+  text-align: center;
+  padding: 10px;
+}
+
+.pr-message a {
+  color: #f00 !important;
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  border-bottom: 1px solid #e52c06;
+}
+
+.message-area {
+  border: 1px solid gray;
+  margin: 5px 5px 10px;
+}
+
+.message-area .title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.message-area .title > span {
+  font-size: 0.8rem;
+  background-color: #e53935;
+  color: #fff;
+  padding: 5px;
+  margin-right: 6px;
+}
+
+.message-area .text-message {
+  padding: 10px;
+}
+
+.message-area p {
+  font-size: 0.8rem;
+  color: #222222;
+  padding-bottom: 0.8rem;
+  line-height: 0.6rem;
+}
+
+.message-area .text p {
+  line-height: 1.2rem;
+}
+
+.message-box .no-message {
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: bold;
+}

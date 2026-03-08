@@ -1,0 +1,24 @@
+.pickup-bnr-area {
+  max-width: 710px;
+  max-width: 710px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pickup-bnr-area .bnr-img {
+  line-height: 0;
+}
+.pickup-bnr-area .bnr-img img {
+  max-width: 710px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.pickup-bnr-area li {
+  list-style-type: none;
+}
+/*20191010___ピックアップバナーをハンバーガーメニューへ移動 */
+.pickup-bnr-area .bnr-img{
+    margin: 0 5px 5px;
+}
+/*20191010___ピックアップバナーをハンバーガーメニューへ移動　/////   */

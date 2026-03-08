@@ -1,128 +1,216 @@
 @charset "UTF-8";
-body {
-  position: relative;
-  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", "sans-serif";
-}
-
-.body-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-@media only screen and (max-width: 1614px) {
-  header {
-    max-width: 100%;
-  }
-}
-header .header {
-  width: 100%;
-  border-bottom: #004098 solid 3px;
-}
-header .header h1 {
-  max-width: 1270px;
-  margin: auto;
-  padding: 10px;
-}
-header .header h1 img {
-  vertical-align: middle;
-  width: 200px;
-}
-@media only screen and (max-width: 639px) {
-  header .header h1 img {
-    width: 150px;
-  }
-}
-
-main .main {
-  max-width: 640px;
-  margin: auto;
-  padding: 0 10px;
-  padding-bottom: 20px;
-  line-height: 1.3;
-  /*_input*/
-  /*postal code*/
-  /*city*/
-  /*_confirm*/
-  /*_submit*/
-  /*_complete-totop*/
-  /*_complete*/
-}
-main .main .milestone img {
-  max-width: 100%;
-  height: auto;
-  padding: 20px 0;
-}
-@media only screen and (max-width: 639px) {
-  main .main .milestone img {
-    padding: 10px 0 15px;
-  }
-}
-main .main h3.step-name {
-  font-size: 20px;
-  text-align: center;
-}
-main .main .t-column-head {
-  margin-top: 15px;
-}
-main .main .t-column-head__text {
-  font-size: 14px;
-  line-height: 1.2;
-  position: relative;
-  padding: 0 0 0 1.2em;
-}
-main .main .t-column-head__text:before {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 10px;
-  height: 10px;
-  content: "";
-  border-radius: 7px;
-  background-color: #004098;
-}
-main .main .submit-area_txt {
-  text-align: center;
-  margin: 20px 0;
+/*common-area*/
+* {
+  font-size: 16px;
   line-height: 1.5;
+  /*.submit-btn{
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    background-color: #1b94d3;
+    button{
+        color: #fff;
+    }
+}*/
+  /*.correct-btn{
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #1b94d3;
+    border-radius: 8px;
+    background-color: #fff;
+    button{
+        color: #1b94d3;
+    }
+}*/
 }
-@media only screen and (max-width: 639px) {
-  main .main .submit-area_txt {
-    font-size: 14px;
-  }
-}
-main .main .t-form__input {
-  border: 1px solid #a4a4a4;
-  border-radius: 4px;
-  overflow: hidden;
-  height: 30px;
-  background: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-main .main .t-form__input input {
+* .milesstone img {
   width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 0 10px;
-  font-size: 14px;
-  background: transparent;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
 }
-main .main .birthday li {
-  margin-top: 10px;
-  line-height: 30px;
+* .heading-ttl {
+  font-size: 21px;
+  font-weight: normal;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  color: #343434;
+}
+* .select-area {
+  padding-bottom: 20px;
+}
+* .form-ttl {
+  margin-bottom: 20px;
+  background: #f3f3f3;
+}
+* .element-ttl {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 38px;
+  display: inline;
+  margin-left: 5%;
+  padding-right: 4px;
+  vertical-align: middle;
+  color: #343434;
+}
+* .required {
+  font-size: 12px;
+  display: inline;
+  padding: 2px 4px 2px;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #1d2088;
+}
+* .input-area {
+  margin-left: 5%;
+}
+* li {
+  list-style-type: none;
+}
+* .side-text {
+  font-size: 13px;
+  margin-right: 5%;
+  padding: 4px 0;
+  text-align: right;
+}
+* .error {
+  font-size: 12px;
+  line-height: 1.4;
+  padding-top: 4px;
+  color: #ff0004;
+}
+* .c_blue {
+  color: #00e;
+}
+* .submit-btn,
+* .blue-btn {
+  margin: 20px 0;
+}
+* .submit-btn button,
+* .blue-btn button {
+  font-size: 15px;
+  line-height: 18px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  width: 90%;
+  height: 43px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  border: 1px #1b94d3 solid;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  background: linear-gradient(#1b94d3, #1782b9);
+}
+* .submit-btn button a,
+* .blue-btn button a {
+  color: #fff;
+}
+* .correct-btn,
+* .white-btn {
+  margin: 20px 0;
+}
+* .correct-btn button,
+* .white-btn button {
+  font-size: 15px;
+  line-height: 18px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  width: 90%;
+  height: 43px;
+  margin: auto;
+  text-align: center;
+  color: #1b94d3;
+  border: 1px #1b94d3 solid;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  background: linear-gradient(#fff, #fff);
+}
+* .correct-btn button a,
+* .white-btn button a {
+  color: #1b94d3;
+}
+
+/*common-area閉じタグ*/
+/*  new-signup 基本情報入力　*/
+.new-signup-input {
+  /*sexs 性別*/
+  /*  birthday 生年月日  */
+  /*email メールアドレス*/
+  /*password パスワード*/
+  /*magazine メルマガの種類*/
+  /*nickname ニックネーム*/
+  /*submit-area 入力内容確認へ*/
+}
+.new-signup-input .sexs li {
+  display: inline-block;
+  width: 35%;
+  list-style: none;
+}
+.new-signup-input .sexs li input {
+  display: none;
+}
+.new-signup-input .sexs li input[type='radio']:checked + label:after {
+  position: absolute;
+  top: 53%;
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  content: '';
+  border-radius: 14px;
+  background: #333;
+}
+.new-signup-input .sexs li label {
+  line-height: 1;
   position: relative;
   display: inline-block;
-  width: 90px;
-  height: 30px;
-  border: 1px solid #8b8b8b;
+  margin-left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #3e4956;
+  border-radius: 2px;
+}
+.new-signup-input .sexs li label:before {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 32px;
+  height: 32px;
+  margin-top: -17px;
+  content: '';
+  border: 1px solid #a4a4a4;
+  border-radius: 22px;
+  background: #fff;
+}
+.new-signup-input .birthday li {
+  line-height: 35px;
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  min-height: 34px;
+  border: 1px solid #d2d2d2;
   border-radius: 5px;
   background: #fff;
 }
-main .main .birthday li:before {
+.new-signup-input .birthday li:before {
   position: absolute;
   z-index: 20;
   top: 50%;
@@ -131,217 +219,573 @@ main .main .birthday li:before {
   width: 0;
   height: 0;
   margin: -2px -3px 0 0;
-  content: "";
+  content: '';
   border: 5px solid transparent;
   border-top: 7px solid #5a5a5a;
 }
-main .main .birthday li select {
+.new-signup-input .birthday li select {
   position: relative;
   display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  height: 30px;
-  padding: 0 0.5em;
-  font-size: 14px;
+  padding: .3em;
   cursor: pointer;
   color: #5a5a5a;
   border: none;
   border-radius: 5px;
   background: transparent;
   -webkit-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-main .main .sexs li {
-  margin-top: 10px;
+.new-signup-input .email li:first-child {
+  padding-bottom: 10px;
+}
+.new-signup-input .email li input {
+  width: 89%;
+  height: 20px;
+  padding: .5em;
+  color: #000;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  box-shadow: none !important;
+}
+.new-signup-input .password li input {
+  width: 89%;
+  height: 20px;
+  padding: .5em;
+  color: #000;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.new-signup-input .magazines li:first-child {
   display: inline-block;
-  width: 110px;
-  list-style: none;
+  padding-bottom: 10px;
 }
-main .main .t-button__group {
-  display: -webkit-box;
-  box-sizing: content-box;
+.new-signup-input .magazines li input {
+  display: none;
 }
-main .main .t-button__group li {
-  display: table-cell;
-  margin-right: 10px;
+.new-signup-input .magazines li input[type='radio']:checked + label:after {
+  position: absolute;
+  top: 53%;
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  content: '';
+  border-radius: 14px;
+  background: #333;
 }
-main .main .t-button__group li:last-child {
-  margin-right: 0;
+.new-signup-input .magazines li label {
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #3e4956;
+  border-radius: 2px;
 }
-main .main .t-form__input {
+.new-signup-input .magazines li label:before {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 32px;
+  height: 32px;
+  margin-top: -17px;
+  content: '';
   border: 1px solid #a4a4a4;
-  border-radius: 4px;
-  overflow: hidden;
-  height: 30px;
+  border-radius: 22px;
   background: #fff;
 }
-main .main .t-form__input input {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 0 10px;
-  font-size: 14px;
-  background: transparent;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+.new-signup-input .nickname li input {
+  width: 89%;
+  height: 20px;
+  padding: .5em;
+  color: #000;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  box-shadow: none;
 }
-main .main .t-button__min {
-  margin-left: 5px;
-  font-size: 11px;
-  padding: 0 10px;
-  font-family: Arial;
-  line-height: 2.4;
-  display: block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.new-signup-input .nickname .nickname-check-btn {
+  font-size: 12px;
+  margin-top: 5px;
+  background-color: #82857a;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 3px 10px;
+}
+.new-signup-input .submit-area {
+  line-height: 1.5;
+  margin-top: 20px;
   text-align: center;
-  color: #333;
-  border: 1px solid #b9b9b9;
-  border-radius: 4px;
-  box-shadow:
-    0 1px 1px rgba(255, 255, 255, 0.3) inset,
-    0 0 0 rgba(0, 0, 0, 0.1),
-    0 1px 1px rgba(0, 0, 0, 0.1);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fff),
-    to(#eee)
-  );
 }
-main .main .t-select {
-  margin-top: 10px;
+
+/*new-signup-confirm 入力内容確認ページ*/
+.new-signup-confirm .submit-btn {
+  margin-top: 0;
 }
-main .main .t-select .t-select__layout {
+
+/* email-confirm  メールアドレス認証ページ*/
+.email-confirm .email-confirm-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px 5%;
+  border-top: 1px solid #f3f3f3;
+}
+.email-confirm .email-confirm-text p {
+  padding-bottom: 15px;
+}
+.email-confirm .email-confirm-text .email-confirm-attention {
+  font-size: 12px;
+  padding: 5px;
+  color: red;
+  border: 1px red solid;
+}
+
+/* new-signup-complete 会員登録完了　*/
+.new-signup-complete .complete-text {
+  font-size: 14px;
+  padding: 0 5%;
+  padding-bottom: 20px;
+}
+.new-signup-complete .complete-text-short {
+  font-size: 14px;
+  text-align: center;
+}
+.new-signup-complete .item-bar {
+  border-top: #f3f3f3 solid 2px;
+  border-bottom: #f3f3f3 solid 2px;
+}
+
+/*　detail-input 基本情報入力ページ*/
+.detail-input {
+  /*氏名*/
+  /*プロフィール*/
+  /*職業*/
+  /*配偶者*/
+  /*子供*/
+  /*郵便番号*/
+  /*都道府県*/
+  /*市区町村・番地 & マンション・団地名*/
+  /*電話番号*/
+  /* ブログ有無　*/
+  /*ブログ名 & ブログURL*/
+  /*ブログポータル*/
+  /*SNS twitter*/
+  /*あなたの興味*/
+}
+.detail-input .example-text {
+  font-size: 12px;
+  padding-top: 2px;
+}
+.detail-input .name table {
+  width: 100%;
+}
+.detail-input .name td {
+  width: 45%;
+  padding-bottom: 10px;
+}
+.detail-input .name td input {
+  width: 77%;
+  height: 20px;
+  padding: .5em;
+  color: #000;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.detail-input .profile-pic .example-text {
+  font-size: 14px;
+  padding-top: 5px;
+}
+.detail-input .job {
+  line-height: 35px;
   position: relative;
-  height: 30px;
-  border: 1px solid #b3b3b3;
-  border-radius: 4px;
+  display: inline-block;
+  width: 90%;
+  min-height: 34px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background: #fff;
 }
-main .main .t-select .t-select__layout:before {
+.detail-input .job:before {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  content: "";
-  border-radius: 0 3px 3px 0;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#a4a4a4),
-    to(#757575)
-  );
+  z-index: 20;
+  top: 50%;
+  right: 10px;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: -2px -3px 0 0;
+  content: '';
+  border: 5px solid transparent;
+  border-top: 7px solid #5a5a5a;
 }
-main .main .t-select .t-select__layout .t-select__select {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
+.detail-input .job select {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
-  content: "";
-}
-main .main .t-select .t-select__layout .t-select__select select {
-  font-size: 13px;
-  width: 100%;
-  height: 30px;
-  padding: 0 40px 0 6px;
-  color: #333;
-  border: 0;
+  padding: .3em;
+  cursor: pointer;
+  color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
   background: transparent;
   -webkit-appearance: none;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-main .main .t-select .t-select__layout .t-select__select:after {
+.detail-input .spouse li {
+  display: inline-block;
+  width: 35%;
+  list-style: none;
+}
+.detail-input .spouse li input {
+  display: none;
+}
+.detail-input .spouse li input[type='radio']:checked + label:after {
   position: absolute;
-  top: 11px;
+  top: 53%;
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  content: '';
+  border-radius: 14px;
+  background: #333;
+}
+.detail-input .spouse li label {
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #3e4956;
+  border-radius: 2px;
+}
+.detail-input .spouse li label:before {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 32px;
+  height: 32px;
+  margin-top: -17px;
+  content: '';
+  border: 1px solid #a4a4a4;
+  border-radius: 22px;
+  background: #fff;
+}
+.detail-input .child li {
+  display: inline-block;
+  width: 35%;
+  list-style: none;
+}
+.detail-input .child li input {
+  display: none;
+}
+.detail-input .child li input[type='radio']:checked + label:after {
+  position: absolute;
+  top: 53%;
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  content: '';
+  border-radius: 14px;
+  background: #333;
+}
+.detail-input .child li label {
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #3e4956;
+  border-radius: 2px;
+}
+.detail-input .child li label:before {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 32px;
+  height: 32px;
+  margin-top: -17px;
+  content: '';
+  border: 1px solid #a4a4a4;
+  border-radius: 22px;
+  background: #fff;
+}
+.detail-input .postal-code input {
+  height: 20px;
+  padding: .5em;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+}
+.detail-input .postal-code .address-btn button {
+  width: 95%;
+  margin: 10px 0;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  background: linear-gradient(#fff, #e0e0e0);
+}
+.detail-input .postal-code .address-btn button a {
+  vertical-align: middle;
+}
+.detail-input .city .city-box {
+  line-height: 35px;
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  min-height: 34px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background: #fff;
+}
+.detail-input .city .city-box:before {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
   right: 10px;
+  display: block;
   width: 0;
   height: 0;
-  content: "";
+  margin: -2px -3px 0 0;
+  content: '';
   border: 5px solid transparent;
-  border-top: 9px solid #fff;
+  border-top: 7px solid #5a5a5a;
 }
-main .main .telephone-area ul {
-  display: table;
-}
-main .main .telephone-area ul li {
+.detail-input .city .city-box select {
+  position: relative;
   display: inline-block;
-  width: 90px;
-  margin-right: 3px;
-  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .3em;
+  cursor: pointer;
+  color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-main .main .t-form__value {
-  margin-top: 6px;
-  margin-left: 16px;
-}
-@media only screen and (max-width: 639px) {
-  main .main .t-form__value {
-    font-size: 14px;
-  }
-}
-main .main_confirm .t-column-head {
-  margin-top: 20px;
-}
-main .main .p-registration_info_edit__block {
-  margin-bottom: 20px;
-}
-main .main .email-confirm-text {
-  font-size: 14px;
-  line-height: 1.5;
-  padding: 20px 10px;
-  margin-top: 20px;
-  border-top: 1px solid #f3f3f3;
-}
-main .main .email-confirm-text .mymenu-link {
-  color: blue;
-  text-decoration: underline;
-}
-main .main .email-confirm-text .c_red {
-  color: red;
-}
-main .main .email-confirm-text .ui-link {
-  color: #0085c3;
-  font-weight: 400;
-  text-decoration: none;
-}
-main .main .email-confirm-text .ui-link:hover {
-  text-decoration: underline;
-}
-main .main .email-confirm-text .email-confirm-attention {
-  color: red;
+.detail-input .town,
+.detail-input .building {
   padding-top: 10px;
 }
-main .main_complete_totop .complete-text {
-  text-align: center;
-}
-main .main .item-bar {
-  border-top: #f3f3f3 solid 1px;
-  border-bottom: #f3f3f3 solid 1px;
-  margin-bottom: 20px;
-}
-main .main .item-bar .p-item-list-bar__list {
-  width: 100%;
-  float: none;
-}
-main .main .item-bar .p-item-list-bar__list a {
+.detail-input .town input,
+.detail-input .building input {
+  width: 90%;
+  height: 20px;
+  padding: .5em;
   color: #000;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  box-shadow: none;
 }
-
-/* t-button style */
-.t-button__default {
-  font-size: 14px;
-  line-height: 14px;
+.detail-input .tel input {
+  height: 20px;
+  padding: .5em;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
 }
-
-.t-button__blue {
-  font-size: 14px;
-  line-height: 14px;
+.detail-input .blog li {
+  display: inline-block;
+  list-style: none;
 }
-
-footer {
-  margin-top: auto;
+.detail-input .blog li input {
+  display: none;
 }
-
-/*# sourceMappingURL=member-registration.css.map */
+.detail-input .blog li input[type='radio']:checked + label:after {
+  position: absolute;
+  top: 53%;
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  content: '';
+  border-radius: 14px;
+  background: #333;
+}
+.detail-input .blog li label {
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #3e4956;
+  border-radius: 2px;
+}
+.detail-input .blog li label:before {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 32px;
+  height: 32px;
+  margin-top: -17px;
+  content: '';
+  border: 1px solid #a4a4a4;
+  border-radius: 22px;
+  background: #fff;
+}
+.detail-input .blog-name,
+.detail-input .blog-url {
+  padding-top: 10px;
+}
+.detail-input .blog-name input,
+.detail-input .blog-url input {
+  width: 90%;
+  height: 20px;
+  padding: .5em;
+  color: #000;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.detail-input .blog-portal {
+  padding-top: 10px;
+}
+.detail-input .blog-portal .blog-portal-box {
+  line-height: 35px;
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  min-height: 34px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background: #fff;
+}
+.detail-input .blog-portal .blog-portal-box:before {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  right: 10px;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: -2px -3px 0 0;
+  content: '';
+  border: 5px solid transparent;
+  border-top: 7px solid #5a5a5a;
+}
+.detail-input .blog-portal .blog-portal-box select {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .3em;
+  cursor: pointer;
+  color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.detail-input .sns-btn button {
+  width: 90%;
+  margin: 10px 0;
+  margin-left: 5%;
+  padding: 5px 0;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  background: linear-gradient(#fff, #e0e0e0);
+}
+.detail-input .sns-btn button a img {
+  padding-bottom: 2px;
+  vertical-align: middle;
+}
+.detail-input .convinience-store,
+.detail-input .super-store,
+.detail-input .hobby {
+  margin-right: 5%;
+}
+.detail-input .convinience-store .form-sub-ttl,
+.detail-input .super-store .form-sub-ttl,
+.detail-input .hobby .form-sub-ttl {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.detail-input .convinience-store .convinience-store-ttl,
+.detail-input .super-store .convinience-store-ttl,
+.detail-input .hobby .convinience-store-ttl {
+  padding-top: 0;
+}
+.detail-input .convinience-store .control,
+.detail-input .super-store .control,
+.detail-input .hobby .control {
+  position: relative;
+  display: block;
+  margin-top: 7px;
+  padding-left: 27px;
+  cursor: pointer;
+}
+.detail-input .convinience-store .control input,
+.detail-input .super-store .control input,
+.detail-input .hobby .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.detail-input .convinience-store .control input:checked ~ .control__indicator,
+.detail-input .super-store .control input:checked ~ .control__indicator,
+.detail-input .hobby .control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.detail-input .convinience-store .control input:checked ~ .control__indicator:after,
+.detail-input .super-store .control input:checked ~ .control__indicator:after,
+.detail-input .hobby .control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.detail-input .convinience-store .control__indicator,
+.detail-input .super-store .control__indicator,
+.detail-input .hobby .control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #e6e6e6;
+}
+.detail-input .convinience-store .control__indicator:after,
+.detail-input .super-store .control__indicator:after,
+.detail-input .hobby .control__indicator:after {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  display: none;
+  width: 3px;
+  height: 8px;
+  content: '';
+  transform: rotate(45deg);
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}

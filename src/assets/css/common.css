@@ -1,0 +1,787 @@
+@charset "UTF-8";
+/*
+[a]
+[b]
+background-color
+border
+border-radius
+box-sizing
+[c]
+clear
+color
+[d]
+display
+[e]
+[f]
+font
+font-size
+font-weight
+float
+[g]
+[h]
+[i]
+[j]
+[k]
+[l]
+line-height
+list
+[m]
+margin
+[n]
+[o]
+overflow
+[p]
+padding
+position
+[q]
+[r]
+[s]
+[t]
+text-align
+text-shadow
+[u]
+[v]
+vertical-align
+[w]
+[x]
+[y]
+[z]
+---------------------------------------------------------- */
+/* background-color
+---------------------------------------------------------- */
+.bgcTame {
+  background: #319be3;
+}
+
+.bgcMora {
+  background: #F25932;
+}
+
+.bgcCCC {
+  background-color: #ccc;
+}
+
+.bgcEEE {
+  background-color: #EEE;
+}
+
+.bgstr1 {
+  background: url(https://image.moratame.net/images/common/bg_str001.gif) repeat left top;
+}
+
+.bgcBaseGrn {
+  background-color: #c9e78e;
+}
+
+.bgcOther {
+  background: #ff6600;
+}
+
+.bgcOther2 {
+  background: #8bbc00;
+}
+
+.bgcOther3 {
+  background-color: #82857a;
+}
+
+.bgcList {
+  background-color: #fafafa;
+}
+
+/* /background-color
+---------------------------------------------------------- */
+/* border
+---------------------------------------------------------- */
+.bdt_1_ccc {
+  border-top: 1px solid #ccc;
+}
+
+.bdr_1_ccc {
+  border-right: 1px solid #ccc;
+}
+
+.bdb_1_ccc {
+  border-bottom: 1px solid #ccc;
+}
+
+.bdl_1_ccc {
+  border-left: 1px solid #ccc;
+}
+
+.bdt_2_ccc {
+  border-top: 2px solid #ccc;
+}
+
+.bdr_2_ccc {
+  border-right: 2px solid #ccc;
+}
+
+.bdb_2_ccc {
+  border-bottom: 2px solid #ccc;
+}
+
+.bdl_2_ccc {
+  border-left: 2px solid #ccc;
+}
+
+/* /border
+---------------------------------------------------------- */
+/* border-radius
+---------------------------------------------------------- */
+.bdrs5 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* /border-radius
+---------------------------------------------------------- */
+/* box-sizing
+---------------------------------------------------------- */
+.bxz-bb {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* /box-sizing
+---------------------------------------------------------- */
+/* clear
+---------------------------------------------------------- */
+.cl-b {
+  clear: both;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* /clear
+---------------------------------------------------------- */
+/* color
+---------------------------------------------------------- */
+.c-fff {
+  color: #FFF;
+}
+
+.c-f00 {
+  color: #F00;
+}
+
+.c-f60 {
+  color: #f60;
+}
+
+.c-333 {
+  color: #333;
+}
+
+.c-666 {
+  color: #666;
+}
+
+.c-777 {
+  color: #777;
+}
+
+.c-menu {
+  color: #648405;
+}
+
+.c-fb {
+  color: #38548f;
+}
+
+.c-tw {
+  color: #00d8fe;
+}
+
+.c-link {
+  color: #2489ce;
+}
+
+.red {
+  color: red;
+}
+
+/* /color
+---------------------------------------------------------- */
+/* display
+---------------------------------------------------------- */
+.d-n {
+  display: none;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+/* /display
+---------------------------------------------------------- */
+/* font
+---------------------------------------------------------- */
+/*maruFork*/
+@font-face {
+  font-family: 'A-OTF-MaruFoPro-Bold';
+  src: url("https://image.moratame.net/css/font/A-OTF-MaruFoPro-Bold.otf") format("opentype");
+}
+.maruFork {
+  font-family: 'A-OTF-MaruFoPro-Bold';
+}
+
+/*ShinGoPro*/
+@font-face {
+  font-family: 'A-OTF-ShinGoPro-Light_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Light_1.otf") format("opentype");
+}
+.shingo_L {
+  font-family: 'A-OTF-ShinGoPro-Light_1';
+}
+
+@font-face {
+  font-family: 'A-OTF-ShinGoPro-Regular_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Regular_1.otf") format("opentype");
+}
+.shingo_R {
+  font-family: 'A-OTF-ShinGoPro-Regular_1';
+}
+
+@font-face {
+  font-family: 'A-OTF-ShinGoPro-Medium_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Medium_1.otf") format("opentype");
+}
+.shingo_M {
+  font-family: 'A-OTF-ShinGoPro-Medium_1';
+}
+
+@font-face {
+  font-family: 'A-OTF-ShinGoPro-Bold_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Bold_1.otf") format("opentype");
+}
+.shingo_B {
+  font-family: 'A-OTF-ShinGoPro-Bold_1';
+}
+
+@font-face {
+  font-family: 'A-OTF-ShinGoPro-Heavy_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Heavy_1.otf") format("opentype");
+}
+.shingo_H {
+  font-family: 'A-OTF-ShinGoPro-Heavy_1';
+}
+
+@font-face {
+  font-family: 'A-OTF-ShinGoPro-Ultra_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Ultra_1.otf") format("opentype");
+}
+.shingo_U {
+  font-family: 'A-OTF-ShinGoPro-Ultra_1';
+}
+
+/*Jun*/
+@font-face {
+  font-family: 'A-OTF-Jun101Pro-Light';
+  src: url("https://image.moratame.net/css/font/A-OTF-Jun101Pro-Light.otf") format("opentype");
+}
+.jun101 {
+  font-family: 'A-OTF-Jun101Pro-Light';
+}
+
+@font-face {
+  font-family: 'A-OTF-Jun201Pro-Regular';
+  src: url("https://image.moratame.net/css/font/A-OTF-Jun201Pro-Regular.otf") format("opentype");
+}
+.jun201 {
+  font-family: 'A-OTF-Jun201Pro-Regular';
+}
+
+@font-face {
+  font-family: 'A-OTF-Jun501Pro-Bold_1';
+  src: url("https://image.moratame.net/css/font/A-OTF-Jun501Pro-Bold_1.otf") format("opentype");
+}
+.jun501 {
+  font-family: 'A-OTF-Jun501Pro-Bold_1';
+}
+
+/*小塚ゴシック*/
+@font-face {
+  font-family: 'KozGoPro-ExtraLight_1';
+  src: url("https://image.moratame.net/css/font/KozGoPro-ExtraLight_1.otf") format("opentype");
+}
+.kozGoProEL {
+  font-family: 'KozGoPro-ExtraLight_1';
+}
+
+@font-face {
+  font-family: 'KozGoPro-Light_1';
+  src: url("https://image.moratame.net/css/font/KozGoPro-Light_1.otf") format("opentype");
+}
+.kozGoProL {
+  font-family: 'KozGoPro-Light_1';
+}
+
+@font-face {
+  font-family: 'KozGoPro-Regular_1';
+  src: url("https://image.moratame.net/css/font/KozGoPro-Regular_1.otf") format("opentype");
+}
+.kozGoProR {
+  font-family: 'KozGoPro-Regular_1';
+}
+
+@font-face {
+  font-family: 'KozGoPro-Medium_1';
+  src: url("https://image.moratame.net/css/font/KozGoPro-Medium_1.otf") format("opentype");
+}
+.kozGoProM {
+  font-family: 'KozGoPro-Medium_1';
+}
+
+@font-face {
+  font-family: 'KozGoPro-Bold_1';
+  src: url("https://image.moratame.net/css/font/KozGoPro-Bold_1.otf") format("opentype");
+}
+.kozGoProB {
+  font-family: 'KozGoPro-Bold_1';
+}
+
+@font-face {
+  font-family: 'KozGoPro-Heavy_1';
+  src: url("https://image.moratame.net/css/font/KozGoPro-Heavy_1.otf") format("opentype");
+}
+.kozGoProH {
+  font-family: 'KozGoPro-Heavy_1';
+}
+
+/* /font
+---------------------------------------------------------- */
+/* font-size
+---------------------------------------------------------- */
+.fz-10px {
+  font-size: 10px;
+}
+
+.fz-12px {
+  font-size: 12px;
+}
+
+.fz-13px {
+  font-size: 13px;
+}
+
+.fz-14px {
+  font-size: 14px;
+}
+
+.fz-16px {
+  font-size: 16px;
+}
+
+/* /font-size
+---------------------------------------------------------- */
+/* font-weight
+---------------------------------------------------------- */
+.fw-n {
+  font-weight: normal;
+}
+
+.fw-b, .fnt-wgt-b {
+  font-weight: bold;
+}
+
+.fnt-wgt-n {
+  font-weight: normal;
+}
+
+/* /font-weight
+---------------------------------------------------------- */
+/* float
+---------------------------------------------------------- */
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+/* /float
+---------------------------------------------------------- */
+/* line-height
+---------------------------------------------------------- */
+.lh100per {
+  line-height: 100%;
+}
+
+.lh125per {
+  line-height: 125%;
+}
+
+/* /line-height
+---------------------------------------------------------- */
+/* list
+---------------------------------------------------------- */
+.li-non {
+  list-style: none;
+}
+
+/* /list
+---------------------------------------------------------- */
+/* margin
+---------------------------------------------------------- */
+/* margin-top */
+.mt0 {
+  margin-top: 0;
+}
+
+.mt-10px {
+  margin-top: 10px;
+}
+
+.mt-20px {
+  margin-top: 20px;
+}
+
+/* margin-right */
+/* margin-bottom */
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb5px {
+  margin-bottom: 5px;
+}
+
+.mb10px {
+  margin-bottom: 10px;
+}
+
+.mb20px {
+  margin-bottom: 20px;
+}
+
+.mb25px {
+  margin-bottom: 25px;
+}
+
+.mb-10px {
+  margin-bottom: 10px;
+}
+
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+.mb1em {
+  margin-bottom: 1.0em;
+}
+
+/* margin-left */
+.ml-5px {
+  margin-left: 5px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-0-10px {
+  margin: 0px 10px;
+}
+
+.m0-a {
+  margin: 0 auto;
+}
+
+.m0-5-0-0 {
+  margin: 0 5px 0 0;
+}
+
+.m0-5-5-0 {
+  margin: 0 5px 5px 0;
+}
+
+.m5-5-0-0 {
+  margin: 5px 5px 0 0;
+}
+
+.m5-0-0-0 {
+  margin: 5px 0 0 0;
+}
+
+.m5-0 {
+  margin: 5px 0;
+}
+
+.m5-0-2 {
+  margin: 5px 0 2px;
+}
+
+.m6-0-0 {
+  margin: 6px 0 0;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.m10-0-0 {
+  margin: 10px 0 0;
+}
+
+.m10-a-0 {
+  margin: 10px auto 0;
+}
+
+.m10-0 {
+  margin: 10px 0;
+}
+
+.m0-10-0-0 {
+  margin: 0 10px 0 0;
+}
+
+.m0-10-10 {
+  margin: 0 10px 10px;
+}
+
+.m10-10-0 {
+  margin: 10px 10px 0;
+}
+
+.m10-0-2 {
+  margin: 10px 0 2px;
+}
+
+.m10-0-4 {
+  margin: 10px 0 4px;
+}
+
+.m10-0-15 {
+  margin: 10px 0 15px;
+}
+
+.m15-0-10 {
+  margin: 15px 0 10px;
+}
+
+.m0-12-0-0 {
+  margin: 0 12px 0 0;
+}
+
+.m25-0 {
+  margin: 25px 0;
+}
+
+.m20-0-10 {
+  margin: 20px 0 10px;
+}
+
+.m20-0-0 {
+  margin: 20px 0 0;
+}
+
+.m20-0 {
+  margin: 20px 0;
+}
+
+/* /margin
+---------------------------------------------------------- */
+/* overflow
+---------------------------------------------------------- */
+.ov-h {
+  overflow: hidden;
+}
+
+/* /overflow
+---------------------------------------------------------- */
+/* padding
+---------------------------------------------------------- */
+/* padding top */
+.pt-10px {
+  padding-top: 10px;
+}
+
+/* /padding top */
+/* padding right */
+.pr-10px {
+  padding-right: 10px;
+}
+
+/* /padding right */
+.p-10px {
+  padding: 10px;
+}
+
+.p-10px-10px-0 {
+  padding: 10px 10px 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.p0-0-5-0 {
+  padding: 0 0 5px 0;
+}
+
+.p0-5-0-0 {
+  padding: 0 5px 0 0;
+}
+
+.p0-0-0-5 {
+  padding: 0 0 0 5px;
+  padding: 5px 0 0 0x;
+}
+
+.p5-10 {
+  padding: 5px 10px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p0-0-10-0 {
+  padding: 0 0 10px 0;
+}
+
+.p10-0-0-0 {
+  padding: 10px 0 0 0;
+}
+
+.p0-0-0-10 {
+  padding: 0 0 0 10px;
+}
+
+.p0-0-10-10 {
+  padding: 0 0 10px 10px;
+}
+
+.p10-0 {
+  padding: 10px 0;
+}
+
+.p15-0 {
+  padding: 15px 0;
+}
+
+.p15-10 {
+  padding: 15px 10px;
+}
+
+.p0-0-20-0 {
+  padding: 0 0 20px 0;
+}
+
+.p20-0-0 {
+  padding: 20px 0 0;
+}
+
+.p20-0 {
+  padding: 20px 0;
+}
+
+.p20-10 {
+  padding: 20px 10px;
+}
+
+.p0-25-0-0 {
+  padding: 0 25px 0 0;
+}
+
+/* /padding
+---------------------------------------------------------- */
+/* position
+---------------------------------------------------------- */
+.pos-a {
+  position: absolute;
+}
+
+.pos-r {
+  position: relative;
+}
+
+/* position
+---------------------------------------------------------- */
+/* text-align
+---------------------------------------------------------- */
+.ta-c {
+  text-align: center;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.txt-c {
+  text-align: center;
+}
+
+/* /text-align
+---------------------------------------------------------- */
+/* text-shadow
+---------------------------------------------------------- */
+.tsh-none {
+  text-shadow: none;
+}
+
+/* /text-shadow
+---------------------------------------------------------- */
+/* text-shadow
+---------------------------------------------------------- */
+.w-100per {
+  width: 100%;
+}
+
+/* text-shadow
+---------------------------------------------------------- */
+/* other
+---------------------------------------------------------- */
+.attention01 {
+  font-size: 10px;
+  color: red;
+  font-weight: normal;
+}
+
+/* other
+---------------------------------------------------------- */
+/* vertical-align
+---------------------------------------------------------- */
+.va-t {
+  vertical-align: top;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.va-b {
+  vertical-align: bottom;
+}
+
+/* /vertical-align
+---------------------------------------------------------- */
+/* width
+---------------------------------------------------------- */
+.w-100per {
+  width: 100%;
+}
+
+/* /width
+---------------------------------------------------------- */
