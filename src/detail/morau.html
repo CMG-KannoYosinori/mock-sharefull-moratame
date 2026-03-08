@@ -9,31 +9,31 @@
     <link rel="shortcut icon" href="https://stg.tsample.tsite.jp/v-samplefavicon.png">
     <link rel="apple-touch-icon-precomposed" href="https://stg.tsample.tsite.jp/img/v-sample_touch_icon.png">
 
-    <title>商品へのコメント　テスト「ポイント決済用少額」｜Vポイントが貯まる・使える Vサンプル</title>
+    <title>モラご確認用A もらえる｜Vポイントが貯まる・使える Vサンプル</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.v3.3.7--scope.css?2026030610">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/bootstrap.v3.3.7--scope.css?2026021912">
 
-    <link rel="stylesheet" type="text/css" href="/css/reset.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/properties.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/main.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/layout.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/module.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/style--common-sp-and-pc.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/reset-old-style--jp.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/style--pc.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/style--sp.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/t.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/pass_monitor.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/t-sample.css?2026030610">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/reset.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/properties.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/main.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/layout.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/module.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/style--common-sp-and-pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/reset-old-style--jp.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/style--pc.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/style--sp.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/t.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/pass_monitor.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/t-sample.css?2026021912">
 
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026030610">
-    <link rel="stylesheet" type="text/css" href="/css/p9255-common--pc.css?2026030610">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026021912">
+    <link rel="stylesheet" type="text/css" href="https://tsample.tsite.jp/css/p9255-common--pc.css?2026021912">
 
     <!--slideUp Down-->
-    <script src="../plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../assets/vendor/jqyery/jquery-3.2.1.min.js"></script>
     <script>
       $(function () {
         $('.slideup').click(function () {
@@ -74,32 +74,38 @@
 
 
     <!-- postalcode_address -->
-    <script src="/plugins/ajaxzip3/ajaxzip3.js"></script>
+    <script src="https://tsample.tsite.jp/plugins/ajaxzip3/ajaxzip3.js"></script>
 
     <!-- FontAwesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-    <!-- bxslider -->
-    <link rel="stylesheet" href="/plugins/bx-slider/jquery.bxslider.css?2026030610">
-    <link rel="stylesheet" href="/plugins/bx-slider/jquery.bxslider.custom.css?2026030610">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="/plugins/bx-slider/jquery.bxslider.min.js?2026030610"></script>
-    <script>
-      const $bx = $.noConflict(true);
-      (function ($) {
-        $(document).ready(function () {
-          $('.js-t-slider').bxSlider({
-            auto: true,
-            pause: 3000,
-            slideWidth: 245
-          });
-        });
-      })($bx);
-    </script>
 
+
+    <script>
+      $(function () {
+        $(document).on('click', "[id^='order-button']", function () {
+          var $adultPermission = $('#adult-permission');
+
+          if ($adultPermission.length && !$adultPermission.prop('checked')) {
+            alert('20歳以上の方はチェックを入れてください');
+            return;
+          }
+
+          location.href = "https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=6aaf2";
+        });
+
+        $(document).on("change", "[id^='adult-permission']", function () {
+          if ($("#" + this.id).prop('checked')) {
+            $("[id^='adult-permission']").prop("checked", true);
+          } else {
+            $("[id^='adult-permission']").prop("checked", false);
+          }
+        });
+      });
+    </script>
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail">
+  <body class="bootstrap-v3-3-7--scope itemDetail itemDetail-mora">
     <div class="body-wrapper">
       <div class="p-masthead">
         <div class="l-conteiner">
@@ -110,7 +116,7 @@
                 <h1>
                   <a href="https://stg.tsample.tsite.jp/">
                     <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
-                    <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://stg.tsample.tsite.jp/img/logo_v.png" width="792">
+                    <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
                   </a>
                 </h1>
                 <div class="p-masthead__labels-sns-btns-wrap pc">
@@ -243,7 +249,7 @@
           <div class="primary primary--responsive">
             <div id="F001" class="js-t-wrapper itemDetailBox">
               <!-- breadCrumbs -->
-              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞クチコミ投稿</p>
+              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる商品一覧</a> ＞もらえる商品情報</p>
               <!-- /breadCrumbs -->
               <!-- sub header -->
               <div class="t-sub-header">
@@ -252,9 +258,9 @@
               <!-- /sub header -->
               <!-- contents -->
               <div class="t-head">
-                <h2 class="t-head__text">ポイント決済用少額</h2>
+                <h2 class="t-head__text">
+                  モラご確認用A </h2>
               </div>
-
               <!-- carousel -->
               <div class="t-bx__wrapper">
                 <div class="t-bx__viewport">
@@ -262,7 +268,7 @@
                     <div class="t-bx__slide">
                       <div>
                         <a href="javascript:;">
-                          <img src="https://stg.tsample.tsite.jp/img/project/1132_20211110_145638.png">
+                          <img src="https://stg.tsample.tsite.jp/img/project/2304_20260213_184437.png">
                         </a>
                       </div>
                     </div>
@@ -270,108 +276,152 @@
                 </div>
               </div>
               <!-- /carousel -->
-
-              <!-- itemInfo -->
-              <div class="itemInfo">
-                <div class="t-crosshead">
-                  <div class="t-crosshead__inner">
-                    <h2 class="t-crosshead__text">商品情報</h2>
-                  </div>
-                </div>
-                <div class="t-table">
-                  <table class="t-table__block item_box">
-                    <tbody>
-                      <tr>
-                        <th>提供元</th>
-                        <td>テスト</td>
-                      </tr>
-                      <tr>
-                        <th>残数</th>
-                        <td>9,930</td>
-                      </tr>
-                      <tr>
-                        <th>参考価格<br><a href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&site_domain=qa-tsite
-" class="t-text__ex" target="_blank">※参考価格とは</a></th>
-                        <td>10円(税別)</td>
-                      </tr>
-                      <tr>
-                        <th>発送予定日</th>
-                        <td>2026年11月10日(火)<div class="t-text">
-                            <div class="t-caption">
-                              <p class="t-caption__text">配送に関する注意事項をご一読ください</p>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>終了日時</th>
-                        <td>2026年11月10日(火) 23時59分</td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <!-- /itemInfo -->
-              <div id="anchor01" class="t-crosshead">
+              <div class="t-crosshead">
                 <div class="t-crosshead__inner">
-                  <h2 class="t-crosshead__text">クチコミ</h2>
+                  <h2 class="t-crosshead__text">商品情報</h2>
                 </div>
               </div>
-              <div class="commentWrap" style="margin-top: 10px;">
-                <!-- everyPost -->
-                <div class="t-text">
-                  <p class="t-text__small">
-                    【 ご投稿についてのお願い 】<br>
-                    本サイトは商品試用後の感想をお寄せいただくことを主旨としています。<br>
-                    ＜ご注意＞<br>
-                    掲載商品に関係がない、商品をお試しされていない投稿、また一言のみの感想については確認次第、削除いたします。
-                  </p>
-                </div>
-                <div class="t-text">
-                  <p class="t-text__small">
-                    <u class="c_red02" style="font-weight: bold;">クチコミ投稿を行う際は、「虚偽・誇大」な表現とならないようご注意ください。</u><br>
-                    化粧品や健康食品などでは使用感ではなく「効能効果」や「安全性」を保証するような表現や、「医薬品や医療機器のような効能」があるような表現は誤解を招き、法令違反と判断されるおそれがあります。
-                  </p>
-                </div>
-                <form action="https://stg.tsample.tsite.jp/detail/cmt1.php#anchor01" method="post" name="frm" id="frm">
-                  <input type="hidden" name="project_id" value="41e20">
-                  <input type="hidden" name="sns_url_tw" id="sns_url_tw" value="">
-                  <input type="hidden" name="sns_name_tw" id="sns_name_tw" value=" ">
+              <div class="t-table">
+                <table class="t-table__block">
+                  <tbody>
+                    <tr>
+                      <th>提供元</th>
+                      <td>テスト</td>
+                    </tr>
+                    <tr>
+                      <th>アンケート</th>
+                      <td>「お申し込み前」回答</td>
+                    </tr>
+                    <tr>
+                      <th>応募期間</th>
+                      <td>2026年02月13日(金)18:44&nbsp;～<br>2027年02月13日(土)23:59</td>
+                    </tr>
+                    <tr>
+                      <th>当選数</th>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <th>発送予定日</th>
+                      <td>2027年02月13日(土)</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <form id="form-order" method="post" action="https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=6aaf2" class="t-form">
+                <div class="t-text t-attention-terms">
                   <div class="t-text">
-                    <p class="t-text__small">
-                      取得したサンプル品に関するクチコミは、企業等に提供する場合があります。同意の上、投稿してください。また、以下に該当するクチコミを投稿しないようにしてください。<br>
-                      (1) 公序良俗に反する表現、法令違反、宣伝・広告的な利用<br>
-                      (2) 個人情報の記載、または個人が特定できる内容の投稿<br>
-                      (3) 商品評価に関係のない投稿、悪質なリンク、その他不適切な投稿<br>
-                      当社が不適切と判断した場合、投稿を削除する場合がございます。<br>
-                      詳細は「<a href="https://privacy.cccmkhd.co.jp/terms/sample/">Vサンプルサービス利用規約</a>」をご確認ください。
-                    </p>
+                    <p class="t-text__middle">※<a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                   </div>
-                  <p class="c_red02 mt_10 mb_10"></p>
-                  <textarea name="ct" id="ct" rows="10" class="comment_textarea" style="width: 100%; line-height: 1.3;" placeholder="見た目の印象や使った感じ、味などを思い出しながら、試した感想を投稿してください。(必須)"></textarea>
-                  <input type="hidden" name="input_back" value="" />
-                </form>
+                </div>
+                <div class="t-button"><button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button></div>
+              </form>
+              <div class="t-crosshead">
+                <div class="t-crosshead__inner">
+                  <h2 class="t-crosshead__text">商品説明</h2>
+                </div>
+              </div>
+              <div class="t-text">
+                <div id="g3">
+                  <div class="t-text">
+                    <div class="t-text__middle">
+                      <!-- contentsarea__box -->
+                      <div class="monitor-contentsarea__box">
+                        <section class="monitor-caption__box">
+                          <div class="t-subhead">
+                            <h3 class="t-subhead__text">
+                              <span style="font-weight: bold;">新しい季節もビールで華やかに♪春の全国ビール共通券プレゼントキャンペーン
 
-
-
-                <div class="p_20">
-                  <div class="t-button t-button2">
-                    <input type="button" onclick="document.frm.submit();" class="t-button__green t-button__smallText t-button__blue" value="内容を確認する">
+                              </span>
+                            </h3>
+                          </div>
+                          <div class="t-text">
+                            <p>お好きなアサヒ・キリン・サッポロ・サントリーの缶ビールいずれか2本と交換できる！<br><br>全国のコンビニエンスストア、スーパーマーケット、デパート等の缶ビール商品取扱店で交換できます。<br><br>
+                              ※本券の有効期限は【2033年3月31日】です。<br>
+                              ※販売価格や消費税の影響により、ビール券の額面を上回る場合がございます。<br>
+                              ※その際は、不足分を現金でお支払いいただく場合がございます。ご利用前に店舗にて、差額の有無をご確認ください。</p>
+                          </div>
+                        </section>
+                      </div>
+                      <!-- /contentsarea__box -->
+                      <!-- attention__box1 -->
+                      <div class="monitor-contentsarea__box">
+                        <div class="monitor-attention__box">
+                          <div class="t-text">
+                            <p class="t-text">
+                              <span style="font-weight: bold;">【ご注意事項】</span>
+                            </p>
+                            <p class="t-text__small">
+                              ・当選者の発表は商品の発送を持って代えさせていただきます。<br>
+                              ・本企画の当選可否についてのお問い合わせはお答えできませんのでご了承下さい。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /attention__box1 -->
+                      <!-- attention2__box -->
+                      <div class="t-crosshead">
+                        <div class="t-crosshead__inner">
+                          <h2 class="t-crosshead__text">配送に関する注意事項</h2>
+                        </div>
+                      </div>
+                      <!--accordion-->
+                      <div class="t-accordion t-border-top">
+                        <dl id="faq01">
+                          <dt class="t-accordion__title js-t-accordion t-arrow_down fs_16">
+                            <font size="2">1.配送方法</font>
+                          </dt>
+                          <dd class="t-accordion__items" style="display: none;">
+                            <div class="t-accordion__item">
+                              本商品は「普通郵便」でのお届けを予定しております。<br>
+                              ※投函後の盗難、紛失・破損した場合でも補償はございません。予めご了承ください。<br>
+                              ※万が一、配送に伴うトラブルが発生した場合におきましても、Vサンプル事務局でお荷物の追跡等ができない場合があります。あらかじめご了承ください。
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <!--/accordion-->
+                      <!-- /attention2__box -->
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="preview_box p_20 bgc_gray01" id="sns_cmt_prv" style="display:none;">
-                <div id="scp_inr">
-                  <h2 class="lead mb_10">プレビュー</h2>
-                  <div class="unit" id="previewarea_tw">
-                    <p class="icoBar02 twitter">twitter</p>
-                    <textarea name="preview_tw" id="preview_tw" cols="30" rows="10" class="comment_textarea" readonly /></textarea>
-                    <p id="cdlength1" class="ta_r c_red02">あと<span id="count_tw"></span>文字入力できます。</p>
-                  </div>
+              <div class="t-text t-attention-terms">
+                <div class="t-text">
+                  <p class="t-text__middle">※<a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                 </div>
               </div>
-              <!--/ここまで商品詳細-->
+              <div class="t-button"><button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button></div><!-- /contents -->
+              <div class="t-button t-button2" style="margin: 0 0 40px;;">
+                <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">
+                  クチコミを投稿する
+                </button>
+              </div>
+              <script>
+                $(function () {
+                  $(document).on('click', "[id^='review-button']", function () {
+                    window.location.href = 'https://stg.tsample.tsite.jp/detail/cmt.php?project_id=6aaf2#anchor01';
+                  });
+                });
+              </script>
+              <style>
+                .t-button__yellow {
+                  display: block;
+                  margin: auto;
+                  width: 90%;
+                  border: none;
+                  background: #fff100;
+                  background: -webkit-gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
+                  background: gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
+                  color: #000000;
+                  cursor: pointer;
+                }
+
+                .disabled {
+                  height: initial;
+                  border: initial;
+                }
+              </style>
               <!-- footer -->
             </div>
 
@@ -620,42 +670,11 @@
     </div>
     <!--  //body-wrapper -->
 
-    <link rel="stylesheet" type="text/css" href="/css/t-cmt.css?2026030610">
-    <script src="/social_api/js/jquery-1.5.1.min.js?2026030610" type="text/javascript" charset="UTF-8"></script>
-    <script>
-      var $151 = $.noConflict(true);
-    </script>
-    <script src="/js/jquery-1.9.1.min.js"></script>
-    <script src="/social_api/js/charCount.js?2026030610" type="text/javascript" charset="UTF-8"></script>
-    <script type="text/javascript">
-      // $151の実行に固定する
-      (function ($) {
-        $(document).ready(function () {
-          $("#ct").charCount();
-        });
-      })($151);
-    </script>
-    <script type="text/javascript">
-      var photo_num = 1;
-      // .upload がない$を参照することがあるため、実行時のjQuery($)に固定
-      (function ($) {
-        $(document).ready(function () {
-          $("#frm_main textarea[name='comment']").charCount();
-        });
-      })($151);
-    </script>
-
-
-    <script>
-      window.location.hash = "anchor01";
-    </script>
-
-
     <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/js/t.js"></script>
-    <script src="/js/announce_toggle.js?2026030610" async></script>
+    <script src="../assets/js/t.js"></script>
+    <script src="https://tsample.tsite.jp/js/announce_toggle.js?2026021912" async></script>
     <!-- hamburgerMenu -->
     <script>
       $(document).ready(function () {
