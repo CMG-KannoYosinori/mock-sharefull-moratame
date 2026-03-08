@@ -1,0 +1,16 @@
+{
+  "name": "mock-sharefull-moratame",
+  "version": "1.0.0",
+  "private": true,
+  "volta": {
+    "node": "22.14.0",
+    "npm": "11.4.1"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

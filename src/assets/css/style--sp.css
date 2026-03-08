@@ -3231,36 +3231,6 @@ table#comment_detail td#hyoka {
 /*------------------------------------------------
 Footer
 ------------------------------------------------*/
-#topscrollWrp {
-  padding-top: 10px;
-  padding-right: 2%;
-  padding-bottom: 0;
-  padding-left: 2%;
-  border-bottom: 2px solid #fb8405;
-}
-
-#topscroll a {
-  display: block;
-  margin-left: auto;
-  padding: 0 0.5em;
-  width: 16ex;
-  -webkit-border-top-left-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-right-radius: 10px;
-  background: #fb8405;
-  color: #fff;
-  text-align: center;
-  text-shadow: none;
-  line-height: 200%;
-}
-
-nav.topscroll a {
-  margin: 0 5px;
-}
-
 footer nav {
   margin-bottom: 10px;
 }
@@ -3380,12 +3350,6 @@ div.footer div.footer_list li div.ui-btn-inner {
 }
 
 /*/footer_copy2*/
-.footer_copy p.footer_copyBtn {
-  float: right;
-  margin: 0;
-  padding-top: 1px;
-}
-
 /*/footer_copy*/
 div.footer div.changedevice {
   margin: 0;
@@ -11561,34 +11525,6 @@ li.ui-block-d span.icon_menu {
   width: 100%;
 }
 
-#topscrollWrp {
-  margin: 0;
-  margin-top: -6px;
-  padding: 0;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-}
-
-#topscroll a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
-  -moz-border-radius-topright: 0;
-  border-top-right-radius: 0;
-  background: #eee;
-  color: #333;
-  text-align: center;
-  text-shadow: none;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 250%;
-}
-
 footer nav {
   margin-bottom: 0;
 }
@@ -11623,11 +11559,6 @@ footer nav#pp {
   text-shadow: none;
   font-size: 10px;
   line-height: 100%;
-}
-.footer_copy p.footer_copyBtn {
-  float: inherit;
-  margin: 0;
-  padding-top: 0;
 }
 
 /*//footer*/
@@ -12014,14 +11945,6 @@ div.ui-panel .drwMnNavList a:hover, div.ui-panel .drwMnNavList a:active {
 }
 
 /* //drawerMenuContents*/
-/* footer */
-#footer {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
-
-/* //footer */
 /* icon */
 /*-- icon-set --*/
 .icon-set01 {

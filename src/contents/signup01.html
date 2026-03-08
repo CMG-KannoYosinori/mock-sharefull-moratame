@@ -77,6 +77,7 @@
 
     <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css?2026030509" />
     <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css?2026030509" />
+    <link rel="stylesheet" href="../assets/css/footer-common.css?2026030509" />
 
     <link rel="stylesheet" href="../assets/css/mamahalo-pickup-items.css?2026030509">
     <!-- /mamahalo-slider -->
@@ -84,19 +85,6 @@
     <!-- checkBox・radioBtn -->
     <script src="../assets/js/inputimg.js?2026030509"></script>
     <!-- //checkBox・radioBtn -->
-    <!-- jQueryFooterBnr -->
-    <script type="text/javascript" src="../assets/vendor/jquery-cycle/jquery.cycle.all.js?2026030509"></script>
-    <script type="text/javascript">
-      jQuery(function () {
-        jQuery('#jquery-cycle').cycle({
-          fx: 'scrollDown',
-          random: 1,
-          speed: 600,
-          timeout: 6500,
-          sync: 1,
-        });
-      });
-    </script>
     <!-- ドロワメニューの高さ取得・コンテンツ制御 -->
     <script type="text/javascript">
       jQuery(function ($) {
@@ -107,11 +95,6 @@
       });
     </script>
     <!-- //ドロワメニューの高さ取得・コンテンツ制御 -->
-    <!-- goToTop -->
-    <script src="../assets/js/pagetop.js" type="text/javascript"></script>
-    <!--  //goToTop -->
-    <!-- //jQueryFooterBnr -->
-
 
     <script>
       if (window.jQuery && jQuery.mobile) {
@@ -763,48 +746,7 @@
           </section>
         </div>
       </div>
-      <div id="footer" data-role="footer" data-theme="x" class="ui-footer ui-bar-x" role="contentinfo">
-        <footer>
-          <div id="topscrollWrp" class="bdt_1_ccc">
-            <div id="topscroll">
-              <a href="#header"><span class="icon-set01 icon_toTop m0-5-0-0"></span>ページトップへ</a>
-            </div>
-          </div>
-          <!-- textArea -->
-          <div class="txtArea14 bgcOther3 p15-10">
-            <p class="footer_copyBtn">
-              <a href="http://www.moratame.net/?viewsite=pc" rel="external" class="ui-link">
-                <img src="../assets/images/cmn/btn_01.png" width="60" height="28" alt="">
-              </a>
-            </p>
-          </div>
-          <!-- //textArea -->
-
-          <!-- universal-footer -->
-          <div class="universal-footer">
-            <div class="universal-footer__container">
-              <div class="universal-footer__row">
-                <div class="universal-footer__col-main">
-                  <dl>
-                    <dt class="universal-footer__col-main__definition-term">企業情報：</dt>
-                    <dd class="universal-footer__col-main__definition-description">
-                      <ul>
-                        <li class="universal-footer__col-main__list"><a href="https://www.excrie.co.jp/" data-role="none">会社概要</a></li>
-                        <li class="universal-footer__col-main__list"><a href="http://www.moratame.net/contents/hyouji.php" data-role="none">特定商取引に基づく表記</a></li>
-                        <li class="universal-footer__col-main__list"><a href="https://api.moratame.net/inquiry/ja" data-role="none">メーカーご担当者の方へ</a></li>
-                      </ul>
-                    </dd>
-                  </dl>
-                  <p>株式会社エクスクリエはプライバシーマークを取得しています。<span class="br br--sp">当社の</span>「<a href="https://www.excrie.co.jp/about/privacy-policy/" target="_blank" rel="external" data-role="none">個人情報保護方針</a>」はこちらです。</p>
-                  <div class="universal-footer__col-pmark-image"><a href="http://privacymark.jp/" target="_blank"><img src="../assets/images/img2014/common/pmark_s.gif" height="78" width="71" alt=""></a></div>
-                  <p>(c) excrie Inc. All rights reserved. 本サイトは、<a href="https://www.excrie.co.jp/" target="_blank" rel="external" data-role="none"><span class="br br--sp">株式会社エクスクリエ</span>により運営されております。</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /universal-footer -->
-        </footer>
-      </div>
+{% include 'footer' %}
 
     </div>
   </body>
