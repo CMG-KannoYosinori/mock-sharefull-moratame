@@ -1,0 +1,56 @@
+.p-masthead__logo {
+    width: auto;
+  }
+  
+  .p9255-fv {
+    display: block;
+    font-size: 0;
+  }
+  .p9255-fv img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .p9255-button-mypage {
+    margin-left: 10px;
+    padding: 3px 6px;
+    background-color: #86bf23;
+    color: white;
+    font-size: 12px;
+    line-height: 1;
+  }
+  
+  .p9255-masthead-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .p9255-sticky-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+  }
+  .p9255-sticky-button img {
+    width: 100%;
+    height: auto;
+  }
+  .p9255-sticky-button .p9255-sticky-button-close {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 9999px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.35);
+    font-size: 18px;
+  }
+  
+  .p-global-nav--sticky {
+    box-sizing: border-box;
+  }
