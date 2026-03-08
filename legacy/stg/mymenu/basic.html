@@ -1025,18 +1025,6 @@
     }
 
     //-->
-
-    // 認証ボタンにイベント設定（ボタンがある場合のみ ?.）
-    document.querySelector('.sns_apt_do')?.addEventListener('click', function (event) {
-        event.preventDefault();
-        location.href = '/social_api/oauth.php?s=tw';
-    })
-
-    // 認証解除ボタンにイベント設定（ボタンがある場合のみ ?.）
-    document.querySelector('.sns_apt_dn')?.addEventListener('click', function (event) {
-        event.preventDefault();
-        location.href = '/social_api/oauth_del.php?s=tw';
-    })
     </script>
 
 

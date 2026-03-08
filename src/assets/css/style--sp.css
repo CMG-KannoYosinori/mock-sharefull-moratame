@@ -4111,7 +4111,7 @@ div#popupfb h3 {
   margin: 0;
   padding: 0 5px 0 40px;
   border-bottom: 2px solid #3b5b99;
-  background: url(/s/social_api/js/images/fb_icon.png) 5px 5px no-repeat;
+  background: none;
 }
 div#popupfb p {
   margin: 20px 10px 30px;
@@ -4131,7 +4131,7 @@ div#popuptw h3 {
   margin: 0;
   padding: 0 5px 0 40px;
   border-bottom: 2px solid #3cf;
-  background: url(/s/social_api/js/images/tw_icon.png) 5px 5px no-repeat;
+  background: none;
 }
 div#popuptw p {
   margin: 20px 10px 30px;
@@ -4151,7 +4151,7 @@ div#popupmx h3 {
   margin: 0;
   padding: 0 5px 0 40px;
   border-bottom: 2px solid #f39f0c;
-  background: url(/s/social_api/js/images/mixi.gif) 5px 5px no-repeat;
+  background: none;
 }
 div#popupmx p {
   margin: 20px 10px 30px;

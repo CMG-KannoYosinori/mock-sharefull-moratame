@@ -1,0 +1,68 @@
+/*to modify from "slick-theme.css"*/
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/slick.eot');
+    src: url('fonts/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg#slick') format('svg');
+}
+
+
+
+.top-header-slick {
+  margin-top: -5px;
+}
+
+.slick-prev {
+  left: 50%;
+  z-index: 1;
+  margin-left: -350px;
+}
+@media only screen and (max-width: 959px){
+	.slick-prev{
+		display: none !important;
+	}
+}
+
+.slick-next {
+  right: 50%;
+  z-index: 1;
+  margin-right: -350px;
+}
+@media only screen and (max-width: 959px){
+	.slick-next{
+		display: none !important;
+	}
+}
+
+.slick-list {
+  padding-top: 5px !important;
+}
+
+.slick-slide {
+  opacity: .5;
+  position: relative;
+}
+
+.slick-center {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #222;
+}
+
+.slick__cover {
+  background-size: cover;
+  height: 240px;
+  width: 638px;
+}
+@media only screen and (max-width: 639px) {
+	.slick__cover {
+		height: 120px;
+		width: 320px;
+	}
+}

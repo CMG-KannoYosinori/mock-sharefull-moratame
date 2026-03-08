@@ -1,0 +1,347 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", "sans-serif";
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1614px) {
+  header {
+    max-width: 100%;
+  }
+}
+header .header {
+  width: 100%;
+  border-bottom: #004098 solid 3px;
+}
+header .header h1 {
+  max-width: 1270px;
+  margin: auto;
+  padding: 10px;
+}
+header .header h1 img {
+  vertical-align: middle;
+  width: 200px;
+}
+@media only screen and (max-width: 639px) {
+  header .header h1 img {
+    width: 150px;
+  }
+}
+
+main .main {
+  max-width: 640px;
+  margin: auto;
+  padding: 0 10px;
+  padding-bottom: 20px;
+  line-height: 1.3;
+  /*_input*/
+  /*postal code*/
+  /*city*/
+  /*_confirm*/
+  /*_submit*/
+  /*_complete-totop*/
+  /*_complete*/
+}
+main .main .milestone img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+@media only screen and (max-width: 639px) {
+  main .main .milestone img {
+    padding: 10px 0 15px;
+  }
+}
+main .main h3.step-name {
+  font-size: 20px;
+  text-align: center;
+}
+main .main .t-column-head {
+  margin-top: 15px;
+}
+main .main .t-column-head__text {
+  font-size: 14px;
+  line-height: 1.2;
+  position: relative;
+  padding: 0 0 0 1.2em;
+}
+main .main .t-column-head__text:before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 7px;
+  background-color: #004098;
+}
+main .main .submit-area_txt {
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 639px) {
+  main .main .submit-area_txt {
+    font-size: 14px;
+  }
+}
+main .main .t-form__input {
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 30px;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .main .t-form__input input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+main .main .birthday li {
+  margin-top: 10px;
+  line-height: 30px;
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #8b8b8b;
+  border-radius: 5px;
+  background: #fff;
+}
+main .main .birthday li:before {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  right: 10px;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: -2px -3px 0 0;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 7px solid #5a5a5a;
+}
+main .main .birthday li select {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0 0.5em;
+  font-size: 14px;
+  cursor: pointer;
+  color: #5a5a5a;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  -webkit-appearance: none;
+}
+main .main .sexs li {
+  margin-top: 10px;
+  display: inline-block;
+  width: 110px;
+  list-style: none;
+}
+main .main .t-button__group {
+  display: -webkit-box;
+  box-sizing: content-box;
+}
+main .main .t-button__group li {
+  display: table-cell;
+  margin-right: 10px;
+}
+main .main .t-button__group li:last-child {
+  margin-right: 0;
+}
+main .main .t-form__input {
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 30px;
+  background: #fff;
+}
+main .main .t-form__input input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+main .main .t-button__min {
+  margin-left: 5px;
+  font-size: 11px;
+  padding: 0 10px;
+  font-family: Arial;
+  line-height: 2.4;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  color: #333;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 1px rgba(255, 255, 255, 0.3) inset,
+    0 0 0 rgba(0, 0, 0, 0.1),
+    0 1px 1px rgba(0, 0, 0, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#eee)
+  );
+}
+main .main .t-select {
+  margin-top: 10px;
+}
+main .main .t-select .t-select__layout {
+  position: relative;
+  height: 30px;
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+}
+main .main .t-select .t-select__layout:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  content: "";
+  border-radius: 0 3px 3px 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a4a4a4),
+    to(#757575)
+  );
+}
+main .main .t-select .t-select__layout .t-select__select {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+}
+main .main .t-select .t-select__layout .t-select__select select {
+  font-size: 13px;
+  width: 100%;
+  height: 30px;
+  padding: 0 40px 0 6px;
+  color: #333;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+main .main .t-select .t-select__layout .t-select__select:after {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 9px solid #fff;
+}
+main .main .telephone-area ul {
+  display: table;
+}
+main .main .telephone-area ul li {
+  display: inline-block;
+  width: 90px;
+  margin-right: 3px;
+  vertical-align: top;
+}
+main .main .t-form__value {
+  margin-top: 6px;
+  margin-left: 16px;
+}
+@media only screen and (max-width: 639px) {
+  main .main .t-form__value {
+    font-size: 14px;
+  }
+}
+main .main_confirm .t-column-head {
+  margin-top: 20px;
+}
+main .main .p-registration_info_edit__block {
+  margin-bottom: 20px;
+}
+main .main .email-confirm-text {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-top: 1px solid #f3f3f3;
+}
+main .main .email-confirm-text .mymenu-link {
+  color: blue;
+  text-decoration: underline;
+}
+main .main .email-confirm-text .c_red {
+  color: red;
+}
+main .main .email-confirm-text .ui-link {
+  color: #0085c3;
+  font-weight: 400;
+  text-decoration: none;
+}
+main .main .email-confirm-text .ui-link:hover {
+  text-decoration: underline;
+}
+main .main .email-confirm-text .email-confirm-attention {
+  color: red;
+  padding-top: 10px;
+}
+main .main_complete_totop .complete-text {
+  text-align: center;
+}
+main .main .item-bar {
+  border-top: #f3f3f3 solid 1px;
+  border-bottom: #f3f3f3 solid 1px;
+  margin-bottom: 20px;
+}
+main .main .item-bar .p-item-list-bar__list {
+  width: 100%;
+  float: none;
+}
+main .main .item-bar .p-item-list-bar__list a {
+  color: #000;
+}
+
+/* t-button style */
+.t-button__default {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.t-button__blue {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=member-registration.css.map */
