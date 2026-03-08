@@ -1,0 +1,26 @@
+.bx-wrapper {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #e7e7ea;
+  margin: 20px auto 30px;
+}
+.bx-wrapper .disabled {
+  width: 0;
+  margin-top: 0;
+  height: 0;
+  background: none;
+  background: -webkit-none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border: none;
+}
+.bx-wrapper .bx-pager {
+  bottom: -20px;
+  padding-top: 0;
+}
+.bx-wrapper .bx-pager .bx-default-pager a {
+  background: #bbb;
+  color: #bbb;
+}
+
+/*# sourceMappingURL=jquery.bxslider.custom.css.map */
