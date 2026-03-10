@@ -351,38 +351,7 @@ function back() {
     <script src="../assets/js/t.js"></script>
     <script src="../assets/js/announce_toggle.js?2026021912" async></script>
     <!-- hamburgerMenu -->
-    <script>
-      $(document).ready(function () {
-        // メインコンテンツをヘッダーの高さ分だけずらす
-        var headerHeight = $('header').outerHeight();
-        $('main').css('padding-top', headerHeight + 'px');
-        $('#menu').css('margin-top', headerHeight + 'px');
-
-        // MENUボタンがクリックされたときの処理
-        $('#menu_btn').on('click', function () {
-          if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-            $(this).text('MENU');
-            $('#menu').removeClass('open');
-            $('.menu-background').removeClass('open');
-          } else {
-            $(this).addClass('active');
-            $(this).text('CLOSE');
-            $('#menu').addClass('open');
-            $('.menu-background').addClass('open');
-          }
-        });
-
-        // メニューの背景がクリックされたときの処理
-        $('.menu-background').on('click', function () {
-          if ($(this).hasClass('open')) {
-            $(this).removeClass('open');
-            $('#menu_btn').removeClass('active').text('MENU');
-            $('#menu').removeClass('open');
-          }
-        });
-      });
-    </script>
+    <script src="../assets/js/hamburger-menu.js"></script
 
 
   </body>

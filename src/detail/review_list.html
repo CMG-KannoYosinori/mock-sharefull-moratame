@@ -272,31 +272,7 @@
     <script type="text/javascript" src="../assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
     <script src="../assets/js/t.js"></script>
     <script src="../assets/js/announce_toggle.js?2026030610" async></script>
-    <script>
-      $(document).ready(function () {
-        var headerHeight = $('header').outerHeight();
-        $('main').css('padding-top', headerHeight + 'px');
-        $('#menu').css('margin-top', headerHeight + 'px');
-        $('#menu_btn').on('click', function () {
-          if ($(this).hasClass('active')) {
-            $(this).removeClass('active').text('MENU');
-            $('#menu').removeClass('open');
-            $('.menu-background').removeClass('open');
-          } else {
-            $(this).addClass('active').text('CLOSE');
-            $('#menu').addClass('open');
-            $('.menu-background').addClass('open');
-          }
-        });
-        $('.menu-background').on('click', function () {
-          if ($(this).hasClass('open')) {
-            $(this).removeClass('open');
-            $('#menu_btn').removeClass('active').text('MENU');
-            $('#menu').removeClass('open');
-          }
-        });
-      });
-    </script>
+    <script src="../assets/js/hamburger-menu.js"></script>
   </body>
 
 </html>
