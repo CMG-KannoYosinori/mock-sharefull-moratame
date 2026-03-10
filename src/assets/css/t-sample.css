@@ -250,7 +250,7 @@ header .header-contents {
   padding-top: 42px;
   width: 58px;
   height: 62px;
-  background: url(https://stg.tsample.tsite.jp/img/btn-hbg.png);
+  background: url(../images/btn-hbg.png);
   background-size: contain;
   color: #fff;
   text-align: center;

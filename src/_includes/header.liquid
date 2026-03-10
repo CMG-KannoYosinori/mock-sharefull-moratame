@@ -4,6 +4,7 @@
 {% endcomment %}
 {% if page.url contains 'mymenu' %}
   {% assign mymenu_href = 'basic.html' %}
+  {% assign asset_base = '../' %}
 {% else %}
   {% assign path_segments = page.url | split: '/' %}
   {% assign seg_count = path_segments | size %}
@@ -13,10 +14,13 @@
   {% endif %}
   {% if depth == 0 %}
     {% assign mymenu_href = 'mymenu/basic.html' %}
+    {% assign asset_base = '' %}
   {% elsif depth == 1 %}
     {% assign mymenu_href = '../mymenu/basic.html' %}
+    {% assign asset_base = '../' %}
   {% else %}
     {% assign mymenu_href = '../../mymenu/basic.html' %}
+    {% assign asset_base = '../../' %}
   {% endif %}
 {% endif %}
 
@@ -59,10 +63,10 @@
                 <!-- topMenu_sp -->
                 <div class="sp-header-menu sp">
                   <div class="sp-header-menu_component sp-header-menu_component-mymenu">
-                    <a href="https://stg.tsample.tsite.jp/mymenu/basic.php"><img alt="マイページ" src="https://stg.tsample.tsite.jp/img/btn-mymenu.png"></a>
+                    <a href="https://stg.tsample.tsite.jp/mymenu/basic.php"><img alt="マイページ" src="{{ asset_base }}assets/images/btn-mymenu.png"></a>
                   </div>
                   <div class="sp-header-menu_component sp-header-menu_component-logout">
-                    <a href="https://stg.tsample.tsite.jp/contents/logout.php"><img alt="ログアウト" src="https://stg.tsample.tsite.jp/img/btn-logout.png"></a>
+                    <a href="https://stg.tsample.tsite.jp/contents/logout.php"><img alt="ログアウト" src="{{ asset_base }}assets/images/btn-logout.png"></a>
                   </div>
                   <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
                     MENU
@@ -80,7 +84,7 @@
                 <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
                 <ul class="submenu" style="display: none;">
                   <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="{{ asset_base }}assets/images/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
                   <li class="t-sidemenu-sub-ttl">マイページ</li>
                   <li><a href="{{ mymenu_href }}">マイページ</a></li>
                 </ul>
