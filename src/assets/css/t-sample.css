@@ -1137,22 +1137,6 @@ body .select-area label {
 
 /* // common-settings */
 /* toppage ------------------------------------------------*/
-/* slick */
-.slick-dotted.slick-slider {
-  margin-top: 15px;
-}
-@media only screen and (max-width: 1614px) {
-  .slick-dotted.slick-slider {
-    margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 959px) {
-  .slick-dotted.slick-slider {
-    margin-top: 0;
-  }
-}
-
-/* /slick */
 body.toppage {
   /* icoWrap */
 }
