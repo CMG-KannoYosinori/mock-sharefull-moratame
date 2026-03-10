@@ -1,6 +1,6 @@
 /* quickLinkSiteMap
 ------------------------------------------- */
-/* マイメニュープルダウンメニュー */
+/* マイページプルダウンメニュー */
 {
   var hb_mmLclTgr_switch_flg = false
   var flexible_container_height = $(".js-flexible-container").height()
@@ -23,7 +23,7 @@
     }
   })
 }
-/* /マイメニュープルダウンメニュー */
+/* /マイページプルダウンメニュー */
 /* /quickLinkSiteMap
 ------------------------------------------- */
 // attentionAccordion

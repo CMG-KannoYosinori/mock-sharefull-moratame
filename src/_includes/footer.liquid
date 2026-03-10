@@ -1,5 +1,5 @@
 {% comment %}
-  ページの階層に応じてマイメニューリンクの相対パスを算出
+  ページの階層に応じてマイページリンクの相対パスを算出
   page.url: / または /contents/signup01.html など（.html フラット出力）
 {% endcomment %}
 {% if page.url contains 'mymenu' %}
@@ -34,7 +34,7 @@
               <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
             </li>
             <li class="footer-global__nav-list">
-              <a href="{{ mymenu_href }}">マイメニュー</a>
+              <a href="{{ mymenu_href }}">マイページ</a>
             </li>
           </ul>
           <ul>

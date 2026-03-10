@@ -11,30 +11,29 @@
 
     <title>Vポイントが貯まる・使える Vサンプル</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.v3.3.7--scope.css?2026021815">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.v3.3.7--scope.css?2026030913">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/properties.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/layout.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/module.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/style--common-sp-and-pc.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset-old-style--jp.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/style--pc.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/style--sp.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/t.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/pass_monitor.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/t-sample.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer-common.css?2026021815">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/properties.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/main.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/module.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/style--common-sp-and-pc.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/reset-old-style--jp.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/style--pc.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/style--sp.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/t.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/pass_monitor.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/t-sample.css?2026030913">
 
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme-user.css?2026021815">
-    <link rel="stylesheet" type="text/css" href="assets/css/p9255-common--pc.css?2026021815">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="https://stg.tsample.tsite.jp/plugins/slick/slick-theme-user.css?2026030913">
+    <link rel="stylesheet" type="text/css" href="/css/p9255-common--pc.css?2026030913">
 
     <!--slideUp Down-->
-    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://stg.tsample.tsite.jp/plugins/jquery/jquery-3.2.1.min.js"></script>
     <script>
       $(function () {
         $('.slideup').click(function () {
@@ -75,16 +74,54 @@
 
 
     <!-- postalcode_address -->
-    <script src="assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+    <script src="/plugins/ajaxzip3/ajaxzip3.js"></script>
 
     <!-- FontAwesome -->
-    <link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Google Tag Manager TSAMPLE-->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KHX6JPD');</script>
+    <!-- End Google Tag Manager -->
 
 
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script async src="https://fam.adingo.jp/bid-strap/tsample/pb.js"></script>
+    <script>
+      var bsttag = window.bsttag || { cmd: [] };
+      bsttag.failSafeTimeout = 3000; //header bidding全体のタイムアウト
+      bsttag.launchAuction = function (slots) {
+
+        var hbm = {};
+        bsttag.cmd.push(function (cmd) {
+          hbm = cmd.requestBids({ adUnits: slots });
+        });
+
+        setTimeout(function () {
+          if (hbm.isRequestSent) {
+            return;
+          }
+          hbm.isRequestSent = true;
+          googletag.cmd.push(function () {
+            googletag.pubads().refresh(slots);
+          });
+        }, bsttag.failSafeTimeout);
+      };
+    </script>
 
   </head>
 
   <body id="pageTop" class="bootstrap-v3-3-7--scope toppage">
+    <!-- Google Tag Manager (noscript) TSAMPLE-->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHX6JPD&gtm_auth=8BVfB0qbLoTGBqKRiw1HVA&gtm_preview=env-7&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="body-wrapper">
       <div class="p-masthead">
         <div class="l-conteiner">
@@ -95,7 +132,7 @@
                 <h1>
                   <a href="https://stg.tsample.tsite.jp/">
                     <p class="logo-responsive--txt">Vポイントが貯まる・使える</p>
-                    <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://tsample.tsite.jp/img/logo_v.png" width="792">
+                    <img alt="Vポイントが貯まる・使える Vサンプル" class="img-responsive img-responsive--logo" height="174" src="https://stg.tsample.tsite.jp/img/logo_v.png" width="792">
                   </a>
                 </h1>
                 <!-- topBanner_pc -->
@@ -112,7 +149,7 @@
                   <div class="p9225-masthead__buttons">
                     <ul class="p-masthead__labels announce-container">
                       <li>
-                        <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/mymenu/basic.php">マイページ</a>
+                        <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/mymenu/basic.php">マイメニュー</a>
                       </li>
                       <li>
                         <a class="c-label--masthead" href="https://stg.tsample.tsite.jp/contents/logout.php">ログアウト</a>
@@ -124,7 +161,7 @@
                 <!-- topMenu_sp -->
                 <div class="sp-header-menu sp">
                   <div class="sp-header-menu_component sp-header-menu_component-mymenu">
-                    <a href="https://stg.tsample.tsite.jp/mymenu/basic.php"><img alt="マイページ" src="https://stg.tsample.tsite.jp/img/btn-mymenu.png"></a>
+                    <a href="https://stg.tsample.tsite.jp/mymenu/basic.php"><img alt="マイメニュー" src="https://stg.tsample.tsite.jp/img/btn-mymenu.png"></a>
                   </div>
                   <div class="sp-header-menu_component sp-header-menu_component-logout">
                     <a href="https://stg.tsample.tsite.jp/contents/logout.php"><img alt="ログアウト" src="https://stg.tsample.tsite.jp/img/btn-logout.png"></a>
@@ -145,8 +182,8 @@
                 <ul class="submenu" style="display: none;">
                   <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
                   <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
-                  <li class="t-sidemenu-sub-ttl">マイページ</li>
-                  <li><a href="mymenu/basic.html">マイページ</a></li>
+                  <li class="t-sidemenu-sub-ttl">お店でためす</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>
                 </ul>
               </li> <a href="https://stg.tsample.tsite.jp/detail/category.php?category=7b664">
                 <li>家族配送（4）</li>
@@ -186,7 +223,7 @@
 
           <!-- accordion-menu -->
           <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない　-->
-          <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
           <script>
             $(function () {
               $('.js-menu__item__link').each(function () {
@@ -221,7 +258,7 @@
               <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
             </li>
             <li class="p-masthead__nav__mise">
-              <a href="mymenu/basic.html">マイページ</a>
+              <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
             </li>
           </ul>
           <!-- /topTabMenu_pc -->
@@ -251,7 +288,7 @@
             <!-- style -->
             <!-- contents -->
 
-            <link rel="stylesheet" href="assets/css/triangle.css">
+            <link rel="stylesheet" href="../css/triangle.css">
             <!-- pr-tame -->
             <div class="pr-tame pr-content">
               <div class="heading xx-large enclosingBtn withIcon">
@@ -265,25 +302,6 @@
               </div>
               <div class="cardContainer tame ta-list">
                 <div class="row">
-                  <div class="col-xs-4 col-md-3 col-lg-3">
-                    <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコード10件B">
-                      <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">
-                          <img alt="ギフトコード10件B" class="item thumbnail" height="638" src="https://stg.tsample.tsite.jp/img/project/2300_item_20260204_161934.png" width="638">
-                        </a>
-                      </p>
-                      <div class="p-card__detail">
-                        <p>モラタメ編集部</p>
-                        <p>
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">ギフトコード10件B</a>
-                        </p>
-                        <p class="count">残り
-                          <span class="c_red fw_b">9</span>
-                        </p>
-                        <p class="badge cardBadge few">残りわずか</p>
-                      </div>
-                    </div>
-                  </div>
                   <div class="col-xs-4 col-md-3 col-lg-3">
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコード10件A">
                       <p class="item">
@@ -341,25 +359,25 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="col-xs-4 col-md-3 col-lg-3">
-                    <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコードK5 200件">
+                    <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコードK5 200件">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">
-                          <img alt="ギフトコードK5 200件" class="item thumbnail" height="320" src="https://stg.tsample.tsite.jp/img/project/2276_item_20260108_143335.png" width="320">
+                          <img alt="ギフトコードK5 200件" class="item thumbnail" height="638" src="https://stg.tsample.tsite.jp/img/project/2276_item_20260108_143335.png" width="638">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>クーポンクラ…</p>
-                        <p class="">
+                        <p>
                           <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ギフトコードK5 200件</a>
                         </p>
                         <p class="count">残り
-                          <span class="c_red fw_b">198</span>
+                          <span class="c_red fw_b">197</span>
                         </p>
                       </div>
                     </div>
                   </div>
+
                   <div class="col-xs-4 col-md-3 col-lg-3">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンB">
                       <p class="item">
@@ -373,7 +391,7 @@
                           <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2">MTSD-14548 少数クーポンB</a>
                         </p>
                         <p class="count">残り
-                          <span class="c_red fw_b">8</span>
+                          <span class="c_red fw_b">7</span>
                         </p>
                         <p class="badge cardBadge few">残りわずか</p>
                       </div>
@@ -467,9 +485,8 @@
                           <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8">重複OK2</a>
                         </p>
                         <p class="count">残り
-                          <span class="c_red fw_b">4,972</span>
+                          <span class="c_red fw_b">4,969</span>
                         </p>
-                        <p class="icoBar06 repeat">リピート可</p>
                       </div>
                     </div>
                   </div>
@@ -486,14 +503,12 @@
                           <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a">重複OK</a>
                         </p>
                         <p class="count">残り
-                          <span class="c_red fw_b">4,974</span>
+                          <span class="c_red fw_b">4,973</span>
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row row-thumb">
-                  <div class="col-xs-4 col-md-2 col-lg-2">
+                  <div class="col-xs-4 col-md-3 col-lg-3">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="プロファイルチェック用Attoos（大阪除外）">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9">
@@ -501,17 +516,18 @@
                         </a>
                       </p>
                       <div class="p-card__detail">
-                        <p>小林製薬　　</p>
+                        <p>小林製薬　</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9">
-                            プロファイルチェック用Attoos… </a>
+                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9">プロファイルチェック用Attoos（大…</a>
                         </p>
-                        <p class="count">
-                          残り<span class="c_red fw_b">495</span>
+                        <p class="count">残り
+                          <span class="c_red fw_b">495</span>
                         </p>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="row row-thumb">
                   <div class="col-xs-4 col-md-2 col-lg-2">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ポイント決済用少額">
                       <p class="item">
@@ -526,7 +542,7 @@
                             ポイント決済用少額 </a>
                         </p>
                         <p class="count">
-                          残り<span class="c_red fw_b">9,931</span>
+                          残り<span class="c_red fw_b">9,928</span>
                         </p>
                         <p class="badge cardBadge recommend">オススメ</p>
                       </div>
@@ -546,7 +562,7 @@
                             重複有り,家族有り </a>
                         </p>
                         <p class="count">
-                          残り<span class="c_red fw_b">9,844</span>
+                          残り<span class="c_red fw_b">9,841</span>
                         </p>
                         <p class="badge cardBadge recommend">オススメ</p>
                       </div>
@@ -556,7 +572,7 @@
               </div>
               <!-- btnGroup -->
               <div class="mt_20">
-                <p class="ta_c fz_14">今ためせるのは <span class="c_red">15</span> 商品</p>
+                <p class="ta_c fz_14">今ためせるのは <span class="c_red">14</span> 商品</p>
                 <p class="btnSquare01wrap">
                   <a class="btnSquare01 btnBeige01 medium" href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧はこちら
                     <span class="arrow">
@@ -600,7 +616,7 @@
                           </li>
                           <li class="number">応募締切
                             <span class="c_red fw_b">
-                              360日前 </span>
+                              341日前 </span>
                           </li>
                         </ul>
                       </div>
@@ -623,7 +639,7 @@
                           </li>
                           <li class="number">応募締切
                             <span class="c_red fw_b">
-                              360日前 </span>
+                              341日前 </span>
                           </li>
                         </ul>
                       </div>
@@ -646,10 +662,9 @@
                           </li>
                           <li class="number">応募締切
                             <span class="c_red fw_b">
-                              203日前 </span>
+                              184日前 </span>
                           </li>
                         </ul>
-                        <p class="badge cardBadge already">応募済み</p>
                       </div>
                     </div>
                   </a>
@@ -696,8 +711,8 @@
                 <ul class="newsListWrap t-sidemenu-list">
                   <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
                   <li><a href="https://stg.tsample.tsite.jp/detail/category.php?category=4e058" title="食品"><img src="https://stg.tsample.tsite.jp/img/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
-                  <li class="t-sidemenu-sub-ttl">マイページ</li>
-                  <li><a href="mymenu/basic.html" title="マイページ">マイページ</a></li>
+                  <li class="t-sidemenu-sub-ttl">お店でためす</li>
+                  <li><a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php" title="全て"><img src="https://stg.tsample.tsite.jp/img/icoMise.png" width="18" height="18" alt="">全て</a></li>
                 </ul>
               </div>
             </div> <!-- project-schedule -->
@@ -855,16 +870,147 @@
             </div>
             <!-- sideBnr / -->
 
+            <!-- PC版サイドメニュー下部 -->
+            <script>
+              window.googletag = window.googletag || { cmd: [] };
+              googletag.cmd.push(function () {
+                var slots = [];
+                slots.push(
+                  googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-rightcolumn-under_30195', [[200, 200], [300, 250]], 'pc_tsample_all-pages-rightcolumn-under').addService(googletag.pubads())
+                )
+
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
+                googletag.enableServices();
+                bsttag.launchAuction(slots);
+
+                googletag.display('pc_tsample_all-pages-rightcolumn-under');
+              });
+            </script>
+            <!-- //PC版サイドメニュー下部 -->
+
+            <!-- Google広告表示部分 PC版サイドメニュー下部 -->
+            <p style="text-align: center; margin-bottom:5px;">&lt;PR&gt;</p>
+            <div id="pc_tsample_all-pages-rightcolumn-under"></div>
+            <!-- //Google広告表示部分 PC版サイドメニュー下部 -->
+
 
 
           </div>
           <!-- /secondary -->
         </div><!-- /contents cf contents--responsive -->
 
+        <!-- Google広告表示部分 ページ下部 -->
+        <p style="text-align: center; margin-top: 100px; margin-bottom:5px;">&lt;PR&gt;</p>
+        <div id="sp_tsample_all-pages-site-under1" class="sp-under-gas"></div>
+        <div id="pc-tsample-all-pages-site-container">
+          <div id="pc_tsample_all-pages-site-under1"></div>
+          <div id="pc_tsample_all-pages-site-under2"></div>
+        </div>
+        <p style="padding-top: 50px;"></p>
+        <!-- //Google広告表示部分 ページ下部 -->
+
+        <script>
+          window.googletag = window.googletag || { cmd: [] };
+          googletag.cmd.push(function () {
+
+            function randomInt(min, max) {
+              return Math.floor(Math.random() * (max + 1 - min)) + min;
+            }
+
+            var slots = [];
+            var isPC = window.innerWidth > 960;
+
+            if (isPC) {
+              var pcContainer = document.getElementById("pc-tsample-all-pages-site-container");
+              pcContainer.style.justifyContent = "center";
+              pcContainer.style.textAlign = "center";
+              var ad1 = document.getElementById("pc_tsample_all-pages-site-under1");
+              var ad2 = document.getElementById("pc_tsample_all-pages-site-under2");
+
+              pcContainer.style.display = "flex";
+              ad1.style.marginRight = "20px";
+              ad2.style.marginLeft = "20px";
+              slots.push(
+                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under1_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under1').addService(googletag.pubads()),
+                googletag.defineSlot('/62532913,22528941850/p_tsample_300x250_all-pages-site-under2_30195', [[300, 300], [300, 250], [300, 280], [300, 360], [336, 280]], 'pc_tsample_all-pages-site-under2').addService(googletag.pubads())
+              )
+            } else {
+              slots.push(
+                googletag.defineSlot('/62532913,22528941850/s_tsample_300x250_all-pages-site-under1_30196', [[250, 250], [336, 280], [320, 50], [320, 480], 'fluid', [300, 250], [320, 180], [336, 180], [200, 200], [300, 280], [320, 100], [300, 300], [300, 600], [240, 400], [300, 360]], 'sp_tsample_all-pages-site-under1').addService(googletag.pubads())
+              )
+            }
+
+            googletag.pubads().setTargeting("fluct_ad_group", String(randomInt(1, 10)));
+            googletag.pubads().disableInitialLoad();
+            googletag.pubads().set("page_url", "https://tsample.tsite.jp/");
+            googletag.enableServices();
+            bsttag.launchAuction(slots);
+
+            if (isPC) {
+              googletag.display('pc_tsample_all-pages-site-under1');
+              googletag.display('pc_tsample_all-pages-site-under2');
+            } else {
+              googletag.display('sp_tsample_all-pages-site-under1');
+            }
+          });
+        </script>
+        <!-- 全ページ下部 -->
 
 
       </div><!-- /main-->
-      {% include 'footer' %}
+      <!-- footer -->
+      <footer>
+        <div id="footer">
+          <ul class="footer-global__nav">
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/">トップ</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/" target="_blank">プライバシーセンター</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/sample/" target="_blank">Vサンプルサービス利用規約</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/" target="_blank">各種規約について</a>
+            </li>
+            <li style="border: none;">
+              <a href="https://privacy.cccmkhd.co.jp/data-transfer/" target="_blank">利用者情報の外部送信について</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://www.cccmkhd.co.jp/" target="_blank">CCCMKホールディングス株式会社</a>
+            </li>
+            <li>
+              <a href="https://www.cccmkhd.co.jp/finance/" target="_blank">CCCライフパートナーズ株式会社</a>
+            </li>
+            <li>
+              <a href="https://tsite.jp/fs/contact/index.pl" target="_blank">Vポイント加盟店の募集</a>
+            </li>
+            <li style="border: none;">
+              <a href="https://tsite.jp/" target="_blank">Vポイントサイト</a>
+            </li>
+          </ul>
+          <p> &copy; CCC MK HOLDINGS Co.,Ltd.</p>
+        </div>
+      </footer>
+      <!-- /footer -->
       <!-- pageTopScroll -->
       <p class="pageTopScroll" style="display: none;">
         <a href=https://stg.tsample.tsite.jp/ "#pageTop">▲ページトップへ</a>
@@ -874,8 +1020,7 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        var param = { user_id: "2246" };
-        return;
+        var param = { user_id: "2256" };
         $.ajax({
           type: "POST",
           url: "/ajax/request_omisetame_enq.php",
@@ -891,7 +1036,7 @@
                                     <img alt="" height="75" src="https://stg.tsample.tsite.jp/img/icon-mise.png" width="76">\
                                 </span>\
                                 <span class="mise-new-icon">NEW</span>\
-                                <span class="">マイページ</span>\
+                                <span class="">お店でためす</span>\
                                 <span class="heading__sub-title">参加受付中！</span>\
                             </h1>\
                         </div>\
@@ -1005,7 +1150,7 @@
                         <div class="mt_20">\
                             <p class="ta_c fz_14">今参加できる商品は <span class="c_red">' + open_count + '</span> 商品</p>\
                             <p class="btnSquare01wrap">\
-                                <a class="btnSquare01 btnBeige01 medium" href="mymenu/basic.html">マイページはこちら\
+                                <a class="btnSquare01 btnBeige01 medium" href="https://stg.tsample.tsite.jp/detail/omisetamelist.php">お店でためす商品一覧はこちら\
                                     <span class="arrow">\
                                         <img alt="" height="32" src="https://stg.tsample.tsite.jp/img/arrow03.png" width="20">\
                                     </span>\
@@ -1033,10 +1178,10 @@
       }
     </script>
     <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
-    <script type="text/javascript" src="assets/vendor/jquery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/t.js"></script>
-    <script src="assets/js/announce_toggle.js?2026021815" async></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/t.js"></script>
+    <script src="/js/announce_toggle.js?2026030913" async></script>
     <!-- hamburgerMenu -->
     <script>
       $(document).ready(function () {
@@ -1072,7 +1217,7 @@
     </script>
 
     <!-- slickSlide -->
-    <script type="text/javascript" src="assets/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://stg.tsample.tsite.jp/plugins/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
         $('.top-header-slick').slick({
