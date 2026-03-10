@@ -256,6 +256,7 @@ header .header-contents {
   text-align: center;
   font-size: 10px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 @media only screen and (max-width: 530px) {
   #menu_btn {
@@ -2314,25 +2315,6 @@ body.t-about .secondary {
   width: 258px;
   border-top: 1px solid #d1d4d3;
   cursor: pointer;
-}
-
-.s_boxWrap {
-  position: absolute;
-  z-index: 99999;
-  top: 64px;
-  left: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0 5px;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-@media only screen and (max-width: 530px) {
-  .s_boxWrap {
-    top: 54px;
-  }
 }
 
 .p9225-masthead__buttons .announce li {

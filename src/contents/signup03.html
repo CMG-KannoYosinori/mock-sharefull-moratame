@@ -78,6 +78,10 @@
     <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css?2026030513" />
     <link rel="stylesheet" href="../assets/css/footer-common.css?2026030513" />
 
+    <!-- 共通ヘッダー用 -->
+    <link rel="stylesheet" href="../assets/css/style--pc.css?2026030513" />
+    <link rel="stylesheet" href="../assets/css/t-sample.css?2026030513" />
+
     <link rel="stylesheet" href="../assets/css/mamahalo-pickup-items.css?2026030513">
     <!-- /mamahalo-slider -->
 
@@ -119,29 +123,9 @@
     <div data-role="page" class="page" id="registration-page">
 
 
-      <div class="header ui-header" data-backbtn="false" id="header" role="banner">
-        <header>
-          <div class="p-masthead cf">
-            <div>
-              <div class="p-masthead__col-logo">
-                <!-- logoWrap -->
-                <div class="p-masthead__logo">
-                  <a href="javascript:toTop();" rel="external">
-                    <h1>モラタメ.net</h1>
-                  </a>
-                </div>
-                <!-- //logoWrap -->
-              </div>
-            </div>
-          </div>
-        </header>
+      <div class="body-wrapper">
+        {% include 'header' %}
       </div>
-      <script type="text/javascript">
-        function toTop() {
-          window.sessionStorage.setItem('currentSlide', 0);
-          location.href = "https://stg.moratame.net/s/"
-        }
-      </script>
       <div id="contente-top" class="content">
         <div class="container">
           <section class="new-signup-confirm">
@@ -233,6 +217,36 @@
 {% include 'footer' %}
 
     </div>
+
+    <!-- hamburgerMenu -->
+    <script>
+      $(document).ready(function () {
+        var headerHeight = $('header').outerHeight();
+        if ($('main').length) { $('main').css('padding-top', headerHeight + 'px'); }
+        $('#menu').css('margin-top', headerHeight + 'px');
+        $('#menu_btn').on('click', function () {
+          if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).text('MENU');
+            $('#menu').removeClass('open');
+            $('.menu-background').removeClass('open');
+          } else {
+            $(this).addClass('active');
+            $(this).text('CLOSE');
+            $('#menu').addClass('open');
+            $('.menu-background').addClass('open');
+          }
+        });
+        $('.menu-background').on('click', function () {
+          if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('#menu_btn').removeClass('active').text('MENU');
+            $('#menu').removeClass('open');
+          }
+        });
+      });
+    </script>
+
   </body>
 
 

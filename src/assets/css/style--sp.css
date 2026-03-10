@@ -12441,80 +12441,8 @@ div.header nav ul {
   z-index: 9;
 }
 
-.s_boxWrap {
-  position: absolute;
-  top: 51px;
-  left: 0;
-  z-index: 99999;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 5px;
-  width: 100%;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-
-.s_boxHeadline {
-  line-height: 20px;
-}
-
-.s_box {
-  display: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #ededed;
-  box-shadow: 0 8px 8px #777;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.s_box a {
-  font-size: 15px;
-}
-.s_box p {
-  padding: 5px 0 0;
-  font-size: 13px;
-}
-.s_box p.p-premium__ico {
-  padding-left: 23px;
-  font-size: 11px;
-}
-.s_box .close_btn_notice {
-  margin: 15px 15px 10px;
-  padding: 10px 0;
-  border: #777;
-  border-radius: 5px;
-  background: #8bbc00;
-  color: #fff;
-  text-align: center;
-  font: 14px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.5em;
-}
-
 .bgcFFF {
   background-color: #fff;
-}
-
-/*detail*/
-.index14 .s_boxTxt {
-  min-height: 90px;
-  text-shadow: none;
-}
-.index14 .s_boxLink {
-  display: block;
-  min-height: 90px;
 }
 
 .s_boxTxtWrap {
@@ -14820,67 +14748,6 @@ div.ui-panel .drwMnNavList a:hover, div.ui-panel .drwMnNavList a:active {
   width: 100%;
   padding: 10px 5px 5px 10px;
   border-bottom: 2px solid #ccc;
-}
-
-.p-masthead__col-logo {
-  float: left;
-  width: 35%;
-}
-
-.p-masthead__col-nav {
-  float: right;
-}
-
-.p-masthead__logo {
-  float: left;
-}
-.p-masthead__logo h1 {
-  visibility: hidden;
-}
-.p-masthead__logo a {
-  display: block;
-  width: 91px;
-  height: 25px;
-  margin: 0;
-  text-decoration: none;
-  background: url(https://image.moratame.net/img2014/s/common/logo_default.png) no-repeat -2px top;
-  background-size: 160px;
-}
-
-.p-masthead__nav {
-  display: table;
-  width: auto;
-  margin-right: 0;
-}
-
-.p-masthead__nav-container {
-  line-height: 1;
-  position: relative;
-  display: table-cell;
-  padding-right: 5px;
-  padding-left: 5px;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-.p-masthead__badge {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-}
-
-.p-masthead__badge-2 {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-}
-
-.p-masthead__first-time {
-  font-size: 9px;
-}
-
-.p-masthead__soon {
-  font-size: 9px;
 }
 
 .p-mymenu-premium {

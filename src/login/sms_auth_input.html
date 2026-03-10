@@ -82,6 +82,10 @@
     <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css?2026030513" />
     <link rel="stylesheet" href="../assets/css/footer-common.css?2026030513" />
 
+    <!-- 共通ヘッダー用 -->
+    <link rel="stylesheet" href="../assets/css/style--pc.css?2026030513" />
+    <link rel="stylesheet" href="../assets/css/t-sample.css?2026030513" />
+
     <link rel="stylesheet" href="../assets/css/mamahalo-pickup-items.css?2026030513">
     <!-- /mamahalo-slider -->
 
@@ -380,124 +384,8 @@
       </div>
       <!-- //drawerMenu -->
 
-      <div class="header ui-header" data-backbtn="false" id="header" role="banner">
-        <header>
-          <div class="p-masthead cf">
-            <div>
-              <div class="p-masthead__col-logo">
-
-
-
-
-                <!-- logoWrap -->
-                <div class="p-masthead__logo">
-                  <a href="javascript:toTop();" rel="external" data-track-trigger="click-a" data-track-name="sp_header_logo">
-                    <h1 data-track-trigger="click-other" data-track-name="sp_header_logo">モラタメ.net</h1>
-                  </a>
-                </div>
-                <!-- //logoWrap -->
-              </div>
-              <div class="p-masthead__col-nav">
-                <div class="p-masthead__nav">
-                  <div class="p-masthead__nav-container">
-                    <a href="https://stg.moratame.net/s/login/index.php" rel="external" data-track-trigger="click-a" data-track-name="sp_header_cta_login">
-                      <span class="icon-set01 icon_login" data-track-trigger="click-other" data-track-name="sp_header_cta_login"></span>
-                      <div class="p-masthead__first-time" data-track-trigger="click-other" data-track-name="sp_header_cta_login">ログイン</div>
-                    </a>
-                  </div>
-                  <div class="p-masthead__nav-container">
-                    <a href="https://stg.moratame.net/s/contents/about.php" rel="external" data-track-trigger="click-a" data-track-name="sp_header_cta_beginner">
-                      <span class="icon-set01 icon_rgt" data-track-trigger="click-other" data-track-name="sp_header_cta_beginner"></span>
-                      <div class="p-masthead__first-time" data-track-trigger="click-other" data-track-name="sp_header_cta_beginner">初めての方</div>
-                    </a>
-                  </div>
-                  <div class="p-masthead__nav-container">
-                    <a class="d-b" href="#r-panel" id="build-menu-button" data-role="none">
-                      <span class="icon-set01 icon_menu"></span>
-                      <p class="fnt-wgt-n fz-10px tsh-none c-menu">メニュー</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-masthead cf">
-            <div>
-              <div class="p-masthead-icons">
-                <a href="https://stg.moratame.net/s/favorite/clip_list.php" class="ui-link">
-                  <div class="c-masthead-clip-list-sp">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 47" width="25" height="25">
-                      <path d="M11,47C2.3,47,0,39.8,0,36V0h4v36c0.01,0.71,0.26,7,7,7c6.74,0,6.99-6.29,7-7.01V11h-5v25H9V7h13v29C22,39.8,19.7,47,11,47z" style="fill: #eb651b;"></path>
-                    </svg>
-                    <p>クリップリスト</p>
-                  </div>
-                </a>
-                <div class="p-masthead__nav-container">
-                  <div class="p-masthead__soon">
-                    <span class="pos-a icon-set01 p-masthead__badge-2"></span>
-                    <a href="#" rel="external" class="ui-link">
-                      <span class="icon-set01 icon_schedule"></span>
-                      <p class="fnt-wgt-n fz-10px tsh-none">もうすぐ掲載</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="p-masthead__nav-container p-masthead__nav-container--post">
-                  <a href="https://stg.moratame.net/s/contents/myreview_list.php" rel="external" class="ui-link">
-                    <span class="icon-set01 icon-set01--post"></span>
-                    <p class="fnt-wgt-n fz-10px tsh-none">投稿</p>
-                  </a>
-                </div>
-                <div class="p-masthead__nav-container p-masthead__nav-container--post">
-                  <a href="https://stg.moratame.net/s/contents/myindex.php" rel="external" class="ui-link">
-                    <span class="icon-set01 icon_user"></span>
-                    <p class="fnt-wgt-n fz-10px tsh-none">マイページ</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <script type="text/javascript">
-            function toTop() {
-              window.sessionStorage.setItem('currentSlide', 0);
-              location.href = "https://stg.moratame.net/s/"
-            }
-          </script>
-          <!-- 開閉メニュー -->
-          <script type="text/javascript">
-            $(document).on('click', '.p-masthead__soon', function () {
-              if ($("#p-masthead__soon").css("display") == "none") {
-                $("#p-masthead__soon").css("display", "block")
-                $("#gmo_research_header").css("display", "none")
-              } else if ($("#p-masthead__soon").css("display") == "block") {
-                $("#p-masthead__soon").css("display", "none")
-              }
-            });
-            $(document).on('click', '.s_boxHeadline', function () {
-              $("#p-masthead__soon").css("display", "none")
-            });
-          </script><!-- //開閉メニュー -->
-          <!-- 開閉メニュー内コンテンツ -->
-          <div class="s_boxWrap" id="s_boxChk" style="top: 54px;">
-            <!-- s_boxMain -->
-            <div class="s_box" id="p-masthead__soon">
-              <div class="index14 p0-10-10">
-                <!-- detail --><!-- section -->
-                <section>
-                  <div class="w-100per ov-h s_boxHeadline">
-                    <div class="fl-l va-m">
-                      <h3 class="tsh-none m-0 pt-10px">本日以降の掲載予定</h3>
-                    </div>
-                  </div><!---->
-                  <div class="w-100per ov-h s_boxHeadline">
-                    <p class="close_btn_notice">閉じる&nbsp;<img alt="" class="va-m" height="19" src="../assets/images/common/2014/s/icon_close02.png" width="19"></p>
-                  </div><!--//-->
-                </section><!-- //section --><!-- //detail -->
-              </div>
-            </div><!-- -->
-          </div><!-- //開閉メニュー内コンテンツ -->
-        </header>
+      <div class="body-wrapper">
+        {% include 'header' %}
       </div>
 
       <!-- cliplist -->
@@ -787,6 +675,35 @@
 
     </div>
     </div>
+
+    <!-- hamburgerMenu -->
+    <script>
+      $(document).ready(function () {
+        var headerHeight = $('header').outerHeight();
+        if ($('main').length) { $('main').css('padding-top', headerHeight + 'px'); }
+        $('#menu').css('margin-top', headerHeight + 'px');
+        $('#menu_btn').on('click', function () {
+          if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).text('MENU');
+            $('#menu').removeClass('open');
+            $('.menu-background').removeClass('open');
+          } else {
+            $(this).addClass('active');
+            $(this).text('CLOSE');
+            $('#menu').addClass('open');
+            $('.menu-background').addClass('open');
+          }
+        });
+        $('.menu-background').on('click', function () {
+          if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('#menu_btn').removeClass('active').text('MENU');
+            $('#menu').removeClass('open');
+          }
+        });
+      });
+    </script>
 
   </body>
 
