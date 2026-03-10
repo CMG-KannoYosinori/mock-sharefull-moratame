@@ -1071,15 +1071,6 @@ body .select-area label {
     height: 26px;
   }
 }
-.heading.xx-large .mise-new-icon {
-  margin: 0 3px;
-  padding: 4px 6px;
-  background: #ff0039;
-  color: #fff;
-  vertical-align: middle;
-  font-size: 11px;
-}
-
 /* secondary --------------------------------------------------*/
 .secondary {
   margin-top: 80px;

@@ -29,7 +29,6 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/p9255-common--pc.css?2026021815">
 
-    <!--slideUp Down-->
     <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!-- postalcode_address -->
     <script src="assets/vendor/ajaxzip3/ajaxzip3.js"></script>
@@ -45,26 +44,8 @@
     <div class="body-wrapper">
       {% include 'header' %}
       <div class="main">
-        <!-- carrousel -->
-        <!-- /carrousel -->
-        <!-- newsLink -->
-        <!-- /newsLink -->
         <div class="contents cf contents--responsive">
           <div class="primary primary--responsive">
-            <!-- style -->
-            <style>
-              .pr-message {
-                text-align: center;
-                margin-top: 20px;
-              }
-
-              .pr-message a {
-                color: #f00;
-                font-weight: bold;
-                font-size: 1.4rem;
-              }
-            </style>
-            <!-- style -->
             <!-- contents -->
 
             <link rel="stylesheet" href="assets/css/triangle.css">
@@ -384,8 +365,6 @@
               <!-- /btnGroup -->
             </div>
 
-            <div class="pr-mise pr-content" id="omisetame"></div>
-
             <!-- pr-mora -->
             <div class="pr-mora pr-content">
               <!-- headGroup -->
@@ -674,166 +653,7 @@
     </div>
     <!--  //body-wrapper -->
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        var param = { user_id: "2246" };
-        return;
-        $.ajax({
-          type: "POST",
-          url: "/ajax/request_omisetame_enq.php",
-          data: JSON.stringify(param),
-          dataType: "json",
 
-          success: function (data) {
-            if (data.count > 0) {
-              $("#omisetame").append('\
-                        <div class="heading xx-large enclosingBtn withIcon">\
-                            <h1>\
-                                <span class="icoWrap">\
-                                    <img alt="" height="75" src="assets/images/icon-mise.png" width="76">\
-                                </span>\
-                                <span class="mise-new-icon">NEW</span>\
-                                <span class="">マイページ</span>\
-                                <span class="heading__sub-title">参加受付中！</span>\
-                            </h1>\
-                        </div>\
-                    ');
-
-              var html = '';
-
-              html += '<div class="cardContainer mise ta-list">';
-
-              html += '<div class="row row-thumb">';
-
-              var count = 0;
-              var open_count = 0;
-              var production_flg = 0;
-
-              if (production_flg === 1) {
-                var exclusionPjtIds = ['6461', '6462'];
-              } else {
-                var exclusionPjtIds = ['2909', '2906'];
-              }
-
-              for (index in data.list) {
-                var enq = data.list[index];
-
-                if ($.inArray(enq.id, exclusionPjtIds) === -1) {
-                  if (enq.isRemaining) {
-                    open_count = open_count + 1;
-                  }
-
-                  if (count < 12) {
-                    if (enq.isRemaining) {
-                      // 現在日時取得
-                      date = new Date();
-                      yy = date.getYear();
-                      mm = date.getMonth() + 1;
-                      dd = date.getDate();
-                      hh = date.getHours();
-                      ii = date.getMinutes();
-                      ss = date.getSeconds();
-                      if (yy < 2000) { yy += 1900; }
-                      if (mm < 10) { mm = "0" + mm; }
-                      if (dd < 10) { dd = "0" + dd; }
-                      if (hh < 10) { hh = "0" + hh; }
-                      if (ii < 10) { ii = "0" + ii; }
-                      if (ss < 10) { ss = "0" + ss; }
-                      var now = yy + "-" + mm + "-" + dd + " " + hh + ":" + ii + ":" + ss;
-
-                      // 開始日の翌日取得
-                      var year = enq.startDate.substr(0, 4);
-                      var month = enq.startDate.substr(5, 2);
-                      var date = enq.startDate.substr(8, 2);
-                      var time = enq.startDate.substr(11);
-                      var obj = nextDate(year, month, date);
-                      if (obj.month < 10) {
-                        month = "0" + obj.month
-                      } else {
-                        month = obj.month;
-                      }
-                      if (obj.date < 10) {
-                        date = "0" + obj.date
-                      } else {
-                        date = obj.date
-                      }
-                      var new_date = obj.year + "-" + month + "-" + date + " " + time;
-
-                      html += '<div class="col-xs-4 col-md-2 col-lg-2">';
-                      html += '<div class="p-card p-card--top blockLink heightLine--tame" title="' + enq.name + '">';
-                      html += '<p class="item">';
-                      html += '<a href="https://stg.tsample.tsite.jp/detail/omisetame.php?project_id=' + enq.id + '">';
-                      html += '<img alt="' + enq.product.name + '" class="item thumbnail" height="320" src="' + enq.product.image + '" width="320">';
-                      html += '</a>';
-                      html += '</p>';
-                      html += '<div class="p-card__detail p-card__detail_mise">';
-                      html += '<p class="count">';
-                      html += '<span class="c_red fw_b">' + enq.point + 'pt</span>';
-                      html += '</p>';
-                      if (enq.isHideCount == 1) {
-                        html += '<p class="count">残り ';
-                        html += '<span class="c_red fw_b">' + enq.quotaLeft + '</span>人';
-                        html += '</p>';
-                      }
-
-                      if (enq.status == 2) {
-                        html += '<p class="badge cardBadge already">回答済み</p>';
-                      } else if (enq.status == 1) {
-                        html += '<p class="badge cardBadge recommend">申込中</p>';
-                      } else if (enq.isHideCount == 1 && enq.quotaLeft > 0 && enq.quotaLeft <= 100) {
-                        html += '<p class="badge cardBadge few">残りわずか</p>';
-                      } else if (now < new_date) {
-                        html += '<p class="badge cardBadge new">NEW</p>';
-                      }
-
-                      html += '</div>';
-                      html += '</div>';
-                      html += '</div>';
-
-                      count = count + 1;
-                    }
-                  }
-                }
-              }
-
-              html += '</div>';
-              html += '</div>';
-
-              $("#omisetame").append(html);
-
-              $("#omisetame").append('\
-                            </div>\
-                        </div>\
-                        <div class="mt_20">\
-                            <p class="ta_c fz_14">今参加できる商品は <span class="c_red">' + open_count + '</span> 商品</p>\
-                            <p class="btnSquare01wrap">\
-                                <a class="btnSquare01 btnBeige01 medium" href="mymenu/basic.html">マイページはこちら\
-                                    <span class="arrow">\
-                                        <img alt="" height="32" src="assets/images/arrow03.png" width="20">\
-                                    </span>\
-                                </a>\
-                            </p>\
-                        </div>\
-                    ');
-            }
-          },
-          error: function (XMLHttpRequest, textStatus, errorThrown) { }
-        });
-
-        return false;
-      });
-
-      function nextDate(year, month, date) {
-        var todayTime = new Date(year, month - 1, date).getTime();
-        var nextDateTime = todayTime + 60 * 60 * 24 * 1000;
-        nextDateTime = new Date(nextDateTime);
-        return {
-          year: nextDateTime.getFullYear(),
-          month: nextDateTime.getMonth() + 1,
-          date: nextDateTime.getDate()
-        }
-      }
-    </script>
     <!-- bxsliderが機能しなくなるので、ためす詳細では使用しない-->
     <script type="text/javascript" src="assets/vendor/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
