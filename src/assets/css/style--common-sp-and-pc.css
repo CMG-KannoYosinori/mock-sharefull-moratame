@@ -2014,10 +2014,6 @@ PC
   top: -8px;
 }
 
-.p-masthead__text-links {
-  top: 85px !important;
-}
-
 .p-masthead__labels-sns-btns-wrap {
   margin-top: -5px !important;
   top: 0px !important;
@@ -2031,10 +2027,6 @@ PC
 
   .c-masthead-clip-list {
     padding: 8px 3px 7px;
-  }
-
-  .p-masthead__text-links {
-    top: 76px !important;
   }
 
   .p-clip-lists__about img {

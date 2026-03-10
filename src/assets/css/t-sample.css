@@ -437,11 +437,6 @@ body .select-area label {
   margin-right: 5px;
   text-align: right;
 }
-.p-masthead .p-masthead__text-links {
-  position: relative;
-  top: 0;
-  line-height: 2;
-}
 .p-masthead .p-masthead__labels a.c-label--masthead {
   background: #004098;
 }
