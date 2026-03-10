@@ -7023,7 +7023,7 @@ input[type="checkbox"] {
   padding: 0;
   width: 30px;
   height: 30px;
-  background: url(/s/images/common/radioBtn.png) no-repeat left top;
+  background: url(../images/common/radioBtn.png) no-repeat left top;
   background-size: 30px 60px;
   color: #868686;
   line-height: 30px;
@@ -9013,7 +9013,7 @@ ul.answerListUl a:visited {
   padding: 0;
   width: 30px;
   height: 30px;
-  background: url(/s/images/common/radioBtn.png) no-repeat left top;
+  background: url(../images/common/radioBtn.png) no-repeat left top;
   background-size: 30px 60px;
   color: #868686;
   line-height: 30px;

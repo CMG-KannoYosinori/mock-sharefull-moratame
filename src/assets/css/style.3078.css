@@ -2,7 +2,7 @@
   float: left;
   width: 30px;
   height: 30px;
-  background: url(/s/images/common/radioBtn.png) no-repeat left top;
+  background: url(../images/common/radioBtn.png) no-repeat left top;
   background-size: 30px 60px;
   line-height: 30px;
   display: block;
