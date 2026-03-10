@@ -419,45 +419,6 @@ body .select-area label {
 .p-masthead .p-masthead__top {
   min-height: inherit;
 }
-.p-masthead h1 .logo-responsive--txt {
-  color: #004098;
-  padding-top: 5px;
-  font-size: 1em;
-  padding-left: 4em;
-}
-
-@media only screen and (max-width: 530px) {
-  .p-masthead h1 .logo-responsive--txt {
-    font-size: 0.6em;
-    padding-left: 3em;
-  }
-}
-@media only screen and (max-width: 1614px) {
-  .p-masthead h1 .logo-responsive--txt {
-    padding-left: 4em;
-    font-size: 0.7em;
-  }
-}
-.p-masthead h1 .img-responsive--logo {
-  top: 0;
-  margin-left: 10px;
-  padding-top: 20px;
-  max-width: 400px;
-  width: 20%;
-}
-@media only screen and (max-width: 1614px) {
-  .p-masthead h1 .img-responsive--logo {
-    padding-top: 18px;
-    max-width: 180px;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 530px) {
-  .p-masthead h1 .img-responsive--logo {
-    padding-top: 16px;
-    max-width: 120px;
-  }
-}
 .p-masthead .p-masthead__banner {
   top: 0;
 }
