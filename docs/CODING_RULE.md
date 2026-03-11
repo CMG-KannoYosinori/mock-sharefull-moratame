@@ -12,7 +12,14 @@ project-root/
     ├── css/
     │   └── style.css          (自作スタイル)
     ├── js/
-    │   └── main.js           (自作スクリプト)
+    │   ├── components/       # UI部品（ボタン、ヘッダー、ページトップへなど）
+    │   │   ├── page-top-scroll.js
+    │   │   └── ...
+    │   ├── utils/            # 汎用的な関数（計算、フォーマットなど）
+    │   │   └── ...
+    │   ├── services/         # API通信などの外部連携
+    │   │   └── ...
+    │   └── main.js           # エントリーポイント（全体をまとめる場所）
     ├── images/               (画像ファイル)
     └── vendor/               (外部ライブラリ：単体JS/CSS or JS+CSSセット)
           ├── [library-name]/
@@ -32,6 +39,12 @@ project-root/
      - JS と CSS がセットのライブラリ（Swiper など）: 同一ディレクトリに `library.min.js` と `library.min.css` を配置
 
    • **自作ファイル**: `assets/css/style.css` および `assets/js/main.js` に配置する。
+
+   • **JS モジュール構成**（`assets/js/` 配下）:
+     - **components/** … UI部品（ボタン、ヘッダー、ページトップへなど）。各ファイルは ES Module として export し、`main.js` から import して利用する。
+     - **utils/** … 汎用的な関数（計算、フォーマットなど）。
+     - **services/** … API通信などの外部連携。
+     - **main.js** … エントリーポイント。components / utils / services を import し、初期化処理などをまとめて実行する。
 
    • **画像**: `assets/images/` に配置する。
 

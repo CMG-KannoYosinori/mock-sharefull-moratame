@@ -375,3 +375,15 @@ input[type="checkbox"]:checked + .checkbox:before {
 .u-item-thumbnail {
   position: relative;
 }
+
+/* pageTopScroll（スクロールでふわっと表示するページトップへリンク）
+---------------------------------------------------------------------------------------------------- */
+.pageTopScroll {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.pageTopScroll.is-visible {
+  opacity: 1;
+}
+/* /pageTopScroll
+---------------------------------------------------------------------------------------------------- */

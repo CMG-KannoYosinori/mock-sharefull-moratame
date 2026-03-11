@@ -37,13 +37,14 @@
 
 
     <link rel="stylesheet" type="text/css" href="../assets/css/member-registration.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
     <!-- header.liquid 内スクリプト用に jQuery を先行読み込み -->
     <script type="text/javascript" src="../assets/vendor/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
   </head>
 
-  <body>
+  <body id="pageTop">
     <div class="body-wrapper">
       {% include 'header' %}
       <main>
@@ -139,32 +140,33 @@
         </div>
       </main>
       {% include 'footer' %}
-      <!-- pageTopScroll -->
-      <p class="pageTopScroll" style="display: none;">
-        <a href="#pageTop">▲ページトップへ</a>
-      </p>
     </div>
     <!--  //body-wrapper -->
 
     <script src="../assets/js/t.js"></script>
-    <script language="JavaScript" type="text/JavaScript">
-        $(function(){
-            set_form();
-        });
-
-        $('input[name="address_change"]').on('change', function(){
-            set_form();
-        });
-
-        function set_form() {
-            var address_change = $('input[name="address_change"]:checked').val();
-            if (address_change === '1') {
-                $('#change_form').show();
-            } else {
-                $('#change_form').hide();
-            }
+    <script>
+      (function () {
+        function setForm() {
+          var checked = document.querySelector('input[name="address_change"]:checked');
+          var changeForm = document.getElementById('change_form');
+          if (!changeForm) return;
+          changeForm.style.display = checked && checked.value === '1' ? 'block' : 'none';
         }
+        function initAddressChange() {
+          setForm();
+          var inputs = document.querySelectorAll('input[name="address_change"]');
+          inputs.forEach(function (input) {
+            input.addEventListener('change', setForm);
+          });
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initAddressChange);
+        } else {
+          initAddressChange();
+        }
+      })();
     </script>
+    <script type="module" src="../assets/js/main.js"></script>
     <script src="../assets/js/announce_toggle.js?2026021815" async></script>
     <!-- hamburgerMenu -->
     <script src="../assets/js/hamburger-menu.js"></script>
