@@ -176,7 +176,8 @@
   display: none;
 }
 
-.select-area input[type="text"] {
+.select-area input[type="text"],
+.select-area input[type="password"] {
   display: block;
 }
 
