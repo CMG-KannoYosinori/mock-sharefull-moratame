@@ -2,130 +2,24 @@
 <html lang="ja">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta content="試供品,無料,お試し,プレゼント,モラタメ" name="Keywords">
-    <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪" />
-
-    <title>SMS認証電話番号入力</title>
-    <script src="../assets/vendor/jquery/jquery-1.12.4.min.js"></script>
-    <script src="../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../assets/vendor/jquery-mobile/jquery.mobile-1.3.1.min.js?2026030513"></script>
-    <script type="text/javascript" src="../assets/js/jquery.mobile.custom.js?2026030513"></script>
-    <script type="text/javascript" src="../assets/js/smoothScroll.js?2026030513"></script>
-    <link rel="stylesheet" href="../assets/css/bootstrap.v3.3.7--scope.css?2026030513">
-    <script type="text/javascript" src="../assets/js/clips.js?2026030513"></script>
-    <script type="text/javascript" src="../assets/js/helper-sp.js?2026030513"></script>
-
-
-
-    <link rel="stylesheet" href="../assets/vendor/jquery-mobile/jquery.mobile-1.3.1.min.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/jquery.mobile-1.3.1-user.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/html5-doctor-reset-stylesheet.min.css" />
-    <link rel="stylesheet" href="../assets/css/common.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/style.3078.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/style--sp.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/style.moratamelist-tame--sp.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/tooltip.css?2026030513">
-    <link rel="stylesheet" href="../assets/css/pickup.css?2026030513">
-
-    <!-- remodal -->
-    <link rel="stylesheet" href="../assets/vendor/remodal/remodal.css">
-    <link rel="stylesheet" href="../assets/vendor/remodal/remodal-default-theme.css">
-    <link rel="stylesheet" href="../assets/vendor/remodal/remodal-user.css">
-    <script src="../assets/vendor/remodal/remodal.min.js"></script>
-    <!-- /remodal -->
-
-    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/footer-common.css?2026030513" />
-
-    <!-- 共通ヘッダー用 -->
-    <link rel="stylesheet" href="../assets/css/style--pc.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/t-sample.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <link rel="stylesheet" href="../assets/css/mamahalo-pickup-items.css?2026030513">
-    <!-- /mamahalo-slider -->
-
-    <!-- checkBox・radioBtn -->
-    <script src="../assets/js/inputimg.js?2026030513"></script>
-    <!-- //checkBox・radioBtn -->
-    <!-- ドロワメニューの高さ取得・コンテンツ制御 -->
-    <script type="text/javascript">
-      jQuery(function ($) {
-        $(".ui-block-d").click(function () {
-          var mnHeight = $('#drawerMenu').height();
-          $('.ui-panel-content-wrap').css('height', mnHeight);
-        });
-      });
-    </script>
-    <!-- //ドロワメニューの高さ取得・コンテンツ制御 -->
-
-    <script>
-      if (window.jQuery && jQuery.mobile) {
-        jQuery.mobile.ajaxEnabled = false;
-      }
-    </script>
-
-
-
-    <!-- fontawesome -->
-
-    <!-- ページ固有 Style -->
-    <link rel="stylesheet" href="../assets/css/p9255-common--sp.css?2026030513" />
-    <link rel="stylesheet" href="../assets/css/p9255-top--sp.css?2026030513" />
-    <!-- //ページ固有 Style -->
-
-    <!-- sms_auth_input 用ヘッダ・ラジオボタン調整 -->
+    {% assign page_title = 'SMS認証電話番号入力' %}
+    {% assign use_jquery_mobile = true %}
+    {% capture head_extra %}
     <style>
-      .page .p-masthead .p-masthead__nav {
-        margin: 10px auto 10px;
-      }
-
-      /* SMS 配信方法のラジオボタンをスプライトに依存せず描画する */
-      .smsListUl .cbxbd1_0 {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: none;
-      }
-
-      .smsListUl .cbxbd1_0 input[type='radio'] {
-        position: absolute;
-        inset: 0;
-        margin: 0;
-        opacity: 0;
-      }
-
+      .page .p-masthead .p-masthead__nav { margin: 10px auto 10px; }
+      .smsListUl .cbxbd1_0 { position: relative; width: 30px; height: 30px; background: none; }
+      .smsListUl .cbxbd1_0 input[type='radio'] { position: absolute; inset: 0; margin: 0; opacity: 0; }
       .smsListUl .cbxbd1_0::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 2px solid #666;
-        background: #fff;
-        transform: translate(-50%, -50%);
+        content: ''; position: absolute; top: 50%; left: 50%; width: 20px; height: 20px;
+        border-radius: 50%; border: 2px solid #666; background: #fff; transform: translate(-50%, -50%);
       }
-
       .smsListUl .cbxbd1_0.c_on2::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #333;
-        transform: translate(-50%, -50%);
+        content: ''; position: absolute; top: 50%; left: 50%; width: 12px; height: 12px;
+        border-radius: 50%; background: #333; transform: translate(-50%, -50%);
       }
     </style>
-
-  </head>
+    {% endcapture %}
+    {% include 'head-login-contents' %}
 
   <body>
     <div data-role="page" class="page">

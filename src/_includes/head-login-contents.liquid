@@ -1,0 +1,76 @@
+{% comment %}
+  login / contents 用共通 head（jQuery Mobile あり・remodal・ドロワ用）
+  使用前に各ページで assign すること: page_title
+  任意: page_css_ver（未設定時は 2026030513）, use_jquery_mobile（true で jQuery Mobile を読み込む）, head_extra（ページ固有の link/script/style）
+  login/ と contents/ は同じ階層なので asset_base は '../'
+{% endcomment %}
+{% unless page_css_ver %}
+  {% assign page_css_ver = '2026030513' %}
+{% endunless %}
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta content="試供品,無料,お試し,プレゼント,モラタメ" name="Keywords">
+    <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪" />
+
+    <title>{{ page_title }}</title>
+    <script src="../assets/vendor/jquery/jquery-1.12.4.min.js"></script>
+    <script src="../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+{% if use_jquery_mobile %}
+    <script type="text/javascript" src="../assets/vendor/jquery-mobile/jquery.mobile-1.3.1.min.js?{{ page_css_ver }}"></script>
+    <script type="text/javascript" src="../assets/js/jquery.mobile.custom.js?{{ page_css_ver }}"></script>
+{% endif %}
+    <script type="text/javascript" src="../assets/js/smoothScroll.js?{{ page_css_ver }}"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.v3.3.7--scope.css?{{ page_css_ver }}">
+    <script type="text/javascript" src="../assets/js/clips.js?{{ page_css_ver }}"></script>
+    <script type="text/javascript" src="../assets/js/helper-sp.js?{{ page_css_ver }}"></script>
+
+{% if use_jquery_mobile %}
+    <link rel="stylesheet" href="../assets/vendor/jquery-mobile/jquery.mobile-1.3.1.min.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/jquery.mobile-1.3.1-user.css?{{ page_css_ver }}" />
+{% endif %}
+    <link rel="stylesheet" href="../assets/css/html5-doctor-reset-stylesheet.min.css" />
+    <link rel="stylesheet" href="../assets/css/common.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/style.3078.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/style--sp.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/style.moratamelist-tame--sp.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/tooltip.css?{{ page_css_ver }}">
+    <link rel="stylesheet" href="../assets/css/pickup.css?{{ page_css_ver }}">
+
+    <link rel="stylesheet" href="../assets/vendor/remodal/remodal.css">
+    <link rel="stylesheet" href="../assets/vendor/remodal/remodal-default-theme.css">
+    <link rel="stylesheet" href="../assets/vendor/remodal/remodal-user.css">
+    <script src="../assets/vendor/remodal/remodal.min.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/footer-common.css?{{ page_css_ver }}" />
+
+    <link rel="stylesheet" href="../assets/css/style--pc.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/t-sample.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <link rel="stylesheet" href="../assets/css/mamahalo-pickup-items.css?{{ page_css_ver }}">
+
+    <script src="../assets/js/inputimg.js?{{ page_css_ver }}"></script>
+    <script type="text/javascript">
+      jQuery(function ($) {
+        $(".ui-block-d").click(function () {
+          var mnHeight = $('#drawerMenu').height();
+          $('.ui-panel-content-wrap').css('height', mnHeight);
+        });
+      });
+    </script>
+{% if use_jquery_mobile %}
+    <script>
+      if (window.jQuery && jQuery.mobile) {
+        jQuery.mobile.ajaxEnabled = false;
+      }
+    </script>
+{% endif %}
+
+    <link rel="stylesheet" href="../assets/css/p9255-common--sp.css?{{ page_css_ver }}" />
+    <link rel="stylesheet" href="../assets/css/p9255-top--sp.css?{{ page_css_ver }}" />
+
+    {{ head_extra }}
+  </head>
