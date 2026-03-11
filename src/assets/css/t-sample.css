@@ -221,6 +221,7 @@ header .header-contents {
   background-color: #004098;
   font-size: 14px;
   transform: translate(250px);
+  transition: transform 0.3s ease-in-out;
 }
 #menu a {
   text-decoration: none;
@@ -244,6 +245,26 @@ header .header-contents {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   line-height: 1.8;
+}
+
+#menu .menu-close {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+#menu.open .menu-close {
+  display: block;
 }
 
 #menu_btn {
@@ -278,6 +299,7 @@ header .header-contents {
   background-color: rgba(0, 0, 0, 0.5);
   content: "";
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .menu-background.open {

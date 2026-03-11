@@ -7,6 +7,7 @@ export function initHamburgerMenu() {
   const menu = document.getElementById('menu');
   const menuBtn = document.getElementById('menu_btn');
   const menuBackground = document.querySelector('.menu-background');
+  const menuCloseBtn = document.getElementById('menu_close');
 
   if (!header) return;
 
@@ -15,32 +16,36 @@ export function initHamburgerMenu() {
   if (main) {
     main.style.paddingTop = headerHeight + 'px';
   }
-  if (menu) {
-    menu.style.marginTop = headerHeight + 'px';
-  }
 
-  if (!menuBtn || !menu || !menuBackground) return;
+  if (!menuBtn || !menu || !menuBackground || !menuCloseBtn) return;
+
+  const openMenu = () => {
+    menuBtn.classList.add('active');
+    menu.classList.add('open');
+    menuBackground.classList.add('open');
+  };
+
+  const closeMenu = () => {
+    menuBtn.classList.remove('active');
+    menu.classList.remove('open');
+    menuBackground.classList.remove('open');
+  };
 
   menuBtn.addEventListener('click', function () {
     if (menuBtn.classList.contains('active')) {
-      menuBtn.classList.remove('active');
-      menuBtn.textContent = 'MENU';
-      menu.classList.remove('open');
-      menuBackground.classList.remove('open');
+      closeMenu();
     } else {
-      menuBtn.classList.add('active');
-      menuBtn.textContent = 'CLOSE';
-      menu.classList.add('open');
-      menuBackground.classList.add('open');
+      openMenu();
     }
   });
 
   menuBackground.addEventListener('click', function () {
     if (menuBackground.classList.contains('open')) {
-      menuBackground.classList.remove('open');
-      menuBtn.classList.remove('active');
-      menuBtn.textContent = 'MENU';
-      menu.classList.remove('open');
+      closeMenu();
     }
+  });
+
+  menuCloseBtn.addEventListener('click', function () {
+    closeMenu();
   });
 }
