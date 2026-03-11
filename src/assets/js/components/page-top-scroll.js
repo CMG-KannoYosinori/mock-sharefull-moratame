@@ -8,6 +8,14 @@ export function initPageTopScroll() {
   const pageTopScroll = document.querySelector('.pageTopScroll');
   if (!pageTopScroll) return;
 
+  const link = pageTopScroll.querySelector('a[href="#pageTop"]');
+  if (link) {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   const showThreshold = 300;
   let isVisible = false;
   let fadeTimeout = null;
