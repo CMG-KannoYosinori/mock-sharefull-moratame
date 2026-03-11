@@ -5,7 +5,6 @@
     {% assign page_title = 'マイページ｜Vポイントが貯まる・使える Vサンプル' %}
     {% assign page_css_ver = '2026021912' %}
     {% capture head_extra %}
-    <!-- tabMenu -->
     <script>
       $(function () {
         $(".mainTab").click(function () {
@@ -45,10 +44,8 @@
           <div class="primary primary--responsive">
             <div id="F001" class="js-t-wrapper itemDetailBox">
               <div class="t-support-menu_wrapper">
-                <!-- breadCrumbs -->
                 <p class="breadCrumbs mb_10"><a href="//tsample.tsite.jp/">ホーム</a> ＞マイページ</p>
                 <!-- /breadCrumbs -->
-                <!-- headingTtl -->
                 <div class="heading xx-large enclosingBtn withIcon">
                   <h1>
                     <span class="icoWrap">
@@ -69,15 +66,12 @@
                   <p style="margin:10px 0 0;">Vサンプルでは<a href="contents/t-sample-t-point.php" style="color: #0085c3;">Vポイントでのお支払い</a>も出来ます。</p>
                 </div>
                 <!-- /headingTtl -->
-                <!-- tabMenu -->
                 <ul class="tab">
                   <li class="mainTab active">発送スケジュール・<br class="sp-min">申込履歴</li>
                   <li class="mainTab">登録情報の確認・<br class="sp-min">変更・解除</li>
                 </ul>
                 <!-- /tabMenu -->
-                <!-- tabContents1 -->
                 <div class="tabContent tabContent1 active">
-                  <!-- subTabMenu -->
                   <div class="subTabBox">
                     <ul class="tab">
                       <li class="subTab active">もらえる・<br class="sp-min">ためせる</li>
@@ -85,8 +79,7 @@
                       <li class="subTab">クチコミ<br class="sp-min">一覧</li>
                     </ul>
                   </div>
-                  <!-- subTabMenu / -->
-                  <!-- subTabContent1-->
+                  <!-- /subTabMenu -->
                   <div class="container subTabContent subTabContent1 pt_10 active">
                     <div id="hb_mm">
                       <div id="hb_ms">
@@ -376,8 +369,6 @@
                         </div>
                         <div class="js-menu__link">ご家族・ご友人配送先住所（任意）</div>
                         <div class="submenu">
-                          <!-- 登録済み家族情報 -->
-                          <!-- end foreach -->
                           <div class="js-submenu__link">ご家族・ご友人配送先新規登録</div>
                           <div class="submenu_child p-registration_info_edit__block">
                             <div class="t-column-head">
@@ -473,7 +464,6 @@
               </div>
               <!-- /contents -->
 
-              <!-- 表示件数切替用フォーム -->
               <form name="senddataform" action="mymenu/basic.php" method="get">
                 <input type="hidden" name="p" value="0">
                 <input type="hidden" name="d" value="10">
@@ -485,27 +475,22 @@
                 <input type="hidden" name="d2" value="10">
               </form>
 
-              <!-- レビュー一覧 -->
               <form name="senddataform3" action="mymenu/basic.php" method="get">
                 <input type="hidden" name="c" value="review">
                 <input type="hidden" name="rp" value="0">
               </form>
 
-              <!-- footer -->
             </div>
 
-            <!-- footBnr -->
             <div class="footBnr">
               <ul>
               </ul>
             </div>
-            <!-- footBnr / -->
+            <!-- /footBnr -->
 
-            <!-- /id="F001" class="js-t-wrapper itemDetailBox"-->
-          </div><!-- /primary primary--responsive -->
-          <!-- secondary -->
+            <!-- /itemDetailBox -->
+          </div><!-- /primary -->
           <div class="secondary" style="">
-            <!-- category -->
             <div class="se-news t-sidemenu">
               <h1 class="heading">カテゴリ</h1>
               <div class="container">
@@ -517,7 +502,7 @@
                 </ul>
               </div>
             </div> <!-- project-schedule -->
-            <!--  /project-schedule -->
+            <!-- /project-schedule -->
             <div class="se-news t-sidemenu">
               <h1 class="heading">お届け先</h1>
               <div class="container">
@@ -527,7 +512,6 @@
               </div>
             </div>
             <!-- /category -->
-            <!-- non-review-list -->
             <div class="se-news t-sidemenu">
               <h1 class="heading">未投稿クチコミ　0件</h1>
               <div class="container">
@@ -639,11 +623,9 @@
               }
             </style>
             <!-- /non-review-list -->
-            <!-- t-support-menu -->
             {% include 'support-menu' %}
             <!-- /t-support-menu -->
 
-            <!-- sideBnr -->
             <div class="sideBnr">
               <ul>
                 <li class="sideBnr-list">
@@ -655,20 +637,20 @@
                 </li>
               </ul>
             </div>
-            <!-- sideBnr / -->
+            <!-- /sideBnr -->
 
 
 
           </div>
           <!-- /secondary -->
-        </div><!-- /contents cf contents--responsive -->
+        </div><!-- /contents -->
 
 
 
       </div><!-- /main-->
       {% include 'footer' %}
     </div>
-    <!--  //body-wrapper -->
+    <!-- /body-wrapper -->
 
     <script language="JavaScript" type="text/JavaScript">
     <!--
