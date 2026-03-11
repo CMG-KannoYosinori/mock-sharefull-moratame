@@ -1,7 +1,7 @@
 {% comment %}
   共通 head ブロック
   使用前に各ページで assign すること: page_title
-  任意: page_description（未設定時はデフォルトの Description を使用）, page_css_ver（未設定時は 2026021815）, page_use_jquery_3（true のとき jQuery 3.2.1）、head_extra（capture でページ固有の link/script を渡す）
+  任意: page_description（未設定時はデフォルトの Description を使用）, page_use_jquery_3（true のとき jQuery 3.2.1）、head_extra（capture でページ固有の link/script を渡す）
   page.url から asset_base を算出（header.liquid と同様）
 {% endcomment %}
 {% if page.url contains 'mymenu' %}
@@ -21,9 +21,6 @@
     {% assign asset_base = '../../' %}
   {% endif %}
 {% endif %}
-{% unless page_css_ver %}
-  {% assign page_css_ver = '2026021815' %}
-{% endunless %}
 {% unless page_description %}
   {% assign page_description = '主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。' %}
 {% endunless %}
@@ -37,21 +34,21 @@
 
     <title>{{ page_title }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/properties.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/main.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/layout.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/module.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--common-sp-and-pc.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset-old-style--jp.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--pc.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--sp.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/pass_monitor.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t-sample.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/footer-common.css?{{ page_css_ver }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/p9255-common--pc.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/properties.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/module.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--common-sp-and-pc.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset-old-style--jp.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--pc.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--sp.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/pass_monitor.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t-sample.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/footer-common.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/p9255-common--pc.css">
     <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style.css">
 
     <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
