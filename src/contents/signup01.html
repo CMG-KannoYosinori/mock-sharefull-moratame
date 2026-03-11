@@ -15,72 +15,6 @@
 
   <body>
 
-    <script language="JavaScript" type="text/JavaScript">
-    <!--
-
-    $(document).ready(function(){
-    $('#nickname').html('<input type="submit" name="name_check" value="登録可能なニックネームかチェック" class="w200 nickname-check-btn" onclick="javascript:return namecheck();" />');
-    });
-
-
-    function namecheck() {
-        $('#mode').val(1);
-
-        var url = 'profile_edit.exec.php';
-        var params = $('#new-signup-input').serialize();
-
-        $.post( url , {params:params} , function( data , status ) {
-            if ( data.status == '0' ) {
-                $('#nicknamealert').html( "<p class='message ng'>" + data.message + "<p />" );
-            } else if ( data.status == '1' ) {
-                $('#nicknamealert').html( "<p class='message ok'>" + data.message + "<p />" );
-            }
-        }
-        , 'json'
-        );
-
-        return false;
-    }
-
-
-    function daychange() {
-        $('#mode').val('lastday');
-
-        var url = 'profile_edit.exec.php';
-        var params = $('#new-signup-input').serialize();
-
-        $.post( url , {params:params} , function( data , status ) {
-
-            if ( data.status == '0' ) {
-
-            } else if ( data.status == '1' ) {
-
-                var cur = $('#day').val();
-
-                for ( var i = 28 ; i <= 31 ; i++ ) {
-                    $('#day' + i).remove();
-                }
-                var max = parseInt( data.day );
-                for ( var i = 28 ; i <= max ; i++ ) {
-                    $('#day').append('<option id="day' + i + '" name="' + i + '" value="' + i + '">' + i + '</option>');
-                }
-
-                if ( cur > max ) {
-                    cur = max;
-                }
-                $('#day').val( cur );
-
-            }
-
-        }
-        , 'json'
-        );
-    }
-
-    //-->
-    </script>
-
-
     <div id="modal_wd">
       <div class="md_background"></div>
       <div class="md_container"></div>
@@ -133,7 +67,7 @@
                 </div>
                 <div class="input-area">
                   <ul class="select-menu birthday">
-                    <li><select name="yyyy" onchange="javascript: daychange();" data-role="none">
+                    <li><select name="yyyy" data-role="none">
                         <option>年</option>
                         <option value="1934">1934</option>
                         <option value="1935">1935</option>
@@ -223,7 +157,7 @@
                         <option value="2019">2019</option>
                         <option value="2020">2020</option>
                         <option value="2021">2021</option>
-                      </select></li>&nbsp;<li><select name="mm" onchange="javascript: daychange();" data-role="none">&nbsp<option>月</option>
+                      </select></li>&nbsp;<li><select name="mm" data-role="none">&nbsp<option>月</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -236,7 +170,7 @@
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
-                      </select></li>&nbsp;<li><select name="dd" id="day" onchange="javascript: daychange();" data-role="none">
+                      </select></li>&nbsp;<li><select name="dd" id="day" data-role="none">
                         <option>日</option>
                         <option id="day1" value="01">01</option>
                         <option id="day2" value="02">02</option>
@@ -322,9 +256,9 @@
                 </div>
                 <div class="input-area">
                   <ul class="input-menu nickname">
-                    <li><input type="text" class="fs-15" name="disp_id" id="disp_id" value="" placeholder="ザック32694" onblur="javascript:return namecheck();" /></li>
+                    <li><input type="text" class="fs-15" name="disp_id" id="disp_id" value="" placeholder="ザック32694" /></li>
                     <div class="side-text">
-                      <span id="nickname"></span>
+                      <button type="button" class="w200 nickname-check-btn" disabled>登録可能なニックネームかチェック</button>
                       <span id="nicknamealert"></span>
                     </div>
                     <p class="side-text">※ニックネームは後から変更できます。</p>
