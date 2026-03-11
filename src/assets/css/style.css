@@ -387,3 +387,31 @@ input[type="checkbox"]:checked + .checkbox:before {
 }
 /* /pageTopScroll
 ---------------------------------------------------------------------------------------------------- */
+
+/* non-review-list（サイドバー未投稿クチコミ）
+---------------------------------------------------------------------------------------------------- */
+a.NotPostedList {
+  background-color: #eee;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+a.NotPostedList:hover {
+  background-color: #f7d806;
+}
+
+a.NotPostedList:active {
+  background-color: #f79e05;
+}
+
+a.NotPostedList p {
+  color: #313131;
+}
+/* /non-review-list
+---------------------------------------------------------------------------------------------------- */
