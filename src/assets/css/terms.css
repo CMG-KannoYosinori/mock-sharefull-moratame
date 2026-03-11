@@ -1,0 +1,180 @@
+.p-terms {
+  padding: 30px 0 30px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-feature-settings: "palt";
+}
+.p-terms h1 {
+  font-size: 24px;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms h1 {
+    font-size: 18px;
+  }
+}
+.p-terms h3 {
+  margin-top: 2em;
+  padding-right: 15px;
+  padding-left: 10px;
+  border-bottom: 1px dashed #313131;
+  border-left: 5px solid #8cbc00;
+  background-color: #f3f3f3;
+  font-size: 21px;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms h3 {
+    font-size: 16px;
+  }
+}
+.p-terms h3 + div {
+  margin-top: 32px;
+}
+.p-terms h4 {
+  margin-top: 1em;
+}
+.p-terms h4 span {
+  border-bottom: 6px solid #ffff7f;
+}
+.p-terms__mt-2 {
+  margin-top: 0.5rem;
+}
+.p-terms__mt-4 {
+  margin-top: 1rem;
+}
+.p-terms__mt-0 {
+  margin-top: 0;
+}
+.p-terms a {
+  color: #66a3ff;
+}
+.p-terms li li {
+  margin-top: 1ex;
+}
+.p-terms-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 30px;
+  max-width: 960px;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms-container {
+    padding: 0 20px;
+  }
+}
+.p-terms-masthead {
+  padding: 10px 0;
+}
+.p-terms__ti {
+  margin-left: 2.2em;
+  text-indent: -1.4em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti {
+    margin-left: 0;
+    text-indent: 0;
+  }
+}
+.p-terms__ti--0 {
+  margin-left: 0;
+  text-indent: 0;
+}
+.p-terms__ti--disc {
+  text-indent: -1.2em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--disc {
+    text-indent: 0;
+  }
+}
+.p-terms__ti--kuromaru,
+.p-terms__ti--note,
+.p-terms__ti--check {
+  text-indent: -1em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--kuromaru,
+  .p-terms__ti--note,
+  .p-terms__ti--check {
+    text-indent: 0;
+  }
+}
+.p-terms__ti--decimal--dot {
+  text-indent: -1.4em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--decimal--dot {
+    text-indent: 0;
+  }
+}
+.p-terms__ti--decimal--dot--double {
+  text-indent: -2.2em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--decimal--dot--double {
+    text-indent: 0;
+  }
+}
+.p-terms__ti--decimal--brackets {
+  text-indent: -2em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--decimal--brackets {
+    text-indent: 0;
+  }
+}
+.p-terms__ti--decimal--brackets--double {
+  text-indent: -2.6em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--decimal--brackets--double {
+    text-indent: 0;
+  }
+}
+.p-terms__ti--kana-brackets {
+  text-indent: -2.2em;
+}
+@media only screen and (max-width: 639px) {
+  .p-terms__ti--kana-brackets {
+    text-indent: 0;
+  }
+}
+.p-terms__note {
+  font-size: 0.75rem;
+}
+.p-terms__notice {
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: 1px solid red;
+  color: red;
+}
+.p-terms__notice h4 {
+  margin-top: 0;
+}
+.p-terms__notice ul {
+  margin-top: 1em;
+}
+.p-terms ul,
+.p-terms li {
+  list-style: none;
+}
+.p-terms__table {
+  display: block;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+.p-terms__table td {
+  padding: 5px 10px;
+  border: 1px solid grey;
+}
+.p-terms__date-revision {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.img-responsive--mora-logo {
+  max-width: 116.5px;
+}

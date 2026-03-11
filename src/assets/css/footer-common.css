@@ -33,6 +33,7 @@ footer #footer p {
   height: 28px;
   background: #002d6b;
   text-align: center;
+  box-sizing: border-box;
 }
 footer #footer p img {
   vertical-align: baseline;

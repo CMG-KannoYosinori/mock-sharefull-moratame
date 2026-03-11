@@ -1,39 +1,5 @@
 @charset "UTF-8";
-a {
-  color: #000;
-}
-a:link,
-a:active,
-a:hover,
-a:active {
-  color: #000;
-}
 
-/*
-  @media only screen and (min-width: 1270px) // 1295px 以上
-  {
-    max-width: 1280px;
-  }
-
-  bootstrap
-
-  .col-xs 975px 以下
-  .col-sm 975px ~ 1294px
-  .col-md 1295px ~ 1614px
-  .col-lg 1615px 以上
-
-  参考サイズ
-
-  Mobile S: 320px;
-  Mobile M: 375px;
-  Mobile L: 425px;
-  Tablet: 768px;
-  Laptop: 1024px;
-  Laptop L: 1440px;
-  4k: 2560px;
-
-
-*/
 .primary--responsive {
   width: auto;
   max-width: 640px;
