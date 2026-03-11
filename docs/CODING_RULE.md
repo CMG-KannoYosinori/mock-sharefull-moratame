@@ -34,17 +34,17 @@ project-root/
 
 3. 配置ルール
    • **外部ライブラリ**: すべて `assets/vendor/[ライブラリ名]/` に配置する。
-     - 単体 JS（jQuery など）: `assets/vendor/[library-name]/library.min.js`
-     - 単体 CSS: `assets/vendor/[library-name]/library.css`
-     - JS と CSS がセットのライブラリ（Swiper など）: 同一ディレクトリに `library.min.js` と `library.min.css` を配置
+   - 単体 JS（jQuery など）: `assets/vendor/[library-name]/library.min.js`
+   - 単体 CSS: `assets/vendor/[library-name]/library.css`
+   - JS と CSS がセットのライブラリ（Swiper など）: 同一ディレクトリに `library.min.js` と `library.min.css` を配置
 
    • **自作ファイル**: `assets/css/style.css` および `assets/js/main.js` に配置する。
 
    • **JS モジュール構成**（`assets/js/` 配下）:
-     - **components/** … UI部品（ボタン、ヘッダー、ページトップへなど）。各ファイルは ES Module として export し、`main.js` から import して利用する。
-     - **utils/** … 汎用的な関数（計算、フォーマットなど）。
-     - **services/** … API通信などの外部連携。
-     - **main.js** … エントリーポイント。components / utils / services を import し、初期化処理などをまとめて実行する。
+   - **components/** … UI部品（ボタン、ヘッダー、ページトップへなど）。各ファイルは ES Module として export し、`main.js` から import して利用する。
+   - **utils/** … 汎用的な関数（計算、フォーマットなど）。
+   - **services/** … API通信などの外部連携。
+   - **main.js** … エントリーポイント。components / utils / services を import し、初期化処理などをまとめて実行する。
 
    • **画像**: `assets/images/` に配置する。
 
@@ -54,7 +54,8 @@ project-root/
    3. 自作の `style.css` / `main.js`
 
 5. HTML コメントの形式
-   - **ブロックの開始**にはコメントを書かない。
-   - **ブロックの終了**にのみ、`<!-- /ブロック名 -->` の形式でコメントを書く。
+   - 基本的には**ブロックの開始**にはコメントを書かない。
+   - **ブロックの開始**に必要な場合は`<!-- ブロック名 -->` の形式でコメントを書く。
+   - **ブロックの終了**に、`<!-- /ブロック名 -->` の形式でコメントを書く。
    - スラッシュはブロック名の直前に1つ。例: `<!-- /breadCrumbs -->`、`<!-- /contents -->`
    - ブロック名は、対応する要素のクラス名・id・役割に合わせて簡潔に付ける。
