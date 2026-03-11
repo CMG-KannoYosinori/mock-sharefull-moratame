@@ -2014,11 +2014,6 @@ PC
   top: -8px;
 }
 
-.p-masthead__labels-sns-btns-wrap {
-  margin-top: -5px !important;
-  top: 0px !important;
-}
-
 @media only screen and (min-width: 1270px) {
   .p-masthead__labels {
     position: relative;
