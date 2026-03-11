@@ -2,43 +2,10 @@
 <html lang="ja">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
-    <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
-    <link rel="shortcut icon" href="../assets/images/v-samplefavicon.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/images/v-sample_touch_icon.png">
-
-    <title>マイページ｜Vポイントが貯まる・使える Vサンプル</title>
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.v3.3.7--scope.css?2026021912">
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/properties.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/module.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style--common-sp-and-pc.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/reset-old-style--jp.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style--pc.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style--sp.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/t.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/pass_monitor.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/t-sample.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/footer-common.css?2026021912">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/p9255-common--pc.css?2026021912">
-
-    <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
-
-    <!-- FontAwesome -->
-    <link href="../assets/vendor/fontawesome/css/all.css" rel="stylesheet">
-
-
-
+    {% assign page_title = 'マイページ｜Vポイントが貯まる・使える Vサンプル' %}
+    {% assign page_css_ver = '2026021912' %}
+    {% capture head_extra %}
     <!-- tabMenu -->
-    <script type="text/javascript" src="../assets/vendor/jquery/jquery-1.11.0.min.js"></script>
     <script>
       $(function () {
         $(".mainTab").click(function () {
@@ -61,15 +28,13 @@
         });
       });
     </script>
-    <!-- postalcode_address -->
-    <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
-
-
     <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
     <meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
     <meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    {% endcapture %}
+    {% include 'head' %}
   </head>
 
   <body class="bootstrap-v3-3-7--scope itemDetail t-mymenu" style="">

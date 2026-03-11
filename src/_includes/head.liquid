@@ -1,0 +1,68 @@
+{% comment %}
+  共通 head ブロック
+  使用前に各ページで assign すること: page_title
+  任意: page_description（未設定時はデフォルトの Description を使用）, page_css_ver（未設定時は 2026021815）, page_use_jquery_3（true のとき jQuery 3.2.1）、head_extra（capture でページ固有の link/script を渡す）
+  page.url から asset_base を算出（header.liquid と同様）
+{% endcomment %}
+{% if page.url contains 'mymenu' %}
+  {% assign asset_base = '../' %}
+{% else %}
+  {% assign path_segments = page.url | split: '/' %}
+  {% assign seg_count = path_segments | size %}
+  {% assign depth = seg_count | minus: 1 %}
+  {% if depth < 0 %}
+    {% assign depth = 0 %}
+  {% endif %}
+  {% if depth == 0 %}
+    {% assign asset_base = '' %}
+  {% elsif depth == 1 %}
+    {% assign asset_base = '../' %}
+  {% else %}
+    {% assign asset_base = '../../' %}
+  {% endif %}
+{% endif %}
+{% unless page_css_ver %}
+  {% assign page_css_ver = '2026021815' %}
+{% endunless %}
+{% unless page_description %}
+  {% assign page_description = '主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。' %}
+{% endunless %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
+    <meta name="Description" content="{{ page_description }}">
+    <link rel="shortcut icon" href="{{ asset_base }}assets/images/v-samplefavicon.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset_base }}assets/images/v-sample_touch_icon.png">
+
+    <title>{{ page_title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/properties.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/main.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/layout.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/module.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--common-sp-and-pc.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset-old-style--jp.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--pc.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--sp.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/pass_monitor.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t-sample.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/footer-common.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/p9255-common--pc.css?{{ page_css_ver }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style.css">
+
+    <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+    <link href="{{ asset_base }}assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+
+{% if page_use_jquery_3 %}
+    <script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+{% else %}
+    <!-- header.liquid 内スクリプト用に jQuery を先行読み込み -->
+    <script type="text/javascript" src="{{ asset_base }}assets/vendor/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="{{ asset_base }}assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
+{% endif %}
+
+{{ head_extra }}
