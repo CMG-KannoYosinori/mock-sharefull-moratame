@@ -251,13 +251,13 @@ header .header-contents {
 #menu .menu-close {
   display: none;
   position: absolute;
-  top: 10px;
+  top: 4px;
   left: -40px;
   width: 32px;
   height: 32px;
   border: none;
   background: transparent;
-  color: #999;
+  color: #fff;
   font-size: 24px;
   line-height: 1;
   text-align: center;
@@ -291,7 +291,7 @@ header .header-contents {
   #menu_btn {
     padding-top: 34px;
     width: 48px;
-    height: 52px;
+    height: 51px;
   }
 }
 
@@ -300,7 +300,7 @@ header .header-contents {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 9;
   display: block;
   width: 0;
   height: 0;
@@ -473,15 +473,19 @@ body .select-area label {
   right: 0;
 }
 
-@media (max-width: 959px) {
-  .p-masthead .sp-header-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
+.p-masthead .sp-header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  height: 51px;
+  background-color: #fff;
+  @media (min-width: 768px) {
     height: 62px;
-    background-color: #fff;
+  }
+  @media (min-width: 960px) {
+    display: none;
   }
 }
 
@@ -499,12 +503,12 @@ body .select-area label {
 }
 .p-masthead .sp-header-menu_component-login,
 .p-masthead .sp-header-menu_component-logout {
-  right: 58px;
+  right: 49px;
 }
-@media only screen and (max-width: 530px) {
+@media only screen and (min-width: 768px) {
   .p-masthead .sp-header-menu_component-login,
   .p-masthead .sp-header-menu_component-logout {
-    right: 49px;
+    right: 58px;
   }
 }
 .p-masthead .sp-header-menu_component-notice {
