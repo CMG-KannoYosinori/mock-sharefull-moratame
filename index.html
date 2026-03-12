@@ -4,6 +4,7 @@
   <head>
     
     
+    
 
   
 
@@ -44,6 +45,10 @@
     <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <link rel="stylesheet" href="assets/css/p-top-hero.css">
+    
 
   </head>
 
@@ -66,7 +71,7 @@
             <div class="p-masthead__top">
               <!-- topMenu_sp -->
               <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-                <img src="https://placehold.jp/30/dd6699/ffffff/col-xs-4 col-md-3 col-lg-31280x480.png?text=シェアフル+ヘッダー" alt="" style="width: auto; height: 100%;">
+                <img src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ" alt="" style="width: auto; height: 100%;" width="480" height="160">
                 <div class="sp-header-menu_component sp-header-menu_component-logout">
                   <a href="/mock-sharefull-moratame/index.html">
                     <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
@@ -155,12 +160,6 @@
           
           
           
-          
-
-          
-            
-          
-
           <nav aria-label="トップページタブメニュー">
             <ul class="p-masthead__nav p-masthead__nav_toppage">
               <li class=" p-masthead__nav__top is-active">
@@ -185,7 +184,30 @@
       <div class="main">
         <div class="contents cf contents--responsive">
           <div class="">
-            <div><img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー画像" alt="" class="u-img"></div>
+            <div class="p-top-hero">
+              <div class="swiper p-top-hero__swiper" aria-label="おすすめキャンペーン">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー1" alt="おすすめキャンペーン1" class="u-img">
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/6699dd/ffffff/1280x480.png?text=バナー2" alt="おすすめキャンペーン2" class="u-img">
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/99dd66/ffffff/1280x480.png?text=バナー3" alt="おすすめキャンペーン3" class="u-img">
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/99aa66/ffffff/1280x480.png?text=バナー4" alt="おすすめキャンペーン4" class="u-img">
+                  </div>
+                </div>
+
+                <button class="swiper-button-prev" type="button" aria-label="前のバナー"></button>
+                <button class="swiper-button-next" type="button" aria-label="次のバナー"></button>
+
+                <div class="p-top-hero__tabs" role="tablist" aria-label="バナー切り替えタブ"></div>
+              </div>
+            </div>
+
             <div class=" pr-tame pr-content">
               <div class="heading xx-large enclosingBtn withIcon">
                 <h1>
@@ -201,14 +223,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="商品名">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>モラタメ編集部</p>
                         <p>
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">商品名</a>
+                          <a href="detail/tamesu.html">商品名</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">9</span>
@@ -220,14 +242,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコード10件A">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=64b89">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>モラタメ編集部</p>
                         <p>
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=64b89">ギフトコード10件A</a>
+                          <a href="detail/tamesu.html">ギフトコード10件A</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">9</span>
@@ -239,14 +261,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコードPJT0120">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca5d4">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>リニューアルV…</p>
                         <p>
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca5d4">ギフトコードPJT0120</a>
+                          <a href="detail/tamesu.html">ギフトコードPJT0120</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">97</span>
@@ -258,14 +280,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="CCCMK様ご確認用ギフトコードPJT">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca0d1">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>リニューアルV…</p>
                         <p>
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca0d1">CCCMK様ご確認用ギフトコードPJT</a>
+                          <a href="detail/tamesu.html">CCCMK様ご確認用ギフトコードPJT</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">97</span>
@@ -278,14 +300,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコードK5 200件">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>クーポンクラ…</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">ギフトコードK5 200件</a>
+                          <a href="detail/tamesu.html">ギフトコードK5 200件</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">198</span>
@@ -296,14 +318,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンB">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>クーポンクラ…</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2">MTSD-14548 少数クーポンB</a>
+                          <a href="detail/tamesu.html">MTSD-14548 少数クーポンB</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">8</span>
@@ -315,14 +337,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンA">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=6d933">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>クーポンクラ…</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=6d933">MTSD-14548 少数クーポンA</a>
+                          <a href="detail/tamesu.html">MTSD-14548 少数クーポンA</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">9</span>
@@ -334,14 +356,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコード3万件">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=56642">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>リニューアルV…</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=56642">ギフトコード3万件</a>
+                          <a href="detail/tamesu.html">ギフトコード3万件</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">29,995</span>
@@ -353,14 +375,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="クーポンテスト2">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=af9ac">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>モラタメ編集部</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=af9ac">クーポンテスト2</a>
+                          <a href="detail/tamesu.html">クーポンテスト2</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">4</span>
@@ -372,14 +394,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="LORETTA AIMER ミストケアオイル">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=0d996">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>テスト</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=0d996">LORETTA AIMER ミストケアオイル</a>
+                          <a href="detail/tamesu.html">LORETTA AIMER ミストケアオイル</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">997</span>
@@ -390,14 +412,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="重複OK2">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>テスト</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8">重複OK2</a>
+                          <a href="detail/tamesu.html">重複OK2</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">4,972</span>
@@ -409,14 +431,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="重複OK">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>テスト</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a">重複OK</a>
+                          <a href="detail/tamesu.html">重複OK</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">4,974</span>
@@ -429,14 +451,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="プロファイルチェック用Attoos（大阪除外）">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>小林製薬　　</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9">
+                          <a href="detail/tamesu.html">
                             プロファイルチェック用Attoos… </a>
                         </p>
                         <p class="count">
@@ -448,14 +470,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ポイント決済用少額">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>テスト　</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20">
+                          <a href="detail/tamesu.html">
                             ポイント決済用少額 </a>
                         </p>
                         <p class="count">
@@ -468,14 +490,14 @@
                   <div class="">
                     <div class="p-card p-card--top blockLink heightLine--tame" title="重複有り,家族有り">
                       <p class="item">
-                        <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fdb68">
+                        <a href="detail/tamesu.html">
                           <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>テスト　</p>
                         <p class="">
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fdb68">
+                          <a href="detail/tamesu.html">
                             重複有り,家族有り </a>
                         </p>
                         <p class="count">
@@ -513,7 +535,7 @@
               <!-- /headGroup -->
               <div class="l-card-items--mora">
                 <div class="">
-                  <a class="blockLink" href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=4100c">
+                  <a class="blockLink" href="detail/morau.html">
                     <div class="p-card p-card--top p-card--top--mora heightLine--mora" title="モラご確認用B">
                       <p>
                         <img alt="商品名" class="img-responsive" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638">
@@ -536,7 +558,7 @@
                   </a>
                 </div>
                 <div class="">
-                  <a class="blockLink" href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=6aaf2">
+                  <a class="blockLink" href="detail/morau.html">
                     <div class="p-card p-card--top p-card--top--mora heightLine--mora" title="モラご確認用A">
                       <p>
                         <img alt="商品名" class="img-responsive" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638">
@@ -560,7 +582,7 @@
                   </a>
                 </div>
                 <div class="">
-                  <a class="blockLink" href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=d0ef6">
+                  <a class="blockLink" href="detail/morau.html">
                     <div class="p-card p-card--top p-card--top--mora heightLine--mora" title="Vサンプル真冬のビタミンキャンペーン！">
                       <p>
                         <img alt="商品名" class="img-responsive" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638">
@@ -673,6 +695,7 @@
 
     <script src="assets/js/t.js"></script>
     <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/p-top-hero.js"></script>
   </body>
 
 </html>
