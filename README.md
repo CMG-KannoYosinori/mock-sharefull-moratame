@@ -16,3 +16,12 @@
   ```bash
   npm start
   ```
+
+- **デプロイ**（`dist/` を `gh-pages` ブランチに push）
+  ```bash
+  npm run deploy
+  ```
+
+## 公開後の URL
+
+- **GitHub Pages**: https://cmg-kannoyosinori.github.io/mock-sharefull-moratame/
