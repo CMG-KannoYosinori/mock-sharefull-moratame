@@ -1,9 +1,12 @@
 {% comment %}
   login / contents 用共通 head
-  使用前に各ページで assign すること: page_title
-  任意: head_extra（ページ固有の link/script/style）
-  login/ と contents/ は同じ階層なので asset_base は '../'
+  pathPrefix 設定時は pathPrefix/assets/、未設定時は ../assets/
 {% endcomment %}
+{% if pathPrefix != '' and pathPrefix != nil %}
+  {% assign login_asset_base = pathPrefix | append: '/' %}
+{% else %}
+  {% assign login_asset_base = '../' %}
+{% endif %}
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -11,31 +14,31 @@
     <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪" />
 
     <title>{{ page_title }}</title>
-    <script src="../assets/vendor/jquery/jquery-1.12.4.min.js"></script>
-    <script src="../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../assets/js/clips.js"></script>
-    <script type="text/javascript" src="../assets/js/helper-sp.js"></script>
+    <script src="{{ login_asset_base }}assets/vendor/jquery/jquery-1.12.4.min.js"></script>
+    <script src="{{ login_asset_base }}assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="{{ login_asset_base }}assets/js/clips.js"></script>
+    <script type="text/javascript" src="{{ login_asset_base }}assets/js/helper-sp.js"></script>
 
-    <link rel="stylesheet" href="../assets/css/html5-doctor-reset-stylesheet.min.css" />
-    <link rel="stylesheet" href="../assets/css/common.css" />
-    <link rel="stylesheet" href="../assets/css/style.3078.css" />
-    <link rel="stylesheet" href="../assets/css/style--sp.css" />
-    <link rel="stylesheet" href="../assets/css/style.moratamelist-tame--sp.css" />
-    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css" />
-    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css" />
-    <link rel="stylesheet" href="../assets/css/footer-common.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/html5-doctor-reset-stylesheet.min.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/common.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style.3078.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style--sp.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style.moratamelist-tame--sp.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style--common-sp-and-pc.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style--common-sp-and-pc-2.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/footer-common.css" />
 
-    <link rel="stylesheet" href="../assets/css/style--pc.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/t.css">
-    <link rel="stylesheet" href="../assets/css/t-sample.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/utilities.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style--pc.css" />
+    <link rel="stylesheet" type="text/css" href="{{ login_asset_base }}assets/css/t.css">
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/t-sample.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/style.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/utilities.css" />
 
-    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/vendor/fontawesome/css/all.css">
 
-    <script src="../assets/js/inputimg.js"></script>
+    <script src="{{ login_asset_base }}assets/js/inputimg.js"></script>
 
-    <link rel="stylesheet" href="../assets/css/p9255-top--sp.css" />
+    <link rel="stylesheet" href="{{ login_asset_base }}assets/css/p9255-top--sp.css" />
 
     {{ head_extra }}
   </head>

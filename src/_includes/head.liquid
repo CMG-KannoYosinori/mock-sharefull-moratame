@@ -1,10 +1,10 @@
 {% comment %}
   共通 head ブロック
-  使用前に各ページで assign すること: page_title
-  任意: page_description（未設定時はデフォルトの Description を使用）, page_use_jquery_3（true のとき jQuery 3.2.1）、head_extra（capture でページ固有の link/script を渡す）
-  page.url から asset_base を算出（header.liquid と同様）
+  pathPrefix が設定されているとき（GitHub Pages デプロイ時）は常に pathPrefix/ をアセットの先頭に付与
 {% endcomment %}
-{% if page.url contains 'mymenu' %}
+{% if pathPrefix != '' and pathPrefix != nil %}
+  {% assign asset_base = pathPrefix | append: '/' %}
+{% elsif page.url contains 'mymenu' %}
   {% assign asset_base = '../' %}
 {% else %}
   {% assign path_segments = page.url | split: '/' %}

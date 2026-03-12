@@ -17,7 +17,8 @@
   npm start
   ```
 
-- **デプロイ**（`dist/` を `gh-pages` ブランチに push）
+- **デプロイ**（`dist/` を `gh-pages` ブランチに push）  
+  事前にビルドする必要はありません。`npm run deploy` がビルド（GitHub Pages 用の pathPrefix 付き）から push まで一括で実行します。
   ```bash
   npm run deploy
   ```

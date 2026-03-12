@@ -1,8 +1,14 @@
 {% comment %}
-  ページの階層に応じてマイページリンクの相対パスを算出（footer.liquid と同様）
-  page.url: / または /detail/moraulist.html など（.html フラット出力）
+  ページの階層に応じてリンク・asset_base を算出。pathPrefix 設定時（GitHub Pages）はサブパス付き絶対パスを使用。
 {% endcomment %}
-{% if page.url contains 'mymenu' %}
+{% if pathPrefix != '' and pathPrefix != nil %}
+  {% assign asset_base = pathPrefix | append: '/' %}
+  {% assign mymenu_href = pathPrefix | append: '/mymenu/basic.html' %}
+  {% assign top_href = pathPrefix | append: '/index.html' %}
+  {% assign tamesu_href = pathPrefix | append: '/detail/tamesulist.html' %}
+  {% assign morau_href = pathPrefix | append: '/detail/moraulist.html' %}
+  {% assign trade_href = pathPrefix | append: '/contents/trade/index.html' %}
+{% elsif page.url contains 'mymenu' %}
   {% assign mymenu_href = 'basic.html' %}
   {% assign asset_base = '../' %}
   {% assign top_href = '../index.html' %}

@@ -1,21 +1,25 @@
-{% comment %} 特定商取引表示の相対パス（header で未設定のとき用） {% endcomment %}
+{% comment %} 特定商取引表示のパス（header で未設定のとき用）。pathPrefix 設定時はサブパス付き。 {% endcomment %}
 {% unless trade_href %}
-  {% assign path_segments = page.url | split: '/' %}
-  {% assign seg_count = path_segments | size %}
-  {% assign depth = seg_count | minus: 1 %}
-  {% if depth == 0 %}
-    {% assign trade_href = 'contents/trade/index.html' %}
-  {% elsif depth == 1 %}
-    {% if page.url contains 'contents' %}
-      {% assign trade_href = 'trade/index.html' %}
-    {% else %}
-      {% assign trade_href = '../contents/trade/index.html' %}
-    {% endif %}
+  {% if pathPrefix != '' and pathPrefix != nil %}
+    {% assign trade_href = pathPrefix | append: '/contents/trade/index.html' %}
   {% else %}
-    {% if page.url contains 'detail' %}
-      {% assign trade_href = '../../contents/trade/index.html' %}
+    {% assign path_segments = page.url | split: '/' %}
+    {% assign seg_count = path_segments | size %}
+    {% assign depth = seg_count | minus: 1 %}
+    {% if depth == 0 %}
+      {% assign trade_href = 'contents/trade/index.html' %}
+    {% elsif depth == 1 %}
+      {% if page.url contains 'contents' %}
+        {% assign trade_href = 'trade/index.html' %}
+      {% else %}
+        {% assign trade_href = '../contents/trade/index.html' %}
+      {% endif %}
     {% else %}
-      {% assign trade_href = '../trade/index.html' %}
+      {% if page.url contains 'detail' %}
+        {% assign trade_href = '../../contents/trade/index.html' %}
+      {% else %}
+        {% assign trade_href = '../trade/index.html' %}
+      {% endif %}
     {% endif %}
   {% endif %}
 {% endunless %}
