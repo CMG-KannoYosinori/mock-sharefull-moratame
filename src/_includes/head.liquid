@@ -54,12 +54,6 @@
     <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
     <link href="{{ asset_base }}assets/vendor/fontawesome/css/all.css" rel="stylesheet">
 
-{% if page_use_jquery_3 %}
     <script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-{% else %}
-    <!-- header.liquid 内スクリプト用に jQuery を先行読み込み -->
-    <script type="text/javascript" src="{{ asset_base }}assets/vendor/jquery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="{{ asset_base }}assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
-{% endif %}
 
 {{ head_extra }}
