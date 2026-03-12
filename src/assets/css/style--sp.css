@@ -452,38 +452,6 @@ Modifierは以下のとおりです。
   width: 100% !important;
 }
 
-.before_reviews {
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.before_reviews .icon_rgt {
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-.before_reviews-attention {
-  font-size: 14px;
-}
-
-.before_reviews-attention h3 {
-  font-weight: bold;
-}
-
-.before_reviews-attention .before_reviews-attention--danger {
-  padding: 10px;
-  border: 1px solid #ef9a9a;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #ffebee;
-  color: #f44336;
-}
-
-.before_reviews-attention .before_reviews-attention--danger h4 {
-  font-weight: bold;
-}
 
 .cmt__textarea {
   display: block;
@@ -10743,17 +10711,6 @@ h3.rankNum {
   margin: -10px 0 10px;
 }
 
-/*btnbar*/
-#scrollContainer {
-  position: fixed;
-  right: 5px;
-  bottom: 5px;
-  z-index: 6;
-  width: 40px;
-  height: 40px;
-  background-image: url(https://image.moratame.net/images/common/arrow_toPageTop.png);
-  background-size: 40px 40px;
-}
 
 /* cart
 ------------------------------------------------ */
