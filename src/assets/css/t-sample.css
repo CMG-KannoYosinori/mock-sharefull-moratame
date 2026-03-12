@@ -363,6 +363,9 @@ header .header-contents {
 #menu .menu__item .submenu li img {
   margin-right: 3px;
 }
+#menu .menu__item .submenu a {
+  color: #004098;
+}
 
 /*newsLink-------------------------------------------------*/
 .newsLink {

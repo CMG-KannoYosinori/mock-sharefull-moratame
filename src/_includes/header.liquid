@@ -65,7 +65,7 @@
             <div class="p-masthead__top">
               <!-- topMenu_sp -->
               <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-                <img src="https://placehold.jp/30/dd6699/ffffff/col-xs-4 col-md-3 col-lg-31280x480.png?text=シェアフル+ヘッダー" alt="" style="width: auto; height: 100%;">
+                <img src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ" alt="" style="width: auto; height: 100%;" width="480" height="160">
                 <div class="sp-header-menu_component sp-header-menu_component-logout">
                   <a href="{{ top_href }}">
                     <img alt="ログアウト" src="{{ asset_base }}assets/images/btn-logout.png">
@@ -156,15 +156,18 @@
           {% assign nav_mora_active = '' %}
           {% assign nav_mise_active = '' %}
 
-          {% if page.url contains 'mymenu' %}
-            {% assign nav_mise_active = ' is-active' %}
-          {% elsif page.url contains 'morau' %}
-            {% assign nav_mora_active = ' is-active' %}
-          {% elsif page.url contains 'tamesu' %}
-            {% assign nav_tame_active = ' is-active' %}
-          {% elsif page.url == '/' or page.url == '/index.html' %}
-            {% assign nav_top_active = ' is-active' %}
-          {% endif %}
+          {%- case page.url -%}
+            {%- when '/' -%}
+              {% assign nav_top_active = ' is-active' %}
+            {%- when '/index.html' -%}
+              {% assign nav_top_active = ' is-active' %}
+            {%- when '/detail/tamesulist.html' -%}
+              {% assign nav_tame_active = ' is-active' %}
+            {%- when '/detail/moraulist.html' -%}
+              {% assign nav_mora_active = ' is-active' %}
+            {%- when '/mymenu/basic.html' -%}
+              {% assign nav_mise_active = ' is-active' %}
+          {%- endcase -%}
 
           <nav aria-label="トップページタブメニュー">
             <ul class="p-masthead__nav p-masthead__nav_toppage">
