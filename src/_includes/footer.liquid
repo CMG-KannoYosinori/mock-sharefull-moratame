@@ -4,6 +4,9 @@
 {% endcomment %}
 {% if page.url contains 'mymenu' %}
   {% assign mymenu_href = '' %}
+  {% assign top_href = '../index.html' %}
+  {% assign tamesu_href = '../detail/tamesulist.html' %}
+  {% assign morau_href = '../detail/moraulist.html' %}
 {% else %}
   {% assign path_segments = page.url | split: '/' %}
   {% assign seg_count = path_segments | size %}
@@ -13,10 +16,29 @@
   {% endif %}
   {% if depth == 0 %}
     {% assign mymenu_href = 'mymenu/basic.html' %}
+    {% assign top_href = 'index.html' %}
+    {% assign tamesu_href = 'detail/tamesulist.html' %}
+    {% assign morau_href = 'detail/moraulist.html' %}
   {% elsif depth == 1 %}
     {% assign mymenu_href = '../mymenu/basic.html' %}
+    {% assign top_href = '../index.html' %}
+    {% if page.url contains 'detail' %}
+      {% assign tamesu_href = 'tamesulist.html' %}
+      {% assign morau_href = 'moraulist.html' %}
+    {% else %}
+      {% assign tamesu_href = '../detail/tamesulist.html' %}
+      {% assign morau_href = '../detail/moraulist.html' %}
+    {% endif %}
   {% else %}
     {% assign mymenu_href = '../../mymenu/basic.html' %}
+    {% assign top_href = '../../index.html' %}
+    {% if page.url contains 'detail' %}
+      {% assign tamesu_href = '../tamesulist.html' %}
+      {% assign morau_href = '../moraulist.html' %}
+    {% else %}
+      {% assign tamesu_href = '../detail/tamesulist.html' %}
+      {% assign morau_href = '../detail/moraulist.html' %}
+    {% endif %}
   {% endif %}
 {% endif %}
 
@@ -25,13 +47,13 @@
         <div id="footer">
           <ul class="footer-global__nav">
             <li class="footer-global__nav-list">
-              <a href="https://stg.tsample.tsite.jp/">トップ</a>
+              <a href="{{ top_href }}">トップ</a>
             </li>
             <li class="footer-global__nav-list">
-              <a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる</a>
+              <a href="{{ tamesu_href }}">ためせる</a>
             </li>
             <li class="footer-global__nav-list">
-              <a href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる</a>
+              <a href="{{ morau_href }}">もらえる</a>
             </li>
             <li class="footer-global__nav-list">
               <a href="{{ mymenu_href }}">マイページ</a>

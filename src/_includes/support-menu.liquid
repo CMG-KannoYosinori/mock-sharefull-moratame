@@ -1,3 +1,24 @@
+{% comment %} 特定商取引表示の相対パス（header で未設定のとき用） {% endcomment %}
+{% unless trade_href %}
+  {% assign path_segments = page.url | split: '/' %}
+  {% assign seg_count = path_segments | size %}
+  {% assign depth = seg_count | minus: 1 %}
+  {% if depth == 0 %}
+    {% assign trade_href = 'contents/trade/index.html' %}
+  {% elsif depth == 1 %}
+    {% if page.url contains 'contents' %}
+      {% assign trade_href = 'trade/index.html' %}
+    {% else %}
+      {% assign trade_href = '../contents/trade/index.html' %}
+    {% endif %}
+  {% else %}
+    {% if page.url contains 'detail' %}
+      {% assign trade_href = '../../contents/trade/index.html' %}
+    {% else %}
+      {% assign trade_href = '../trade/index.html' %}
+    {% endif %}
+  {% endif %}
+{% endunless %}
 <div class="se-news t-sidemenu">
   <h1 class="heading">サポート</h1>
   <div class="container">
@@ -6,7 +27,7 @@
       <li><a href="https://www.moratame.net/wp/cs/" target="_blank">FAQ</a></li>
       <li><a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a></li>
       <li><a href="https://www.moratame.net/contents/syounin.php" target="_blank">モラタメ利用規約</a></li>
-      <li><a href="contents/trade/index.php">特定商取引表示</a></li>
+      <li><a href="{{ trade_href }}">特定商取引表示</a></li>
     </ul>
   </div>
 </div>
