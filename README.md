@@ -26,6 +26,15 @@
   npm run deploy
   ```
 
+## 開発チームに渡すとき（dist をリポジトリに含める場合）
+
+1. `dist` を削除する  
+   （例: `rm -rf dist` またはエクスプローラーで削除）
+2. `npm run build` で再ビルドする
+3. `dist` を含めて commit し、git push する  
+
+渡し先では `dist` をそのまま利用できるため、ビルドは不要です。静的 HTML の配置先がルートの場合は上記のビルドのまま、サブパス（例: GitHub Pages）の場合は `npm run deploy` 用に別途ビルドした `dist` を渡すか、渡し先で `PATH_PREFIX=... npm run build` を実行してください。
+
 ## 公開後の URL
 
 - **GitHub Pages**: https://cmg-kannoyosinori.github.io/mock-sharefull-moratame/

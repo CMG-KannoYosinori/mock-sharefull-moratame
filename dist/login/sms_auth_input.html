@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    
+    
+    
+
+  
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta content="試供品,無料,お試し,プレゼント,モラタメ" name="Keywords">
+    <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪" />
+
+    <title>SMS認証電話番号入力</title>
+    <script src="../assets/vendor/jquery/jquery-1.12.4.min.js"></script>
+    <script src="../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../assets/js/clips.js"></script>
+    <script type="text/javascript" src="../assets/js/helper-sp.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/html5-doctor-reset-stylesheet.min.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/style.3078.css" />
+    <link rel="stylesheet" href="../assets/css/style--sp.css" />
+    <link rel="stylesheet" href="../assets/css/style.moratamelist-tame--sp.css" />
+    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css" />
+    <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css" />
+    <link rel="stylesheet" href="../assets/css/footer-common.css" />
+
+    <link rel="stylesheet" href="../assets/css/style--pc.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/t.css">
+    <link rel="stylesheet" href="../assets/css/t-sample.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/utilities.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
+
+    <script src="../assets/js/inputimg.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/p9255-top--sp.css" />
+
+    
+    <style>
+      .page .p-masthead .p-masthead__nav {
+        margin: 10px auto 10px;
+      }
+
+      .smsListUl .cbxbd1_0 {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: none;
+      }
+
+      .smsListUl .cbxbd1_0 input[type='radio'] {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        opacity: 0;
+      }
+
+      .smsListUl .cbxbd1_0::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #666;
+        background: #fff;
+        transform: translate(-50%, -50%);
+      }
+
+      .smsListUl .cbxbd1_0.c_on2::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #333;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    
+  </head>
+
+
+  <body>
+    <div class="page">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="body-wrapper">
+        
+
+  
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+      
+    
+  
+
+
+      <!-- 共通ヘッダー -->
+      <div class="p-masthead">
+        <div class="l-conteiner">
+          <header>
+            <div class="p-masthead__top_box header-contents">
+              <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
+              <div class="p-masthead__top">
+                <div class="p-masthead__labels-sns-btns-wrap pc">
+                  <div class="p9225-masthead__buttons">
+                    <ul class="p-masthead__labels announce-container">
+                      <li>
+                        <a class="c-label--masthead" href="../../index.html">ログアウト</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /topMenu_pc -->
+                <!-- topMenu_sp -->
+                <div class="sp-header-menu sp">
+
+                  <div class="sp-header-menu_component sp-header-menu_component-logout">
+                    <a href="../../index.html"><img alt="ログアウト" src="../../assets/images/btn-logout.png"></a>
+                  </div>
+                  <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
+                    MENU
+                  </div>
+                </div>
+                <!-- /topMenu_sp -->
+              </div>
+            </div>
+          </header>
+          <!-- HBGmenu_Open -->
+          <div id="menu">
+            <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
+              ×
+            </button>
+            <ul>
+              <!-- category -->
+              <li class="menu__item">
+                <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
+                <ul class="submenu" style="display: none;">
+                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+                  <li><a href="../detail/tamesulist.html"><img src="../../assets/images/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li class="t-sidemenu-sub-ttl">マイページ</li>
+                  <li><a href="../../mymenu/basic.html">マイページ</a></li>
+                </ul>
+              </li>
+              <a href="../detail/moraulist.html">
+                <li>家族配送（4）</li>
+              </a>
+              <!-- /category -->
+              <a href="https://www.moratame.net/contents/about.php">
+                <li>モラタメとは</li>
+              </a>
+              <a href="https://www.moratame.net/wp/cs/">
+                <li>FAQ</li>
+              </a>
+              <a href="https://www.moratame.net/wp/cs/">
+                <li>モラタメ事務局へのお問い合わせ</li>
+              </a>
+              <a href="https://www.moratame.net/contents/syounin.php">
+                <li>モラタメ利用規約</li>
+              </a>
+              <a href="../trade/index.html">
+                <li>特定商取引表示</li>
+              </a>
+            </ul>
+          </div>
+          <div class="menu-background"></div>
+          <!-- /HBGmenu_Open -->
+
+          <!-- accordion-menu -->
+          <script>
+            $(function () {
+              $('.js-menu__item__link').each(function () {
+                $(this).on('click', function () {
+                  $(this).toggleClass('on');
+                  $('+.submenu', this).slideToggle();
+                  return false;
+                });
+              });
+              $('.p-masthead__soon').on('click', function () { $('#p-masthead__soon').toggle(); });
+              $(document).on('click', '.s_boxHeadline', function () { $('#p-masthead__soon').css('display', 'none'); });
+            });
+          </script>
+          <!-- /accordion-menu -->
+
+          <!-- topTabMenu_pc -->
+          <ul class="p-masthead__nav p-masthead__nav_toppage">
+            <li class="p-masthead__nav__top">
+              <a href="../../index.html">トップ</a>
+            </li>
+            <li class="p-masthead__nav__tame">
+              <a href="../detail/tamesulist.html">ためせる</a>
+            </li>
+            <li class="p-masthead__nav__mora">
+              <a href="../detail/moraulist.html">もらえる</a>
+            </li>
+            <li class="p-masthead__nav__mise">
+              <a href="../../mymenu/basic.html">マイページ</a>
+            </li>
+          </ul>
+          <!-- /topTabMenu_pc -->
+        </div>
+      </div>
+      <!-- //p-masthead -->
+
+      </div>
+
+      <!-- cliplist -->
+
+      <div class="content">
+        <div class="container">
+          <div class="block">
+            <div class="smsAuth-hdl mb_10">
+              <p>
+                <img src="../assets/images/banner/banner_sms_auth_sp.png" alt="SMS（電話番号）認証の導入を始めました。" width="100%" usemap="#Map">
+              </p>
+            </div>
+
+            <form action="https://stg.moratame.net/s/login/sms_auth_confirm.php" method="post" id="authform">
+              <div class="block_inner">
+                <div>
+                  サービスの品質向上・セキュリティ対策の観点から、サービスご利用にあたり、電話番号認証を導入しました。<br>
+                  ご自身の携帯番号を入力後、送信してください。<br>
+                  携帯番号をお持ちでない場合、固定電話番号を入力していただき、音声ガイダンスを選択し送信してください。<br>
+                  <br>
+                  送信後、SMSメッセージ、または音声ガイダンスにて配信された認証コードを入力してください。<br>
+                </div>
+                <div class="error" id="errmsgfil"><span id="errmsg"></span></div>
+                <div>
+                  <label>電話番号</label>
+                  <input type="tel" id="mobilenumber" name="mobilenumber" value="" placeholder="電話番号" data-theme="d" onKeyPress="return(event.keyCode !==13)" />
+                  <div class="mt_10">
+                    <label>配信方法</label>
+                    <ul class="smsListUl">
+                      <li class="smsListLi">
+                        <div class="smsListLiPd">
+                          <label class="cbxbd1_0 c_on2">
+                            <input type="radio" id="deliveryKindSms" class="smsDelivery" name="deliveryKind" value="1" checked>
+                          </label>
+                          <div class="smsListTxt">
+                            <p><label for="deliveryKindSms">SMS配信</label></p>
+                          </div>
+                          <br class="flowBrClear">
+                        </div>
+                      </li>
+                      <li class="smsListLi">
+                        <div class="smsListLiPd">
+                          <label class="cbxbd1_0">
+                            <input type="radio" id="deliveryKindVoice" class="smsDelivery" name="deliveryKind" value="2">
+                          </label>
+                          <div class="smsListTxt">
+                            <p><label for="deliveryKindVoice">音声ガイダンス</label></p>
+                          </div>
+                          <br class="flowBrClear">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <input type="hidden" name="url" value="https://stg.moratame.net/s/contents/signup05.php?ID=31bafddd99a113e9eecbf0097e133378" />
+              </div>
+
+              <div class="block_inner" data-mini="true">
+                <button type="button" rel="external" onclick="javascript:ajax_auth_send()" ;>SMS認証コードを送信</button>
+              </div>
+            </form>
+            <div class="c-card--aside smsAuth-c-card--aside">
+              <p>モラタメでは、ご登録できるアカウントは、ご本人様かつお一人様1つまでとしています。<br>詳しくは、<a href="https://www.moratame.net/contents/regulation.php
+			" target="_blank" class="smsAuth-normalLink">「ご利用にあたってのお約束ごと」</a>をご確認ください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../assets/js/smsauthinput.js" charset="UTF-8"></script>
+
+      
+
+  
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+  
+
+
+      <!-- footer -->
+      <footer>
+        <div id="footer">
+          <ul class="footer-global__nav">
+            <li class="footer-global__nav-list">
+              <a href="../../index.html">トップ</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="../detail/tamesulist.html">ためせる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="../detail/moraulist.html">もらえる</a>
+            </li>
+            <li class="footer-global__nav-list">
+              <a href="../../mymenu/basic.html">マイページ</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/" target="_blank">プライバシーセンター</a>
+            </li>
+            <li>
+              <a href="https://www.moratame.net/contents/syounin.php" target="_blank">モラタメ利用規約</a>
+            </li>
+            <li>
+              <a href="https://privacy.cccmkhd.co.jp/terms/" target="_blank">各種規約について</a>
+            </li>
+          </ul>
+
+          <p> &copy; Copyright © CopyRight Corporation. All rights reserved.</p>
+        </div>
+      </footer>
+      <!-- /footer -->
+      <!-- pageTopScroll -->
+      <p class="pageTopScroll" style="display: none;">
+        <a href="#pageTop">▲ページトップへ</a>
+      </p>
+
+
+
+
+
+    </div>
+
+    <script type="module" src="../assets/js/main.js"></script>
+
+  </body>
+
+
+
+  <script type="text/javascript" src="../assets/js/moratame_s_common.js?2026030513"></script>
+  <script type="text/javascript" src="../assets/js/p9255-scripts.js?2026030513"></script>
+
+</html>

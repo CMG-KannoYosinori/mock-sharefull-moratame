@@ -1,0 +1,39 @@
+.c-label-triangle__content,
+.c-label-triangle__detail {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 1;
+  right: 3px;
+  text-align: right;
+  white-space: pre;
+  color: white;
+}
+
+.c-label-triangle--1-line .c-label-triangle__content,
+.c-label-triangle--1-line .c-label-triangle__detail {
+  top: 12px;
+}
+
+.c-label-triangle--2-line .c-label-triangle__content,
+.c-label-triangle--2-line .c-label-triangle__detail {
+  top: 9px;
+}
+
+.c-label-triangle--3-line .c-label-triangle__content,
+.c-label-triangle--3-line .c-label-triangle__detail {
+  top: 3px;
+}
+
+.c-label-triangle__base,
+.c-label-triangle__base__detail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  content: "";
+  border-width: 0 72px 72px 0;
+  border-style: solid;
+}
