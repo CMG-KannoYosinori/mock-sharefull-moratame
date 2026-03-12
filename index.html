@@ -4,7 +4,6 @@
   <head>
     
     
-    
 
   
 
@@ -14,6 +13,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
     <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
     <link rel="shortcut icon" href="/mock-sharefull-moratame/assets/images/v-samplefavicon.png">
@@ -41,9 +41,7 @@
     <script src="/mock-sharefull-moratame/assets/vendor/ajaxzip3/ajaxzip3.js"></script>
     <link href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css" rel="stylesheet">
 
-
     <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-
 
 
 
@@ -62,74 +60,87 @@
 
 
       <!-- 共通ヘッダー -->
-      <div class="p-masthead">
+      <header class="p-masthead" role="banner">
         <div class="l-conteiner">
-          <header>
-            <div class="p-masthead__top_box header-contents">
-              <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
-              <div class="p-masthead__top">
-                <div class="p-masthead__labels-sns-btns-wrap pc">
-                  <div class="p9225-masthead__buttons">
-                    <ul class="p-masthead__labels announce-container">
-                      <li>
-                        <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
-                      </li>
-                    </ul>
-                  </div>
+          <div class="p-masthead__top_box header-contents">
+            <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
+            <div class="p-masthead__top">
+              <div class="p-masthead__labels-sns-btns-wrap pc">
+                <div class="p9225-masthead__buttons">
+                  <ul>
+                    <li></li>
+                  </ul>
                 </div>
-                <!-- /topMenu_pc -->
-                <!-- topMenu_sp -->
-                <div class="sp-header-menu sp">
-
-                  <div class="sp-header-menu_component sp-header-menu_component-logout">
-                    <a href="/mock-sharefull-moratame/index.html"><img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png"></a>
-                  </div>
-                  <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
-                    MENU
-                  </div>
-                </div>
-                <!-- /topMenu_sp -->
               </div>
+              <!-- /topMenu_pc -->
+              <!-- topMenu_sp -->
+              <div class="sp-header-menu sp" role="navigation" aria-label="スマートフォン用メインメニュー">
+                <div class="sp-header-menu_component sp-header-menu_component-logout">
+                  <a href="/mock-sharefull-moratame/index.html">
+                    <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
+                    <span class="u-visually-hidden">ログアウト</span>
+                  </a>
+                </div>
+                <button
+                  class="sp-header-menu_component sp-header-menu_component-hbg"
+                  id="menu_btn"
+                  type="button"
+                  aria-controls="menu"
+                  aria-expanded="false"
+                >
+                  MENU
+                </button>
+              </div>
+              <!-- /topMenu_sp -->
             </div>
-          </header>
+            <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
+          </div>
+
           <!-- HBGmenu_Open -->
-          <div id="menu">
+          <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
             <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
               ×
             </button>
             <ul>
               <!-- category -->
               <li class="menu__item">
-                <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
+                <button class="menu__item__link js-menu__item__link" type="button">
+                  カテゴリ
+                </button>
                 <ul class="submenu" style="display: none;">
                   <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li><a href="/mock-sharefull-moratame/detail/tamesulist.html"><img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li>
+                    <a href="/mock-sharefull-moratame/detail/tamesulist.html">
+                      <img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">
+                      食品（9）
+                    </a>
+                  </li>
                   <li class="t-sidemenu-sub-ttl">マイページ</li>
                   <li><a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a></li>
                 </ul>
               </li>
-              <a href="/mock-sharefull-moratame/detail/moraulist.html">
-                <li>家族配送（4）</li>
-              </a>
+              <li>
+                <a href="/mock-sharefull-moratame/detail/moraulist.html">家族配送（4）</a>
+              </li>
               <!-- /category -->
-              <a href="https://www.moratame.net/contents/about.php">
-                <li>モラタメとは</li>
-              </a>
-              <a href="https://www.moratame.net/wp/cs/">
-                <li>FAQ</li>
-              </a>
-              <a href="https://www.moratame.net/wp/cs/">
-                <li>モラタメ事務局へのお問い合わせ</li>
-              </a>
-              <a href="https://www.moratame.net/contents/syounin.php">
-                <li>モラタメ利用規約</li>
-              </a>
-              <a href="/mock-sharefull-moratame/contents/trade/index.html">
-                <li>特定商取引表示</li>
-              </a>
+              <li>
+                <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/wp/cs/">FAQ</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
+              </li>
+              <li>
+                <a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a>
+              </li>
             </ul>
-          </div>
-          <div class="menu-background"></div>
+          </nav>
+          <div class="menu-background" aria-hidden="true"></div>
           <!-- /HBGmenu_Open -->
 
           <!-- accordion-menu -->
@@ -149,29 +160,30 @@
           <!-- /accordion-menu -->
 
           <!-- topTabMenu_pc -->
-          <ul class="p-masthead__nav p-masthead__nav_toppage">
-            <li class="p-masthead__nav__top">
-              <a href="/mock-sharefull-moratame/index.html">トップ</a>
-            </li>
-            <li class="p-masthead__nav__tame">
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
-            </li>
-            <li class="p-masthead__nav__mora">
-              <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
-            </li>
-            <li class="p-masthead__nav__mise">
-              <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
-            </li>
-          </ul>
+          <nav aria-label="トップページタブメニュー">
+            <ul class="p-masthead__nav p-masthead__nav_toppage">
+              <li class="p-masthead__nav__top">
+                <a href="/mock-sharefull-moratame/index.html">トップ</a>
+              </li>
+              <li class="p-masthead__nav__tame">
+                <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
+              </li>
+              <li class="p-masthead__nav__mora">
+                <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
+              </li>
+              <li class="p-masthead__nav__mise">
+                <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
+              </li>
+            </ul>
+          </nav>
           <!-- /topTabMenu_pc -->
         </div>
-      </div>
+      </header>
       <!-- //p-masthead -->
 
       <div class="main">
         <div class="contents cf contents--responsive">
           <div class="primary primary--responsive">
-            <link rel="stylesheet" href="assets/css/triangle.css">
             <div><img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー画像" alt="" class="u-img"></div>
             <div class=" pr-tame pr-content">
               <div class="heading xx-large enclosingBtn withIcon">
@@ -186,16 +198,16 @@
               <div class="cardContainer tame ta-list">
                 <div class="row">
                   <div class="col-xs-4 col-md-3 col-lg-3">
-                    <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコード10件B">
+                    <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="商品名">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">
-                          <img alt="ギフトコード10件B" class="item thumbnail" height="638" src="assets/images/project/2300_item_20260204_161934.png" width="638">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
                         <p>モラタメ編集部</p>
                         <p>
-                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">ギフトコード10件B</a>
+                          <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d">商品名</a>
                         </p>
                         <p class="count">残り
                           <span class="c_red fw_b">9</span>
@@ -208,7 +220,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコード10件A">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=64b89">
-                          <img alt="ギフトコード10件A" class="item thumbnail" height="638" src="assets/images/project/2300_item_20260204_161934.png" width="638">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -227,7 +239,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコードPJT0120">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca5d4">
-                          <img alt="ギフトコードPJT0120" class="item thumbnail" height="638" src="assets/images/project/2277_item_20260109_154935.jpg" width="638">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -246,7 +258,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="CCCMK様ご確認用ギフトコードPJT">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca0d1">
-                          <img alt="CCCMK様ご確認用ギフトコードPJT" class="item thumbnail" height="638" src="assets/images/project/2277_item_20260109_154935.jpg" width="638">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -266,7 +278,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコードK5 200件">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df">
-                          <img alt="ギフトコードK5 200件" class="item thumbnail" height="320" src="assets/images/project/2276_item_20260108_143335.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -284,7 +296,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンB">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2">
-                          <img alt="MTSD-14548 少数クーポンB" class="item thumbnail" height="320" src="assets/images/project/2273_item_20251226_180832.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -303,7 +315,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンA">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=6d933">
-                          <img alt="MTSD-14548 少数クーポンA" class="item thumbnail" height="320" src="assets/images/project/2273_item_20251226_180832.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -322,7 +334,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコード3万件">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=56642">
-                          <img alt="ギフトコード3万件" class="item thumbnail" height="320" src="assets/images/project/2258_item_20251113_105945.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -341,7 +353,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="クーポンテスト2">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=af9ac">
-                          <img alt="クーポンテスト2" class="item thumbnail" height="320" src="assets/images/project/2253_20251106_144715.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -360,7 +372,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="LORETTA AIMER ミストケアオイル">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=0d996">
-                          <img alt="LORETTA AIMER ミストケアオイル" class="item thumbnail" height="320" src="assets/images/project/2242_item_20250930_103913.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -378,7 +390,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="重複OK2">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8">
-                          <img alt="重複OK2" class="item thumbnail" height="320" src="assets/images/project/1486_item_20230616_143850.gif" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -397,7 +409,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="重複OK">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a">
-                          <img alt="重複OK" class="item thumbnail" height="320" src="assets/images/project/1486_item_20230616_143850.gif" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -417,7 +429,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="プロファイルチェック用Attoos（大阪除外）">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9">
-                          <img alt="プロファイルチェック用Attoos（大阪除外）" class="item thumbnail" height="320" src="assets/images/project/1877_item_20241211_164522.jpg" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -436,7 +448,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="ポイント決済用少額">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20">
-                          <img alt="ポイント決済用少額" class="item thumbnail" height="320" src="assets/images/project/1132_item_20250502_122745.jpg" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -456,7 +468,7 @@
                     <div class="p-card p-card--top blockLink heightLine--tame" title="重複有り,家族有り">
                       <p class="item">
                         <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fdb68">
-                          <img alt="重複有り,家族有り" class="item thumbnail" height="320" src="assets/images/project/1094_item_20240618_125508.png" width="320">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="item thumbnail">
                         </a>
                       </p>
                       <div class="p-card__detail">
@@ -635,10 +647,10 @@
             <!-- /non-review-list -->
             
 
-<div class="se-news t-sidemenu">
-  <h1 class="heading">サポート</h1>
+<aside class="se-news t-sidemenu" aria-labelledby="support-heading">
+  <h1 class="heading" id="support-heading">サポート</h1>
   <div class="container">
-    <ul class="newsListWrap t-sidemenu-list">
+    <ul class="newsListWrap t-sidemenu-list" role="navigation" aria-label="サポートメニュー">
       <li><a href="https://www.moratame.net/contents/about.php">モラタメとは</a></li>
       <li><a href="https://www.moratame.net/wp/cs/" target="_blank">FAQ</a></li>
       <li><a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a></li>
@@ -646,7 +658,7 @@
       <li><a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a></li>
     </ul>
   </div>
-</div>
+</aside>
 
 
             <!-- /t-support-menu -->
@@ -680,9 +692,9 @@
 
 
       <!-- footer -->
-      <footer>
+      <footer role="contentinfo">
         <div id="footer">
-          <ul class="footer-global__nav">
+          <ul class="footer-global__nav" role="navigation" aria-label="フッターメインナビゲーション">
             <li class="footer-global__nav-list">
               <a href="/mock-sharefull-moratame/index.html">トップ</a>
             </li>
@@ -696,7 +708,7 @@
               <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
             </li>
           </ul>
-          <ul>
+          <ul aria-label="フッター関連リンク">
             <li>
               <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
             </li>
@@ -724,8 +736,6 @@
     <!-- /body-wrapper -->
 
 
-    <script type="text/javascript" src="assets/vendor/jquery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/t.js"></script>
     <script type="module" src="assets/js/main.js"></script>
   </body>

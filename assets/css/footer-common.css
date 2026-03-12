@@ -1,4 +1,14 @@
 /* 共通フッター（Vサンプル）スタイル - contents / login で include 時用 */
+
+/* スティッキーフッター: ページが短くてもフッターを画面最下部に表示 */
+body {
+  min-height: 100vh;
+}
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 footer {
   margin-top: auto;
 }

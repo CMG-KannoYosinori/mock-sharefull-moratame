@@ -14,6 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
     <meta name="Description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。">
     <link rel="shortcut icon" href="/mock-sharefull-moratame/assets/images/v-samplefavicon.png">
@@ -41,11 +42,7 @@
     <script src="/mock-sharefull-moratame/assets/vendor/ajaxzip3/ajaxzip3.js"></script>
     <link href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css" rel="stylesheet">
 
-
-    <!-- header.liquid 内スクリプト用に jQuery を先行読み込み -->
-    <script type="text/javascript" src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="/mock-sharefull-moratame/assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
-
+    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 
     <script>
@@ -92,74 +89,87 @@
 
 
       <!-- 共通ヘッダー -->
-      <div class="p-masthead">
+      <header class="p-masthead" role="banner">
         <div class="l-conteiner">
-          <header>
-            <div class="p-masthead__top_box header-contents">
-              <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
-              <div class="p-masthead__top">
-                <div class="p-masthead__labels-sns-btns-wrap pc">
-                  <div class="p9225-masthead__buttons">
-                    <ul class="p-masthead__labels announce-container">
-                      <li>
-                        <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
-                      </li>
-                    </ul>
-                  </div>
+          <div class="p-masthead__top_box header-contents">
+            <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
+            <div class="p-masthead__top">
+              <div class="p-masthead__labels-sns-btns-wrap pc">
+                <div class="p9225-masthead__buttons">
+                  <ul>
+                    <li></li>
+                  </ul>
                 </div>
-                <!-- /topMenu_pc -->
-                <!-- topMenu_sp -->
-                <div class="sp-header-menu sp">
-
-                  <div class="sp-header-menu_component sp-header-menu_component-logout">
-                    <a href="/mock-sharefull-moratame/index.html"><img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png"></a>
-                  </div>
-                  <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
-                    MENU
-                  </div>
-                </div>
-                <!-- /topMenu_sp -->
               </div>
+              <!-- /topMenu_pc -->
+              <!-- topMenu_sp -->
+              <div class="sp-header-menu sp" role="navigation" aria-label="スマートフォン用メインメニュー">
+                <div class="sp-header-menu_component sp-header-menu_component-logout">
+                  <a href="/mock-sharefull-moratame/index.html">
+                    <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
+                    <span class="u-visually-hidden">ログアウト</span>
+                  </a>
+                </div>
+                <button
+                  class="sp-header-menu_component sp-header-menu_component-hbg"
+                  id="menu_btn"
+                  type="button"
+                  aria-controls="menu"
+                  aria-expanded="false"
+                >
+                  MENU
+                </button>
+              </div>
+              <!-- /topMenu_sp -->
             </div>
-          </header>
+            <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
+          </div>
+
           <!-- HBGmenu_Open -->
-          <div id="menu">
+          <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
             <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
               ×
             </button>
             <ul>
               <!-- category -->
               <li class="menu__item">
-                <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
+                <button class="menu__item__link js-menu__item__link" type="button">
+                  カテゴリ
+                </button>
                 <ul class="submenu" style="display: none;">
                   <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li><a href="/mock-sharefull-moratame/detail/tamesulist.html"><img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li>
+                    <a href="/mock-sharefull-moratame/detail/tamesulist.html">
+                      <img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">
+                      食品（9）
+                    </a>
+                  </li>
                   <li class="t-sidemenu-sub-ttl">マイページ</li>
                   <li><a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a></li>
                 </ul>
               </li>
-              <a href="/mock-sharefull-moratame/detail/moraulist.html">
-                <li>家族配送（4）</li>
-              </a>
+              <li>
+                <a href="/mock-sharefull-moratame/detail/moraulist.html">家族配送（4）</a>
+              </li>
               <!-- /category -->
-              <a href="https://www.moratame.net/contents/about.php">
-                <li>モラタメとは</li>
-              </a>
-              <a href="https://www.moratame.net/wp/cs/">
-                <li>FAQ</li>
-              </a>
-              <a href="https://www.moratame.net/wp/cs/">
-                <li>モラタメ事務局へのお問い合わせ</li>
-              </a>
-              <a href="https://www.moratame.net/contents/syounin.php">
-                <li>モラタメ利用規約</li>
-              </a>
-              <a href="/mock-sharefull-moratame/contents/trade/index.html">
-                <li>特定商取引表示</li>
-              </a>
+              <li>
+                <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/wp/cs/">FAQ</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
+              </li>
+              <li>
+                <a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a>
+              </li>
             </ul>
-          </div>
-          <div class="menu-background"></div>
+          </nav>
+          <div class="menu-background" aria-hidden="true"></div>
           <!-- /HBGmenu_Open -->
 
           <!-- accordion-menu -->
@@ -179,23 +189,25 @@
           <!-- /accordion-menu -->
 
           <!-- topTabMenu_pc -->
-          <ul class="p-masthead__nav p-masthead__nav_toppage">
-            <li class="p-masthead__nav__top">
-              <a href="/mock-sharefull-moratame/index.html">トップ</a>
-            </li>
-            <li class="p-masthead__nav__tame">
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
-            </li>
-            <li class="p-masthead__nav__mora">
-              <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
-            </li>
-            <li class="p-masthead__nav__mise">
-              <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
-            </li>
-          </ul>
+          <nav aria-label="トップページタブメニュー">
+            <ul class="p-masthead__nav p-masthead__nav_toppage">
+              <li class="p-masthead__nav__top">
+                <a href="/mock-sharefull-moratame/index.html">トップ</a>
+              </li>
+              <li class="p-masthead__nav__tame">
+                <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
+              </li>
+              <li class="p-masthead__nav__mora">
+                <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
+              </li>
+              <li class="p-masthead__nav__mise">
+                <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
+              </li>
+            </ul>
+          </nav>
           <!-- /topTabMenu_pc -->
         </div>
-      </div>
+      </header>
       <!-- //p-masthead -->
 
       <div class="main">
@@ -246,18 +258,16 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2027年02月13日（土）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=6aaf2" rel="external" class="ui-link"></a></h1>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoMora itemIcoAbs2">モラ</span><a href="detail/morau.php?project_id=6aaf2" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2304_20260213_184437.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoMora itemIcoAbs2">モラ</span><a href="detail/morau.php?project_id=6aaf2" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月20日 16時33分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：<br>配送会社：未定<br>伝票番号：準備中</p>
                               </div>
                             </div>
                           </div>
                           <div class="schedule_box">
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=fe6df" rel="external" class="ui-link"></a></h1>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=fe6df" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2276_item_20260108_143335.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=fe6df" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月20日 15時32分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>ギフトコード：<span style="word-break: break-all;">K5003</span><br>有効期限：<span style="word-break: break-all;">2028年01月08日</span></p>
                               </div>
                             </div>
@@ -265,9 +275,9 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2025年09月30日（火）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <em style="color:red;">キャンセル</em>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/1486_item_20230616_143850.gif" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月18日 16時18分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>配送会社：未定<br>伝票番号：準備中</p>
                               </div>
                             </div>
@@ -275,9 +285,9 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2026年02月13日（金）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=08288" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <em style="color:red;">キャンセル</em>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=08288" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2303_item_20260213_164554.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=08288" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月13日 16時47分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>配送会社：ヤマト運輸<br>伝票番号：651129813111</p>
                               </div>
                             </div>
@@ -288,9 +298,8 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2022年09月07日（水）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=d0ef6" rel="external" class="ui-link"></a></h1>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoMora itemIcoAbs2">モラ</span><a href="detail/morau.php?project_id=d0ef6" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/1140_20240307_181426.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoMora itemIcoAbs2">モラ</span><a href="detail/morau.php?project_id=d0ef6" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月13日 11時04分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：<br>配送会社：未定<br>伝票番号：準備中</p>
                               </div>
                             </div>
@@ -298,9 +307,9 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2026年02月10日（火）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=689bc" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <em style="color:red;">キャンセル</em>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=689bc" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2294_item_20260202_180434.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=689bc" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月13日 10時25分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>配送会社：未定<br>伝票番号：準備中</p>
                               </div>
                             </div>
@@ -308,9 +317,9 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2026年01月21日（水）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=a9bd3" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <em style="color:red;">キャンセル</em>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=a9bd3" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2265_item_20251219_183350.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=a9bd3" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月10日 14時56分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>配送会社：未定<br>伝票番号：準備中</p>
                               </div>
                             </div>
@@ -318,27 +327,27 @@
                           <div class="schedule_box">
                             <p class="hb_ms_date">2025年09月30日（火）発送</p>
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <em style="color:red;">キャンセル</em>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/1486_item_20230616_143850.gif" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月04日 16時34分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：3<br>配送会社：未定<br>伝票番号：準備中</p>
                               </div>
                             </div>
                           </div>
                           <div class="schedule_box">
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=4477d" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <em style="color:red;">キャンセル</em>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=4477d" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2300_item_20260204_161934.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=4477d" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月04日 16時31分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>ギフトコード：<span style="word-break: break-all;">G0001</span><br>有効期限：<span style="word-break: break-all;">2026年06月04日</span></p>
                               </div>
                             </div>
                           </div>
                           <div class="schedule_box">
                             <div class="userinfo_box">
-                              <h1><a href="detail/tamesu.php?project_id=64b89" rel="external" class="ui-link"></a><em style="color:red;">キャンセル</em></h1>
+                              <h1><em style="color:red;">キャンセル</em></h1>
                               <div class="hb_ms_ctr">
-                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=64b89" rel="external" class="ui-link"><img src="https://tsample.tsite.jp/img/project/2300_item_20260204_161934.png" alt="" width="72" height="72"></a></h2>
+                                <h2><span class="itemicon itemIcoTame itemIcoAbs2">タメ</span><a href="detail/tamesu.php?project_id=64b89" rel="external" class="ui-link"><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"></a></h2>
                                 <p class="hb_ms_detail">申込み日：2026年02月04日 16時27分<br>お届け先：東京都江戸川区東葛西8-32 a<br>セット数：1<br>ギフトコード：<span style="word-break: break-all;"></span><br>有効期限：<span style="word-break: break-all;">2026年06月04日</span></p>
                               </div>
                             </div>
@@ -684,10 +693,10 @@
             <!-- /non-review-list -->
             
 
-<div class="se-news t-sidemenu">
-  <h1 class="heading">サポート</h1>
+<aside class="se-news t-sidemenu" aria-labelledby="support-heading">
+  <h1 class="heading" id="support-heading">サポート</h1>
   <div class="container">
-    <ul class="newsListWrap t-sidemenu-list">
+    <ul class="newsListWrap t-sidemenu-list" role="navigation" aria-label="サポートメニュー">
       <li><a href="https://www.moratame.net/contents/about.php">モラタメとは</a></li>
       <li><a href="https://www.moratame.net/wp/cs/" target="_blank">FAQ</a></li>
       <li><a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a></li>
@@ -695,7 +704,7 @@
       <li><a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a></li>
     </ul>
   </div>
-</div>
+</aside>
 
 
             <!-- /t-support-menu -->
@@ -731,9 +740,9 @@
 
 
       <!-- footer -->
-      <footer>
+      <footer role="contentinfo">
         <div id="footer">
-          <ul class="footer-global__nav">
+          <ul class="footer-global__nav" role="navigation" aria-label="フッターメインナビゲーション">
             <li class="footer-global__nav-list">
               <a href="/mock-sharefull-moratame/index.html">トップ</a>
             </li>
@@ -747,7 +756,7 @@
               <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
             </li>
           </ul>
-          <ul>
+          <ul aria-label="フッター関連リンク">
             <li>
               <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
             </li>
@@ -889,9 +898,8 @@
         font-size: 85%;
       }
     </style>
-    <script type="text/javascript" src="../assets/vendor/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" id="1aca9b91f30175" width="0" height="0" src="about:blank" name="__pb_locator__" style="display: none; height: 0px; width: 0px; border: 0px;"></iframe>
-    <script type="text/javascript" src="../assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
 

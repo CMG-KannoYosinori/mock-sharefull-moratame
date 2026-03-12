@@ -8,24 +8,24 @@
 
   
 
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta content="試供品,無料,お試し,プレゼント,モラタメ" name="Keywords">
-    <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪" />
+    <meta name="Keywords" content="試供品,無料,お試し,プレゼント,モラタメ">
+    <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪">
 
     <title>シェアフル 6-2 会員情報入力 入力内容確認</title>
-    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-1.12.4.min.js"></script>
-    <script src="/mock-sharefull-moratame/assets/vendor/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/mock-sharefull-moratame/assets/js/clips.js"></script>
-    <script type="text/javascript" src="/mock-sharefull-moratame/assets/js/helper-sp.js"></script>
+    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/mock-sharefull-moratame/assets/js/clips.js"></script>
+    <script src="/mock-sharefull-moratame/assets/js/helper-sp.js"></script>
 
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/html5-doctor-reset-stylesheet.min.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/common.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.3078.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--sp.css" />
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.moratamelist-tame--sp.css" />
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/module.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc.css" />
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/reset-old-style--jp.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc-2.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/footer-common.css" />
 
@@ -47,7 +47,7 @@
   </head>
 
 
-  <body>
+  <body id="pageTop">
 
     <div class="page" id="registration-page">
 
@@ -64,74 +64,87 @@
 
 
       <!-- 共通ヘッダー -->
-      <div class="p-masthead">
+      <header class="p-masthead" role="banner">
         <div class="l-conteiner">
-          <header>
-            <div class="p-masthead__top_box header-contents">
-              <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
-              <div class="p-masthead__top">
-                <div class="p-masthead__labels-sns-btns-wrap pc">
-                  <div class="p9225-masthead__buttons">
-                    <ul class="p-masthead__labels announce-container">
-                      <li>
-                        <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
-                      </li>
-                    </ul>
-                  </div>
+          <div class="p-masthead__top_box header-contents">
+            <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
+            <div class="p-masthead__top">
+              <div class="p-masthead__labels-sns-btns-wrap pc">
+                <div class="p9225-masthead__buttons">
+                  <ul>
+                    <li></li>
+                  </ul>
                 </div>
-                <!-- /topMenu_pc -->
-                <!-- topMenu_sp -->
-                <div class="sp-header-menu sp">
-
-                  <div class="sp-header-menu_component sp-header-menu_component-logout">
-                    <a href="/mock-sharefull-moratame/index.html"><img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png"></a>
-                  </div>
-                  <div class="sp-header-menu_component sp-header-menu_component-hbg" id="menu_btn">
-                    MENU
-                  </div>
-                </div>
-                <!-- /topMenu_sp -->
               </div>
+              <!-- /topMenu_pc -->
+              <!-- topMenu_sp -->
+              <div class="sp-header-menu sp" role="navigation" aria-label="スマートフォン用メインメニュー">
+                <div class="sp-header-menu_component sp-header-menu_component-logout">
+                  <a href="/mock-sharefull-moratame/index.html">
+                    <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
+                    <span class="u-visually-hidden">ログアウト</span>
+                  </a>
+                </div>
+                <button
+                  class="sp-header-menu_component sp-header-menu_component-hbg"
+                  id="menu_btn"
+                  type="button"
+                  aria-controls="menu"
+                  aria-expanded="false"
+                >
+                  MENU
+                </button>
+              </div>
+              <!-- /topMenu_sp -->
             </div>
-          </header>
+            <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
+          </div>
+
           <!-- HBGmenu_Open -->
-          <div id="menu">
+          <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
             <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
               ×
             </button>
             <ul>
               <!-- category -->
               <li class="menu__item">
-                <a class="menu__item__link js-menu__item__link" href="">カテゴリ</a>
+                <button class="menu__item__link js-menu__item__link" type="button">
+                  カテゴリ
+                </button>
                 <ul class="submenu" style="display: none;">
                   <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li><a href="/mock-sharefull-moratame/detail/tamesulist.html"><img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">食品（9）</a></li>
+                  <li>
+                    <a href="/mock-sharefull-moratame/detail/tamesulist.html">
+                      <img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">
+                      食品（9）
+                    </a>
+                  </li>
                   <li class="t-sidemenu-sub-ttl">マイページ</li>
                   <li><a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a></li>
                 </ul>
               </li>
-              <a href="/mock-sharefull-moratame/detail/moraulist.html">
-                <li>家族配送（4）</li>
-              </a>
+              <li>
+                <a href="/mock-sharefull-moratame/detail/moraulist.html">家族配送（4）</a>
+              </li>
               <!-- /category -->
-              <a href="https://www.moratame.net/contents/about.php">
-                <li>モラタメとは</li>
-              </a>
-              <a href="https://www.moratame.net/wp/cs/">
-                <li>FAQ</li>
-              </a>
-              <a href="https://www.moratame.net/wp/cs/">
-                <li>モラタメ事務局へのお問い合わせ</li>
-              </a>
-              <a href="https://www.moratame.net/contents/syounin.php">
-                <li>モラタメ利用規約</li>
-              </a>
-              <a href="/mock-sharefull-moratame/contents/trade/index.html">
-                <li>特定商取引表示</li>
-              </a>
+              <li>
+                <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/wp/cs/">FAQ</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
+              </li>
+              <li>
+                <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
+              </li>
+              <li>
+                <a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a>
+              </li>
             </ul>
-          </div>
-          <div class="menu-background"></div>
+          </nav>
+          <div class="menu-background" aria-hidden="true"></div>
           <!-- /HBGmenu_Open -->
 
           <!-- accordion-menu -->
@@ -151,115 +164,116 @@
           <!-- /accordion-menu -->
 
           <!-- topTabMenu_pc -->
-          <ul class="p-masthead__nav p-masthead__nav_toppage">
-            <li class="p-masthead__nav__top">
-              <a href="/mock-sharefull-moratame/index.html">トップ</a>
-            </li>
-            <li class="p-masthead__nav__tame">
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
-            </li>
-            <li class="p-masthead__nav__mora">
-              <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
-            </li>
-            <li class="p-masthead__nav__mise">
-              <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
-            </li>
-          </ul>
+          <nav aria-label="トップページタブメニュー">
+            <ul class="p-masthead__nav p-masthead__nav_toppage">
+              <li class="p-masthead__nav__top">
+                <a href="/mock-sharefull-moratame/index.html">トップ</a>
+              </li>
+              <li class="p-masthead__nav__tame">
+                <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
+              </li>
+              <li class="p-masthead__nav__mora">
+                <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
+              </li>
+              <li class="p-masthead__nav__mise">
+                <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
+              </li>
+            </ul>
+          </nav>
           <!-- /topTabMenu_pc -->
         </div>
-      </div>
+      </header>
       <!-- //p-masthead -->
 
-      </div>
-      <div id="contente-top" class="content">
-        <div class="container">
-          <section class="new-signup-confirm">
-            <!--パンくず-->
-            <p class="milesstone"><img src="../assets/images/img/milestone-2.png" alt="step1 入力内容確認"></p>
-            <!--パンくず-->
-            <!--ページタイトル-->
-            <h1 class="heading-ttl">入力内容確認</h1>
-            <!--ページタイトル-->
+        <div id="contente-top" class="content">
+          <div class="container">
+            <section class="new-signup-confirm">
+              <!--パンくず-->
+              <p class="milesstone"><img src="../assets/images/img/milestone-2.png" alt="step1 入力内容確認"></p>
+              <!--パンくず-->
+              <!--ページタイトル-->
+              <h1 class="heading-ttl">入力内容確認</h1>
+              <!--ページタイトル-->
 
-            <form action="https://stg.moratame.net/s/contents/signup04.php" method="post" name="new-signup-input" id="new-signup-input">
-              <!--性別-->
-              <div class="select-area select-sex">
-                <div class="form-ttl">
-                  <h2 class="element-ttl">性別</h2>
+              <form action="https://stg.moratame.net/s/contents/signup04.php" method="post" name="new-signup-input" id="new-signup-input">
+                <!--性別-->
+                <div class="select-area select-sex">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">性別</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">男性</p>
+                  </div>
                 </div>
+                <!--/ 性別-->
+                <!--生年月日-->
+                <div class="select-area select-birthday">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">生年月日</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">1980年02月01日</p>
+                  </div>
+                </div>
+                <!--/生年月日-->
+                <!--メールアドレス-->
+                <div class="select-area select-email">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">メールアドレス</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">kanno+1@dohouse.co.jp</p>
+                  </div>
+                </div>
+                <!--/メールアドレス-->
+                <!--パスワード-->
+                <div class="select-area select-password">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">パスワード</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">VoK93Vxv</p>
+                  </div>
+                </div>
+                <!--/パスワード-->
+                <!--ニックネーム-->
+                <div class="select-area select-nickname">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">ニックネーム</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">あlsdfkj</p>
+                  </div>
+                </div>
+                <!--/ニックネーム-->
+                <!--紹介コード-->
+                <div class="select-area select-password">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">紹介コード</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text"></p>
+                  </div>
+                </div>
+                <!--/紹介コード-->
+                <hr>
                 <div class="input-area">
-                  <p class="confirm-text">男性</p>
+                  <p class="confirm-text" style="color: #ff0000;">※ 携帯メールアドレスをご登録いただく場合、<br>moratame.netからのドメイン着信許可を設定<br>してください。</p>
                 </div>
-              </div>
-              <!--/ 性別-->
-              <!--生年月日-->
-              <div class="select-area select-birthday">
-                <div class="form-ttl">
-                  <h2 class="element-ttl">生年月日</h2>
+                <hr>
+                <div class="submit-btn">
+                  <button type="submit" rel="external">電話番号認証を行う</button>
                 </div>
-                <div class="input-area">
-                  <p class="confirm-text">1980年02月01日</p>
+                <div class="correct-btn">
+                  <a href="../contents/signup01.html" rel="external">
+                    <button type="button" rel="external">内容を修正する</button>
+                  </a>
                 </div>
-              </div>
-              <!--/生年月日-->
-              <!--メールアドレス-->
-              <div class="select-area select-email">
-                <div class="form-ttl">
-                  <h2 class="element-ttl">メールアドレス</h2>
-                </div>
-                <div class="input-area">
-                  <p class="confirm-text">kanno+1@dohouse.co.jp</p>
-                </div>
-              </div>
-              <!--/メールアドレス-->
-              <!--パスワード-->
-              <div class="select-area select-password">
-                <div class="form-ttl">
-                  <h2 class="element-ttl">パスワード</h2>
-                </div>
-                <div class="input-area">
-                  <p class="confirm-text">VoK93Vxv</p>
-                </div>
-              </div>
-              <!--/パスワード-->
-              <!--ニックネーム-->
-              <div class="select-area select-nickname">
-                <div class="form-ttl">
-                  <h2 class="element-ttl">ニックネーム</h2>
-                </div>
-                <div class="input-area">
-                  <p class="confirm-text">あlsdfkj</p>
-                </div>
-              </div>
-              <!--/ニックネーム-->
-              <!--紹介コード-->
-              <div class="select-area select-password">
-                <div class="form-ttl">
-                  <h2 class="element-ttl">紹介コード</h2>
-                </div>
-                <div class="input-area">
-                  <p class="confirm-text"></p>
-                </div>
-              </div>
-              <!--/紹介コード-->
-              <hr>
-              <div class="input-area">
-                <p class="confirm-text" style="color: #ff0000;">※ 携帯メールアドレスをご登録いただく場合、<br>moratame.netからのドメイン着信許可を設定<br>してください。</p>
-              </div>
-              <hr>
-              <div class="submit-btn">
-                <button type="submit" rel="external">電話番号認証を行う</button>
-              </div>
-              <div class="correct-btn">
-                <a href="../contents/signup01.html" rel="external">
-                  <button type="button" rel="external">内容を修正する</button>
-                </a>
-              </div>
-            </form>
-          </section>
+              </form>
+            </section>
+          </div>
         </div>
-      </div>
-      
+        
 
   
   
@@ -268,9 +282,9 @@
 
 
       <!-- footer -->
-      <footer>
+      <footer role="contentinfo">
         <div id="footer">
-          <ul class="footer-global__nav">
+          <ul class="footer-global__nav" role="navigation" aria-label="フッターメインナビゲーション">
             <li class="footer-global__nav-list">
               <a href="/mock-sharefull-moratame/index.html">トップ</a>
             </li>
@@ -284,7 +298,7 @@
               <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
             </li>
           </ul>
-          <ul>
+          <ul aria-label="フッター関連リンク">
             <li>
               <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
             </li>
@@ -308,6 +322,7 @@
         <a href="#pageTop">▲ページトップへ</a>
       </p>
 
+      </div>
 
     </div>
 

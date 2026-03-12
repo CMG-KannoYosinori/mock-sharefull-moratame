@@ -8,7 +8,7 @@ $sm:  "only screen and (min-width:641px) and (max-width:960px)"; // 641px to 960
 $md:  "only screen and (min-width:961px)"; // 961px or more
 */
 /*
-  @media only screen and (min-width: 1270px) // 1295px 以上
+  @media (min-width: 1270px) // 1295px 以上
   {
     max-width: 1280px;
   }
@@ -35,7 +35,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
 .cardContainer {
   border-collapse: collapse;
 }
-@media only screen and (max-width: 974px) {
+@media (max-width: 974px) {
   .cardContainer {
     max-width: 702px;
     margin-right: auto;
@@ -122,12 +122,12 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   border-radius: 0 0 3px 0;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
-@media only screen and (min-width: 1270px) {
+@media (min-width: 1270px) {
   .badge.cardBadge {
     font-size: 11px;
   }
 }
-@media only screen and (min-width: 1615px) {
+@media (min-width: 1615px) {
   .badge.cardBadge {
     font-size: 12px;
   }
@@ -192,7 +192,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   background-color: #a985eb;
   box-shadow: rgba(0, 0, 0, 0.35) 0 0 5px;
 }
-@media only screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .c-footer-cart {
     right: auto;
     margin-left: 580px;
@@ -263,24 +263,22 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
 }
 
 .c-label--masthead {
-  font-size: 10px;
-  line-height: 24px;
-  display: block;
-  box-sizing: border-box;
-  width: 95px;
-  margin-top: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #8f837c;
-}
-@media only screen and (min-width: 1270px) {
-  .c-label--masthead {
-    font-size: 13px;
-    line-height: 30px;
-    width: auto;
-    margin-top: 0;
+  display: none;
+  @media (min-width: 960px) {
+    font-size: 10px;
+    line-height: 24px;
+    display: block;
+    box-sizing: border-box;
+    width: 95px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #004098;
+    margin-left: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    display: block;
   }
 }
 .c-label--masthead:link,
@@ -336,7 +334,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   padding: 20px;
   background-color: #fff;
 }
-@media only screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-matomete-about {
     font-size: 18px;
     padding: 40px;
@@ -366,7 +364,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   padding-right: 10px;
   padding-left: 10px;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .p-matomete-about
     .p-matomete-about__upper-content
     .p-matomete-about__upper-content-col {
@@ -385,7 +383,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   border-radius: 10px;
   background-color: #f1e7fd;
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .p-matomete-about .p-matomete-about__card {
     min-height: auto;
   }
@@ -460,13 +458,13 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   text-align: center;
   background-color: #fff;
 }
-@media only screen and (min-width: 640px) {
+@media (min-width: 640px) {
   .p-photocolle__comp {
     font-size: 16px;
     padding: 40px;
   }
 }
-@media only screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-photocolle__comp {
     font-size: 16px;
     padding: 60px;
@@ -476,12 +474,12 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   font-size: 18px;
   color: #ff9558;
 }
-@media only screen and (min-width: 640px) {
+@media (min-width: 640px) {
   .p-photocolle__comp .p-photocolle__comp__thanks-copy {
     font-size: 21px;
   }
 }
-@media only screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .p-photocolle__comp .p-photocolle__comp__thanks-copy {
     font-size: 27px;
   }
@@ -530,7 +528,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   margin-right: auto;
   margin-left: auto;
 }
-@media only screen and (min-width: 975px) {
+@media (min-width: 975px) {
   .p-favorite-list__tab {
     max-width: 100%;
   }
@@ -583,86 +581,6 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   width: 100%;
   display: block;
   padding: 5px 0;
-}
-
-#recommender_pc111 .dv_rc_title::after,
-#recommender_sp111 .dv_rc_title::after {
-  content: "あなたにオススメの商品";
-}
-#recommender_pc111 .dv_rc_title::before,
-#recommender_sp111 .dv_rc_title::before {
-  content: "\f004";
-}
-
-#recommender_pc121 .dv_rc_title::after,
-#recommender_sp121 .dv_rc_title::after {
-  content: "閲覧履歴";
-}
-#recommender_pc121 .dv_rc_title::before,
-#recommender_sp121 .dv_rc_title::before {
-  content: "\f00c";
-}
-
-#recommender_pc131 .dv_rc_title::after,
-#recommender_sp131 .dv_rc_title::after {
-  content: "掲載中商品人気ランキング";
-}
-#recommender_pc131 .dv_rc_title::before,
-#recommender_sp131 .dv_rc_title::before {
-  content: "\f43f";
-}
-#recommender_pc131 .dv_rc_items::before,
-#recommender_sp131 .dv_rc_items::before {
-  line-height: 21px;
-  position: absolute;
-  z-index: 1;
-  top: -1px;
-  left: -2px;
-  width: 23.63px;
-  height: 21px;
-  text-align: center;
-  color: white;
-}
-#recommender_pc131 .dv_rc_items::after,
-#recommender_sp131 .dv_rc_items::after {
-  font-family: "Font Awesome 5 Solid";
-  display: none;
-  content: "\f005";
-}
-#recommender_pc131 .dv_rc_items .svg-inline--fa,
-#recommender_sp131 .dv_rc_items .svg-inline--fa {
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 1;
-  position: absolute;
-  top: -2px;
-  right: auto;
-  bottom: auto;
-  left: -2px;
-}
-#recommender_pc131 .dv_rc_items:nth-of-type(3)::before,
-#recommender_sp131 .dv_rc_items:nth-of-type(3)::before {
-  content: "1";
-}
-#recommender_pc131 .dv_rc_items:nth-of-type(3) .svg-inline--fa,
-#recommender_sp131 .dv_rc_items:nth-of-type(3) .svg-inline--fa {
-  color: #f5c43c;
-}
-#recommender_pc131 .dv_rc_items:nth-of-type(4)::before,
-#recommender_sp131 .dv_rc_items:nth-of-type(4)::before {
-  content: "2";
-}
-#recommender_pc131 .dv_rc_items:nth-of-type(4) .svg-inline--fa,
-#recommender_sp131 .dv_rc_items:nth-of-type(4) .svg-inline--fa {
-  color: #48bfed;
-}
-#recommender_pc131 .dv_rc_items:nth-of-type(5)::before,
-#recommender_sp131 .dv_rc_items:nth-of-type(5)::before {
-  content: "3";
-}
-#recommender_pc131 .dv_rc_items:nth-of-type(5) .svg-inline--fa,
-#recommender_sp131 .dv_rc_items:nth-of-type(5) .svg-inline--fa {
-  color: #e84e96;
 }
 
 .dv_recommend {
@@ -755,7 +673,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   left: 0;
   max-width: 198px;
 }
-@media only screen and (min-width: 1270px) {
+@media (min-width: 1270px) {
   .p-card--top--mora .thumbnail,
   .p-card--top--repo .thumbnail {
     max-width: 305px;
@@ -866,7 +784,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   display: none;
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
   .p-card--top--maga {
     position: relative;
     box-sizing: content-box;
@@ -1031,7 +949,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
 .p-card__detail--sp {
   padding: 8px 2px 0;
 }
-@media only screen and (min-width: 1615px) {
+@media (min-width: 1615px) {
   .p-card__detail {
     font-size: 14px;
     padding: 10px 20px;
@@ -1201,7 +1119,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
 .p-thanks__block {
   padding: 0;
 }
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .p-thanks__block {
     padding: 20px;
   }
@@ -1223,7 +1141,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   position: relative;
   padding-right: 100px;
 }
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .p-thanks__pocke {
     padding-right: 110px;
   }
@@ -1244,7 +1162,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   background-repeat: repeat;
   content: "";
 }
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .p-thanks__pocke::after {
     background-image: url(https://image.moratame.net/images/detail/pocke.png);
   }
@@ -1259,7 +1177,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   font-size: 24px;
   line-height: 1.5;
 }
-@media only screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .p-thanks__balloon {
     text-align-last: left;
     font-size: 18px;
@@ -1588,9 +1506,6 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
 /* ------------------------------
 css/style--pc.css の上書きスタイル
 ------------------------------ */
-.p-masthead__labels li {
-  vertical-align: bottom;
-}
 
 .icoBar06.md.detail-label {
   margin-bottom: 3px;
@@ -1808,12 +1723,7 @@ PC
   top: -8px;
 }
 
-@media only screen and (min-width: 1270px) {
-  .p-masthead__labels {
-    position: relative;
-    width: 367px !important;
-  }
-
+@media (min-width: 1270px) {
   .c-masthead-clip-list {
     padding: 8px 3px 7px;
   }
