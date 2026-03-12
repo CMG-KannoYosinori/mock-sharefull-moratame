@@ -47,9 +47,9 @@
 {% endif %}
 
       <!-- footer -->
-      <footer>
+      <footer role="contentinfo">
         <div id="footer">
-          <ul class="footer-global__nav">
+          <ul class="footer-global__nav" role="navigation" aria-label="フッターメインナビゲーション">
             <li class="footer-global__nav-list">
               <a href="{{ top_href }}">トップ</a>
             </li>
@@ -63,7 +63,7 @@
               <a href="{{ mymenu_href }}">マイページ</a>
             </li>
           </ul>
-          <ul>
+          <ul aria-label="フッター関連リンク">
             <li>
               <a href="https://privacy.cccmkhd.co.jp/privacy-policy/" target="_blank">個人に関わる情報の取扱いについて</a>
             </li>
