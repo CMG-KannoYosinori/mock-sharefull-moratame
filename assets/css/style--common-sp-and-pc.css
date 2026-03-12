@@ -262,31 +262,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   background-color: #a985eb;
 }
 
-.c-label--masthead {
-  display: none;
-  @media (min-width: 960px) {
-    font-size: 10px;
-    line-height: 24px;
-    display: block;
-    box-sizing: border-box;
-    width: 95px;
-    padding-right: 5px;
-    padding-left: 5px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #004098;
-    margin-left: auto;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    display: block;
-  }
-}
-.c-label--masthead:link,
-.c-label--masthead:visited,
-.c-label--masthead:hover,
-.c-label--masthead:active {
-  color: #fff;
-}
+
 
 .c-icon--favorite {
   position: absolute;
@@ -655,27 +631,23 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   background-color: #fff;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.07);
 }
-.p-card--top--mora,
-.p-card--top--repo {
+.p-card--top--mora {
   position: relative;
   box-sizing: content-box;
   min-height: 158px;
 }
-.p-card--top--mora li,
-.p-card--top--repo li {
+.p-card--top--mora li {
   display: inline-block;
   margin-right: 10px;
 }
-.p-card--top--mora .thumbnail,
-.p-card--top--repo .thumbnail {
+.p-card--top--mora .thumbnail {
   position: absolute;
   top: 0;
   left: 0;
   max-width: 198px;
 }
 @media (min-width: 1270px) {
-  .p-card--top--mora .thumbnail,
-  .p-card--top--repo .thumbnail {
+  .p-card--top--mora .thumbnail {
     max-width: 305px;
   }
 }
@@ -1584,12 +1556,7 @@ SP and PC
   color: white;
 }
 
-.c-label--masthead-clip-list:hover,
-.c-label--masthead-clip-list:visited,
-.c-label--masthead-clip-list:active,
-.c-label--masthead-clip-list:link {
-  color: white !important;
-}
+
 
 /* ------------------------------
 /SP and PC

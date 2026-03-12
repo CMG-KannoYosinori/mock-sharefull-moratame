@@ -15,13 +15,11 @@
 
     <title>6-2-1 会員情報入力 入力内容確認 SMS 認証画面</title>
     <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="/mock-sharefull-moratame/assets/js/clips.js"></script>
-    <script src="/mock-sharefull-moratame/assets/js/helper-sp.js"></script>
-
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/html5-doctor-reset-stylesheet.min.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/common.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.3078.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--sp.css" />
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/layout.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/module.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/reset-old-style--jp.css" />
@@ -37,8 +35,6 @@
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css">
 
     <script src="/mock-sharefull-moratame/assets/js/inputimg.js"></script>
-
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/p9255-top--sp.css" />
 
     
   </head>
@@ -74,18 +70,10 @@
       <header class="p-masthead" role="banner">
         <div class="l-conteiner">
           <div class="p-masthead__top_box header-contents">
-            <a class="c-label--masthead" href="/mock-sharefull-moratame/index.html">ログアウト</a>
             <div class="p-masthead__top">
-              <div class="p-masthead__labels-sns-btns-wrap pc">
-                <div class="p9225-masthead__buttons">
-                  <ul>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <!-- /topMenu_pc -->
               <!-- topMenu_sp -->
-              <div class="sp-header-menu sp" role="navigation" aria-label="スマートフォン用メインメニュー">
+              <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
+                <img src="https://placehold.jp/30/dd6699/ffffff/col-xs-4 col-md-3 col-lg-31280x480.png?text=シェアフル+ヘッダー" alt="" style="width: auto; height: 100%;">
                 <div class="sp-header-menu_component sp-header-menu_component-logout">
                   <a href="/mock-sharefull-moratame/index.html">
                     <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
@@ -104,7 +92,7 @@
               </div>
               <!-- /topMenu_sp -->
             </div>
-            <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=シェアフル+ヘッダー" alt="" class="u-img">
+
           </div>
 
           <!-- HBGmenu_Open -->
@@ -171,19 +159,26 @@
           <!-- /accordion-menu -->
 
           <!-- topTabMenu_pc -->
+          
+          
+          
+          
+
+          
+
           <nav aria-label="トップページタブメニュー">
             <ul class="p-masthead__nav p-masthead__nav_toppage">
-              <li class="p-masthead__nav__top">
-                <a href="/mock-sharefull-moratame/index.html">トップ</a>
+              <li class=" p-masthead__nav__top">
+                <a href="/mock-sharefull-moratame/index.html" class="p-masthead__nav-item">トップ</a>
               </li>
-              <li class="p-masthead__nav__tame">
-                <a href="/mock-sharefull-moratame/detail/tamesulist.html">ためせる</a>
+              <li class=" p-masthead__nav__tame">
+                <a href="/mock-sharefull-moratame/detail/tamesulist.html" class="p-masthead__nav-item">ためせる</a>
               </li>
               <li class="p-masthead__nav__mora">
-                <a href="/mock-sharefull-moratame/detail/moraulist.html">もらえる</a>
+                <a href="/mock-sharefull-moratame/detail/moraulist.html" class="p-masthead__nav-item">もらえる</a>
               </li>
               <li class="p-masthead__nav__mise">
-                <a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a>
+                <a href="/mock-sharefull-moratame/mymenu/basic.html" class="p-masthead__nav-item">マイページ</a>
               </li>
             </ul>
           </nav>
@@ -192,57 +187,51 @@
       </header>
       <!-- //p-masthead -->
 
-      </div>
-
-      <!-- cliplist -->
-
-      <div class="content">
-        <div class="title title_other">
-          SMS認証コード入力
-        </div>
-        <div class="container">
-          <div class="block">
-            <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;">
-              <div class="block_inner">
-                <div>
-                  <p>音声ガイダンスで届いた６桁の認証コードを入力してください</p>
+        <div class="content">
+          <div class="title title_other">
+            SMS認証コード入力
+          </div>
+          <div class="container">
+            <div class="block">
+              <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;">
+                <div class="block_inner">
+                  <div>
+                    <p>音声ガイダンスで届いた６桁の認証コードを入力してください</p>
+                  </div>
+                  <div class="error" id="errmsgfil"><span id="errmsg">認証コードの形式が異なります。</span></div>
+                  <div class="mt_10">
+                    <label>電話番号</label>
+                    <ul class="smsListUl">
+                      <li class="smsListLiConfirm">
+                        <div class="smsListLiPd">
+                          <p class="f13"></p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="">
+                    <label>認証コード</label>
+                    <ul class="smsListUl">
+                      <li class="smsListLi">
+                        <div class="smsListLiPd">
+                          <input type="text" id="authcode" value="" placeholder="認証コード" data-theme="d" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="error" id="errmsgfil"><span id="errmsg">認証コードの形式が異なります。</span></div>
-                <div class="mt_10">
-                  <label>電話番号</label>
-                  <ul class="smsListUl">
-                    <li class="smsListLiConfirm">
-                      <div class="smsListLiPd">
-                        <p class="f13"></p>
-                      </div>
-                    </li>
-                  </ul>
+                <div class="block_inner" data-mini="true">
+                  <button type="button" rel="external" onclick="javascript:ajax_auth_confirm()" ;>認証</button>
                 </div>
-                <div class="">
-                  <label>認証コード</label>
-                  <ul class="smsListUl">
-                    <li class="smsListLi">
-                      <div class="smsListLiPd">
-                        <input type="text" id="authcode" value="" placeholder="認証コード" data-theme="d" />
-                      </div>
-                    </li>
-                  </ul>
+                <div class="block_inner smsAuth-back-button">
+                  <input type="hidden" name="sms_input_url" value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378" id="smsInputUrl">
+                  <button type="button" rel="external" formmethod="get" onclick="javascript:returnInput();">戻る</button>
                 </div>
-              </div>
-              <div class="block_inner" data-mini="true">
-                <button type="button" rel="external" onclick="javascript:ajax_auth_confirm()" ;>認証</button>
-              </div>
-              <div class="block_inner smsAuth-back-button">
-                <input type="hidden" name="sms_input_url" value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378" id="smsInputUrl">
-                <button type="button" rel="external" formmethod="get" onclick="javascript:returnInput();">戻る</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <script src="../assets/js/smsauthconfirm.js" charset="UTF-8"></script>
-
-      
+        
 
   
   
@@ -291,25 +280,10 @@
         <a href="#pageTop">▲ページトップへ</a>
       </p>
 
-
-
-
-
+      </div>
     </div>
-    </div>
-
+    <script src="../assets/js/smsauthconfirm.js" charset="UTF-8"></script>
+    <script type="module" src="../assets/js/main.js"></script>
   </body>
-
-
-
-  <div class="p9255-sticky-button" style="z-index: 9999;">
-    <a href="https://stg.moratame.net/s/contents/signup00.php" data-track-trigger="click-a" data-track-name="floating-register-btn">
-      <img src="../assets/images/improvement/9255/images/9255-sticky-button.png" alt="" width="380" height="382">
-    </a>
-    <span class="p9255-sticky-button-close">×</span>
-  </div>
-  <script type="module" src="../assets/js/main.js"></script>
-  <script type="text/javascript" src="../assets/js/moratame_s_common.js?2026030513"></script>
-  <script type="text/javascript" src="../assets/js/p9255-scripts.js?2026030513"></script>
 
 </html>

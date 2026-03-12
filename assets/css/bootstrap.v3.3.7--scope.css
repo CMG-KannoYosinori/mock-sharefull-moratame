@@ -143,10 +143,6 @@
 .bootstrap-v3-3-7--scope .container-fluid:after {
   clear: both;
 }
-.bootstrap-v3-3-7--scope .row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
 .bootstrap-v3-3-7--scope .row:before, .bootstrap-v3-3-7--scope .row:after {
   content: " ";
   display: table;
