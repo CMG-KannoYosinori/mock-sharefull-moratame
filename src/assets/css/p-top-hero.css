@@ -1,0 +1,44 @@
+/* project: top hero swiper */
+.p-top-hero {
+  margin-bottom: 24px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.p-top-hero__swiper {
+  overflow: visible;
+}
+
+.p-top-hero__swiper .swiper-slide {
+  width: 70%;
+  opacity: 1;
+}
+
+@media (min-width: 960px) {
+  .p-top-hero__swiper .swiper-slide {
+    width: 60%;
+  }
+}
+
+.p-top-hero__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.p-top-hero__tabs .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.p-top-hero__tabs .swiper-pagination-bullet-active {
+  background: #dd6699;
+  color: #fff;
+}
+

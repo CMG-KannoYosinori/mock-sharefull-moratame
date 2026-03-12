@@ -3,6 +3,11 @@
 
   <head>
     {% assign page_title = 'シェアフル 1-1 トップページ' %}
+    {% capture head_extra %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <link rel="stylesheet" href="assets/css/p-top-hero.css">
+    {% endcapture %}
     {% include 'head' %}
   </head>
 
@@ -12,7 +17,30 @@
       <div class="main">
         <div class="contents cf contents--responsive">
           <div class="">
-            <div><img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー画像" alt="" class="u-img"></div>
+            <div class="p-top-hero">
+              <div class="swiper p-top-hero__swiper" aria-label="おすすめキャンペーン">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー1" alt="おすすめキャンペーン1" class="u-img">
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/6699dd/ffffff/1280x480.png?text=バナー2" alt="おすすめキャンペーン2" class="u-img">
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/99dd66/ffffff/1280x480.png?text=バナー3" alt="おすすめキャンペーン3" class="u-img">
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide">
+                    <img src="https://placehold.jp/30/99aa66/ffffff/1280x480.png?text=バナー4" alt="おすすめキャンペーン4" class="u-img">
+                  </div>
+                </div>
+
+                <button class="swiper-button-prev" type="button" aria-label="前のバナー"></button>
+                <button class="swiper-button-next" type="button" aria-label="次のバナー"></button>
+
+                <div class="p-top-hero__tabs" role="tablist" aria-label="バナー切り替えタブ"></div>
+              </div>
+            </div>
+
             <div class=" pr-tame pr-content">
               <div class="heading xx-large enclosingBtn withIcon">
                 <h1>
@@ -452,6 +480,7 @@
 
     <script src="assets/js/t.js"></script>
     <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/p-top-hero.js"></script>
   </body>
 
 </html>
