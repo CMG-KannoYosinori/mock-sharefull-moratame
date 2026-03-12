@@ -240,11 +240,12 @@ header .header-contents {
   list-style-type: none;
 }
 
-#menu li {
+#menu li a {
   padding: 10px 0 10px 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   line-height: 1.8;
+  display: block;
 }
 
 #menu .menu-close {
@@ -278,6 +279,13 @@ header .header-contents {
   font-size: 10px;
   cursor: pointer;
   box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
 }
 @media only screen and (max-width: 530px) {
   #menu_btn {
@@ -314,10 +322,20 @@ header .header-contents {
   padding-left: 0;
 }
 #menu .menu__item .menu__item__link {
-  display: block;
-  padding-bottom: 10px;
-  padding-left: 15px;
   color: #fff;
+  border: none;
+  margin: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  line-height: 1.8;
+  display: block;
 }
 #menu .menu__item .menu__item__link:after {
   content: "\f13a";
@@ -461,7 +479,7 @@ body .select-area label {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 9;
     height: 62px;
     background-color: #fff;
   }
