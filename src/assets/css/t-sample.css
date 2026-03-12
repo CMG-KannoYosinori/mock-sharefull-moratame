@@ -455,6 +455,18 @@ body .select-area label {
   right: 0;
 }
 
+@media (max-width: 959px) {
+  .p-masthead .sp-header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 62px;
+    background-color: #fff;
+  }
+}
+
 .p-masthead .sp-header-menu_component {
   position: absolute;
   top: 0;
