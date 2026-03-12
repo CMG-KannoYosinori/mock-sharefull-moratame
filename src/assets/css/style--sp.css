@@ -12633,12 +12633,6 @@ div.ui-panel a.ui-link {
   background-position: -22px -23px;
 }
 
-.icon_repo {
-  width: 30px;
-  height: 26px;
-  background-position: -194px -56px;
-}
-
 .icon_schedule {
   width: 23px;
   height: 25px;
@@ -13738,7 +13732,6 @@ div#header div#alert span.noshadow {
   display: inline-block;
   padding: 4px;
   min-width: 10px;
-  height: 10px;
   font-size: 10px;
   font-weight: normal;
   line-height: 10px;
@@ -13862,9 +13855,6 @@ div#header div#alert span.noshadow {
 }
 .label.label-mora {
   background-color: #e74224;
-}
-.label.label-repo {
-  background-color: #eb651a;
 }
 .label.label-mynews {
   font-size: 14px;
@@ -14291,10 +14281,6 @@ button.btn01 {
 .hgroup.photocolle {
   border-color: #8bbc00;
   background-image: url(https://image.moratame.net/img2014/icons/ico17.png);
-}
-.hgroup.repo {
-  border-color: #eb6519;
-  background-image: url(https://image.moratame.net/img2014/icons/ico14.png);
 }
 .hgroup .page-header {
   font-size: 16px;

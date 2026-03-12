@@ -452,38 +452,6 @@ Modifierは以下のとおりです。
   width: 100% !important;
 }
 
-.before_reviews {
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.before_reviews .icon_rgt {
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-.before_reviews-attention {
-  font-size: 14px;
-}
-
-.before_reviews-attention h3 {
-  font-weight: bold;
-}
-
-.before_reviews-attention .before_reviews-attention--danger {
-  padding: 10px;
-  border: 1px solid #ef9a9a;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #ffebee;
-  color: #f44336;
-}
-
-.before_reviews-attention .before_reviews-attention--danger h4 {
-  font-weight: bold;
-}
 
 .cmt__textarea {
   display: block;
@@ -10743,17 +10711,6 @@ h3.rankNum {
   margin: -10px 0 10px;
 }
 
-/*btnbar*/
-#scrollContainer {
-  position: fixed;
-  right: 5px;
-  bottom: 5px;
-  z-index: 6;
-  width: 40px;
-  height: 40px;
-  background-image: url(https://image.moratame.net/images/common/arrow_toPageTop.png);
-  background-size: 40px 40px;
-}
 
 /* cart
 ------------------------------------------------ */
@@ -12676,12 +12633,6 @@ div.ui-panel a.ui-link {
   background-position: -22px -23px;
 }
 
-.icon_repo {
-  width: 30px;
-  height: 26px;
-  background-position: -194px -56px;
-}
-
 .icon_schedule {
   width: 23px;
   height: 25px;
@@ -13781,7 +13732,6 @@ div#header div#alert span.noshadow {
   display: inline-block;
   padding: 4px;
   min-width: 10px;
-  height: 10px;
   font-size: 10px;
   font-weight: normal;
   line-height: 10px;
@@ -13905,9 +13855,6 @@ div#header div#alert span.noshadow {
 }
 .label.label-mora {
   background-color: #e74224;
-}
-.label.label-repo {
-  background-color: #eb651a;
 }
 .label.label-mynews {
   font-size: 14px;
@@ -14334,10 +14281,6 @@ button.btn01 {
 .hgroup.photocolle {
   border-color: #8bbc00;
   background-image: url(https://image.moratame.net/img2014/icons/ico17.png);
-}
-.hgroup.repo {
-  border-color: #eb6519;
-  background-image: url(https://image.moratame.net/img2014/icons/ico14.png);
 }
 .hgroup .page-header {
   font-size: 16px;

@@ -88,17 +88,6 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-}
-
 noscript {
   font-size: 14px;
   font-weight: 700;
