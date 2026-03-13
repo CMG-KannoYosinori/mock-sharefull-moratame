@@ -693,10 +693,6 @@
     10%;
   background-color: #e8d89c;
 }
-.btnSquare01wrap .btnSquare01.btnBeige01:active {
-  margin: 2px 0 -2px;
-  box-shadow: none;
-}
 .btnSquare01wrap .btnSquare01.x-small {
   font-size: 16px;
 }

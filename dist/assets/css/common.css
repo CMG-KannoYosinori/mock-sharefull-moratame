@@ -54,7 +54,7 @@ vertical-align
 }
 
 .bgcMora {
-  background: #F25932;
+  background: #f25932;
 }
 
 .bgcCCC {
@@ -62,7 +62,7 @@ vertical-align
 }
 
 .bgcEEE {
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 .bgstr1 {
@@ -152,24 +152,16 @@ vertical-align
   clear: both;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
 /* /clear
 ---------------------------------------------------------- */
 /* color
 ---------------------------------------------------------- */
 .c-fff {
-  color: #FFF;
+  color: #fff;
 }
 
 .c-f00 {
-  color: #F00;
+  color: #f00;
 }
 
 .c-f60 {
@@ -230,134 +222,134 @@ vertical-align
 ---------------------------------------------------------- */
 /*maruFork*/
 @font-face {
-  font-family: 'A-OTF-MaruFoPro-Bold';
+  font-family: "A-OTF-MaruFoPro-Bold";
   src: url("https://image.moratame.net/css/font/A-OTF-MaruFoPro-Bold.otf") format("opentype");
 }
 .maruFork {
-  font-family: 'A-OTF-MaruFoPro-Bold';
+  font-family: "A-OTF-MaruFoPro-Bold";
 }
 
 /*ShinGoPro*/
 @font-face {
-  font-family: 'A-OTF-ShinGoPro-Light_1';
+  font-family: "A-OTF-ShinGoPro-Light_1";
   src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Light_1.otf") format("opentype");
 }
 .shingo_L {
-  font-family: 'A-OTF-ShinGoPro-Light_1';
+  font-family: "A-OTF-ShinGoPro-Light_1";
 }
 
 @font-face {
-  font-family: 'A-OTF-ShinGoPro-Regular_1';
+  font-family: "A-OTF-ShinGoPro-Regular_1";
   src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Regular_1.otf") format("opentype");
 }
 .shingo_R {
-  font-family: 'A-OTF-ShinGoPro-Regular_1';
+  font-family: "A-OTF-ShinGoPro-Regular_1";
 }
 
 @font-face {
-  font-family: 'A-OTF-ShinGoPro-Medium_1';
+  font-family: "A-OTF-ShinGoPro-Medium_1";
   src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Medium_1.otf") format("opentype");
 }
 .shingo_M {
-  font-family: 'A-OTF-ShinGoPro-Medium_1';
+  font-family: "A-OTF-ShinGoPro-Medium_1";
 }
 
 @font-face {
-  font-family: 'A-OTF-ShinGoPro-Bold_1';
+  font-family: "A-OTF-ShinGoPro-Bold_1";
   src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Bold_1.otf") format("opentype");
 }
 .shingo_B {
-  font-family: 'A-OTF-ShinGoPro-Bold_1';
+  font-family: "A-OTF-ShinGoPro-Bold_1";
 }
 
 @font-face {
-  font-family: 'A-OTF-ShinGoPro-Heavy_1';
+  font-family: "A-OTF-ShinGoPro-Heavy_1";
   src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Heavy_1.otf") format("opentype");
 }
 .shingo_H {
-  font-family: 'A-OTF-ShinGoPro-Heavy_1';
+  font-family: "A-OTF-ShinGoPro-Heavy_1";
 }
 
 @font-face {
-  font-family: 'A-OTF-ShinGoPro-Ultra_1';
+  font-family: "A-OTF-ShinGoPro-Ultra_1";
   src: url("https://image.moratame.net/css/font/A-OTF-ShinGoPro-Ultra_1.otf") format("opentype");
 }
 .shingo_U {
-  font-family: 'A-OTF-ShinGoPro-Ultra_1';
+  font-family: "A-OTF-ShinGoPro-Ultra_1";
 }
 
 /*Jun*/
 @font-face {
-  font-family: 'A-OTF-Jun101Pro-Light';
+  font-family: "A-OTF-Jun101Pro-Light";
   src: url("https://image.moratame.net/css/font/A-OTF-Jun101Pro-Light.otf") format("opentype");
 }
 .jun101 {
-  font-family: 'A-OTF-Jun101Pro-Light';
+  font-family: "A-OTF-Jun101Pro-Light";
 }
 
 @font-face {
-  font-family: 'A-OTF-Jun201Pro-Regular';
+  font-family: "A-OTF-Jun201Pro-Regular";
   src: url("https://image.moratame.net/css/font/A-OTF-Jun201Pro-Regular.otf") format("opentype");
 }
 .jun201 {
-  font-family: 'A-OTF-Jun201Pro-Regular';
+  font-family: "A-OTF-Jun201Pro-Regular";
 }
 
 @font-face {
-  font-family: 'A-OTF-Jun501Pro-Bold_1';
+  font-family: "A-OTF-Jun501Pro-Bold_1";
   src: url("https://image.moratame.net/css/font/A-OTF-Jun501Pro-Bold_1.otf") format("opentype");
 }
 .jun501 {
-  font-family: 'A-OTF-Jun501Pro-Bold_1';
+  font-family: "A-OTF-Jun501Pro-Bold_1";
 }
 
 /*小塚ゴシック*/
 @font-face {
-  font-family: 'KozGoPro-ExtraLight_1';
+  font-family: "KozGoPro-ExtraLight_1";
   src: url("https://image.moratame.net/css/font/KozGoPro-ExtraLight_1.otf") format("opentype");
 }
 .kozGoProEL {
-  font-family: 'KozGoPro-ExtraLight_1';
+  font-family: "KozGoPro-ExtraLight_1";
 }
 
 @font-face {
-  font-family: 'KozGoPro-Light_1';
+  font-family: "KozGoPro-Light_1";
   src: url("https://image.moratame.net/css/font/KozGoPro-Light_1.otf") format("opentype");
 }
 .kozGoProL {
-  font-family: 'KozGoPro-Light_1';
+  font-family: "KozGoPro-Light_1";
 }
 
 @font-face {
-  font-family: 'KozGoPro-Regular_1';
+  font-family: "KozGoPro-Regular_1";
   src: url("https://image.moratame.net/css/font/KozGoPro-Regular_1.otf") format("opentype");
 }
 .kozGoProR {
-  font-family: 'KozGoPro-Regular_1';
+  font-family: "KozGoPro-Regular_1";
 }
 
 @font-face {
-  font-family: 'KozGoPro-Medium_1';
+  font-family: "KozGoPro-Medium_1";
   src: url("https://image.moratame.net/css/font/KozGoPro-Medium_1.otf") format("opentype");
 }
 .kozGoProM {
-  font-family: 'KozGoPro-Medium_1';
+  font-family: "KozGoPro-Medium_1";
 }
 
 @font-face {
-  font-family: 'KozGoPro-Bold_1';
+  font-family: "KozGoPro-Bold_1";
   src: url("https://image.moratame.net/css/font/KozGoPro-Bold_1.otf") format("opentype");
 }
 .kozGoProB {
-  font-family: 'KozGoPro-Bold_1';
+  font-family: "KozGoPro-Bold_1";
 }
 
 @font-face {
-  font-family: 'KozGoPro-Heavy_1';
+  font-family: "KozGoPro-Heavy_1";
   src: url("https://image.moratame.net/css/font/KozGoPro-Heavy_1.otf") format("opentype");
 }
 .kozGoProH {
-  font-family: 'KozGoPro-Heavy_1';
+  font-family: "KozGoPro-Heavy_1";
 }
 
 /* /font
@@ -392,7 +384,8 @@ vertical-align
   font-weight: normal;
 }
 
-.fw-b, .fnt-wgt-b {
+.fw-b,
+.fnt-wgt-b {
   font-weight: bold;
 }
 
@@ -480,7 +473,7 @@ vertical-align
 }
 
 .mb1em {
-  margin-bottom: 1.0em;
+  margin-bottom: 1em;
 }
 
 /* margin-left */

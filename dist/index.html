@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    
-    
-    
+      
 
   
   
@@ -53,9 +50,9 @@
     <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/css/p-top-hero.css">
+    <link rel="stylesheet" href="assets/css/p-top-hero.css" />
     
 
   </head>
@@ -67,9 +64,7 @@
   
   
   
-  
     
-  
   
     
     
@@ -80,152 +75,189 @@
   
 
 
-      <!-- 共通ヘッダー -->
-      <header class="p-masthead" role="banner">
-        <div class="l-conteiner">
-          <div class="p-masthead__top_box header-contents">
-            <div class="p-masthead__top">
-              <!-- topMenu_sp -->
-              <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-                <img src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ" alt="" style="width: auto; height: 100%;" width="480" height="160">
-                <div class="sp-header-menu_component sp-header-menu_component-logout">
-                  <a href="index.html">
-                    <img alt="ログアウト" src="assets/images/btn-logout.png">
-                    <span class="u-visually-hidden">ログアウト</span>
-                  </a>
-                </div>
-                <button
-                  class="sp-header-menu_component sp-header-menu_component-hbg"
-                  id="menu_btn"
-                  type="button"
-                  aria-controls="menu"
-                  aria-expanded="false"
-                >
-                  MENU
-                </button>
-              </div>
-              <!-- /topMenu_sp -->
-            </div>
+<!-- 共通ヘッダー -->
+<header class="p-masthead" role="banner">
+  <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
+    <a href="index.html">
+      <img
+        src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ"
+        alt=""
+        style="width: auto; height: 100%;"
+        width="480"
+        height="160"
+      >
+    </a>
+    <div class="sp-header-menu_component sp-header-menu_component-logout">
+      <a href="index.html">
+        <img alt="ログアウト" src="assets/images/btn-logout.png">
+        <span class="u-visually-hidden">ログアウト</span>
+      </a>
+    </div>
+    <button
+      class="sp-header-menu_component sp-header-menu_component-hbg"
+      id="menu_btn"
+      type="button"
+      aria-controls="menu"
+      aria-expanded="false"
+    >
+      MENU
+    </button>
 
-          </div>
+    <!-- HBGmenu_Open -->
+    <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
+        ×
+      </button>
+      <ul>
+        <!-- category -->
+        <li class="menu__item">
+          <button class="menu__item__link js-menu__item__link" type="button">カテゴリ</button>
+          <ul class="submenu" style="display: none">
+            <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+            <li>
+              <a href="detail/tamesulist.html">
+                <img src="assets/images/ico21.png" width="18" height="18" alt="">
+                食品（9）
+              </a>
+            </li>
+            <li class="t-sidemenu-sub-ttl">マイページ</li>
+            <li><a href="mymenu/basic.html">マイページ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="detail/moraulist.html">家族配送（4）</a>
+        </li>
+        <!-- /category -->
+        <li>
+          <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/wp/cs/">FAQ</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
+        </li>
+        <li>
+          <a href="contents/trade/index.html">特定商取引表示</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-background" aria-hidden="true"></div>
+    <!-- /HBGmenu_Open -->
 
-          <!-- HBGmenu_Open -->
-          <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-            <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-              ×
-            </button>
-            <ul>
-              <!-- category -->
-              <li class="menu__item">
-                <button class="menu__item__link js-menu__item__link" type="button">
-                  カテゴリ
-                </button>
-                <ul class="submenu" style="display: none;">
-                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li>
-                    <a href="detail/tamesulist.html">
-                      <img src="assets/images/ico21.png" width="18" height="18" alt="">
-                      食品（9）
-                    </a>
-                  </li>
-                  <li class="t-sidemenu-sub-ttl">マイページ</li>
-                  <li><a href="mymenu/basic.html">マイページ</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="detail/moraulist.html">家族配送（4）</a>
-              </li>
-              <!-- /category -->
-              <li>
-                <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/wp/cs/">FAQ</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
-              </li>
-              <li>
-                <a href="contents/trade/index.html">特定商取引表示</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu-background" aria-hidden="true"></div>
-          <!-- /HBGmenu_Open -->
+    <!-- accordion-menu -->
+    <script>
+      $(function () {
+        $('.js-menu__item__link').each(function () {
+          $(this).on('click', function () {
+            $(this).toggleClass('on');
+            $('+.submenu', this).slideToggle();
+            return false;
+          });
+        });
+        $('.p-masthead__soon').on('click', function () {
+          $('#p-masthead__soon').toggle();
+        });
+        $(document).on('click', '.s_boxHeadline', function () {
+          $('#p-masthead__soon').css('display', 'none');
+        });
+      });
+    </script>
+    <!-- /accordion-menu -->
 
-          <!-- accordion-menu -->
-          <script>
-            $(function () {
-              $('.js-menu__item__link').each(function () {
-                $(this).on('click', function () {
-                  $(this).toggleClass('on');
-                  $('+.submenu', this).slideToggle();
-                  return false;
-                });
-              });
-              $('.p-masthead__soon').on('click', function () { $('#p-masthead__soon').toggle(); });
-              $(document).on('click', '.s_boxHeadline', function () { $('#p-masthead__soon').css('display', 'none'); });
-            });
-          </script>
-          <!-- /accordion-menu -->
-
-          <!-- topTabMenu_pc -->
-          
-          
-          
-          <nav aria-label="トップページタブメニュー">
-            <ul class="p-masthead__nav p-masthead__nav_toppage">
-              <li class=" p-masthead__nav__top is-active">
-                <a href="index.html" class="p-masthead__nav-item is-active">トップ</a>
-              </li>
-              <li class=" p-masthead__nav__tame">
-                <a href="detail/tamesulist.html" class="p-masthead__nav-item">ためせる</a>
-              </li>
-              <li class="p-masthead__nav__mora">
-                <a href="detail/moraulist.html" class="p-masthead__nav-item">もらえる</a>
-              </li>
-              <li class="p-masthead__nav__mise">
-                <a href="mymenu/basic.html" class="p-masthead__nav-item">マイページ</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /topTabMenu_pc -->
-        </div>
-      </header>
-      <!-- //p-masthead -->
+    <!-- topTabMenu_pc -->
+    
+    
+    
+    </div>
+  <nav aria-label="トップページタブメニュー">
+    <ul class="p-masthead__nav p-masthead__nav_toppage">
+      <li class=" p-masthead__nav__top is-active">
+        <a href="index.html" class="p-masthead__nav-item is-active">トップ</a>
+      </li>
+      <li class=" p-masthead__nav__tame">
+        <a href="detail/tamesulist.html" class="p-masthead__nav-item">ためせる</a>
+      </li>
+      <li class="p-masthead__nav__mora">
+        <a href="detail/moraulist.html" class="p-masthead__nav-item">もらえる</a>
+      </li>
+      <li class="p-masthead__nav__mise">
+        <a href="mymenu/basic.html" class="p-masthead__nav-item">マイページ</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /topTabMenu_pc -->
+</header>
+<!-- //p-masthead -->
 
       <div class="p-top-hero">
         <div class="swiper p-top-hero__swiper" aria-label="おすすめキャンペーン">
           <ul class="swiper-wrapper">
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー1" alt="おすすめキャンペーン1" class="u-img">
+              <img
+                src="https://placehold.jp/30/dd6699/ffffff/1280x480.png?text=バナー1"
+                alt="おすすめキャンペーン1"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/6699dd/ffffff/1280x480.png?text=バナー2" alt="おすすめキャンペーン2" class="u-img">
+              <img
+                src="https://placehold.jp/30/6699dd/ffffff/1280x480.png?text=バナー2"
+                alt="おすすめキャンペーン2"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/99dd66/ffffff/1280x480.png?text=バナー3" alt="おすすめキャンペーン3" class="u-img">
+              <img
+                src="https://placehold.jp/30/99dd66/ffffff/1280x480.png?text=バナー3"
+                alt="おすすめキャンペーン3"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/dd99aa/ffffff/1280x480.png?text=バナー4" alt="おすすめキャンペーン4" class="u-img">
+              <img
+                src="https://placehold.jp/30/dd99aa/ffffff/1280x480.png?text=バナー4"
+                alt="おすすめキャンペーン4"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/88ccff/ffffff/1280x480.png?text=バナー5" alt="おすすめキャンペーン5" class="u-img">
+              <img
+                src="https://placehold.jp/30/88ccff/ffffff/1280x480.png?text=バナー5"
+                alt="おすすめキャンペーン5"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/ffcc88/ffffff/1280x480.png?text=バナー6" alt="おすすめキャンペーン6" class="u-img">
+              <img
+                src="https://placehold.jp/30/ffcc88/ffffff/1280x480.png?text=バナー6"
+                alt="おすすめキャンペーン6"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/aa88ff/ffffff/1280x480.png?text=バナー7" alt="おすすめキャンペーン7" class="u-img">
+              <img
+                src="https://placehold.jp/30/aa88ff/ffffff/1280x480.png?text=バナー7"
+                alt="おすすめキャンペーン7"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/88ffcc/ffffff/1280x480.png?text=バナー8" alt="おすすめキャンペーン8" class="u-img">
+              <img
+                src="https://placehold.jp/30/88ffcc/ffffff/1280x480.png?text=バナー8"
+                alt="おすすめキャンペーン8"
+                class="u-img"
+              />
             </li>
             <li class="swiper-slide" role="group" aria-roledescription="slide">
-              <img src="https://placehold.jp/30/ff88cc/ffffff/1280x480.png?text=バナー9" alt="おすすめキャンペーン9" class="u-img">
+              <img
+                src="https://placehold.jp/30/ff88cc/ffffff/1280x480.png?text=バナー9"
+                alt="おすすめキャンペーン9"
+                class="u-img"
+              />
             </li>
           </ul>
 
@@ -240,18 +272,24 @@
           <div class="pr-tame pr-content">
             <h2 class="heading xx-large enclosingBtn withIcon">
               <span class="icoWrap">
-                <img alt="" height="75" src="assets/images/icon-tame.png" width="76">
+                <img alt="" height="75" src="assets/images/icon-tame.png" width="76" />
               </span>
               <span class="">少額でためせる</span>
               <span class="heading__sub-title">送料関係費のみで色々な商品がおトクに試せる</span>
             </h2>
-            <div class=" tame ta-list">
+            <div class="tame ta-list">
               <ul class="l-card-items">
                 <li class="">
                   <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="商品名">
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -259,7 +297,8 @@
                       <p>
                         <a href="detail/tamesu.html">商品名</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">9</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -267,10 +306,19 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコード10件A">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame-pickup"
+                    title="ギフトコード10件A"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -278,7 +326,8 @@
                       <p>
                         <a href="detail/tamesu.html">ギフトコード10件A</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">9</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -286,10 +335,19 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="ギフトコードPJT0120">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame-pickup"
+                    title="ギフトコードPJT0120"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -297,7 +355,8 @@
                       <p>
                         <a href="detail/tamesu.html">ギフトコードPJT0120</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">97</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -305,10 +364,19 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame-pickup" title="CCCMK様ご確認用ギフトコードPJT">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame-pickup"
+                    title="CCCMK様ご確認用ギフトコードPJT"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -316,7 +384,8 @@
                       <p>
                         <a href="detail/tamesu.html">CCCMK様ご確認用ギフトコードPJT</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">97</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -325,36 +394,60 @@
                 </li>
 
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコードK5 200件">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="ギフトコードK5 200件"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>クーポンクラ…</p>
                       <p class="">
-                        <a href="detail/tamesu.html" class="u-text-ellipsis">ギフトコードK5 200件</a>
+                        <a href="detail/tamesu.html" class="u-text-ellipsis"
+                          >ギフトコードK5 200件</a
+                        >
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">198</span>
                       </p>
                     </div>
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンB">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="MTSD-14548 少数クーポンB"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>クーポンクラ…</p>
                       <p class="">
-                        <a href="detail/tamesu.html" class="u-text-ellipsis">MTSD-14548 少数クーポンB</a>
+                        <a href="detail/tamesu.html" class="u-text-ellipsis"
+                          >MTSD-14548 少数クーポンB</a
+                        >
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">8</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -362,18 +455,30 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="MTSD-14548 少数クーポンA">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="MTSD-14548 少数クーポンA"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>クーポンクラ…</p>
                       <p class="">
-                        <a href="detail/tamesu.html" class="u-text-ellipsis">MTSD-14548 少数クーポンA</a>
+                        <a href="detail/tamesu.html" class="u-text-ellipsis"
+                          >MTSD-14548 少数クーポンA</a
+                        >
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">9</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -381,10 +486,19 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="ギフトコード3万件">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="ギフトコード3万件"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -392,7 +506,8 @@
                       <p class="">
                         <a href="detail/tamesu.html" class="u-text-ellipsis">ギフトコード3万件</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">29,995</span>
                       </p>
                       <p class="badge cardBadge recommend">オススメ</p>
@@ -400,10 +515,19 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="クーポンテスト2">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="クーポンテスト2"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -411,7 +535,8 @@
                       <p class="">
                         <a href="detail/tamesu.html" class="u-text-ellipsis">クーポンテスト2</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">4</span>
                       </p>
                       <p class="badge cardBadge few">残りわずか</p>
@@ -419,18 +544,30 @@
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="LORETTA AIMER ミストケアオイル">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="LORETTA AIMER ミストケアオイル"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>テスト</p>
                       <p class="">
-                        <a href="detail/tamesu.html" class="u-text-ellipsis">LORETTA AIMER ミストケアオイル</a>
+                        <a href="detail/tamesu.html" class="u-text-ellipsis"
+                          >LORETTA AIMER ミストケアオイル</a
+                        >
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">997</span>
                       </p>
                     </div>
@@ -440,7 +577,13 @@
                   <div class="p-card p-card--top blockLink heightLine--tame" title="重複OK2">
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -448,7 +591,8 @@
                       <p class="">
                         <a href="detail/tamesu.html" class="u-text-ellipsis">重複OK2</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">4,972</span>
                       </p>
                       <p class="icoBar06 repeat">リピート可</p>
@@ -459,7 +603,13 @@
                   <div class="p-card p-card--top blockLink heightLine--tame" title="重複OK">
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/ccc/ffffff/640x640.png?text=eye-catch+tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
@@ -467,100 +617,158 @@
                       <p class="">
                         <a href="detail/tamesu.html" class="u-text-ellipsis">重複OK</a>
                       </p>
-                      <p class="count">残り
+                      <p class="count">
+                        残り
                         <span class="c_red fw_b">4,974</span>
                       </p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="l-card-items--tame">
+              <ul class="l-card-items--tame">
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="プロファイルチェック用Attoos（大阪除外）">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="プロファイルチェック用Attoos（大阪除外）"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>小林製薬　　</p>
                       <p class="">
                         <a href="detail/tamesu.html" class="u-text-ellipsis">
-                          プロファイルチェック用Attoos… </a>
+                          プロファイルチェック用Attoos…
+                        </a>
                       </p>
-                      <p class="count">
-                        残り<span class="c_red fw_b">495</span>
-                      </p>
+                      <p class="count">残り<span class="c_red fw_b">495</span></p>
                     </div>
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="ポイント決済用少額">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="ポイント決済用少額"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>テスト　</p>
                       <p class="">
                         <a href="detail/tamesu.html" class="u-text-ellipsis">
-                          ポイント決済用少額 </a>
+                          ポイント決済用少額
+                        </a>
                       </p>
-                      <p class="count">
-                        残り<span class="c_red fw_b">9,931</span>
-                      </p>
+                      <p class="count">残り<span class="c_red fw_b">9,931</span></p>
                       <p class="badge cardBadge recommend">オススメ</p>
                     </div>
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="重複有り,家族有り">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="重複有り,家族有り"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>テスト　</p>
                       <p class="">
                         <a href="detail/tamesu.html" 　class="u-text-ellipsis">
-                          重複有り,家族有り </a>
+                          重複有り,家族有り
+                        </a>
                       </p>
-                      <p class="count">
-                        残り<span class="c_red fw_b">9,844</span>
-                      </p>
+                      <p class="count">残り<span class="c_red fw_b">9,844</span></p>
                       <p class="badge cardBadge recommend">オススメ</p>
                     </div>
                   </div>
                 </li>
                 <li class="">
-                  <div class="p-card p-card--top blockLink heightLine--tame" title="重複有り,家族有り">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="重複有り,家族有り"
+                  >
                     <p class="item">
                       <a href="detail/tamesu.html">
-                        <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品名" width="640" height="640" class="item thumbnail">
+                        <img
+                          src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
                       </a>
                     </p>
                     <div class="p-card__detail">
                       <p>テスト　</p>
                       <p class="">
-                        <a href="detail/tamesu.html" class="u-text-ellipsis">
-                          重複有り,家族有り </a>
+                        <a href="detail/tamesu.html" class="u-text-ellipsis"> 重複有り,家族有り </a>
                       </p>
-                      <p class="count">
-                        残り<span class="c_red fw_b">9,844</span>
-                      </p>
+                      <p class="count">残り<span class="c_red fw_b">9,844</span></p>
                       <p class="badge cardBadge recommend">オススメ</p>
                     </div>
                   </div>
                 </li>
-              </div>
+                <li class="">
+                  <div
+                    class="p-card p-card--top blockLink heightLine--tame"
+                    title="重複有り,家族有り"
+                  >
+                    <p class="item">
+                      <a href="detail/tamesu.html">
+                        <img
+                          src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame"
+                          alt="商品名"
+                          width="640"
+                          height="640"
+                          class="item thumbnail"
+                        />
+                      </a>
+                    </p>
+                    <div class="p-card__detail">
+                      <p>テスト　</p>
+                      <p class="">
+                        <a href="detail/tamesu.html" class="u-text-ellipsis"> 重複有り,家族有り </a>
+                      </p>
+                      <p class="count">残り<span class="c_red fw_b">9,844</span></p>
+                      <p class="badge cardBadge recommend">オススメ</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
               <div class="mt_20">
                 <p class="ta_c fz_14">今ためせるのは <span class="c_red">15</span> 商品</p>
                 <p class="btnSquare01wrap">
-                  <a class="btnSquare01 btnBeige01" href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧はこちら
+                  <a class="btnSquare01 btnBeige01" href="detail/tamesulist.html"
+                    >ためせる商品一覧はこちら
                     <span class="arrow">
-                      <img alt="" height="32" src="assets/images/arrow03.png" width="20">
+                      <img alt="" height="32" src="assets/images/arrow03.png" width="20" />
                     </span>
                   </a>
                 </p>
@@ -571,7 +779,7 @@
           <div class="pr-mora pr-content">
             <h2 class="heading xx-large enclosingBtn withIcon">
               <span class="icoWrap">
-                <img alt="" height="79" src="assets/images/icon-mora.png" width="64">
+                <img alt="" height="79" src="assets/images/icon-mora.png" width="64" />
               </span>
               <span class="">無料でもらえる</span>
               <span class="heading__sub-title">応募者の中から選考で商品をお試しいただけます</span>
@@ -579,19 +787,25 @@
             <ul class="l-card-items--mora">
               <li class="">
                 <a class="blockLink" href="detail/morau.html">
-                  <div class="p-card p-card--top p-card--top--mora heightLine--mora" title="モラご確認用B">
-                    <img alt="商品名" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638" class="u-img thumbnail">
-                    <div class="p-card__detail" style="min-height:76px;">
+                  <div
+                    class="p-card p-card--top p-card--top--mora heightLine--mora"
+                    title="モラご確認用B"
+                  >
+                    <img
+                      alt="商品名"
+                      height="240"
+                      src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora"
+                      width="638"
+                      class="u-img thumbnail"
+                    />
+                    <div class="p-card__detail" style="min-height: 76px">
                       <p>テスト</p>
                       <p class="u-text-ellipsis">モラご確認用B</p>
                       <ul>
-                        <li class="number">提供数
-                          <span class="c_red fw_b">
-                            100 </span>名
-                        </li>
-                        <li class="number">応募締切
-                          <span class="c_red fw_b">
-                            360日前 </span>
+                        <li class="number">提供数 <span class="c_red fw_b"> 100 </span>名</li>
+                        <li class="number">
+                          応募締切
+                          <span class="c_red fw_b"> 360日前 </span>
                         </li>
                       </ul>
                     </div>
@@ -600,19 +814,25 @@
               </li>
               <li class="">
                 <a class="blockLink" href="detail/morau.html">
-                  <div class="p-card p-card--top p-card--top--mora heightLine--mora" title="モラご確認用A">
-                    <img alt="商品名" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638" class="u-img thumbnail">
-                    <div class="p-card__detail" style="min-height:76px;">
+                  <div
+                    class="p-card p-card--top p-card--top--mora heightLine--mora"
+                    title="モラご確認用A"
+                  >
+                    <img
+                      alt="商品名"
+                      height="240"
+                      src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora"
+                      width="638"
+                      class="u-img thumbnail"
+                    />
+                    <div class="p-card__detail" style="min-height: 76px">
                       <p>テスト</p>
                       <p class="u-text-ellipsis">モラご確認用A</p>
                       <ul>
-                        <li class="number">提供数
-                          <span class="c_red fw_b">
-                            100 </span>名
-                        </li>
-                        <li class="number">応募締切
-                          <span class="c_red fw_b">
-                            360日前 </span>
+                        <li class="number">提供数 <span class="c_red fw_b"> 100 </span>名</li>
+                        <li class="number">
+                          応募締切
+                          <span class="c_red fw_b"> 360日前 </span>
                         </li>
                       </ul>
                     </div>
@@ -621,19 +841,25 @@
               </li>
               <li class="">
                 <a class="blockLink" href="detail/morau.html">
-                  <div class="p-card p-card--top p-card--top--mora heightLine--mora" title="Vサンプル真冬のビタミンキャンペーン！">
-                    <img alt="商品名" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638" class="u-img thumbnail">
-                    <div class="p-card__detail" style="min-height:76px;">
+                  <div
+                    class="p-card p-card--top p-card--top--mora heightLine--mora"
+                    title="Vサンプル真冬のビタミンキャンペーン！"
+                  >
+                    <img
+                      alt="商品名"
+                      height="240"
+                      src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora"
+                      width="638"
+                      class="u-img thumbnail"
+                    />
+                    <div class="p-card__detail" style="min-height: 76px">
                       <p>テスト</p>
                       <p class="u-text-ellipsis">Vサンプル真冬のビタミンキャンペーン！</p>
                       <ul>
-                        <li class="number">提供数
-                          <span class="c_red fw_b">
-                            1 </span>名
-                        </li>
-                        <li class="number">応募締切
-                          <span class="c_red fw_b">
-                            203日前 </span>
+                        <li class="number">提供数 <span class="c_red fw_b"> 1 </span>名</li>
+                        <li class="number">
+                          応募締切
+                          <span class="c_red fw_b"> 203日前 </span>
                         </li>
                       </ul>
                       <p class="badge cardBadge already">応募済み</p>
@@ -645,18 +871,20 @@
 
             <div class="mt_20">
               <p class="btnSquare01wrap">
-                <a class="btnSquare01 btnBeige01" href="https://stg.tsample.tsite.jp/detail/moraulist.php">もらえる商品一覧はこちら
+                <a class="btnSquare01 btnBeige01" href="detail/moraulist.html"
+                  >もらえる商品一覧はこちら
                   <span class="arrow">
-                    <img alt="" height="32" src="assets/images/arrow03.png" width="20">
+                    <img alt="" height="32" src="assets/images/arrow03.png" width="20" />
                   </span>
                 </a>
               </p>
             </div>
             <!-- /btnGroup -->
-
           </div>
-        </div><!-- /contents -->
-      </div><!-- /main -->
+        </div>
+        <!-- /contents -->
+      </div>
+      <!-- /main -->
       
 
   
@@ -717,10 +945,8 @@
     </div>
     <!-- /body-wrapper -->
 
-
     <script src="assets/js/t.js"></script>
     <script type="module" src="assets/js/main.js"></script>
     <script type="module" src="assets/js/p-top-hero.js"></script>
   </body>
-
 </html>
