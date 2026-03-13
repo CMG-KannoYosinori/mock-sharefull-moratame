@@ -20,6 +20,17 @@
   }
 }
 
+@media (min-width: 768px) {
+  .p-top-hero__swiper .swiper-slide {
+    width: auto;
+  }
+  .p-top-hero__swiper .swiper-slide .u-img {
+    width: 640px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .p-top-hero__tabs {
   display: flex;
   justify-content: center;
