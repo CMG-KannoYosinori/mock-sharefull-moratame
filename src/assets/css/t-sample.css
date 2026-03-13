@@ -466,11 +466,11 @@ body .select-area label {
   }
 }
 
-body.bootstrap-v3-3-7--scope {
+body {
   padding-top: 51px;
 }
 @media (min-width: 768px) {
-  body.bootstrap-v3-3-7--scope {
+  body {
     padding-top: 62px;
   }
 }

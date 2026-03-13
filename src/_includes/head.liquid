@@ -35,7 +35,9 @@
 
     <title>{{ page_title }}</title>
 
+    {% if page_use_bootstrap %}
     <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/properties.css">
     <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/main.css">
