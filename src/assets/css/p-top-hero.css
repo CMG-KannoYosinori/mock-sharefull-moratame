@@ -55,14 +55,32 @@
 
 .swiper-button-next,
 .swiper-button-prev {
+  display: none;
   border-radius: 9999px;
   height: 18px;
   width: 18px;
   background: #999;
   border: none;
 }
+.swiper-button-next {
+  left: 50%;
+  margin-left: 330px;
+}
+.swiper-button-prev {
+  left: 50%;
+  margin-left: -350px;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   color: #ddd;
   font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
