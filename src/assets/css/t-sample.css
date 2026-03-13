@@ -316,6 +316,11 @@ header .header-contents {
   opacity: 1;
 }
 
+/* ドロワー開時は下レイヤーの縦スクロールを防止 */
+body.is-drawer-open {
+  overflow: hidden;
+}
+
 /* accordion -------------------------------------------------*/
 #menu .menu__item {
   padding-bottom: 0;
@@ -638,13 +643,12 @@ body.bootstrap-v3-3-7--scope {
 }
 .p-masthead__nav-item {
   color: #004098;
-    font-weight: bold;
-  
+  font-weight: bold;
+
   &.is-active {
     border-bottom: 4px solid #004098;
   }
 }
-
 
 /* primary ------------------------------------------*/
 .primary {
@@ -1060,7 +1064,6 @@ body.bootstrap-v3-3-7--scope {
     display: none;
   }
 }
-
 
 .sideBnr img {
   width: 100%;
