@@ -1,109 +1,3 @@
-@charset "UTF-8";
-/*
-PC, SP 共通のCSS
-
-$xxs:  "only screen and (max-width:399px)"; // 399px or less
-$xs:  "only screen and (min-width:400px) and (max-width:640px)"; // 400px to 640px
-$sm:  "only screen and (min-width:641px) and (max-width:960px)"; // 641px to 960px
-$md:  "only screen and (min-width:961px)"; // 961px or more
-*/
-/*
-  @media (min-width: 1270px) // 1295px 以上
-  {
-    max-width: 1280px;
-  }
-
-  bootstrap
-
-  .col-xs 975px 以下
-  .col-sm 975px ~ 1294px
-  .col-md 1295px ~ 1614px
-  .col-lg 1615px 以上
-
-  参考サイズ
-
-  Mobile S: 320px;
-  Mobile M: 375px;
-  Mobile L: 425px;
-  Tablet: 768px;
-  Laptop: 1024px;
-  Laptop L: 1440px;
-  4k: 2560px;
-
-
-*/
-.cardContainer {
-  border-collapse: collapse;
-}
-@media (max-width: 974px) {
-  .cardContainer {
-    max-width: 702px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-.cardContainer--sp {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.cardContainer--sp .col-md-3,
-.cardContainer--sp .col-lg-3,
-.cardContainer--sp .col-sm-4,
-.cardContainer--sp .col-xs-6 {
-  padding-right: 5px;
-  padding-left: 5px;
-}
-.cardContainer--pc-top-page {
-  border: none;
-  background: none;
-}
-.cardContainer .row .card {
-  position: relative;
-  display: table-cell;
-  border: 1px dotted #e6e4dd;
-}
-.cardContainer .row .card .count {
-  font-size: 14px;
-}
-.cardContainer.tame {
-  display: table;
-}
-.cardContainer .thumbnail {
-  width: 100%;
-  height: auto;
-}
-.cardContainer.mora {
-  position: relative;
-  display: block;
-  width: 448px;
-  min-height: 152px;
-  padding: 20px 10px 10px 180px;
-}
-.cardContainer.mora .item {
-  position: absolute;
-  top: 11px;
-  left: 11px;
-  width: 160px;
-}
-.cardContainer.mora .number {
-  font-size: 14px;
-  display: inline;
-}
-
-.lt-ie8 .cardContainer {
-  border: none;
-}
-.lt-ie8 .cardContainer .row {
-  overflow: hidden;
-}
-.lt-ie8 .cardContainer .row .card {
-  float: left;
-  width: 191px;
-}
-.lt-ie8 .cardContainer.ta-list .card {
-  width: 138px;
-}
-
 /* badge
 ---------------------------------------------------------*/
 .badge {
@@ -261,8 +155,6 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
 .icoBar06.matomete {
   background-color: #a985eb;
 }
-
-
 
 .c-icon--favorite {
   position: absolute;
@@ -1545,8 +1437,6 @@ SP and PC
 .p-clip-lists__no-clips a:visited {
   color: white;
 }
-
-
 
 /* ------------------------------
 /SP and PC

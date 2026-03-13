@@ -176,7 +176,6 @@ body {
 /* grid system */
 .l-card-items {
   display: grid;
-  padding: 0 8px;
   gap: 8px;
   grid-template-columns: repeat(2, 1fr);
   @media (min-width: 425px) {
@@ -188,7 +187,6 @@ body {
 }
 .l-card-items--tame {
   display: grid;
-  padding: 0 8px;
   gap: 8px;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
@@ -201,7 +199,6 @@ body {
 }
 .l-card-items--mora {
   display: grid;
-  padding: 0 8px;
   gap: 8px;
   grid-template-columns: repeat(1, 1fr);
   @media (min-width: 768px) {
@@ -209,3 +206,11 @@ body {
   }
 }
 /* grid system */
+
+.l-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}

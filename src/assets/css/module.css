@@ -415,8 +415,6 @@
 /* B
 -----------------------------------------------------------
 ---------------------------------------------------------*/
-/* cardContainer
----------------------------------------------------------*/
 .balloon {
   background-color: #e8e5d6;
   -moz-border-radius: 5px;
@@ -663,13 +661,14 @@
   box-shadow: none;
 }
 .btnSquare01wrap .btnSquare01.btnBeige01 {
-  -moz-box-shadow: 0 2px 0 #d9c05e;
-  -webkit-box-shadow: 0 2px 0 #d9c05e;
   box-shadow: 0 2px 0 #d9c05e;
   text-shadow: 0 1px 0 #d9c05e;
   background-color: #e3d087;
   color: #535353;
   position: relative;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btnSquare01wrap .btnSquare01.btnBeige01 .arrow {
   position: absolute;
@@ -702,9 +701,6 @@
   font-size: 16px;
 }
 .btnSquare01wrap .btnSquare01.small {
-  font-size: 16px;
-}
-.btnSquare01wrap .btnSquare01.medium {
   font-size: 16px;
 }
 .btnSquare01wrap .btnSquare01.large {
@@ -871,9 +867,6 @@
   text-shadow: 0 1px 0 #bfbfbf;
   background-color: #929292;
 }
-.btnSquare02wrap .btnSquare02.medium {
-  font-size: 16px;
-}
 .btnSquare02wrap .btnSquare02.large {
   font-size: 18px;
 }
@@ -1003,9 +996,6 @@
 }
 .btnSquare03wrap .btnSquare03.x-small {
   font-size: 12px;
-}
-.btnSquare03wrap .btnSquare03.medium {
-  font-size: 16px;
 }
 .btnSquare03wrap .btnSquare03.large {
   font-size: 18px;
@@ -2044,9 +2034,6 @@ form input::-moz-placeholder {
   padding-left: 45px;
   position: relative;
 }
-.heading.xx-large.enclosingBtn {
-  padding-right: 160px;
-}
 .heading.xx-large.enclosingBtn .btnWrap {
   position: absolute;
   right: 0px;
@@ -2123,22 +2110,6 @@ form input::-moz-placeholder {
   width: 36px;
   height: auto;
   vertical-align: bottom;
-}
-.heading.medium {
-  font-size: 18px;
-  font-weight: bold;
-}
-.heading.medium.withBdl {
-  padding: 0 10px;
-  border-left: 5px solid #ff6600;
-}
-.heading.medium.withBdl02 {
-  padding: 0 10px;
-  border-left: 5px solid #f7eb1c;
-}
-.heading.medium.withBdl03 {
-  padding: 0 10px;
-  border-left: 5px solid #0070bd;
 }
 .heading.withBdl04 {
   padding: 0 10px;
