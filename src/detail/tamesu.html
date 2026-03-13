@@ -1,69 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    {% assign page_use_bootstrap = true %}
-    {% assign page_title = '重複OK2 ためせる｜Vポイントが貯まる・使える Vサンプル' %}
-    {% capture head_extra %}
+    {% assign page_use_bootstrap = true %} {% assign page_title = '商品名 Lorem, ipsum. ためせる｜Vポイントが貯まる・使える Vサンプル' %} {% capture head_extra %}
+    <link rel="stylesheet" type="text/css" href="../assets/css/pass_monitor.css" />
+
     <script>
       $(function () {
-        $(document).on('click', "[id^='order-button']", function () {
-          var $adultPermission = $('#adult-permission');
+        $(document).on("click", "[id^='order-button']", function () {
+          var $adultPermission = $("#adult-permission");
 
-          if ($adultPermission.length && !$adultPermission.prop('checked')) {
-            alert('20歳以上の方はチェックを入れてください');
+          if ($adultPermission.length && !$adultPermission.prop("checked")) {
+            alert("20歳以上の方はチェックを入れてください");
 
             return;
           }
 
-          var $orderMatome = $('#order_matome');
+          var $orderMatome = $("#order_matome");
 
-          if ($orderMatome.length && $orderMatome.val() == '0') {
-            alert('セット数を選んでください');
+          if ($orderMatome.length && $orderMatome.val() == "0") {
+            alert("セット数を選んでください");
             return;
           }
 
-          $('#form-order').submit();
+          $("#form-order").submit();
         });
 
         $(document).on("change", "[id^='adult-permission']", function () {
-
-          if ($("#" + this.id).prop('checked')) {
+          if ($("#" + this.id).prop("checked")) {
             $("[id^='adult-permission']").prop("checked", true);
           } else {
             $("[id^='adult-permission']").prop("checked", false);
           }
-
         });
       });
     </script>
-    {% endcapture %}
-    {% include 'head' %}
+    {% endcapture %} {% include 'head' %}
   </head>
 
   <body class="bootstrap-v3-3-7--scope itemDetail">
     <div class="body-wrapper">
       {% include 'header' %}
       <div class="main">
-        <div class="contents cf contents--responsive">
+        <div class="l-container">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
-              <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞ためせる商品詳細</p>
+              <p class="breadCrumbs mb_10">
+                <a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a>
+                ＞ためせる商品詳細
+              </p>
               <!-- /breadCrumbs -->
-
 
               <div class="t-sub-header">
                 <h2>商品詳細</h2>
               </div>
               <!-- /sub header -->
               <div class="t-head">
-                <h2 class="t-head__text">重複OK2</h2>
+                <h2 class="t-head__text">商品名 Lorem, ipsum.</h2>
               </div>
 
               <div class="t-bx__wrapper">
                 <div class="t-bx__viewport">
                   <div class="bx">
                     <div class="t-bx__slide">
+                      <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品画像" width="640" height="640" class="u-img" />
                     </div>
                   </div>
                 </div>
@@ -92,13 +91,11 @@
                           <th>
                             <p>配送関連費</p>
                             <p class="t-text__ex">(1セット当たり)</p>
-                            <a href="https://ssl.help.tsite.jp/faq/show/56342?category_id=5726&site_domain=qa-tsite" class="t-text__ex" target="_blank">
-                              ※配送関連費とは
-                            </a>
+                            <a href="https://ssl.help.tsite.jp/faq/show/56342?category_id=5726&site_domain=qa-tsite" class="t-text__ex" target="_blank"> ※配送関連費とは </a>
                           </th>
                           <td class="">
-                            <p class="cost-em"><em><span id="area_price"></span></em></p>
-                            <select name="area_price" id="area_price_select" style="display:none;">
+                            <p id="area_price" class="cost-em"></p>
+                            <select name="area_price" id="area_price_select" style="display: none">
                               <option value="">455円(税込500円)</option>
                               <option value="1">546円(税込600円)</option>
                               <option value="2">455円(税込500円)</option>
@@ -109,24 +106,30 @@
                               <option value="7">455円(税込500円)</option>
                               <option value="8">637円(税込700円)</option>
                               <option value="9">728円(税込800円)</option>
-
                             </select>
-                            <br>
+                            <br />
                             <div class="balloon__cost">この費用だけで試せます！</div>
-                            <p class="t-text__ex">※配送地域によって、<br class="min">配送関連費が異なります。</p>
+                            <p class="t-text__ex">※配送地域によって、<br class="min" />配送関連費が異なります。</p>
                           </td>
                         </tr>
                         <tr>
-                          <th>参考価格<br><a href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&site_domain=qa-tsite
-" class="t-text__ex" target="_blank">※参考価格とは</a></th>
+                          <th>
+                            参考価格<br /><a
+                              href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&site_domain=qa-tsite
+"
+                              class="t-text__ex"
+                              target="_blank"
+                              >※参考価格とは</a
+                            >
+                          </th>
                           <td>2,710円(税別)</td>
                         </tr>
                         <tr>
                           <th>
                             <p>配送地域</p>
                           </th>
-                          <td class="" style="padding: 0px;">
-                            <div class="" style="border: none;">
+                          <td class="" style="padding: 0px">
+                            <div class="" style="border: none">
                               <div class="c-form__select">
                                 <select required name="shipment_area" id="shipment_area">
                                   <option value="">選択してください</option>
@@ -139,7 +142,6 @@
                                   <option value="7">四国</option>
                                   <option value="8">九州</option>
                                   <option value="9">沖縄・離島</option>
-
                                 </select>
                               </div>
                             </div>
@@ -152,7 +154,7 @@
                           </th>
                           <td class="">
                             <p><span id="t_point"></span></p>
-                            <select name="t_point" id="point_select" style="display:none;">
+                            <select name="t_point" id="point_select" style="display: none">
                               <option value="">2 ポイント</option>
                               <option value="1">3 ポイント</option>
                               <option value="2">2 ポイント</option>
@@ -163,7 +165,6 @@
                               <option value="7">2 ポイント</option>
                               <option value="8">3 ポイント</option>
                               <option value="9">4 ポイント</option>
-
                             </select>
                             <div class="balloon__point">申し込むとVポイントをGET！</div>
                             <div class="t-text__ex">※クーポンを利用していない場合の獲得Vポイント数です。</div>
@@ -171,17 +172,18 @@
                         </tr>
                         <tr>
                           <th>申込可能数</th>
-                          <td>各100セット
+                          <td>
+                            各100セット
                             <div class="t-text">
-                              <div class="t-caption">
-                                (自宅：残り99セット / 家族：残り100セット)
-                              </div>
+                              <div class="t-caption">(自宅：残り99セット / 家族：残り100セット)</div>
                             </div>
                           </td>
                         </tr>
                         <tr>
                           <th>発送予定日</th>
-                          <td>2025年09月30日(火)<div class="t-text">
+                          <td>
+                            2025年09月30日(火)
+                            <div class="t-text">
                               <div class="t-caption">
                                 <p class="t-caption__text">配送に関する注意事項をご一読ください</p>
                               </div>
@@ -192,136 +194,9 @@
                           <th>終了日時</th>
                           <td>2026年12月11日(金) 23時59分</td>
                         </tr>
-
                       </tbody>
                     </table>
-                    <form id="form-order" method="post" action="https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=fadd8" class="t-form">
-                      <input type="hidden" name="project_id" value="fadd8">
-                      <input type="hidden" name="test" value="">
-                      <input type="hidden" name="fst" value="1">
-                      <input type="hidden" name="shipment_area" value="">
-                      <input type="hidden" name="entry_site_flg" value="0">
-                      <br>
-                      <input name="delimatome" type="hidden" value="1">
-                      <input name="matomemax" type="hidden" id="matomemax" value="99">
-                      <div class="detail__select-area" style="text-align: center; margin-top: initial;">
-                        <script>
-                          $(document).ready(function () {
-                            // selectと同じようにonchangeでラベルを変えたいときはJSを用いる
-                            $('.detail__select').on('change', function () {
-                              var $this = $(this)
-                              var $option = $this.find('option:selected');
-                              $('.detail__select-label').text($option.text());
-                              // onchange後にフォーカスしてるのが嫌な場合
-                              $this.blur();
-                            });
-                          });
-                        </script>
-                        <div class="detail__select-label">1セット</div>
-                        <select name="order_matome" id="order_matome" class="detail__select">
-                          <option value="0">セット数を選んでください。</option>
-                          <option value="1" selected>1セット</option>
-                          <option value="2">2セット</option>
-                          <option value="3">3セット</option>
-                          <option value="4">4セット</option>
-                          <option value="5">5セット</option>
-                          <option value="6">6セット</option>
-                          <option value="7">7セット</option>
-                          <option value="8">8セット</option>
-                          <option value="9">9セット</option>
-                          <option value="10">10セット</option>
-                          <option value="11">11セット</option>
-                          <option value="12">12セット</option>
-                          <option value="13">13セット</option>
-                          <option value="14">14セット</option>
-                          <option value="15">15セット</option>
-                          <option value="16">16セット</option>
-                          <option value="17">17セット</option>
-                          <option value="18">18セット</option>
-                          <option value="19">19セット</option>
-                          <option value="20">20セット</option>
-                          <option value="21">21セット</option>
-                          <option value="22">22セット</option>
-                          <option value="23">23セット</option>
-                          <option value="24">24セット</option>
-                          <option value="25">25セット</option>
-                          <option value="26">26セット</option>
-                          <option value="27">27セット</option>
-                          <option value="28">28セット</option>
-                          <option value="29">29セット</option>
-                          <option value="30">30セット</option>
-                          <option value="31">31セット</option>
-                          <option value="32">32セット</option>
-                          <option value="33">33セット</option>
-                          <option value="34">34セット</option>
-                          <option value="35">35セット</option>
-                          <option value="36">36セット</option>
-                          <option value="37">37セット</option>
-                          <option value="38">38セット</option>
-                          <option value="39">39セット</option>
-                          <option value="40">40セット</option>
-                          <option value="41">41セット</option>
-                          <option value="42">42セット</option>
-                          <option value="43">43セット</option>
-                          <option value="44">44セット</option>
-                          <option value="45">45セット</option>
-                          <option value="46">46セット</option>
-                          <option value="47">47セット</option>
-                          <option value="48">48セット</option>
-                          <option value="49">49セット</option>
-                          <option value="50">50セット</option>
-                          <option value="51">51セット</option>
-                          <option value="52">52セット</option>
-                          <option value="53">53セット</option>
-                          <option value="54">54セット</option>
-                          <option value="55">55セット</option>
-                          <option value="56">56セット</option>
-                          <option value="57">57セット</option>
-                          <option value="58">58セット</option>
-                          <option value="59">59セット</option>
-                          <option value="60">60セット</option>
-                          <option value="61">61セット</option>
-                          <option value="62">62セット</option>
-                          <option value="63">63セット</option>
-                          <option value="64">64セット</option>
-                          <option value="65">65セット</option>
-                          <option value="66">66セット</option>
-                          <option value="67">67セット</option>
-                          <option value="68">68セット</option>
-                          <option value="69">69セット</option>
-                          <option value="70">70セット</option>
-                          <option value="71">71セット</option>
-                          <option value="72">72セット</option>
-                          <option value="73">73セット</option>
-                          <option value="74">74セット</option>
-                          <option value="75">75セット</option>
-                          <option value="76">76セット</option>
-                          <option value="77">77セット</option>
-                          <option value="78">78セット</option>
-                          <option value="79">79セット</option>
-                          <option value="80">80セット</option>
-                          <option value="81">81セット</option>
-                          <option value="82">82セット</option>
-                          <option value="83">83セット</option>
-                          <option value="84">84セット</option>
-                          <option value="85">85セット</option>
-                          <option value="86">86セット</option>
-                          <option value="87">87セット</option>
-                          <option value="88">88セット</option>
-                          <option value="89">89セット</option>
-                          <option value="90">90セット</option>
-                          <option value="91">91セット</option>
-                          <option value="92">92セット</option>
-                          <option value="93">93セット</option>
-                          <option value="94">94セット</option>
-                          <option value="95">95セット</option>
-                          <option value="96">96セット</option>
-                          <option value="97">97セット</option>
-                          <option value="98">98セット</option>
-                          <option value="99">99セット</option>
-                          <option value="100">100セット</option>
-                        </select>
-                      </div>
+                    <form id="form-order" class="t-form">
                       <div class="t-text">
                         <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                         <p>※お支払い方法はクレジットカードとVポイントがご利用頂けます。</p>
@@ -329,13 +204,10 @@
                       <div class="t-point-block t-point-border">
                         <span>Vポイント : 10,000pt保有</span>
                       </div>
-                      <div class="tame-vpoint-announce">
-                        <img src="../assets/images/v-detail.png" alt="商品のおためしでVポイントが貯まる！">
+                      <p class="family-balloon w-80per-c">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
+                      <div class="t-button t-button2">
+                        <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
                       </div>
-                      <p class="family-balloon w-80per-c">
-                        この商品はご自宅以外に登録した家族宛てにも送ることができます
-                      </p>
-                      <div class="t-button t-button2"><button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button></div>
                     </form>
                   </div>
                 </div>
@@ -346,83 +218,84 @@
                   <h2 class="t-crosshead__text">商品説明</h2>
                 </div>
               </div>
-              <div style="margin-top: 10px;">
-                <div id="g3">
-                  重複100可能！</div>
+              <!-- 商品概要 -->
+              <div class="p-item-detail">
+                <div style="min-height: 1000px; background-color: lightpink; display: grid; place-items: center; color: white; font-size: 20px; font-weight: bold; text-align: center">
+                  <div>
+                    <p>商品概要</p>
+                    <p>配送に関する注意事項</p>
+                  </div>
+                </div>
               </div>
+              <!-- /商品概要 -->
               <div class="t-text t-attention-terms">
                 <div class="t-text">
                   <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                   <p>※お支払い方法はクレジットカードのみとなります。</p>
                 </div>
               </div>
-              <div class="tame-vpoint-announce">
-                <img src="../assets/images/v-detail.png" alt="商品のおためしでVポイントが貯まる！">
-              </div>
               <p class="txt_Alert"></p>
-              <br>
-              <p class="family-balloon w-80per-c">
-                この商品はご自宅以外に登録した家族宛てにも送ることができます
-              </p>
-              <div class="t-button t-button2"><button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button></div><br>
+              <br />
+              <p class="family-balloon w-80per-c">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
+              <div class="t-button t-button2">
+                <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
+              </div>
+              <br />
               <!-- /contents -->
-              <div class="t-button t-button2" style="margin: 0 0 40px;;">
-                <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">
-                  クチコミを再投稿する
-                </button>
+              <div class="t-button t-button2" style="margin: 0 0 40px">
+                <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを再投稿する</button>
               </div>
               <script>
                 $(function () {
-                  $(document).on('click', "[id^='review-button']", function () {
-                    window.location.href = 'https://stg.tsample.tsite.jp/detail/cmt.php?project_id=fadd8#anchor01';
+                  $(document).on("click", "[id^='review-button']", function () {
+                    window.location.href = "https://stg.tsample.tsite.jp/detail/cmt.php?project_id=fadd8#anchor01";
                   });
                 });
               </script>
               <script>
                 $(function () {
-                  $(document).on('click', "[id^='review-list-button']", function () {
-                    window.location.href = 'https://stg.tsample.tsite.jp/detail/review_list.php?project_id=fadd8';
+                  $(document).on("click", "[id^='review-list-button']", function () {
+                    window.location.href = "https://stg.tsample.tsite.jp/detail/review_list.php?project_id=fadd8";
                   });
                 });
               </script>
-
 
               <div class="heading xx-large enclosingBtn withIcon">
                 <h1>
                   <span class="icoWrap">
-                    <img alt="" height="79" src="../assets/images/icon-mymenu.png" width="64">
+                    <img alt="" height="79" src="../assets/images/icon-mymenu.png" width="64" />
                   </span>
                   <span>最新クチコミ一覧</span>
                 </h1>
               </div>
               <div class="tabContent tabContent1 active">
-                <div class="subTabBox" style="height: 20px;"></div>
+                <div class="subTabBox" style="height: 20px"></div>
                 <div class="container subTabContent subTabContent1 pt_10 active">
                   <div id="hb_mm">
                     <div id="hb_ms">
                       <section class="hb_ms_scedule" id="content">
-                        <div class="review_box schedule_box" style="margin-bottom: 20px;">
+                        <div class="review_box schedule_box" style="margin-bottom: 20px">
                           <div class="userinfo_box">
                             <div class="hb_ms_ctr">
                               <h2>
                                 <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                                <img src="../assets/images/profile_icon.gif" alt="重複OK2" width="72" height="72">
+                                <img src="../assets/images/profile_icon.gif" alt="重複OK2" width="72" height="72" />
                               </h2>
 
-                              <p class="hb_ms_detail">
-                                投稿日時：2026-02-18 17:25:58 </p>
+                              <p class="hb_ms_detail">投稿日時：2026-02-18 17:25:58</p>
                               <p class="review_line"></p>
                               <p class="review_text">
-                                クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。 </p>
-                              <p class="goodBtnWrap" style="margin: initial;">
-                                <a href="javascript:void(0);" id="goodBtn96" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('fadd8', '96', 'df85fc397aa8a251' ,0 ,event);">Good</a>
+                                クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。
+                              </p>
+                              <p class="goodBtnWrap" style="margin: initial">
+                                <a href="javascript:void(0);" id="goodBtn96" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('fadd8', '96', 'df85fc397aa8a251', 0, event)">Good</a>
                                 <span class="counter c_red" id="goodnum96"></span>
                               </p>
                             </div>
                           </div>
                         </div>
                       </section>
-                      <div class="t-button t-button2" style="margin: 15px 0 40px;">
+                      <div class="t-button t-button2" style="margin: 15px 0 40px">
                         <button type="button" id="review-list-button" class="t-button__green t-button__smallText t-button__yellow">この商品についてのクチコミをもっと見る</button>
                       </div>
                     </div>
@@ -431,7 +304,6 @@
               </div>
 
               <script src="../assets/js/goodup.js"></script>
-
 
               <style>
                 .review_box {
@@ -452,7 +324,7 @@
                   }
                 }
 
-                @media only screen and (max-width:639px) {
+                @media only screen and (max-width: 639px) {
                   .review_box {
                     width: 100%;
                   }
@@ -498,7 +370,7 @@
 
                 .family-balloon:after {
                   position: absolute;
-                  content: '';
+                  content: "";
                   bottom: -10px;
                   left: 50%;
                   margin-left: -5px;
@@ -529,39 +401,37 @@
               </style>
               <script>
                 $(function () {
-                  $('#shipment_area option[value=3]').prop('selected', true);
+                  $("#shipment_area option[value=3]").prop("selected", true);
                   $('input:hidden[name="shipment_area"]').val(3);
                   setAreaPrice();
                 });
 
-                $('#shipment_area').on('change', function () {
+                $("#shipment_area").on("change", function () {
                   setAreaPrice();
                 });
 
                 function setAreaPrice() {
-                  var selected_code = $('#shipment_area option:selected').val();
-                  var selected_price = $('#area_price_select option[value=' + selected_code + ']').text();
-                  var selected_point = $('#point_select option[value=' + selected_code + ']').text();
+                  var selected_code = $("#shipment_area option:selected").val();
+                  var selected_price = $("#area_price_select option[value=" + selected_code + "]").text();
+                  var selected_point = $("#point_select option[value=" + selected_code + "]").text();
                   $('input:hidden[name="shipment_area"]').val(selected_code);
-                  $('#area_price').html(selected_price);
-                  $('#t_point').html(selected_point);
+                  $("#area_price").html(selected_price);
+                  $("#t_point").html(selected_point);
                 }
               </script>
             </div>
 
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
-
-
-
-      </div><!-- /main-->
+        </div>
+        <!-- /contents -->
+      </div>
+      <!-- /main-->
       {% include 'footer' %}
     </div>
     <!-- /body-wrapper -->
@@ -582,7 +452,7 @@
 
       .family-balloon:after {
         position: absolute;
-        content: '';
+        content: "";
         bottom: -10px;
         left: 50%;
         margin-left: -5px;
@@ -596,5 +466,4 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>
