@@ -316,6 +316,11 @@ header .header-contents {
   opacity: 1;
 }
 
+/* ドロワー開時は下レイヤーの縦スクロールを防止 */
+body.is-drawer-open {
+  overflow: hidden;
+}
+
 /* accordion -------------------------------------------------*/
 #menu .menu__item {
   padding-bottom: 0;
@@ -458,15 +463,6 @@ body .select-area label {
     margin: auto;
     padding-bottom: 10px;
     width: 94%;
-  }
-}
-
-body.bootstrap-v3-3-7--scope {
-  padding-top: 51px;
-}
-@media (min-width: 768px) {
-  body.bootstrap-v3-3-7--scope {
-    padding-top: 62px;
   }
 }
 
@@ -638,13 +634,12 @@ body.bootstrap-v3-3-7--scope {
 }
 .p-masthead__nav-item {
   color: #004098;
-    font-weight: bold;
-  
+  font-weight: bold;
+
   &.is-active {
     border-bottom: 4px solid #004098;
   }
 }
-
 
 /* primary ------------------------------------------*/
 .primary {
@@ -675,11 +670,6 @@ body.bootstrap-v3-3-7--scope {
   .primary .heading__sub-title {
     display: block;
     padding-right: 0;
-  }
-}
-@media (max-width: 959px) {
-  .primary .cardContainer {
-    max-width: 100%;
   }
 }
 .primary .row {
@@ -994,26 +984,6 @@ body.bootstrap-v3-3-7--scope {
 .primary .pr-mise .p-project-lists li.filter {
   filter: contrast(0.7);
 }
-.primary .btnSquare01wrap .btnSquare01.btnBeige01 {
-  margin: auto;
-  width: 60%;
-  background-color: #fff20e;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #000;
-  text-shadow: none;
-}
-@media (max-width: 530px) {
-  .primary .btnSquare01wrap .btnSquare01.btnBeige01 {
-    width: 90%;
-    font-size: 14px;
-  }
-}
-.primary .btnSquare01wrap .btnSquare01.btnBeige01:last-child {
-  display: block;
-  clear: both;
-  margin-top: 20px;
-}
 .primary .footBnr {
   display: none;
   margin-bottom: 30px;
@@ -1060,7 +1030,6 @@ body.bootstrap-v3-3-7--scope {
     display: none;
   }
 }
-
 
 .sideBnr img {
   width: 100%;
@@ -1189,10 +1158,6 @@ body#itemList
   .sp_top_project_count {
   padding-top: 2px;
   font-size: 11px;
-}
-body#itemList .btnSquare01wrap .btnSquare01.btnBeige01 {
-  width: 100%;
-  background-color: #e5e5e5;
 }
 
 body#itemList .t-localnavi {

@@ -6,6 +6,10 @@ function initTopHeroSwiper() {
     centeredSlides: true,
     slidesPerView: 'auto',
     spaceBetween: 0,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
