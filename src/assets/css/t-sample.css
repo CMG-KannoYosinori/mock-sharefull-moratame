@@ -637,7 +637,7 @@ body .select-area label {
   font-weight: bold;
 
   &.is-active {
-    border-bottom: 4px solid #004098;
+    border-bottom: 3px solid #004098;
   }
 }
 
