@@ -11,12 +11,6 @@ export function initHamburgerMenu() {
 
   if (!header) return;
 
-  const headerHeight = header.offsetHeight;
-
-  if (main) {
-    main.style.paddingTop = headerHeight + 'px';
-  }
-
   if (!menuBtn || !menu || !menuBackground || !menuCloseBtn) return;
 
   const openMenu = () => {

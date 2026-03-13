@@ -466,15 +466,6 @@ body .select-area label {
   }
 }
 
-body {
-  padding-top: 51px;
-}
-@media (min-width: 768px) {
-  body {
-    padding-top: 62px;
-  }
-}
-
 .p-masthead .sp-header-menu {
   position: fixed;
   top: 0;
