@@ -640,17 +640,7 @@ $md:  "only screen and (min-width:961px)"; // 961px or more
   display: inline-block;
   margin-right: 10px;
 }
-.p-card--top--mora .thumbnail {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 198px;
-}
-@media (min-width: 1270px) {
-  .p-card--top--mora .thumbnail {
-    max-width: 305px;
-  }
-}
+
 .p-card--top--mitsu {
   position: relative;
   box-sizing: content-box;

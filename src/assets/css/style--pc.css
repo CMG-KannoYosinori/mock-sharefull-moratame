@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 .secondary {
   float: right;
   width: 300px;
@@ -721,19 +720,6 @@
 .p-card--top--repo li {
   display: inline-block;
   margin-right: 10px;
-}
-.p-card--top--mora .thumbnail,
-.p-card--top--repo .thumbnail {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 198px;
-}
-@media only screen and (min-width: 1270px) {
-  .p-card--top--mora .thumbnail,
-  .p-card--top--repo .thumbnail {
-    max-width: 305px;
-  }
 }
 .p-card--top--mitsu {
   position: relative;
