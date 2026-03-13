@@ -91,122 +91,123 @@
   
 
 
-      <!-- 共通ヘッダー -->
-      <header class="p-masthead" role="banner">
-        <div class="l-conteiner">
-          <div class="p-masthead__top_box header-contents">
-            <div class="p-masthead__top">
-              <!-- topMenu_sp -->
-              <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-                <img src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ" alt="" style="width: auto; height: 100%;" width="480" height="160">
-                <div class="sp-header-menu_component sp-header-menu_component-logout">
-                  <a href="/mock-sharefull-moratame/index.html">
-                    <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
-                    <span class="u-visually-hidden">ログアウト</span>
-                  </a>
-                </div>
-                <button
-                  class="sp-header-menu_component sp-header-menu_component-hbg"
-                  id="menu_btn"
-                  type="button"
-                  aria-controls="menu"
-                  aria-expanded="false"
-                >
-                  MENU
-                </button>
-              </div>
-              <!-- /topMenu_sp -->
-            </div>
+<!-- 共通ヘッダー -->
+<header class="p-masthead" role="banner">
+  <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
+    <a href="/mock-sharefull-moratame/index.html">
+      <img
+        src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ"
+        alt=""
+        style="width: auto; height: 100%;"
+        width="480"
+        height="160"
+      >
+    </a>
+    <div class="sp-header-menu_component sp-header-menu_component-logout">
+      <a href="/mock-sharefull-moratame/index.html">
+        <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
+        <span class="u-visually-hidden">ログアウト</span>
+      </a>
+    </div>
+    <button
+      class="sp-header-menu_component sp-header-menu_component-hbg"
+      id="menu_btn"
+      type="button"
+      aria-controls="menu"
+      aria-expanded="false"
+    >
+      MENU
+    </button>
 
-          </div>
+    <!-- HBGmenu_Open -->
+    <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
+        ×
+      </button>
+      <ul>
+        <!-- category -->
+        <li class="menu__item">
+          <button class="menu__item__link js-menu__item__link" type="button">カテゴリ</button>
+          <ul class="submenu" style="display: none">
+            <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+            <li>
+              <a href="/mock-sharefull-moratame/detail/tamesulist.html">
+                <img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">
+                食品（9）
+              </a>
+            </li>
+            <li class="t-sidemenu-sub-ttl">マイページ</li>
+            <li><a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/mock-sharefull-moratame/detail/moraulist.html">家族配送（4）</a>
+        </li>
+        <!-- /category -->
+        <li>
+          <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/wp/cs/">FAQ</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
+        </li>
+        <li>
+          <a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-background" aria-hidden="true"></div>
+    <!-- /HBGmenu_Open -->
 
-          <!-- HBGmenu_Open -->
-          <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-            <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-              ×
-            </button>
-            <ul>
-              <!-- category -->
-              <li class="menu__item">
-                <button class="menu__item__link js-menu__item__link" type="button">
-                  カテゴリ
-                </button>
-                <ul class="submenu" style="display: none;">
-                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li>
-                    <a href="/mock-sharefull-moratame/detail/tamesulist.html">
-                      <img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">
-                      食品（9）
-                    </a>
-                  </li>
-                  <li class="t-sidemenu-sub-ttl">マイページ</li>
-                  <li><a href="/mock-sharefull-moratame/mymenu/basic.html">マイページ</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="/mock-sharefull-moratame/detail/moraulist.html">家族配送（4）</a>
-              </li>
-              <!-- /category -->
-              <li>
-                <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/wp/cs/">FAQ</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
-              </li>
-              <li>
-                <a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu-background" aria-hidden="true"></div>
-          <!-- /HBGmenu_Open -->
+    <!-- accordion-menu -->
+    <script>
+      $(function () {
+        $('.js-menu__item__link').each(function () {
+          $(this).on('click', function () {
+            $(this).toggleClass('on');
+            $('+.submenu', this).slideToggle();
+            return false;
+          });
+        });
+        $('.p-masthead__soon').on('click', function () {
+          $('#p-masthead__soon').toggle();
+        });
+        $(document).on('click', '.s_boxHeadline', function () {
+          $('#p-masthead__soon').css('display', 'none');
+        });
+      });
+    </script>
+    <!-- /accordion-menu -->
 
-          <!-- accordion-menu -->
-          <script>
-            $(function () {
-              $('.js-menu__item__link').each(function () {
-                $(this).on('click', function () {
-                  $(this).toggleClass('on');
-                  $('+.submenu', this).slideToggle();
-                  return false;
-                });
-              });
-              $('.p-masthead__soon').on('click', function () { $('#p-masthead__soon').toggle(); });
-              $(document).on('click', '.s_boxHeadline', function () { $('#p-masthead__soon').css('display', 'none'); });
-            });
-          </script>
-          <!-- /accordion-menu -->
-
-          <!-- topTabMenu_pc -->
-          
-          
-          
-          <nav aria-label="トップページタブメニュー">
-            <ul class="p-masthead__nav p-masthead__nav_toppage">
-              <li class=" p-masthead__nav__top">
-                <a href="/mock-sharefull-moratame/index.html" class="p-masthead__nav-item">トップ</a>
-              </li>
-              <li class=" p-masthead__nav__tame">
-                <a href="/mock-sharefull-moratame/detail/tamesulist.html" class="p-masthead__nav-item">ためせる</a>
-              </li>
-              <li class="p-masthead__nav__mora">
-                <a href="/mock-sharefull-moratame/detail/moraulist.html" class="p-masthead__nav-item">もらえる</a>
-              </li>
-              <li class="p-masthead__nav__mise is-active">
-                <a href="/mock-sharefull-moratame/mymenu/basic.html" class="p-masthead__nav-item is-active">マイページ</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /topTabMenu_pc -->
-        </div>
-      </header>
-      <!-- //p-masthead -->
+    <!-- topTabMenu_pc -->
+    
+    
+    
+    </div>
+  <nav aria-label="トップページタブメニュー">
+    <ul class="p-masthead__nav p-masthead__nav_toppage">
+      <li class=" p-masthead__nav__top">
+        <a href="/mock-sharefull-moratame/index.html" class="p-masthead__nav-item">トップ</a>
+      </li>
+      <li class=" p-masthead__nav__tame">
+        <a href="/mock-sharefull-moratame/detail/tamesulist.html" class="p-masthead__nav-item">ためせる</a>
+      </li>
+      <li class="p-masthead__nav__mora">
+        <a href="/mock-sharefull-moratame/detail/moraulist.html" class="p-masthead__nav-item">もらえる</a>
+      </li>
+      <li class="p-masthead__nav__mise is-active">
+        <a href="/mock-sharefull-moratame/mymenu/basic.html" class="p-masthead__nav-item is-active">マイページ</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /topTabMenu_pc -->
+</header>
+<!-- //p-masthead -->
 
       <div class="main">
         <div class="contents cf contents--responsive">

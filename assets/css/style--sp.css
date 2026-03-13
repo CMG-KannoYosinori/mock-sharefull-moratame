@@ -1916,14 +1916,6 @@ div.header nav li a.ui-link {
 /*------------------------------------------------
 Menu bar
 ------------------------------------------------*/
-.clearfix:after {
-  display: block;
-  visibility: hidden;
-  clear: both;
-  height: 0;
-  content: ".";
-}
-
 div.menu a {
   border: 1px solid #177911;
   background: -moz-linear-gradient(
@@ -13203,21 +13195,6 @@ div#topPhotocolle .ui-btn-corner-all {
 --------------------------------------------------------- */
 /* login
 ----------------------------------------------------------*/
-/* micro clearfix */
-.cf {
-  zoom: 1;
-}
-.cf:before {
-  display: table;
-  content: " ";
-}
-.cf:after {
-  display: table;
-  clear: both;
-  content: " ";
-}
-
-/* micro clearfix */
 /* properties */
 #subscribing {
   font-size: 14px;
@@ -14733,12 +14710,6 @@ div.content .reviews h2 .ico {
 .history-list li .btn-amazon-affi img {
   width: 100%;
 }
-.history-list .clearfix:after {
-  content: "";
-  clear: both;
-  display: block !important;
-}
-
 .p-about-icon h3 {
   font-weight: normal;
 }
