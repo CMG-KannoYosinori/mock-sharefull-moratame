@@ -9621,20 +9621,7 @@ ul.answerListUl a:visited {
   cursor: pointer;
 }
 
-.cbxbd2,
-.cbxbd3 {
-  display: block;
-  float: left;
-  overflow: hidden;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  background: url(../images/common/radioBtn.png) no-repeat left top;
-  background-size: 30px 60px;
-  color: #868686;
-  line-height: 30px;
-  cursor: pointer;
-}
+
 
 .answerListTxt {
   float: left;
