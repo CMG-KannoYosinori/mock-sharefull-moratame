@@ -11,24 +11,20 @@ export function initHamburgerMenu() {
 
   if (!header) return;
 
-  const headerHeight = header.offsetHeight;
-
-  if (main) {
-    main.style.paddingTop = headerHeight + 'px';
-  }
-
   if (!menuBtn || !menu || !menuBackground || !menuCloseBtn) return;
 
   const openMenu = () => {
     menuBtn.classList.add('active');
     menu.classList.add('open');
     menuBackground.classList.add('open');
+    document.body.classList.add('is-drawer-open');
   };
 
   const closeMenu = () => {
     menuBtn.classList.remove('active');
     menu.classList.remove('open');
     menuBackground.classList.remove('open');
+    document.body.classList.remove('is-drawer-open');
   };
 
   menuBtn.addEventListener('click', function () {

@@ -1,13 +1,17 @@
 /* 共通フッター（Vサンプル）スタイル - contents / login で include 時用 */
 
 /* スティッキーフッター: ページが短くてもフッターを画面最下部に表示 */
-body {
-  min-height: 100vh;
-}
 .body-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 51px);
+  padding-top: 51px;
+}
+@media (min-width: 768px) {
+  .body-wrapper {
+    min-height: calc(100vh - 62px);
+    padding-top: 62px;
+  }
 }
 footer {
   margin-top: auto;

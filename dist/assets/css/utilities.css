@@ -1,7 +1,17 @@
 .u-img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 .u-visually-hidden {
   display: none;
+}
+/* テキスト省略 */
+.u-text-ellipsis {
+  display: -webkit-box;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }

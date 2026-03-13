@@ -59,3 +59,23 @@ project-root/
    - **ブロックの終了**に、`<!-- /ブロック名 -->` の形式でコメントを書く。
    - スラッシュはブロック名の直前に1つ。例: `<!-- /breadCrumbs -->`、`<!-- /contents -->`
    - ブロック名は、対応する要素のクラス名・id・役割に合わせて簡潔に付ける。
+
+6. トップページヒーローバナー（`p-top-hero`）の仕様
+
+   - ライブラリ: Swiper を使用し、`src/assets/js/p-top-hero.js` で初期化する。
+   - マークアップ:
+     - `index.html` の先頭付近に `.p-top-hero` セクションを配置し、その中の
+       `.p-top-hero__swiper > .swiper-wrapper > .swiper-slide` としてバナーを定義する。
+     - 各スライド内には、横 1280px / 縦 480px 程度の画像を 1 枚配置する。
+   - 枚数:
+     - 2560px 以上の横幅で「中央に 640px のバナーを 5 枚分並べた状態」でループ表示しても破綻しないよう、
+       **最低 9 枚以上のバナー** を用意する（デフォルト実装では 1〜9 のダミーバナーを配置）。
+   - スタイル:
+     - バナー画像には必ず `class="u-img"` を付与し、`p-top-hero.css` でレスポンシブ制御する。
+     - 768px 以上では、バナー画像の表示幅は **640px 固定**（`p-top-hero.css` のメディアクエリ）とし、
+       中央寄せで表示する。
+   - アクセシビリティ:
+     - `.p-top-hero__swiper` には `aria-label="おすすめキャンペーン"` を付与する。
+     - 各 `.swiper-slide` には `role="group" aria-roledescription="slide"` を設定する。
+     - ページネーションタブは `.p-top-hero__tabs` 内にボタンとして描画し、`p-top-hero.js` 側で
+       `aria-selected` の更新を行う。
