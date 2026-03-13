@@ -9,10 +9,12 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "deploy": "PATH_PREFIX=/mock-sharefull-moratame npm run build && npx gh-pages -d dist"
+    "deploy": "PATH_PREFIX=/mock-sharefull-moratame npm run build && npx gh-pages -d dist",
+    "purge:style": "purgecss --css src/assets/css/pass_monitor.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "purgecss": "^8.0.0"
   }
 }
