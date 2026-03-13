@@ -1,7 +1,8 @@
 {% comment %}
-  ページの階層に応じてリンク・asset_base を算出。pathPrefix 設定時（GitHub Pages）はサブパス付き絶対パスを使用。
+  ページの階層に応じてリンク・asset_base を算出。pathPrefix 設定時（GitHub
+  Pages）はサブパス付き絶対パスを使用。
 {% endcomment %}
-{% if pathPrefix != '' and pathPrefix != nil %}
+{% if pathPrefix != '' and pathPrefix != null %}
   {% assign asset_base = pathPrefix | append: '/' %}
   {% assign mymenu_href = pathPrefix | append: '/mymenu/basic.html' %}
   {% assign top_href = pathPrefix | append: '/index.html' %}
@@ -19,9 +20,7 @@
   {% assign path_segments = page.url | split: '/' %}
   {% assign seg_count = path_segments | size %}
   {% assign depth = seg_count | minus: 1 %}
-  {% if depth < 0 %}
-    {% assign depth = 0 %}
-  {% endif %}
+  {% if depth < 0 %} {% assign depth = 0 %} {% endif %}
   {% if depth == 0 %}
     {% assign mymenu_href = 'mymenu/basic.html' %}
     {% assign asset_base = '' %}
@@ -58,134 +57,134 @@
   {% endif %}
 {% endif %}
 
-      <!-- 共通ヘッダー -->
-      <header class="p-masthead" role="banner">
-        <div class="l-conteiner">
-          <div class="p-masthead__top_box header-contents">
-            <div class="p-masthead__top">
-              <!-- topMenu_sp -->
-              <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-                <img src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ" alt="" style="width: auto; height: 100%;" width="480" height="160">
-                <div class="sp-header-menu_component sp-header-menu_component-logout">
-                  <a href="{{ top_href }}">
-                    <img alt="ログアウト" src="{{ asset_base }}assets/images/btn-logout.png">
-                    <span class="u-visually-hidden">ログアウト</span>
-                  </a>
-                </div>
-                <button
-                  class="sp-header-menu_component sp-header-menu_component-hbg"
-                  id="menu_btn"
-                  type="button"
-                  aria-controls="menu"
-                  aria-expanded="false"
-                >
-                  MENU
-                </button>
-              </div>
-              <!-- /topMenu_sp -->
-            </div>
+<!-- 共通ヘッダー -->
+<header class="p-masthead" role="banner">
+  <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
+    <a href="{{ top_href }}">
+      <img
+        src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ"
+        alt=""
+        style="width: auto; height: 100%;"
+        width="480"
+        height="160"
+      >
+    </a>
+    <div class="sp-header-menu_component sp-header-menu_component-logout">
+      <a href="{{ top_href }}">
+        <img alt="ログアウト" src="{{ asset_base }}assets/images/btn-logout.png">
+        <span class="u-visually-hidden">ログアウト</span>
+      </a>
+    </div>
+    <button
+      class="sp-header-menu_component sp-header-menu_component-hbg"
+      id="menu_btn"
+      type="button"
+      aria-controls="menu"
+      aria-expanded="false"
+    >
+      MENU
+    </button>
 
-          </div>
+    <!-- HBGmenu_Open -->
+    <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
+        ×
+      </button>
+      <ul>
+        <!-- category -->
+        <li class="menu__item">
+          <button class="menu__item__link js-menu__item__link" type="button">カテゴリ</button>
+          <ul class="submenu" style="display: none">
+            <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
+            <li>
+              <a href="{{ tamesu_href }}">
+                <img src="{{ asset_base }}assets/images/ico21.png" width="18" height="18" alt="">
+                食品（9）
+              </a>
+            </li>
+            <li class="t-sidemenu-sub-ttl">マイページ</li>
+            <li><a href="{{ mymenu_href }}">マイページ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="{{ morau_href }}">家族配送（4）</a>
+        </li>
+        <!-- /category -->
+        <li>
+          <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/wp/cs/">FAQ</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
+        </li>
+        <li>
+          <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
+        </li>
+        <li>
+          <a href="{{ trade_href }}">特定商取引表示</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-background" aria-hidden="true"></div>
+    <!-- /HBGmenu_Open -->
 
-          <!-- HBGmenu_Open -->
-          <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-            <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-              ×
-            </button>
-            <ul>
-              <!-- category -->
-              <li class="menu__item">
-                <button class="menu__item__link js-menu__item__link" type="button">
-                  カテゴリ
-                </button>
-                <ul class="submenu" style="display: none;">
-                  <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-                  <li>
-                    <a href="{{ tamesu_href }}">
-                      <img src="{{ asset_base }}assets/images/ico21.png" width="18" height="18" alt="">
-                      食品（9）
-                    </a>
-                  </li>
-                  <li class="t-sidemenu-sub-ttl">マイページ</li>
-                  <li><a href="{{ mymenu_href }}">マイページ</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="{{ morau_href }}">家族配送（4）</a>
-              </li>
-              <!-- /category -->
-              <li>
-                <a href="https://www.moratame.net/contents/about.php">モラタメとは</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/wp/cs/">FAQ</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/wp/cs/">モラタメ事務局へのお問い合わせ</a>
-              </li>
-              <li>
-                <a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>
-              </li>
-              <li>
-                <a href="{{ trade_href }}">特定商取引表示</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu-background" aria-hidden="true"></div>
-          <!-- /HBGmenu_Open -->
+    <!-- accordion-menu -->
+    <script>
+      $(function () {
+        $('.js-menu__item__link').each(function () {
+          $(this).on('click', function () {
+            $(this).toggleClass('on');
+            $('+.submenu', this).slideToggle();
+            return false;
+          });
+        });
+        $('.p-masthead__soon').on('click', function () {
+          $('#p-masthead__soon').toggle();
+        });
+        $(document).on('click', '.s_boxHeadline', function () {
+          $('#p-masthead__soon').css('display', 'none');
+        });
+      });
+    </script>
+    <!-- /accordion-menu -->
 
-          <!-- accordion-menu -->
-          <script>
-            $(function () {
-              $('.js-menu__item__link').each(function () {
-                $(this).on('click', function () {
-                  $(this).toggleClass('on');
-                  $('+.submenu', this).slideToggle();
-                  return false;
-                });
-              });
-              $('.p-masthead__soon').on('click', function () { $('#p-masthead__soon').toggle(); });
-              $(document).on('click', '.s_boxHeadline', function () { $('#p-masthead__soon').css('display', 'none'); });
-            });
-          </script>
-          <!-- /accordion-menu -->
-
-          <!-- topTabMenu_pc -->
-          {% assign nav_top_active = '' %}
-          {% assign nav_tame_active = '' %}
-          {% assign nav_mora_active = '' %}
-          {% assign nav_mise_active = '' %}
-
-          {%- case page.url -%}
-            {%- when '/' -%}
-              {% assign nav_top_active = ' is-active' %}
-            {%- when '/index.html' -%}
-              {% assign nav_top_active = ' is-active' %}
-            {%- when '/detail/tamesulist.html' -%}
-              {% assign nav_tame_active = ' is-active' %}
-            {%- when '/detail/moraulist.html' -%}
-              {% assign nav_mora_active = ' is-active' %}
-            {%- when '/mymenu/basic.html' -%}
-              {% assign nav_mise_active = ' is-active' %}
-          {%- endcase -%}
-
-          <nav aria-label="トップページタブメニュー">
-            <ul class="p-masthead__nav p-masthead__nav_toppage">
-              <li class=" p-masthead__nav__top{{ nav_top_active }}">
-                <a href="{{ top_href }}" class="p-masthead__nav-item{{ nav_top_active }}">トップ</a>
-              </li>
-              <li class=" p-masthead__nav__tame{{ nav_tame_active }}">
-                <a href="{{ tamesu_href }}" class="p-masthead__nav-item{{ nav_tame_active }}">ためせる</a>
-              </li>
-              <li class="p-masthead__nav__mora{{ nav_mora_active }}">
-                <a href="{{ morau_href }}" class="p-masthead__nav-item{{ nav_mora_active }}">もらえる</a>
-              </li>
-              <li class="p-masthead__nav__mise{{ nav_mise_active }}">
-                <a href="{{ mymenu_href }}" class="p-masthead__nav-item{{ nav_mise_active }}">マイページ</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /topTabMenu_pc -->
-        </div>
-      </header>
-      <!-- //p-masthead -->
+    <!-- topTabMenu_pc -->
+    {% assign nav_top_active = '' %}
+    {% assign nav_tame_active = '' %}
+    {% assign nav_mora_active = '' %}
+    {% assign nav_mise_active = '' %}
+    {%- case page.url -%}
+      {%- when '/' -%}
+        {% assign nav_top_active = ' is-active' %}
+      {%- when '/index.html' -%}
+        {% assign nav_top_active = '
+    is-active' %}
+      {%- when '/detail/tamesulist.html' -%}
+        {% assign nav_tame_active = ' is-active' %}
+      {%- when '/detail/moraulist.html' -%}
+        {% assign nav_mora_active = ' is-active' %}
+      {%- when '/mymenu/basic.html' -%}
+        {% assign nav_mise_active = ' is-active' %}
+    {%- endcase -%}
+  </div>
+  <nav aria-label="トップページタブメニュー">
+    <ul class="p-masthead__nav p-masthead__nav_toppage">
+      <li class=" p-masthead__nav__top{{ nav_top_active }}">
+        <a href="{{ top_href }}" class="p-masthead__nav-item{{ nav_top_active }}">トップ</a>
+      </li>
+      <li class=" p-masthead__nav__tame{{ nav_tame_active }}">
+        <a href="{{ tamesu_href }}" class="p-masthead__nav-item{{ nav_tame_active }}">ためせる</a>
+      </li>
+      <li class="p-masthead__nav__mora{{ nav_mora_active }}">
+        <a href="{{ morau_href }}" class="p-masthead__nav-item{{ nav_mora_active }}">もらえる</a>
+      </li>
+      <li class="p-masthead__nav__mise{{ nav_mise_active }}">
+        <a href="{{ mymenu_href }}" class="p-masthead__nav-item{{ nav_mise_active }}">マイページ</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /topTabMenu_pc -->
+</header>
+<!-- //p-masthead -->

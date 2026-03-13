@@ -15,8 +15,7 @@
 
 .contents,
 .basicContainer,
-#loginStatusWrp,
-.l-conteiner {
+#loginStatusWrp {
   width: auto;
   max-width: 768px;
   margin-right: auto;
@@ -25,16 +24,14 @@
 @media only screen and (min-width: 1270px) {
   .contents,
   .basicContainer,
-  #loginStatusWrp,
-  .l-conteiner {
+  #loginStatusWrp {
     max-width: 1255px;
   }
 }
 @media only screen and (min-width: 1615px) {
   .contents,
   .basicContainer,
-  #loginStatusWrp,
-  .l-conteiner {
+  #loginStatusWrp {
     max-width: 1600px;
   }
 }
@@ -381,10 +378,6 @@
   font-size: 20px;
   vertical-align: text-bottom;
 }
-.p-masthead__top {
-  position: relative;
-  min-height: 90px;
-}
 .p-masthead .img-responsive--logo {
   position: absolute;
   top: 20px;
@@ -540,9 +533,6 @@
 .p-masthead--detail .img-responsive--logo {
   top: 0;
   max-width: 146px;
-}
-.p-masthead--detail .p-masthead__top {
-  min-height: 50px;
 }
 .text-img--business-support--th {
   max-width: 310px;

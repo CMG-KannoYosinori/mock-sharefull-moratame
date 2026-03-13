@@ -194,7 +194,7 @@
 /* header */
 header {
   position: relative;
-  z-index: 10;
+  z-index: 8;
   width: 100%;
   background: #fff;
 }
@@ -204,11 +204,6 @@ header {
     max-width: 1255px;
   }
 }
-header .header-contents {
-  position: relative;
-  width: 100%;
-}
-
 /* #menu */
 #menu {
   position: fixed;
@@ -449,9 +444,6 @@ body .select-area label {
   background-image: none;
   /*グローバルナビゲーション-----*/
 }
-.p-masthead .p-masthead__top {
-  min-height: inherit;
-}
 .p-masthead .p-masthead__banner {
   top: 0;
 }
@@ -466,7 +458,7 @@ body .select-area label {
   }
 }
 
-.p-masthead .sp-header-menu {
+.sp-header-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -478,49 +470,49 @@ body .select-area label {
 }
 
 @media (min-width: 768px) {
-  .p-masthead .sp-header-menu {
+  .sp-header-menu {
     height: 62px;
   }
 }
 
-.p-masthead .sp-header-menu_component {
+.sp-header-menu_component {
   position: absolute;
   top: 0;
 }
-.p-masthead .sp-header-menu_component-wakaba {
+.sp-header-menu_component-wakaba {
   right: 116px;
 }
 @media (max-width: 530px) {
-  .p-masthead .sp-header-menu_component-wakaba {
+  .sp-header-menu_component-wakaba {
     right: 100px;
   }
 }
-.p-masthead .sp-header-menu_component-login,
-.p-masthead .sp-header-menu_component-logout {
+.sp-header-menu_component-login,
+.sp-header-menu_component-logout {
   right: 49px;
 }
 @media (min-width: 768px) {
-  .p-masthead .sp-header-menu_component-login,
-  .p-masthead .sp-header-menu_component-logout {
+  .sp-header-menu_component-login,
+  .sp-header-menu_component-logout {
     right: 58px;
   }
 }
-.p-masthead .sp-header-menu_component-notice {
+.sp-header-menu_component-notice {
   right: 174px;
 }
 @media (max-width: 530px) {
-  .p-masthead .sp-header-menu_component-notice {
+  .sp-header-menu_component-notice {
     right: 150px;
   }
 }
-.p-masthead .sp-header-menu_component-hbg {
+.sp-header-menu_component-hbg {
   right: 0;
 }
-.p-masthead .sp-header-menu_component img {
+.sp-header-menu_component img {
   width: 58px;
 }
 @media (max-width: 530px) {
-  .p-masthead .sp-header-menu_component img {
+  .sp-header-menu_component img {
     width: auto;
     height: 51px;
   }
@@ -1141,21 +1133,13 @@ body#itemList .p-project-lists li .p-project-lists__thumbnail-wrap:active {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-body#itemList
-  .p-project-lists
-  li
-  .p-project-lists__thumbnail-wrap
-  h2.add_padding {
+body#itemList .p-project-lists li .p-project-lists__thumbnail-wrap h2.add_padding {
   padding: 10px;
 }
 body#itemList .p-project-lists li .p-project-lists__block {
   height: 57px;
 }
-body#itemList
-  .p-project-lists
-  li
-  .p-project-lists__block
-  .sp_top_project_count {
+body#itemList .p-project-lists li .p-project-lists__block .sp_top_project_count {
   padding-top: 2px;
   font-size: 11px;
 }
@@ -1386,10 +1370,7 @@ body.itemDetail-mora #F001.itemDetailBox .t-text {
 body.itemDetail-mora #F001.itemDetailBox .monitor-caption__box {
   margin: 10px 0;
 }
-body.itemDetail-mora
-  #F001.itemDetailBox
-  .monitor-caption__box
-  .t-subhead__text {
+body.itemDetail-mora #F001.itemDetailBox .monitor-caption__box .t-subhead__text {
   text-align: center;
   font-weight: bold;
 }
@@ -2014,20 +1995,8 @@ body.t-about .secondary {
   width: 60%;
   border: none;
   background: #307ee8;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#4188e8),
-    to(#307ee8)
-  );
-  background: gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#4188e8),
-    to(#307ee8)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#4188e8), to(#307ee8));
+  background: gradient(linear, left top, left bottom, from(#4188e8), to(#307ee8));
   line-height: 1.2;
 }
 
@@ -2037,20 +2006,8 @@ body.t-about .secondary {
   width: 90%;
   border: none;
   background: #f76b1f;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fc7c36),
-    to(#f76b1f)
-  );
-  background: gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fc7c36),
-    to(#f76b1f)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc7c36), to(#f76b1f));
+  background: gradient(linear, left top, left bottom, from(#fc7c36), to(#f76b1f));
   color: #fff;
   cursor: pointer;
 }
