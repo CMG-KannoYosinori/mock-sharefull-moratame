@@ -1187,12 +1187,6 @@ body.itemDetail div.itemDetailBox {
     max-width: 920px;
   }
 }
-@media (max-width: 1269px) {
-  body.itemDetail div#F001,
-  body.itemDetail div.itemDetailBox {
-    max-width: 630px;
-  }
-}
 @media (max-width: 959px) {
   body.itemDetail div#F001,
   body.itemDetail div.itemDetailBox {
