@@ -2,7 +2,7 @@
   共通 head ブロック
   pathPrefix が設定されているとき（GitHub Pages デプロイ時）は常に pathPrefix/ をアセットの先頭に付与
 {% endcomment %}
-{% if pathPrefix != '' and pathPrefix != nil %}
+{% if pathPrefix != '' and pathPrefix != null %}
   {% assign asset_base = pathPrefix | append: '/' %}
 {% elsif page.url contains 'mymenu' %}
   {% assign asset_base = '../' %}
@@ -25,38 +25,39 @@
   {% assign page_description = '主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にVポイントを貯めることもできます。' %}
 {% endunless %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
-    <meta name="Description" content="{{ page_description }}">
-    <link rel="shortcut icon" href="{{ asset_base }}assets/images/v-samplefavicon.png">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset_base }}assets/images/v-sample_touch_icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="Keywords" content="Vサンプル,Vポイント,プレゼント,試供品,無料,サンプリング">
+<meta name="Description" content="{{ page_description }}">
+<link rel="shortcut icon" href="{{ asset_base }}assets/images/v-samplefavicon.png">
+<link rel="apple-touch-icon-precomposed" href="{{ asset_base }}assets/images/v-sample_touch_icon.png">
 
-    <title>{{ page_title }}</title>
+<title>{{ page_title }}</title>
 
-    {% if page_use_bootstrap %}
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
-    {% endif %}
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/properties.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/module.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--common-sp-and-pc.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset-old-style--jp.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--pc.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--sp.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t-sample.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/footer-common.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/p9255-common--pc.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/utilities.css">
+{% if page_use_bootstrap %}
+  <link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
+{% endif %}
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/properties.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/module.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--common-sp-and-pc.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/reset-old-style--jp.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--pc.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style--sp.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/t-sample.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/footer-common.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/p9255-common--pc.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/components.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="{{ asset_base }}assets/css/utilities.css">
 
-    <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
-    <link href="{{ asset_base }}assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+<script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+<link href="{{ asset_base }}assets/vendor/fontawesome/css/all.css" rel="stylesheet">
 
-    <script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 {{ head_extra }}

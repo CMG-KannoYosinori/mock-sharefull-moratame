@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_use_bootstrap = true %} {% assign page_title = '商品名 Lorem, ipsum. ためせる｜Vポイントが貯まる・使える Vサンプル' %} {% capture head_extra %}
+    {% assign page_title = '商品名 Lorem, ipsum. ためせる｜Vポイントが貯まる・使える Vサンプル' %} {% capture head_extra %}
     <link rel="stylesheet" type="text/css" href="../assets/css/pass_monitor.css" />
 
     <script>
@@ -205,7 +205,7 @@
                     </div>
                     <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
                     <div class="t-button t-button2">
-                      <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
+                      <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
                     </div>
                   </form>
                 </div>
@@ -237,12 +237,12 @@
             <br />
             <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
             <div class="t-button t-button2">
-              <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
+              <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
             </div>
             <br />
             <!-- /contents -->
             <div class="t-button t-button2" style="margin: 0 0 40px">
-              <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを再投稿する</button>
+              <button type="button" id="review-button" class="c-button c-button--review">クチコミを再投稿する</button>
             </div>
             <script>
               $(function () {
@@ -269,7 +269,7 @@
             </div>
             <div class="tabContent tabContent1 active">
               <div class="subTabBox" style="height: 20px"></div>
-              <div class="container subTabContent subTabContent1 pt_10 active">
+              <div class="subTabContent subTabContent1 pt_10 active">
                 <div id="hb_mm">
                   <div id="hb_ms">
                     <ul class="hb_ms_scedule" id="content">
@@ -424,7 +424,7 @@
                     </ul>
                     <div id="msgwindow"></div>
                     <div class="t-button t-button2" style="margin: 15px 0 40px">
-                      <button type="button" id="review-list-button" class="t-button__green t-button__smallText t-button__yellow">この商品についてのクチコミをもっと見る</button>
+                      <button type="button" id="review-list-button" class="c-button c-button--review">この商品についてのクチコミをもっと見る</button>
                     </div>
                   </div>
                 </div>
@@ -462,34 +462,6 @@
       {% include 'footer' %}
     </div>
     <!-- /body-wrapper -->
-
-    <style>
-      .family-balloon {
-        background-color: #e8e5d6;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-        margin-bottom: 20px;
-      }
-
-      .family-balloon:after {
-        position: absolute;
-        content: "";
-        bottom: -10px;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 10px 5px 0 5px;
-        border-color: #e8e5d6 transparent transparent transparent;
-        width: 0;
-        height: 0;
-        border-style: solid;
-      }
-    </style>
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
