@@ -2625,11 +2625,6 @@ a.t-button__return {
   -webkit-tap-highlight-color: transparent;
 }
 
-.t-bx__slide {
-  display: -webkit-box;
-  display: box;
-}
-
 .t-bx__pager {
   display: -webkit-box;
   display: box;
