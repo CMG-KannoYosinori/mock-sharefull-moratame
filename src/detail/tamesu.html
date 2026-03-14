@@ -42,392 +42,419 @@
       {% include 'header' %}
       <div class="main">
         <div class="l-container">
-          <div class="">
-            <div id="F001" class="js-t-wrapper itemDetailBox">
-              <p class="breadCrumbs mb_10">
-                <a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a>
-                ＞ためせる商品詳細
-              </p>
-              <!-- /breadCrumbs -->
+          <div id="F001" class="js-t-wrapper itemDetailBox">
+            <p class="breadCrumbs mb_10">
+              <a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a>
+              ＞ためせる商品詳細
+            </p>
+            <!-- /breadCrumbs -->
 
-              <div class="t-sub-header">
-                <h2>商品詳細</h2>
-              </div>
-              <!-- /sub header -->
-              <div class="t-head">
-                <h2 class="t-head__text">商品名 Lorem, ipsum.</h2>
-              </div>
+            <div class="t-sub-header">
+              <h2>商品詳細</h2>
+            </div>
+            <!-- /sub header -->
+            <div class="t-head">
+              <h2 class="t-head__text">商品名 Lorem, ipsum.</h2>
+            </div>
 
-              <div class="t-bx__wrapper">
-                <div class="t-bx__viewport">
-                  <div class="bx">
-                    <div class="t-bx__slide">
-                      <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品画像" width="640" height="640" class="u-img" />
-                    </div>
+            <div class="t-bx__wrapper">
+              <div class="t-bx__viewport">
+                <div class="bx">
+                  <div class="t-bx__slide">
+                    <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品画像" width="640" height="640" class="u-img" />
                   </div>
                 </div>
               </div>
-              <!-- /carousel -->
+            </div>
+            <!-- /carousel -->
 
-              <div class="itemInfo">
-                <div class="t-crosshead">
-                  <div class="t-crosshead__inner">
-                    <h2 class="t-crosshead__text">商品情報</h2>
-                  </div>
-                </div>
-                <div class="t-table">
-                  <div class="price_bgbox">
-                    <table class="t-table__block price_box">
-                      <tbody>
-                        <tr>
-                          <th>提供元</th>
-                          <td>テスト</td>
-                        </tr>
-                        <tr>
-                          <th>残数</th>
-                          <td>4,972</td>
-                        </tr>
-                        <tr>
-                          <th>
-                            <p>配送関連費</p>
-                            <p class="t-text__ex">(1セット当たり)</p>
-                            <a href="https://ssl.help.tsite.jp/faq/show/56342?category_id=5726&site_domain=qa-tsite" class="t-text__ex" target="_blank"> ※配送関連費とは </a>
-                          </th>
-                          <td class="">
-                            <p id="area_price" class="cost-em"></p>
-                            <select name="area_price" id="area_price_select" style="display: none">
-                              <option value="">455円(税込500円)</option>
-                              <option value="1">546円(税込600円)</option>
-                              <option value="2">455円(税込500円)</option>
-                              <option value="3">455円(税込500円)</option>
-                              <option value="4">455円(税込500円)</option>
-                              <option value="5">455円(税込500円)</option>
-                              <option value="6">455円(税込500円)</option>
-                              <option value="7">455円(税込500円)</option>
-                              <option value="8">637円(税込700円)</option>
-                              <option value="9">728円(税込800円)</option>
-                            </select>
-                            <br />
-                            <div class="balloon__cost">この費用だけで試せます！</div>
-                            <p class="t-text__ex">※配送地域によって、<br class="min" />配送関連費が異なります。</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>
-                            参考価格<br /><a
-                              href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&site_domain=qa-tsite
-"
-                              class="t-text__ex"
-                              target="_blank"
-                              >※参考価格とは</a
-                            >
-                          </th>
-                          <td>2,710円(税別)</td>
-                        </tr>
-                        <tr>
-                          <th>
-                            <p>配送地域</p>
-                          </th>
-                          <td class="" style="padding: 0px">
-                            <div class="" style="border: none">
-                              <div class="c-form__select">
-                                <select required name="shipment_area" id="shipment_area">
-                                  <option value="">選択してください</option>
-                                  <option value="1">北海道</option>
-                                  <option value="2">東北</option>
-                                  <option value="3">関東</option>
-                                  <option value="4">中部</option>
-                                  <option value="5">近畿</option>
-                                  <option value="6">中国</option>
-                                  <option value="7">四国</option>
-                                  <option value="8">九州</option>
-                                  <option value="9">沖縄・離島</option>
-                                </select>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>
-                            <p>獲得Vポイント</p>
-                            <p class="t-text__ex">(1セット当たり)</p>
-                          </th>
-                          <td class="">
-                            <p><span id="t_point"></span></p>
-                            <select name="t_point" id="point_select" style="display: none">
-                              <option value="">2 ポイント</option>
-                              <option value="1">3 ポイント</option>
-                              <option value="2">2 ポイント</option>
-                              <option value="3">2 ポイント</option>
-                              <option value="4">2 ポイント</option>
-                              <option value="5">2 ポイント</option>
-                              <option value="6">2 ポイント</option>
-                              <option value="7">2 ポイント</option>
-                              <option value="8">3 ポイント</option>
-                              <option value="9">4 ポイント</option>
-                            </select>
-                            <div class="balloon__point">申し込むとVポイントをGET！</div>
-                            <div class="t-text__ex">※クーポンを利用していない場合の獲得Vポイント数です。</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>申込可能数</th>
-                          <td>
-                            各100セット
-                            <div class="t-text">
-                              <div class="t-caption">(自宅：残り99セット / 家族：残り100セット)</div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>発送予定日</th>
-                          <td>
-                            2025年09月30日(火)
-                            <div class="t-text">
-                              <div class="t-caption">
-                                <p class="t-caption__text">配送に関する注意事項をご一読ください</p>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>終了日時</th>
-                          <td>2026年12月11日(金) 23時59分</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <form id="form-order" class="t-form">
-                      <div class="t-text">
-                        <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
-                        <p>※お支払い方法はクレジットカードとVポイントがご利用頂けます。</p>
-                      </div>
-                      <div class="t-point-block t-point-border">
-                        <span>Vポイント : 10,000pt保有</span>
-                      </div>
-                      <p class="family-balloon w-80per-c">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
-                      <div class="t-button t-button2">
-                        <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <!-- /itemInfo -->
+            <div class="itemInfo">
               <div class="t-crosshead">
                 <div class="t-crosshead__inner">
-                  <h2 class="t-crosshead__text">商品説明</h2>
+                  <h2 class="t-crosshead__text">商品情報</h2>
                 </div>
               </div>
-              <!-- 商品概要 -->
-              <div class="p-item-detail">
-                <div style="min-height: 1000px; background-color: lightpink; display: grid; place-items: center; color: white; font-size: 20px; font-weight: bold; text-align: center">
-                  <div>
-                    <p>商品概要</p>
-                    <p>配送に関する注意事項</p>
-                  </div>
-                </div>
-              </div>
-              <!-- /商品概要 -->
-              <div class="t-text t-attention-terms">
-                <div class="t-text">
-                  <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
-                  <p>※お支払い方法はクレジットカードのみとなります。</p>
-                </div>
-              </div>
-              <p class="txt_Alert"></p>
-              <br />
-              <p class="family-balloon w-80per-c">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
-              <div class="t-button t-button2">
-                <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
-              </div>
-              <br />
-              <!-- /contents -->
-              <div class="t-button t-button2" style="margin: 0 0 40px">
-                <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを再投稿する</button>
-              </div>
-              <script>
-                $(function () {
-                  $(document).on("click", "[id^='review-button']", function () {
-                    window.location.href = "https://stg.tsample.tsite.jp/detail/cmt.php?project_id=fadd8#anchor01";
-                  });
-                });
-              </script>
-              <script>
-                $(function () {
-                  $(document).on("click", "[id^='review-list-button']", function () {
-                    window.location.href = "https://stg.tsample.tsite.jp/detail/review_list.php?project_id=fadd8";
-                  });
-                });
-              </script>
-
-              <div class="heading xx-large enclosingBtn withIcon">
-                <h1>
-                  <span class="icoWrap">
-                    <img alt="" height="79" src="../assets/images/icon-mymenu.png" width="64" />
-                  </span>
-                  <span>最新クチコミ一覧</span>
-                </h1>
-              </div>
-              <div class="tabContent tabContent1 active">
-                <div class="subTabBox" style="height: 20px"></div>
-                <div class="container subTabContent subTabContent1 pt_10 active">
-                  <div id="hb_mm">
-                    <div id="hb_ms">
-                      <section class="hb_ms_scedule" id="content">
-                        <div class="review_box schedule_box" style="margin-bottom: 20px">
-                          <div class="userinfo_box">
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                                <img src="../assets/images/profile_icon.gif" alt="重複OK2" width="72" height="72" />
-                              </h2>
-
-                              <p class="hb_ms_detail">投稿日時：2026-02-18 17:25:58</p>
-                              <p class="review_line"></p>
-                              <p class="review_text">
-                                クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。クチコミ再投稿。
-                              </p>
-                              <p class="goodBtnWrap" style="margin: initial">
-                                <a href="javascript:void(0);" id="goodBtn96" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('fadd8', '96', 'df85fc397aa8a251', 0, event)">Good</a>
-                                <span class="counter c_red" id="goodnum96"></span>
-                              </p>
+              <div class="t-table">
+                <div class="price_bgbox">
+                  <table class="t-table__block price_box">
+                    <tbody>
+                      <tr>
+                        <th>提供元</th>
+                        <td>テスト</td>
+                      </tr>
+                      <tr>
+                        <th>残数</th>
+                        <td>4,972</td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <p>配送関連費</p>
+                          <p class="t-text__ex">(1セット当たり)</p>
+                          <a href="https://ssl.help.tsite.jp/faq/show/56342?category_id=5726&site_domain=qa-tsite" class="t-text__ex" target="_blank"> ※配送関連費とは </a>
+                        </th>
+                        <td class="">
+                          <p id="area_price" class="cost-em"></p>
+                          <select name="area_price" id="area_price_select" style="display: none">
+                            <option value="">455円(税込500円)</option>
+                            <option value="1">546円(税込600円)</option>
+                            <option value="2">455円(税込500円)</option>
+                            <option value="3">455円(税込500円)</option>
+                            <option value="4">455円(税込500円)</option>
+                            <option value="5">455円(税込500円)</option>
+                            <option value="6">455円(税込500円)</option>
+                            <option value="7">455円(税込500円)</option>
+                            <option value="8">637円(税込700円)</option>
+                            <option value="9">728円(税込800円)</option>
+                          </select>
+                          <br />
+                          <div class="balloon__cost">この費用だけで試せます！</div>
+                          <p class="t-text__ex">※配送地域によって、<br class="min" />配送関連費が異なります。</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          参考価格<br /><a
+                            href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&site_domain=qa-tsite
+"
+                            class="t-text__ex"
+                            target="_blank"
+                            >※参考価格とは</a
+                          >
+                        </th>
+                        <td>2,710円(税別)</td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <p>配送地域</p>
+                        </th>
+                        <td class="" style="padding: 0px">
+                          <div class="" style="border: none">
+                            <div class="c-form__select">
+                              <select required name="shipment_area" id="shipment_area">
+                                <option value="">選択してください</option>
+                                <option value="1">北海道</option>
+                                <option value="2">東北</option>
+                                <option value="3">関東</option>
+                                <option value="4">中部</option>
+                                <option value="5">近畿</option>
+                                <option value="6">中国</option>
+                                <option value="7">四国</option>
+                                <option value="8">九州</option>
+                                <option value="9">沖縄・離島</option>
+                              </select>
                             </div>
                           </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <p>獲得Vポイント</p>
+                          <p class="t-text__ex">(1セット当たり)</p>
+                        </th>
+                        <td class="">
+                          <p><span id="t_point"></span></p>
+                          <select name="t_point" id="point_select" style="display: none">
+                            <option value="">2 ポイント</option>
+                            <option value="1">3 ポイント</option>
+                            <option value="2">2 ポイント</option>
+                            <option value="3">2 ポイント</option>
+                            <option value="4">2 ポイント</option>
+                            <option value="5">2 ポイント</option>
+                            <option value="6">2 ポイント</option>
+                            <option value="7">2 ポイント</option>
+                            <option value="8">3 ポイント</option>
+                            <option value="9">4 ポイント</option>
+                          </select>
+                          <div class="balloon__point">申し込むとVポイントをGET！</div>
+                          <div class="t-text__ex">※クーポンを利用していない場合の獲得Vポイント数です。</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>申込可能数</th>
+                        <td>
+                          各100セット
+                          <div class="t-text">
+                            <div class="t-caption">(自宅：残り99セット / 家族：残り100セット)</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>発送予定日</th>
+                        <td>
+                          2025年09月30日(火)
+                          <div class="t-text">
+                            <div class="t-caption">
+                              <p class="t-caption__text">配送に関する注意事項をご一読ください</p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>終了日時</th>
+                        <td>2026年12月11日(金) 23時59分</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form id="form-order" class="t-form">
+                    <div class="t-text">
+                      <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
+                      <p>※お支払い方法はクレジットカードとVポイントがご利用頂けます。</p>
+                    </div>
+                    <div class="t-point-block t-point-border">
+                      <span>Vポイント : 10,000pt保有</span>
+                    </div>
+                    <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
+                    <div class="t-button t-button2">
+                      <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /itemInfo -->
+            <div class="t-crosshead">
+              <div class="t-crosshead__inner">
+                <h2 class="t-crosshead__text">商品説明</h2>
+              </div>
+            </div>
+            <!-- 商品概要 -->
+            <div class="p-item-detail">
+              <div style="min-height: 1000px; background-color: lightpink; display: grid; place-items: center; color: white; font-size: 20px; font-weight: bold; text-align: center">
+                <div>
+                  <p>商品概要</p>
+                  <p>配送に関する注意事項</p>
+                </div>
+              </div>
+            </div>
+            <!-- /商品概要 -->
+            <div class="t-text t-attention-terms">
+              <div class="t-text">
+                <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
+                <p>※お支払い方法はクレジットカードのみとなります。</p>
+              </div>
+            </div>
+            <p class="txt_Alert"></p>
+            <br />
+            <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
+            <div class="t-button t-button2">
+              <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
+            </div>
+            <br />
+            <!-- /contents -->
+            <div class="t-button t-button2" style="margin: 0 0 40px">
+              <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを再投稿する</button>
+            </div>
+            <script>
+              $(function () {
+                $(document).on("click", "[id^='review-button']", function () {
+                  window.location.href = "https://stg.tsample.tsite.jp/detail/cmt.php?project_id=fadd8#anchor01";
+                });
+              });
+            </script>
+            <script>
+              $(function () {
+                $(document).on("click", "[id^='review-list-button']", function () {
+                  window.location.href = "https://stg.tsample.tsite.jp/detail/review_list.php?project_id=fadd8";
+                });
+              });
+            </script>
+
+            <div class="heading xx-large enclosingBtn withIcon">
+              <h1>
+                <span class="icoWrap">
+                  <img alt="" height="79" src="../assets/images/icon-mymenu.png" width="64" />
+                </span>
+                <span>最新クチコミ一覧</span>
+              </h1>
+            </div>
+            <div class="tabContent tabContent1 active">
+              <div class="subTabBox" style="height: 20px"></div>
+              <div class="container subTabContent subTabContent1 pt_10 active">
+                <div id="hb_mm">
+                  <div id="hb_ms">
+                    <ul class="hb_ms_scedule" id="content">
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2026-03-13 20:33:22</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">
+                              3セット届き、一箱使ってみました！<br />こまめに網戸掃除をしているつもりでしたが、こちらを使うとびっくりするほど汚れが取れました。<br />今の時期は花粉も飛んでいるので黄緑色の汚れがごっそり取れました！
+                            </p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn80796" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '80796', '6af442519a8a8dac', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum80796"></span>
+                            </p>
+                          </div>
                         </div>
-                      </section>
-                      <div class="t-button t-button2" style="margin: 15px 0 40px">
-                        <button type="button" id="review-list-button" class="t-button__green t-button__smallText t-button__yellow">この商品についてのクチコミをもっと見る</button>
-                      </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2026-02-21 01:24:51</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">網戸の掃除は大変だと思って、ついついほったらかしにしてしまいますが、この商品は気軽に使えて良いと思います。</p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn79465" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '79465', '400cfb3d4166375a', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum79465"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2026-01-31 11:38:07</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">楽に使えます。<br />使いやすいし、楽々キレイにできました。<br />大掃除の時以外でも、気軽に使えると思いました。</p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn77836" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '77836', '1384c6ad968a0ec4', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum77836"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2026-01-02 23:03:43</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">
+                              網戸を張り替えたばかりなので試しに購入しました。めんどくさかった網戸掃除もとても楽にできました<br />ただ付属のウエットティッシュが少なすぎます<br />お試し用とはいえもっと欲しいです<br />一回で無くなってしまったので床拭き用のを代用しようと思います<br />あとお風呂とかの壁などの掃除も小さく力が入れやすいのでよさそうです
+                            </p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn75742" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '75742', '100890b611f3eff2', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum75742"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2025-12-26 00:16:07</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">網戸の清掃意外と面倒です、本品はよくできており使いやすいです。</p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn74879" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '74879', 'd343ba54d0f7be55', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum74879"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2025-12-18 22:39:36</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">網戸ワイパーにセットして数回網戸を拭くだけで綺麗になりました。簡単で使いやすかったです。</p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn74234" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '74234', '591aab34111de28d', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum74234"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2025-12-17 12:00:46</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">網戸を何で掃除しようか迷っていた時に見つけて、購入しましたが、<br />いい感じに汚れが落ちるような気がします！</p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn74048" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '74048', 'b09f4babea06586c', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum74048"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h2>
+                              <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                              <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="スクラビングバブル　網戸ワイパー本体セット ×3" width="72" height="72" />
+                            </h2>
+
+                            <p class="hb_ms_detail">投稿日時：2025-12-13 09:24:56</p>
+                            <p class="review_line"></p>
+                            <p class="review_text">この商品を使用することで、網戸掃除の負担感の軽減につながりました。手が汚れないことが一番の利点です。</p>
+                            <p class="goodBtnWrap" style="margin: initial">
+                              <a href="javascript:void(0);" id="goodBtn73727" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '73727', 'fc70da3dffd496e4', 0, event)">Good</a>
+                              <span class="counter c_red" id="goodnum73727"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div id="msgwindow"></div>
+                    <div class="t-button t-button2" style="margin: 15px 0 40px">
+                      <button type="button" id="review-list-button" class="t-button__green t-button__smallText t-button__yellow">この商品についてのクチコミをもっと見る</button>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <script src="../assets/js/goodup.js"></script>
-
-              <style>
-                .review_box {
-                  width: 50%;
-                }
-
-                .img_list {
-                  margin: 5px 1px 5px;
-                }
-
-                @media only screen and (max-width: 1269px) {
-                  .review_box {
-                    width: 49.5%;
-                  }
-
-                  .img_list {
-                    margin: 5px 5px 5px;
-                  }
-                }
-
-                @media only screen and (max-width: 639px) {
-                  .review_box {
-                    width: 100%;
-                  }
-
-                  .img_list {
-                    margin: 5px 5px 5px;
-                  }
-                }
-
-                .review_line {
-                  margin: 10px 0 10px;
-                  border-top: 1px solid #ccc;
-                  vertical-align: top;
-                }
-
-                .review_text {
-                  font-size: 85%;
-                  margin-bottom: 5px;
-                }
-
-                .comment {
-                  background-color: #fff100;
-                  color: #000000;
-                }
-
-                .twitter {
-                  background-color: #00acee;
-                  color: #fff;
-                }
-
-                .family-balloon {
-                  background-color: #e8e5d6;
-                  -moz-border-radius: 5px;
-                  -webkit-border-radius: 5px;
-                  border-radius: 5px;
-                  font-size: 16px;
-                  font-weight: bold;
-                  text-align: center;
-                  padding: 10px;
-                  position: relative;
-                  margin-bottom: 20px;
-                }
-
-                .family-balloon:after {
-                  position: absolute;
-                  content: "";
-                  bottom: -10px;
-                  left: 50%;
-                  margin-left: -5px;
-                  border-width: 10px 5px 0 5px;
-                  border-color: #e8e5d6 transparent transparent transparent;
-                  width: 0;
-                  height: 0;
-                  border-style: solid;
-                }
-              </style>
-              <style>
-                .t-button__yellow {
-                  display: block;
-                  margin: auto;
-                  width: 90%;
-                  border: none;
-                  background: #fff100;
-                  background: -webkit-gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
-                  background: gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
-                  color: #000000;
-                  cursor: pointer;
-                }
-
-                .disabled {
-                  height: initial;
-                  border: initial;
-                }
-              </style>
-              <script>
-                $(function () {
-                  $("#shipment_area option[value=3]").prop("selected", true);
-                  $('input:hidden[name="shipment_area"]').val(3);
-                  setAreaPrice();
-                });
-
-                $("#shipment_area").on("change", function () {
-                  setAreaPrice();
-                });
-
-                function setAreaPrice() {
-                  var selected_code = $("#shipment_area option:selected").val();
-                  var selected_price = $("#area_price_select option[value=" + selected_code + "]").text();
-                  var selected_point = $("#point_select option[value=" + selected_code + "]").text();
-                  $('input:hidden[name="shipment_area"]').val(selected_code);
-                  $("#area_price").html(selected_price);
-                  $("#t_point").html(selected_point);
-                }
-              </script>
             </div>
 
-            <div class="footBnr">
-              <ul></ul>
-            </div>
-            <!-- /footBnr -->
+            <script src="../assets/js/goodup.js"></script>
 
-            <!-- /itemDetailBox -->
+            <script>
+              $(function () {
+                $("#shipment_area option[value=3]").prop("selected", true);
+                $('input:hidden[name="shipment_area"]').val(3);
+                setAreaPrice();
+              });
+
+              $("#shipment_area").on("change", function () {
+                setAreaPrice();
+              });
+
+              function setAreaPrice() {
+                var selected_code = $("#shipment_area option:selected").val();
+                var selected_price = $("#area_price_select option[value=" + selected_code + "]").text();
+                var selected_point = $("#point_select option[value=" + selected_code + "]").text();
+                $('input:hidden[name="shipment_area"]').val(selected_code);
+                $("#area_price").html(selected_price);
+                $("#t_point").html(selected_point);
+              }
+            </script>
           </div>
+          <!-- /itemDetailBox -->
         </div>
         <!-- /contents -->
       </div>

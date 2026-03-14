@@ -25,17 +25,16 @@
 /* properties
 ---------------------------------------------------------------------------------------------------- */
 .monitor-attention__box {
-  margin-left: 10px;
   margin-right: 10px;
-  padding: 10px 0;
-  -webkit-border-radius: 5px;
+  margin-left: 10px;
   border-radius: 5px;
   background-color: #fceae0;
+  padding: 10px 0;
 }
 
 .c-section-heading {
-  height: auto !important;
   padding: 0.5em !important;
+  height: auto !important;
 }
 
 .enq-section-heading {
@@ -60,8 +59,8 @@
   position: relative;
   cursor: pointer;
   margin-left: 20px;
-  padding: 10px 20px;
   border-radius: 2px;
+  padding: 10px 20px;
   color: #3e4956;
   font-size: 14px;
   line-height: 1;
@@ -69,27 +68,27 @@
 
 .select-area label:before {
   position: absolute;
-  content: "";
   top: 50%;
   left: -11px;
-  width: 22px;
-  height: 22px;
   margin-top: -11px;
+  border: 1px solid #a4a4a4;
   border-radius: 22px;
   background: #fff;
-  border: 1px solid #a4a4a4;
+  width: 22px;
+  height: 22px;
+  content: "";
 }
 
 .select-area input[type="radio"]:checked + label:after {
   position: absolute;
-  content: "";
   top: 50%;
   left: -4px;
-  width: 10px;
-  height: 10px;
   margin-top: -4px;
   border-radius: 10px;
   background: #333;
+  width: 10px;
+  height: 10px;
+  content: "";
 }
 
 .telephone-area ul {
@@ -112,16 +111,15 @@ input[type="checkbox"] {
 }
 
 .checkbox {
-  box-sizing: border-box;
-  -webkit-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
-  position: relative;
   display: block;
-  margin: 0 20px 8px 0;
-  padding: 12px 12px 2px 42px;
-  border-radius: 8px;
+  position: relative;
   vertical-align: middle;
+  transition: background-color 0.2s linear;
   cursor: pointer;
+  box-sizing: border-box;
+  margin: 0 20px 8px 0;
+  border-radius: 8px;
+  padding: 12px 12px 2px 42px;
   font-size: 14px;
 }
 .checkbox:after {
@@ -130,12 +128,12 @@ input[type="checkbox"] {
   position: absolute;
   top: 50%;
   left: 10px;
-  display: block;
+  transition: border-color 0.2s linear;
   margin-top: -10px;
-  width: 22px;
-  height: 22px;
   border: 1px solid #a4a4a4;
   border-radius: 6px;
+  width: 22px;
+  height: 22px;
   content: "";
 }
 
@@ -145,17 +143,15 @@ input[type="checkbox"] {
   position: absolute;
   top: 50%;
   left: 16px;
-  display: block;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s linear;
   margin-top: -7px;
-  width: 7px;
-  height: 11px;
   border-right: 4px solid #333;
   border-bottom: 4px solid #333;
+  width: 7px;
+  height: 11px;
   content: "";
-  opacity: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 input[type="checkbox"]:checked + .checkbox:before {
   opacity: 1;
@@ -164,35 +160,31 @@ input[type="checkbox"]:checked + .checkbox:before {
 .t-form__input {
   border: 1px solid #a4a4a4;
   border-radius: 4px;
-  overflow: hidden;
-  height: 30px;
   background: #fff;
+  height: 30px;
+  overflow: hidden;
 }
 
 .t-form__input input {
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  padding: 0 10px;
   width: 100%;
   height: 100%;
-  border: 0;
-  padding: 0 10px;
   font-size: 14px;
-  background: transparent;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .t-button__orange {
-  color: #fff;
   border: 1px solid #c77777;
+  border-radius: 4px;
   background: #9a3c00;
   background: linear-gradient(#ea8200 0%, #a93a00 100%);
-  background: -webkit-linear-gradient(#ea8200 0, #a93a00 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ea8200), to(#a93a00));
-  font-size: 16px;
+  padding: 0 10px;
   min-width: 250px;
   min-height: 40px;
-  padding: 0 10px;
-  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
 }
 
 .pageTopScroll {
@@ -211,12 +203,100 @@ input[type="checkbox"]:checked + .checkbox:before {
 }
 .p-item-detail {
   margin-top: 16px;
-  max-width: 640px;
-  border: 1px solid #e2e2e2;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #e2e2e2;
+  max-width: 640px;
 }
 .cost-em {
   color: #f76b1f;
+}
+.review_box {
+  width: 50%;
+}
+
+.img_list {
+  margin: 5px 1px 5px;
+}
+
+@media only screen and (max-width: 1269px) {
+  .review_box {
+    width: 49.5%;
+  }
+
+  .img_list {
+    margin: 5px 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .review_box {
+    width: 100%;
+  }
+
+  .img_list {
+    margin: 5px 5px 5px;
+  }
+}
+
+.review_line {
+  vertical-align: top;
+  margin: 10px 0 10px;
+  border-top: 1px solid #ccc;
+}
+
+.review_text {
+  margin-bottom: 5px;
+  font-size: 85%;
+}
+
+.comment {
+  background-color: #fff100;
+  color: #000000;
+}
+
+.twitter {
+  background-color: #00acee;
+  color: #fff;
+}
+
+.family-balloon {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #e8e5d6;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.family-balloon:after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px 5px 0 5px;
+  border-style: solid;
+  border-color: #e8e5d6 transparent transparent transparent;
+  width: 0;
+  height: 0;
+  content: "";
+}
+.t-button__yellow {
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  border: none;
+  background: #fff100;
+  background: linear-gradient(#fff100 0%, #fff100 100%);
+  width: 90%;
+  color: #000000;
+}
+
+.disabled {
+  border: initial;
+  height: initial;
 }
 /* /detail/tamesu */
