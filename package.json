@@ -10,11 +10,15 @@
     "build": "eleventy",
     "start": "eleventy --serve",
     "deploy": "PATH_PREFIX=/mock-sharefull-moratame npm run build && npx gh-pages -d dist",
-    "purge:style": "purgecss --css src/assets/css/pass_monitor.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css"
+    "purge:style": "purgecss --css src/assets/css/style.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css",
+    "style:sort": "postcss src/assets/css/style.css --replace"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "css-declaration-sorter": "^7.0.0",
     "gh-pages": "^6.3.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^11.0.0",
     "purgecss": "^8.0.0"
   }
 }

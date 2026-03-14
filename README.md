@@ -26,6 +26,16 @@
   npm run deploy
   ```
 
+- **CSS プロパティのソート**（`src/assets/css/style.css`）  
+  Concentric CSS の順（Positioning → Box model → Typography → Visual → Animation/Misc）でプロパティを並べ替えます。設定は `postcss.config.cjs`（`css-declaration-sorter`）を参照してください。
+  ```bash
+  npm run style:sort
+  ```
+  他の CSS ファイルもソートする場合は、次を実行してください（対象パスは任意に変更できます）。
+  ```bash
+  npx postcss src/assets/css/対象.css --replace
+  ```
+
 ## 開発チームに渡すとき（dist をリポジトリに含める場合）
 
 1. `dist` を削除する  
