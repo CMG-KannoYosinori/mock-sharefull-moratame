@@ -14,6 +14,8 @@
 - [この商品についてのクチコミをもっと見る](http://localhost:8080/detail/tamesu.html)
 - [申し込む](http://localhost:8080/detail/morau.html)
 - [入力内容確認へ](http://localhost:8080/signup01.html)
+- [電話番号認証を行う](http://localhost:8080/signup03.html)
+- [内容を修正する](http://localhost:8080/signup03.html)
 
 ## フォーム
 
