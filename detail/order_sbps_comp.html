@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    
-    
-    
+      
 
   
 
@@ -26,18 +23,24 @@
   <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/bootstrap.v3.3.7--scope.css">
 
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/properties.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/module.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/reset-old-style--jp.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style--pc.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style--sp.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t-sample.css">
-<link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/p9255-common--pc.css">
+
+<link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/components.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/utilities.css">
@@ -51,7 +54,7 @@
 
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
     <div class="body-wrapper">
       
 
@@ -78,7 +81,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="/mock-sharefull-moratame/index.html">
         <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -93,9 +96,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -181,19 +182,19 @@
 </header>
 <!-- //p-masthead -->
 
-      <div class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
               <div class="t-sub-header">
-                <h2>申し込み完了</h2>
+                <h2 id="page-heading">申し込み完了</h2>
               </div>
               <!-- /sub header -->
               <ul class="t-media">
                 <li>
                   <div class="t-media__inner">
                     <div class="t-media__img">
-                      <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" alt="" height="640">
+                      <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" alt="" height="640" />
                     </div>
                     <div class="t-media__body">
                       <p class="t-media__body-title">
@@ -205,7 +206,8 @@
               </ul>
               <div class="t-text">
                 <p class="pt_10">
-                  上記商品へのお申し込みが完了しました。ありがとうございました。<br>お申し込み内容については、<a href="https://stg.tsample.tsite.jp/mymenu/basic.php">申込履歴</a>からご確認いただけます。
+                  上記商品へのお申し込みが完了しました。ありがとうございました。<br />お申し込み内容については、<a href="https://stg.tsample.tsite.jp/mymenu/basic.php">申込履歴</a
+                  >からご確認いただけます。
                 </p>
               </div>
               <div class="t-button">
@@ -219,15 +221,15 @@
 
             <!-- footBnr -->
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
-      </div><!-- /main-->
+        </div>
+        <!-- /contents -->
+      </main>
       
 
   
@@ -281,5 +283,4 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>

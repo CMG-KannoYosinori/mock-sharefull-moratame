@@ -1,9 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    
-    
+      
 
   
 
@@ -14,8 +12,10 @@
     <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪">
 
     <title>6-2-1 会員情報入力 入力内容確認 SMS 認証画面</title>
-    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/html5-doctor-reset-stylesheet.min.css" />
+
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/reset.css">
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/common.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.3078.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--sp.css" />
@@ -24,38 +24,31 @@
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/reset-old-style--jp.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc-2.css" />
+    
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--pc.css" />
+
+    <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t.css">
+
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/t-sample.css" />
+    
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/footer-common.css" />
 
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--pc.css" />
-    <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t.css">
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/t-sample.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/components.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/utilities.css" />
 
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css">
-
+    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="/mock-sharefull-moratame/assets/js/inputimg.js"></script>
 
     
+    <link rel="stylesheet" href="../assets/css/member-registration.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    
   </head>
 
-
-  <body>
-    <div class="page">
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </head>
+  <body id="pageTop">
+    <div class="page" id="registration-page">
       <div class="body-wrapper">
         
 
@@ -82,7 +75,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="/mock-sharefull-moratame/index.html">
         <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -97,9 +90,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -185,50 +176,70 @@
 </header>
 <!-- //p-masthead -->
 
-        <div class="content">
-          <div class="title title_other">
-            SMS認証コード入力
-          </div>
-          <div class="container">
-            <div class="block">
-              <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;">
-                <div class="block_inner">
-                  <div>
-                    <p>音声ガイダンスで届いた６桁の認証コードを入力してください</p>
+        <main class="content" id="main-content" aria-labelledby="sms-auth-heading">
+          <div class="l-container">
+            <section class="new-signup-input pb-8" aria-labelledby="sms-auth-heading">
+              <img src="../assets/images/img/milestone-3.png" alt="step3 承認コード入力" width="749" height="64" class="u-img-center" />
+              <h1 class="heading-ttl" id="sms-auth-heading">SMS認証コード入力</h1>
+
+              <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;" aria-label="SMS認証コード入力フォーム">
+                <p class="side-text" id="authcode-desc">音声ガイダンスで届いた６桁の認証コードを入力してください</p>
+                <div class="error" id="errmsgfil" role="alert" aria-live="assertive"><span id="errmsg">認証コードの形式が異なります。</span></div>
+
+                <!--電話番号（確認表示）-->
+                <div class="select-area select-tel">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl">電話番号</h2>
                   </div>
-                  <div class="error" id="errmsgfil"><span id="errmsg">認証コードの形式が異なります。</span></div>
-                  <div class="mt_10">
-                    <label>電話番号</label>
-                    <ul class="smsListUl">
-                      <li class="smsListLiConfirm">
-                        <div class="smsListLiPd">
-                          <p class="f13"></p>
-                        </div>
-                      </li>
-                    </ul>
+                  <div class="input-area">
+                    <p>xxx-xxxx-xxxx</p>
                   </div>
-                  <div class="">
-                    <label>認証コード</label>
-                    <ul class="smsListUl">
-                      <li class="smsListLi">
-                        <div class="smsListLiPd">
-                          <input type="text" id="authcode" value="" placeholder="認証コード" data-theme="d" />
-                        </div>
+                </div>
+                <!--/電話番号-->
+
+                <!--認証コード-->
+                <div class="select-area">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="label-authcode">認証コード</h2>
+                    <span class="required" aria-hidden="true">必須</span>
+                  </div>
+                  <div class="input-area">
+                    <ul class="input-menu tel">
+                      <li>
+                        <input
+                          type="text"
+                          class="fs-15"
+                          id="authcode"
+                          name="authcode"
+                          value=""
+                          placeholder="認証コード"
+                          data-theme="d"
+                          maxlength="6"
+                          inputmode="numeric"
+                          autocomplete="one-time-code"
+                          aria-required="true"
+                          aria-describedby="authcode-desc errmsgfil"
+                        />
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="block_inner" data-mini="true">
-                  <button type="button" rel="external" onclick="javascript:ajax_auth_confirm()" ;>認証</button>
-                </div>
-                <div class="block_inner smsAuth-back-button">
-                  <input type="hidden" name="sms_input_url" value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378" id="smsInputUrl">
-                  <button type="button" rel="external" formmethod="get" onclick="javascript:returnInput();">戻る</button>
+                <!--/認証コード-->
+
+                <div class="submit-area">
+                  <input
+                    type="hidden"
+                    name="sms_input_url"
+                    value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378"
+                    id="smsInputUrl"
+                  />
+                  <button type="button" rel="external" class="c-button c-button--confirm" onclick="javascript: ajax_auth_confirm();">認証</button>
+                  <button type="button" rel="external" class="c-button c-button--correct mt-2" formmethod="get" onclick="javascript: returnInput();">戻る</button>
                 </div>
               </form>
-            </div>
+            </section>
           </div>
-        </div>
+        </main>
         
 
   
@@ -281,5 +292,4 @@
     <script src="../assets/js/smsauthconfirm.js" charset="UTF-8"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>

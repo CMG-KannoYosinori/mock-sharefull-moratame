@@ -1,11 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    
-    
-    
-    
+      
 
   
 
@@ -24,21 +20,25 @@
 <title>無料でもらえる商品一覧 応募受付中！｜Vポイントが貯まる・使える Vサンプル</title>
 
 
-  <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/bootstrap.v3.3.7--scope.css">
-
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/properties.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/module.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/reset-old-style--jp.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style--pc.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style--sp.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t-sample.css">
-<link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/p9255-common--pc.css">
+
+<link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/components.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/utilities.css">
@@ -48,12 +48,11 @@
 
 <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
-
-    
+ 
 
   </head>
 
-  <body id="itemList" class="bootstrap-v3-3-7--scope">
+  <body id="pageTop" class="">
     <div class="body-wrapper">
       
 
@@ -80,7 +79,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="/mock-sharefull-moratame/index.html">
         <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -95,9 +94,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -183,17 +180,17 @@
 </header>
 <!-- //p-masthead -->
 
-      <div class="main">
-        <div class="contents cf contents--responsive">
+      <main class="main" aria-labelledby="page-heading">
+        <div class="l-container">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
               <p class="breadCrumbs mb_10"><a href="https://stg.tsample.tsite.jp/">ホーム</a>＞もらえる商品一覧</p>
               <!-- /breadCrumbs -->
               <div class="pr-mora pr-content">
-                <div class="heading xx-large enclosingBtn withIcon">
-                  <h1>
+                <div class="heading xx-large enclosingBtn withIcon mb-4 mt-4">
+                  <h1 id="page-heading">
                     <span class="icoWrap">
-                      <img alt="" height="79" src="../assets/images/icon-mora.png" width="64">
+                      <img alt="" height="79" src="../assets/images/icon-mora.png" width="64" />
                     </span>
                     <span class="">無料でもらえる商品一覧</span>
                   </h1>
@@ -201,28 +198,28 @@
                 <!-- /headGroup -->
                 <ul class="list14 p-project-lists c-grid--row c-grid--row--no-gutter" id="top_p_list">
                   <li class="c-grid--col">
-                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=4100c" onclick="ga('send','event','sp_top','click_tame','4100c');" rel="external" tabindex="0">
+                    <a class="ui-link" href="morau.html" onclick="ga('send', 'event', 'sp_top', 'click_tame', '4100c')" rel="external" tabindex="0">
                       <div class="p-project-list p-project-list--tame">
                         <div class="p-project-lists__thumbnail-wrap">
                           <h2>
-                            <img alt="モラご確認用B" height="320" src="../assets/images/project/2304_20260213_184437.png" width="320">
+                            <img alt="モラご確認用B" height="320" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Mora" width="320" />
                           </h2>
                         </div>
                         <div class="p-project-lists__block">
                           <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                            <dt class="sp_top_project_company">テスト</dt>
-                            <dt class="sp_top_project_sname">モラご確認用B</dt>
+                            <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
+                            <dt class="sp_top_project_sname u-text-ellipsis">モラご確認用B</dt>
                           </dl>
                         </div>
                       </div>
                     </a>
                   </li>
                   <li class="c-grid--col">
-                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=6aaf2" onclick="ga('send','event','sp_top','click_tame','6aaf2');" rel="external" tabindex="0">
+                    <a class="ui-link" href="morau.html" onclick="ga('send', 'event', 'sp_top', 'click_tame', '6aaf2')" rel="external" tabindex="0">
                       <div class="p-project-list p-project-list--tame">
                         <div class="p-project-lists__thumbnail-wrap">
                           <h2>
-                            <img alt="モラご確認用A" height="320" src="../assets/images/project/2304_20260213_184437.png" width="320">
+                            <img alt="モラご確認用A" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Mora" width="640" />
                           </h2>
                         </div>
                         <div class="p-project-lists__block">
@@ -235,12 +232,12 @@
                     </a>
                   </li>
                   <li class="c-grid--col">
-                    <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/morau.php?project_id=d0ef6" onclick="ga('send','event','sp_top','click_tame','d0ef6');" rel="external" tabindex="0">
+                    <a class="ui-link" href="morau.html" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'd0ef6')" rel="external" tabindex="0">
                       <div class="p-project-list p-project-list--tame">
                         <div class="p-project-lists__thumbnail-wrap">
                           <span class="c-label-2 c-label-2--already">応募済み</span>
                           <h2>
-                            <img alt="Vサンプル真冬のビタミンキャンペーン！" height="320" src="../assets/images/project/1140_20240307_181426.png" width="320">
+                            <img alt="モラご確認用A" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Mora" width="640" />
                           </h2>
                         </div>
                         <div class="p-project-lists__block">
@@ -256,12 +253,7 @@
                 <!-- /itemList -->
                 <div class="mt_20">
                   <p class="btnSquare01wrap">
-                    <a href="https://stg.tsample.tsite.jp/detail/moraupast.php" class="btnSquare01 btnBeige01">
-                      受付終了商品一覧はこちら
-                      <span class="arrow">
-                        <img src="../assets/images/arrow03.png" alt="" width="20" height="32">
-                      </span>
-                    </a>
+                    <a href="https://stg.tsample.tsite.jp/detail/moraupast.php" class="c-button c-button--gray"> 受付終了商品一覧はこちら</a>
                   </p>
                 </div>
                 <!-- /btnGroup -->
@@ -269,18 +261,15 @@
             </div>
 
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
-
-
-
-      </div><!-- /main-->
+        </div>
+        <!-- /contents -->
+      </main>
       
 
   
@@ -334,5 +323,4 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>

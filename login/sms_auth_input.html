@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    
-    
-    
+      
 
   
 
@@ -15,8 +12,10 @@
     <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪">
 
     <title>SMS認証電話番号入力</title>
-    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/html5-doctor-reset-stylesheet.min.css" />
+
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/reset.css">
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/common.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.3078.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--sp.css" />
@@ -25,17 +24,20 @@
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/reset-old-style--jp.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--common-sp-and-pc-2.css" />
+    
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--pc.css" />
+
+    <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t.css">
+
+    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/t-sample.css" />
+    
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/footer-common.css" />
 
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style--pc.css" />
-    <link rel="stylesheet" type="text/css" href="/mock-sharefull-moratame/assets/css/t.css">
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/t-sample.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/components.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.css" />
     <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/utilities.css" />
 
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/vendor/fontawesome/css/all.css">
-
+    <script src="/mock-sharefull-moratame/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="/mock-sharefull-moratame/assets/js/inputimg.js"></script>
 
     
@@ -43,66 +45,15 @@
       .page .p-masthead .p-masthead__nav {
         margin: 10px auto 10px;
       }
-
-      .smsListUl .cbxbd1_0 {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: none;
-      }
-
-      .smsListUl .cbxbd1_0 input[type='radio'] {
-        position: absolute;
-        inset: 0;
-        margin: 0;
-        opacity: 0;
-      }
-
-      .smsListUl .cbxbd1_0::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 2px solid #666;
-        background: #fff;
-        transform: translate(-50%, -50%);
-      }
-
-      .smsListUl .cbxbd1_0.c_on2::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #333;
-        transform: translate(-50%, -50%);
-      }
     </style>
+    <link rel="stylesheet" href="../assets/css/member-registration.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
     
   </head>
 
-
-  <body>
-    <div class="page">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </head>
+  <body id="pageTop">
+    <div class="page" id="registration-page">
       <div class="body-wrapper">
         
 
@@ -129,7 +80,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="/mock-sharefull-moratame/index.html">
         <img alt="ログアウト" src="/mock-sharefull-moratame/assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -144,9 +95,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -232,71 +181,91 @@
 </header>
 <!-- //p-masthead -->
 
-        <div class="content">
-          <div class="container">
-            <div class="block">
+        <main class="content" id="main-content" aria-labelledby="sms-input-heading">
+          <div class="l-container">
+            <section class="new-signup-input pb-8" aria-labelledby="sms-input-heading">
+              <h1 id="sms-input-heading" class="heading-ttl">SMS認証 電話番号入力</h1>
               <div class="smsAuth-hdl mb_10">
                 <p>
-                  <img src="../assets/images/banner/banner_sms_auth_sp.png" alt="SMS（電話番号）認証の導入を始めました。" width="100%" usemap="#Map">
+                  <img src="../assets/images/banner/banner_sms_auth_sp.png" alt="SMS（電話番号）認証の導入を始めました。" width="100%" usemap="#Map" />
                 </p>
               </div>
 
-              <form action="https://stg.moratame.net/s/login/sms_auth_confirm.php" method="post" id="authform">
-                <div class="block_inner">
-                  <div>
-                    サービスの品質向上・セキュリティ対策の観点から、サービスご利用にあたり、電話番号認証を導入しました。<br>
-                    ご自身の携帯番号を入力後、送信してください。<br>
-                    携帯番号をお持ちでない場合、固定電話番号を入力していただき、音声ガイダンスを選択し送信してください。<br>
-                    <br>
-                    送信後、SMSメッセージ、または音声ガイダンスにて配信された認証コードを入力してください。<br>
-                  </div>
-                  <div class="error" id="errmsgfil"><span id="errmsg"></span></div>
-                  <div>
-                    <label>電話番号</label>
-                    <input type="tel" id="mobilenumber" name="mobilenumber" value="" placeholder="電話番号" data-theme="d" onKeyPress="return(event.keyCode !==13)" />
-                    <div class="mt_10">
-                      <label>配信方法</label>
-                      <ul class="smsListUl">
-                        <li class="smsListLi">
-                          <div class="smsListLiPd">
-                            <label class="cbxbd1_0 c_on2">
-                              <input type="radio" id="deliveryKindSms" class="smsDelivery" name="deliveryKind" value="1" checked>
-                            </label>
-                            <div class="smsListTxt">
-                              <p><label for="deliveryKindSms">SMS配信</label></p>
-                            </div>
-                            <br class="flowBrClear">
-                          </div>
-                        </li>
-                        <li class="smsListLi">
-                          <div class="smsListLiPd">
-                            <label class="cbxbd1_0">
-                              <input type="radio" id="deliveryKindVoice" class="smsDelivery" name="deliveryKind" value="2">
-                            </label>
-                            <div class="smsListTxt">
-                              <p><label for="deliveryKindVoice">音声ガイダンス</label></p>
-                            </div>
-                            <br class="flowBrClear">
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <input type="hidden" name="url" value="https://stg.moratame.net/s/contents/signup05.php?ID=31bafddd99a113e9eecbf0097e133378" />
+              <form action="https://stg.moratame.net/s/login/sms_auth_confirm.php" method="post" id="authform" aria-label="SMS認証 電話番号入力フォーム">
+                <div id="sms-input-desc" role="note" class="side-text">
+                  <p>
+                    サービスの品質向上・セキュリティ対策の観点から、サービスご利用にあたり、電話番号認証を導入しました。<br />
+                    ご自身の携帯番号を入力後、送信してください。<br />
+                    携帯番号をお持ちでない場合、固定電話番号を入力していただき、音声ガイダンスを選択し送信してください。<br />
+                    <br />
+                    送信後、SMSメッセージ、または音声ガイダンスにて配信された認証コードを入力してください。<br />
+                  </p>
                 </div>
+                <div class="error" id="errmsgfil" role="alert" aria-live="assertive"><span id="errmsg"></span></div>
 
-                <div class="block_inner" data-mini="true">
-                  <button type="button" rel="external" onclick="javascript:ajax_auth_send()" ;>SMS認証コードを送信</button>
+                <!--電話番号-->
+                <div class="select-area select-tel">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="label-tel">電話番号</h2>
+                    <span class="required" aria-hidden="true">必須</span>
+                  </div>
+                  <div class="input-area">
+                    <ul class="input-menu tel">
+                      <li>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          id="mobilenumber"
+                          name="mobilenumber"
+                          value=""
+                          placeholder="090-1234-5678"
+                          data-theme="d"
+                          onKeyPress="return(event.keyCode !==13)"
+                          autocomplete="tel"
+                          aria-required="true"
+                          aria-describedby="sms-input-desc errmsgfil"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/電話番号-->
+
+                <!--配信方法-->
+                <div class="select-area select-sex">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="label-delivery">配信方法</h2>
+                  </div>
+                  <div class="input-area">
+                    <ul class="radio-menu sexs" role="radiogroup" aria-labelledby="label-delivery">
+                      <li><input type="radio" id="deliveryKindSms" class="smsDelivery" name="deliveryKind" value="1" checked /><label for="deliveryKindSms">SMS配信</label></li>
+                      <li><input type="radio" id="deliveryKindVoice" class="smsDelivery" name="deliveryKind" value="2" /><label for="deliveryKindVoice">音声ガイダンス</label></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/配信方法-->
+
+                <input type="hidden" name="url" value="https://stg.moratame.net/s/contents/signup05.php?ID=31bafddd99a113e9eecbf0097e133378" />
+
+                <div class="submit-area">
+                  <button type="button" rel="external" class="c-button c-button--confirm" onclick="javascript: ajax_auth_send();">SMS認証コードを送信</button>
                 </div>
               </form>
-              <div class="c-card--aside smsAuth-c-card--aside">
-                <p>モラタメでは、ご登録できるアカウントは、ご本人様かつお一人様1つまでとしています。<br>詳しくは、<a href="https://www.moratame.net/contents/regulation.php
-        " target="_blank" class="smsAuth-normalLink">「ご利用にあたってのお約束ごと」</a>をご確認ください。
+
+              <div class="side-text mt_20">
+                <p>
+                  モラタメでは、ご登録できるアカウントは、ご本人様かつお一人様1つまでとしています。<br />詳しくは、<a
+                    href="https://www.moratame.net/contents/regulation.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="c_blue"
+                    >「ご利用にあたってのお約束ごと」</a
+                  >をご確認ください。
                 </p>
               </div>
-            </div>
+            </section>
           </div>
-        </div>
+        </main>
         <script src="../assets/js/smsauthinput.js" charset="UTF-8"></script>
 
         
@@ -347,15 +316,8 @@
 </p>
 
       </div>
-
-
-
-
-
     </div>
 
     <script type="module" src="../assets/js/main.js"></script>
-
   </body>
-
 </html>
