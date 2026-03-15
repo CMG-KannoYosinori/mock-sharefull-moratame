@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    
-    
-    
+      
 
   
 
@@ -15,8 +12,10 @@
     <meta name="Description" content="試供品や新商品がもらえる・ためせる、プレゼント＆クチコミサイト！お得に話題の商品をためせて、ポイントもたまる♪">
 
     <title>シェアフル 6-2 会員情報入力 入力内容確認</title>
-    <script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="../assets/css/html5-doctor-reset-stylesheet.min.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/common.css" />
     <link rel="stylesheet" href="../assets/css/style.3078.css" />
     <link rel="stylesheet" href="../assets/css/style--sp.css" />
@@ -25,17 +24,20 @@
     <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css" />
     <link rel="stylesheet" href="../assets/css/reset-old-style--jp.css" />
     <link rel="stylesheet" href="../assets/css/style--common-sp-and-pc-2.css" />
+    
+    <link rel="stylesheet" href="../assets/css/style--pc.css" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/t.css">
+
+    <link rel="stylesheet" href="../assets/css/t-sample.css" />
+    
     <link rel="stylesheet" href="../assets/css/footer-common.css" />
 
-    <link rel="stylesheet" href="../assets/css/style--pc.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/t.css">
-    <link rel="stylesheet" href="../assets/css/t-sample.css" />
     <link rel="stylesheet" href="../assets/css/components.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/utilities.css" />
 
-    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
-
+    <script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/inputimg.js"></script>
 
     
@@ -43,12 +45,10 @@
     
   </head>
 
+  </head>
 
   <body id="pageTop">
-
     <div class="page" id="registration-page">
-
-
       <div class="body-wrapper">
         
 
@@ -83,7 +83,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="../../index.html">
         <img alt="ログアウト" src="../../assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -98,9 +98,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -186,21 +184,19 @@
 </header>
 <!-- //p-masthead -->
 
-        <div id="contente-top" class="content">
-          <div class="container">
-            <section class="new-signup-confirm">
-              <!--パンくず-->
-              <p class="milesstone"><img src="../assets/images/img/milestone-2.png" alt="step1 入力内容確認"></p>
-              <!--パンくず-->
+        <main id="contente-top" class="content">
+          <div class="l-container">
+            <section class="new-signup-confirm pb-8" aria-labelledby="confirm-heading">
+              <img src="../assets/images/img/milestone-2.png" alt="step2 入力内容確認" class="u-img-center" width="750" height="64" />
               <!--ページタイトル-->
-              <h1 class="heading-ttl">入力内容確認</h1>
+              <h1 class="heading-ttl" id="confirm-heading">入力内容確認</h1>
               <!--ページタイトル-->
 
-              <form action="https://stg.moratame.net/s/contents/signup04.php" method="post" name="new-signup-input" id="new-signup-input">
+              <form action="https://stg.moratame.net/s/contents/signup04.php" method="post" name="new-signup-input" id="new-signup-input" aria-label="入力内容確認フォーム">
                 <!--性別-->
-                <div class="select-area select-sex">
+                <div class="select-area select-sex" role="group" aria-labelledby="confirm-label-sex">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">性別</h2>
+                    <h2 class="element-ttl" id="confirm-label-sex">性別</h2>
                   </div>
                   <div class="input-area">
                     <p class="confirm-text">男性</p>
@@ -208,9 +204,9 @@
                 </div>
                 <!--/ 性別-->
                 <!--生年月日-->
-                <div class="select-area select-birthday">
+                <div class="select-area select-birthday" role="group" aria-labelledby="confirm-label-birthday">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">生年月日</h2>
+                    <h2 class="element-ttl" id="confirm-label-birthday">生年月日</h2>
                   </div>
                   <div class="input-area">
                     <p class="confirm-text">1980年02月01日</p>
@@ -218,9 +214,9 @@
                 </div>
                 <!--/生年月日-->
                 <!--メールアドレス-->
-                <div class="select-area select-email">
+                <div class="select-area select-email" role="group" aria-labelledby="confirm-label-email">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">メールアドレス</h2>
+                    <h2 class="element-ttl" id="confirm-label-email">メールアドレス</h2>
                   </div>
                   <div class="input-area">
                     <p class="confirm-text">kanno+1@dohouse.co.jp</p>
@@ -228,9 +224,9 @@
                 </div>
                 <!--/メールアドレス-->
                 <!--パスワード-->
-                <div class="select-area select-password">
+                <div class="select-area select-password" role="group" aria-labelledby="confirm-label-password">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">パスワード</h2>
+                    <h2 class="element-ttl" id="confirm-label-password">パスワード</h2>
                   </div>
                   <div class="input-area">
                     <p class="confirm-text">VoK93Vxv</p>
@@ -238,9 +234,9 @@
                 </div>
                 <!--/パスワード-->
                 <!--ニックネーム-->
-                <div class="select-area select-nickname">
+                <div class="select-area select-nickname" role="group" aria-labelledby="confirm-label-nickname">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">ニックネーム</h2>
+                    <h2 class="element-ttl" id="confirm-label-nickname">ニックネーム</h2>
                   </div>
                   <div class="input-area">
                     <p class="confirm-text">あlsdfkj</p>
@@ -248,32 +244,102 @@
                 </div>
                 <!--/ニックネーム-->
                 <!--紹介コード-->
-                <div class="select-area select-password">
+                <div class="select-area select-password" role="group" aria-labelledby="confirm-label-refer">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">紹介コード</h2>
+                    <h2 class="element-ttl" id="confirm-label-refer">紹介コード</h2>
                   </div>
                   <div class="input-area">
                     <p class="confirm-text"></p>
                   </div>
                 </div>
                 <!--/紹介コード-->
-                <hr>
-                <div class="input-area">
-                  <p class="confirm-text" style="color: #ff0000;">※ 携帯メールアドレスをご登録いただく場合、<br>moratame.netからのドメイン着信許可を設定<br>してください。</p>
+                <!--郵便番号-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-zipcode">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-zipcode">郵便番号</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">100-0001</p>
+                  </div>
                 </div>
-                <hr>
-                <div class="submit-btn">
-                  <button type="submit" rel="external">電話番号認証を行う</button>
+                <!--/郵便番号-->
+                <!--都道府県-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-prefecture">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-prefecture">都道府県</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">東京都</p>
+                  </div>
                 </div>
-                <div class="correct-btn">
-                  <a href="../contents/signup01.html" rel="external">
-                    <button type="button" rel="external">内容を修正する</button>
-                  </a>
+                <!--/都道府県-->
+                <!--市区町村・番地-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-address1">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-address1">市区町村・番地</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">千代田区千代田1-1</p>
+                  </div>
                 </div>
+                <!--/市区町村・番地-->
+                <!--建物名・部屋番号-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-address2">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-address2">建物名・部屋番号</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">サンプルマンション101</p>
+                  </div>
+                </div>
+                <!--/建物名・部屋番号-->
+                <!--電話番号-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-tel">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-tel">電話番号</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">090-1234-5678</p>
+                  </div>
+                </div>
+                <!--/電話番号-->
+                <!--職業-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-occupation">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-occupation">職業</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">専業主婦・主夫</p>
+                  </div>
+                </div>
+                <!--/職業-->
+                <!--婚姻状況-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-marital">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-marital">婚姻状況</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">未婚</p>
+                  </div>
+                </div>
+                <!--/婚姻状況-->
+                <!--お子様-->
+                <div class="select-area" role="group" aria-labelledby="confirm-label-children">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-children">お子様</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">いる</p>
+                  </div>
+                </div>
+                <!--/お子様-->
+                <div class="new-signup-confirm__note-box"><p class="u-note">※携帯メールアドレスをご登録いただく場合、moratame.netからのドメイン着信許可を設定してください。</p></div>
+                <button type="submit" rel="external" class="c-button c-button--auth-tel">SMS認証を行う</button>
+                <a href="../contents/signup01.html" rel="external" class="c-button c-button--correct mt-2">内容を修正する</a>
               </form>
             </section>
           </div>
-        </div>
+        </main>
         
 
   
@@ -330,11 +396,8 @@
 </p>
 
       </div>
-
     </div>
 
     <script type="module" src="../assets/js/main.js"></script>
-
   </body>
-
 </html>

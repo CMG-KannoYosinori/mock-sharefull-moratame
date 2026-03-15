@@ -33,18 +33,24 @@
   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.v3.3.7--scope.css">
 
 <link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/properties.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/module.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--common-sp-and-pc.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/reset-old-style--jp.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--pc.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--sp.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/t.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/t-sample.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/p9255-common--pc.css">
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/components.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/utilities.css">
@@ -86,7 +92,7 @@
 
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail itemApply">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemApply">
     <div class="body-wrapper">
       
 
@@ -121,7 +127,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="../../index.html">
         <img alt="ログアウト" src="../../assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -136,9 +142,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -224,10 +228,11 @@
 </header>
 <!-- //p-masthead -->
 
-      <div class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
+              <h1 id="page-heading" class="sr-only">ためせる商品アンケート回答</h1>
               <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
               <script type="text/javascript">
                 function doSubmit() {
@@ -639,10 +644,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- /itemDetailBox -->
           </div>
         </div><!-- /contents -->
-
-
-
-      </div><!-- /main-->
+      </main>
       
 
   

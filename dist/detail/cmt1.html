@@ -1,9 +1,6 @@
 <html lang="ja">
-
   <head>
-    
-    
-    
+      
 
   
   
@@ -31,18 +28,24 @@
   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.v3.3.7--scope.css">
 
 <link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/properties.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/module.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--common-sp-and-pc.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/reset-old-style--jp.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--pc.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--sp.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/t.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/t-sample.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/p9255-common--pc.css">
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/components.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/utilities.css">
@@ -56,7 +59,7 @@
 
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail" style="">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail" style="">
     <div class="body-wrapper">
       
 
@@ -91,7 +94,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="../../index.html">
         <img alt="ログアウト" src="../../assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -106,9 +109,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -194,7 +195,7 @@
 </header>
 <!-- //p-masthead -->
 
-      <div class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
@@ -202,7 +203,7 @@
               <!-- /breadCrumbs -->
               <!-- sub header -->
               <div class="t-sub-header">
-                <h2>商品詳細</h2>
+                <h2 id="page-heading">商品詳細</h2>
               </div>
               <!-- /sub header -->
               <div class="t-head">
@@ -213,10 +214,10 @@
               <div class="t-bx__wrapper">
                 <div class="t-bx__viewport">
                   <div class="bx">
-                    <div class="t-bx__slide">
+                    <div>
                       <div>
                         <a href="javascript:;">
-                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" height="640">
+                          <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" height="640" />
                         </a>
                       </div>
                     </div>
@@ -244,13 +245,22 @@
                         <td>9,930</td>
                       </tr>
                       <tr>
-                        <th>参考価格<br><a href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&amp;site_domain=qa-tsite
-" class="t-text__ex" target="_blank">※参考価格とは</a></th>
+                        <th>
+                          参考価格<br /><a
+                            href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&amp;site_domain=qa-tsite
+"
+                            class="t-text__ex"
+                            target="_blank"
+                            >※参考価格とは</a
+                          >
+                        </th>
                         <td>10円(税別)</td>
                       </tr>
                       <tr>
                         <th>発送予定日</th>
-                        <td>2026年11月10日(火)<div class="t-text">
+                        <td>
+                          2026年11月10日(火)
+                          <div class="t-text">
                             <div class="t-caption">
                               <p class="t-caption__text">配送に関する注意事項をご一読ください</p>
                             </div>
@@ -261,7 +271,6 @@
                         <th>終了日時</th>
                         <td>2026年11月10日(火) 23時59分</td>
                       </tr>
-
                     </tbody>
                   </table>
                 </div>
@@ -272,13 +281,13 @@
                   <h2 class="t-crosshead__text">クチコミ</h2>
                 </div>
               </div>
-              <div class="commentWrap" style="margin-top: 10px;">
+              <div class="commentWrap" style="margin-top: 10px">
                 <!-- everyPost -->
                 <div class="t-text">
                   <p class="t-text__small">
-                    【 ご投稿についてのお願い 】<br>
-                    本サイトは商品試用後の感想をお寄せいただくことを主旨としています。<br>
-                    ＜ご注意＞<br>
+                    【 ご投稿についてのお願い 】<br />
+                    本サイトは商品試用後の感想をお寄せいただくことを主旨としています。<br />
+                    ＜ご注意＞<br />
                     掲載商品に関係がない、商品をお試しされていない投稿、また一言のみの感想については確認次第、削除いたします。
                   </p>
                 </div>
@@ -287,37 +296,46 @@
                 </div>
 
                 <form action="detail/cmt.php#anchor01" method="post" name="frm">
-                  <input type="hidden" name="project_id" value="41e20">
-                  <input type="hidden" name="sns_url_tw" id="sns_url_tw" value="">
-                  <input type="hidden" name="sns_name_tw" id="sns_name_tw" value=" ">
-                  <input type="hidden" name="photo_img_tmp1" value="">
-                  <input type="hidden" name="photo_img_tmp2" value="">
-                  <input type="hidden" name="photo_img_tmp3" value="">
-                  <input type="hidden" name="photo_img_tmp4" value="">
-                  <input type="hidden" name="input_back" value="1">
-                  <input type="hidden" name="ct" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?">
-                  <input type="hidden" name="ct_content" value="">
+                  <input type="hidden" name="project_id" value="41e20" />
+                  <input type="hidden" name="sns_url_tw" id="sns_url_tw" value="" />
+                  <input type="hidden" name="sns_name_tw" id="sns_name_tw" value=" " />
+                  <input type="hidden" name="photo_img_tmp1" value="" />
+                  <input type="hidden" name="photo_img_tmp2" value="" />
+                  <input type="hidden" name="photo_img_tmp3" value="" />
+                  <input type="hidden" name="photo_img_tmp4" value="" />
+                  <input type="hidden" name="input_back" value="1" />
+                  <input
+                    type="hidden"
+                    name="ct"
+                    value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?"
+                  />
+                  <input type="hidden" name="ct_content" value="" />
                   <div class="t-text">
                     <p class="t-text__small">
-                      取得したサンプル品に関するクチコミは、企業等に提供する場合があります。同意の上、投稿してください。また、以下に該当するクチコミを投稿しないようにしてください。<br>
-                      (1) 公序良俗に反する表現、法令違反、宣伝・広告的な利用<br>
-                      (2) 個人情報の記載、または個人が特定できる内容の投稿<br>
-                      (3) 商品評価に関係のない投稿、悪質なリンク、その他不適切な投稿<br>
-                      当社が不適切と判断した場合、投稿を削除する場合がございます。<br>
+                      取得したサンプル品に関するクチコミは、企業等に提供する場合があります。同意の上、投稿してください。また、以下に該当するクチコミを投稿しないようにしてください。<br />
+                      (1) 公序良俗に反する表現、法令違反、宣伝・広告的な利用<br />
+                      (2) 個人情報の記載、または個人が特定できる内容の投稿<br />
+                      (3) 商品評価に関係のない投稿、悪質なリンク、その他不適切な投稿<br />
+                      当社が不適切と判断した場合、投稿を削除する場合がございます。<br />
                       詳細は「<a href="https://www.moratame.net/contents/syounin.php">モラタメ利用規約</a>」をご確認ください。
                     </p>
                   </div>
-                  <p class="t-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?</p>
-                  <textarea name="ct" id="ct" cols="30" rows="10" class="textareaStyle01" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?</textarea>
+                  <p class="t-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur
+                    veritatis debitis hic rem exercitationem saepe?
+                  </p>
+                  <textarea name="ct" id="ct" cols="30" rows="10" class="textareaStyle01" style="display: none">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?</textarea
+                  >
                   <div class="t-button">
-                    <input type="submit" value="コメントを送信する" class="t-button__green t-button__smallText t-button__blue" onclick="javascript:return modeCmt();">
+                    <input type="submit" value="コメントを送信する" class="t-button__green t-button__smallText t-button__blue" onclick="javascript: return modeCmt();" />
                   </div>
                   <div class="t-button">
                     <div>
-                      <input type="submit" class="t-button__default" value="内容の変更">
+                      <input type="submit" class="t-button__default" value="内容の変更" />
                     </div>
                   </div>
-                  <div class="p_20 bgc_gray01" id="sns_cmt_prv" style="display:none;">
+                  <div class="p_20 bgc_gray01" id="sns_cmt_prv" style="display: none">
                     <div id="scp_inr">
                       <h2 class="lead mb_10">プレビュー</h2>
                       <div class="unit" id="previewarea_tw">
@@ -331,40 +349,41 @@
 
                 <!-- /everyPost -->
                 <form action="detail/cmt2.php" method="post" name="cmt2">
-                  <input type="hidden" name="project_id" value="41e20">
-                  <input type="hidden" name="ct" value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?">
-                  <input type="hidden" name="ct_content" value="">
-                  <input type="hidden" name="tw_account_name" value="">
-                  <input type="hidden" id="sbtn_tw" name="sbtn_tw" value="">
-                  <input type="hidden" id="kbn" name="kbn" value="0">
-                  <input type="hidden" id="shohinmei" name="shohinmei" value="テスト「ポイント決済用少額」">
-                  <input type="hidden" id="shohinmei_tw" name="shohinmei_tw" value="テスト「ポイント決済用少額」">
-                  <input type="hidden" id="picture" name="picture" value="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像">
-                  <input type="hidden" name="photo_img_tmp1" value="">
-                  <input type="hidden" name="photo_img_tmp2" value="">
-                  <input type="hidden" name="photo_img_tmp3" value="">
-                  <input type="hidden" name="photo_img_tmp4" value="">
+                  <input type="hidden" name="project_id" value="41e20" />
+                  <input
+                    type="hidden"
+                    name="ct"
+                    value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?"
+                  />
+                  <input type="hidden" name="ct_content" value="" />
+                  <input type="hidden" name="tw_account_name" value="" />
+                  <input type="hidden" id="sbtn_tw" name="sbtn_tw" value="" />
+                  <input type="hidden" id="kbn" name="kbn" value="0" />
+                  <input type="hidden" id="shohinmei" name="shohinmei" value="テスト「ポイント決済用少額」" />
+                  <input type="hidden" id="shohinmei_tw" name="shohinmei_tw" value="テスト「ポイント決済用少額」" />
+                  <input type="hidden" id="picture" name="picture" value="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" />
+                  <input type="hidden" name="photo_img_tmp1" value="" />
+                  <input type="hidden" name="photo_img_tmp2" value="" />
+                  <input type="hidden" name="photo_img_tmp3" value="" />
+                  <input type="hidden" name="photo_img_tmp4" value="" />
                 </form>
               </div>
 
-              <br>
+              <br />
               <!-- /contents -->
               <!--/ここまで商品詳細-->
             </div>
 
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
-
-
-
-      </div><!-- /main-->
+        </div>
+        <!-- /contents -->
+      </main>
       
 
   
@@ -423,17 +442,17 @@
     </div>
     <!-- /body-wrapper -->
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/t-cmt.css?2026030610">
+    <link rel="stylesheet" type="text/css" href="../assets/css/t-cmt.css?2026030610" />
     <script>
-      var c_uri_https = '';
-      var pjt_rand = '41e20';
+      var c_uri_https = "";
+      var pjt_rand = "41e20";
     </script>
     <script>
       function modeCmt() {
-        document.cmt2.target = '_self';
+        document.cmt2.target = "_self";
 
         // TwitterにチェックONなら値をセット
-        if ($("#sbtn_tw").prop('checked')) {
+        if ($("#sbtn_tw").prop("checked")) {
           $("input#sbtn_tw").val(1);
         }
 
@@ -445,12 +464,68 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
 
-    <script type="text/javascript" id="" charset="">var vgHost = "chat3-ae.chatdealer.jp", vgProtocol = "https", vgPort = "443", vgAtxt = "9I4e1Chat3-ae", vgSid = 3; (function () { try { var a = document.createElement("script"), c = new Date, b = document.getElementsByTagName("script")[0]; a.type = "text/javascript"; a.async = !0; a.setAttribute("charset", "utf-8"); a.src = vgProtocol + "://" + vgHost + ":" + vgPort + "/chat/client.js?" + c.getTime(); b.parentNode.insertBefore(a, b) } catch (d) { console.log(d) } })();</script>
+    <script type="text/javascript" id="" charset="">
+      var vgHost = "chat3-ae.chatdealer.jp",
+        vgProtocol = "https",
+        vgPort = "443",
+        vgAtxt = "9I4e1Chat3-ae",
+        vgSid = 3;
+      (function () {
+        try {
+          var a = document.createElement("script"),
+            c = new Date(),
+            b = document.getElementsByTagName("script")[0];
+          a.type = "text/javascript";
+          a.async = !0;
+          a.setAttribute("charset", "utf-8");
+          a.src = vgProtocol + "://" + vgHost + ":" + vgPort + "/chat/client.js?" + c.getTime();
+          b.parentNode.insertBefore(a, b);
+        } catch (d) {
+          console.log(d);
+        }
+      })();
+    </script>
 
-    <iframe name="vgloadif1772762571342" src="https://chat3-ae.chatdealer.jp:443/chat/webstorage_check.html?1772762571342&amp;ver=10.5.0.0&amp;modeno=1" style="margin: 0;padding: 0;border: 0;min-height: 1px;min-width: 1px;display: none;"></iframe><iframe id="vgdataMainFrm1772762571440" name="vgdataMainFrm1772762571440" allowtransparency="true" style="padding: 0;border: 0;min-height: 1px;min-width: 1px;margin: 0;width: 0px;height: 0px;position:fixed; overflow: hidden;border: none; z-index: 2000000000;display: none;" scrolling="no" frameborder="no" src="https://chat3-ae.chatdealer.jp:443/chat/blank.html?ver=10.5.0.0&amp;modeno=1" class="chatdealer-main-frame"></iframe><iframe id="vgCtaFrm1772762571440" name="vgCtaFrm1772762571440" style="margin: 0;padding: 0;border: 0;min-height: 1px;min-width: 1px;width: 0px;height: 0px;position:fixed; bottom:0px; right:15px;overflow: hidden;border: none;z-index: 2000000002;display: none;" scrolling="no" frameborder="no" src=""></iframe>
+    <iframe
+      name="vgloadif1772762571342"
+      src="https://chat3-ae.chatdealer.jp:443/chat/webstorage_check.html?1772762571342&amp;ver=10.5.0.0&amp;modeno=1"
+      style="margin: 0; padding: 0; border: 0; min-height: 1px; min-width: 1px; display: none"
+    ></iframe
+    ><iframe
+      id="vgdataMainFrm1772762571440"
+      name="vgdataMainFrm1772762571440"
+      allowtransparency="true"
+      style="padding: 0; border: 0; min-height: 1px; min-width: 1px; margin: 0; width: 0px; height: 0px; position: fixed; overflow: hidden; border: none; z-index: 2000000000; display: none"
+      scrolling="no"
+      frameborder="no"
+      src="https://chat3-ae.chatdealer.jp:443/chat/blank.html?ver=10.5.0.0&amp;modeno=1"
+      class="chatdealer-main-frame"
+    ></iframe
+    ><iframe
+      id="vgCtaFrm1772762571440"
+      name="vgCtaFrm1772762571440"
+      style="
+        margin: 0;
+        padding: 0;
+        border: 0;
+        min-height: 1px;
+        min-width: 1px;
+        width: 0px;
+        height: 0px;
+        position: fixed;
+        bottom: 0px;
+        right: 15px;
+        overflow: hidden;
+        border: none;
+        z-index: 2000000002;
+        display: none;
+      "
+      scrolling="no"
+      frameborder="no"
+      src=""
+    ></iframe>
     <div id="vgCtaModalDivWrap">
-      <div id="vgCtaModalDiv" style="width: 0px;height: 0px;position:fixed; bottom:0px; right:15px;overflow: hidden;border: none;z-index: 2000000001;display: none;"></div>
+      <div id="vgCtaModalDiv" style="width: 0px; height: 0px; position: fixed; bottom: 0px; right: 15px; overflow: hidden; border: none; z-index: 2000000001; display: none"></div>
     </div>
   </body>
-
 </html>

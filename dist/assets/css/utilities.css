@@ -1,10 +1,104 @@
+/* from properties.css */
+.pos {
+  position: relative;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mb_5 {
+  margin-bottom: 5px;
+}
+
+.mb_10 {
+  margin-bottom: 10px;
+}
+.pt_10 {
+  padding-top: 10px;
+}
+
+.p_20 {
+  padding: 20px;
+}
+
+.w_40 {
+  width: 40px;
+}
+
+.w_60 {
+  width: 60px;
+}
+
+.fw_b {
+  font-weight: bold;
+}
+
+.fw_n {
+  font-weight: normal;
+}
+
+.fz_12 {
+  font-size: 12px;
+}
+
+.fz_14 {
+  font-size: 14px;
+}
+.ta_r {
+  text-align: right;
+}
+
+.ta_c {
+  text-align: center;
+}
+/* /from properties.css */
+
+/* tailwindcss */
+.mt-2 {
+  margin-top: 8px;
+}
+.mt-4 {
+  margin-top: 16px;
+}
+.mt-8 {
+  margin-top: 32px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.pb-8 {
+  padding-bottom: 32px;
+}
+.hidden {
+  display: none;
+}
+
+/* /tailwindcss */
+
+/* スクリーンリーダー用テキスト（視覚的に非表示） */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .u-img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.u-visually-hidden {
-  display: none;
 }
 /* テキスト省略 */
 .u-text-ellipsis {
@@ -14,4 +108,17 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+
+/* ※印のデザイン */
+.u-note {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+/* 画像中央寄せ */
+.u-img-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

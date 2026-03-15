@@ -1162,19 +1162,6 @@ div#snsblock14 .ui-icon {
   text-indent: 0;
 }
 
-.smsListUl {
-  display: block;
-  margin: 10px;
-  padding: 0;
-  width: auto;
-  list-style-type: none;
-}
-.smsListUl input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -moz-opacity: 0;
-}
 
 .smsListLiPd {
   padding: 0 0 0 10px;
@@ -15297,12 +15284,7 @@ div.ui-panel a.ui-link {
   margin-right: auto;
   margin-left: auto;
   list-style: none;
-  border-width: 1px 0 0 1px;
-  border-style: solid;
-  border-color: #d2d2d2;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .p-project-lists img {
@@ -15345,7 +15327,7 @@ div.ui-panel a.ui-link {
 
 .p-project-list {
   box-sizing: border-box;
-  border-width: 0 1px 1px 0;
+  border-width: 1px;
   border-style: solid;
   border-color: #d2d2d2;
   background-color: #f9f9f9;
@@ -15384,7 +15366,6 @@ div.ui-panel a.ui-link {
 
 .p-project-lists__block {
   position: relative;
-  height: 37px;
   padding: 0 5px 5px;
 }
 .p-project-lists__block .c-icon--favorite {

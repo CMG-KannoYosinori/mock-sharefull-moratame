@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-       
+      
 
   
   
@@ -26,21 +26,25 @@
 <title>モラご確認用A もらえる｜Vポイントが貯まる・使える Vサンプル</title>
 
 
-  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.v3.3.7--scope.css">
-
 <link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/properties.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/module.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--common-sp-and-pc.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/reset-old-style--jp.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--pc.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/style--sp.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/t.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/t-sample.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/p9255-common--pc.css">
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/footer-common.css">
+
 <link rel="stylesheet" type="text/css" href="../../assets/css/components.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="../../assets/css/utilities.css">
@@ -77,7 +81,7 @@
 
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail itemDetail-mora">
+  <body id="pageTop" class="itemDetail itemDetail-mora">
     <div class="body-wrapper">
       
 
@@ -112,7 +116,7 @@
     <div class="sp-header-menu_component sp-header-menu_component-logout">
       <a href="../../index.html">
         <img alt="ログアウト" src="../../assets/images/btn-logout.png">
-        <span class="u-visually-hidden">ログアウト</span>
+        <span class="hidden">ログアウト</span>
       </a>
     </div>
     <button
@@ -127,9 +131,7 @@
 
     <!-- HBGmenu_Open -->
     <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">
-        ×
-      </button>
+      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
       <ul>
         <!-- category -->
         <li class="menu__item">
@@ -215,7 +217,7 @@
 </header>
 <!-- //p-masthead -->
 
-      <div class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
@@ -225,7 +227,7 @@
               </p>
               <!-- /breadCrumbs -->
               <div class="t-sub-header">
-                <h2>商品詳細</h2>
+                <h2 id="page-heading">商品詳細</h2>
               </div>
               <!-- /sub header -->
               <div class="t-head">
@@ -235,13 +237,7 @@
               <div class="t-bx__wrapper">
                 <div class="t-bx__viewport">
                   <div class="bx">
-                    <div class="t-bx__slide">
-                      <div>
-                        <a href="javascript:;">
-                          <img src="../assets/images/project/2304_20260213_184437.png" />
-                        </a>
-                      </div>
-                    </div>
+                    <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Mora" width="640" height="640" class="u-img" />
                   </div>
                 </div>
               </div>
@@ -252,41 +248,41 @@
                 </div>
               </div>
               <div class="t-table">
-                <table class="t-table__block">
-                  <tbody>
-                    <tr>
-                      <th>提供元</th>
-                      <td>テスト</td>
-                    </tr>
-                    <tr>
-                      <th>アンケート</th>
-                      <td>「お申し込み前」回答</td>
-                    </tr>
-                    <tr>
-                      <th>応募期間</th>
-                      <td>2026年02月13日(金)18:44&nbsp;～<br />2027年02月13日(土)23:59</td>
-                    </tr>
-                    <tr>
-                      <th>当選数</th>
-                      <td>100</td>
-                    </tr>
-                    <tr>
-                      <th>発送予定日</th>
-                      <td>2027年02月13日(土)</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="price_bgbox">
+                  <table class="t-table__block">
+                    <tbody>
+                      <tr>
+                        <th>提供元</th>
+                        <td>テスト</td>
+                      </tr>
+                      <tr>
+                        <th>アンケート</th>
+                        <td>「お申し込み前」回答</td>
+                      </tr>
+                      <tr>
+                        <th>応募期間</th>
+                        <td>2026年02月13日(金)18:44&nbsp;～<br />2027年02月13日(土)23:59</td>
+                      </tr>
+                      <tr>
+                        <th>当選数</th>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <th>発送予定日</th>
+                        <td>2027年02月13日(土)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form id="form-order" method="post" action="https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=6aaf2" class="t-form">
+                    <div class="t-text t-attention-terms">
+                      <div class="t-text">
+                        <p class="t-text__middle">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
+                      </div>
+                    </div>
+                    <button type="button" id="order-button" class="c-button c-button--orange mt-2">申し込む</button>
+                  </form>
+                </div>
               </div>
-              <form id="form-order" method="post" action="https://stg.tsample.tsite.jp/detail/tamesu2.php?fst=1&project_id=6aaf2" class="t-form">
-                <div class="t-text t-attention-terms">
-                  <div class="t-text">
-                    <p class="t-text__middle">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
-                  </div>
-                </div>
-                <div class="t-button">
-                  <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
-                </div>
-              </form>
               <div class="t-crosshead">
                 <div class="t-crosshead__inner">
                   <h2 class="t-crosshead__text">商品説明</h2>
@@ -362,12 +358,12 @@
                   <p class="t-text__middle">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                 </div>
               </div>
-              <div class="t-button">
-                <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">申し込む</button>
+              <div class="">
+                <button type="button" id="order-button" class="c-button c-button--orange mb-4 mt-2">申し込む</button>
               </div>
               <!-- /contents -->
-              <div class="t-button t-button2" style="margin: 0 0 40px">
-                <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを投稿する</button>
+              <div class="" style="margin: 0 0 40px">
+                <button type="button" id="review-button" class="c-button c-button--review">クチコミを投稿する</button>
               </div>
               <script>
                 $(function () {
@@ -405,8 +401,7 @@
           </div>
         </div>
         <!-- /contents -->
-      </div>
-      <!-- /main-->
+      </main>
       
 
   
