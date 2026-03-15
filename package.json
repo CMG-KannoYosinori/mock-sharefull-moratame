@@ -10,8 +10,8 @@
     "build": "eleventy",
     "start": "eleventy --serve",
     "deploy": "PATH_PREFIX=/mock-sharefull-moratame npm run build && npx gh-pages -d dist",
-    "purge:style": "purgecss --css src/assets/css/style.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css",
-    "style:sort": "postcss src/assets/css/footer-common.css --replace"
+    "purge:style": "purgecss --css src/assets/css/properties.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css",
+    "style:sort": "postcss src/assets/css/utilities.css --replace"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
