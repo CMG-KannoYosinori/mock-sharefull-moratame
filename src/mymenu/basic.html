@@ -47,10 +47,10 @@
     {% endcapture %} {% include 'head' %}
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail t-mymenu" style="">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail t-mymenu" style="">
     <div class="body-wrapper">
       {% include 'header' %}
-      <main class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
@@ -58,7 +58,7 @@
                 <p class="breadCrumbs mb_10"><a href="//tsample.tsite.jp/">ホーム</a> ＞マイページ</p>
                 <!-- /breadCrumbs -->
                 <div class="heading xx-large enclosingBtn withIcon">
-                  <h1>
+                  <h1 id="page-heading">
                     <span class="icoWrap">
                       <img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64" />
                     </span>

@@ -36,13 +36,14 @@
     {% include 'head' %}
   </head>
 
-  <body class="bootstrap-v3-3-7--scope itemDetail itemApply">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemApply">
     <div class="body-wrapper">
       {% include 'header' %}
-      <main class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
+              <h1 id="page-heading" class="sr-only">ためせる商品アンケート回答</h1>
               <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
               <script type="text/javascript">
                 function doSubmit() {

@@ -51,12 +51,25 @@
 .input-area {
   margin-left: 5%;
 }
-.new-signup-input {
-  padding-bottom: 32px;
-}
 .new-signup-input li,
 .new-signup-confirm li {
   list-style-type: none;
+}
+.new-signup-confirm__note-box {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: #ff0000;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* 768px以下の場合 */
+  @media (max-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .side-text {
@@ -72,77 +85,6 @@
 
 .c_blue {
   color: #00e;
-}
-
-.submit-btn {
-  margin: 20px 0;
-}
-
-.submit-btn button {
-  font-size: 15px;
-  line-height: 18px;
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  width: 90%;
-  height: 43px;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-  border: 1px #1b94d3 solid;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background: linear-gradient(#1b94d3, #1782b9);
-}
-
-.submit-btn button a {
-  color: #fff;
-}
-
-.correct-btn {
-  margin: 20px 0;
-}
-
-.correct-btn button {
-  font-size: 15px;
-  line-height: 18px;
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  width: 90%;
-  height: 43px;
-  margin: auto;
-  text-align: center;
-  color: #1b94d3;
-  border: 1px #1b94d3 solid;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background: linear-gradient(#fff, #fff);
-}
-
-.correct-btn button a {
-  color: #1b94d3;
-}
-
-.correct-btn__link {
-  font-size: 15px;
-  line-height: 18px;
-  display: block;
-  box-sizing: border-box;
-  width: 90%;
-  height: 43px;
-  margin: auto;
-  padding: 12px 0 0;
-  text-align: center;
-  color: #1b94d3;
-  text-decoration: none;
-  border: 1px #1b94d3 solid;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background: linear-gradient(#fff, #fff);
 }
 
 .new-signup-input .sexs li {
@@ -310,8 +252,4 @@
   line-height: 1.5;
   margin-top: 20px;
   text-align: center;
-}
-
-.new-signup-confirm .submit-btn {
-  margin-top: 0;
 }

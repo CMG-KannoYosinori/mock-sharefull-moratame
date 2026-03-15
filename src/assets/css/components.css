@@ -9,6 +9,7 @@
     0 1px 1px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
   width: 100%;
   max-width: 640px;
   height: 40px;
@@ -24,8 +25,16 @@
     background: #fff100;
   }
   /* 「入力内容確認へ」のデザイン */
-  &.c-button--confirm {
+  /* 「電話番号認証を行う」のデザイン */
+  &.c-button--confirm,
+  &.c-button--auth-tel {
     color: #ffffff;
     background: #1b94d3;
+  }
+  /* 「内容を修正する」のデザイン */
+  &.c-button--correct {
+    color: #1b94d3;
+    background: #ffffff;
+    border: 1px solid #1b94d3;
   }
 }

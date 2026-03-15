@@ -5,10 +5,10 @@
     include 'head' %}
   </head>
 
-  <body id="itemList" class="bootstrap-v3-3-7--scope">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope">
     <div class="body-wrapper">
       {% include 'header' %}
-      <main class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
@@ -16,7 +16,7 @@
               <!-- /breadCrumbs -->
               <div class="pr-tame pr-content" style="margin-top: 0">
                 <div class="heading xx-large enclosingBtn withIcon">
-                  <h1>
+                  <h1 id="page-heading">
                     <span class="icoWrap">
                       <img alt="" height="79" src="../assets/images/icon-tame.png" width="64" />
                     </span>

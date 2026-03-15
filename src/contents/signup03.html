@@ -17,7 +17,7 @@
         {% include 'header' %}
         <main id="contente-top" class="content">
           <div class="l-container">
-            <section class="new-signup-confirm" aria-labelledby="confirm-heading">
+            <section class="new-signup-confirm pb-8" aria-labelledby="confirm-heading">
               <!--パンくず-->
               <p class="milesstone"><img src="../assets/images/img/milestone-2.png" alt="step2 入力内容確認"></p>
               <!--パンくず-->
@@ -166,17 +166,9 @@
                   </div>
                 </div>
                 <!--/お子様-->
-                <hr>
-                <div class="input-area" id="note-carrier" role="note">
-                  <p class="confirm-text" style="color: #ff0000;">※ 携帯メールアドレスをご登録いただく場合、<br>moratame.netからのドメイン着信許可を設定<br>してください。</p>
-                </div>
-                <hr>
-                <div class="submit-btn">
-                  <button type="submit" rel="external">電話番号認証を行う</button>
-                </div>
-                <div class="correct-btn">
-                  <a href="../contents/signup01.html" rel="external" class="correct-btn__link">内容を修正する</a>
-                </div>
+                <div class="new-signup-confirm__note-box"><p class="u-note">※携帯メールアドレスをご登録いただく場合、moratame.netからのドメイン着信許可を設定してください。</p></div>
+                <button type="submit" rel="external" class="c-button c-button--auth-tel">電話番号認証を行う</button>
+                <a href="../contents/signup01.html" rel="external" class="c-button c-button--correct mt-2">内容を修正する</a>
               </form>
             </section>
           </div>

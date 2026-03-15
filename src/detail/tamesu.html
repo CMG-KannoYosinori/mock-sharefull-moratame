@@ -37,10 +37,10 @@
     {% endcapture %} {% include 'head' %}
   </head>
 
-  <body class="itemDetail">
+  <body id="pageTop" class="itemDetail">
     <div class="body-wrapper">
       {% include 'header' %}
-      <main class="main">
+      <main class="main" aria-labelledby="page-heading">
         <div class="l-container">
           <div id="F001" class="js-t-wrapper itemDetailBox">
             <p class="breadCrumbs mb_10">
@@ -50,7 +50,7 @@
             <!-- /breadCrumbs -->
 
             <div class="t-sub-header">
-              <h2>商品詳細</h2>
+              <h2 id="page-heading">商品詳細</h2>
             </div>
             <!-- /sub header -->
             <div class="t-head">
