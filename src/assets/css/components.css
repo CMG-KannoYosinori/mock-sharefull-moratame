@@ -2,40 +2,53 @@
   display: grid;
   place-items: center;
   cursor: pointer;
-  margin-left: auto;
+  box-sizing: border-box;
   margin-right: auto;
-  box-shadow:
-    0 1px 1px rgba(255, 255, 255, 0.3) inset,
-    0 0 0 rgba(0, 0, 0, 0.1),
-    0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
   border: none;
   border-radius: 4px;
-  box-sizing: border-box;
   width: 100%;
   max-width: 640px;
   height: 40px;
   text-align: center;
   /* 「申し込む」のデザイン */
   &.c-button--orange {
-    color: #fff;
     background: #f76b1f;
+    color: #fff;
   }
   /* 「クチコミを再投稿する」、「この商品についてのクチコミをもっと見る」のデザイン */
   &.c-button--review {
-    color: #000000;
     background: #fff100;
+    color: #000000;
   }
   /* 「入力内容確認へ」のデザイン */
   /* 「SMS認証を行う」のデザイン */
   &.c-button--confirm,
   &.c-button--auth-tel {
-    color: #ffffff;
     background: #1b94d3;
+    color: #ffffff;
   }
   /* 「内容を修正する」のデザイン */
   &.c-button--correct {
-    color: #1b94d3;
-    background: #ffffff;
     border: 1px solid #1b94d3;
+    background: #ffffff;
+    color: #1b94d3;
+  }
+  &.c-button--gray {
+    position: relative;
+    background-color: #e5e5e5;
+    width: 100%;
+    &:before {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+      background-image: url("../images/arrow03.png");
+      background-size: contain;
+      background-color: #e5e5e5;
+      width: 10px;
+      height: 16px;
+      content: "";
+    }
   }
 }

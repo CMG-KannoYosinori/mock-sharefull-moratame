@@ -15284,12 +15284,7 @@ div.ui-panel a.ui-link {
   margin-right: auto;
   margin-left: auto;
   list-style: none;
-  border-width: 1px 0 0 1px;
-  border-style: solid;
-  border-color: #d2d2d2;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .p-project-lists img {
@@ -15332,7 +15327,7 @@ div.ui-panel a.ui-link {
 
 .p-project-list {
   box-sizing: border-box;
-  border-width: 0 1px 1px 0;
+  border-width: 1px;
   border-style: solid;
   border-color: #d2d2d2;
   background-color: #f9f9f9;

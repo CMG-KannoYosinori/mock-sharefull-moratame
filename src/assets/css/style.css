@@ -304,3 +304,14 @@ input[type="checkbox"]:checked + .checkbox:before {
   height: initial;
 }
 /* /detail/tamesu */
+/* detail/tamesulist, detail/moraurist */
+.c-grid--row {
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.c-grid--col {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+/* /detail/tamesulist, detail/moraurist */
