@@ -22,50 +22,53 @@
 
       <div class="body-wrapper">
         {% include 'header' %}
-        <div class="content">
-          <div class="title title_other">
-            SMS認証コード入力
-          </div>
-          <div class="container">
-            <div class="block">
-              <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;">
-                <div class="block_inner">
-                  <div>
-                    <p>音声ガイダンスで届いた６桁の認証コードを入力してください</p>
+        <main class="content">
+          <div class="l-container">
+            <div class="title title_other">
+              SMS認証コード入力
+            </div>
+            <div class="container">
+              <div class="block">
+                <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;">
+                  <div class="block_inner">
+                    <div>
+                      <p>音声ガイダンスで届いた６桁の認証コードを入力してください</p>
+                    </div>
+                    <div class="error" id="errmsgfil"><span id="errmsg">認証コードの形式が異なります。</span></div>
+                    <div class="mt_10">
+                      <label>電話番号</label>
+                      <ul class="smsListUl">
+                        <li class="smsListLiConfirm">
+                          <div class="smsListLiPd">
+                            <p class="f13"></p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <label>認証コード</label>
+                      <ul class="smsListUl">
+                        <li class="smsListLi">
+                          <div class="smsListLiPd">
+                            <input type="text" id="authcode" value="" placeholder="認証コード" data-theme="d" />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="error" id="errmsgfil"><span id="errmsg">認証コードの形式が異なります。</span></div>
-                  <div class="mt_10">
-                    <label>電話番号</label>
-                    <ul class="smsListUl">
-                      <li class="smsListLiConfirm">
-                        <div class="smsListLiPd">
-                          <p class="f13"></p>
-                        </div>
-                      </li>
-                    </ul>
+                  <div class="block_inner" data-mini="true">
+                    <button type="button" rel="external" onclick="javascript:ajax_auth_confirm()" ;>認証</button>
                   </div>
-                  <div class="">
-                    <label>認証コード</label>
-                    <ul class="smsListUl">
-                      <li class="smsListLi">
-                        <div class="smsListLiPd">
-                          <input type="text" id="authcode" value="" placeholder="認証コード" data-theme="d" />
-                        </div>
-                      </li>
-                    </ul>
+                  <div class="block_inner smsAuth-back-button">
+                    <input type="hidden" name="sms_input_url" value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378" id="smsInputUrl">
+                    <button type="button" rel="external" formmethod="get" onclick="javascript:returnInput();">戻る</button>
                   </div>
-                </div>
-                <div class="block_inner" data-mini="true">
-                  <button type="button" rel="external" onclick="javascript:ajax_auth_confirm()" ;>認証</button>
-                </div>
-                <div class="block_inner smsAuth-back-button">
-                  <input type="hidden" name="sms_input_url" value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378" id="smsInputUrl">
-                  <button type="button" rel="external" formmethod="get" onclick="javascript:returnInput();">戻る</button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
+
+        </main>
         {% include 'footer' %}
       </div>
     </div>
