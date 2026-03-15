@@ -1,16 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    {% assign page_use_bootstrap = true %}
-    {% assign page_title = 'もらえる商品応募内容確認｜Vポイントが貯まる・使える Vサンプル' %}
-    {% include 'head' %}
+    {% assign page_use_bootstrap = true %} {% assign page_title = 'もらえる商品応募内容確認｜Vポイントが貯まる・使える Vサンプル' %} {% include 'head' %}
   </head>
 
   <body class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
     <div class="body-wrapper">
       {% include 'header' %}
-      <div class="main">
+      <main class="main">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
@@ -22,7 +19,7 @@
                 <li>
                   <div class="t-media__inner">
                     <div class="t-media__img">
-                      <img alt="商品名" class="img-responsive" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638">
+                      <img alt="商品名" class="img-responsive" height="240" src="https://placehold.jp/30/dd6699/ffffff/638x240.png?text=eye-catch+mora" width="638" />
                     </div>
                     <div class="t-media__body">
                       <p class="t-media__body-title">
@@ -46,18 +43,15 @@
             </div>
 
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
-
-
-
-      </div><!-- /main-->
+        </div>
+        <!-- /contents -->
+      </main>
       {% include 'footer' %}
     </div>
     <!-- /body-wrapper -->
@@ -65,5 +59,4 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>

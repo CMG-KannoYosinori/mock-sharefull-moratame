@@ -13,96 +13,94 @@
   <body id="pageTop">
     <div class="body-wrapper">
       {% include 'header' %}
-      <main>
-        <div class="main">
-          <h3 class="step-name" style="margin-top: 10px;">再発送手続き</h3>
-          <div class="submenu p-registration_info_edit__block" style="display: block;">
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">伝票番号</h4>
-            </div>
-            <p class="t-form__value">651129813111</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">商品名</h4>
-            </div>
-            <p class="t-form__value">再発送画面表示用</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">再配達理由</h4>
-            </div>
-            <p class="t-form__value">長期不在</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">お名前</h4>
-            </div>
-            <p class="t-form__value">岩井　貴寛</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">配達先</h4>
-            </div>
-            <p class="t-form__value">〒134-0084</p>
-            <p class="t-form__value">東京都江戸川区東葛西8-32a</p>
-            <p class="t-form__value">TEL:03-5486-3530</p>
-            <form action="redelivery/complete.php" method="post" id="frm">
-              <input type="hidden" name="redelivery_id" value="22">
-              <input type="hidden" name="rand" value="c96f1ec2af8b2caf7682c897819cf5a9">
-              <div class="submenu p-registration_info_edit__block" style="display: block;">
-                <label for="address_change_0">
-                  <input type="radio" id="address_change_0" name="address_change" value="0" checked />上記の住所で再発送依頼する
-                </label><br><br>
-                <label for="address_change_1">
-                  <input type="radio" id="address_change_1" name="address_change" value="1">お届け先を変更する
-                </label>
-                <div id="change_form" style="display: none;">
-                  <p class="mt_20">下記に再配達先住所を入力してください。</p>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">お名前</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="name" type="name" id="name" value="岩井　貴寛">
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">郵便番号（&#8251;ハイフンなしでご入力ください）</h4>
-                  </div>
-                  <ul class="t-button__group">
-                    <li>
-                      <div class="t-form__input">
-                        <input type="text" name="zip" id="zip" size="10" maxlength="7" placeholder="0000000" value="" onKeyUp="AjaxZip3.zip2addr(this,'','addr1','addr2');">
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">都道府県</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input type="text" name="addr1" size="20" value="" placeholder="都道府県">
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">市区町村</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="addr2" type="text" id="addr2" value="" maxlength="32" placeholder="市区町村">
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">番地</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="house_number" type="text" id="house_number" value="" maxlength="32" placeholder="番地">
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">マンション/建物名（&#8251;部屋番号の入力忘れにご注意ください。）</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="addr3" type="text" id="addr3" value="" maxlength="32" placeholder="マンション/建物名">
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">電話番号（&#8251;ハイフンなしでご入力ください）</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="tel" type="text" id="tel" value="0354863530" maxlength="32" placeholder="00000000000">
-                  </div>
-                  <input type="checkbox" name="sync_address" id="sync_address" value="1" style="position: initial; opacity: initial; margin-top: 10px;">変更先住所を登録情報にも反映する
-                </div>
-              </div>
-              <input type="submit" value="再発送依頼する" name="submit" class="t-button__green t-button__smallText t-button__blue">
-            </form>
+      <main class="main">
+        <h3 class="step-name" style="margin-top: 10px;">再発送手続き</h3>
+        <div class="submenu p-registration_info_edit__block" style="display: block;">
+          <div class="t-column-head">
+            <h4 class="t-column-head__text">伝票番号</h4>
           </div>
+          <p class="t-form__value">651129813111</p>
+          <div class="t-column-head">
+            <h4 class="t-column-head__text">商品名</h4>
+          </div>
+          <p class="t-form__value">再発送画面表示用</p>
+          <div class="t-column-head">
+            <h4 class="t-column-head__text">再配達理由</h4>
+          </div>
+          <p class="t-form__value">長期不在</p>
+          <div class="t-column-head">
+            <h4 class="t-column-head__text">お名前</h4>
+          </div>
+          <p class="t-form__value">岩井　貴寛</p>
+          <div class="t-column-head">
+            <h4 class="t-column-head__text">配達先</h4>
+          </div>
+          <p class="t-form__value">〒134-0084</p>
+          <p class="t-form__value">東京都江戸川区東葛西8-32a</p>
+          <p class="t-form__value">TEL:03-5486-3530</p>
+          <form action="redelivery/complete.php" method="post" id="frm">
+            <input type="hidden" name="redelivery_id" value="22">
+            <input type="hidden" name="rand" value="c96f1ec2af8b2caf7682c897819cf5a9">
+            <div class="submenu p-registration_info_edit__block" style="display: block;">
+              <label for="address_change_0">
+                <input type="radio" id="address_change_0" name="address_change" value="0" checked />上記の住所で再発送依頼する
+              </label><br><br>
+              <label for="address_change_1">
+                <input type="radio" id="address_change_1" name="address_change" value="1">お届け先を変更する
+              </label>
+              <div id="change_form" style="display: none;">
+                <p class="mt_20">下記に再配達先住所を入力してください。</p>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">お名前</h4>
+                </div>
+                <div class="t-form__input">
+                  <input name="name" type="name" id="name" value="岩井　貴寛">
+                </div>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">郵便番号（&#8251;ハイフンなしでご入力ください）</h4>
+                </div>
+                <ul class="t-button__group">
+                  <li>
+                    <div class="t-form__input">
+                      <input type="text" name="zip" id="zip" size="10" maxlength="7" placeholder="0000000" value="" onKeyUp="AjaxZip3.zip2addr(this,'','addr1','addr2');">
+                    </div>
+                  </li>
+                </ul>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">都道府県</h4>
+                </div>
+                <div class="t-form__input">
+                  <input type="text" name="addr1" size="20" value="" placeholder="都道府県">
+                </div>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">市区町村</h4>
+                </div>
+                <div class="t-form__input">
+                  <input name="addr2" type="text" id="addr2" value="" maxlength="32" placeholder="市区町村">
+                </div>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">番地</h4>
+                </div>
+                <div class="t-form__input">
+                  <input name="house_number" type="text" id="house_number" value="" maxlength="32" placeholder="番地">
+                </div>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">マンション/建物名（&#8251;部屋番号の入力忘れにご注意ください。）</h4>
+                </div>
+                <div class="t-form__input">
+                  <input name="addr3" type="text" id="addr3" value="" maxlength="32" placeholder="マンション/建物名">
+                </div>
+                <div class="t-column-head">
+                  <h4 class="t-column-head__text">電話番号（&#8251;ハイフンなしでご入力ください）</h4>
+                </div>
+                <div class="t-form__input">
+                  <input name="tel" type="text" id="tel" value="0354863530" maxlength="32" placeholder="00000000000">
+                </div>
+                <input type="checkbox" name="sync_address" id="sync_address" value="1" style="position: initial; opacity: initial; margin-top: 10px;">変更先住所を登録情報にも反映する
+              </div>
+            </div>
+            <input type="submit" value="再発送依頼する" name="submit" class="t-button__green t-button__smallText t-button__blue">
+          </form>
         </div>
       </main>
       {% include 'footer' %}

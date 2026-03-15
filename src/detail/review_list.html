@@ -1,28 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    {% assign page_use_bootstrap = true %}
-    {% assign page_title = 'テスト / ポイント決済用少額 クチコミ一覧｜Vポイントが貯まる・使える Vサンプル' %}
-    {% capture head_extra %}
+    {% assign page_use_bootstrap = true %} {% assign page_title = 'テスト / ポイント決済用少額 クチコミ一覧｜Vポイントが貯まる・使える Vサンプル' %} {% capture head_extra %}
     <script>
       $(function () {
-        $(document).on('click', "[id^='order-button']", function () {
-          window.location.href = 'tamesu.html?project_id=41e20';
+        $(document).on("click", "[id^='order-button']", function () {
+          window.location.href = "tamesu.html?project_id=41e20";
         });
-        $(document).on('click', "[id^='review-button']", function () {
-          window.location.href = 'cmt.html?project_id=41e20#anchor01';
+        $(document).on("click", "[id^='review-button']", function () {
+          window.location.href = "cmt.html?project_id=41e20#anchor01";
         });
       });
     </script>
-    {% endcapture %}
-    {% include 'head' %}
+    {% endcapture %} {% include 'head' %}
   </head>
 
   <body class="bootstrap-v3-3-7--scope itemDetail t-mymenu">
     <div class="body-wrapper">
       {% include 'header' %}
-      <div class="main">
+      <main class="main">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
@@ -31,38 +27,39 @@
                 <div class="heading xx-large enclosingBtn withIcon">
                   <h1>
                     <span class="icoWrap">
-                      <img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64">
+                      <img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64" />
                     </span>
-                    <span style="font-size: 70%;">ポイント決済用少額 - クチコミ一覧</span>
+                    <span style="font-size: 70%">ポイント決済用少額 - クチコミ一覧</span>
                   </h1>
                 </div>
                 <div class="tabContent tabContent1 active">
-                  <div class="subTabBox" style="height: 20px;"></div>
+                  <div class="subTabBox" style="height: 20px"></div>
                   <div class="container subTabContent subTabContent1 pt_10 active">
                     <div id="hb_mm">
                       <div id="hb_ms">
                         <section class="hb_ms_scedule" id="content">
-                          <div class="review_box schedule_box" style="margin-bottom: 20px; border-bottom: initial;">
+                          <div class="review_box schedule_box" style="margin-bottom: 20px; border-bottom: initial">
                             <div class="userinfo_box">
                               <div class="hb_ms_ctr">
                                 <h2>
                                   <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                                  <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72">
+                                  <img src="https://tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
                                 </h2>
-                                <p class="hb_ms_detail">投稿日時：2026-03-06 11:04:33 </p>
+                                <p class="hb_ms_detail">投稿日時：2026-03-06 11:04:33</p>
                                 <p class="review_line"></p>
                                 <p class="review_text">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur veritatis debitis hic rem exercitationem saepe?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo
+                                  consectetur veritatis debitis hic rem exercitationem saepe?
                                 </p>
-                                <p class="goodBtnWrap" style="margin: initial;">
-                                  <a href="javascript:void(0);" id="goodBtn99" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '99', '88f8d35944dedc35' ,0 ,event);">Good</a>
+                                <p class="goodBtnWrap" style="margin: initial">
+                                  <a href="javascript:void(0);" id="goodBtn99" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '99', '88f8d35944dedc35', 0, event)">Good</a>
                                   <span class="counter c_red" id="goodnum99"></span>
                                 </p>
                               </div>
                             </div>
                           </div>
                         </section>
-                        <table style="margin:0 auto 20px;">
+                        <table style="margin: 0 auto 20px">
                           <tbody>
                             <tr>
                               <td>
@@ -78,7 +75,7 @@
                         <div class="t-button t-button2">
                           <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">詳しい商品情報はこちら</button>
                         </div>
-                        <div class="t-button t-button2" style="margin-top: 15px;">
+                        <div class="t-button t-button2" style="margin-top: 15px">
                           <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを再投稿する</button>
                         </div>
                       </div>
@@ -87,7 +84,7 @@
                 </div>
               </div>
               <form name="senddataform" action="review_list.html" method="get">
-                <input type="hidden" name="project_id" value="41e20">
+                <input type="hidden" name="project_id" value="41e20" />
                 <input type="hidden" name="p" value="0" />
                 <input type="hidden" name="d" value="10" />
               </form>
@@ -98,23 +95,23 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
       {% include 'footer' %}
     </div>
 
     <script language="JavaScript" type="text/JavaScript">
-    <!--
-    function movePage(pagenum) {
-        $("form[name='senddataform']").attr("action","review_list.html");
-        $("form[name='senddataform'] input[name='p']").val(pagenum);
-        $("form[name='senddataform']").submit();
-        return false;
-    }
-    //-->
+      <!--
+      function movePage(pagenum) {
+          $("form[name='senddataform']").attr("action","review_list.html");
+          $("form[name='senddataform'] input[name='p']").val(pagenum);
+          $("form[name='senddataform']").submit();
+          return false;
+      }
+      //-->
     </script>
     <script src="../assets/js/goodup.js"></script>
     <style>
-      @media only screen and (max-width:1614px) {
+      @media only screen and (max-width: 1614px) {
         body.t-mymenu .tabContent1 .review_box {
           width: 50%;
         }
@@ -134,7 +131,7 @@
         }
       }
 
-      @media only screen and (max-width:639px) {
+      @media only screen and (max-width: 639px) {
         body.t-mymenu .tabContent1 .review_box {
           width: 100%;
         }
@@ -180,7 +177,7 @@
 
       .family-balloon:after {
         position: absolute;
-        content: '';
+        content: "";
         bottom: -10px;
         left: 50%;
         margin-left: -5px;
@@ -211,5 +208,4 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>

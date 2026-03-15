@@ -1,20 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    {% assign page_use_bootstrap = true %}
-    {% assign page_title = '商品へのコメント　テスト「ポイント決済用少額」｜Vポイントが貯まる・使える Vサンプル' %}
-    {% include 'head' %}
+    {% assign page_use_bootstrap = true %} {% assign page_title = '商品へのコメント　テスト「ポイント決済用少額」｜Vポイントが貯まる・使える Vサンプル' %} {% include 'head' %}
   </head>
 
   <body class="bootstrap-v3-3-7--scope">
     <div class="body-wrapper">
       {% include 'header' %}
-      <div class="main">
+      <main class="main">
         <div class="contents cf contents--responsive">
           <div class="">
             <div id="F001" class="js-t-wrapper itemDetailBox">
-
               <div class="t-sub-header">
                 <h2>コメント投稿完了</h2>
               </div>
@@ -34,18 +30,15 @@
             </div>
 
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
-
-
-
-      </div><!-- /main-->
+        </div>
+        <!-- /contents -->
+      </main>
       {% include 'footer' %}
     </div>
     <!-- /body-wrapper -->
@@ -53,5 +46,4 @@
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>
