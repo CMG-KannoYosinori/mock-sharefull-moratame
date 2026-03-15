@@ -23,4 +23,9 @@
     color: #000000;
     background: #fff100;
   }
+  /* 「入力内容確認へ」のデザイン */
+  &.c-button--confirm {
+    color: #ffffff;
+    background: #1b94d3;
+  }
 }
