@@ -1,70 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    {% assign page_title = '6-2-1 会員情報入力 入力内容確認 SMS 認証画面' %}
-    {% include 'head-login-contents' %}
-
+    {% assign page_title = '6-2-1 会員情報入力 入力内容確認 SMS 認証画面' %} {% include 'head-login-contents' %}
+  </head>
   <body id="pageTop">
     <div class="page">
-
-
-
-
-
-
-
-
-
-
-
-
       <div class="body-wrapper">
         {% include 'header' %}
         <main class="content" id="main-content" aria-labelledby="sms-auth-heading">
           <div class="l-container">
-            <h1 class="title title_other" id="sms-auth-heading">
-              SMS認証コード入力
-            </h1>
-            <div class="container">
-              <div class="block">
+            <img src="../assets/images/img/milestone-3.png" alt="step3 承認コード入力" width="749" height="64" />
+            <h3 class="title title_other" id="sms-auth-heading">SMS認証コード入力</h3>
+            <div class="">
+              <div class="">
                 <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;" aria-label="SMS認証コード入力フォーム">
-                  <div class="block_inner">
+                  <div class="">
                     <p id="authcode-desc">音声ガイダンスで届いた６桁の認証コードを入力してください</p>
                     <div class="error" id="errmsgfil" role="alert" aria-live="assertive"><span id="errmsg">認証コードの形式が異なります。</span></div>
-                    <div class="mt_10" role="group" aria-label="電話番号">
-                      <label>電話番号</label>
-                      <ul class="smsListUl">
-                        <li class="smsListLiConfirm">
-                          <div class="smsListLiPd">
-                            <p class="f13"></p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                    <dl>
+                      <dt>電話番号</dt>
+                      <dd>xxx-xxxx-xxxx</dd>
+                    </dl>
                     <div role="group" aria-labelledby="label-authcode">
                       <label id="label-authcode" for="authcode">認証コード</label>
-                      <ul class="smsListUl">
-                        <li class="smsListLi">
-                          <div class="smsListLiPd">
-                            <input type="text" id="authcode" name="authcode" value="" placeholder="認証コード" data-theme="d" maxlength="6" inputmode="numeric" autocomplete="one-time-code" aria-required="true" aria-describedby="authcode-desc errmsgfil" />
-                          </div>
-                        </li>
-                      </ul>
+                      <input
+                        type="text"
+                        id="authcode"
+                        name="authcode"
+                        value=""
+                        placeholder="認証コード"
+                        data-theme="d"
+                        maxlength="6"
+                        inputmode="numeric"
+                        autocomplete="one-time-code"
+                        aria-required="true"
+                        aria-describedby="authcode-desc errmsgfil"
+                      />
                     </div>
                   </div>
-                  <div class="block_inner" data-mini="true">
-                    <button type="button" rel="external" onclick="javascript:ajax_auth_confirm()">認証</button>
+                  <div class="" data-mini="true">
+                    <button type="button" rel="external" onclick="javascript: ajax_auth_confirm();">認証</button>
                   </div>
-                  <div class="block_inner smsAuth-back-button">
-                    <input type="hidden" name="sms_input_url" value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378" id="smsInputUrl">
-                    <button type="button" rel="external" formmethod="get" onclick="javascript:returnInput();">戻る</button>
+                  <div class="smsAuth-back-button">
+                    <input
+                      type="hidden"
+                      name="sms_input_url"
+                      value="https://stg.moratame.net/s/login/sms_auth_input.php?url=https%3A%2F%2Fstg.moratame.net%2Fs%2Fcontents%2Fsignup05.php%3FID%3D31bafddd99a113e9eecbf0097e133378"
+                      id="smsInputUrl"
+                    />
+                    <button type="button" rel="external" formmethod="get" onclick="javascript: returnInput();">戻る</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
-
         </main>
         {% include 'footer' %}
       </div>
@@ -72,5 +61,4 @@
     <script src="../assets/js/smsauthconfirm.js" charset="UTF-8"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>

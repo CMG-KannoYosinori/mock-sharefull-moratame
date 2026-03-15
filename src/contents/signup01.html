@@ -1,34 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_title = 'シェアフル 6-1 会員情報入力 基本情報入力' %}
-    {% capture head_extra %}
+    {% assign page_title = 'シェアフル 6-1 会員情報入力 基本情報入力' %} {% capture head_extra %}
     <link rel="stylesheet" href="../assets/css/member-registration.css" />
     <!-- 利用規約モーダル -->
     <link rel="stylesheet" href="../assets/vendor/colorbox/colorbox.css" />
     <script src="../assets/vendor/colorbox/jquery.colorbox.js" charset="UTF-8"></script>
     <!-- /利用規約モーダル -->
-    {% endcapture %}
-    {% include 'head-login-contents' %}
+    {% endcapture %} {% include 'head-login-contents' %}
+  </head>
   <body id="pageTop">
-
     <div id="modal_wd">
       <div class="md_background"></div>
       <div class="md_container"></div>
     </div>
     <div class="page" id="registration-page">
-
-
       <div class="body-wrapper">
         {% include 'header' %}
         <main id="contente-top" class="content">
           <div class="l-container">
             <section class="new-signup-input pb-8" aria-labelledby="signup-heading">
-              <!--パンくず-->
-              <p class="milesstone">
-                <img src="../assets/images/img/milestone-1.png" alt="step1 基本情報入力">
-              </p>
-              <!--パンくず-->
+              <img src="../assets/images/img/milestone-1.png" alt="step1 基本情報入力" />
               <h1 class="heading-ttl" id="signup-heading">基本情報入力</h1>
 
               <form action="https://www.moratame.net/s/contents/signup02p.php" method="post" name="new-signup-input" id="new-signup-input" aria-label="会員基本情報入力フォーム">
@@ -42,13 +34,9 @@
                   </div>
                   <div class="input-area">
                     <ul class="radio-menu" role="radiogroup" aria-labelledby="label-sex" aria-required="true">
-                      <li>
-                        <input type="radio" name="sex[]" id="sex-1" value="11001" /><label for="sex-1">男性</label>
-                      </li>
-                      <li><input type="radio" name="sex[]" id="sex-2" value="11002" checked /><label for="sex-2">女性</label>
-                      </li>
-                      <li><input type="radio" name="sex[]" id="sex-3" value="11003" /><label for="sex-3">無回答</label>
-                      </li>
+                      <li><input type="radio" name="sex[]" id="sex-1" value="11001" /><label for="sex-1">男性</label></li>
+                      <li><input type="radio" name="sex[]" id="sex-2" value="11002" checked /><label for="sex-2">女性</label></li>
+                      <li><input type="radio" name="sex[]" id="sex-3" value="11003" /><label for="sex-3">無回答</label></li>
                     </ul>
                   </div>
                 </div>
@@ -61,7 +49,8 @@
                   </div>
                   <div class="input-area" aria-labelledby="label-birthday">
                     <ul class="select-menu birthday">
-                      <li><select name="yyyy" id="birthday-yyyy" aria-label="年">
+                      <li>
+                        <select name="yyyy" id="birthday-yyyy" aria-label="年">
                           <option>年</option>
                           <option value="1934">1934</option>
                           <option value="1935">1935</option>
@@ -151,7 +140,13 @@
                           <option value="2019">2019</option>
                           <option value="2020">2020</option>
                           <option value="2021">2021</option>
-                        </select></li>&nbsp;<li><select name="mm" id="birthday-mm" aria-label="月">&nbsp<option>月</option>
+                        </select>
+                      </li>
+                      &nbsp;
+                      <li>
+                        <select name="mm" id="birthday-mm" aria-label="月">
+                          &nbsp
+                          <option>月</option>
                           <option value="01">01</option>
                           <option value="02">02</option>
                           <option value="03">03</option>
@@ -164,7 +159,11 @@
                           <option value="10">10</option>
                           <option value="11">11</option>
                           <option value="12">12</option>
-                        </select></li>&nbsp;<li><select name="dd" id="day" aria-label="日">
+                        </select>
+                      </li>
+                      &nbsp;
+                      <li>
+                        <select name="dd" id="day" aria-label="日">
                           <option>日</option>
                           <option id="day1" value="01">01</option>
                           <option id="day2" value="02">02</option>
@@ -197,7 +196,8 @@
                           <option id="day29" value="29">29</option>
                           <option id="day30" value="30">30</option>
                           <option id="day31" value="31">31</option>
-                        </select></li>
+                        </select>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -211,10 +211,34 @@
                   <div class="input-area">
                     <ul class="input-menu email">
                       <li>
-                        <input type="email" class="fs-15" name="email" id="email" value="" placeholder="example@moratame.net" autocomplete="email" spellcheck="false" autocorrect="off" aria-labelledby="label-email" aria-required="true">
+                        <input
+                          type="email"
+                          class="fs-15"
+                          name="email"
+                          id="email"
+                          value=""
+                          placeholder="example@moratame.net"
+                          autocomplete="email"
+                          spellcheck="false"
+                          autocorrect="off"
+                          aria-labelledby="label-email"
+                          aria-required="true"
+                        />
                       </li>
                       <li>
-                        <input type="email" class="fs-15" name="email2" id="email2" value="" placeholder="確認のためもう一度入力して下さい" autocomplete="email" spellcheck="false" autocorrect="off" aria-label="メールアドレス（確認）" aria-required="true">
+                        <input
+                          type="email"
+                          class="fs-15"
+                          name="email2"
+                          id="email2"
+                          value=""
+                          placeholder="確認のためもう一度入力して下さい"
+                          autocomplete="email"
+                          spellcheck="false"
+                          autocorrect="off"
+                          aria-label="メールアドレス（確認）"
+                          aria-required="true"
+                        />
                       </li>
                     </ul>
                   </div>
@@ -230,7 +254,18 @@
                   <div class="input-area">
                     <ul class="input-menu password">
                       <li>
-                        <input type="password" name="pass" id="password1" placeholder="g10Asf31" autocomplete="new-password" spellcheck="false" autocorrect="off" aria-labelledby="label-password" aria-required="true" aria-describedby="password-hint">
+                        <input
+                          type="password"
+                          name="pass"
+                          id="password1"
+                          placeholder="g10Asf31"
+                          autocomplete="new-password"
+                          spellcheck="false"
+                          autocorrect="off"
+                          aria-labelledby="label-password"
+                          aria-required="true"
+                          aria-describedby="password-hint"
+                        />
                       </li>
                       <p class="side-text" id="password-hint">※半角6文字以上16文字以下</p>
                     </ul>
@@ -250,7 +285,19 @@
                   </div>
                   <div class="input-area">
                     <ul class="input-menu nickname">
-                      <li><input type="text" class="fs-15" name="disp_id" id="disp_id" value="" placeholder="ザック32694" aria-labelledby="label-nickname" aria-required="true" aria-describedby="nickname-hint" /></li>
+                      <li>
+                        <input
+                          type="text"
+                          class="fs-15"
+                          name="disp_id"
+                          id="disp_id"
+                          value=""
+                          placeholder="ザック32694"
+                          aria-labelledby="label-nickname"
+                          aria-required="true"
+                          aria-describedby="nickname-hint"
+                        />
+                      </li>
                       <div class="side-text">
                         <button type="button" class="w200 nickname-check-btn" disabled aria-describedby="nickname-hint">登録可能なニックネームかチェック</button>
                         <span id="nicknamealert" role="status" aria-live="polite"></span>
@@ -286,7 +333,20 @@
                   </div>
                   <div class="input-area">
                     <ul class="input-menu zipcode">
-                      <li><input type="text" class="fs-15" name="zipcode" id="zipcode" value="" placeholder="100-0001" maxlength="8" autocomplete="postal-code" aria-labelledby="label-zipcode" aria-required="true" /></li>
+                      <li>
+                        <input
+                          type="text"
+                          class="fs-15"
+                          name="zipcode"
+                          id="zipcode"
+                          value=""
+                          placeholder="100-0001"
+                          maxlength="8"
+                          autocomplete="postal-code"
+                          aria-labelledby="label-zipcode"
+                          aria-required="true"
+                        />
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -320,7 +380,19 @@
                   </div>
                   <div class="input-area">
                     <ul class="input-menu address1">
-                      <li><input type="text" class="fs-15" name="address1" id="address1" value="" placeholder="千代田区千代田1-1" autocomplete="street-address" aria-labelledby="label-address1" aria-required="true" /></li>
+                      <li>
+                        <input
+                          type="text"
+                          class="fs-15"
+                          name="address1"
+                          id="address1"
+                          value=""
+                          placeholder="千代田区千代田1-1"
+                          autocomplete="street-address"
+                          aria-labelledby="label-address1"
+                          aria-required="true"
+                        />
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -411,7 +483,7 @@
 
                 <!-- termsOfUe -->
                 <div class="submit-area">
-                  <a class="iframe c_blue" href="../contents/step01_guide.html" aria-label="利用規約（別ウィンドウで開きます）">利用規約</a>に同意のうえ<br>「入力内容確認へ」を押してください。
+                  <a class="iframe c_blue" href="../contents/step01_guide.html" aria-label="利用規約（別ウィンドウで開きます）">利用規約</a>に同意のうえ<br />「入力内容確認へ」を押してください。
                 </div>
                 <button type="submit" rel="external" class="c-button c-button--confirm">入力内容確認へ</button>
                 <!-- //termsOfUe -->
@@ -421,7 +493,6 @@
         </main>
         {% include 'footer' %}
       </div>
-
     </div>
 
     <script type="module" src="../assets/js/main.js"></script>
@@ -433,7 +504,7 @@
         iframe: true,
         width: "90%",
         height: "80%",
-        opacity: 0.7
+        opacity: 0.7,
       });
     });
   </script>
