@@ -13,6 +13,13 @@
   [クチコミを再投稿する](http://localhost:8080/detail/tamesu.html)
 - [この商品についてのクチコミをもっと見る](http://localhost:8080/detail/tamesu.html)
 - [申し込む](http://localhost:8080/detail/morau.html)
+- [入力内容確認へ](http://localhost:8080/signup01.html)
+
+## フォーム
+
+- [input radio](http://localhost:8080/signup01.html)
+- [select](http://localhost:8080/signup01.html)
+- [input text](http://localhost:8080/signup01.html)
 
 ## フッター
 
