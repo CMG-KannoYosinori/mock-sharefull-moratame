@@ -337,11 +337,14 @@ body.is-drawer-open {
   line-height: 1.8;
   display: block;
 }
+
 #menu .menu__item .menu__item__link:after {
   content: "\f13a";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
+  margin-left: 8px;
 }
+
 #menu .menu__item .menu__item__link.on:after {
   content: "\f139";
   font-weight: 900;
