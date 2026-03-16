@@ -954,16 +954,8 @@ div#snsblock14 .ui-icon {
   font-size: 10px;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .fz_13 {
   font-size: 13px;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
 }
 
 .fz_15 {
@@ -1003,16 +995,8 @@ div#snsblock14 .ui-icon {
   margin-top: 5px;
 }
 
-.mt-\[10px\] {
-  margin-top: 10px;
-}
-
 .mt_15 {
   margin-top: 15px;
-}
-
-.mt-\[20px\] {
-  margin-top: 20px;
 }
 
 .mt_25 {
@@ -1073,14 +1057,6 @@ div#snsblock14 .ui-icon {
 
 .mt_95 {
   margin-top: 95px;
-}
-
-.mt-\[10px\]0 {
-  margin-top: 100px;
-}
-
-.mb-\[10px\] {
-  margin-bottom: 10px;
 }
 
 .mb_15 {
@@ -1274,7 +1250,6 @@ textarea.textarea:focus {
 body {
   background: #fff;
   color: #333;
-  font-size: 12px;
   font-family: ArialMT, "Hiragino Kaku Gothic ProN", sans-serif;
   line-height: 1.5;
 }
@@ -6986,11 +6961,6 @@ div.block div.form div.signup p.fw-n1 {
 ---------------------------------------------------------- */
 /* /hb_ms
 ---------------------------------------------------------- */
-html,
-body {
-  height: 100%;
-}
-
 .portrait .page,
 .portrait .ui-page .page {
   min-height: 100%;
@@ -10197,10 +10167,6 @@ div.block h2.company {
 div.block h2.company img {
   margin-right: 2px;
   line-height: 20px;
-}
-
-.mt-\[20px\] {
-  margin: 20px 0 0;
 }
 
 div.topmoratame3 {
