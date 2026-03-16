@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z0-9\\[\\]]+(?:-[a-z0-9\\[\\]]+)*(?:__(?:[a-z0-9\\[\\]]+(?:-[a-z0-9\\[\\]]+)*))?(?:--(?:[a-z0-9\\[\\]]+(?:-[a-z0-9\\[\\]]+)*))*$",
+      {
+        "message": "Expected class selector to be BEM-style (block__element--modifier, kebab-case, optional [value] utilities)"
+      }
+    ]
+  }
+}
+

@@ -36,6 +36,12 @@
   npx postcss src/assets/css/対象.css --replace
   ```
 
+- **CSS の lint（stylelint）**  
+  `src/assets/css` 配下の CSS に対して、Stylelint（`stylelint-config-standard` ベース）でルールチェックを行います。
+  ```bash
+  npm run lint:css
+  ```
+
 ## 開発チームに渡すとき（dist をリポジトリに含める場合）
 
 1. `dist` を削除する  
