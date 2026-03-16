@@ -61,7 +61,6 @@ body {
   font-size: 14px;
   color: #333;
   background: #fff;
-  -webkit-text-size-adjust: 100%;
 }
 
 input,
@@ -2128,6 +2127,9 @@ a.t-button__return {
   border-right: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
   background-color: #fff;
+}
+.t-table__block tbody td.p-0 {
+  padding: 0;
 }
 .t-table__block tbody th:last-child,
 .t-table__block tbody td:last-child {

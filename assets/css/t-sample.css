@@ -808,13 +808,7 @@ select:invalid {
   padding: 0px 0 40px;
 }
 .pr-tame .p-card__detail {
-  height: 103px;
   line-height: 1.5;
-}
-@media (max-width: 1614px) {
-  .pr-tame .p-card__detail {
-    height: 95px;
-  }
 }
 .pr-tame .p-card__detail .badge.cardBadge {
   height: auto;
@@ -841,7 +835,7 @@ select:invalid {
   padding: 0 5px;
   width: 48.66%;
   border-radius: 5px;
-  color: #ffffff;
+  color: #fff;
   font-size: 12px;
 }
 @media (max-width: 639px) {
@@ -1995,7 +1989,7 @@ body.t-about .secondary {
   font-size: 14px;
 }
 
-.t-support-menu_wrapper .mt-2 {
+.t-support-menu_wrapper .mt-[8px] {
   margin-top: 8px;
 }
 
