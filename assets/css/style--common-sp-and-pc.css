@@ -1212,7 +1212,7 @@
   margin-top: 5px;
 }
 
-.mb-[5px] {
+.mb-\[5px\] {
   margin-bottom: 5px;
 }
 
@@ -1929,7 +1929,7 @@ body {
   margin-left: -16px;
 }
 
-.bl-8423-mt-[16px] {
+.bl-8423-mt-\[16px\] {
   margin-top: 16px;
 }
 
@@ -1957,7 +1957,7 @@ body {
   margin-top: 12px;
 }
 
-.-bl-8423-mt-[8px] {
+.-bl-8423-mt-\[8px\] {
   margin-top: -8px;
 }
 
