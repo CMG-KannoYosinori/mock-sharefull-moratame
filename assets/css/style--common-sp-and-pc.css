@@ -1056,14 +1056,6 @@
   font-size: 11px;
 }
 
-.mt-\[10px\]0 {
-  margin-top: 100px;
-}
-
-.mb-\[10px\]0 {
-  margin-bottom: 100px;
-}
-
 .mt_95 {
   margin-top: 95px;
 }
@@ -1132,16 +1124,8 @@
   margin-top: 55px;
 }
 
-.mb-\[5px\]5 {
-  margin-bottom: 55px;
-}
-
 .mt_50 {
   margin-top: 50px;
-}
-
-.mb-\[5px\]0 {
-  margin-bottom: 50px;
 }
 
 .mt_45 {
@@ -1184,10 +1168,6 @@
   margin-bottom: 25px;
 }
 
-.mt-\[20px\] {
-  margin-top: 20px;
-}
-
 .mb_20 {
   margin-bottom: 20px;
 }
@@ -1200,20 +1180,8 @@
   margin-bottom: 15px;
 }
 
-.mt-\[10px\] {
-  margin-top: 10px;
-}
-
-.mb-\[10px\] {
-  margin-bottom: 10px;
-}
-
 .mt_5 {
   margin-top: 5px;
-}
-
-.mb-\[5px\] {
-  margin-bottom: 5px;
 }
 
 .mt_0 {
@@ -1929,16 +1897,8 @@ body {
   margin-left: -16px;
 }
 
-.bl-8423-mt-\[16px\] {
-  margin-top: 16px;
-}
-
 .bl-8423-mt-6 {
   margin-top: 24px;
-}
-
-.bl-8423-mb-\[32px\] {
-  margin-bottom: 32px;
 }
 
 .bl-8423-mt-8 {
@@ -1955,10 +1915,6 @@ body {
 
 .bl-8423-mt-3 {
   margin-top: 12px;
-}
-
-.-bl-8423-mt-\[8px\] {
-  margin-top: -8px;
 }
 
 .bl-8423-box-border {

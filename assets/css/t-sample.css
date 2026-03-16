@@ -391,14 +391,6 @@ body.is-drawer-open {
 }
 
 /* body -------------------------------------------------*/
-body {
-  position: relative;
-}
-@media (max-width: 959px) {
-  body {
-    min-width: 100%;
-  }
-}
 body .breadCrumbs {
   margin-top: 4px;
   padding-left: 0.3em;
@@ -1987,10 +1979,6 @@ body.t-about .secondary {
 .t-table__t-point__notice {
   color: #e53e3e;
   font-size: 14px;
-}
-
-.t-support-menu_wrapper .mt-\[8px\] {
-  margin-top: 8px;
 }
 
 /* Conponent
