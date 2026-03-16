@@ -20,9 +20,7 @@ section {
 body {
   background: #fff;
   color: #333;
-  font-size: 12px;
   font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic ProN W3", Meiryo, sans-serif;
-  line-height: 1.5;
   height: 100%;
 }
 
@@ -61,10 +59,6 @@ div.content {
   background: #fff;
   color: #000;
   overflow: hidden;
-}
-
-html {
-  height: 100%;
 }
 
 li:active {
@@ -112,10 +106,6 @@ li:active {
 
 .p-terms h4 {
   margin-top: 1em;
-}
-
-.p-terms__mt-\[16px\] {
-  margin-top: 1rem;
 }
 
 .p-terms a {
