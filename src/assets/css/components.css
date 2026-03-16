@@ -19,19 +19,19 @@
   /* 「クチコミを再投稿する」、「この商品についてのクチコミをもっと見る」のデザイン */
   &.c-button--review {
     background: #fff100;
-    color: #000000;
+    color: #000;
   }
   /* 「入力内容確認へ」のデザイン */
   /* 「SMS認証を行う」のデザイン */
   &.c-button--confirm,
   &.c-button--auth-tel {
     background: #1b94d3;
-    color: #ffffff;
+    color: #fff;
   }
   /* 「内容を修正する」のデザイン */
   &.c-button--correct {
     border: 1px solid #1b94d3;
-    background: #ffffff;
+    background: #fff;
     color: #1b94d3;
   }
   &.c-button--gray {

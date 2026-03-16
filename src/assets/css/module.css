@@ -1092,11 +1092,11 @@
 
 /* /btnBean */
 /* goodBtn */
+
 .goodBtnWrap {
   position: relative;
   padding-right: 30px;
   width: 70px;
-  margin: 0 auto;
 }
 .goodBtnWrap .goodBtn {
   display: block;
@@ -1391,10 +1391,7 @@
   width: 540px;
   float: right;
 }
-.whiteContainer
-  .quiz
-  .col-r
-  .textInputSt.textInputStyle01.textInputStyle01yle01 {
+.whiteContainer .quiz .col-r .textInputSt.textInputStyle01.textInputStyle01yle01 {
   width: 518px;
 }
 
@@ -3121,7 +3118,7 @@ mark-list
   max-width: 20px;
 }
 .overview .otoku_click {
-  color: #000000;
+  color: #000;
   font-weight: normal;
 }
 
@@ -3554,7 +3551,7 @@ mark-list
   padding: 5px 10px 5px 10px;
   vertical-align: middle;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px 5px 0 0;
   -webkit-box-shadow: offset 2px 1px 1 #333;
   box-shadow: offset 2px 1px 1 #333;

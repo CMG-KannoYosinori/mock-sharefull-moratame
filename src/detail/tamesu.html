@@ -43,7 +43,7 @@
       <main class="main" aria-labelledby="page-heading">
         <div class="l-container">
           <div id="F001" class="js-t-wrapper itemDetailBox">
-            <p class="breadCrumbs mb_10">
+            <p class="breadCrumbs mb-[10px]">
               <a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a>
               ＞ためせる商品詳細
             </p>
@@ -90,9 +90,9 @@
                           <p class="t-text__ex">(1セット当たり)</p>
                           <a href="https://ssl.help.tsite.jp/faq/show/56342?category_id=5726&site_domain=qa-tsite" class="t-text__ex" target="_blank"> ※配送関連費とは </a>
                         </th>
-                        <td class="">
+                        <td>
                           <p id="area_price" class="cost-em"></p>
-                          <select name="area_price" id="area_price_select" style="display: none">
+                          <select name="area_price" id="area_price_select" class="hidden">
                             <option value="">455円(税込500円)</option>
                             <option value="1">546円(税込600円)</option>
                             <option value="2">455円(税込500円)</option>
@@ -125,8 +125,8 @@
                         <th>
                           <p>配送地域</p>
                         </th>
-                        <td class="" style="padding: 0px">
-                          <div class="" style="border: none">
+                        <td class="p-0">
+                          <div class="border-0">
                             <div class="c-form__select">
                               <select required name="shipment_area" id="shipment_area">
                                 <option value="">選択してください</option>
@@ -149,9 +149,9 @@
                           <p>獲得Vポイント</p>
                           <p class="t-text__ex">(1セット当たり)</p>
                         </th>
-                        <td class="">
+                        <td>
                           <p><span id="t_point"></span></p>
-                          <select name="t_point" id="point_select" style="display: none">
+                          <select name="t_point" id="point_select" class="hidden">
                             <option value="">2 ポイント</option>
                             <option value="1">3 ポイント</option>
                             <option value="2">2 ポイント</option>
@@ -195,14 +195,14 @@
                   </table>
                   <form id="form-order" class="t-form">
                     <div class="t-text">
-                      <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
+                      <p class="t-text__middle mt-[20px]">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                       <p>※お支払い方法はクレジットカードとVポイントがご利用頂けます。</p>
                     </div>
                     <div class="t-point-block t-point-border">
                       <span>Vポイント : 10,000pt保有</span>
                     </div>
                     <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
-                    <div class="">
+                    <div>
                       <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
                     </div>
                   </form>
@@ -227,17 +227,17 @@
             <!-- /商品概要 -->
             <div class="t-text t-attention-terms">
               <div class="t-text">
-                <p class="t-text__middle mt_20">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
+                <p class="t-text__middle mt-[20px]">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank">利用規約</a>に同意の上お申し込み下さい</p>
                 <p>※お支払い方法はクレジットカードのみとなります。</p>
               </div>
             </div>
             <p class="txt_Alert"></p>
             <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
-            <div class="">
+            <div>
               <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
             </div>
             <!-- /contents -->
-            <button type="button" id="review-button" class="c-button c-button--review mt-4 mb-8">クチコミを再投稿する</button>
+            <button type="button" id="review-button" class="c-button c-button--review mt-[16px] mb-[32px]">クチコミを再投稿する</button>
             <script>
               $(function () {
                 $(document).on("click", "[id^='review-button']", function () {
@@ -262,12 +262,12 @@
               </h1>
             </div>
             <div class="tabContent tabContent1 active">
-              <div class="subTabBox" style="height: 20px"></div>
-              <div class="subTabContent subTabContent1 pt_10 active">
+              <div class="subTabBox h-[20px]"></div>
+              <div class="subTabContent subTabContent1 pt-[10px] active">
                 <div id="hb_mm">
                   <div id="hb_ms">
                     <ul class="hb_ms_scedule" id="content">
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -280,14 +280,14 @@
                             <p class="review_text">
                               3セット届き、一箱使ってみました！<br />こまめに網戸掃除をしているつもりでしたが、こちらを使うとびっくりするほど汚れが取れました。<br />今の時期は花粉も飛んでいるので黄緑色の汚れがごっそり取れました！
                             </p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn80796" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '80796', '6af442519a8a8dac', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum80796"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -298,14 +298,14 @@
                             <p class="hb_ms_detail">投稿日時：2026-02-21 01:24:51</p>
                             <p class="review_line"></p>
                             <p class="review_text">網戸の掃除は大変だと思って、ついついほったらかしにしてしまいますが、この商品は気軽に使えて良いと思います。</p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn79465" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '79465', '400cfb3d4166375a', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum79465"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -316,14 +316,14 @@
                             <p class="hb_ms_detail">投稿日時：2026-01-31 11:38:07</p>
                             <p class="review_line"></p>
                             <p class="review_text">楽に使えます。<br />使いやすいし、楽々キレイにできました。<br />大掃除の時以外でも、気軽に使えると思いました。</p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn77836" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '77836', '1384c6ad968a0ec4', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum77836"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -336,14 +336,14 @@
                             <p class="review_text">
                               網戸を張り替えたばかりなので試しに購入しました。めんどくさかった網戸掃除もとても楽にできました<br />ただ付属のウエットティッシュが少なすぎます<br />お試し用とはいえもっと欲しいです<br />一回で無くなってしまったので床拭き用のを代用しようと思います<br />あとお風呂とかの壁などの掃除も小さく力が入れやすいのでよさそうです
                             </p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn75742" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '75742', '100890b611f3eff2', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum75742"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -354,14 +354,14 @@
                             <p class="hb_ms_detail">投稿日時：2025-12-26 00:16:07</p>
                             <p class="review_line"></p>
                             <p class="review_text">網戸の清掃意外と面倒です、本品はよくできており使いやすいです。</p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn74879" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '74879', 'd343ba54d0f7be55', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum74879"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -372,14 +372,14 @@
                             <p class="hb_ms_detail">投稿日時：2025-12-18 22:39:36</p>
                             <p class="review_line"></p>
                             <p class="review_text">網戸ワイパーにセットして数回網戸を拭くだけで綺麗になりました。簡単で使いやすかったです。</p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn74234" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '74234', '591aab34111de28d', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum74234"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -390,14 +390,14 @@
                             <p class="hb_ms_detail">投稿日時：2025-12-17 12:00:46</p>
                             <p class="review_line"></p>
                             <p class="review_text">網戸を何で掃除しようか迷っていた時に見つけて、購入しましたが、<br />いい感じに汚れが落ちるような気がします！</p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn74048" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '74048', 'b09f4babea06586c', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum74048"></span>
                             </p>
                           </div>
                         </div>
                       </li>
-                      <li class="review_box schedule_box" style="margin-bottom: 20px">
+                      <li class="review_box schedule_box mb-[20px]">
                         <div class="userinfo_box">
                           <div class="hb_ms_ctr">
                             <h2>
@@ -408,7 +408,7 @@
                             <p class="hb_ms_detail">投稿日時：2025-12-13 09:24:56</p>
                             <p class="review_line"></p>
                             <p class="review_text">この商品を使用することで、網戸掃除の負担感の軽減につながりました。手が汚れないことが一番の利点です。</p>
-                            <p class="goodBtnWrap" style="margin: initial">
+                            <p class="goodBtnWrap">
                               <a href="javascript:void(0);" id="goodBtn73727" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('088e9', '73727', 'fc70da3dffd496e4', 0, event)">Good</a>
                               <span class="counter c_red" id="goodnum73727"></span>
                             </p>
@@ -417,7 +417,7 @@
                       </li>
                     </ul>
                     <div id="msgwindow"></div>
-                    <div class="" style="margin: 15px 0 40px">
+                    <div class="mt-[16px] mb-[40px]">
                       <button type="button" id="review-list-button" class="c-button c-button--review">この商品についてのクチコミをもっと見る</button>
                     </div>
                   </div>

@@ -14,11 +14,11 @@
   border-right: 1px dotted #e5e5e5;
 }
 
-.mt_10 {
+.mt-\[10px\] {
   margin-top: 10px;
 }
 
-.mt_20 {
+.mt-\[20px\] {
   margin-top: 20px;
 }
 
@@ -252,7 +252,7 @@ input[type="checkbox"]:checked + .checkbox:before {
 
 .comment {
   background-color: #fff100;
-  color: #000000;
+  color: #000;
 }
 
 .twitter {
@@ -296,7 +296,7 @@ input[type="checkbox"]:checked + .checkbox:before {
   background: #fff100;
   background: linear-gradient(#fff100 0%, #fff100 100%);
   width: 90%;
-  color: #000000;
+  color: #000;
 }
 
 .disabled {
