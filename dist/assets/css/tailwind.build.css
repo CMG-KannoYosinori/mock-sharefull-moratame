@@ -56,6 +56,9 @@
 .mt-\[8px\] {
     margin-top: 8px
 }
+.ml-\[-0\.6em\] {
+    margin-left: -0.6em
+}
 .block {
     display: block
 }
@@ -118,6 +121,9 @@
 }
 .text-right {
     text-align: right
+}
+.indent-\[-0\.6em\] {
+    text-indent: -0.6em
 }
 .text-\[12px\] {
     font-size: 12px
