@@ -44,6 +44,9 @@
 .mb-\[5px\] {
     margin-bottom: 5px
 }
+.ml-\[-0\.6em\] {
+    margin-left: -0.6em
+}
 .mt-\[10px\] {
     margin-top: 10px
 }
@@ -55,9 +58,6 @@
 }
 .mt-\[8px\] {
     margin-top: 8px
-}
-.ml-\[-0\.6em\] {
-    margin-left: -0.6em
 }
 .block {
     display: block
@@ -82,6 +82,9 @@
 }
 .h-\[20px\] {
     height: 20px
+}
+.h-full {
+    height: 100%
 }
 .w-\[40px\] {
     width: 40px
@@ -130,6 +133,10 @@
 }
 .text-\[14px\] {
     font-size: 14px
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem
 }
 .font-bold {
     font-weight: 700

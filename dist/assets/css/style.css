@@ -266,6 +266,7 @@ input[type="checkbox"]:checked + .checkbox:before {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .family-balloon:after {

@@ -63,6 +63,7 @@ body.bgi {
 }
 a {
   color: #313131;
+  text-decoration: none;
 }
 a:hover,
 a:active {

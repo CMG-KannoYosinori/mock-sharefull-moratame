@@ -444,7 +444,6 @@
   }
 }
 .p-masthead__nav li {
-  font-size: 15px;
   position: relative;
   width: 100%;
   text-align: center;
@@ -685,12 +684,13 @@
     padding-bottom: 0;
   }
 }
+
 .p-card--top {
   position: relative;
-  margin-top: 20px;
   border: 1px solid #e7e7ea;
   background-color: #fdfcfb;
 }
+
 .p-card--top--sp {
   box-sizing: content-box;
   margin-top: 10px;
@@ -961,7 +961,6 @@
 .reveiwsWrap,
 .pickup-list,
 .pr-nav,
-.pr-list,
-.breadCrumbs {
+.pr-list {
   font-size: 12px;
 }
