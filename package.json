@@ -12,8 +12,8 @@
     "dev:eleventy": "eleventy --serve",
     "dev:css": "postcss src/tailwind/tailwind.css -o src/assets/css/tailwind.build.css --watch",
     "deploy": "PATH_PREFIX=/mock-sharefull-moratame npm run build && npx gh-pages -d dist",
-    "purge:style": "purgecss --css src/assets/css/utilities.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css",
-    "style:sort": "postcss src/assets/css/utilities.css --replace",
+    "purge:style": "purgecss --css src/assets/css/common.css --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css",
+    "style:sort": "postcss src/assets/css/common.css --replace",
     "lint:css": "stylelint 'src/assets/css/**/*.css'",
     "build:css": "postcss src/tailwind/tailwind.css -o src/assets/css/tailwind.build.css"
   },
