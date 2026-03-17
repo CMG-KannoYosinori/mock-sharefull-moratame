@@ -8,7 +8,7 @@
     <div class="body-wrapper">
       {% include 'header' %}
       <main class="main" aria-labelledby="page-heading">
-        <div class="contents cf contents--responsive">
+        <div class="l-container">
           <div>
             <div id="F001" class="js-t-wrapper itemDetailBox">
               <h1 id="page-heading" class="sr-only">もらえる商品アンケート回答</h1>
@@ -216,48 +216,10 @@
                     </ul>
                   </section>
                   <!-- /enquete -->
-
-                  <style>
-                    ul.coupon p {
-                      display: inline;
-                    }
-
-                    ul.coupon li {
-                      text-indent: -1.3em;
-                      padding-left: 1.3em;
-                      line-height: 2em;
-                    }
-
-                    ul.coupon label {
-                      padding: 0.5em 0.5em 0.5em 0;
-                    }
-
-                    ul.coupon em {
-                      margin-left: 0.5em;
-                      color: #f76b1f;
-                    }
-
-                    ul.coupon input[type="text"] {
-                      border-radius: 4px;
-                      border: 1px solid #ccc;
-                      margin: 0.5em 0 0.5em 1.5em;
-                      padding: 0 1em 0 1em;
-                    }
-
-                    ul.coupon input:checked + p {
-                      font-weight: bold;
-                    }
-
-                    #input_coupon_code {
-                      display: inline;
-                      margin: 0 0 0 10px;
-                    }
-                  </style>
                 </form>
                 <div class="t-button">
                   <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
                 </div>
-                <!-- /contents -->
               </div>
             </div>
 
@@ -269,7 +231,6 @@
             <!-- /itemDetailBox -->
           </div>
         </div>
-        <!-- /contents -->
       </main>
       {% include 'footer' %}
     </div>

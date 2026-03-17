@@ -92,6 +92,9 @@
 .w-\[60px\] {
     width: 60px
 }
+.w-auto {
+    width: auto
+}
 .shrink {
     flex-shrink: 1
 }
@@ -107,6 +110,10 @@
 .border-0 {
     border-width: 0px
 }
+.bg-\[\#e6effc\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(230 239 252 / var(--tw-bg-opacity, 1))
+}
 .p-0 {
     padding: 0px
 }
@@ -119,6 +126,9 @@
 .pt-\[10px\] {
     padding-top: 10px
 }
+.pt-\[0\.4em\] {
+    padding-top: 0.4em
+}
 .text-center {
     text-align: center
 }
@@ -127,6 +137,9 @@
 }
 .indent-\[-0\.6em\] {
     text-indent: -0.6em
+}
+.indent-0 {
+    text-indent: 0px
 }
 .text-\[12px\] {
     font-size: 12px

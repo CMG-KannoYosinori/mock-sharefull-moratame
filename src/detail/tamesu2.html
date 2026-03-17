@@ -1,46 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
   <head>
-    {% assign page_use_bootstrap = true %}
-    {% assign page_title = 'ためせる商品アンケート回答｜シェアフルポイントが貯まる・使える シェアフルモニター' %}
-    {% capture head_extra %}
+    {% assign page_use_bootstrap = true %} {% assign page_title = 'ためせる商品アンケート回答｜シェアフルポイントが貯まる・使える シェアフルモニター' %} {% capture head_extra %}
     <!-- slideUp Down -->
     <script>
       $(function () {
-        $('.slideup').click(function () {
-          $('.input_area').slideUp(200);
+        $(".slideup").click(function () {
+          $(".input_area").slideUp(200);
         });
-        $('.slidedown').click(function () {
-          $('.input_area').slideDown(300);
-        });
-      });
-      $(function () {
-        $('.slideup2').click(function () {
-          $('.input_area2').slideUp(200);
-        });
-        $('.slidedown2').click(function () {
-          $('.input_area2').slideDown(300);
+        $(".slidedown").click(function () {
+          $(".input_area").slideDown(300);
         });
       });
       $(function () {
-        $('.slideup3').click(function () {
-          $('.input_area3').slideUp(200);
+        $(".slideup2").click(function () {
+          $(".input_area2").slideUp(200);
         });
-        $('.slidedown3').click(function () {
-          $('.input_area3').slideDown(300);
+        $(".slidedown2").click(function () {
+          $(".input_area2").slideDown(300);
+        });
+      });
+      $(function () {
+        $(".slideup3").click(function () {
+          $(".input_area3").slideUp(200);
+        });
+        $(".slidedown3").click(function () {
+          $(".input_area3").slideDown(300);
         });
       });
     </script>
-    {% endcapture %}
-    {% include 'head' %}
+    {% endcapture %} {% include 'head' %}
   </head>
 
   <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemApply">
     <div class="body-wrapper">
       {% include 'header' %}
       <main class="main" aria-labelledby="page-heading">
-        <div class="contents cf contents--responsive">
+        <div class="l-container">
           <div>
             <div id="F001" class="js-t-wrapper itemDetailBox">
               <h1 id="page-heading" class="sr-only">ためせる商品アンケート回答</h1>
@@ -48,41 +44,44 @@
               <script type="text/javascript">
                 function doSubmit() {
                   // 3Dセキュアの第三者提供の同意
-                  const agreementCheckbox = document.getElementById('agreement_3ds');
+                  const agreementCheckbox = document.getElementById("agreement_3ds");
                   if (!agreementCheckbox || !agreementCheckbox.checked) {
-                    alert('クレジットカードをご利用いただくために、3Dセキュアの利用規約に同意が必要です。');
+                    alert("クレジットカードをご利用いただくために、3Dセキュアの利用規約に同意が必要です。");
                     return false;
                   }
 
                   var pay_credit_chk = false;
                   pay_credit_chk = true;
                   if (pay_credit_chk == true) {
-                    var card_ex1 = document.getElementById('card_ex1').value;
-                    var card_ex2 = document.getElementById('card_ex2').value;
-                    var card_no = document.getElementById('card_no').value;
-                    var card_name = document.getElementById('card_name').value;
-                    var card_sec = document.getElementById('card_sec').value;
-                    if (card_ex1 != '' && card_ex2 != '' && card_no != '' && card_name != '' && card_sec != '') {
-                      var cc_ex = document.getElementById('card_ex2').value + document.getElementById('card_ex1').value;
+                    var card_ex1 = document.getElementById("card_ex1").value;
+                    var card_ex2 = document.getElementById("card_ex2").value;
+                    var card_no = document.getElementById("card_no").value;
+                    var card_name = document.getElementById("card_name").value;
+                    var card_sec = document.getElementById("card_sec").value;
+                    if (card_ex1 != "" && card_ex2 != "" && card_no != "" && card_name != "" && card_sec != "") {
+                      var cc_ex = document.getElementById("card_ex2").value + document.getElementById("card_ex1").value;
                       // トークン生成ロジック呼び出し
-                      com_sbps_system.generateToken({
-                        merchantId: '71234',
-                        serviceId: '002',
-                        ccNumber: document.getElementById('card_no').value,
-                        ccExpiration: cc_ex,
-                        securityCode: document.getElementById('card_sec').value
-                      }, function (response) {
-                        if (response.result == "OK") {
-                          document.getElementById('token').value = response.tokenResponse.token;
-                          document.getElementById('token_key').value = response.tokenResponse.tokenKey;
-                          // カード番号をマスキング
-                          document.getElementById('masked_card_no').value = response.tokenResponse.maskedCcNumber;
-                          nextPage();
-                        } else {
-                          document.getElementById('token_error').value = 'true';
-                          nextPage();
+                      com_sbps_system.generateToken(
+                        {
+                          merchantId: "71234",
+                          serviceId: "002",
+                          ccNumber: document.getElementById("card_no").value,
+                          ccExpiration: cc_ex,
+                          securityCode: document.getElementById("card_sec").value,
+                        },
+                        function (response) {
+                          if (response.result == "OK") {
+                            document.getElementById("token").value = response.tokenResponse.token;
+                            document.getElementById("token_key").value = response.tokenResponse.tokenKey;
+                            // カード番号をマスキング
+                            document.getElementById("masked_card_no").value = response.tokenResponse.maskedCcNumber;
+                            nextPage();
+                          } else {
+                            document.getElementById("token_error").value = "true";
+                            nextPage();
+                          }
                         }
-                      });
+                      );
                     } else {
                       nextPage();
                     }
@@ -141,381 +140,338 @@
                     }
                   }
                 }
-
               </script>
               <script language="JavaScript" type="text/JavaScript">
-<!--
-function nextPage() {
-    // 名前のスペースを除去する
-    const elements = document.getElementsByClassName('js-nonspace');
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].value = removeSpace(elements[i].value);
-    }
+                <!--
+                function nextPage() {
+                    // 名前のスペースを除去する
+                    const elements = document.getElementsByClassName('js-nonspace');
+                    for (let i = 0; i < elements.length; i++) {
+                        elements[i].value = removeSpace(elements[i].value);
+                    }
 
-    
-    document.frmtame2.submit();
-        return false;
 
-}
--->
-// 文字列中に含まれる空白文字をすべて削除する
-function removeSpace(str) {
-    return str.replace(/\s+/g, '');
-}
+                    document.frmtame2.submit();
+                        return false;
 
-// DOMの準備ができたら実行
-document.addEventListener('DOMContentLoaded', function() {
-    // フォーカスが外れたらスペースを削除する
-    const elements = document.getElementsByClassName('js-nonspace');
-    for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } }); </script>
-                <!--contents-->
-                <div id="anchor01" class="whiteContainer text-[14px]">
-                  <div class="t-text">
-                    <div class=" c-section-heading enq-section-heading t-text__middle">
-                      <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
-                    </div>
+                }
+                -->
+                // 文字列中に含まれる空白文字をすべて削除する
+                function removeSpace(str) {
+                    return str.replace(/\s+/g, '');
+                }
+
+                // DOMの準備ができたら実行
+                document.addEventListener('DOMContentLoaded', function() {
+                    // フォーカスが外れたらスペースを削除する
+                    const elements = document.getElementsByClassName('js-nonspace');
+                    for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } });
+              </script>
+
+              <div id="anchor01" class="whiteContainer text-[14px]">
+                <div class="t-text">
+                  <div class="c-section-heading enq-section-heading t-text__middle">
+                    <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
                   </div>
-                  <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
-                    <input type="hidden" name="project_id" id="project_rand" value="fe6df">
-                    <input type="hidden" name="test" value="">
-                    <input type="hidden" name="user_order_status" value="0">
-                    <input type="hidden" name="fst" value="">
-                    <input type="hidden" name="enq_mode" value="">
-                    <input type="hidden" name="enq_pg" value="">
-                    <input type="hidden" name="last_credit_card_flg" value="0">
-                    <input type="hidden" name="last_card_no" value="">
-                    <input type="hidden" name="last_card_ex" value="">
-                    <input type="hidden" name="token" id="token" value="">
-                    <input type="hidden" name="token_key" id="token_key" value="">
-                    <input type="hidden" name="masked_card_no" id="masked_card_no" value="">
-                    <input type="hidden" name="token_error" id="token_error" value="false">
-                    <input type="hidden" name="shipment_area" id="shipment_area" value="">
-                    <input type="hidden" name="address" id="address" value="0">
-                    <!-- enquete start -->
-                    <a name="enqNo0"></a>
-                    <input type="hidden" name="enq_no[0]" value="0">
-                    <section class="select-box select-area">
-                      <div class="c-section-heading t-text__middle">
-                        <h2 class="fs-16">【Q1】お好きなシェアフルモニターキャラクターを選択してください。</h2>
-                      </div>
-                      <ul><input type="hidden" name="ans[0][key][0]" value="ポッケ">
-                        <li><input class="answer" type="radio" name="ans[0][val]" value="ポッケ" ID="radio_0_0"><label for="radio_0_0">ポッケ</label></li><input type="hidden" name="ans[0][key][1]" value="ケット">
-                        <li><input class="answer" type="radio" name="ans[0][val]" value="ケット" ID="radio_0_1"><label for="radio_0_1">ケット</label></li><input type="hidden" name="ans[0][key][2]" value="ナップ">
-                        <li><input class="answer" type="radio" name="ans[0][val]" value="ナップ" ID="radio_0_2"><label for="radio_0_2">ナップ</label></li><input type="hidden" name="ans[0][key][3]" value="ザック">
-                        <li><input class="answer" type="radio" name="ans[0][val]" value="ザック" ID="radio_0_3"><label for="radio_0_3">ザック</label></li>
-                      </ul>
-                    </section>
-                    <!-- enquete end -->
-
-                    <!-- payment start -->
-                    <div class="item-part">
-                      <p class="text-[14px] cart-heading--gray mb-[5px] font-bold">支払い方法</p>
-                      <p class="mb-[5px]">シェアフルポイントのご利用は、次のページで入力できます。全額シェアフルポイントをご利用になる場合でもクレジットカードのご登録は必要となります。</p>
-                      <ul class="paymentOption--1">
-                        <li id="pay_scredit_new">
-                          <label>
-                            <input name="payment" type="radio" value="2" class="on-off--2 slidedown2" checked>
-                            新規クレジットカード
-                            <div class="credit-form input_area2">
-                              <table class="st-table01" id="return">
-                                <tbody>
-                                  <tr>
-                                    <th class="bd-raw">利用可能なクレジットカード</th>
-                                    <td class="bd-raw">
-                                      <p class="cards">
-                                        <img alt="" height="62" src="../assets/images/availableCards.gif" width="332">
-                                      </p>
-                                      <p class="text-[12px]">※Visa、Master、JCB、AMEX、Diners の国際ブランドがついているデビットカードも利用可能</p>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th class="bd-raw">クレジットカード番号</th>
-                                    <td class="bd-raw">
-                                      <p>
-                                        <input class="form-control form-control_paid-point" id="card_no" name="card_no" placeholder="クレジットカード番号" size="38" type="text" value="" autocomplete="cc-number">
-                                      </p>
-                                      <p class="text-[12px]">(例)1234123412341234<br>
-                                        半角英数字のみで入力。カードの銘柄の入力は、不要です。</p>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th class="bd-raw">クレジットカード有効期限</th>
-                                    <td class="bd-raw">
-                                      <select class="form-control form-control_paid-point" id="card_ex1" name="card_ex1" style="width: auto; display: inline-block;" autocomplete="cc-exp-month">
-                                        <option value="01">
-                                          01 </option>
-                                        <option value="02">
-                                          02 </option>
-                                        <option value="03">
-                                          03 </option>
-                                        <option value="04">
-                                          04 </option>
-                                        <option value="05">
-                                          05 </option>
-                                        <option value="06">
-                                          06 </option>
-                                        <option value="07">
-                                          07 </option>
-                                        <option value="08">
-                                          08 </option>
-                                        <option value="09">
-                                          09 </option>
-                                        <option value="10">
-                                          10 </option>
-                                        <option value="11">
-                                          11 </option>
-                                        <option value="12">
-                                          12 </option>
-                                      </select><label class="control-label">月</label>
-                                      <select class="form-control form-control_paid-point" id="card_ex2" name="card_ex2" style="width: auto; display: inline-block;" autocomplete="cc-exp-year">
-                                        <option value="2026">
-                                          2026 </option>
-                                        <option value="2027">
-                                          2027 </option>
-                                        <option value="2028">
-                                          2028 </option>
-                                        <option value="2029">
-                                          2029 </option>
-                                        <option value="2030">
-                                          2030 </option>
-                                        <option value="2031">
-                                          2031 </option>
-                                        <option value="2032">
-                                          2032 </option>
-                                        <option value="2033">
-                                          2033 </option>
-                                        <option value="2034">
-                                          2034 </option>
-                                        <option value="2035">
-                                          2035 </option>
-                                        <option value="2036">
-                                          2036 </option>
-                                        <option value="2037">
-                                          2037 </option>
-                                        <option value="2038">
-                                          2038 </option>
-                                        <option value="2039">
-                                          2039 </option>
-                                        <option value="2040">
-                                          2040 </option>
-                                        <option value="2041">
-                                          2041 </option>
-                                        <option value="2042">
-                                          2042 </option>
-                                        <option value="2043">
-                                          2043 </option>
-                                        <option value="2044">
-                                          2044 </option>
-                                        <option value="2045">
-                                          2045 </option>
-                                      </select><label class="control-label">年</label>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th class="bd-raw">クレジットカード名義人<br>
-                                      <span class="text-[12px] font-normal">半角英字のみ</span>
-                                    </th>
-                                    <td class="bd-raw">
-                                      <p>
-                                        <input class="form-control form-control_paid-point" id="card_name" maxlength="32" name="card_name" placeholder="クレジットカード名義人" type="text" value="" autocomplete="cc-name">
-                                      </p>
-                                      <p class="text-[12px] c_red">例：TARO MORATAME</p>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th>クレジットカードセキュリティコード<br>
-                                      <span class="text-[12px] font-normal">半角数字のみ</span>
-                                    </th>
-                                    <td>
-                                      <p>
-                                        <input class="form-control form-control_paid-point" id="card_sec" max="9999" name="card_sec" placeholder="クレジットカードセキュリティコード" type="number" value="" autocomplete="cc-csc">
-                                      </p>
-                                      <p class="text-[12px] c_red">カード裏面のご署名欄に印刷された右端3桁（または4桁）がセキュリティコードです。<br>
-                                        ※お客様の暗証番号ではありません。</p>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                    <!-- payment end -->
-                    <style>
-                      ul.coupon p {
-                        display: inline;
-                      }
-
-                      ul.coupon li {
-                        text-indent: -1.3em;
-                        padding-left: 1.3em;
-                        line-height: 2em;
-                      }
-
-                      ul.coupon label {
-                        padding: 0.5em 0.5em 0.5em 0;
-                      }
-
-                      ul.coupon em {
-                        margin-left: 0.5em;
-                        color: #f76b1f;
-                      }
-
-                      ul.coupon input[type=text] {
-                        border-radius: 4px;
-                        border: 1px solid #ccc;
-                        margin: 0.5em 0 0.5em 1.5em;
-                        padding: 0 1em 0 1em;
-                      }
-
-                      ul.coupon input:checked+p {
-                        font-weight: bold;
-                      }
-
-                      #input_coupon_code {
-                        display: inline;
-                        margin: 0 0 0 10px;
-                      }
-                    </style>
-
-                    <!-- coupon start -->
-                    <div class="item-part">
-                      <p class="text-[14px] cart-heading--gray mb-[5px] font-bold">クーポン</p>
-                      <ul class="coupon">
-
-                        <li>
-                          <label>
-                            <input name="coupon_code" type="radio" value=""  checked>
-                            <p>
-                              クーポンを使用しない
-                            </p>
-                          </label>
-                        </li>
-
-                        <li id="input_coupon" style="display: none">
-                          <label style="background-color: #e6effc;">
-                            <input id="input_coupon_radio" name="coupon_code" type="radio" value="">
-                            <p id="discount_display">入力クーポン<em>0円引き</em></p>
-                          </label>
-                        </li>
-
-                        <li style="padding-top: 0.4em;">
-                          <label>
-                            <input type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力">
-                            <span id="apply_coupon_code">
-                              <input type="button" name="coupon_check" value="適用する" onclick="javascript:check_coupon();">
-                            </span>
-                          </label>
-                          <span id="coupon_error_msg" class="c_red02" style="display: none;text-indent:initial">
-                            エラー文言
-                            </spam>
-                        </li>
-                      </ul>
-                    </div> <!-- coupon end -->
-
-
-
-                    <!-- destination -->
-                    <!-- destination end -->
-
-                    <div class="item-part">
-                      <p class="c-section-heading fs-16">
-                        安全にクレジットカードをご利用いただくため、個人情報保護法に基づく個人データの第三者提供の同意が必要です。<br>
-                        <br>
-                        ・クレジットカード利用上の注意<br>
-                        クレジットカード番号などの情報の盗用による不正利用を防ぐため、当社がお客様から収集した以下の個人情報等は、お客様が利用されているカード発行会社へ提供させていただきます。<br>
-                        「IPアドレス」「デバイス情報」「インターネット利用環境に関する情報」<br>
-                        <br>
-                        ・個人情報の第三者提供<br>
-                        お客様が利用されているカードの発行会社が外国にある場合、これらの情報は当該発行会社が所属する国に移転される場合があります。<br>
-                        お客様が未成年の場合、親権者または後見人の承諾を得た上で、本サービスを利用するものとします。
-                      </p>
-                      <div class="t-checkbox">
-                        <input type="checkbox" id="agreement_3ds" name="agreement_3ds" class="t-checkbox__item" value="1">
-                        <label for="agreement_3ds">同意する</label>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="t-button">
-                    <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
-                  </div>
-                  <!-- /contents -->
                 </div>
+                <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
+                  <input type="hidden" name="project_id" id="project_rand" value="fe6df" />
+                  <input type="hidden" name="test" value="" />
+                  <input type="hidden" name="user_order_status" value="0" />
+                  <input type="hidden" name="fst" value="" />
+                  <input type="hidden" name="enq_mode" value="" />
+                  <input type="hidden" name="enq_pg" value="" />
+                  <input type="hidden" name="last_credit_card_flg" value="0" />
+                  <input type="hidden" name="last_card_no" value="" />
+                  <input type="hidden" name="last_card_ex" value="" />
+                  <input type="hidden" name="token" id="token" value="" />
+                  <input type="hidden" name="token_key" id="token_key" value="" />
+                  <input type="hidden" name="masked_card_no" id="masked_card_no" value="" />
+                  <input type="hidden" name="token_error" id="token_error" value="false" />
+                  <input type="hidden" name="shipment_area" id="shipment_area" value="" />
+                  <input type="hidden" name="address" id="address" value="0" />
+                  <!-- enquete start -->
+                  <a name="enqNo0"></a>
+                  <input type="hidden" name="enq_no[0]" value="0" />
+                  <section class="select-box select-area">
+                    <div class="c-section-heading t-text__middle">
+                      <h2 class="fs-16">【Q1】お好きなシェアフルモニターキャラクターを選択してください。</h2>
+                    </div>
+                    <ul>
+                      <input type="hidden" name="ans[0][key][0]" value="ポッケ" />
+                      <li><input class="answer" type="radio" name="ans[0][val]" value="ポッケ" id="radio_0_0" /><label for="radio_0_0">ポッケ</label></li>
+                      <input type="hidden" name="ans[0][key][1]" value="ケット" />
+                      <li><input class="answer" type="radio" name="ans[0][val]" value="ケット" id="radio_0_1" /><label for="radio_0_1">ケット</label></li>
+                      <input type="hidden" name="ans[0][key][2]" value="ナップ" />
+                      <li><input class="answer" type="radio" name="ans[0][val]" value="ナップ" id="radio_0_2" /><label for="radio_0_2">ナップ</label></li>
+                      <input type="hidden" name="ans[0][key][3]" value="ザック" />
+                      <li><input class="answer" type="radio" name="ans[0][val]" value="ザック" id="radio_0_3" /><label for="radio_0_3">ザック</label></li>
+                    </ul>
+                  </section>
+                  <!-- enquete end -->
+
+                  <!-- payment start -->
+                  <div class="item-part">
+                    <p class="text-[14px] cart-heading--gray mb-[5px] font-bold">支払い方法</p>
+                    <p class="mb-[5px]">シェアフルポイントのご利用は、次のページで入力できます。全額シェアフルポイントをご利用になる場合でもクレジットカードのご登録は必要となります。</p>
+                    <ul class="paymentOption--1">
+                      <li id="pay_scredit_new">
+                        <label>
+                          <input name="payment" type="radio" value="2" class="on-off--2 slidedown2" checked />
+                          新規クレジットカード
+                          <div class="credit-form input_area2">
+                            <table class="st-table01" id="return">
+                              <tbody>
+                                <tr>
+                                  <th class="bd-raw">利用可能なクレジットカード</th>
+                                  <td class="bd-raw">
+                                    <p class="cards">
+                                      <img alt="" height="62" src="../assets/images/availableCards.gif" width="332" class="u-img" />
+                                    </p>
+                                    <p class="text-[12px]">※Visa、Master、JCB、AMEX、Diners の国際ブランドがついているデビットカードも利用可能</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th class="bd-raw">クレジットカード番号</th>
+                                  <td class="bd-raw">
+                                    <p>
+                                      <input
+                                        class="form-control form-control_paid-point"
+                                        id="card_no"
+                                        name="card_no"
+                                        placeholder="クレジットカード番号"
+                                        size="38"
+                                        type="text"
+                                        value=""
+                                        autocomplete="cc-number"
+                                      />
+                                    </p>
+                                    <p class="text-[12px]">
+                                      (例)1234123412341234<br />
+                                      半角英数字のみで入力。カードの銘柄の入力は、不要です。
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th class="bd-raw">クレジットカード有効期限</th>
+                                  <td class="bd-raw">
+                                    <select class="form-control form-control_paid-point w-auto inline-block" id="card_ex1" name="card_ex1" autocomplete="cc-exp-month">
+                                      <option value="01">01</option>
+                                      <option value="02">02</option>
+                                      <option value="03">03</option>
+                                      <option value="04">04</option>
+                                      <option value="05">05</option>
+                                      <option value="06">06</option>
+                                      <option value="07">07</option>
+                                      <option value="08">08</option>
+                                      <option value="09">09</option>
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="12">12</option></select
+                                    ><label class="control-label">月</label>
+                                    <select class="form-control form-control_paid-point w-auto inline-block" id="card_ex2" name="card_ex2" autocomplete="cc-exp-year">
+                                      <option value="2026">2026</option>
+                                      <option value="2027">2027</option>
+                                      <option value="2028">2028</option>
+                                      <option value="2029">2029</option>
+                                      <option value="2030">2030</option>
+                                      <option value="2031">2031</option>
+                                      <option value="2032">2032</option>
+                                      <option value="2033">2033</option>
+                                      <option value="2034">2034</option>
+                                      <option value="2035">2035</option>
+                                      <option value="2036">2036</option>
+                                      <option value="2037">2037</option>
+                                      <option value="2038">2038</option>
+                                      <option value="2039">2039</option>
+                                      <option value="2040">2040</option>
+                                      <option value="2041">2041</option>
+                                      <option value="2042">2042</option>
+                                      <option value="2043">2043</option>
+                                      <option value="2044">2044</option>
+                                      <option value="2045">2045</option></select
+                                    ><label class="control-label">年</label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th class="bd-raw">
+                                    クレジットカード名義人<br />
+                                    <span class="text-[12px] font-normal">半角英字のみ</span>
+                                  </th>
+                                  <td class="bd-raw">
+                                    <p>
+                                      <input
+                                        class="form-control form-control_paid-point"
+                                        id="card_name"
+                                        maxlength="32"
+                                        name="card_name"
+                                        placeholder="クレジットカード名義人"
+                                        type="text"
+                                        value=""
+                                        autocomplete="cc-name"
+                                      />
+                                    </p>
+                                    <p class="text-[12px] c_red">例：TARO MORATAME</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>
+                                    クレジットカードセキュリティコード<br />
+                                    <span class="text-[12px] font-normal">半角数字のみ</span>
+                                  </th>
+                                  <td>
+                                    <p>
+                                      <input
+                                        class="form-control form-control_paid-point"
+                                        id="card_sec"
+                                        max="9999"
+                                        name="card_sec"
+                                        placeholder="クレジットカードセキュリティコード"
+                                        type="number"
+                                        value=""
+                                        autocomplete="cc-csc"
+                                      />
+                                    </p>
+                                    <p class="text-[12px] c_red">
+                                      カード裏面のご署名欄に印刷された右端3桁（または4桁）がセキュリティコードです。<br />
+                                      ※お客様の暗証番号ではありません。
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- payment end -->
+
+                  <!-- coupon start -->
+                  <div class="item-part">
+                    <p class="text-[14px] cart-heading--gray mb-[5px] font-bold">クーポン</p>
+                    <ul class="coupon">
+                      <li>
+                        <label>
+                          <input name="coupon_code" type="radio" value="" checked />
+                          <p>クーポンを使用しない</p>
+                        </label>
+                      </li>
+
+                      <li id="input_coupon" class="hidden">
+                        <label class="bg-[#e6effc]">
+                          <input id="input_coupon_radio" name="coupon_code" type="radio" value="" />
+                          <p id="discount_display">入力クーポン<em>0円引き</em></p>
+                        </label>
+                      </li>
+
+                      <li class="pt-[0.4em]">
+                        <label>
+                          <input type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力" />
+                          <span id="apply_coupon_code">
+                            <input type="button" name="coupon_check" value="適用する" onclick="javascript: check_coupon();" />
+                          </span>
+                        </label>
+                        <span id="coupon_error_msg" class="c_red02 hidden indent-0"> エラー文言 </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- coupon end -->
+
+                  <div class="item-part">
+                    <p class="c-section-heading fs-16">
+                      安全にクレジットカードをご利用いただくため、個人情報保護法に基づく個人データの第三者提供の同意が必要です。<br />
+                      <br />
+                      ・クレジットカード利用上の注意<br />
+                      クレジットカード番号などの情報の盗用による不正利用を防ぐため、当社がお客様から収集した以下の個人情報等は、お客様が利用されているカード発行会社へ提供させていただきます。<br />
+                      「IPアドレス」「デバイス情報」「インターネット利用環境に関する情報」<br />
+                      <br />
+                      ・個人情報の第三者提供<br />
+                      お客様が利用されているカードの発行会社が外国にある場合、これらの情報は当該発行会社が所属する国に移転される場合があります。<br />
+                      お客様が未成年の場合、親権者または後見人の承諾を得た上で、本サービスを利用するものとします。
+                    </p>
+                    <div class="t-checkbox">
+                      <input type="checkbox" id="agreement_3ds" name="agreement_3ds" class="t-checkbox__item" value="1" />
+                      <label for="agreement_3ds">同意する</label>
+                    </div>
+                  </div>
+                </form>
+                <div class="t-button">
+                  <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
+                </div>
+              </div>
             </div>
 
             <div class="footBnr">
-              <ul>
-              </ul>
+              <ul></ul>
             </div>
             <!-- /footBnr -->
 
             <!-- /itemDetailBox -->
           </div>
-        </div><!-- /contents -->
+        </div>
       </main>
       {% include 'footer' %}
     </div>
     <!-- /body-wrapper -->
 
     <script language="JavaScript" type="text/JavaScript">
-    function check_coupon() {
-        $('input[name=coupon_take_flg]').val('1');
-        var url = 'coupon.exec.php';
-        var request = {
-            project_rand: $("#project_rand").val(),
-            coupon_code: $("#input_coupon_code").val(),
-        };
-        var params =  new URLSearchParams(request).toString();
+      function check_coupon() {
+          $('input[name=coupon_take_flg]').val('1');
+          var url = 'coupon.exec.php';
+          var request = {
+              project_rand: $("#project_rand").val(),
+              coupon_code: $("#input_coupon_code").val(),
+          };
+          var params =  new URLSearchParams(request).toString();
 
-        $.post( url , {params:params} , function( data , status ) {
-            if (! data.hasOwnProperty('status')) {
-                data = {
-                    status: '0',
-                    message: 'クーポン情報の取得に失敗しました。'
-                }
-            }
-            if ( data.status == '0' ) {
-                coupon_error(data);
-            } else if ( data.status == '1' ) {
-                use_coupon(data);
-            }
-        }
-        , 'json'
-        );
+          $.post( url , {params:params} , function( data , status ) {
+              if (! data.hasOwnProperty('status')) {
+                  data = {
+                      status: '0',
+                      message: 'クーポン情報の取得に失敗しました。'
+                  }
+              }
+              if ( data.status == '0' ) {
+                  coupon_error(data);
+              } else if ( data.status == '1' ) {
+                  use_coupon(data);
+              }
+          }
+          , 'json'
+          );
 
-        return false;
-    }
+          return false;
+      }
 
-    function coupon_error(data){
-        $("#input_coupon").css("display", "none");
-        $("#input_coupon_radio").prop('disabled', true);
-        $('input[name=coupon_code]').eq(0).prop('checked', true);
-        $("#input_coupon_code").css({
-            "background-color":"#ffdddd",
-            "outline":"solid 1px #ff6666"
-        });
-        $("#coupon_error_msg").css("display", "block").html(data.message);
+      function coupon_error(data){
+          $("#input_coupon").css("display", "none");
+          $("#input_coupon_radio").prop('disabled', true);
+          $('input[name=coupon_code]').eq(0).prop('checked', true);
+          $("#input_coupon_code").css({
+              "background-color":"#ffdddd",
+              "outline":"solid 1px #ff6666"
+          });
+          $("#coupon_error_msg").css("display", "block").html(data.message);
 
-    }
-    function use_coupon(data){
-        $("#coupon_error_msg").css("display", "none");
-        $("#input_coupon").css("display", "block");
-        $("#input_coupon_radio").prop('disabled', false).prop('checked', true)
-            .val($("#input_coupon_code").val());
-        $("#discount_display").text(data.coupon_name);
-        if (data.hasOwnProperty("residue")) {
-            $("#discount_display").append($("<span>", {text: "（残り" + data.residue + "回）"}));
-        }
-        $("#discount_display").append($("<em>", {text: data.message}));
-        $("#input_coupon_code").css({
-            "background-color":"initial",
-            "outline":"initial"
-        });
-    }
-</script>
+      }
+      function use_coupon(data){
+          $("#coupon_error_msg").css("display", "none");
+          $("#input_coupon").css("display", "block");
+          $("#input_coupon_radio").prop('disabled', false).prop('checked', true)
+              .val($("#input_coupon_code").val());
+          $("#discount_display").text(data.coupon_name);
+          if (data.hasOwnProperty("residue")) {
+              $("#discount_display").append($("<span>", {text: "（残り" + data.residue + "回）"}));
+          }
+          $("#discount_display").append($("<em>", {text: data.message}));
+          $("#input_coupon_code").css({
+              "background-color":"initial",
+              "outline":"initial"
+          });
+      }
+    </script>
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-
 </html>
