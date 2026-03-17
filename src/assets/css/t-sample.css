@@ -514,6 +514,7 @@ body .select-area label {
   margin-left: auto;
   margin-right: auto;
   padding-right: 60px;
+  box-sizing: border-box;
 }
 
 .p-masthead__nav li {
@@ -1298,10 +1299,6 @@ body.itemDetail div.itemDetailBox .container {
   padding-left: 0;
   width: 100%;
   line-height: 1.5;
-}
-body.itemDetail div#F001 .t-attention-terms,
-body.itemDetail div.itemDetailBox .t-attention-terms {
-  text-align: center;
 }
 body.itemDetail div#F001 .t-button,
 body.itemDetail div.itemDetailBox .t-button {
