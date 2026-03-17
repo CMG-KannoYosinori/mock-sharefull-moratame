@@ -39,3 +39,14 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+/* アンカーリンクの下線 */
+.u-anchor-underline:link,
+.u-anchor-underline:visited {
+  text-decoration: underline;
+}
+
+.u-anchor-underline:hover,
+.u-anchor-underline:active {
+  text-decoration: none;
+}
