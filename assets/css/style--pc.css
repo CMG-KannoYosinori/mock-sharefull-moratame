@@ -120,7 +120,7 @@
 }
 
 /* badge
----------------------------------------------------------*/
+--------------------------------------------------------- */
 .badge {
   position: absolute;
   height: auto;
@@ -191,7 +191,7 @@
 }
 
 /* /badge
----------------------------------------------------------*/
+--------------------------------------------------------- */
 .c-border--card {
   border: 1px solid #e7e7ea;
 }
@@ -417,15 +417,15 @@
 .p-masthead__nav {
   display: flex;
   display: -ms-flexbox;
-  /*--- IE10 ---*/
+  /*--- IE10 --- */
   width: 960px;
   margin-right: auto;
   margin-left: auto;
   -js-display: flex;
   -ms-flex-line-pack: stretch;
-  /*--- IE10 ---*/
+  /*--- IE10 --- */
   -ms-flex-pack: justify;
-  /*--- IE10 ---*/
+  /*--- IE10 --- */
   justify-content: space-around;
 }
 .p-masthead__nav--sp {

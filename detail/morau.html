@@ -204,9 +204,9 @@
 </header>
 <!-- //p-masthead -->
 
-      <main class="main" aria-labelledby="page-heading">
+      <main aria-labelledby="page-heading">
         <div class="l-container">
-          <div id="F001" class="js-t-wrapper itemDetailBox">
+          <div>
             <div class="t-sub-header">
               <h2 id="page-heading">商品詳細</h2>
             </div>
@@ -217,9 +217,7 @@
             <!-- carousel -->
             <div class="t-bx__wrapper">
               <div class="t-bx__viewport">
-                <div class="bx">
-                  <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Mora" width="640" height="640" class="u-img" />
-                </div>
+                <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Mora" width="640" height="640" class="c-item-visual" />
               </div>
             </div>
             <!-- /carousel -->
@@ -335,13 +333,8 @@
             <ul class="u-note text-sm">
               <li class="">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank" class="u-anchor-underline">利用規約</a>に同意の上お申し込み下さい</li>
             </ul>
-            <div>
-              <button type="button" id="order-button" class="c-button c-button--orange mb-[16px] mt-[8px]">申し込む</button>
-            </div>
-            <!-- /contents -->
-            <div style="margin: 0 0 40px">
-              <button type="button" id="review-button" class="c-button c-button--review">クチコミを投稿する</button>
-            </div>
+            <button type="button" id="order-button" class="c-button c-button--orange mb-[16px] mt-[8px]">申し込む</button>
+            <button type="button" id="review-button" class="c-button c-button--review">クチコミを投稿する</button>
             <script>
               $(function () {
                 $(document).on("click", "[id^='review-button']", function () {
@@ -367,10 +360,6 @@
                 border: initial;
               }
             </style>
-          </div>
-          <!-- /itemDetailBox -->
-          <div class="footBnr">
-            <ul></ul>
           </div>
         </div>
       </main>
