@@ -1,26 +1,39 @@
 {% comment %}
   共通 head ブロック
+  - 通常ページ用（既存の head）
+  - ログイン / contents 用（旧 head-login-contents）
   pathPrefix が設定されているとき（GitHub Pages デプロイ時）は常に pathPrefix/ をアセットの先頭に付与
 {% endcomment %}
-{% if pathPrefix != '' and pathPrefix != null %}
-  {% assign asset_base = pathPrefix | append: '/' %}
-{% elsif page.url contains 'mymenu' %}
-  {% assign asset_base = '../' %}
-{% else %}
-  {% assign path_segments = page.url | split: '/' %}
-  {% assign seg_count = path_segments | size %}
-  {% assign depth = seg_count | minus: 1 %}
-  {% if depth < 0 %}
-    {% assign depth = 0 %}
+{% if page_is_login_contents %}
+  {% if pathPrefix != '' and pathPrefix != null %}
+    {% assign asset_base = pathPrefix | append: '/' %}
+  {% else %}
+    {% assign asset_base = '../' %}
   {% endif %}
-  {% if depth == 0 %}
-    {% assign asset_base = '' %}
-  {% elsif depth == 1 %}
+{% else %}
+  {% if pathPrefix != '' and pathPrefix != null %}
+    {% assign asset_base = pathPrefix | append: '/' %}
+  {% elsif page.url contains 'mymenu' %}
+    {% assign asset_base = '../' %}
+  {% elsif page.url contains 'contents' or page.url contains 'login' %}
     {% assign asset_base = '../' %}
   {% else %}
-    {% assign asset_base = '../../' %}
+    {% assign path_segments = page.url | split: '/' %}
+    {% assign seg_count = path_segments | size %}
+    {% assign depth = seg_count | minus: 1 %}
+    {% if depth < 0 %}
+      {% assign depth = 0 %}
+    {% endif %}
+    {% if depth == 0 %}
+      {% assign asset_base = '' %}
+    {% elsif depth == 1 %}
+      {% assign asset_base = '../' %}
+    {% else %}
+      {% assign asset_base = '../../' %}
+    {% endif %}
   {% endif %}
 {% endif %}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
@@ -29,14 +42,23 @@
 
 <title>{{ page_title }}</title>
 
-<link rel="shortcut icon" href="{{ asset_base }}assets/images/v-samplefavicon.png">
-<link rel="apple-touch-icon-precomposed" href="{{ asset_base }}assets/images/v-sample_touch_icon.png">
+{% if page_is_login_contents %}
+  <link rel="stylesheet" href="{{ asset_base }}assets/css/common.css">
+  <link rel="stylesheet" href="{{ asset_base }}assets/css/style.3078.css">
+  <link rel="stylesheet" href="{{ asset_base }}assets/css/style--common-sp-and-pc-2.css">
+{% else %}
+  <link rel="shortcut icon" href="{{ asset_base }}assets/images/v-samplefavicon.png">
+  <link rel="apple-touch-icon-precomposed" href="{{ asset_base }}assets/images/v-sample_touch_icon.png">
 
-{% if page_use_bootstrap %}
-  <link rel="stylesheet" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
+  {% if page_use_bootstrap %}
+    <link rel="stylesheet" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
+  {% endif %}
+  <link rel="stylesheet" href="{{ asset_base }}assets/css/main.css">
+  <link rel="stylesheet" href="{{ asset_base }}assets/css/p9255-common--pc.css">
+  <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
 {% endif %}
+
 <link rel="stylesheet" href="{{ asset_base }}assets/css/reset.css">
-<link rel="stylesheet" href="{{ asset_base }}assets/css/main.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/layout.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/module.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/style--common-sp-and-pc.css">
@@ -45,7 +67,6 @@
 <link rel="stylesheet" href="{{ asset_base }}assets/css/style--sp.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/t.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/t-sample.css">
-<link rel="stylesheet" href="{{ asset_base }}assets/css/p9255-common--pc.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/footer-common.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/components.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/style.css">
@@ -53,7 +74,9 @@
 <link rel="stylesheet" href="{{ asset_base }}assets/css/tailwind.build.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/vendor/fontawesome/css/all.css">
 
-<script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
 <script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+{% if page_is_login_contents %}
+  <script src="{{ asset_base }}assets/js/inputimg.js"></script>
+{% endif %}
 
 {{ head_extra }}
