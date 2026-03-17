@@ -654,16 +654,6 @@ body .select-area label {
 /* primary ------------------------------------------ */
 {
   width: 100%;
-  /* ため、もらの見出しタイトル */
-  /* 一覧のスタイル */
-  /* ため一覧のスタイル */
-  /* 新商品アイテムのスタイル */
-  /* ため（アイキャッチ）一覧のスタイル */
-  /* ため（サムネイル）一覧のスタイル */
-  /* もら一覧のスタイル */
-  /* みせ一覧のスタイル */
-  /* ため、もら一覧へのボタン（黄色） */
-  /*footBnr*/
 }
 
 @media (width <= 959px) {
@@ -1012,30 +1002,6 @@ select:invalid {
 }
 .pr-mise .p-project-lists li.filter {
   filter: contrast(0.7);
-}
-.footBnr {
-  display: none;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 959px) {
-  .footBnr {
-    display: block;
-  }
-}
-.footBnr img {
-  width: 100%;
-  height: auto;
-}
-.footBnr-list {
-  margin: auto;
-  margin-bottom: 10px;
-}
-.footBnr-list-large {
-  max-width: 330px;
-}
-.footBnr-list-small {
-  max-width: 330px;
 }
 
 /* icoWrap, mise-nnew-icon ---------------------------------------------------- */

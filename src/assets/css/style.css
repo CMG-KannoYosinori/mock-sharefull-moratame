@@ -1,3 +1,7 @@
+main {
+  padding-bottom: 48px;
+}
+
 .fs-15 {
   font-size: 12px;
 }
@@ -86,6 +90,7 @@
 .telephone-area ul {
   display: table;
 }
+
 .telephone-area li {
   display: table-cell;
 }
@@ -96,6 +101,11 @@
 
 .t-form__input {
   margin-top: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  background: #fff;
+  height: 30px;
+  overflow: hidden;
 }
 
 input[type="checkbox"] {
@@ -114,12 +124,12 @@ input[type="checkbox"] {
   padding: 12px 12px 2px 42px;
   font-size: 14px;
 }
-.checkbox:after {
+
+.checkbox::after {
   -webkit-transition: border-color 0.2s linear;
   position: absolute;
   top: 50%;
   left: 10px;
-  transition: border-color 0.2s linear;
   transition: border-color 0.2s linear;
   margin-top: -10px;
   border: 1px solid #a4a4a4;
@@ -129,14 +139,13 @@ input[type="checkbox"] {
   content: "";
 }
 
-.checkbox:before {
+.checkbox::before {
   -webkit-transition: opacity 0.2s linear;
   position: absolute;
   top: 50%;
   left: 16px;
   transform: rotate(45deg);
   opacity: 0;
-  transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   margin-top: -7px;
   border-right: 4px solid #333;
@@ -145,16 +154,9 @@ input[type="checkbox"] {
   height: 11px;
   content: "";
 }
+
 input[type="checkbox"]:checked + .checkbox:before {
   opacity: 1;
-}
-
-.t-form__input {
-  border: 1px solid #a4a4a4;
-  border-radius: 4px;
-  background: #fff;
-  height: 30px;
-  overflow: hidden;
 }
 
 .t-form__input input {
@@ -183,6 +185,7 @@ input[type="checkbox"]:checked + .checkbox:before {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .pageTopScroll.is-visible {
   opacity: 1;
 }
@@ -193,6 +196,7 @@ input[type="checkbox"]:checked + .checkbox:before {
   text-align: left;
   word-break: break-all;
 }
+
 .p-item-detail {
   margin-top: 16px;
   margin-right: auto;
@@ -200,40 +204,42 @@ input[type="checkbox"]:checked + .checkbox:before {
   border: 1px solid #e2e2e2;
   max-width: 640px;
 }
+
 .cost-em {
   color: #f76b1f;
 }
+
 .review_box {
   width: 50%;
 }
 
 .img_list {
-  margin: 5px 1px 5px;
+  margin: 5px 1px;
 }
 
-@media only screen and (max-width: 1269px) {
+@media only screen and (width <= 1269px) {
   .review_box {
     width: 49.5%;
   }
 
   .img_list {
-    margin: 5px 5px 5px;
+    margin: 5px;
   }
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (width <= 639px) {
   .review_box {
     width: 100%;
   }
 
   .img_list {
-    margin: 5px 5px 5px;
+    margin: 5px;
   }
 }
 
 .review_line {
   vertical-align: top;
-  margin: 10px 0 10px;
+  margin: 10px 0;
   border-top: 1px solid #ccc;
 }
 
@@ -254,10 +260,8 @@ input[type="checkbox"]:checked + .checkbox:before {
 
 .family-balloon {
   position: relative;
-  margin-top: 32px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
+  box-sizing: border-box;
+  margin: 32px auto 20px;
   border-radius: 4px;
   background-color: #e8e5d6;
   padding: 10px;
@@ -266,21 +270,21 @@ input[type="checkbox"]:checked + .checkbox:before {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  box-sizing: border-box;
 }
 
-.family-balloon:after {
+.family-balloon::after {
   position: absolute;
   bottom: -10px;
   left: 50%;
   margin-left: -5px;
-  border-width: 10px 5px 0 5px;
+  border-width: 10px 5px 0;
   border-style: solid;
-  border-color: #e8e5d6 transparent transparent transparent;
+  border-color: #e8e5d6 transparent transparent;
   width: 0;
   height: 0;
   content: "";
 }
+
 .t-button__yellow {
   display: block;
   cursor: pointer;
@@ -296,8 +300,11 @@ input[type="checkbox"]:checked + .checkbox:before {
   border: initial;
   height: initial;
 }
+
 /* /detail/tamesu */
+
 /* detail/tamesulist, detail/moraurist */
+
 .c-grid--row {
   margin-top: 1px;
   margin-left: 1px;
@@ -307,4 +314,5 @@ input[type="checkbox"]:checked + .checkbox:before {
   margin-top: -1px;
   margin-left: -1px;
 }
+
 /* /detail/tamesulist, detail/moraurist */

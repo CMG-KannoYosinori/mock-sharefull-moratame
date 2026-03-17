@@ -7,228 +7,219 @@
   <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemApply">
     <div class="body-wrapper">
       {% include 'header' %}
-      <main class="main" aria-labelledby="page-heading">
+      <main aria-labelledby="page-heading">
         <div class="l-container">
           <div>
-            <div id="F001" class="js-t-wrapper itemDetailBox">
-              <h1 id="page-heading" class="sr-only">もらえる商品アンケート回答</h1>
-              <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
-              <script type="text/javascript">
-                function doSubmit() {
-                  nextPage();
-                }
-              </script>
+            <h1 id="page-heading" class="sr-only">もらえる商品アンケート回答</h1>
+            <script type="text/javascript" src="https://stbtoken.sps-system.com/sbpstoken/com_sbps_system_token.js"></script>
+            <script type="text/javascript">
+              function doSubmit() {
+                nextPage();
+              }
+            </script>
 
-              <script language="javascript">
-                function chgExclusion(chgType, exclusion_name, my_name) {
-                  // 排他制御 無効化
-                  if (chgType == 0 || (chgType == 1 && document.frmtame2.elements[my_name].checked == false)) {
-                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                      if (document.frmtame2.elements[i].type == "checkbox") {
-                        if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
-                          document.frmtame2.elements[i].disabled = false;
-                        }
-                      }
-                    }
-                  } else {
-                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                      if (document.frmtame2.elements[i].type == "checkbox") {
-                        if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1 && document.frmtame2.elements[i].name != my_name) {
-                          document.frmtame2.elements[i].disabled = true;
-                          document.frmtame2.elements[i].checked = false;
-                        }
-                      }
-                    }
-                  }
-                }
-
-                function chgExclusion2(exclusion_name, my_name, limit) {
-                  var selectCount;
-                  selectCount = 0;
-
+            <script language="javascript">
+              function chgExclusion(chgType, exclusion_name, my_name) {
+                // 排他制御 無効化
+                if (chgType == 0 || (chgType == 1 && document.frmtame2.elements[my_name].checked == false)) {
                   for (i = 0; i <= document.frmtame2.length - 1; i++) {
                     if (document.frmtame2.elements[i].type == "checkbox") {
                       if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
-                        if (document.frmtame2.elements[i].checked == true) {
-                          selectCount++;
-                        }
+                        document.frmtame2.elements[i].disabled = false;
                       }
                     }
                   }
-
-                  if (selectCount > limit) {
-                    alert(limit + "つまで選択できます");
-
-                    for (i = 0; i <= document.frmtame2.length - 1; i++) {
-                      if (document.frmtame2.elements[i].type == "checkbox") {
-                        if (document.frmtame2.elements[i].name == my_name) {
-                          document.frmtame2.elements[i].checked = false;
-                        }
+                } else {
+                  for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                    if (document.frmtame2.elements[i].type == "checkbox") {
+                      if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1 && document.frmtame2.elements[i].name != my_name) {
+                        document.frmtame2.elements[i].disabled = true;
+                        document.frmtame2.elements[i].checked = false;
                       }
                     }
                   }
                 }
-              </script>
-              <script language="JavaScript" type="text/JavaScript">
-                <!--
-                function nextPage() {
-                    // 名前のスペースを除去する
-                    const elements = document.getElementsByClassName('js-nonspace');
-                    for (let i = 0; i < elements.length; i++) {
-                        elements[i].value = removeSpace(elements[i].value);
+              }
+
+              function chgExclusion2(exclusion_name, my_name, limit) {
+                var selectCount;
+                selectCount = 0;
+
+                for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                  if (document.frmtame2.elements[i].type == "checkbox") {
+                    if (document.frmtame2.elements[i].name.indexOf(exclusion_name) != -1) {
+                      if (document.frmtame2.elements[i].checked == true) {
+                        selectCount++;
+                      }
                     }
-
-
-                    document.frmtame2.submit();
-                        return false;
-
-                }
-                -->
-                // 文字列中に含まれる空白文字をすべて削除する
-                function removeSpace(str) {
-                    return str.replace(/\s+/g, '');
+                  }
                 }
 
-                // DOMの準備ができたら実行
-                document.addEventListener('DOMContentLoaded', function() {
-                    // フォーカスが外れたらスペースを削除する
-                    const elements = document.getElementsByClassName('js-nonspace');
-                    for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } });
-              </script>
-              <div id="anchor01" class="whiteContainer text-[14px]">
-                <div class="t-text">
-                  <div class="c-section-heading enq-section-heading t-text__middle">
-                    <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
-                  </div>
-                </div>
-                <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
-                  <input type="hidden" name="project_id" id="project_rand" value="6aaf2" />
-                  <input type="hidden" name="test" value="" />
-                  <input type="hidden" name="user_order_status" value="" />
-                  <input type="hidden" name="fst" value="1" />
-                  <input type="hidden" name="enq_mode" value="" />
-                  <input type="hidden" name="enq_pg" value="" />
-                  <input type="hidden" name="last_credit_card_flg" value="0" />
-                  <input type="hidden" name="last_card_no" value="" />
-                  <input type="hidden" name="last_card_ex" value="" />
-                  <input type="hidden" name="token" id="token" value="" />
-                  <input type="hidden" name="token_key" id="token_key" value="" />
-                  <input type="hidden" name="masked_card_no" id="masked_card_no" value="" />
-                  <input type="hidden" name="token_error" id="token_error" value="false" />
-                  <input type="hidden" name="shipment_area" id="shipment_area" value="" />
-                  <input type="hidden" name="address" id="address" value="0" />
-                  <a name="enqNo0"></a>
-                  <input type="hidden" name="enq_no[0]" value="0" />
-                  <section class="select-box select-area">
-                    <div class="c-section-heading t-text__middle">
-                      <h2 class="fs-16">【Q1】あなたの性別をお答えください。</h2>
-                    </div>
-                    <ul>
-                      <input type="hidden" name="ans[0][key][0]" value="男性" />
-                      <li><input class="answer" type="radio" name="ans[0][val]" value="男性" id="radio_0_0" /><label for="radio_0_0">男性</label></li>
-                      <input type="hidden" name="ans[0][key][1]" value="女性" />
-                      <li><input class="answer" type="radio" name="ans[0][val]" value="女性" id="radio_0_1" /><label for="radio_0_1">女性</label></li>
-                    </ul>
-                  </section>
-                  <a name="enqNo1"></a>
-                  <input type="hidden" name="enq_no[1]" value="1" />
-                  <section class="select-box select-area">
-                    <div class="c-section-heading t-text__middle">
-                      <h2 class="fs-16">【Q2】あなたの年代をお答えください。</h2>
-                    </div>
-                    <ul>
-                      <input type="hidden" name="ans[1][key][0]" value="20代以下" />
-                      <li><input class="answer" type="radio" name="ans[1][val]" value="20代以下" id="radio_1_0" /><label for="radio_1_0">20代以下</label></li>
-                      <input type="hidden" name="ans[1][key][1]" value="30代" />
-                      <li><input class="answer" type="radio" name="ans[1][val]" value="30代" id="radio_1_1" /><label for="radio_1_1">30代</label></li>
-                      <input type="hidden" name="ans[1][key][2]" value="40代" />
-                      <li><input class="answer" type="radio" name="ans[1][val]" value="40代" id="radio_1_2" /><label for="radio_1_2">40代</label></li>
-                      <input type="hidden" name="ans[1][key][3]" value="50代" />
-                      <li><input class="answer" type="radio" name="ans[1][val]" value="50代" id="radio_1_3" /><label for="radio_1_3">50代</label></li>
-                      <input type="hidden" name="ans[1][key][4]" value="60代以上" />
-                      <li><input class="answer" type="radio" name="ans[1][val]" value="60代以上" id="radio_1_4" /><label for="radio_1_4">60代以上</label></li>
-                    </ul>
-                  </section>
-                  <a name="enqNo2"></a>
-                  <input type="hidden" name="enq_no[2]" value="2" />
-                  <section class="select-box select-area">
-                    <div class="c-section-heading t-text__middle">
-                      <h2 class="fs-16">
-                        【Q3】あなたのご職業をお答えください。<br />
-                        ※専業主婦・主夫⇒パートも含む<br />
-                        ※専門職1⇒SOHO、デザイナー、アーティストなど<br />
-                        ※専門職2⇒弁護士、会計士、医師など
-                      </h2>
-                    </div>
-                    <ul>
-                      <input type="hidden" name="ans[2][key][0]" value="専業主婦・主夫" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="専業主婦・主夫" id="radio_2_0" /><label for="radio_2_0">専業主婦・主夫</label></li>
-                      <input type="hidden" name="ans[2][key][1]" value="会社員" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="会社員" id="radio_2_1" /><label for="radio_2_1">会社員</label></li>
-                      <input type="hidden" name="ans[2][key][2]" value="会社経営・役員" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="会社経営・役員" id="radio_2_2" /><label for="radio_2_2">会社経営・役員</label></li>
-                      <input type="hidden" name="ans[2][key][3]" value="公務員" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="公務員" id="radio_2_3" /><label for="radio_2_3">公務員</label></li>
-                      <input type="hidden" name="ans[2][key][4]" value="自営業" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="自営業" id="radio_2_4" /><label for="radio_2_4">自営業</label></li>
-                      <input type="hidden" name="ans[2][key][5]" value="教職" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="教職" id="radio_2_5" /><label for="radio_2_5">教職</label></li>
-                      <input type="hidden" name="ans[2][key][6]" value="専門職1" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="専門職1" id="radio_2_6" /><label for="radio_2_6">専門職1</label></li>
-                      <input type="hidden" name="ans[2][key][7]" value="専門職2" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="専門職2" id="radio_2_7" /><label for="radio_2_7">専門職2</label></li>
-                      <input type="hidden" name="ans[2][key][8]" value="アルバイト" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="アルバイト" id="radio_2_8" /><label for="radio_2_8">アルバイト</label></li>
-                      <input type="hidden" name="ans[2][key][9]" value="無職" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="無職" id="radio_2_9" /><label for="radio_2_9">無職</label></li>
-                      <input type="hidden" name="ans[2][key][10]" value="学生" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="学生" id="radio_2_10" /><label for="radio_2_10">学生</label></li>
-                      <input type="hidden" name="ans[2][key][11]" value="その他" />
-                      <li><input class="answer" type="radio" name="ans[2][val]" value="その他" id="radio_2_11" /><label for="radio_2_11">その他</label></li>
-                    </ul>
-                  </section>
-                  <a name="enqNo3"></a>
-                  <input type="hidden" name="enq_no[3]" value="3" />
-                  <section class="select-box select-area">
-                    <div class="c-section-heading t-text__middle">
-                      <h2 class="fs-16">【Q4】あなたの婚姻状況についてお答えください。</h2>
-                    </div>
-                    <ul>
-                      <input type="hidden" name="ans[3][key][0]" value="未婚" />
-                      <li><input class="answer" type="radio" name="ans[3][val]" value="未婚" id="radio_3_0" /><label for="radio_3_0">未婚</label></li>
-                      <input type="hidden" name="ans[3][key][1]" value="既婚" />
-                      <li><input class="answer" type="radio" name="ans[3][val]" value="既婚" id="radio_3_1" /><label for="radio_3_1">既婚</label></li>
-                      <input type="hidden" name="ans[3][key][2]" value="その他" />
-                      <li><input class="answer" type="radio" name="ans[3][val]" value="その他" id="radio_3_2" /><label for="radio_3_2">その他</label></li>
-                    </ul>
-                  </section>
-                  <a name="enqNo4"></a>
-                  <input type="hidden" name="enq_no[4]" value="4" />
-                  <section class="select-box select-area">
-                    <div class="c-section-heading t-text__middle">
-                      <h2 class="fs-16">【Q5】あなたにお子様はいらっしゃいますか？</h2>
-                    </div>
-                    <ul>
-                      <input type="hidden" name="ans[4][key][0]" value="いる" />
-                      <li><input class="answer" type="radio" name="ans[4][val]" value="いる" id="radio_4_0" /><label for="radio_4_0">いる</label></li>
-                      <input type="hidden" name="ans[4][key][1]" value="いない" />
-                      <li><input class="answer" type="radio" name="ans[4][val]" value="いない" id="radio_4_1" /><label for="radio_4_1">いない</label></li>
-                    </ul>
-                  </section>
-                  <!-- /enquete -->
-                </form>
-                <div class="t-button">
-                  <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
+                if (selectCount > limit) {
+                  alert(limit + "つまで選択できます");
+
+                  for (i = 0; i <= document.frmtame2.length - 1; i++) {
+                    if (document.frmtame2.elements[i].type == "checkbox") {
+                      if (document.frmtame2.elements[i].name == my_name) {
+                        document.frmtame2.elements[i].checked = false;
+                      }
+                    }
+                  }
+                }
+              }
+            </script>
+            <script language="JavaScript" type="text/JavaScript">
+              <!--
+              function nextPage() {
+                  // 名前のスペースを除去する
+                  const elements = document.getElementsByClassName('js-nonspace');
+                  for (let i = 0; i < elements.length; i++) {
+                      elements[i].value = removeSpace(elements[i].value);
+                  }
+
+
+                  document.frmtame2.submit();
+                      return false;
+
+              }
+              -->
+              // 文字列中に含まれる空白文字をすべて削除する
+              function removeSpace(str) {
+                  return str.replace(/\s+/g, '');
+              }
+
+              // DOMの準備ができたら実行
+              document.addEventListener('DOMContentLoaded', function() {
+                  // フォーカスが外れたらスペースを削除する
+                  const elements = document.getElementsByClassName('js-nonspace');
+                  for (let i = 0; i < elements.length; i++) { elements[i].addEventListener('blur', function () { this.value=removeSpace(this.value); }); } });
+            </script>
+            <div id="anchor01">
+              <div class="t-text">
+                <div class="c-section-heading enq-section-heading t-text__middle">
+                  <p class="c-section-heading__title enq-section-heading fs-18">アンケートにご回答ください</p>
                 </div>
               </div>
+              <form action="https://stg.tsample.tsite.jp/detail/tamesu2p.php" method="post" name="frmtame2">
+                <input type="hidden" name="project_id" id="project_rand" value="6aaf2" />
+                <input type="hidden" name="test" value="" />
+                <input type="hidden" name="user_order_status" value="" />
+                <input type="hidden" name="fst" value="1" />
+                <input type="hidden" name="enq_mode" value="" />
+                <input type="hidden" name="enq_pg" value="" />
+                <input type="hidden" name="last_credit_card_flg" value="0" />
+                <input type="hidden" name="last_card_no" value="" />
+                <input type="hidden" name="last_card_ex" value="" />
+                <input type="hidden" name="token" id="token" value="" />
+                <input type="hidden" name="token_key" id="token_key" value="" />
+                <input type="hidden" name="masked_card_no" id="masked_card_no" value="" />
+                <input type="hidden" name="token_error" id="token_error" value="false" />
+                <input type="hidden" name="shipment_area" id="shipment_area" value="" />
+                <input type="hidden" name="address" id="address" value="0" />
+                <a name="enqNo0"></a>
+                <input type="hidden" name="enq_no[0]" value="0" />
+                <section class="select-box select-area">
+                  <div class="c-section-heading t-text__middle">
+                    <h2 class="fs-16">【Q1】あなたの性別をお答えください。</h2>
+                  </div>
+                  <ul>
+                    <input type="hidden" name="ans[0][key][0]" value="男性" />
+                    <li><input class="answer" type="radio" name="ans[0][val]" value="男性" id="radio_0_0" /><label for="radio_0_0">男性</label></li>
+                    <input type="hidden" name="ans[0][key][1]" value="女性" />
+                    <li><input class="answer" type="radio" name="ans[0][val]" value="女性" id="radio_0_1" /><label for="radio_0_1">女性</label></li>
+                  </ul>
+                </section>
+                <a name="enqNo1"></a>
+                <input type="hidden" name="enq_no[1]" value="1" />
+                <section class="select-box select-area">
+                  <div class="c-section-heading t-text__middle">
+                    <h2 class="fs-16">【Q2】あなたの年代をお答えください。</h2>
+                  </div>
+                  <ul>
+                    <input type="hidden" name="ans[1][key][0]" value="20代以下" />
+                    <li><input class="answer" type="radio" name="ans[1][val]" value="20代以下" id="radio_1_0" /><label for="radio_1_0">20代以下</label></li>
+                    <input type="hidden" name="ans[1][key][1]" value="30代" />
+                    <li><input class="answer" type="radio" name="ans[1][val]" value="30代" id="radio_1_1" /><label for="radio_1_1">30代</label></li>
+                    <input type="hidden" name="ans[1][key][2]" value="40代" />
+                    <li><input class="answer" type="radio" name="ans[1][val]" value="40代" id="radio_1_2" /><label for="radio_1_2">40代</label></li>
+                    <input type="hidden" name="ans[1][key][3]" value="50代" />
+                    <li><input class="answer" type="radio" name="ans[1][val]" value="50代" id="radio_1_3" /><label for="radio_1_3">50代</label></li>
+                    <input type="hidden" name="ans[1][key][4]" value="60代以上" />
+                    <li><input class="answer" type="radio" name="ans[1][val]" value="60代以上" id="radio_1_4" /><label for="radio_1_4">60代以上</label></li>
+                  </ul>
+                </section>
+                <a name="enqNo2"></a>
+                <input type="hidden" name="enq_no[2]" value="2" />
+                <section class="select-box select-area">
+                  <div class="c-section-heading t-text__middle">
+                    <h2 class="fs-16">
+                      【Q3】あなたのご職業をお答えください。<br />
+                      ※専業主婦・主夫⇒パートも含む<br />
+                      ※専門職1⇒SOHO、デザイナー、アーティストなど<br />
+                      ※専門職2⇒弁護士、会計士、医師など
+                    </h2>
+                  </div>
+                  <ul>
+                    <input type="hidden" name="ans[2][key][0]" value="専業主婦・主夫" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="専業主婦・主夫" id="radio_2_0" /><label for="radio_2_0">専業主婦・主夫</label></li>
+                    <input type="hidden" name="ans[2][key][1]" value="会社員" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="会社員" id="radio_2_1" /><label for="radio_2_1">会社員</label></li>
+                    <input type="hidden" name="ans[2][key][2]" value="会社経営・役員" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="会社経営・役員" id="radio_2_2" /><label for="radio_2_2">会社経営・役員</label></li>
+                    <input type="hidden" name="ans[2][key][3]" value="公務員" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="公務員" id="radio_2_3" /><label for="radio_2_3">公務員</label></li>
+                    <input type="hidden" name="ans[2][key][4]" value="自営業" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="自営業" id="radio_2_4" /><label for="radio_2_4">自営業</label></li>
+                    <input type="hidden" name="ans[2][key][5]" value="教職" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="教職" id="radio_2_5" /><label for="radio_2_5">教職</label></li>
+                    <input type="hidden" name="ans[2][key][6]" value="専門職1" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="専門職1" id="radio_2_6" /><label for="radio_2_6">専門職1</label></li>
+                    <input type="hidden" name="ans[2][key][7]" value="専門職2" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="専門職2" id="radio_2_7" /><label for="radio_2_7">専門職2</label></li>
+                    <input type="hidden" name="ans[2][key][8]" value="アルバイト" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="アルバイト" id="radio_2_8" /><label for="radio_2_8">アルバイト</label></li>
+                    <input type="hidden" name="ans[2][key][9]" value="無職" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="無職" id="radio_2_9" /><label for="radio_2_9">無職</label></li>
+                    <input type="hidden" name="ans[2][key][10]" value="学生" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="学生" id="radio_2_10" /><label for="radio_2_10">学生</label></li>
+                    <input type="hidden" name="ans[2][key][11]" value="その他" />
+                    <li><input class="answer" type="radio" name="ans[2][val]" value="その他" id="radio_2_11" /><label for="radio_2_11">その他</label></li>
+                  </ul>
+                </section>
+                <a name="enqNo3"></a>
+                <input type="hidden" name="enq_no[3]" value="3" />
+                <section class="select-box select-area">
+                  <div class="c-section-heading t-text__middle">
+                    <h2 class="fs-16">【Q4】あなたの婚姻状況についてお答えください。</h2>
+                  </div>
+                  <ul>
+                    <input type="hidden" name="ans[3][key][0]" value="未婚" />
+                    <li><input class="answer" type="radio" name="ans[3][val]" value="未婚" id="radio_3_0" /><label for="radio_3_0">未婚</label></li>
+                    <input type="hidden" name="ans[3][key][1]" value="既婚" />
+                    <li><input class="answer" type="radio" name="ans[3][val]" value="既婚" id="radio_3_1" /><label for="radio_3_1">既婚</label></li>
+                    <input type="hidden" name="ans[3][key][2]" value="その他" />
+                    <li><input class="answer" type="radio" name="ans[3][val]" value="その他" id="radio_3_2" /><label for="radio_3_2">その他</label></li>
+                  </ul>
+                </section>
+                <a name="enqNo4"></a>
+                <input type="hidden" name="enq_no[4]" value="4" />
+                <section class="select-box select-area">
+                  <div class="c-section-heading t-text__middle">
+                    <h2 class="fs-16">【Q5】あなたにお子様はいらっしゃいますか？</h2>
+                  </div>
+                  <ul>
+                    <input type="hidden" name="ans[4][key][0]" value="いる" />
+                    <li><input class="answer" type="radio" name="ans[4][val]" value="いる" id="radio_4_0" /><label for="radio_4_0">いる</label></li>
+                    <input type="hidden" name="ans[4][key][1]" value="いない" />
+                    <li><input class="answer" type="radio" name="ans[4][val]" value="いない" id="radio_4_1" /><label for="radio_4_1">いない</label></li>
+                  </ul>
+                </section>
+                <!-- /enquete -->
+              </form>
+              <div class="t-button">
+                <button id="confirm" class="t-button__green t-button__smallText t-button__blue" onClick="javascript:doSubmit()">次へ</button>
+              </div>
             </div>
-
-            <div class="footBnr">
-              <ul></ul>
-            </div>
-            <!-- /footBnr -->
-
-            <!-- /itemDetailBox -->
           </div>
         </div>
       </main>
