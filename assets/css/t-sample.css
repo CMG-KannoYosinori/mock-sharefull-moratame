@@ -514,6 +514,7 @@ body .select-area label {
   margin-left: auto;
   margin-right: auto;
   padding-right: 60px;
+  box-sizing: border-box;
 }
 
 .p-masthead__nav li {
