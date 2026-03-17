@@ -1008,6 +1008,7 @@ a.t-text__link {
   font-size: 10px;
   margin-top: 5px;
   word-wrap: break-word;
+  word-break: break-all;
   color: #666;
 }
 
@@ -2132,6 +2133,11 @@ a.t-button__return {
 }
 .t-table__block tbody th {
   background: #eee;
+}
+
+.price_box th p {
+  white-space: normal;
+  word-break: break-word;
 }
 
 .t-table__simple {

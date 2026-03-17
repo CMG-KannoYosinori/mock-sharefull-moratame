@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_use_bootstrap = true %} {% assign page_title = '申し込み内容確認 | Vサンプル｜Vポイントが貯まる・使える Vサンプル' %} {% include 'head' %}
+    {% assign page_use_bootstrap = true %} {% assign page_title = '申し込み内容確認 | Vサンプル｜シェアフルポイントが貯まる・使える Vサンプル' %} {% include 'head' %}
   </head>
 
   <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
@@ -29,14 +29,6 @@
                 }
                 //-->
               </script>
-              <p class="breadCrumbs mb-[10px]">
-                <a href="https://stg.tsample.tsite.jp/">ホーム</a> ＞<a href="https://stg.tsample.tsite.jp/detail/tamesulist.php">ためせる商品一覧</a> ＞<a
-                  href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df"
-                  >ためせる商品詳細</a
-                >
-                ＞<a href="https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df">ためせる商品アンケート回答</a> ＞ためせる商品申し込み内容確認
-              </p>
-              <!-- /breadCrumbs -->
               <div class="t-sub-header">
                 <h2 id="page-heading">配送先・申し込み内容確認</h2>
               </div>
@@ -119,10 +111,10 @@
                         <td class="cell-strong">198円</td>
                       </tr>
                       <tr class="t-point-border">
-                        <th>ご利用Vポイント</th>
+                        <th>ご利用シェアフルポイント</th>
                         <td>
                           <input type="tel" max="198" min="0" id="use_point" name="use_point" style="width: 6rem; margin-bottom: 10px" placeholder="0" value="" />
-                          <br /><button type="button" id="all_point" style="box-shadow: 1px 1px #000; margin-bottom: 10px; border-radius: 30px">全額Vポイントで支払い</button>
+                          <br /><button type="button" id="all_point" style="box-shadow: 1px 1px #000; margin-bottom: 10px; border-radius: 30px">全額シェアフルポイントで支払い</button>
 
                           <script>
                             $(function () {
@@ -226,14 +218,16 @@
 
                               if (pay_sum < 10 && pay_sum != 0) {
                                 $("#submit_btn").html('<button type="button" class="t-button__default t-button__smallText t-button--disable">決済金額をご確認ください</button>');
-                                $("#err_msg").html("Vポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにVポイントのご利用数を変更してください。");
+                                $("#err_msg").html(
+                                  "シェアフルポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにシェアフルポイントのご利用数を変更してください。"
+                                );
                               } else {
                                 $("#submit_btn").html('<button onclick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue">申し込みを確定する</button>');
                                 $("#err_msg").html("");
                               }
                             }
                           </script>
-                          <br /><span>(Vポイント：10,000ポイント保有)</span>
+                          <br /><span>(シェアフルポイント：10,000ポイント保有)</span>
                         </td>
                       </tr>
                       <tr class="t-point-border">
@@ -242,12 +236,12 @@
                         <td class="cell-strong">
                           <span class="t-point__point"><span id="pay_sum" class="t-point__point__num">198</span>円（税込）</span><br />
                           <span style="" class="t-table__t-point__notice" id="pay_sum_msg"
-                            >Vポイントをご利用の場合、「合計」が1～9円となる決済ができません。「合計」が0円または、10円以上になるようにVポイントを利用してください。</span
+                            >シェアフルポイントをご利用の場合、「合計」が1～9円となる決済ができません。「合計」が0円または、10円以上になるようにシェアフルポイントを利用してください。</span
                           >
                         </td>
                       </tr>
                       <tr>
-                        <th>獲得Vポイント<br /></th>
+                        <th>獲得シェアフルポイント<br /></th>
                         <td>0 ポイント</td>
                       </tr>
                     </tbody>
