@@ -1,5 +1,5 @@
 {% comment %}
-  ページの階層に応じてマイページリンクを算出。pathPrefix 設定時はサブパス付き絶対パスを使用。
+  ページの階層に応じてマイメニューリンクを算出。pathPrefix 設定時はサブパス付き絶対パスを使用。
 {% endcomment %}
 {% if pathPrefix != '' and pathPrefix != null %}
   {% assign mymenu_href = pathPrefix | append: '/mymenu/basic.html' %}
@@ -59,7 +59,7 @@
       <a href="{{ morau_href }}">もらえる</a>
     </li>
     <li class="l-footer__nav-item">
-      <a href="{{ mymenu_href }}">マイページ</a>
+      <a href="{{ mymenu_href }}">マイメニュー</a>
     </li>
   </ul>
   <ul class="l-footer__related-links" aria-label="フッター関連リンク">
