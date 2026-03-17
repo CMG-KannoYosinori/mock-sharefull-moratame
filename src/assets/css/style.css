@@ -97,6 +97,11 @@ main {
 
 .t-table {
   padding: 10px;
+  font-size: 12px;
+  /* 768px以上の場合 */
+  @media (width >= 768px) {
+    font-size: 14px;
+  }
 }
 
 .t-form__input {
@@ -195,6 +200,7 @@ input[type="checkbox"]:checked + .checkbox:before {
 .t-table .t-table__block tbody td {
   text-align: left;
   word-break: break-all;
+  white-space: normal;
 }
 
 .p-item-detail {
@@ -316,3 +322,61 @@ input[type="checkbox"]:checked + .checkbox:before {
 }
 
 /* /detail/tamesulist, detail/moraurist */
+
+/* detail/order_sbps ------------------------------------------------- */
+
+.p-order-confirm__page-alert {
+  padding: 15px;
+  color: red;
+  border: 1px solid red;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 16px;
+}
+
+.p-order-confirm__use-point-input {
+  width: 6rem;
+  margin-bottom: 10px;
+}
+
+.p-order-confirm__all-point-button {
+  box-shadow: 1px 1px #000;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+.p-order-confirm__tradelaw-box {
+  border: solid;
+  border-color: red;
+  color: red;
+  padding: 1rem;
+  font-size: 12px;
+  @media (width >= 768px) {
+    font-size: 14px;
+  }
+}
+
+.p-order-confirm__tradelaw-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.p-order-confirm__tradelaw-text {
+  margin-bottom: 0.5rem;
+}
+
+.p-order-confirm__tradelaw-text--lg {
+  margin-bottom: 2rem;
+}
+
+.p-order-confirm__bottom-text {
+  margin-top: 0;
+}
+
+.p-order-confirm__error {
+  text-align: center;
+  color: red;
+}
+
+/* /detail/order_sbps */

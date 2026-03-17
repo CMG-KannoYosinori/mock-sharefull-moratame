@@ -26,6 +26,9 @@
 .relative {
     position: relative
 }
+.mb-8 {
+    margin-bottom: 2rem
+}
 .mb-\[10px\] {
     margin-bottom: 10px
 }
@@ -37,9 +40,6 @@
 }
 .mb-\[32px\] {
     margin-bottom: 32px
-}
-.mb-\[40px\] {
-    margin-bottom: 40px
 }
 .mb-\[5px\] {
     margin-bottom: 5px
@@ -58,9 +58,6 @@
 }
 .mt-\[8px\] {
     margin-top: 8px
-}
-.mb-8 {
-    margin-bottom: 2rem
 }
 .block {
     display: block
@@ -98,9 +95,6 @@
 .w-auto {
     width: auto
 }
-.max-w-\[320px\] {
-    max-width: 320px
-}
 .shrink {
     flex-shrink: 1
 }
@@ -129,11 +123,11 @@
 .pb-\[32px\] {
     padding-bottom: 32px
 }
-.pt-\[10px\] {
-    padding-top: 10px
-}
 .pt-\[0\.4em\] {
     padding-top: 0.4em
+}
+.pt-\[10px\] {
+    padding-top: 10px
 }
 .text-center {
     text-align: center
@@ -141,11 +135,11 @@
 .text-right {
     text-align: right
 }
-.indent-\[-0\.6em\] {
-    text-indent: -0.6em
-}
 .indent-0 {
     text-indent: 0px
+}
+.indent-\[-0\.6em\] {
+    text-indent: -0.6em
 }
 .text-\[12px\] {
     font-size: 12px

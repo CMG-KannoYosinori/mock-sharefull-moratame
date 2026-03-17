@@ -264,27 +264,6 @@
   margin-left: 1em;
   text-indent: -1em;
 }
-.p-matomete-about .img-responsive {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.p-matomete-about .img-responsive.img-responsive--matomete-bin-figure {
-  max-width: 480px;
-}
-.p-matomete-about .img-responsive.img-responsive--matomete-bin-figure-2 {
-  max-width: 170px;
-}
-.p-matomete-about .img-responsive.img-responsive--matomete-bin-figure-3 {
-  max-width: 170px;
-}
-.p-matomete-about .img-responsive.img-responsive--matomete-bin-figure-4 {
-  max-width: 170px;
-}
-
 . .p-premium {
   margin-bottom: 5px;
 }
@@ -1047,12 +1026,6 @@
   background-color: white;
   content: "";
   transform: rotate(-45deg);
-}
-
-.u-img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .fz_11 {
