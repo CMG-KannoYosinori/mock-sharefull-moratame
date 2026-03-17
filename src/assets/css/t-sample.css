@@ -482,13 +482,11 @@ body .select-area label {
     right: 100px;
   }
 }
-.sp-header-menu_component-login,
-.sp-header-menu_component-logout {
+.sp-header-menu_component-login {
   right: 49px;
 }
 @media (min-width: 768px) {
-  .sp-header-menu_component-login,
-  .sp-header-menu_component-logout {
+  .sp-header-menu_component-login {
     right: 58px;
   }
 }
