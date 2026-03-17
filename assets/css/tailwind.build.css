@@ -44,6 +44,9 @@
 .mb-\[5px\] {
     margin-bottom: 5px
 }
+.ml-\[-0\.6em\] {
+    margin-left: -0.6em
+}
 .mt-\[10px\] {
     margin-top: 10px
 }
@@ -55,9 +58,6 @@
 }
 .mt-\[8px\] {
     margin-top: 8px
-}
-.ml-\[-0\.6em\] {
-    margin-left: -0.6em
 }
 .block {
     display: block
