@@ -83,6 +83,9 @@
 .h-\[20px\] {
     height: 20px
 }
+.h-full {
+    height: 100%
+}
 .w-\[40px\] {
     width: 40px
 }

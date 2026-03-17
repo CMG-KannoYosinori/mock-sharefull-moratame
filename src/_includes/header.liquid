@@ -60,15 +60,6 @@
 <!-- 共通ヘッダー -->
 <header class="p-masthead" role="banner">
   <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-    <a href="{{ top_href }}">
-      <img
-        src="https://placehold.jp/30/dd6699/ffffff/480x160.png?text=シェアフル+ロゴ"
-        alt=""
-        style="width: auto; height: 100%;"
-        width="480"
-        height="160"
-      >
-    </a>
     <button
       class="sp-header-menu_component sp-header-menu_component-hbg"
       id="menu_btn"
@@ -144,26 +135,6 @@
     <div class="menu-background" aria-hidden="true"></div>
     <!-- /HBGmenu_Open -->
 
-    <!-- accordion-menu -->
-    <script>
-      $(function () {
-        $('.js-menu__item__link').each(function () {
-          $(this).on('click', function () {
-            $(this).toggleClass('on');
-            $('+.submenu', this).slideToggle();
-            return false;
-          });
-        });
-        $('.p-masthead__soon').on('click', function () {
-          $('#p-masthead__soon').toggle();
-        });
-        $(document).on('click', '.s_boxHeadline', function () {
-          $('#p-masthead__soon').css('display', 'none');
-        });
-      });
-    </script>
-    <!-- /accordion-menu -->
-
     <!-- topTabMenu_pc -->
     {% assign nav_top_active = '' %}
     {% assign nav_tame_active = '' %}
@@ -173,8 +144,7 @@
       {%- when '/' -%}
         {% assign nav_top_active = ' is-active' %}
       {%- when '/index.html' -%}
-        {% assign nav_top_active = '
-    is-active' %}
+        {% assign nav_top_active = ' is-active' %}
       {%- when '/detail/tamesulist.html' -%}
         {% assign nav_tame_active = ' is-active' %}
       {%- when '/detail/moraulist.html' -%}
@@ -182,23 +152,43 @@
       {%- when '/mymenu/basic.html' -%}
         {% assign nav_mise_active = ' is-active' %}
     {%- endcase -%}
+    <nav aria-label="トップページタブメニュー" class="h-full">
+      <ul class="p-masthead__nav">
+        <li class=" p-masthead__nav__top{{ nav_top_active }}">
+          <a href="{{ top_href }}" class="p-masthead__nav-item{{ nav_top_active }}">トップ</a>
+        </li>
+        <li class=" p-masthead__nav__tame{{ nav_tame_active }}">
+          <a href="{{ tamesu_href }}" class="p-masthead__nav-item{{ nav_tame_active }}">ためせる</a>
+        </li>
+        <li class="p-masthead__nav__mora{{ nav_mora_active }}">
+          <a href="{{ morau_href }}" class="p-masthead__nav-item{{ nav_mora_active }}">もらえる</a>
+        </li>
+        <li class="p-masthead__nav__mise{{ nav_mise_active }}">
+          <a href="{{ mymenu_href }}" class="p-masthead__nav-item{{ nav_mise_active }}">マイメニュー</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /topTabMenu_pc -->
   </div>
-  <nav aria-label="トップページタブメニュー">
-    <ul class="p-masthead__nav p-masthead__nav_toppage">
-      <li class=" p-masthead__nav__top{{ nav_top_active }}">
-        <a href="{{ top_href }}" class="p-masthead__nav-item{{ nav_top_active }}">トップ</a>
-      </li>
-      <li class=" p-masthead__nav__tame{{ nav_tame_active }}">
-        <a href="{{ tamesu_href }}" class="p-masthead__nav-item{{ nav_tame_active }}">ためせる</a>
-      </li>
-      <li class="p-masthead__nav__mora{{ nav_mora_active }}">
-        <a href="{{ morau_href }}" class="p-masthead__nav-item{{ nav_mora_active }}">もらえる</a>
-      </li>
-      <li class="p-masthead__nav__mise{{ nav_mise_active }}">
-        <a href="{{ mymenu_href }}" class="p-masthead__nav-item{{ nav_mise_active }}">マイメニュー</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /topTabMenu_pc -->
+
+  <!-- accordion-menu -->
+  <script>
+    $(function () {
+      $('.js-menu__item__link').each(function () {
+        $(this).on('click', function () {
+          $(this).toggleClass('on');
+          $('+.submenu', this).slideToggle();
+          return false;
+        });
+      });
+      $('.p-masthead__soon').on('click', function () {
+        $('#p-masthead__soon').toggle();
+      });
+      $(document).on('click', '.s_boxHeadline', function () {
+        $('#p-masthead__soon').css('display', 'none');
+      });
+    });
+  </script>
+  <!-- /accordion-menu -->
 </header>
 <!-- //p-masthead -->
