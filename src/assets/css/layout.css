@@ -1,6 +1,7 @@
 .se-news {
   margin-bottom: 20px;
 }
+
 .se-news .heading {
   background-color: #f8405f;
   color: #fff;
@@ -9,6 +10,7 @@
   font-size: 14px;
   line-height: 30px;
 }
+
 .se-news .container {
   border-color: #f8405f;
   padding: 10px;
@@ -16,10 +18,12 @@
   border-style: solid;
   background-color: #fff;
 }
+
 .se-news .container .newsListWrap {
   padding: 0 5px 10px;
   font-size: 12px;
 }
+
 .se-news .container .newsListWrap li {
   font-size: 12px;
   line-height: 1.7;
@@ -30,14 +34,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .about .container .catch {
   position: relative;
 }
+
 .about .container .catch img {
   width: 960px;
   height: auto;
   margin-bottom: 70px;
 }
+
 .about .container .catch .caption {
   position: absolute;
   right: -7px;
@@ -45,6 +52,7 @@
   text-align: center;
   font-size: 10px;
 }
+
 .pr-content {
   margin-bottom: 30px;
   max-width: 960px;
@@ -60,10 +68,12 @@
   background: #fff;
   cursor: pointer;
 }
+
 .pr-tame .ta-list .unit .item {
   float: left;
   width: 60px;
 }
+
 .pr-tame .ta-list .unit .item img {
   width: 60px;
   height: auto;
@@ -73,6 +83,7 @@
   width: 768px;
   margin: 0 auto;
 }
+
 .contents .cards img {
   height: 30px;
   width: auto;
@@ -167,36 +178,48 @@
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(2, 1fr);
-  @media (min-width: 425px) {
+  margin-top: 16px;
+
+  @media (width >= 375px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (min-width: 1024px) {
+
+  @media (width >= 1024px) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 .l-card-items--tame {
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
-  @media (min-width: 425px) {
+  margin-top: 16px;
+
+  @media (width >= 375px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     grid-template-columns: repeat(4, 1fr);
   }
-  @media (min-width: 1024px) {
+
+  @media (width >= 1024px) {
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
 .l-card-items--mora {
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(1, 1fr);
-  @media (min-width: 768px) {
+  margin-top: 16px;
+
+  @media (width >= 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* grid system */
 
 .l-container {

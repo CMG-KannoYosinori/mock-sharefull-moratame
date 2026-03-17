@@ -101,7 +101,11 @@
   padding: 0 0.2em;
   word-break: keep-all;
   color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
 .icoBar06.xs {
   font-size: 10px;
   line-height: 15px;
@@ -500,7 +504,6 @@
 
 .p-card--top {
   position: relative;
-  margin-top: 20px;
   border: 1px solid #e7e7ea;
   background-color: #fdfcfb;
 }
