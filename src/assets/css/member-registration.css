@@ -260,3 +260,18 @@
   font-size: 16px;
   color: #343434;
 }
+
+/* 再発送：変更先住所を登録に反映する（モック用ボタン見た目） */
+.sync-address-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #343434;
+  background: #f3f3f3;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sync-address-btn:hover {
+  background: #e8e8e8;
+}
