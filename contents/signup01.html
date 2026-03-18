@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    
-    
-    
-    
+       
 
   
     
@@ -46,11 +43,11 @@
 
 
 
-      <link rel="stylesheet" href="../assets/css/member-registration.css" />
-      <!-- 利用規約モーダル -->
-      <link rel="stylesheet" href="../assets/vendor/colorbox/colorbox.css" />
-      <script src="../assets/vendor/colorbox/jquery.colorbox.js" charset="UTF-8"></script>
-      <!-- /利用規約モーダル -->
+    <link rel="stylesheet" href="../assets/css/member-registration.css" />
+    <!-- 利用規約モーダル -->
+    <link rel="stylesheet" href="../assets/vendor/colorbox/colorbox.css" />
+    <script src="../assets/vendor/colorbox/jquery.colorbox.js" charset="UTF-8"></script>
+    <!-- /利用規約モーダル -->
     
 
   </head>
@@ -60,149 +57,46 @@
       <div class="md_container"></div>
     </div>
     <div class="page" id="registration-page">
-      <div class="body-wrapper">
-        
-
-  
-  
-  
-  
-  
-  
-
-
-<!-- 共通ヘッダー -->
-<header class="p-masthead" role="banner">
-  <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
-    <button
-      class="sp-header-menu_component sp-header-menu_component-hbg"
-      id="menu_btn"
-      type="button"
-      aria-controls="menu"
-      aria-expanded="false"
-    >
-      MENU
-    </button>
-
-    <!-- HBGmenu_Open -->
-    <nav id="menu" class="p-masthead__drawer" aria-label="グローバルメニュー">
-      <button type="button" id="menu_close" class="menu-close" aria-label="メニューを閉じる">×</button>
-      <ul>
-        <!-- category -->
-        <li class="menu__item">
-          <button class="menu__item__link js-menu__item__link" type="button">カテゴリ</button>
-          <ul class="submenu" style="display: none">
-            <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
-            <li>
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">
-                <img src="/mock-sharefull-moratame/assets/images/ico21.png" width="18" height="18" alt="">
-                食品（9）
-              </a>
-            </li>
-            <li>
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">
-                <img src="/mock-sharefull-moratame/assets/images/ico27.png" width="18" height="18" alt="">
-                ドリンク/お酒（20）
-              </a>
-            </li>
-            <li>
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">
-                <img src="/mock-sharefull-moratame/assets/images/ico28.png" width="18" height="18" alt="">
-                化粧品関連（217）
-              </a>
-            </li>
-            <li>
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">
-                <img src="/mock-sharefull-moratame/assets/images/ico23.png" width="18" height="18" alt="">
-                日用品/生活雑貨（100）
-              </a>
-            </li>
-            <li>
-              <a href="/mock-sharefull-moratame/detail/tamesulist.html">
-                <img src="/mock-sharefull-moratame/assets/images/ico37.png" width="18" height="18" alt="">
-                冷凍（1）
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="/mock-sharefull-moratame/detail/moraulist.html">家族配送（4）</a>
-        </li>
-        <!-- /category -->
-        <li>
-          <a href="https://www.moratame.net/contents/about.php">シェアフルモニターとは</a>
-        </li>
-        <li>
-          <a href="https://www.moratame.net/wp/cs/">FAQ</a>
-        </li>
-        <li>
-          <a href="https://www.moratame.net/wp/cs/">シェアフルモニター事務局へのお問い合わせ</a>
-        </li>
-        <li>
-          <a href="https://www.moratame.net/contents/syounin.php">シェアフルモニター利用規約</a>
-        </li>
-        <li>
-          <a href="/mock-sharefull-moratame/contents/trade/index.html">特定商取引表示</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="menu-background" aria-hidden="true"></div>
-    <!-- /HBGmenu_Open -->
-
-    <!-- topTabMenu_pc -->
-    
-    
-    
-    <nav aria-label="トップページタブメニュー" class="h-full">
-      <ul class="p-masthead__nav">
-        <li class=" p-masthead__nav__top">
-          <a href="/mock-sharefull-moratame/index.html" class="p-masthead__nav-item">トップ</a>
-        </li>
-        <li class=" p-masthead__nav__tame">
-          <a href="/mock-sharefull-moratame/detail/tamesulist.html" class="p-masthead__nav-item">ためせる</a>
-        </li>
-        <li class="p-masthead__nav__mora">
-          <a href="/mock-sharefull-moratame/detail/moraulist.html" class="p-masthead__nav-item">もらえる</a>
-        </li>
-        <li class="p-masthead__nav__mise">
-          <a href="/mock-sharefull-moratame/mymenu/basic.html" class="p-masthead__nav-item">マイメニュー</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- /topTabMenu_pc -->
-  </div>
-
-  <!-- accordion-menu -->
-  <script>
-    $(function () {
-      $('.js-menu__item__link').each(function () {
-        $(this).on('click', function () {
-          $(this).toggleClass('on');
-          $('+.submenu', this).slideToggle();
-          return false;
-        });
-      });
-      $('.p-masthead__soon').on('click', function () {
-        $('#p-masthead__soon').toggle();
-      });
-      $(document).on('click', '.s_boxHeadline', function () {
-        $('#p-masthead__soon').css('display', 'none');
-      });
-    });
-  </script>
-  <!-- /accordion-menu -->
-</header>
-<!-- //p-masthead -->
-
+      <div class="body-wrapper is-no-navbar">
         <main id="contente-top" class="content">
           <div class="l-container">
             <section class="new-signup-input pb-[32px]" aria-labelledby="signup-heading">
-              <img src="../assets/images/img/milestone-1.png" alt="step1 基本情報入力" class="u-img-center" width="750" height="64" />
+              <img src="../assets/images/img/milestone-1.png" alt="step1 基本情報入力" class="u-img-center u-img" width="750" height="64" />
               <h1 class="heading-ttl" id="signup-heading">基本情報入力</h1>
 
               <form action="https://www.moratame.net/s/contents/signup02p.php" method="post" name="new-signup-input" id="new-signup-input" aria-label="会員基本情報入力フォーム">
                 <input type="hidden" name="mode" id="mode" value="" />
 
+                <!--お名前-->
+                <div class="select-area select-name select-address1">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="label-name">お名前</h2>
+                    <span class="required" aria-hidden="true">必須</span>
+                  </div>
+                  <div class="input-area">
+                    <ul class="input-menu address1">
+                      <li>
+                        <input type="text" class="fs-15" name="name" id="name" value="" placeholder="山田太郎" autocomplete="name" aria-labelledby="label-name" aria-required="true" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/お名前-->
+                <!--フリガナ-->
+                <div class="select-area select-kana select-address1">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="label-kana">フリガナ</h2>
+                    <span class="required" aria-hidden="true">必須</span>
+                  </div>
+                  <div class="input-area">
+                    <ul class="input-menu address1">
+                      <li>
+                        <input type="text" class="fs-15" name="kana" id="kana" value="" placeholder="ヤマダタロウ" aria-labelledby="label-kana" aria-required="true" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/フリガナ-->
                 <!--性別-->
                 <div class="select-area select-sex">
                   <div class="form-ttl">
@@ -379,128 +273,7 @@
                   </div>
                 </div>
                 <!--/生年月日-->
-                <!--メールアドレス-->
-                <div class="select-area select-email">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="label-email">メールアドレス</h2>
-                    <span class="required" aria-hidden="true">必須</span>
-                  </div>
-                  <div class="input-area">
-                    <ul class="input-menu email">
-                      <li>
-                        <input
-                          type="email"
-                          class="fs-15"
-                          name="email"
-                          id="email"
-                          value=""
-                          placeholder="example@moratame.net"
-                          autocomplete="email"
-                          spellcheck="false"
-                          autocorrect="off"
-                          aria-labelledby="label-email"
-                          aria-required="true"
-                        />
-                      </li>
-                      <li>
-                        <input
-                          type="email"
-                          class="fs-15"
-                          name="email2"
-                          id="email2"
-                          value=""
-                          placeholder="確認のためもう一度入力して下さい"
-                          autocomplete="email"
-                          spellcheck="false"
-                          autocorrect="off"
-                          aria-label="メールアドレス（確認）"
-                          aria-required="true"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/メールアドレス-->
-                <!--パスワード-->
-                <div class="select-area select-password">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="label-password">パスワード</h2>
-                    <span class="required" aria-hidden="true">必須</span>
-                  </div>
-                  <!--passwaord表示非表示-->
-                  <div class="input-area">
-                    <ul class="input-menu password">
-                      <li>
-                        <input
-                          type="password"
-                          name="pass"
-                          id="password1"
-                          placeholder="g10Asf31"
-                          autocomplete="new-password"
-                          spellcheck="false"
-                          autocorrect="off"
-                          aria-labelledby="label-password"
-                          aria-required="true"
-                          aria-describedby="password-hint"
-                        />
-                      </li>
-                      <p class="side-text" id="password-hint">※半角6文字以上16文字以下</p>
-                    </ul>
-                  </div>
-                  <!--/password表示非表示-->
-                </div>
-                <!--/パスワード-->
-
-                <!--メルマガの種類-->
-                <!--/メルマガの種類-->
-
-                <!--ニックネーム-->
-                <div class="select-area select-nickname">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="label-nickname">ニックネーム</h2>
-                    <span class="required" aria-hidden="true">必須</span>
-                  </div>
-                  <div class="input-area">
-                    <ul class="input-menu nickname">
-                      <li>
-                        <input
-                          type="text"
-                          class="fs-15"
-                          name="disp_id"
-                          id="disp_id"
-                          value=""
-                          placeholder="ザック32694"
-                          aria-labelledby="label-nickname"
-                          aria-required="true"
-                          aria-describedby="nickname-hint"
-                        />
-                      </li>
-                      <div class="side-text">
-                        <button type="button" class="w200 nickname-check-btn" disabled aria-describedby="nickname-hint">登録可能なニックネームかチェック</button>
-                        <span id="nicknamealert" role="status" aria-live="polite"></span>
-                      </div>
-                      <p class="side-text" id="nickname-hint">※ニックネームは後から変更できます。</p>
-                    </ul>
-                  </div>
-                </div>
-                <!--/ニックネーム-->
-
-                <!--紹介コード-->
-                <div class="select-area select-nickname">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="label-refer">紹介コード</h2>
-                  </div>
-                  <div class="input-area">
-                    <ul class="input-menu nickname">
-                      <li><input type="text" class="fs-15" name="refer_code" id="refer_code" value="" placeholder="" aria-labelledby="label-refer" /></li>
-                      <div class="side-text">
-                        <span id="refer_code_msg" role="status" aria-live="polite"></span>
-                        <span id="refer_code_alert" role="alert" aria-live="polite"></span>
-                      </div>
-                    </ul>
-                  </div>
-                </div>
-                <!--/紹介コード-->
+                <!-- メールアドレス / パスワード / ニックネーム / 紹介コード 入力欄は削除 -->
 
                 <!--郵便番号-->
                 <div class="select-area select-zipcode">
@@ -540,9 +313,52 @@
                         <select name="prefecture" id="prefecture" aria-labelledby="label-prefecture" aria-required="true">
                           <option value="">選択してください</option>
                           <option value="北海道">北海道</option>
+                          <option value="青森県">青森県</option>
+                          <option value="岩手県">岩手県</option>
+                          <option value="宮城県">宮城県</option>
+                          <option value="秋田県">秋田県</option>
+                          <option value="山形県">山形県</option>
+                          <option value="福島県">福島県</option>
+                          <option value="茨城県">茨城県</option>
+                          <option value="栃木県">栃木県</option>
+                          <option value="群馬県">群馬県</option>
+                          <option value="埼玉県">埼玉県</option>
+                          <option value="千葉県">千葉県</option>
                           <option value="東京都" selected>東京都</option>
+                          <option value="神奈川県">神奈川県</option>
+                          <option value="新潟県">新潟県</option>
+                          <option value="富山県">富山県</option>
+                          <option value="石川県">石川県</option>
+                          <option value="福井県">福井県</option>
+                          <option value="山梨県">山梨県</option>
+                          <option value="長野県">長野県</option>
+                          <option value="岐阜県">岐阜県</option>
+                          <option value="静岡県">静岡県</option>
+                          <option value="愛知県">愛知県</option>
+                          <option value="三重県">三重県</option>
+                          <option value="滋賀県">滋賀県</option>
+                          <option value="京都府">京都府</option>
                           <option value="大阪府">大阪府</option>
-                          <option value="その他">その他</option>
+                          <option value="兵庫県">兵庫県</option>
+                          <option value="奈良県">奈良県</option>
+                          <option value="和歌山県">和歌山県</option>
+                          <option value="鳥取県">鳥取県</option>
+                          <option value="島根県">島根県</option>
+                          <option value="岡山県">岡山県</option>
+                          <option value="広島県">広島県</option>
+                          <option value="山口県">山口県</option>
+                          <option value="徳島県">徳島県</option>
+                          <option value="香川県">香川県</option>
+                          <option value="愛媛県">愛媛県</option>
+                          <option value="高知県">高知県</option>
+                          <option value="福岡県">福岡県</option>
+                          <option value="佐賀県">佐賀県</option>
+                          <option value="長崎県">長崎県</option>
+                          <option value="熊本県">熊本県</option>
+                          <option value="大分県">大分県</option>
+                          <option value="宮崎県">宮崎県</option>
+                          <option value="鹿児島県">鹿児島県</option>
+                          <option value="沖縄県">沖縄県</option>
                         </select>
                       </li>
                     </ul>
