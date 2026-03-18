@@ -50,3 +50,11 @@
 .u-anchor-underline:active {
   text-decoration: none;
 }
+
+/* アンカーリンクの青文字 */
+.u-anchor-blue:link,
+.u-anchor-blue:visited,
+.u-anchor-blue:hover,
+.u-anchor-underline:active {
+  color: #0085c3;
+}

@@ -1295,51 +1295,7 @@ body.itemDetail div.itemDetailBox .t-table .cell-em .min {
   }
 }
 
-body.itemDetail div#F001 .balloon__cost,
-body.itemDetail div.itemDetailBox .balloon__cost {
-  position: relative;
-  left: 0;
-  margin-top: -15px;
-  padding: 2px;
-  width: 150px;
-  font-size: 11px;
-}
 
-body.itemDetail div#F001 .balloon__cost:after,
-body.itemDetail div.itemDetailBox .balloon__cost:after {
-  position: absolute;
-  top: -5px;
-  left: 10px;
-  margin-top: 0;
-  width: 0;
-  height: 0;
-  border-width: 0 4px 5px 4px;
-  border-style: solid;
-  border-color: transparent transparent #f76b1f transparent;
-}
-
-body.itemDetail div#F001 .balloon__point,
-body.itemDetail div.itemDetailBox .balloon__point {
-  position: relative;
-  left: 0;
-  margin-top: 2px;
-  padding: 2px;
-  width: 160px;
-  font-size: 11px;
-}
-
-body.itemDetail div#F001 .balloon__point:after,
-body.itemDetail div.itemDetailBox .balloon__point:after {
-  position: absolute;
-  top: -5px;
-  left: 10px;
-  margin-top: 0;
-  width: 0;
-  height: 0;
-  border-width: 0 4px 5px 4px;
-  border-style: solid;
-  border-color: transparent transparent #f76b1f transparent;
-}
 
 body.itemDetail div#F001 .container-pjt,
 body.itemDetail div.itemDetailBox .container-pjt {

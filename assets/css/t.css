@@ -2133,6 +2133,7 @@ a.t-button__return {
 }
 .t-table__block tbody th {
   background: #eee;
+  width: 25%;
 }
 
 .price_box th p {
@@ -2335,6 +2336,10 @@ a.t-button__return {
 .t-media__img {
   float: left;
   margin-right: 10px;
+  img {
+    max-width: 80px;
+    height: auto;
+  }
 }
 .t-media__img__img {
   max-width: 160px;
