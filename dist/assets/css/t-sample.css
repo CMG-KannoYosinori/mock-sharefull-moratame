@@ -416,11 +416,6 @@ body .t-text {
   padding: 0;
 }
 
-body .body-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 body .p-masthead {
   color: #000;
 }
@@ -822,29 +817,29 @@ select:invalid {
 .txt_Alert.Alert2 {
   padding: 0px 0 40px;
 }
-.pr-tame .p-card__detail {
+.p-card__detail {
   line-height: 1.5;
 }
-.pr-tame .p-card__detail .badge.cardBadge {
+.p-card__detail .badge.cardBadge {
   height: auto;
 }
-.pr-tame .p-card__detail.newitem {
+.p-card__detail.newitem {
   height: 150px;
   line-height: 1.5;
 }
 
 @media (width <= 1614px) {
-  .pr-tame .p-card__detail.newitem {
+  .p-card__detail.newitem {
     height: 140px;
   }
 }
-.pr-tame .p-card__detail.newitem .badge.cardBadge {
+.p-card__detail.newitem .badge.cardBadge {
   height: auto;
 }
-.pr-tame .p-card__detail .newitem_ttlico {
+.p-card__detail .newitem_ttlico {
   text-align: center;
 }
-.pr-tame .p-card__detail .newitem_ttlico li {
+.p-card__detail .newitem_ttlico li {
   display: inline-block;
   margin: 0 auto 10px;
   background-color: red;
@@ -856,110 +851,110 @@ select:invalid {
 }
 
 @media (max-width: 639px) {
-  .pr-tame .p-card__detail .newitem_ttlico li {
+  .p-card__detail .newitem_ttlico li {
     margin: 0 auto 5px;
     width: 48%;
   }
 }
-.pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_mora {
+.p-card__detail .newitem_ttlico .newitem_ttl_mora {
   background-color: #f54521;
   text-align: center;
   font-size: 12px;
 }
 
 @media (max-width: 639px) {
-  .pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_mora {
+  .p-card__detail .newitem_ttlico .newitem_ttl_mora {
     font-size: 10px;
   }
 }
-.pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_tame {
+.p-card__detail .newitem_ttlico .newitem_ttl_tame {
   background-color: #3291d1;
   text-align: center;
   font-size: 12px;
 }
 
 @media (max-width: 639px) {
-  .pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_tame {
+  .p-card__detail .newitem_ttlico .newitem_ttl_tame {
     font-size: 10px;
   }
 }
-.pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_num {
+.p-card__detail .newitem_ttlico .newitem_ttl_num {
   background-color: #174198;
   text-align: center;
   font-size: 12px;
 }
 
 @media (max-width: 639px) {
-  .pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_num {
+  .p-card__detail .newitem_ttlico .newitem_ttl_num {
     font-size: 10px;
   }
 }
-.pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_onecoin {
+.p-card__detail .newitem_ttlico .newitem_ttl_onecoin {
   background-color: #34ab4b;
   text-align: center;
   font-size: 12px;
 }
 
 @media (max-width: 639px) {
-  .pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_onecoin {
+  .p-card__detail .newitem_ttlico .newitem_ttl_onecoin {
     font-size: 10px;
   }
 }
-.pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_store {
+.p-card__detail .newitem_ttlico .newitem_ttl_store {
   background-color: #e63862;
   text-align: center;
   font-size: 12px;
 }
 
 @media (max-width: 639px) {
-  .pr-tame .p-card__detail .newitem_ttlico .newitem_ttl_store {
+  .p-card__detail .newitem_ttlico .newitem_ttl_store {
     width: 55%;
     font-size: 10px;
   }
 }
 
 @media (max-width: 959px) {
-  .pr-tame .col-xs-4 {
+  .col-xs-4 {
     padding: 0 3px;
     width: 33.333%;
   }
 }
 
 @media (max-width: 530px) {
-  .pr-tame .col-xs-4 {
+  .col-xs-4 {
     width: 50%;
   }
 }
 
 @media (max-width: 959px) {
-  .pr-tame .col-md-2 {
+  .col-md-2 {
     width: 25%;
   }
 }
 
 @media (max-width: 639px) {
-  .pr-tame .col-md-2 {
+  .col-md-2 {
     width: 33.333%;
   }
 }
 
 @media (max-width: 530px) {
-  .pr-tame .col-md-2 {
+  .col-md-2 {
     width: 50%;
   }
 }
-.pr-mora .badge.cardBadge {
+.badge.cardBadge {
   height: auto;
 }
 
 @media (max-width: 959px) {
-  .pr-mora .col-xs-12 {
+  .col-xs-12 {
     width: 50%;
   }
 }
 
 @media (max-width: 639px) {
-  .pr-mora .col-xs-12 {
+  .col-xs-12 {
     width: 100%;
   }
 }
@@ -1295,51 +1290,7 @@ body.itemDetail div.itemDetailBox .t-table .cell-em .min {
   }
 }
 
-body.itemDetail div#F001 .balloon__cost,
-body.itemDetail div.itemDetailBox .balloon__cost {
-  position: relative;
-  left: 0;
-  margin-top: -15px;
-  padding: 2px;
-  width: 150px;
-  font-size: 11px;
-}
 
-body.itemDetail div#F001 .balloon__cost:after,
-body.itemDetail div.itemDetailBox .balloon__cost:after {
-  position: absolute;
-  top: -5px;
-  left: 10px;
-  margin-top: 0;
-  width: 0;
-  height: 0;
-  border-width: 0 4px 5px 4px;
-  border-style: solid;
-  border-color: transparent transparent #f76b1f transparent;
-}
-
-body.itemDetail div#F001 .balloon__point,
-body.itemDetail div.itemDetailBox .balloon__point {
-  position: relative;
-  left: 0;
-  margin-top: 2px;
-  padding: 2px;
-  width: 160px;
-  font-size: 11px;
-}
-
-body.itemDetail div#F001 .balloon__point:after,
-body.itemDetail div.itemDetailBox .balloon__point:after {
-  position: absolute;
-  top: -5px;
-  left: 10px;
-  margin-top: 0;
-  width: 0;
-  height: 0;
-  border-width: 0 4px 5px 4px;
-  border-style: solid;
-  border-color: transparent transparent #f76b1f transparent;
-}
 
 body.itemDetail div#F001 .container-pjt,
 body.itemDetail div.itemDetailBox .container-pjt {

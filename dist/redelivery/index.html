@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-       
+      
 
   
     
@@ -23,8 +23,6 @@
 <title>再発送手続き｜シェアフルポイントが貯まる・使える シェアフルモニター</title>
 
 
-  
-    <link rel="stylesheet" href="../assets/css/bootstrap.v3.3.7--scope.css">
   
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/p9255-common--pc.css">
@@ -200,8 +198,8 @@
 <!-- //p-masthead -->
 
       <main aria-labelledby="redelivery-heading">
-        <h1 id="redelivery-heading" class="step-name" style="margin-top: 10px">再発送手続き</h1>
-        <div class="submenu p-registration_info_edit__block" style="display: block">
+        <h1 id="redelivery-heading" class="mt-8">再発送手続き</h1>
+        <div class="p-registration_info_edit__block">
           <div class="t-column-head">
             <h4 class="t-column-head__text">伝票番号</h4>
           </div>
@@ -227,10 +225,24 @@
           <form action="redelivery/complete.php" method="post" id="frm" aria-label="再発送手続きフォーム">
             <input type="hidden" name="redelivery_id" value="22" />
             <input type="hidden" name="rand" value="c96f1ec2af8b2caf7682c897819cf5a9" />
-            <div class="submenu p-registration_info_edit__block" style="display: block">
-              <label for="address_change_0"> <input type="radio" id="address_change_0" name="address_change" value="0" checked />上記の住所で再発送依頼する </label><br /><br />
-              <label for="address_change_1"> <input type="radio" id="address_change_1" name="address_change" value="1" />お届け先を変更する </label>
-              <div id="change_form" style="display: none">
+            <div class="select-area select-sex">
+              <div class="form-ttl">
+                <h2 class="element-ttl" id="label-address-change">お届け先</h2>
+              </div>
+              <div class="input-area">
+                <ul class="radio-menu" role="radiogroup" aria-labelledby="label-address-change">
+                  <li>
+                    <input type="radio" id="address_change_0" name="address_change" value="0" checked />
+                    <label for="address_change_0">上記の住所で再発送依頼する</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="address_change_1" name="address_change" value="1" />
+                    <label for="address_change_1">お届け先を変更する</label>
+                  </li>
+                </ul>
+              </div>
+              <!-- NOTE: `#change_form` の表示/非表示は下部の script（setForm/initAddressChange）で制御しています。初期状態を確実に非表示にするため `style="display: none"` は削除しないでください。 -->
+              <div id="change_form" class="bg-gray-100 px-4 py-4 rounded-lg" style="display: none">
                 <p class="mt-[20px]">下記に再配達先住所を入力してください。</p>
                 <div class="t-column-head">
                   <h4 class="t-column-head__text">お名前</h4>
@@ -278,7 +290,9 @@
                 <div class="t-form__input">
                   <input name="tel" type="text" id="tel" value="0354863530" maxlength="32" placeholder="00000000000" />
                 </div>
-                <input type="checkbox" name="sync_address" id="sync_address" value="1" style="position: initial; opacity: initial; margin-top: 10px" />変更先住所を登録情報にも反映する
+                <div class="mt-4" style="text-align: center">
+                  <button type="button" class="sync-address-btn">変更先住所を登録情報にも反映する</button>
+                </div>
               </div>
             </div>
             <input type="submit" value="再発送依頼する" name="submit" class="t-button__green t-button__smallText t-button__blue" />

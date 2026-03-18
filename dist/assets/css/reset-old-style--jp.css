@@ -156,19 +156,19 @@ body.bgi {
   font-size: 12px;
 }
 
-.pr-tame {
-  margin-top: 20px;
-}
-
 .unit--payment .col-card {
   max-width: 63px;
 }
 
-.btnBean01:link, .btnBean01:visited {
+.btnBean01:link,
+.btnBean01:visited {
   color: #fff;
 }
 
-.pageTopScroll a:link, .pageTopScroll a:active, .pageTopScroll a:hover, .pageTopScroll a:visited {
+.pageTopScroll a:link,
+.pageTopScroll a:active,
+.pageTopScroll a:hover,
+.pageTopScroll a:visited {
   color: #fff;
 }
 

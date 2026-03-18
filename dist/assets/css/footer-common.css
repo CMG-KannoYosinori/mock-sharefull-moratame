@@ -1,18 +1,27 @@
 /* 共通フッター（シェアフルモニター）スタイル - Layout: .l-footer */
 
 /* スティッキーフッター: ページが短くてもフッターを画面最下部に表示 */
+
 .body-wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 51px;
   min-height: calc(100vh - 51px);
+  &.is-no-navbar {
+    padding-top: 0;
+  }
 }
-@media (min-width: 768px) {
+
+@media (width >= 768px) {
   .body-wrapper {
     padding-top: 62px;
     min-height: calc(100vh - 62px);
+    &.is-no-navbar {
+      padding-top: 0;
+    }
   }
 }
+
 footer {
   margin-top: auto;
 }
@@ -55,11 +64,13 @@ footer {
   padding: 0;
   font-size: 14px;
 }
-@media only screen and (max-width: 530px) {
+
+@media (width <= 530px) {
   .l-footer__nav {
     font-size: 11px;
   }
 }
+
 .l-footer__nav-item {
   margin-right: 0;
   padding-right: 0;
@@ -70,8 +81,8 @@ footer {
 .l-footer__related-links {
   margin: 0 auto;
   max-width: 425px;
-  /* 768px以上の場合はマージンを0に */
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     max-width: none;
   }
 }
@@ -80,8 +91,8 @@ footer {
 .l-footer__related-links-item:nth-child(2),
 .l-footer__related-links-item:nth-child(4) {
   border-right: none;
-  /* 768px以上の場合は区切り線を表示 */
-  @media (min-width: 768px) {
+
+  @media (width >= 768px) {
     border-right: 1px dotted #efefef;
   }
 }
@@ -96,6 +107,7 @@ footer {
   height: 28px;
   text-align: center;
 }
+
 .l-footer__copyright img {
   vertical-align: baseline;
 }

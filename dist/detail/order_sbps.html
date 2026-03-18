@@ -1,16 +1,8 @@
 <!doctype html>
 <html lang="ja">
   <head>
-      
+     
 
-  
-    
-    
-    
-    
-    
-      
-    
   
 
 
@@ -24,37 +16,35 @@
 
 
   
-    <link rel="stylesheet" href="../../assets/css/bootstrap.v3.3.7--scope.css">
-  
-  <link rel="stylesheet" href="../../assets/css/main.css">
-  <link rel="stylesheet" href="../../assets/css/p9255-common--pc.css">
-  <script src="../../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/p9255-common--pc.css">
+  <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
 
 
-<link rel="stylesheet" href="../../assets/css/reset.css">
-<link rel="stylesheet" href="../../assets/css/layout.css">
-<link rel="stylesheet" href="../../assets/css/module.css">
-<link rel="stylesheet" href="../../assets/css/style--common-sp-and-pc.css">
-<link rel="stylesheet" href="../../assets/css/reset-old-style--jp.css">
-<link rel="stylesheet" href="../../assets/css/style--pc.css">
-<link rel="stylesheet" href="../../assets/css/style--sp.css">
-<link rel="stylesheet" href="../../assets/css/t.css">
-<link rel="stylesheet" href="../../assets/css/t-sample.css">
-<link rel="stylesheet" href="../../assets/css/footer-common.css">
-<link rel="stylesheet" href="../../assets/css/components.css">
-<link rel="stylesheet" href="../../assets/css/style.css">
-<link rel="stylesheet" href="../../assets/css/utilities.css">
-<link rel="stylesheet" href="../../assets/css/tailwind.build.css">
-<link rel="stylesheet" href="../../assets/vendor/fontawesome/css/all.css">
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/module.css">
+<link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css">
+<link rel="stylesheet" href="../assets/css/reset-old-style--jp.css">
+<link rel="stylesheet" href="../assets/css/style--pc.css">
+<link rel="stylesheet" href="../assets/css/style--sp.css">
+<link rel="stylesheet" href="../assets/css/t.css">
+<link rel="stylesheet" href="../assets/css/t-sample.css">
+<link rel="stylesheet" href="../assets/css/footer-common.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/utilities.css">
+<link rel="stylesheet" href="../assets/css/tailwind.build.css">
+<link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
 
-<script src="../../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 
 
 
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
+  <body id="pageTop" class="itemDetail itemConfirm">
     <div class="body-wrapper">
       
 
@@ -200,30 +190,10 @@
       <main aria-labelledby="page-heading">
         <div class="l-container">
           <div>
-            <script language="Javascript" type="text/JavaScript">
-              <!--
-              var gflg = true;
-              function go_next() {
-                  var c = gflg;
-                  if (c) {
-                      gflg = false;
-                      document.frm.submit();
-                  }
-                  return false;
-              }
-
-              function back() {
-                  document.frm.action = "https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df";
-                  document.frm.submit();
-              }
-              //-->
-            </script>
             <div class="t-sub-header">
               <h2 id="page-heading">配送先・申し込み内容確認</h2>
             </div>
-            <p style="padding: 15px; color: red; border: 1px solid red; font-size: 13px; text-align: center; margin-bottom: 12px">
-              別タブなどで他のページを開くと、申し込みのお手続きがやり直しとなりますのでご注意ください。
-            </p>
+            <p class="p-order-confirm__page-alert">別タブなどで他のページを開くと、申し込みのお手続きがやり直しとなりますのでご注意ください。</p>
             <div id="select-address">
               <fieldset>
                 <div class="t-radio input radio">
@@ -277,7 +247,7 @@
               <li>
                 <div class="t-media__inner">
                   <div class="t-media__img">
-                    <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" alt="" height="640" />
+                    <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" alt="" height="640" class="" />
                   </div>
                   <div class="t-media__body">
                     <p class="t-media__body-title">
@@ -287,7 +257,7 @@
                 </div>
               </li>
             </ul>
-            <form name="frm" id="frm" method="post" action="https://stg.tsample.tsite.jp/detail/order_sbps_pay.php" class="t-form">
+            <form name="frm" id="frm" method="post" action="https://stg.tsample.tsite.jp/detail/order_sbps_pay.php">
               <div class="t-table">
                 <table class="t-table__block">
                   <tbody>
@@ -302,121 +272,10 @@
                     <tr class="t-point-border">
                       <th>ご利用シェアフルポイント</th>
                       <td>
-                        <input type="tel" max="198" min="0" id="use_point" name="use_point" style="width: 6rem; margin-bottom: 10px" placeholder="0" value="" />
-                        <br /><button type="button" id="all_point" style="box-shadow: 1px 1px #000; margin-bottom: 10px; border-radius: 30px">全額シェアフルポイントで支払い</button>
-
-                        <script>
-                          $(function () {
-                            $("#use_point").change(function () {
-                              val_check();
-                            });
-
-                            $("#use_point").keyup(function () {
-                              val_check();
-                            });
-
-                            $("#all_point").click(function () {
-                              all_point();
-                            });
-
-                            $("#all_point_use").click(function () {
-                              all_point_use();
-                            });
-
-                            // エンターキーを無効化
-                            $("input").keydown(function (e) {
-                              if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
-                                return false;
-                              } else {
-                                return true;
-                              }
-                            });
-
-                            $("#use_point").trigger("change");
-                          });
-
-                          // 全額ポイント支払い
-                          function all_point() {
-                            $("#use_point").val($("#pay_sum_def").val());
-                            val_check();
-                          }
-
-                          // ポイント全部使用
-                          function all_point_use() {
-                            $("#use_point").val(198);
-                            val_check();
-                          }
-
-                          // 半角数値以外は認めない
-                          function hankaku2Zenkaku(str) {
-                            if (!String(str).match(/^\d+$/)) {
-                              if ($("#use_point").val() != "") {
-                                $("#use_point").val("");
-                                window.alert("ポイント数に半角の数値以外は入力できません。");
-                              }
-                              return 0;
-                            } else {
-                              return 1;
-                            }
-                          }
-
-                          function val_check() {
-                            var tmp = $("#use_point").val();
-
-                            // マイナス削除処理
-                            tmp = tmp.replace("ー", "");
-                            tmp = tmp.replace("−", "");
-
-                            // ゼロ始まりの数値はあり得ないので、入力禁止
-                            if (tmp[0] == "0") {
-                              tmp = "";
-                            }
-
-                            $("#use_point").val(tmp);
-
-                            // 半角数値以外は認めない
-                            hankaku2Zenkaku($("#use_point").val());
-
-                            // 合計金額計算
-                            var pay_sum = $("#pay_sum_def").val() - $("#use_point").val();
-
-                            // 0円以下にはできないようにする
-                            if (pay_sum < 0) {
-                              pay_sum = 0;
-                              $("#use_point").val($("#pay_sum_def").val());
-                            }
-
-                            // 保有ポイント以上の処理はできないようにする
-                            if ($("#use_point").val() > 198) {
-                              pay_sum = $("#pay_sum_def").val() - 198;
-                              $("#use_point").val(198);
-                            }
-
-                            // カンマ区切り表示に変更
-                            var v_pay_sum = new Intl.NumberFormat("ja-JP").format(pay_sum);
-                            // 計算結果を反映
-                            $("#pay_sum").html(v_pay_sum + "");
-
-                            if (pay_sum == 0) {
-                              $("#pay_type").html("ポイント払い");
-                              $("#card_number").css("display", "none");
-                            } else {
-                              $("#pay_type").html("クレジットカード一括払い");
-                              $("#card_number").css("display", "");
-                            }
-
-                            if (pay_sum < 10 && pay_sum != 0) {
-                              $("#submit_btn").html('<button type="button" class="t-button__default t-button__smallText t-button--disable">決済金額をご確認ください</button>');
-                              $("#err_msg").html(
-                                "シェアフルポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにシェアフルポイントのご利用数を変更してください。"
-                              );
-                            } else {
-                              $("#submit_btn").html('<button onclick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue">申し込みを確定する</button>');
-                              $("#err_msg").html("");
-                            }
-                          }
-                        </script>
-                        <br /><span>(シェアフルポイント：10,000ポイント保有)</span>
+                        <input type="tel" max="198" min="0" id="use_point" name="use_point" class="p-order-confirm__use-point-input" placeholder="0" value="" />
+                        <br /><button type="button" id="all_point" class="p-order-confirm__all-point-button">全額シェアフルポイントで支払い</button> <br /><span
+                          >(シェアフルポイント：10,000ポイント保有)</span
+                        >
                       </td>
                     </tr>
                     <tr class="t-point-border">
@@ -424,7 +283,7 @@
                       <input type="hidden" id="pay_sum_def" value="198" />
                       <td class="cell-strong">
                         <span class="t-point__point"><span id="pay_sum" class="t-point__point__num">198</span>円（税込）</span><br />
-                        <span style="" class="t-table__t-point__notice" id="pay_sum_msg"
+                        <span class="t-table__t-point__notice" id="pay_sum_msg"
                           >シェアフルポイントをご利用の場合、「合計」が1～9円となる決済ができません。「合計」が0円または、10円以上になるようにシェアフルポイントを利用してください。</span
                         >
                       </td>
@@ -450,16 +309,16 @@
                   </tbody>
                 </table>
               </div>
-              <div style="border: solid; border-color: red; color: red; padding: 1rem">
-                <p style="font-weight: bold; margin-bottom: 15px">特定商取引の表示についてのご案内</p>
+              <div class="p-order-confirm__tradelaw-box">
+                <p class="p-order-confirm__tradelaw-title">特定商取引の表示についてのご案内</p>
                 <p>◆支払の時期・方法について</p>
-                <p style="margin-bottom: 0.5rem">各クレジットカード会社の引き落とし日及び支払い方法に準ずる</p>
+                <p class="p-order-confirm__tradelaw-text">各クレジットカード会社の引き落とし日及び支払い方法に準ずる</p>
                 <p>◆引渡時期・提供時間</p>
-                <p style="margin-bottom: 0.5rem">各商品詳細ページでご案内している発送予定日から約3日以内。※お届け日、時間指定は承っておりません</p>
+                <p class="p-order-confirm__tradelaw-text">各商品詳細ページでご案内している発送予定日から約3日以内。※お届け日、時間指定は承っておりません</p>
                 <p>◆申込みの期間</p>
-                <p style="margin-bottom: 0.5rem">2026年01月08日　から 2028年01月08日</p>
+                <p class="p-order-confirm__tradelaw-text">2026年01月08日　から 2028年01月08日</p>
                 <p>◆申込みの撤回・解除に関する事項</p>
-                <p style="margin-bottom: 2rem">
+                <p class="p-order-confirm__tradelaw-text p-order-confirm__tradelaw-text--lg">
                   会員様都合でのご返品はお受け出来ません。 万が一、商品が破損していた場合には、商品到着後3日以内に事務局へのメールにてお問い合わせください。
                   商品破損の場合、ご返品の際の送料およびご返金に必要な手数料は弊社の負担とさせていただきます）。
                 </p>
@@ -467,7 +326,7 @@
                 <p><a href="https://tsample.tsite.jp/contents/trade/index.php">&gt;特定商取引に基づく表記</a></p>
               </div>
 
-              <div class="t-text" style="margin-top: 0">
+              <div class="t-text p-order-confirm__bottom-text">
                 <div class="t-text__small monitor-text__red">
                   <p>※こちらの商品の発送は、1個口で発送になります。</p>
                 </div>
@@ -481,7 +340,7 @@
               <div class="t-button" id="submit_btn">
                 <button onClick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue" id="submit_btn">申し込みを確定する</button>
               </div>
-              <div style="text-align: center; color: red"><span id="err_msg"></span></div>
+              <div class="p-order-confirm__error"><span id="err_msg"></span></div>
               <div class="t-button">
                 <div class="t-arrow_left">
                   <button class="t-button__default t-button__smallText" onClick="javascript:back()">戻る</button>
@@ -552,5 +411,154 @@
 
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
+    <script>
+      // 申し込み確定ボタンの二重送信を防ぐフラグ
+      let isSubmitting = false;
+
+      // 申し込み確定時の送信処理
+      function go_next() {
+        if (isSubmitting) return false;
+
+        isSubmitting = true;
+
+        const form = document.forms.frm;
+        if (form) {
+          form.submit();
+        }
+
+        return false;
+      }
+
+      // 「戻る」ボタンで確認前のページに戻る処理
+      function back() {
+        const form = document.forms.frm;
+        if (form) {
+          form.action = "https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=fe6df";
+          form.submit();
+        }
+      }
+
+      // シェアフルポイント入力に応じて、合計金額や支払方法表示を更新する処理
+      (function setupPointControls() {
+        const usePointInput = document.getElementById("use_point");
+        const allPointButton = document.getElementById("all_point");
+        const allPointUseButton = document.getElementById("all_point_use");
+        const paySumDefInput = document.getElementById("pay_sum_def");
+        const paySumElement = document.getElementById("pay_sum");
+        const payTypeElement = document.getElementById("pay_type");
+        const cardNumberRow = document.getElementById("card_number");
+        const submitBtnContainer = document.getElementById("submit_btn");
+        const errMsgElement = document.getElementById("err_msg");
+
+        if (!usePointInput || !paySumDefInput || !paySumElement || !payTypeElement || !cardNumberRow || !submitBtnContainer || !errMsgElement) {
+          return;
+        }
+
+        const MAX_USE_POINT = 198;
+
+        // 半角数値以外を弾いて入力をクリアする
+        function validateNumeric(value) {
+          if (!/^\d+$/.test(String(value))) {
+            if (usePointInput.value !== "") {
+              usePointInput.value = "";
+              window.alert("ポイント数に半角の数値以外は入力できません。");
+            }
+            return false;
+          }
+          return true;
+        }
+
+        // 入力されたポイント数に応じて合計金額や UI を更新
+        function updatePaySummary() {
+          let tmp = usePointInput.value;
+
+          // マイナス記号のように見える文字を削除
+          tmp = tmp.replace(/ー/g, "").replace(/−/g, "");
+
+          // 先頭が 0 の数値は無効扱い
+          if (tmp && tmp[0] === "0") {
+            tmp = "";
+          }
+
+          usePointInput.value = tmp;
+
+          if (tmp !== "" && !validateNumeric(tmp)) {
+            return;
+          }
+
+          const baseAmount = Number(paySumDefInput.value || 0);
+          let usePoint = Number(usePointInput.value || 0);
+
+          // 0 円未満にならないように制御
+          if (usePoint > baseAmount) {
+            usePoint = baseAmount;
+            usePointInput.value = String(baseAmount);
+          }
+
+          // 保有ポイント上限でクリップ
+          if (usePoint > MAX_USE_POINT) {
+            usePoint = MAX_USE_POINT;
+            usePointInput.value = String(MAX_USE_POINT);
+          }
+
+          let paySum = baseAmount - usePoint;
+
+          const formatted = new Intl.NumberFormat("ja-JP").format(paySum);
+          paySumElement.textContent = `${formatted}`;
+
+          if (paySum === 0) {
+            payTypeElement.textContent = "ポイント払い";
+            cardNumberRow.style.display = "none";
+          } else {
+            payTypeElement.textContent = "クレジットカード一括払い";
+            cardNumberRow.style.display = "";
+          }
+
+          if (paySum < 10 && paySum !== 0) {
+            submitBtnContainer.innerHTML = '<button type="button" class="t-button__default t-button__smallText t-button--disable">決済金額をご確認ください</button>';
+            errMsgElement.textContent = "シェアフルポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにシェアフルポイントのご利用数を変更してください。";
+          } else {
+            submitBtnContainer.innerHTML = '<button onclick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue">申し込みを確定する</button>';
+            errMsgElement.textContent = "";
+          }
+        }
+
+        // 全額ポイント支払い
+        function useAllPointFromTotal() {
+          usePointInput.value = paySumDefInput.value || "0";
+          updatePaySummary();
+        }
+
+        // 保有ポイントすべてを使う（仕様上 198 固定）
+        function useAllOwnedPoint() {
+          usePointInput.value = String(MAX_USE_POINT);
+          updatePaySummary();
+        }
+
+        // 入力・クリックイベントの紐付け
+        usePointInput.addEventListener("change", updatePaySummary);
+        usePointInput.addEventListener("keyup", updatePaySummary);
+
+        if (allPointButton) {
+          allPointButton.addEventListener("click", useAllPointFromTotal);
+        }
+
+        if (allPointUseButton) {
+          allPointUseButton.addEventListener("click", useAllOwnedPoint);
+        }
+
+        // エンターキーでの誤送信を防止
+        document.querySelectorAll("input").forEach((input) => {
+          input.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+              event.preventDefault();
+            }
+          });
+        });
+
+        // 初期表示時にも合計金額などを計算
+        updatePaySummary();
+      })();
+    </script>
   </body>
 </html>

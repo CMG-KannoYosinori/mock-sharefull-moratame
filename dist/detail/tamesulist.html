@@ -4,14 +4,6 @@
       
 
   
-    
-    
-    
-    
-    
-      
-    
-  
 
 
 <meta charset="utf-8">
@@ -24,28 +16,28 @@
 
 
   
-  <link rel="stylesheet" href="../../assets/css/main.css">
-  <link rel="stylesheet" href="../../assets/css/p9255-common--pc.css">
-  <script src="../../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/p9255-common--pc.css">
+  <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
 
 
-<link rel="stylesheet" href="../../assets/css/reset.css">
-<link rel="stylesheet" href="../../assets/css/layout.css">
-<link rel="stylesheet" href="../../assets/css/module.css">
-<link rel="stylesheet" href="../../assets/css/style--common-sp-and-pc.css">
-<link rel="stylesheet" href="../../assets/css/reset-old-style--jp.css">
-<link rel="stylesheet" href="../../assets/css/style--pc.css">
-<link rel="stylesheet" href="../../assets/css/style--sp.css">
-<link rel="stylesheet" href="../../assets/css/t.css">
-<link rel="stylesheet" href="../../assets/css/t-sample.css">
-<link rel="stylesheet" href="../../assets/css/footer-common.css">
-<link rel="stylesheet" href="../../assets/css/components.css">
-<link rel="stylesheet" href="../../assets/css/style.css">
-<link rel="stylesheet" href="../../assets/css/utilities.css">
-<link rel="stylesheet" href="../../assets/css/tailwind.build.css">
-<link rel="stylesheet" href="../../assets/vendor/fontawesome/css/all.css">
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/module.css">
+<link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css">
+<link rel="stylesheet" href="../assets/css/reset-old-style--jp.css">
+<link rel="stylesheet" href="../assets/css/style--pc.css">
+<link rel="stylesheet" href="../assets/css/style--sp.css">
+<link rel="stylesheet" href="../assets/css/t.css">
+<link rel="stylesheet" href="../assets/css/t-sample.css">
+<link rel="stylesheet" href="../assets/css/footer-common.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/utilities.css">
+<link rel="stylesheet" href="../assets/css/tailwind.build.css">
+<link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
 
-<script src="../../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 
  
@@ -196,310 +188,749 @@
 <!-- //p-masthead -->
 
       <main aria-labelledby="page-heading">
-        <div class="l-container">
-          <div>
-            <div class="pr-tame" style="margin-top: 0">
-              <div class="heading xx-large enclosingBtn withIcon mb-[16px] mt-[16px]">
-                <h1 id="page-heading">
-                  <span class="icoWrap">
-                    <img alt="" height="79" src="../assets/images/icon-tame.png" width="64" />
-                  </span>
-                  <span>少額でためせる商品一覧</span>
-                </h1>
+        <div class="l-container mb-8">
+          <div class="heading xx-large enclosingBtn withIcon mb-[16px] mt-[16px]">
+            <h1 id="page-heading">
+              <span class="icoWrap">
+                <img alt="" height="79" src="../assets/images/icon-tame.png" width="64" />
+              </span>
+              <span>少額でためせる商品一覧</span>
+            </h1>
+          </div>
+          <!-- /headGroup -->
+
+          <!-- カテゴリで絞り込む -->
+          <style>
+            .p-tamesulist-filter .category-sub-link.is-active {
+              font-weight: bold;
+              text-decoration: underline;
+            }
+          </style>
+          <div class="p-tamesulist-filter mb-[16px]">
+            <label for="category-filter" class="block font-bold mb-[8px]">カテゴリで絞り込む</label>
+            <select id="category-filter" name="category" class="fs-15 p-2 border border-gray-300 rounded w-full max-w-[320px]" aria-label="カテゴリで絞り込む">
+              <option value="" data-label="すべて">すべて</option>
+              <option value="food" data-label="食品">食品</option>
+              <option value="drink" data-label="ドリンク/お酒">ドリンク/お酒</option>
+              <option value="diet" data-label="ダイエット/健康">ダイエット/健康</option>
+              <option value="cosmetic" data-label="化粧品関連">化粧品関連</option>
+              <option value="daily" data-label="日用品/生活雑貨">日用品/生活雑貨</option>
+              <option value="pet" data-label="ペット用品">ペット用品</option>
+              <option value="frozen" data-label="冷凍">冷凍</option>
+            </select>
+            <div id="subcategory-links" class="mt-[12px] text-sm text-gray-700 space-y-2 hidden empty:hidden">
+              <div id="sub-food" class="subcategory-group" data-category="food" hidden>
+                <span class="font-bold mr-2">食品：</span>
+                <a href="#" class="category-sub-link" data-subcategory="retort">レトルト食品</a> ｜ <a href="#" class="category-sub-link" data-subcategory="instant">インスタント食品</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="seasoning">調味料</a> ｜ <a href="#" class="category-sub-link" data-subcategory="snack">お菓子</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="ingredient">食材</a>
               </div>
-              <!-- /headGroup -->
-              <ul class="list14 p-project-lists c-grid--row c-grid--row--no-gutter" id="top_p_list">
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=4477d" onclick="ga('send', 'event', 'sp_top', 'click_tame', '4477d')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="ギフトコード10件B" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">シェアフルモニター編集部</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">ギフトコード10件B</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=64b89" onclick="ga('send', 'event', 'sp_top', 'click_tame', '64b89')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="ギフトコード10件A" height="320" src="../assets/images/project/2300_20260204_161903.png" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">シェアフルモニター編集部</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">ギフトコード10件A</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca5d4" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'ca5d4')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="ギフトコードPJT0120" height="320" src="../assets/images/project/2277_20260109_154838.jpg" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">リニューアルVサンプ&hellip;</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">ギフトコードPJT0120</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">97</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=ca0d1" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'ca0d1')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="CCCMK様ご確認用ギフトコードPJT" height="320" src="../assets/images/project/2277_20260109_154838.jpg" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">リニューアルVサンプ&hellip;</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">CCCMK様ご確認用ギフトコードPJT</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">97</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fe6df" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'fe6df')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <h2>
-                          <img alt="ギフトコードK5 200件" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">クーポンクライアント&hellip;</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">ギフトコードK5 200件</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">198</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fb0e2" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'fb0e2')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="MTSD-14548 少数クーポンB" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">クーポンクライアント&hellip;</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">MTSD-14548 少数クーポンB</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">8</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=6d933" onclick="ga('send', 'event', 'sp_top', 'click_tame', '6d933')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="MTSD-14548 少数クーポンA" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">クーポンクライアント&hellip;</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">MTSD-14548 少数クーポンA</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=56642" onclick="ga('send', 'event', 'sp_top', 'click_tame', '56642')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--favorite">オススメ</span>
-                        <h2>
-                          <img alt="ギフトコード3万件" height="320" src="../assets/images/project/2258_20251113_105926.png" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">リニューアルVサンプ&hellip;</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">ギフトコード3万件</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">29,995</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=af9ac" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'af9ac')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--few">残りわずか</span>
-                        <h2>
-                          <img alt="クーポンテスト2" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">シェアフルモニター編集部</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">クーポンテスト2</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">4</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=0d996" onclick="ga('send', 'event', 'sp_top', 'click_tame', '0d996')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <h2>
-                          <img alt="LORETTA AIMER ミストケアオイル" height="320" src="../assets/images/project/2242_20250930_103849.png" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">LORETTA AIMER ミストケアオイル</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">997</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fadd8" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'fadd8')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <h2>
-                          <img alt="重複OK2" height="640" src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" width="640" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">重複OK2</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">4,971</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=60c8a" onclick="ga('send', 'event', 'sp_top', 'click_tame', '60c8a')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <h2>
-                          <img alt="重複OK" height="320" src="../assets/images/project/2217_20250623_150908.jpg" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">重複OK</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">4,974</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=14ca9" onclick="ga('send', 'event', 'sp_top', 'click_tame', '14ca9')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <h2>
-                          <img alt="プロファイルチェック用Attoos（大阪除外）" height="320" src="../assets/images/project/1877_20241211_164449.jpg" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">小林製薬　</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">プロファイルチェック用Attoos（大阪除外）</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">495</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20" onclick="ga('send', 'event', 'sp_top', 'click_tame', '41e20')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--favorite">オススメ</span>
-                        <h2>
-                          <img alt="ポイント決済用少額" height="320" src="../assets/images/project/1132_20211110_145638.png" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">ポイント決済用少額</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">9,931</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="c-grid--col">
-                  <a class="ui-link" href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=fdb68" onclick="ga('send', 'event', 'sp_top', 'click_tame', 'fdb68')" rel="external" tabindex="0">
-                    <div class="p-project-list p-project-list--tame">
-                      <div class="p-project-lists__thumbnail-wrap">
-                        <span class="c-label-2 c-label-2--favorite">オススメ</span>
-                        <h2>
-                          <img alt="重複有り,家族有り" height="320" src="../assets/images/project/1092_20200320_191054.png" width="320" loading="lazy" />
-                        </h2>
-                      </div>
-                      <div class="p-project-lists__block">
-                        <dl class="p-project-lists__dl p-project-lists__dl--tame">
-                          <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
-                          <dt class="sp_top_project_sname u-text-ellipsis">重複有り,家族有り</dt>
-                          <dt class="sp_top_project_count">残り<span class="font-bold c_red">9,844</span></dt>
-                        </dl>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- /itemList -->
-              <!-- btnGroup -->
-              <div class="mt-[20px]">
-                <p class="btnSquare01wrap">
-                  <a href="https://stg.tsample.tsite.jp/detail/tamesupast.php" class="c-button c-button--gray"> 受付終了商品一覧はこちら</a>
-                </p>
+              <div id="sub-drink" class="subcategory-group" data-category="drink" hidden>
+                <span class="font-bold mr-2">ドリンク/お酒：</span>
+                <a href="#" class="category-sub-link" data-subcategory="juice">果汁飲料</a> ｜ <a href="#" class="category-sub-link" data-subcategory="powder">粉末ドリンク</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="coffee">コーヒー</a> ｜ <a href="#" class="category-sub-link" data-subcategory="tea">紅茶</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="soft">清涼飲料</a> ｜ <a href="#" class="category-sub-link" data-subcategory="alcohol">お酒</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="health">健康飲料</a>
               </div>
-              <!-- /btnGroup -->
+              <div id="sub-diet" class="subcategory-group" data-category="diet" hidden>
+                <span class="font-bold mr-2">ダイエット/健康：</span>
+                <a href="#" class="category-sub-link" data-subcategory="supplement">サプリメント</a> ｜ <a href="#" class="category-sub-link" data-subcategory="functional">機能性表示食品</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="quasi">医薬部外品</a> ｜ <a href="#" class="category-sub-link" data-subcategory="health-goods">健康関連商品</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="diet-goods">ダイエット関連商品</a>
+              </div>
+              <div id="sub-cosmetic" class="subcategory-group" data-category="cosmetic" hidden>
+                <span class="font-bold mr-2">化粧品関連：</span>
+                <a href="#" class="category-sub-link" data-subcategory="skincare">スキンケア・基礎化粧品</a> ｜ <a href="#" class="category-sub-link" data-subcategory="uv">日焼け対策・UVケア</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="makeup">メイクアップ・ベースメイク</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="lash">ラッシュ＆アイブロウマスカラＮ</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="judydoll">【JUDYDOLL】果実茶ティントリップ</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="uhue">【Uhue】 SPICY PINK パウティミラーティント</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="haircare">ヘアケア・スタイリング</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="salonpro">サロンドプロ 白髪染め オイルリッチクリームヘアカラー</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="bodycare">ボディケア</a> ｜ <a href="#" class="category-sub-link" data-subcategory="deardoer">DearDoerボディスクラブ</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="cosmetic-other">その他化粧用品</a>
+              </div>
+              <div id="sub-daily" class="subcategory-group" data-category="daily" hidden>
+                <span class="font-bold mr-2">日用品/生活雑貨：</span>
+                <a href="#" class="category-sub-link" data-subcategory="oral">口腔ケア</a> ｜ <a href="#" class="category-sub-link" data-subcategory="cleaning">掃除用品</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="bath">洗面・バス用品</a> ｜ <a href="#" class="category-sub-link" data-subcategory="daily-other">その他用品</a>
+              </div>
+              <div id="sub-pet" class="subcategory-group" data-category="pet" hidden>
+                <span class="font-bold mr-2">ペット用品：</span>
+                <a href="#" class="category-sub-link" data-subcategory="icare">i CARE</a> ｜ <a href="#" class="category-sub-link" data-subcategory="dog">犬</a> ｜
+                <a href="#" class="category-sub-link" data-subcategory="cat">猫</a>
+              </div>
+              <div id="sub-frozen" class="subcategory-group" data-category="frozen" hidden>
+                <span class="font-bold mr-2">冷凍：</span>
+                <span class="text-gray-500">（サブカテゴリなし）</span>
+              </div>
             </div>
           </div>
+          <!-- /カテゴリで絞り込む -->
+
+          <ul class="list14 p-project-lists c-grid--row c-grid--row--no-gutter" id="top_p_list">
+            <li class="c-grid--col" data-category="food" data-subcategory="retort">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="ギフトコード10件B" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=商品画像" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">シェアフルモニター編集部</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ギフトコード10件B</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="coffee">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="ギフトコード10件A" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=コーヒー" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">シェアフルモニター編集部</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ギフトコード10件A</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="diet" data-subcategory="supplement">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="ギフトコードPJT0120" height="320" src="../assets/images/project/2277_20260109_154838.jpg" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">リニューアルVサンプ&hellip;</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ギフトコードPJT0120</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">97</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="skincare">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="CCCMK様ご確認用ギフトコードPJT" height="320" src="../assets/images/project/2277_20260109_154838.jpg" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">リニューアルVサンプ&hellip;</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">CCCMK様ご確認用ギフトコードPJT</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">97</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="daily" data-subcategory="cleaning">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="ギフトコードK5 200件" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=商品画像" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">クーポンクライアント&hellip;</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ギフトコードK5 200件</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">198</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="pet" data-subcategory="dog">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="MTSD-14548 少数クーポンB" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=商品画像" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">クーポンクライアント&hellip;</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">MTSD-14548 少数クーポンB</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">8</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="frozen" data-subcategory="">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="MTSD-14548 少数クーポンA" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=商品画像" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">クーポンクライアント&hellip;</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">MTSD-14548 少数クーポンA</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="food" data-subcategory="snack">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--favorite">オススメ</span>
+                    <h2>
+                      <img alt="ギフトコード3万件" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=お菓子" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">リニューアルVサンプ&hellip;</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ギフトコード3万件</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">29,995</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="tea">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--few">残りわずか</span>
+                    <h2>
+                      <img alt="クーポンテスト2" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=商品画像" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">シェアフルモニター編集部</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">クーポンテスト2</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">4</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="makeup">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="LORETTA AIMER ミストケアオイル" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=メイクアップ・ベースメイク" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">LORETTA AIMER ミストケアオイル</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">997</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="daily" data-subcategory="oral">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="重複OK2" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=商品画像" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">重複OK2</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">4,971</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="diet" data-subcategory="diet-goods">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="重複OK" height="320" src="../assets/images/project/2217_20250623_150908.jpg" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">重複OK</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">4,974</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="pet" data-subcategory="cat">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="プロファイルチェック用Attoos（大阪除外）" height="320" src="../assets/images/project/1877_20241211_164449.jpg" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">小林製薬　</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">プロファイルチェック用Attoos（大阪除外）</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">495</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="frozen" data-subcategory="">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--favorite">オススメ</span>
+                    <h2>
+                      <img alt="ポイント決済用少額" height="320" src="../assets/images/project/1132_20211110_145638.png" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ポイント決済用少額</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9,931</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="food" data-subcategory="ingredient">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <span class="c-label-2 c-label-2--favorite">オススメ</span>
+                    <h2>
+                      <img alt="重複有り,家族有り" height="320" src="../assets/images/project/1092_20200320_191054.png" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">テスト</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">重複有り,家族有り</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9,844</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="bodycare">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="サンプル 化粧品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=化粧品" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">サンプル 化粧品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">50</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="frozen" data-subcategory="">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2>
+                      <img alt="サンプル 冷凍" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=冷凍" width="320" loading="lazy" />
+                    </h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">サンプル 冷凍</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">20</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- サブカテゴリ0件対策：各サブに最低1件のカード -->
+            <li class="c-grid--col" data-category="food" data-subcategory="instant">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="インスタント食品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=インスタント" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">インスタント食品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">10</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="food" data-subcategory="seasoning">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="調味料" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=調味料" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">調味料</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">8</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="juice">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="果汁飲料" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=果汁飲料" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">果汁飲料</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">15</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="powder">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="粉末ドリンク" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=粉末" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">粉末ドリンク</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">12</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="soft">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="清涼飲料" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=清涼飲料" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">清涼飲料</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">7</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="alcohol">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="お酒" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=お酒" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">お酒</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">5</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="drink" data-subcategory="health">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="健康飲料" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=健康飲料" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">健康飲料</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="diet" data-subcategory="functional">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="機能性表示食品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=機能性" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">機能性表示食品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">6</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="diet" data-subcategory="quasi">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="医薬部外品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=医薬部外品" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">医薬部外品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">4</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="diet" data-subcategory="health-goods">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="健康関連商品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=健康" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">健康関連商品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">11</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="uv">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="日焼け対策" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=UV" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">日焼け対策・UVケア</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">8</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="lash">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="ラッシュ" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=ラッシュ" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ラッシュ＆アイブロウ</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">3</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="judydoll">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="JUDYDOLL" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=JUDYDOLL" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">果実茶ティントリップ</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">5</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="uhue">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="Uhue" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=Uhue" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">SPICY PINK ティント</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">7</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="haircare">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="ヘアケア" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=ヘアケア" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">ヘアケア・スタイリング</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">6</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="salonpro">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="サロンドプロ" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=白髪染め" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">サロンドプロ 白髪染め</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">4</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="deardoer">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="DearDoer" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=DearDoer" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">DearDoerボディスクラブ</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">2</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="cosmetic" data-subcategory="cosmetic-other">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="その他化粧品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=その他" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">その他化粧用品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">9</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="daily" data-subcategory="bath">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="洗面・バス" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=洗面バス" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">洗面・バス用品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">6</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="daily" data-subcategory="daily-other">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="その他用品" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=その他" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">その他日用品</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">4</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="c-grid--col" data-category="pet" data-subcategory="icare">
+              <a class="ui-link" href="tamesu.html" rel="external" tabindex="0">
+                <div class="p-project-list p-project-list--tame">
+                  <div class="p-project-lists__thumbnail-wrap">
+                    <h2><img alt="i CARE" height="320" src="https://placehold.jp/30/dd6699/ffffff/320x320.png?text=iCARE" width="320" loading="lazy" /></h2>
+                  </div>
+                  <div class="p-project-lists__block">
+                    <dl class="p-project-lists__dl p-project-lists__dl--tame">
+                      <dt class="sp_top_project_company u-text-ellipsis">サンプル</dt>
+                      <dt class="sp_top_project_sname u-text-ellipsis">i CARE</dt>
+                      <dt class="sp_top_project_count">残り<span class="font-bold c_red">3</span></dt>
+                    </dl>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- /itemList -->
+          <!-- btnGroup -->
+          <div class="mt-[20px]">
+            <p class="btnSquare01wrap">
+              <a href="https://stg.tsample.tsite.jp/detail/tamesupast.php" class="c-button c-button--gray"> 受付終了商品一覧はこちら</a>
+            </p>
+          </div>
+          <!-- /btnGroup -->
         </div>
       </main>
       
@@ -562,5 +993,78 @@
 
     <script src="../assets/js/t.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
+    <script>
+      /** カテゴリ・サブカテゴリで一覧を絞り込む（表示/非表示の切り替え） */
+      (function () {
+        var filter = document.getElementById("category-filter");
+        var list = document.getElementById("top_p_list");
+        var subWrap = document.getElementById("subcategory-links");
+        var groups = document.querySelectorAll(".subcategory-group");
+        var currentSub = ""; // いま選んでいるサブカテゴリ（空ならサブでは絞らない）
+
+        if (!filter || !list) return;
+
+        /** セレクトの各 option に「表示名（件数）」をセット。件数は .c-grid--col の data-category を集計 */
+        function updateCategoryCounts() {
+          var items = list.querySelectorAll(".c-grid--col");
+          var total = items.length;
+          var counts = { "": total };
+          items.forEach(function (el) {
+            var cat = el.getAttribute("data-category") || "";
+            counts[cat] = (counts[cat] || 0) + 1;
+          });
+          [].slice.call(filter.options).forEach(function (opt) {
+            var label = opt.getAttribute("data-label");
+            if (!label) return;
+            var n = counts[opt.value] != null ? counts[opt.value] : 0;
+            opt.textContent = label + "（" + n + "）";
+          });
+        }
+
+        updateCategoryCounts();
+
+        /** 選択中のカテゴリ・サブに合うカードだけ表示し、それに合わせてサブカテゴリブロックの表示と .is-active を更新 */
+        function applyFilter() {
+          var value = filter.value;
+          var items = list.querySelectorAll(".c-grid--col");
+          items.forEach(function (el) {
+            var cat = el.getAttribute("data-category");
+            var sub = el.getAttribute("data-subcategory") || "";
+            var matchCat = !value || cat === value;
+            var matchSub = !currentSub || sub === currentSub;
+            el.style.display = matchCat && matchSub ? "" : "none";
+          });
+          groups.forEach(function (g) {
+            if (g.getAttribute("data-category") === value) {
+              g.hidden = false;
+            } else {
+              g.hidden = true;
+            }
+          });
+          subWrap.classList.toggle("hidden", !value);
+          document.querySelectorAll(".category-sub-link.is-active").forEach(function (a) {
+            a.classList.remove("is-active");
+          });
+          if (currentSub) {
+            var activeLink = subWrap.querySelector('.category-sub-link[data-subcategory="' + currentSub + '"]');
+            if (activeLink) activeLink.classList.add("is-active");
+          }
+        }
+
+        filter.addEventListener("change", function () {
+          currentSub = "";
+          applyFilter();
+        });
+
+        subWrap.addEventListener("click", function (e) {
+          var link = e.target.closest("a.category-sub-link");
+          if (!link) return;
+          e.preventDefault();
+          var sub = link.getAttribute("data-subcategory");
+          currentSub = currentSub === sub ? "" : sub;
+          applyFilter();
+        });
+      })();
+    </script>
   </body>
 </html>
