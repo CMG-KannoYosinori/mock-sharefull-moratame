@@ -59,6 +59,9 @@
 .mt-\[8px\] {
     margin-top: 8px
 }
+.mt-5 {
+    margin-top: 1.25rem
+}
 .block {
     display: block
 }
@@ -128,6 +131,9 @@
 }
 .pt-\[10px\] {
     padding-top: 10px
+}
+.pb-8 {
+    padding-bottom: 2rem
 }
 .text-center {
     text-align: center
