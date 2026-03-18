@@ -1652,7 +1652,7 @@ body.t-mymenu ul.tab li.mainTab:last-child {
 
 body.t-mymenu ul.tab li.subTab {
   padding: 2px 0 8px;
-  width: 25%;
+  width: 50%;
   height: 50px;
   border: #004098 solid 3px;
   border-bottom: #004098 solid 8px;
