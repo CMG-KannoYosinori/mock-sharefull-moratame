@@ -47,6 +47,9 @@
 .ml-\[-0\.6em\] {
     margin-left: -0.6em
 }
+.mt-5 {
+    margin-top: 1.25rem
+}
 .mt-\[10px\] {
     margin-top: 10px
 }
@@ -59,8 +62,14 @@
 .mt-\[8px\] {
     margin-top: 8px
 }
-.mt-5 {
-    margin-top: 1.25rem
+.mb-\[8px\] {
+    margin-bottom: 8px
+}
+.mr-2 {
+    margin-right: 0.5rem
+}
+.mt-\[12px\] {
+    margin-top: 12px
 }
 .block {
     display: block
@@ -98,20 +107,38 @@
 .w-auto {
     width: auto
 }
+.w-full {
+    width: 100%
+}
+.max-w-\[320px\] {
+    max-width: 320px
+}
 .shrink {
     flex-shrink: 1
 }
 .resize {
     resize: both
 }
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse))
+}
 .break-all {
     word-break: break-all
+}
+.rounded {
+    border-radius: 0.25rem
 }
 .border {
     border-width: 1px
 }
 .border-0 {
     border-width: 0px
+}
+.border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1))
 }
 .bg-\[\#e6effc\] {
     --tw-bg-opacity: 1;
@@ -123,6 +150,12 @@
 .p-\[20px\] {
     padding: 20px
 }
+.p-2 {
+    padding: 0.5rem
+}
+.pb-8 {
+    padding-bottom: 2rem
+}
 .pb-\[32px\] {
     padding-bottom: 32px
 }
@@ -131,9 +164,6 @@
 }
 .pt-\[10px\] {
     padding-top: 10px
-}
-.pb-8 {
-    padding-bottom: 2rem
 }
 .text-center {
     text-align: center
@@ -163,6 +193,17 @@
 .font-normal {
     font-weight: 400
 }
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity, 1))
+}
+.text-gray-700 {
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity, 1))
+}
+.underline {
+    text-decoration-line: underline
+}
 .outline {
     outline-style: solid
 }
@@ -173,8 +214,14 @@
 .filter {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
+.\!filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important
+}
 .transition {
     transition-duration: 150ms;
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+.empty\:hidden:empty {
+    display: none
 }
