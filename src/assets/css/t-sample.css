@@ -416,11 +416,6 @@ body .t-text {
   padding: 0;
 }
 
-body .body-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 body .p-masthead {
   color: #000;
 }
