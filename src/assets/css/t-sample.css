@@ -1610,19 +1610,20 @@ body.t-mymenu .secondary {
   }
 }
 
-body.t-mymenu div.subTabBox {
+body.t-mymenu .subTabBox {
   width: 100%;
   height: 50px;
   border-bottom: #004098 solid 8px;
 }
 
-body.t-mymenu ul.tab {
+body.t-mymenu :is(.p-mymenu-main-tab, .p-mymenu-sub-tab) {
   margin-top: 10px;
   width: 100%;
   list-style: none;
+  display: flex;
 }
 
-body.t-mymenu ul.tab li.mainTab {
+body.t-mymenu .p-mymenu-main-tab__item {
   padding: 10px;
   padding: 0;
   width: 50%;
@@ -1639,18 +1640,18 @@ body.t-mymenu ul.tab li.mainTab {
 }
 
 @media (max-width: 639px) {
-  body.t-mymenu ul.tab li.mainTab {
+  body.t-mymenu .p-mymenu-main-tab__item {
     padding: 4px;
     font-size: 13px;
     line-height: 17px;
   }
 }
 
-body.t-mymenu ul.tab li.mainTab:last-child {
+body.t-mymenu .p-mymenu-main-tab__item:last-child {
   border-left: none;
 }
 
-body.t-mymenu ul.tab li.subTab {
+body.t-mymenu .p-mymenu-sub-tab__item {
   padding: 2px 0 8px;
   width: 50%;
   height: 50px;
@@ -1665,34 +1666,35 @@ body.t-mymenu ul.tab li.subTab {
 }
 
 @media (max-width: 639px) {
-  body.t-mymenu ul.tab li.subTab {
+  body.t-mymenu .p-mymenu-sub-tab__item {
     padding: 5px 0 8px;
     font-size: 13px;
     line-height: 1.3;
   }
 }
 
-body.t-mymenu ul.tab li.subTab:last-child {
+body.t-mymenu .p-mymenu-sub-tab__item:last-child {
   border-left: #004098 solid 3px;
 }
 
-body.t-mymenu ul.tab li.active {
+body.t-mymenu .p-mymenu-main-tab__item.is-active,
+body.t-mymenu .p-mymenu-sub-tab__item.is-active {
   background-color: #004098 !important;
   color: #fff !important;
 }
 
-body.t-mymenu div.tabContent {
+body.t-mymenu .tabContent {
   display: none;
   clear: both;
   padding-top: 20px;
   width: 100%;
 }
 
-body.t-mymenu div.tabContent1 {
+body.t-mymenu .tabContent1 {
   padding-top: 1px;
 }
 
-body.t-mymenu div.active {
+body.t-mymenu .is-active {
   display: block;
 }
 
@@ -1792,6 +1794,10 @@ body.t-mymenu .tabContent1 .pagination li a.active {
 
 body.t-mymenu .subTabContent {
   display: none;
+}
+
+body.t-mymenu .subTabContent.is-active {
+  display: block;
 }
 
 body.t-mymenu .subTabContent .itemIcoMise {
