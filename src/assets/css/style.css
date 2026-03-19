@@ -49,6 +49,13 @@
   background: #ededed;
 }
 
+.c-drawer-category {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 18px 1fr;
+  gap: 4px;
+}
+
 .enq-section-heading {
   background: #fffad9 !important;
 }
