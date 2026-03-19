@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_use_bootstrap = true %} {% assign page_title = '商品へのコメント　テスト「ポイント決済用少額」｜シェアフルポイントが貯まる・使える シェアフルモニター' %} {% include 'head' %}
+    {% assign page_title = '商品へのコメント　テスト「ポイント決済用少額」' %} {% include 'head' %}
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail">
+  <body id="pageTop" class="itemDetail">
     <div class="body-wrapper">
       {% include 'header' %}
       <main aria-labelledby="page-heading">
@@ -80,7 +80,7 @@
                 <h2 class="t-crosshead__text">クチコミ</h2>
               </div>
             </div>
-            <div class="commentWrap" style="margin-top: 10px">
+            <div class="commentWrap" class="mt-8">
               <!-- everyPost -->
               <div class="t-text">
                 <p class="t-text__small">
@@ -123,7 +123,7 @@
               </form>
 
               <div class="t-button t-button2">
-                <input type="button" onclick="document.frm.submit()" class="t-button__green t-button__smallText t-button__blue" value="内容を確認する" />
+                <input type="button" class="t-button__green t-button__smallText t-button__blue js-show-preview" value="内容を確認する" />
               </div>
             </div>
             <div class="preview_box p-[20px] bgc_gray01" id="sns_cmt_prv" style="display: none">
@@ -152,6 +152,22 @@
 
     <script>
       window.location.hash = "anchor01";
+      document.addEventListener('DOMContentLoaded', function () {
+        var button = document.querySelector('.js-show-preview');
+        var preview = document.getElementById('sns_cmt_prv');
+        if (!button || !preview) return;
+
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          var inputTextarea = document.getElementById('ct');
+          var previewTextarea = document.getElementById('preview_tw');
+          if (inputTextarea && previewTextarea) {
+            previewTextarea.value = inputTextarea.value;
+          }
+          preview.style.display = 'block';
+          preview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
     </script>
 
     <script type="module" src="../assets/js/main.js"></script>
