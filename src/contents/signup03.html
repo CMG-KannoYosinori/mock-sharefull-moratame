@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     {% assign page_title = 'シェアフル 6-2 会員情報入力 入力内容確認' %} {% assign page_is_login_contents = true %} {% capture head_extra %}
-    <link rel="stylesheet" href="../assets/css/member-registration.css?2026030513" />
+    <link rel="stylesheet" href="../assets/css/member-registration.css" />
     {% endcapture %} {% include 'head' %}
   </head>
 
@@ -18,13 +18,33 @@
               <!--ページタイトル-->
 
               <form action="https://stg.moratame.net/s/contents/signup04.php" method="post" name="new-signup-input" id="new-signup-input" aria-label="入力内容確認フォーム">
+                <!--お名前-->
+                <div class="select-area select-name select-address1" role="group" aria-labelledby="confirm-label-name">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-name">お名前</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">山田太郎</p>
+                  </div>
+                </div>
+                <!--/お名前-->
+                <!--フリガナ-->
+                <div class="select-area select-kana select-address1" role="group" aria-labelledby="confirm-label-kana">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="confirm-label-kana">フリガナ</h2>
+                  </div>
+                  <div class="input-area">
+                    <p class="confirm-text">ヤマダタロウ</p>
+                  </div>
+                </div>
+                <!--/フリガナ-->
                 <!--性別-->
                 <div class="select-area select-sex" role="group" aria-labelledby="confirm-label-sex">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-sex">性別</h2>
                   </div>
                   <div class="input-area">
-                    <p class="confirm-text">男性</p>
+                    <p class="confirm-text">女性</p>
                   </div>
                 </div>
                 <!--/ 性別-->
@@ -38,48 +58,8 @@
                   </div>
                 </div>
                 <!--/生年月日-->
-                <!--メールアドレス-->
-                <div class="select-area select-email" role="group" aria-labelledby="confirm-label-email">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="confirm-label-email">メールアドレス</h2>
-                  </div>
-                  <div class="input-area">
-                    <p class="confirm-text">kanno+1@dohouse.co.jp</p>
-                  </div>
-                </div>
-                <!--/メールアドレス-->
-                <!--パスワード-->
-                <div class="select-area select-password" role="group" aria-labelledby="confirm-label-password">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="confirm-label-password">パスワード</h2>
-                  </div>
-                  <div class="input-area">
-                    <p class="confirm-text">VoK93Vxv</p>
-                  </div>
-                </div>
-                <!--/パスワード-->
-                <!--ニックネーム-->
-                <div class="select-area select-nickname" role="group" aria-labelledby="confirm-label-nickname">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="confirm-label-nickname">ニックネーム</h2>
-                  </div>
-                  <div class="input-area">
-                    <p class="confirm-text">あlsdfkj</p>
-                  </div>
-                </div>
-                <!--/ニックネーム-->
-                <!--紹介コード-->
-                <div class="select-area select-password" role="group" aria-labelledby="confirm-label-refer">
-                  <div class="form-ttl">
-                    <h2 class="element-ttl" id="confirm-label-refer">紹介コード</h2>
-                  </div>
-                  <div class="input-area">
-                    <p class="confirm-text"></p>
-                  </div>
-                </div>
-                <!--/紹介コード-->
                 <!--郵便番号-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-zipcode">
+                <div class="select-area select-zipcode" role="group" aria-labelledby="confirm-label-zipcode">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-zipcode">郵便番号</h2>
                   </div>
@@ -89,7 +69,7 @@
                 </div>
                 <!--/郵便番号-->
                 <!--都道府県-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-prefecture">
+                <div class="select-area select-prefecture" role="group" aria-labelledby="confirm-label-prefecture">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-prefecture">都道府県</h2>
                   </div>
@@ -99,7 +79,7 @@
                 </div>
                 <!--/都道府県-->
                 <!--市区町村・番地-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-address1">
+                <div class="select-area select-address1" role="group" aria-labelledby="confirm-label-address1">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-address1">市区町村・番地</h2>
                   </div>
@@ -109,7 +89,7 @@
                 </div>
                 <!--/市区町村・番地-->
                 <!--建物名・部屋番号-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-address2">
+                <div class="select-area select-address2" role="group" aria-labelledby="confirm-label-address2">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-address2">建物名・部屋番号</h2>
                   </div>
@@ -119,7 +99,7 @@
                 </div>
                 <!--/建物名・部屋番号-->
                 <!--電話番号-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-tel">
+                <div class="select-area select-tel" role="group" aria-labelledby="confirm-label-tel">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-tel">電話番号</h2>
                   </div>
@@ -129,7 +109,7 @@
                 </div>
                 <!--/電話番号-->
                 <!--職業-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-occupation">
+                <div class="select-area select-sex" role="group" aria-labelledby="confirm-label-occupation">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-occupation">職業</h2>
                   </div>
@@ -139,7 +119,7 @@
                 </div>
                 <!--/職業-->
                 <!--婚姻状況-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-marital">
+                <div class="select-area select-sex" role="group" aria-labelledby="confirm-label-marital">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-marital">婚姻状況</h2>
                   </div>
@@ -149,7 +129,7 @@
                 </div>
                 <!--/婚姻状況-->
                 <!--お子様-->
-                <div class="select-area" role="group" aria-labelledby="confirm-label-children">
+                <div class="select-area select-sex" role="group" aria-labelledby="confirm-label-children">
                   <div class="form-ttl">
                     <h2 class="element-ttl" id="confirm-label-children">お子様</h2>
                   </div>
@@ -158,7 +138,6 @@
                   </div>
                 </div>
                 <!--/お子様-->
-                <div class="new-signup-confirm__note-box"><p class="u-note">※携帯メールアドレスをご登録いただく場合、moratame.netからのドメイン着信許可を設定してください。</p></div>
                 <button type="submit" rel="external" class="c-button c-button--auth-tel">SMS認証を行う</button>
                 <a href="../contents/signup01.html" rel="external" class="c-button c-button--correct mt-[8px]">内容を修正する</a>
               </form>
