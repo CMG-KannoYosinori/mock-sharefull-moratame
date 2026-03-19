@@ -373,9 +373,7 @@ body.is-drawer-open {
 #menu .menu__item .submenu li.t-sidemenu-sub-ttl {
   background: #d8e4f4;
   font-weight: bold;
-}
-#menu .menu__item .submenu li img {
-  margin-right: 3px;
+  padding: 10px 0 10px 15px;
 }
 #menu .menu__item .submenu a {
   color: #004098;

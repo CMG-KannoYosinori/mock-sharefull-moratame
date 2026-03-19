@@ -49,6 +49,13 @@
   background: #ededed;
 }
 
+.c-drawer-category {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 18px 1fr;
+  gap: 4px;
+}
+
 .enq-section-heading {
   background: #fffad9 !important;
 }
@@ -95,8 +102,8 @@
 .select-area input[type="radio"]:checked + label:after {
   position: absolute;
   top: 50%;
-  left: -4px;
-  margin-top: -4px;
+  left: -5px;
+  margin-top: -5px;
   border-radius: 10px;
   background: #333;
   width: 10px;
