@@ -11,10 +11,6 @@
   border-color: #e5e7eb; /* 2 */
 }
 
-main {
-  padding-bottom: 48px;
-}
-
 .fs-15 {
   font-size: 12px;
 }
@@ -44,6 +40,13 @@ main {
 .c-section-heading {
   padding: 0.5em !important;
   height: auto !important;
+}
+
+.c-heading {
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  background: #ededed;
 }
 
 .enq-section-heading {

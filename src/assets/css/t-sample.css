@@ -1223,15 +1223,15 @@ body.itemDetail div.itemDetailBox {
   }
 }
 
-body.itemDetail div#F001 .t-sub-header,
-body.itemDetail div.itemDetailBox .t-sub-header {
+body.itemDetail div#F001 .c-heading,
+body.itemDetail div.itemDetailBox .c-heading {
   margin-bottom: 20px;
   font-size: 20px;
 }
 
 @media (max-width: 639px) {
-  body.itemDetail div#F001 .t-sub-header,
-  body.itemDetail div.itemDetailBox .t-sub-header {
+  body.itemDetail div#F001 .c-heading,
+  body.itemDetail div.itemDetailBox .c-heading {
     font-size: 16px;
   }
 }

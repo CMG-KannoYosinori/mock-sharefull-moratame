@@ -849,14 +849,6 @@ a.no_highlight {
   background-size: 24px 24px;
 }
 
-.t-sub-header {
-  font-size: 12px;
-  padding: 10px;
-  text-align: center;
-  word-wrap: break-word;
-  background: #ededed;
-}
-
 .t-error,
 .t-success,
 .t-warning,
