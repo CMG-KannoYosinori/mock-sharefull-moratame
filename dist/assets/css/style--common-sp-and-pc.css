@@ -833,13 +833,14 @@
   position: relative;
 }
 .js-menu__link::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   position: absolute;
   top: 50%;
   right: 10px;
   margin-top: -7px;
   color: #666;
   content: "\f13a";
-  font-family: FontAwesome;
 }
 .js-menu__link.active::after {
   content: "\f139";
@@ -855,13 +856,14 @@
   position: relative;
 }
 .js-submenu__link::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   position: absolute;
   top: 50%;
   right: 10px;
   margin-top: -7px;
   color: #666;
   content: "\f13a";
-  font-family: FontAwesome;
 }
 .js-submenu__link.active::after {
   content: "\f139";
