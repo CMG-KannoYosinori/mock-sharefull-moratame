@@ -95,8 +95,8 @@
 .select-area input[type="radio"]:checked + label:after {
   position: absolute;
   top: 50%;
-  left: -4px;
-  margin-top: -4px;
+  left: -5px;
+  margin-top: -5px;
   border-radius: 10px;
   background: #333;
   width: 10px;
