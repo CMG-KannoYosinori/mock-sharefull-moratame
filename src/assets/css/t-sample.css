@@ -1621,6 +1621,7 @@ body.t-mymenu :is(.p-mymenu-main-tab, .p-mymenu-sub-tab) {
   width: 100%;
   list-style: none;
   display: flex;
+  text-align: center;
 }
 
 body.t-mymenu .p-mymenu-main-tab__item {
@@ -1637,6 +1638,7 @@ body.t-mymenu .p-mymenu-main-tab__item {
   font-size: 18px;
   line-height: 38px;
   cursor: pointer;
+  text-align: center;
 }
 
 @media (max-width: 639px) {
@@ -1708,12 +1710,14 @@ body.t-mymenu .js-submenu__link {
 
 body.t-mymenu .js-submenu__link:after {
   content: "\f13a";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 body.t-mymenu .js-submenu__link.active::after {
   content: "\f139";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 body.t-mymenu .menu a:hover,
@@ -1771,8 +1775,8 @@ body.t-mymenu .tabContent1 .schedule_box .hb_cmn_btn02 {
   padding: 0;
   border: none;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fbed00), color-stop(1, #efe200));
-  background: gradient(linear, left top, left bottom, color-stop(0, #fbed00), color-stop(1, #efe200));
   line-height: 30px;
+  color: #333;
 }
 
 body.t-mymenu .tabContent1 .schedule_box .hb_cmn_btn03 {
