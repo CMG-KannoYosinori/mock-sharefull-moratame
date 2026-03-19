@@ -2473,7 +2473,7 @@ div.topdisp div.message {
   color: #fff;
   text-shadow: none;
 }
-div.error {
+.error {
   margin: 10px 0;
   padding: 5px 0 5px 10px;
   -webkit-border-radius: 0.5em;

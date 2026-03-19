@@ -77,6 +77,9 @@
 .mt-\[8px\] {
     margin-top: 8px
 }
+.mb-4 {
+    margin-bottom: 1rem
+}
 .block {
     display: block
 }
