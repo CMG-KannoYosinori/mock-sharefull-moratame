@@ -53,8 +53,14 @@
 .mr-2 {
     margin-right: 0.5rem
 }
+.mt-4 {
+    margin-top: 1rem
+}
 .mt-5 {
     margin-top: 1.25rem
+}
+.mt-8 {
+    margin-top: 2rem
 }
 .mt-\[10px\] {
     margin-top: 10px
@@ -70,12 +76,6 @@
 }
 .mt-\[8px\] {
     margin-top: 8px
-}
-.mt-8 {
-    margin-top: 2rem
-}
-.mt-4 {
-    margin-top: 1rem
 }
 .block {
     display: block
@@ -97,9 +97,6 @@
 }
 .hidden {
     display: none
-}
-.\!hidden {
-    display: none !important
 }
 .h-\[20px\] {
     height: 20px
@@ -159,10 +156,6 @@
 .bg-gray-100 {
     --tw-bg-opacity: 1;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1))
-}
-.bg-gray-50 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1))
 }
 .p-0 {
     padding: 0px

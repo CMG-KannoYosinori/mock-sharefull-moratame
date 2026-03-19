@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-       
+      
 
   
     
@@ -17,8 +17,6 @@
 <title>マイメニュー｜シェアフルポイントが貯まる・使える シェアフルモニター</title>
 
 
-  
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/bootstrap.v3.3.7--scope.css">
   
   <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/main.css">
   <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/p9255-common--pc.css">
@@ -45,28 +43,7 @@
 
 
 
-    <script>
-      $(function () {
-        $(".mainTab").click(function () {
-          var num = $(".mainTab").index(this);
-          $(".tabContent").removeClass("active");
-          $(".tabContent").eq(num).addClass("active");
-          $(".mainTab").removeClass("active");
-          $(this).addClass("active");
-        });
-      });
-    </script>
-    <script>
-      $(function () {
-        $(".subTab").click(function () {
-          var num = $(".subTab").index(this);
-          $(".subTabContent").removeClass("active");
-          $(".subTabContent").eq(num).addClass("active");
-          $(".subTab").removeClass("active");
-          $(this).addClass("active");
-        });
-      });
-    </script>
+    <!-- tabs are initialized at the end of <body> -->
     <meta
       http-equiv="origin-trial"
       content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="
@@ -91,7 +68,7 @@
 
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail t-mymenu" style="">
+  <body id="pageTop" class="itemDetail t-mymenu">
     <div class="body-wrapper">
       
 
@@ -228,336 +205,425 @@
 
       <main aria-labelledby="page-heading">
         <div class="l-container">
-          <div>
-            <div class="t-support-menu_wrapper">
-              <div class="heading xx-large enclosingBtn withIcon">
-                <h1 id="page-heading">
-                  <span class="icoWrap">
-                    <img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64" />
-                  </span>
-                  <span>マイメニュー</span>
-                </h1>
-              </div>
-              <div class="mt-[8px] t-point-block t-point-border">
-                <dl class=" ">
-                  <dt class="t-point__dt">シェアフルポイント :</dt>
-                  <dd class="t-point__point"><span class="t-point__point__num">10,000</span>pt</dd>
-                </dl>
+          <div class="t-support-menu_wrapper">
+            <div class="heading xx-large enclosingBtn withIcon">
+              <h1 id="page-heading">
+                <span class="icoWrap">
+                  <img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64" />
+                </span>
+                <span>マイメニュー</span>
+              </h1>
+            </div>
+            <div class="mt-[8px] t-point-block t-point-border">
+              <dl class=" ">
+                <dt class="t-point__dt">シェアフルポイント :</dt>
+                <dd class="t-point__point"><span class="t-point__point__num">10,000</span>pt</dd>
+              </dl>
 
-                <p style="margin: 10px 0 0"></p>
+              <p style="margin: 10px 0 0"></p>
 
-                <p style="margin: 10px 0 0">シェアフルモニターでは<a href="contents/t-sample-t-point.php" style="color: #0085c3">シェアフルポイントでのお支払い</a>も出来ます。</p>
+              <p style="margin: 10px 0 0">シェアフルモニターでは<a href="contents/t-sample-t-point.php" style="color: #0085c3">シェアフルポイントでのお支払い</a>も出来ます。</p>
+            </div>
+            <!-- /headingTtl -->
+            <ul class="p-mymenu-main-tab">
+              <li class="p-mymenu-main-tab__item is-active">発送スケジュール・<br class="sp-min" />申込履歴</li>
+              <li class="p-mymenu-main-tab__item">登録情報の確認・<br class="sp-min" />変更・解除</li>
+            </ul>
+            <!-- /tabMenu -->
+            <div class="tabContent tabContent1 is-active">
+              <div class="subTabBox">
+                <ul class="p-mymenu-sub-tab">
+                  <li class="p-mymenu-sub-tab__item is-active">もらえる・<br class="sp-min" />ためせる</li>
+                  <li class="p-mymenu-sub-tab__item">クチコミ<br class="sp-min" />一覧</li>
+                </ul>
               </div>
-              <!-- /headingTtl -->
-              <ul class="tab">
-                <li class="mainTab active">発送スケジュール・<br class="sp-min" />申込履歴</li>
-                <li class="mainTab">登録情報の確認・<br class="sp-min" />変更・解除</li>
-              </ul>
-              <!-- /tabMenu -->
-              <div class="tabContent tabContent1 active">
-                <div class="subTabBox">
-                  <ul class="tab">
-                    <li class="subTab active">もらえる・<br class="sp-min" />ためせる</li>
-                    <li class="subTab">お店で<br class="sp-min" />ためす</li>
-                    <li class="subTab">クチコミ<br class="sp-min" />一覧</li>
-                  </ul>
-                </div>
-                <!-- /subTabMenu -->
-                <div class="container subTabContent subTabContent1 pt-[10px] active">
-                  <div id="hb_mm">
-                    <div id="hb_ms">
-                      <section class="hb_ms_scedule" id="content">
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2027年02月13日（土）発送</p>
-                          <div class="userinfo_box">
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoMora itemIcoAbs2">モラ</span
-                                ><a href="detail/morau.php?project_id=6aaf2" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">申込み日：2026年02月20日 16時33分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：<br />配送会社：未定<br />伝票番号：準備中</p>
-                            </div>
+              <!-- /subTabMenu -->
+              <div class="container subTabContent subTabContent1 pt-[10px] is-active">
+                <div id="hb_mm">
+                  <div id="hb_ms">
+                    <section class="hb_ms_scedule" id="content">
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2027年02月13日（土）発送</p>
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoMora itemIcoAbs2">モラ</span
+                              ><a href="detail/morau.php?project_id=6aaf2" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">申込み日：2026年02月20日 16時33分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：<br />配送会社：未定<br />伝票番号：準備中</p>
                           </div>
                         </div>
-                        <div class="schedule_box">
-                          <div class="userinfo_box">
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=fe6df" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">
-                                申込み日：2026年02月20日 15時32分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />ギフトコード：<span style="word-break: break-all">K5003</span
-                                ><br />有効期限：<span style="word-break: break-all">2028年01月08日</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2025年09月30日（火）発送</p>
-                          <div class="userinfo_box">
-                            <em style="color: red">キャンセル</em>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">申込み日：2026年02月18日 16時18分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：未定<br />伝票番号：準備中</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2026年02月13日（金）発送</p>
-                          <div class="userinfo_box">
-                            <em style="color: red">キャンセル</em>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=08288" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">
-                                申込み日：2026年02月13日 16時47分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：ヤマト運輸<br />伝票番号：651129813111
-                              </p>
-                            </div>
-                          </div>
-                          <div class="btn_box" style="position: relative; margin-top: initial">
-                            <div class="hb_ms_btn">
-                              <a href="http://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=651129813111" rel="external" class="hb_cmn_btn02 ui-link" target="_blank">配送状況の確認</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2022年09月07日（水）発送</p>
-                          <div class="userinfo_box">
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoMora itemIcoAbs2">モラ</span
-                                ><a href="detail/morau.php?project_id=d0ef6" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">申込み日：2026年02月13日 11時04分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：<br />配送会社：未定<br />伝票番号：準備中</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2026年02月10日（火）発送</p>
-                          <div class="userinfo_box">
-                            <em style="color: red">キャンセル</em>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=689bc" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">申込み日：2026年02月13日 10時25分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：未定<br />伝票番号：準備中</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2026年01月21日（水）発送</p>
-                          <div class="userinfo_box">
-                            <em style="color: red">キャンセル</em>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=a9bd3" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">申込み日：2026年02月10日 14時56分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：未定<br />伝票番号：準備中</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <p class="hb_ms_date">2025年09月30日（火）発送</p>
-                          <div class="userinfo_box">
-                            <em style="color: red">キャンセル</em>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">申込み日：2026年02月04日 16時34分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：3<br />配送会社：未定<br />伝票番号：準備中</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <div class="userinfo_box">
-                            <em style="color: red">キャンセル</em>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=4477d" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">
-                                申込み日：2026年02月04日 16時31分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />ギフトコード：<span style="word-break: break-all">G0001</span
-                                ><br />有効期限：<span style="word-break: break-all">2026年06月04日</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="schedule_box">
-                          <div class="userinfo_box">
-                            <p><em style="color: red">キャンセル</em></p>
-                            <div class="hb_ms_ctr">
-                              <h2>
-                                <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
-                                ><a href="detail/tamesu.php?project_id=64b89" rel="external" class="ui-link"
-                                  ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
-                                /></a>
-                              </h2>
-                              <p class="hb_ms_detail">
-                                申込み日：2026年02月04日 16時27分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />ギフトコード：<span style="word-break: break-all"></span
-                                ><br />有効期限：<span style="word-break: break-all">2026年06月04日</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <!-- paging -->
-                      <table style="margin: 0 auto 20px">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <form name="formbase" action="mymenu/basic.php" method="get">
-                                <ul class="pagination">
-                                  <li><a class="active ui-link">1</a></li>
-                                  <li><a class="ui-link" href="javascript:void(0);" onclick="javascript: return movePage('1');">2</a></li>
-                                </ul>
-                              </form>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!-- /paging -->
-                    </div>
-                  </div>
-                </div>
-                <!-- subTabContent2-->
-                <div class="container subTabContent subTabContent2 pt-[10px]">
-                  <div id="hb_mm">
-                    <div id="hb_ms">
-                      <section class="hb_ms_scedule" id="content">
-                        <div class="t-text">
-                          <div class="t-text__middle">
-                            <p>お申し込み済みの商品はありません。</p>
-                          </div>
-                        </div>
-                      </section>
-                      <!-- paging -->
-                      <table style="margin: 0 auto 20px">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <form name="formbase" action="mymenu/basic.php" method="get">
-                                <ul class="pagination"></ul>
-                              </form>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!-- /paging -->
-                    </div>
-                  </div>
-                </div>
-                <div class="container subTabContent subTabContent3 pt-[10px]">
-                  <div id="hb_mm">
-                    <div id="hb_ms">
-                      <section class="hb_ms_scedule" id="review_list">
-                        <div class="t-text">
-                          <div class="t-text__middle">
-                            <p>クチコミ受付中の商品、投稿済みのクチコミはありません。</p>
-                          </div>
-                        </div>
-                      </section>
-                      <!-- paging -->
-                      <table style="margin: 0 auto 20px">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <form name="formbase" action="mymenu/basic.php" method="get">
-                                <ul class="pagination"></ul>
-                              </form>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!-- /paging -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- tabContents2 -->
-              <div class="tabContent tabContent2">
-                <!-- sub header -->
-                <div class="t-sub-header">
-                  <h2>登録情報</h2>
-                </div>
-                <!-- /sub header -->
-                <p class="t-text c_red">【ご注意】既にお申し込みいただいている商品の送付先住所は変更されません。</p>
-                <!-- input_area -->
-                <div class="p-registration_info_edit">
-                  <!-- fontawesome -->
-                  <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css" />
-                  <script>
-                    $(function () {
-                      $(".js-menu__link, .js-submenu__link").on("click", function () {
-                        $(this).toggleClass("active");
-                      });
-                    });
-                  </script>
-                  <form id="frm" name="frm" method="post" action="mymenu/edit2.php">
-                    <input type="hidden" name="mode" id="mode" value="edit" />
-                    <input type="hidden" name="sub_id" id="sub_id" value="" />
-                    <input type="hidden" name="shortage" id="shortage" value="" />
-                    <input type="hidden" name="seq" id="seq" value="" />
-                    <input type="hidden" name="family_count" id="family_count" value="0" />
-                    <input type="hidden" name="sex" id="sex" value="11001" />
-                    <fieldset>
-                      <div class="js-menu__link">ご連絡先</div>
-                      <div class="submenu p-registration_info_edit__block">
-                        <!--e-mail-->
-                        <div class="t-column-head">
-                          <h4 class="t-column-head__text">メールアドレス</h4>
-                        </div>
-                        <div class="t-form__input">
-                          <input name="email" type="email" id="email" value="mod_develop+vsample202500105_2@cm-group.co.jp" placeholder="tsample@tsite.jp" />
-                        </div>
-                        <!--/e-mail-->
                       </div>
-                      <div class="js-menu__link">配送先住所</div>
-                      <div class="submenu p-registration_info_edit__block">
+                      <div class="schedule_box">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=fe6df" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">
+                              申込み日：2026年02月20日 15時32分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />ギフトコード：<span style="word-break: break-all">K5003</span
+                              ><br />有効期限：<span style="word-break: break-all">2028年01月08日</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2025年09月30日（火）発送</p>
+                        <div class="userinfo_box">
+                          <em style="color: red">キャンセル</em>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">申込み日：2026年02月18日 16時18分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：未定<br />伝票番号：準備中</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2026年02月13日（金）発送</p>
+                        <div class="userinfo_box">
+                          <em style="color: red">キャンセル</em>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=08288" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">
+                              申込み日：2026年02月13日 16時47分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：ヤマト運輸<br />伝票番号：651129813111
+                            </p>
+                          </div>
+                        </div>
+                        <div class="btn_box" style="position: relative; margin-top: initial">
+                          <div class="hb_ms_btn">
+                            <a href="http://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=651129813111" rel="external" class="hb_cmn_btn02 ui-link" target="_blank">配送状況の確認</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2022年09月07日（水）発送</p>
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoMora itemIcoAbs2">モラ</span
+                              ><a href="detail/morau.php?project_id=d0ef6" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">申込み日：2026年02月13日 11時04分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：<br />配送会社：未定<br />伝票番号：準備中</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2026年02月10日（火）発送</p>
+                        <div class="userinfo_box">
+                          <em style="color: red">キャンセル</em>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=689bc" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">申込み日：2026年02月13日 10時25分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：未定<br />伝票番号：準備中</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2026年01月21日（水）発送</p>
+                        <div class="userinfo_box">
+                          <em style="color: red">キャンセル</em>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=a9bd3" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">申込み日：2026年02月10日 14時56分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />配送会社：未定<br />伝票番号：準備中</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <p class="hb_ms_date">2025年09月30日（火）発送</p>
+                        <div class="userinfo_box">
+                          <em style="color: red">キャンセル</em>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=fadd8" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">申込み日：2026年02月04日 16時34分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：3<br />配送会社：未定<br />伝票番号：準備中</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <div class="userinfo_box">
+                          <em style="color: red">キャンセル</em>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=4477d" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">
+                              申込み日：2026年02月04日 16時31分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />ギフトコード：<span style="word-break: break-all">G0001</span
+                              ><br />有効期限：<span style="word-break: break-all">2026年06月04日</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="schedule_box">
+                        <div class="userinfo_box">
+                          <p><em style="color: red">キャンセル</em></p>
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">タメ</span
+                              ><a href="detail/tamesu.php?project_id=64b89" rel="external" class="ui-link"
+                                ><img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=商品画像" alt="商品名" width="640" height="640" class="u-img"
+                              /></a>
+                            </h3>
+                            <p class="hb_ms_detail">
+                              申込み日：2026年02月04日 16時27分<br />お届け先：東京都江戸川区東葛西8-32 a<br />セット数：1<br />ギフトコード：<span style="word-break: break-all"></span
+                              ><br />有効期限：<span style="word-break: break-all">2026年06月04日</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- paging -->
+                    <table style="margin: 0 auto 20px">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <form name="formbase" action="mymenu/basic.php" method="get">
+                              <ul class="pagination">
+                                <li><a class="active ui-link">1</a></li>
+                                <li><a class="ui-link" href="javascript:void(0);" onclick="javascript: return movePage('1');">2</a></li>
+                              </ul>
+                            </form>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- /paging -->
+                  </div>
+                </div>
+              </div>
+              <div class="container subTabContent subTabContent2 pt-[10px]">
+                <div id="hb_mm">
+                  <div id="hb_ms">
+                    <section class="hb_ms_scedule" id="review_list">
+                      <!-- <div class="t-text">
+                        <div class="t-text__middle">
+                          <p>クチコミ受付中の商品、投稿済みのクチコミはありません。</p>
+                        </div>
+                      </div> -->
+                      <div class="review_box schedule_box">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">ため</span>
+                              <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=76961" rel="external" class="ui-link">
+                                <img src="https://stg.tsample.tsite.jp/img/project/2316_item_20260318_075620.png" alt="限定クーポン_ATS" width="72" height="72" />
+                              </a>
+                            </h3>
+
+                            <p class="hb_ms_detail">
+                              商品名：限定クーポン_ATS<br />
+                              発送日：2026年03月18日<br />
+
+                              <span style="color: red">クチコミ未投稿</span><br />
+
+                              投稿締切：<span style="color: gray">2026年03月18日</span><br />
+                            </p>
+                          </div>
+                        </div>
+                        <div class="btn_box" style="position: relative; padding-top: 5px">
+                          <div class="hb_cmn_btn03 pt_5">クチコミ投稿期間外</div>
+                        </div>
+                      </div>
+                      <div class="review_box schedule_box">
+                        <div class="userinfo_box">
+                          <div class="hb_ms_ctr">
+                            <h3>
+                              <span class="itemicon itemIcoTame itemIcoAbs2">ため</span>
+                              <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=41e20" rel="external" class="ui-link">
+                                <img src="https://stg.tsample.tsite.jp/img/project/1132_item_20250502_122745.jpg" alt="ポイント決済用少額" width="72" height="72" />
+                              </a>
+                            </h3>
+
+                            <p class="hb_ms_detail">
+                              商品名：ポイント決済用少額<br />
+                              発送日：2025年05月10日<br />
+
+                              <span style="color: red">クチコミ未投稿</span><br />
+
+                              投稿締切：242日前<br />
+                            </p>
+                          </div>
+                        </div>
+                        <div class="btn_box" style="position: relative">
+                          <div class="hb_ms_btn pt_5">
+                            <a class="hb_cmn_btn02 ui-link" href="https://stg.tsample.tsite.jp/detail/cmt.php?project_id=41e20#anchor01" rel="external">クチコミを投稿する</a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- paging -->
+                    <table style="margin: 0 auto 20px">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <form name="formbase" action="https://stg.tsample.tsite.jp/mymenu/basic.php" method="get">
+                              <ul class="pagination">
+                                <li><a class="active ui-link">1</a></li>
+                              </ul>
+                            </form>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- /paging -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tabContents2 -->
+            <div class="tabContent tabContent2">
+              <h2 class="c-heading">登録情報</h2>
+              <p class="t-text c_red">【ご注意】既にお申し込みいただいている商品の送付先住所は変更されません。</p>
+              <!-- input_area -->
+              <div class="p-registration_info_edit">
+                <!-- fontawesome -->
+                <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css" />
+                <script>
+                  $(function () {
+                    $(".js-menu__link, .js-submenu__link").on("click", function () {
+                      $(this).toggleClass("active");
+                    });
+                  });
+                </script>
+                <form id="frm" name="frm" method="post" action="mymenu/edit2.php">
+                  <input type="hidden" name="mode" id="mode" value="edit" />
+                  <input type="hidden" name="sub_id" id="sub_id" value="" />
+                  <input type="hidden" name="shortage" id="shortage" value="" />
+                  <input type="hidden" name="seq" id="seq" value="" />
+                  <input type="hidden" name="family_count" id="family_count" value="0" />
+                  <input type="hidden" name="sex" id="sex" value="11001" />
+                  <fieldset>
+                    <div class="js-menu__link">ご連絡先</div>
+                    <div class="submenu p-registration_info_edit__block">
+                      <!--e-mail-->
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">メールアドレス</h4>
+                      </div>
+                      <div class="t-form__input">
+                        <input name="email" type="email" id="email" value="mod_develop+vsample202500105_2@cm-group.co.jp" placeholder="tsample@tsite.jp" />
+                      </div>
+                      <!--/e-mail-->
+                    </div>
+                    <div class="js-menu__link">配送先住所</div>
+                    <div class="submenu p-registration_info_edit__block">
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">お名前（漢字）</h4>
+                      </div>
+                      <div class="t-form__input">
+                        <input name="last_name" type="text" id="id_last_name" value="岩井" maxlength="32" class="short-text-namearea" placeholder="姓" />
+                      </div>
+                      <div class="t-form__input">
+                        <input name="first_name" type="text" id="id_first_name" value="貴寛" maxlength="32" class="short-text-namearea" placeholder="名" />
+                      </div>
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">お名前（フリガナ）</h4>
+                      </div>
+                      <div class="t-form__input">
+                        <input name="last_kananame" type="text" id="id_last_kananame" value="イワイ" maxlength="32" class="short-text-namearea" placeholder="セイ" />
+                      </div>
+                      <div class="t-form__input">
+                        <input name="first_kananame" type="text" id="id_first_kananame" value="タカヒロ" maxlength="32" class="short-text-namearea" placeholder="メイ" />
+                      </div>
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">郵便番号（※ハイフンなしでご入力ください）</h4>
+                      </div>
+                      <ul class="t-button__group">
+                        <li>
+                          <div class="t-form__input">
+                            <input type="text" name="zip" id="zip" size="10" maxlength="7" placeholder="0000000" value="1340084" onkeyup="AjaxZip3.zip2addr(this, '', 'addr1', 'addr2')" />
+                          </div>
+                        </li>
+                      </ul>
+                      <p id="warning"></p>
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">都道府県</h4>
+                      </div>
+                      <div class="t-form__input">
+                        <input type="text" name="addr1" size="20" value="東京都" />
+                      </div>
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">市区町村・番地</h4>
+                      </div>
+                      <div class="t-form__input">
+                        <input name="addr2" type="text" id="addr210" value="江戸川区東葛西8-32" maxlength="32" placeholder="市区町村・番地" />
+                      </div>
+                      <p class="text-[12px] mt-[10px]">※全角ハイフンは半角に自動で変換され登録されます。</p>
+                      <div class="t-column-head">
+                        <h4>建物名・部屋番号等</h4>
+                      </div>
+                      <div class="t-form__input">
+                        <input name="addr3" type="text" id="id_address3" value="a" maxlength="32" placeholder="建物名・部屋番号等" />
+                      </div>
+                      <p class="text-[12px] mt-[10px]">※全角ハイフンは半角に自動で変換され登録されます。</p>
+                      <div class="t-column-head">
+                        <h4 class="t-column-head__text">電話番号</h4>
+                      </div>
+                      <div class="telephone-area">
+                        <ul class="mt-[10px]">
+                          <li class="t-form__input">
+                            <input type="tel" placeholder="090" class="textInputStyle01 w-[40px]" name="tel1" value="03" />
+                          </li>
+                          <li class="t-form__input">
+                            <input type="tel" placeholder="1234" class="textInputStyle01 w-[60px]" name="tel2" value="5486" />
+                          </li>
+                          <li class="t-form__input">
+                            <input type="tel" placeholder="5678" class="textInputStyle01 w-[60px]" name="tel3" value="3530" />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="js-menu__link">ご家族・ご友人配送先住所（任意）</div>
+                    <div class="submenu">
+                      <div class="js-submenu__link">ご家族・ご友人配送先新規登録</div>
+                      <div class="submenu_child p-registration_info_edit__block">
                         <div class="t-column-head">
-                          <h4 class="t-column-head__text">お名前（漢字）</h4>
+                          <h4 class="t-column-head__text">氏名（漢字）</h4>
                         </div>
                         <div class="t-form__input">
-                          <input name="last_name" type="text" id="id_last_name" value="岩井" maxlength="32" class="short-text-namearea" placeholder="姓" />
+                          <input name="family_name" type="text" id="name" value="" maxlength="32" placeholder="姓" />
                         </div>
                         <div class="t-form__input">
-                          <input name="first_name" type="text" id="id_first_name" value="貴寛" maxlength="32" class="short-text-namearea" placeholder="名" />
+                          <input name="family_name2" type="text" id="name2" value="" maxlength="32" placeholder="名" />
                         </div>
                         <div class="t-column-head">
-                          <h4 class="t-column-head__text">お名前（フリガナ）</h4>
+                          <h4 class="t-column-head__text">氏名（カナ）</h4>
                         </div>
                         <div class="t-form__input">
-                          <input name="last_kananame" type="text" id="id_last_kananame" value="イワイ" maxlength="32" class="short-text-namearea" placeholder="セイ" />
+                          <input name="family_kana" type="text" id="kana" value="" maxlength="32" placeholder="セイ" />
                         </div>
                         <div class="t-form__input">
-                          <input name="first_kananame" type="text" id="id_first_kananame" value="タカヒロ" maxlength="32" class="short-text-namearea" placeholder="メイ" />
+                          <input name="family_kana2" type="text" id="kana2" value="" maxlength="32" placeholder="メイ" />
                         </div>
                         <div class="t-column-head">
                           <h4 class="t-column-head__text">郵便番号（※ハイフンなしでご入力ください）</h4>
@@ -565,7 +631,16 @@
                         <ul class="t-button__group">
                           <li>
                             <div class="t-form__input">
-                              <input type="text" name="zip" id="zip" size="10" maxlength="7" placeholder="0000000" value="1340084" onkeyup="AjaxZip3.zip2addr(this, '', 'addr1', 'addr2')" />
+                              <input
+                                type="text"
+                                name="family_zip"
+                                id="zip"
+                                size="10"
+                                maxlength="7"
+                                placeholder="0000000"
+                                value=""
+                                onkeyup="AjaxZip3.zip2addr(this, '', 'family_addr1', 'family_addr2')"
+                              />
                             </div>
                           </li>
                         </ul>
@@ -574,20 +649,20 @@
                           <h4 class="t-column-head__text">都道府県</h4>
                         </div>
                         <div class="t-form__input">
-                          <input type="text" name="addr1" size="20" value="東京都" />
+                          <input type="text" name="family_addr1" size="20" value="" />
                         </div>
                         <div class="t-column-head">
                           <h4 class="t-column-head__text">市区町村・番地</h4>
                         </div>
                         <div class="t-form__input">
-                          <input name="addr2" type="text" id="addr210" value="江戸川区東葛西8-32" maxlength="32" placeholder="市区町村・番地" />
+                          <input name="family_addr2" type="text" id="addr230" value="" maxlength="32" placeholder="市区町村・番地" />
                         </div>
                         <p class="text-[12px] mt-[10px]">※全角ハイフンは半角に自動で変換され登録されます。</p>
                         <div class="t-column-head">
                           <h4>建物名・部屋番号等</h4>
                         </div>
                         <div class="t-form__input">
-                          <input name="addr3" type="text" id="id_address3" value="a" maxlength="32" placeholder="建物名・部屋番号等" />
+                          <input name="family_addr3" type="text" id="id_address3" value="" maxlength="32" placeholder="建物名・部屋番号等" />
                         </div>
                         <p class="text-[12px] mt-[10px]">※全角ハイフンは半角に自動で変換され登録されます。</p>
                         <div class="t-column-head">
@@ -595,135 +670,55 @@
                         </div>
                         <div class="telephone-area">
                           <ul class="mt-[10px]">
+                            <li class="t-form__input"><input type="tel" placeholder="090" class="textInputStyle01 w-[40px]" name="family_tel1" value="" />-</li>
+                            <li class="t-form__input"><input type="tel" placeholder="1234" class="textInputStyle01 w-[60px]" name="family_tel2" value="" />-</li>
                             <li class="t-form__input">
-                              <input type="tel" placeholder="090" class="textInputStyle01 w-[40px]" name="tel1" value="03" />
-                            </li>
-                            <li class="t-form__input">
-                              <input type="tel" placeholder="1234" class="textInputStyle01 w-[60px]" name="tel2" value="5486" />
-                            </li>
-                            <li class="t-form__input">
-                              <input type="tel" placeholder="5678" class="textInputStyle01 w-[60px]" name="tel3" value="3530" />
+                              <input type="tel" placeholder="5678" class="textInputStyle01 w-[60px]" name="family_tel3" value="" />
                             </li>
                           </ul>
                         </div>
                       </div>
-                      <div class="js-menu__link">ご家族・ご友人配送先住所（任意）</div>
-                      <div class="submenu">
-                        <div class="js-submenu__link">ご家族・ご友人配送先新規登録</div>
-                        <div class="submenu_child p-registration_info_edit__block">
-                          <div class="t-column-head">
-                            <h4 class="t-column-head__text">氏名（漢字）</h4>
-                          </div>
-                          <div class="t-form__input">
-                            <input name="family_name" type="text" id="name" value="" maxlength="32" placeholder="姓" />
-                          </div>
-                          <div class="t-form__input">
-                            <input name="family_name2" type="text" id="name2" value="" maxlength="32" placeholder="名" />
-                          </div>
-                          <div class="t-column-head">
-                            <h4 class="t-column-head__text">氏名（カナ）</h4>
-                          </div>
-                          <div class="t-form__input">
-                            <input name="family_kana" type="text" id="kana" value="" maxlength="32" placeholder="セイ" />
-                          </div>
-                          <div class="t-form__input">
-                            <input name="family_kana2" type="text" id="kana2" value="" maxlength="32" placeholder="メイ" />
-                          </div>
-                          <div class="t-column-head">
-                            <h4 class="t-column-head__text">郵便番号（※ハイフンなしでご入力ください）</h4>
-                          </div>
-                          <ul class="t-button__group">
-                            <li>
-                              <div class="t-form__input">
-                                <input
-                                  type="text"
-                                  name="family_zip"
-                                  id="zip"
-                                  size="10"
-                                  maxlength="7"
-                                  placeholder="0000000"
-                                  value=""
-                                  onkeyup="AjaxZip3.zip2addr(this, '', 'family_addr1', 'family_addr2')"
-                                />
-                              </div>
-                            </li>
-                          </ul>
-                          <p id="warning"></p>
-                          <div class="t-column-head">
-                            <h4 class="t-column-head__text">都道府県</h4>
-                          </div>
-                          <div class="t-form__input">
-                            <input type="text" name="family_addr1" size="20" value="" />
-                          </div>
-                          <div class="t-column-head">
-                            <h4 class="t-column-head__text">市区町村・番地</h4>
-                          </div>
-                          <div class="t-form__input">
-                            <input name="family_addr2" type="text" id="addr230" value="" maxlength="32" placeholder="市区町村・番地" />
-                          </div>
-                          <p class="text-[12px] mt-[10px]">※全角ハイフンは半角に自動で変換され登録されます。</p>
-                          <div class="t-column-head">
-                            <h4>建物名・部屋番号等</h4>
-                          </div>
-                          <div class="t-form__input">
-                            <input name="family_addr3" type="text" id="id_address3" value="" maxlength="32" placeholder="建物名・部屋番号等" />
-                          </div>
-                          <p class="text-[12px] mt-[10px]">※全角ハイフンは半角に自動で変換され登録されます。</p>
-                          <div class="t-column-head">
-                            <h4 class="t-column-head__text">電話番号</h4>
-                          </div>
-                          <div class="telephone-area">
-                            <ul class="mt-[10px]">
-                              <li class="t-form__input"><input type="tel" placeholder="090" class="textInputStyle01 w-[40px]" name="family_tel1" value="" />-</li>
-                              <li class="t-form__input"><input type="tel" placeholder="1234" class="textInputStyle01 w-[60px]" name="family_tel2" value="" />-</li>
-                              <li class="t-form__input">
-                                <input type="tel" placeholder="5678" class="textInputStyle01 w-[60px]" name="family_tel3" value="" />
-                              </li>
-                            </ul>
-                          </div>
+                    </div>
+                    <div class="js-menu__link">メール配信（キャンペーン情報や新着商品のお知らせ など）</div>
+                    <div class="submenu p-registration_info_edit__block">
+                      <div class="t-select__layout">
+                        <div class="t-select__select">
+                          <select name="mail_permission_flg">
+                            <option value="1" selected="selected">配信する</option>
+                            <option value="0">配信しない</option>
+                          </select>
                         </div>
                       </div>
-                      <div class="js-menu__link">メール配信（キャンペーン情報や新着商品のお知らせ など）</div>
-                      <div class="submenu p-registration_info_edit__block">
-                        <div class="t-select__layout">
-                          <div class="t-select__select">
-                            <select name="mail_permission_flg">
-                              <option value="1" selected="selected">配信する</option>
-                              <option value="0">配信しない</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-                <div class="t-button">
-                  <input type="submit" value="登録情報を更新する" name="submit" id="toAddressEditConfirm" class="t-button__green t-button__smallText t-button__blue" onclick="go_next()" />
-                </div>
-                <div class="t-button">
-                  <div>
-                    <button class="t-button__default" onclick="go_quit()">登録解除する</button>
-                  </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="t-button">
+                <input type="submit" value="登録情報を更新する" name="submit" id="toAddressEditConfirm" class="t-button__green t-button__smallText t-button__blue" onclick="go_next()" />
+              </div>
+              <div class="t-button">
+                <div>
+                  <button class="t-button__default" onclick="go_quit()">登録解除する</button>
                 </div>
               </div>
             </div>
-
-            <form name="senddataform" action="mymenu/basic.php" method="get">
-              <input type="hidden" name="p" value="0" />
-              <input type="hidden" name="d" value="10" />
-            </form>
-
-            <form name="senddataform2" action="mymenu/basic.php" method="get">
-              <input type="hidden" name="c" value="misetame" />
-              <input type="hidden" name="p2" value="0" />
-              <input type="hidden" name="d2" value="10" />
-            </form>
-
-            <form name="senddataform3" action="mymenu/basic.php" method="get">
-              <input type="hidden" name="c" value="review" />
-              <input type="hidden" name="rp" value="0" />
-            </form>
           </div>
+
+          <form name="senddataform" action="mymenu/basic.php" method="get">
+            <input type="hidden" name="p" value="0" />
+            <input type="hidden" name="d" value="10" />
+          </form>
+
+          <form name="senddataform2" action="mymenu/basic.php" method="get">
+            <input type="hidden" name="c" value="misetame" />
+            <input type="hidden" name="p2" value="0" />
+            <input type="hidden" name="d2" value="10" />
+          </form>
+
+          <form name="senddataform3" action="mymenu/basic.php" method="get">
+            <input type="hidden" name="c" value="review" />
+            <input type="hidden" name="rp" value="0" />
+          </form>
         </div>
       </main>
       
@@ -891,19 +886,56 @@
       }
     </style>
     <script type="text/javascript" src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <iframe
-      marginwidth="0"
-      marginheight="0"
-      scrolling="no"
-      frameborder="0"
-      id="1aca9b91f30175"
-      width="0"
-      height="0"
-      src="about:blank"
-      name="__pb_locator__"
-      style="display: none; height: 0px; width: 0px; border: 0px"
-    ></iframe>
-    <script src="../assets/js/t.js"></script>
+    <script>
+      /**
+       * タブUI（メイン/サブ）を index 対応で切り替える。
+       * - `li` 内の `<br>` をクリックしても反応するよう `closest()` を使用
+       * - 状態クラスは `is-active` に統一
+       */
+      (function () {
+        const tabConfigs = [
+          {
+            tabItemSelector: ".p-mymenu-main-tab__item",
+            panelSelector: ".tabContent",
+            activeClass: "is-active",
+          },
+          {
+            tabItemSelector: ".p-mymenu-sub-tab__item",
+            panelSelector: ".subTabContent",
+            activeClass: "is-active",
+          },
+        ];
+
+        const tabStateList = tabConfigs
+          .map((cfg) => ({
+            ...cfg,
+            tabItems: Array.from(document.querySelectorAll(cfg.tabItemSelector)),
+            panels: Array.from(document.querySelectorAll(cfg.panelSelector)),
+          }))
+          .filter((s) => s.tabItems.length > 0 && s.panels.length > 0);
+
+        if (tabStateList.length === 0) return;
+
+        document.addEventListener("click", (event) => {
+          if (!(event.target instanceof Element)) return;
+
+          for (const state of tabStateList) {
+            const clickedItem = event.target.closest(state.tabItemSelector);
+            if (!clickedItem) continue;
+
+            const index = state.tabItems.indexOf(clickedItem);
+            if (index < 0) return;
+
+            state.panels.forEach((p) => p.classList.remove(state.activeClass));
+            if (state.panels[index]) state.panels[index].classList.add(state.activeClass);
+
+            state.tabItems.forEach((t) => t.classList.remove(state.activeClass));
+            clickedItem.classList.add(state.activeClass);
+            return;
+          }
+        });
+      })();
+    </script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
