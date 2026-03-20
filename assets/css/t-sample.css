@@ -253,13 +253,6 @@ header {
   display: block;
 }
 
-.c-drawer-category {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 18px 1fr;
-  gap: 4px;
-}
-
 #menu .menu-close {
   display: none;
   position: absolute;
@@ -2123,18 +2116,6 @@ body.t-about .secondary {
   background: -webkit-gradient(linear, left top, left bottom, from(#4188e8), to(#307ee8));
   background: gradient(linear, left top, left bottom, from(#4188e8), to(#307ee8));
   line-height: 1.2;
-}
-
-.t-button__orange {
-  display: block;
-  margin: auto;
-  width: 90%;
-  border: none;
-  background: #f76b1f;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fc7c36), to(#f76b1f));
-  background: gradient(linear, left top, left bottom, from(#fc7c36), to(#f76b1f));
-  color: #fff;
-  cursor: pointer;
 }
 
 .t-button__default {

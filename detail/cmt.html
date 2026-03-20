@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-      
+     
 
   
     
@@ -14,11 +14,9 @@
 <meta name="description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にシェアフルポイントを貯めることもできます。">
 <meta name="keywords" content="シェアフルモニター,シェアフルポイント,プレゼント,試供品,無料,サンプリング">
 
-<title>商品へのコメント　テスト「ポイント決済用少額」｜シェアフルポイントが貯まる・使える シェアフルモニター</title>
+<title>商品へのコメント　テスト「ポイント決済用少額」</title>
 
 
-  
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/bootstrap.v3.3.7--scope.css">
   
   <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/main.css">
   <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/p9255-common--pc.css">
@@ -48,7 +46,7 @@
 
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail">
+  <body id="pageTop" class="itemDetail">
     <div class="body-wrapper">
       
 
@@ -256,7 +254,7 @@
                 <h2 class="t-crosshead__text">クチコミ</h2>
               </div>
             </div>
-            <div class="commentWrap" style="margin-top: 10px">
+            <div class="commentWrap" class="mt-8">
               <!-- everyPost -->
               <div class="t-text">
                 <p class="t-text__small">
@@ -268,7 +266,7 @@
               </div>
               <div class="t-text">
                 <p class="t-text__small">
-                  <u class="c_red02" style="font-weight: bold">クチコミ投稿を行う際は、「虚偽・誇大」な表現とならないようご注意ください。</u><br />
+                  <u class="c_red02 font-bold">クチコミ投稿を行う際は、「虚偽・誇大」な表現とならないようご注意ください。</u><br />
                   化粧品や健康食品などでは使用感ではなく「効能効果」や「安全性」を保証するような表現や、「医薬品や医療機器のような効能」があるような表現は誤解を招き、法令違反と判断されるおそれがあります。
                 </p>
               </div>
@@ -291,15 +289,14 @@
                   name="ct"
                   id="ct"
                   rows="10"
-                  class="comment_textarea"
-                  style="width: 100%; line-height: 1.3"
+                  class="comment_textarea w-full leading-tight"
                   placeholder="見た目の印象や使った感じ、味などを思い出しながら、試した感想を投稿してください。(必須)"
                 ></textarea>
                 <input type="hidden" name="input_back" value="" />
               </form>
 
               <div class="t-button t-button2">
-                <input type="button" onclick="document.frm.submit()" class="t-button__green t-button__smallText t-button__blue" value="内容を確認する" />
+                <input type="button" class="t-button__green t-button__smallText t-button__blue n js-show-preview" value="内容を確認する" />
               </div>
             </div>
             <div class="preview_box p-[20px] bgc_gray01" id="sns_cmt_prv" style="display: none">
@@ -312,7 +309,6 @@
                 </div>
               </div>
             </div>
-            <!--/ここまで商品詳細-->
           </div>
         </div>
       </main>
@@ -366,14 +362,32 @@
     </div>
     <!-- /body-wrapper -->
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/t-cmt.css?2026030610" />
     <script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+    <!-- ページ内で使う 写真（画像）番号の初期値を設定 -->
     <script type="text/javascript">
       var photo_num = 1;
     </script>
 
+    <!-- 「内容を確認する」ボタンを押したときに、プレビュー欄を表示し、入力テキストをコピーするための処理 -->
     <script>
       window.location.hash = "anchor01";
+      document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector(".js-show-preview");
+        var preview = document.getElementById("sns_cmt_prv");
+        if (!button || !preview) return;
+
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          var inputTextarea = document.getElementById("ct");
+          var previewTextarea = document.getElementById("preview_tw");
+          if (inputTextarea && previewTextarea) {
+            previewTextarea.value = inputTextarea.value;
+          }
+          preview.style.display = "block";
+          preview.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
     </script>
 
     <script type="module" src="../assets/js/main.js"></script>

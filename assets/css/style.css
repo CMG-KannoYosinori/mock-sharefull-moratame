@@ -49,6 +49,13 @@
   background: #ededed;
 }
 
+.c-drawer-category {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 18px 1fr;
+  gap: 4px;
+}
+
 .enq-section-heading {
   background: #fffad9 !important;
 }
@@ -194,18 +201,6 @@ input[type="checkbox"]:checked + .checkbox:before {
   font-size: 14px;
 }
 
-.t-button__orange {
-  border: 1px solid #c77777;
-  border-radius: 4px;
-  background: #9a3c00;
-  background: linear-gradient(#ea8200 0%, #a93a00 100%);
-  padding: 0 10px;
-  min-width: 250px;
-  min-height: 40px;
-  color: #fff;
-  font-size: 16px;
-}
-
 .pageTopScroll {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -311,17 +306,6 @@ input[type="checkbox"]:checked + .checkbox:before {
   content: "";
 }
 
-.t-button__yellow {
-  display: block;
-  cursor: pointer;
-  margin: auto;
-  border: none;
-  background: #fff100;
-  background: linear-gradient(#fff100 0%, #fff100 100%);
-  width: 90%;
-  color: #000;
-}
-
 .disabled {
   border: initial;
   height: initial;
@@ -372,6 +356,24 @@ input[type="checkbox"]:checked + .checkbox:before {
 }
 
 /* /detail/tamesulist, detail/moraurist */
+
+/* detail/cmt.html */
+
+.comment_textarea {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.3;
+  height: 150px;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+}
+
+.preview_box {
+  margin: 20px 0;
+}
+/* /detail/cmt.html */
 
 /* detail/order_sbps ------------------------------------------------- */
 
