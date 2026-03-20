@@ -2118,18 +2118,6 @@ body.t-about .secondary {
   line-height: 1.2;
 }
 
-.t-button__orange {
-  display: block;
-  margin: auto;
-  width: 90%;
-  border: none;
-  background: #f76b1f;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fc7c36), to(#f76b1f));
-  background: gradient(linear, left top, left bottom, from(#fc7c36), to(#f76b1f));
-  color: #fff;
-  cursor: pointer;
-}
-
 .t-button__default {
   display: block;
   margin: auto;

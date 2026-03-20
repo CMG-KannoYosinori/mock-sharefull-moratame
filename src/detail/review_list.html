@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_use_bootstrap = true %} {% assign page_title = 'シェアフルモニター | ポイント決済用少額 クチコミ一覧' %} {% capture head_extra %}
+    {% assign page_title = 'シェアフルモニター | ポイント決済用少額 クチコミ一覧' %} {% capture head_extra %}
     <script>
       $(function () {
         $(document).on("click", "[id^='order-button']", function () {
@@ -15,7 +15,7 @@
     {% endcapture %} {% include 'head' %}
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail t-mymenu">
+  <body id="pageTop" class="itemDetail t-mymenu">
     <div class="body-wrapper">
       {% include 'header' %}
       <main aria-labelledby="page-heading">
@@ -30,19 +30,41 @@
                   <span style="font-size: 70%">ポイント決済用少額 - クチコミ一覧</span>
                 </h1>
               </div>
-              <div class="tabContent tabContent1 active">
+              <div class="tabContent1 active">
                 <div class="subTabBox" style="height: 20px"></div>
-                <div class="container subTabContent subTabContent1 pt-[10px] active">
+                <div class="container subTabContent1 pt_10 active">
                   <div id="hb_mm">
                     <div id="hb_ms">
                       <section class="hb_ms_scedule" id="content">
                         <div class="review_box schedule_box" style="margin-bottom: 20px; border-bottom: initial">
                           <div class="userinfo_box">
                             <div class="hb_ms_ctr">
-                              <h2>
+                              <h3>
                                 <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                                <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
-                              </h2>
+                                <img src="https://stg.tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
+                              </h3>
+
+                              <p class="hb_ms_detail">投稿日時：2026-03-20 15:25:37</p>
+                              <p class="review_line"></p>
+                              <p class="review_text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo
+                                consectetur veritatis debitis hic rem exercitationem saepe?
+                              </p>
+                              <p class="goodBtnWrap" style="margin: initial">
+                                <a href="javascript:void(0);" id="goodBtn100" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '100', '586f780d699563d0', 0, event)">Good</a>
+                                <span class="counter c_red" id="goodnum100"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review_box schedule_box" style="margin-bottom: 20px; border-bottom: initial">
+                          <div class="userinfo_box">
+                            <div class="hb_ms_ctr">
+                              <h3>
+                                <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                                <img src="https://stg.tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
+                              </h3>
+
                               <p class="hb_ms_detail">投稿日時：2026-03-06 11:04:33</p>
                               <p class="review_line"></p>
                               <p class="review_text">
@@ -57,11 +79,13 @@
                           </div>
                         </div>
                       </section>
+                      <div id="msgwindow"></div>
+                      <!-- paging -->
                       <table style="margin: 0 auto 20px">
                         <tbody>
                           <tr>
                             <td>
-                              <form name="formbase" action="review_list.html" method="get">
+                              <form name="formbase" action="https://stg.tsample.tsite.jp/detail/review_list.php" method="get">
                                 <ul class="pagination">
                                   <li><a class="active ui-link">1</a></li>
                                 </ul>
@@ -70,11 +94,12 @@
                           </tr>
                         </tbody>
                       </table>
+                      <!-- /paging -->
                       <div class="t-button t-button2">
-                        <button type="button" id="order-button" class="t-button__green t-button__smallText t-button__orange">詳しい商品情報はこちら</button>
+                        <button type="button" id="order-button" class="c-button c-button--orange">詳しい商品情報はこちら</button>
                       </div>
                       <div class="t-button t-button2" style="margin-top: 15px">
-                        <button type="button" id="review-button" class="t-button__green t-button__smallText t-button__yellow">クチコミを再投稿する</button>
+                        <button type="button" id="review-button" class="c-button c-button--review">クチコミを再投稿する</button>
                       </div>
                     </div>
                   </div>
@@ -179,18 +204,6 @@
         width: 0;
         height: 0;
         border-style: solid;
-      }
-
-      .t-button__yellow {
-        display: block;
-        margin: auto;
-        width: 90%;
-        border: none;
-        background: #fff100;
-        background: -webkit-gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
-        background: gradient(linear, left top, left bottom, from(#fff100), to(#fff100));
-        color: #000;
-        cursor: pointer;
       }
 
       .disabled {

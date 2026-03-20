@@ -1,27 +1,25 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_use_bootstrap = true %} {% assign page_title = 'シェアフルモニター | 商品へのコメント' %} {% include 'head' %}
+    {% assign page_title = 'シェアフルモニター | 商品へのコメント' %} {% include 'head' %}
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope">
+  <body id="pageTop">
     <div class="body-wrapper">
       {% include 'header' %}
       <main aria-labelledby="page-heading">
         <div class="l-container">
-          <div>
-            <h1 id="page-heading" class="c-heading">コメント投稿完了</h1>
-            <div class="t-text">
-              <div class="t-text__middle">
-                <p>コメントの投稿が完了しました。</p>
-                <p class="text-center c_red mt-[20px]">発送日以降のコメントは実際にお試し頂いた方から順に表示されます。</p>
-              </div>
+          <h1 id="page-heading" class="c-heading">コメント投稿完了</h1>
+          <div class="t-text">
+            <div class="t-text__middle">
+              <p>コメントの投稿が完了しました。</p>
+              <p class="text-center c_red mt-[20px]">発送日以降のコメントは実際にお試し頂いた方から順に表示されます。</p>
             </div>
-            <div class="t-button">
-              <p>
-                <a href="detail/review_list.php?project_id=41e20" class="t-button__default t-button__smallText t-arrow_right">コメントを確認する</a>
-              </p>
-            </div>
+          </div>
+          <div class="t-button">
+            <p>
+              <a href="detail/review_list.php?project_id=41e20" class="t-button__default t-button__smallText t-arrow_right">コメントを確認する</a>
+            </p>
           </div>
         </div>
       </main>
