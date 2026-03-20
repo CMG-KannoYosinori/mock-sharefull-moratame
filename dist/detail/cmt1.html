@@ -45,7 +45,7 @@
 
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail" style="">
+  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail">
     <div class="body-wrapper">
       
 
@@ -225,15 +225,7 @@
                       <td>9,930</td>
                     </tr>
                     <tr>
-                      <th>
-                        参考価格<br /><a
-                          href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&amp;site_domain=qa-tsite
-"
-                          class="t-text__ex"
-                          target="_blank"
-                          >※参考価格とは</a
-                        >
-                      </th>
+                      <th>参考価格<br /><a href="https://ssl.help.tsite.jp/faq/show/56344?category_id=5726&amp;site_domain=qa-tsite" class="t-text__ex" target="_blank">※参考価格とは</a></th>
                       <td>10円(税別)</td>
                     </tr>
                     <tr>
@@ -261,7 +253,7 @@
                 <h2 class="t-crosshead__text">クチコミ</h2>
               </div>
             </div>
-            <div class="commentWrap" style="margin-top: 10px">
+            <div class="commentWrap mt-4">
               <!-- everyPost -->
               <div class="t-text">
                 <p class="t-text__small">
@@ -275,6 +267,7 @@
                 <h2 class="t-head__text">コメントを確認する</h2>
               </div>
 
+              <!-- 送信前に、コメント内容とSNS表示用のプレビュー情報をまとめて準備し、ボタン押下で次の処理（送信 or 修正）へ進める -->
               <form action="detail/cmt.php#anchor01" method="post" name="frm">
                 <input type="hidden" name="project_id" value="41e20" />
                 <input type="hidden" name="sns_url_tw" id="sns_url_tw" value="" />
@@ -327,7 +320,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla?
                 </div>
               </form>
 
-              <!-- /everyPost -->
+              <!-- 最終的にサーバへ送るためのデータを hidden でまとめておくための準備ブロック -->
               <form action="detail/cmt2.php" method="post" name="cmt2">
                 <input type="hidden" name="project_id" value="41e20" />
                 <input
@@ -348,10 +341,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla?
                 <input type="hidden" name="photo_img_tmp4" value="" />
               </form>
             </div>
-
-            <br />
-
-            <!--/ここまで商品詳細-->
           </div>
         </div>
       </main>
@@ -413,11 +402,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla?
     </div>
     <!-- /body-wrapper -->
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/t-cmt.css?2026030610" />
-    <script>
-      var c_uri_https = "";
-      var pjt_rand = "41e20";
-    </script>
+    <!-- 「コメント確認側（frm）の送信ボタン押下 → hidden情報をまとめた cmt2 をsubmit（最終送信）」を制御 -->
     <script>
       function modeCmt() {
         document.cmt2.target = "_self";
@@ -433,69 +418,5 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla?
     </script>
     <script type="text/javascript" src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
-
-    <script type="text/javascript" id="" charset="">
-      var vgHost = "chat3-ae.chatdealer.jp",
-        vgProtocol = "https",
-        vgPort = "443",
-        vgAtxt = "9I4e1Chat3-ae",
-        vgSid = 3;
-      (function () {
-        try {
-          var a = document.createElement("script"),
-            c = new Date(),
-            b = document.getElementsByTagName("script")[0];
-          a.type = "text/javascript";
-          a.async = !0;
-          a.setAttribute("charset", "utf-8");
-          a.src = vgProtocol + "://" + vgHost + ":" + vgPort + "/chat/client.js?" + c.getTime();
-          b.parentNode.insertBefore(a, b);
-        } catch (d) {
-          console.log(d);
-        }
-      })();
-    </script>
-
-    <iframe
-      name="vgloadif1772762571342"
-      src="https://chat3-ae.chatdealer.jp:443/chat/webstorage_check.html?1772762571342&amp;ver=10.5.0.0&amp;modeno=1"
-      style="margin: 0; padding: 0; border: 0; min-height: 1px; min-width: 1px; display: none"
-    ></iframe
-    ><iframe
-      id="vgdataMainFrm1772762571440"
-      name="vgdataMainFrm1772762571440"
-      allowtransparency="true"
-      style="padding: 0; border: 0; min-height: 1px; min-width: 1px; margin: 0; width: 0px; height: 0px; position: fixed; overflow: hidden; border: none; z-index: 2000000000; display: none"
-      scrolling="no"
-      frameborder="no"
-      src="https://chat3-ae.chatdealer.jp:443/chat/blank.html?ver=10.5.0.0&amp;modeno=1"
-      class="chatdealer-main-frame"
-    ></iframe
-    ><iframe
-      id="vgCtaFrm1772762571440"
-      name="vgCtaFrm1772762571440"
-      style="
-        margin: 0;
-        padding: 0;
-        border: 0;
-        min-height: 1px;
-        min-width: 1px;
-        width: 0px;
-        height: 0px;
-        position: fixed;
-        bottom: 0px;
-        right: 15px;
-        overflow: hidden;
-        border: none;
-        z-index: 2000000002;
-        display: none;
-      "
-      scrolling="no"
-      frameborder="no"
-      src=""
-    ></iframe>
-    <div id="vgCtaModalDivWrap">
-      <div id="vgCtaModalDiv" style="width: 0px; height: 0px; position: fixed; bottom: 0px; right: 15px; overflow: hidden; border: none; z-index: 2000000001; display: none"></div>
-    </div>
   </body>
 </html>
