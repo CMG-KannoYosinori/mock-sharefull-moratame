@@ -3,9 +3,15 @@ function initTopHeroSwiper() {
 
   var swiper = new Swiper('.p-top-hero__swiper', {
     loop: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
+    centeredSlides: false,
+    slidesPerView: 1,
     spaceBetween: 0,
+    breakpoints: {
+      768: {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+      },
+    },
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
