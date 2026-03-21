@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-      
+     
 
   
     
@@ -17,8 +17,6 @@
 <title>シェアフルモニター | もらえる商品応募内容確認</title>
 
 
-  
-    <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/bootstrap.v3.3.7--scope.css">
   
   <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/main.css">
   <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/p9255-common--pc.css">
@@ -48,7 +46,7 @@
 
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemConfirm">
+  <body id="pageTop" class="itemDetail itemConfirm">
     <div class="body-wrapper">
       
 
@@ -186,24 +184,6 @@
       <main aria-labelledby="page-heading">
         <div class="l-container">
           <div>
-            <script language="JavaScript" type="text/JavaScript">
-              <!--
-              var gflg = true;
-              function go_next() {
-                  var c = gflg;
-                  if(c) {
-                      gflg = false;
-                      document.frm.submit();
-                      return c;
-                  }
-              }
-
-              function back() {
-                  document.frm.action = "https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=6aaf2";
-                  document.frm.submit();
-              }
-              //-->
-            </script>
             <h1 id="page-heading" class="c-heading">送付先・応募内容確認</h1>
             <div id="select-address">
               <fieldset>
@@ -355,6 +335,27 @@
     </div>
     <!-- /body-wrapper -->
 
+    <!--
+      応募確認フォーム（name="frm"）の送信制御
+      - go_next(): 「応募する」用。二重クリックで連続送信しないよう gflg で1回限りにし、frm を通常の action（morau4.php）へ送信する。
+      - back(): 「戻る」用。frm の action を申込入力画面（tamesu2.php）に差し替えてから送信し、前の画面へ戻す。
+    -->
+    <script>
+      var gflg = true;
+      function go_next() {
+        var c = gflg;
+        if (c) {
+          gflg = false;
+          document.frm.submit();
+          return c;
+        }
+      }
+
+      function back() {
+        document.frm.action = "https://stg.tsample.tsite.jp/detail/tamesu2.php?project_id=6aaf2";
+        document.frm.submit();
+      }
+    </script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
