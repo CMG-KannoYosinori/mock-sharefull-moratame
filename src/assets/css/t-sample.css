@@ -1751,11 +1751,6 @@ body.t-mymenu .tabContent1 .schedule_box {
   vertical-align: top;
 }
 
-@media (width <= 1614px) {
-  body.t-mymenu .tabContent1 .schedule_box {
-    width: 100%;
-  }
-}
 
 @media (width <= 1269px) {
   body.t-mymenu .tabContent1 .schedule_box {

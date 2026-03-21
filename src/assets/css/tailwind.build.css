@@ -26,6 +26,10 @@
 .relative {
     position: relative
 }
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto
+}
 .mb-4 {
     margin-bottom: 1rem
 }
@@ -79,6 +83,9 @@
 }
 .mt-\[8px\] {
     margin-top: 8px
+}
+.mb-5 {
+    margin-bottom: 1.25rem
 }
 .block {
     display: block
