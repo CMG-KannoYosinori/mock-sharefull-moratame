@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-      
+     
 
   
 
@@ -41,17 +41,6 @@
 
 
 
-    <script>
-      $(function () {
-        $(document).on("click", "[id^='order-button']", function () {
-          window.location.href = "tamesu.html?project_id=41e20";
-        });
-        $(document).on("click", "[id^='review-button']", function () {
-          window.location.href = "cmt.html?project_id=41e20#anchor01";
-        });
-      });
-    </script>
-    
 
   </head>
 
@@ -202,88 +191,76 @@
         <div class="l-container">
           <div>
             <div class="t-support-menu_wrapper">
-              <div class="heading xx-large enclosingBtn withIcon">
+              <div class="heading xx-large enclosingBtn withIcon mb-[16px]">
                 <h1 id="page-heading">
-                  <span class="icoWrap">
-                    <img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64" />
-                  </span>
-                  <span style="font-size: 70%">ポイント決済用少額 - クチコミ一覧</span>
+                  <span class="icoWrap"><img alt="" height="79" src="https://tsample.tsite.jp/img/icon-mymenu.png" width="64" /></span>ポイント決済用少額 - クチコミ一覧
                 </h1>
               </div>
-              <div class="tabContent1 active">
-                <div class="subTabBox" style="height: 20px"></div>
-                <div class="container subTabContent1 pt_10 active">
-                  <div id="hb_mm">
-                    <div id="hb_ms">
-                      <section class="hb_ms_scedule" id="content">
-                        <div class="review_box schedule_box" style="margin-bottom: 20px; border-bottom: initial">
-                          <div class="userinfo_box">
-                            <div class="hb_ms_ctr">
-                              <h3>
-                                <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                                <img src="https://stg.tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
-                              </h3>
+              <section class="hb_ms_scedule" id="content">
+                <div class="review_box schedule_box mb-5">
+                  <div class="userinfo_box">
+                    <div class="hb_ms_ctr">
+                      <h3>
+                        <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                        <img src="https://stg.tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
+                      </h3>
 
-                              <p class="hb_ms_detail">投稿日時：2026-03-20 15:25:37</p>
-                              <p class="review_line"></p>
-                              <p class="review_text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo
-                                consectetur veritatis debitis hic rem exercitationem saepe?
-                              </p>
-                              <p class="goodBtnWrap" style="margin: initial">
-                                <a href="javascript:void(0);" id="goodBtn100" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '100', '586f780d699563d0', 0, event)">Good</a>
-                                <span class="counter c_red" id="goodnum100"></span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review_box schedule_box" style="margin-bottom: 20px; border-bottom: initial">
-                          <div class="userinfo_box">
-                            <div class="hb_ms_ctr">
-                              <h3>
-                                <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                                <img src="https://stg.tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
-                              </h3>
-
-                              <p class="hb_ms_detail">投稿日時：2026-03-06 11:04:33</p>
-                              <p class="review_line"></p>
-                              <p class="review_text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo
-                                consectetur veritatis debitis hic rem exercitationem saepe?
-                              </p>
-                              <p class="goodBtnWrap" style="margin: initial">
-                                <a href="javascript:void(0);" id="goodBtn99" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '99', '88f8d35944dedc35', 0, event)">Good</a>
-                                <span class="counter c_red" id="goodnum99"></span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <div id="msgwindow"></div>
-                      <!-- paging -->
-                      <table style="margin: 0 auto 20px">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <form name="formbase" action="https://stg.tsample.tsite.jp/detail/review_list.php" method="get">
-                                <ul class="pagination">
-                                  <li><a class="active ui-link">1</a></li>
-                                </ul>
-                              </form>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!-- /paging -->
-                      <div class="t-button t-button2">
-                        <button type="button" id="order-button" class="c-button c-button--orange">詳しい商品情報はこちら</button>
-                      </div>
-                      <div class="t-button t-button2" style="margin-top: 15px">
-                        <button type="button" id="review-button" class="c-button c-button--review">クチコミを再投稿する</button>
-                      </div>
+                      <p class="hb_ms_detail">投稿日時：2026-03-20 15:25:37</p>
+                      <p class="review_line"></p>
+                      <p class="review_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur
+                        veritatis debitis hic rem exercitationem saepe?
+                      </p>
+                      <p class="goodBtnWrap">
+                        <a href="javascript:void(0);" id="goodBtn100" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '100', '586f780d699563d0', 0, event)">Good</a>
+                        <span class="counter c_red" id="goodnum100"></span>
+                      </p>
                     </div>
                   </div>
                 </div>
+                <div class="review_box schedule_box mb-5">
+                  <div class="userinfo_box">
+                    <div class="hb_ms_ctr">
+                      <h3>
+                        <span class="comment itemicon itemIcoAbs2">クチコミ</span>
+                        <img src="https://stg.tsample.tsite.jp/img/profile_icon.gif" alt="ポイント決済用少額" width="72" height="72" />
+                      </h3>
+
+                      <p class="hb_ms_detail">投稿日時：2026-03-06 11:04:33</p>
+                      <p class="review_line"></p>
+                      <p class="review_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis dicta nulla? Molestias vero cupiditate modi nam non, amet impedit doloribus. Accusamus explicabo consectetur
+                        veritatis debitis hic rem exercitationem saepe?
+                      </p>
+                      <p class="goodBtnWrap">
+                        <a href="javascript:void(0);" id="goodBtn99" class="goodBtn moreGood" onclick="sendGoodUpTbCtDetail('41e20', '99', '88f8d35944dedc35', 0, event)">Good</a>
+                        <span class="counter c_red" id="goodnum99"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div id="msgwindow"></div>
+              <!-- paging -->
+              <table class="mx-auto mb-5">
+                <tbody>
+                  <tr>
+                    <td>
+                      <form name="formbase" action="https://stg.tsample.tsite.jp/detail/review_list.php" method="get">
+                        <ul class="pagination">
+                          <li><a class="active ui-link">1</a></li>
+                        </ul>
+                      </form>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /paging -->
+              <div class="t-button t-button2">
+                <button type="button" id="order-button" class="c-button c-button--orange">詳しい商品情報はこちら</button>
+              </div>
+              <div class="t-button t-button2" class="mt-8">
+                <button type="button" id="review-button" class="c-button c-button--review">クチコミを再投稿する</button>
               </div>
             </div>
             <form name="senddataform" action="review_list.html" method="get">
@@ -350,101 +327,17 @@
 </p>
 
     </div>
-
-    <script language="JavaScript" type="text/JavaScript">
-      <!--
-      function movePage(pagenum) {
-          $("form[name='senddataform']").attr("action","review_list.html");
-          $("form[name='senddataform'] input[name='p']").val(pagenum);
-          $("form[name='senddataform']").submit();
-          return false;
-      }
-      //-->
-    </script>
     <script src="../assets/js/goodup.js"></script>
-    <style>
-      @media only screen and (max-width: 1614px) {
-        body.t-mymenu .tabContent1 .review_box {
-          width: 50%;
-        }
-
-        .img_list {
-          margin: 5px 1px 5px;
-        }
-      }
-
-      @media only screen and (max-width: 1269px) {
-        body.t-mymenu .tabContent1 .review_box {
-          width: 49.5%;
-        }
-
-        .img_list {
-          margin: 5px 5px 5px;
-        }
-      }
-
-      @media only screen and (max-width: 639px) {
-        body.t-mymenu .tabContent1 .review_box {
-          width: 100%;
-        }
-
-        .img_list {
-          margin: 5px 5px 5px;
-        }
-      }
-
-      .review_line {
-        margin: 10px 0 10px;
-        border-top: 1px solid #ccc;
-        vertical-align: top;
-      }
-
-      .review_text {
-        font-size: 85%;
-        margin-bottom: 5px;
-      }
-
-      .comment {
-        background-color: #fff100;
-        color: #000;
-      }
-
-      .twitter {
-        background-color: #00acee;
-        color: #fff;
-      }
-
-      .family-balloon {
-        background-color: #e8e5d6;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-        margin-bottom: 20px;
-      }
-
-      .family-balloon:after {
-        position: absolute;
-        content: "";
-        bottom: -10px;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 10px 5px 0 5px;
-        border-color: #e8e5d6 transparent transparent transparent;
-        width: 0;
-        height: 0;
-        border-style: solid;
-      }
-
-      .disabled {
-        height: initial;
-        border: initial;
-      }
-    </style>
+    <script>
+      $(function () {
+        $(document).on("click", "[id^='order-button']", function () {
+          window.location.href = "tamesu.html?project_id=41e20";
+        });
+        $(document).on("click", "[id^='review-button']", function () {
+          window.location.href = "cmt.html?project_id=41e20#anchor01";
+        });
+      });
+    </script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

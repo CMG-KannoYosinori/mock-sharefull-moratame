@@ -1403,10 +1403,14 @@ a.t-text__link {
 .t-button__default,
 .t-button__green,
 .t-button__red {
-  font-size: 16px;
+  font-size: 14px;
   min-width: 250px;
   min-height: 40px;
   padding: 0 10px;
+
+  @media (width >= 768px) {
+    font-size: 16px;
+  }
 }
 
 .t-button__default i,
@@ -1427,11 +1431,6 @@ a.t-button__red {
 }
 .t-button__default-multiline.t-button__smallText-multiline {
   line-height: 1.6;
-}
-
-.t-button__smallText,
-.t-button__smallText-multiline {
-  font-size: 12px;
 }
 
 button.t-button__default-multiline {
