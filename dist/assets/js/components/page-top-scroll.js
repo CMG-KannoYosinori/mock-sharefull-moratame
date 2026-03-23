@@ -1,11 +1,11 @@
 /**
- * ページトップへボタン（.pageTopScroll）の表示制御
+ * ページトップへボタン（.page-top-scroll）の表示制御
  * スクロール量に応じてふわっと表示／非表示
  */
 export function initPageTopScroll() {
   if (!document.body.id) document.body.id = 'pageTop';
 
-  const pageTopScroll = document.querySelector('.pageTopScroll');
+  const pageTopScroll = document.querySelector('.page-top-scroll');
   if (!pageTopScroll) return;
 
   const link = pageTopScroll.querySelector('a[href="#pageTop"]');
