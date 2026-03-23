@@ -14,16 +14,17 @@
   width: 100%;
 }
 
-@media (min-width: 960px) {
+@media (width >= 960px) {
   .p-top-hero__swiper .swiper-slide {
     width: 60%;
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .p-top-hero__swiper .swiper-slide {
     width: auto;
   }
+
   .p-top-hero__swiper .swiper-slide .u-img {
     margin: 0 auto;
     width: 640px;
@@ -56,23 +57,26 @@
   width: 18px;
   height: 18px;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
   color: #ddd;
   font-size: 10px;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .swiper-button-next,
   .swiper-button-prev {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .swiper-button-next {
     left: 50%;
     margin-left: 330px;
   }
+
   .swiper-button-prev {
     left: 50%;
     margin-left: -350px;
