@@ -103,7 +103,7 @@
   position: absolute;
   top: 50%;
   left: -5px;
-  margin-top: -5px;
+  margin-top: -4px;
   border-radius: 10px;
   background: #333;
   width: 10px;
@@ -385,17 +385,6 @@ input[type="checkbox"]:checked + .checkbox:before {
   text-align: center;
   margin-bottom: 12px;
   margin-top: 16px;
-}
-
-.p-order-confirm__use-point-input {
-  width: 6rem;
-  margin-bottom: 10px;
-}
-
-.p-order-confirm__all-point-button {
-  box-shadow: 1px 1px #000;
-  margin-bottom: 10px;
-  border-radius: 30px;
 }
 
 .p-order-confirm__tradelaw-box {

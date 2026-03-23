@@ -50,22 +50,6 @@
 .new-signup-confirm li {
   list-style-type: none;
 }
-.new-signup-confirm__note-box {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  color: #ff0000;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  /* 768px以下の場合 */
-  @media (max-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
 
 .side-text {
   font-size: 13px;
@@ -196,15 +180,6 @@
   box-shadow: none;
 }
 
-.new-signup-input .nickname li input {
-  width: 89%;
-  padding: 0.5em;
-  color: #000;
-  border: 1px solid #d2d2d2;
-  border-radius: 6px;
-  box-shadow: none;
-}
-
 .new-signup-input .zipcode li input,
 .new-signup-input .address1 li input,
 .new-signup-input .address2 li input,
@@ -229,15 +204,6 @@
   box-shadow: none;
   background: #fff;
   cursor: pointer;
-}
-
-.new-signup-input .nickname .nickname-check-btn {
-  font-size: 12px;
-  margin-top: 5px;
-  background-color: #82857a;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 3px 10px;
 }
 
 .new-signup-input .submit-area {

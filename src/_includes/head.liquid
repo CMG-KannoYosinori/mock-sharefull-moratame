@@ -44,18 +44,7 @@
 
 <title>{{ page_title }}</title>
 
-{% if page_is_login_contents %}
-  <link rel="stylesheet" href="{{ asset_base }}assets/css/style.3078.css">
-  <link rel="stylesheet" href="{{ asset_base }}assets/css/style--common-sp-and-pc-2.css">
-{% else %}
-  {% if page_use_bootstrap %}
-    <link rel="stylesheet" href="{{ asset_base }}assets/css/bootstrap.v3.3.7--scope.css">
-  {% endif %}
-  <link rel="stylesheet" href="{{ asset_base }}assets/css/main.css">
-  <link rel="stylesheet" href="{{ asset_base }}assets/css/p9255-common--pc.css">
-  <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
-{% endif %}
-
+<link rel="stylesheet" href="{{ asset_base }}assets/css/main.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/reset.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/layout.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/module.css">
@@ -71,7 +60,9 @@
 <link rel="stylesheet" href="{{ asset_base }}assets/css/utilities.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/css/tailwind.build.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/vendor/fontawesome/css/all.css">
-
+{% if page_use_ajaxzip3 %}
+  <script src="{{ asset_base }}assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+{% endif %}
 <script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 {% if page_is_login_contents %}
   <script src="{{ asset_base }}assets/js/inputimg.js"></script>

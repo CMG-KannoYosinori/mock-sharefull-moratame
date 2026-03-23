@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_use_bootstrap = true %} {% assign page_title = 'シェアフルモニター | ためせる商品アンケート回答' %} {% capture head_extra %}
+    {% assign page_title = 'シェアフルモニター | ためせる商品アンケート回答' %} {% capture head_extra %}
     <!-- slideUp Down -->
     <script>
       $(function () {
@@ -32,7 +32,7 @@
     {% endcapture %} {% include 'head' %}
   </head>
 
-  <body id="pageTop" class="bootstrap-v3-3-7--scope itemDetail itemApply">
+  <body id="pageTop" class="itemDetail itemApply">
     <div class="body-wrapper">
       {% include 'header' %}
       <main aria-labelledby="page-heading">
@@ -366,7 +366,7 @@
 
                     <li class="pt-[0.4em]">
                       <label>
-                        <input type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力" />
+                        <input class="form-control form-control_paid-point" type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力" />
                         <span id="apply_coupon_code">
                           <input type="button" name="coupon_check" value="適用する" onclick="javascript: check_coupon();" />
                         </span>
