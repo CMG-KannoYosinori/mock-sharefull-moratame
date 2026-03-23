@@ -14,65 +14,13 @@
 
 <title>シェアフルモニター | 商品名 ためせる</title>
 
-
-  
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/p9255-common--pc.css">
-  <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
-
-
-<link rel="stylesheet" href="../assets/css/reset.css">
-<link rel="stylesheet" href="../assets/css/layout.css">
-<link rel="stylesheet" href="../assets/css/module.css">
-<link rel="stylesheet" href="../assets/css/style--common-sp-and-pc.css">
-<link rel="stylesheet" href="../assets/css/reset-old-style--jp.css">
-<link rel="stylesheet" href="../assets/css/style--pc.css">
-<link rel="stylesheet" href="../assets/css/style--sp.css">
-<link rel="stylesheet" href="../assets/css/t.css">
-<link rel="stylesheet" href="../assets/css/t-sample.css">
-<link rel="stylesheet" href="../assets/css/footer-common.css">
-<link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/utilities.css">
-<link rel="stylesheet" href="../assets/css/tailwind.build.css">
 <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.css">
-
 <script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 
 
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/pass_monitor.css" />
-
-    <script>
-      $(function () {
-        $(document).on("click", "[id^='order-button']", function () {
-          var $adultPermission = $("#adult-permission");
-
-          if ($adultPermission.length && !$adultPermission.prop("checked")) {
-            alert("20歳以上の方はチェックを入れてください");
-
-            return;
-          }
-
-          var $orderMatome = $("#order_matome");
-
-          if ($orderMatome.length && $orderMatome.val() == "0") {
-            alert("セット数を選んでください");
-            return;
-          }
-
-          $("#form-order").submit();
-        });
-
-        $(document).on("change", "[id^='adult-permission']", function () {
-          if ($("#" + this.id).prop("checked")) {
-            $("[id^='adult-permission']").prop("checked", true);
-          } else {
-            $("[id^='adult-permission']").prop("checked", false);
-          }
-        });
-      });
-    </script>
     
 
   </head>
@@ -655,6 +603,31 @@
 
     </div>
     <!-- /body-wrapper -->
+    <script>
+      /**
+       * 用途:
+       *  - 「申し込む」ボタン（`id` が `order-button` で始まる要素）が押されたら、
+       *    `#form-order` を送信します。
+       *
+       * 補足:
+       *  - 以前の実装にあった `#adult-permission` / `#order_matome` のチェックは、
+       *    このページ内のHTMLに該当要素が存在しないため削除しています。
+       */
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("click", function (event) {
+          // ボタン以外のクリックは無視
+          var button =
+            event.target && event.target.closest && event.target.closest("[id^='order-button']");
+          if (!button) return;
+
+          var form = document.getElementById("form-order");
+          if (!form) return;
+
+          // ルーティング/送信はフォーム側に任せる
+          form.submit();
+        });
+      });
+    </script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

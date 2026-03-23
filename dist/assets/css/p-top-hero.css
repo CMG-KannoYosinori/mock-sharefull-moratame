@@ -48,11 +48,6 @@
   font-size: 0;
 }
 
-.p-top-hero__tabs .swiper-pagination-bullet-active {
-  background: #dd6699;
-  color: #fff;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
   border-radius: 9999px;

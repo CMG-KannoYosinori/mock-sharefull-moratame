@@ -1,60 +1,266 @@
-/* スクリーンリーダー用テキスト（視覚的に非表示） */
+/* @tailwind base; */
+/* @tailwind components; */
 .sr-only {
-  position: absolute;
-  clip-path: inset(50%);
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap
 }
-
-.u-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.visible {
+    visibility: visible
 }
-
-/* テキスト省略 */
-.u-text-ellipsis {
-  display: -webkit-box;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+.static {
+    position: static
 }
-
-/* ※印のデザイン */
-.u-note {
-  margin-left: 1em;
-  text-indent: -1em;
+.fixed {
+    position: fixed
 }
-
-/* 画像中央寄せ */
-.u-img-center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.absolute {
+    position: absolute
 }
-
-/* アンカーリンクの下線 */
-.u-anchor-underline:link,
-.u-anchor-underline:visited {
-  text-decoration: underline;
+.relative {
+    position: relative
 }
-
-.u-anchor-underline:hover,
-.u-anchor-underline:active {
-  text-decoration: none;
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto
 }
-
-/* アンカーリンクの青文字 */
-.u-anchor-blue:link,
-.u-anchor-blue:visited,
-.u-anchor-blue:hover,
-.u-anchor-underline:active {
-  color: #0085c3;
+.mb-4 {
+    margin-bottom: 1rem
+}
+.mb-5 {
+    margin-bottom: 1.25rem
+}
+.mb-8 {
+    margin-bottom: 2rem
+}
+.mb-\[10px\] {
+    margin-bottom: 10px
+}
+.mb-\[16px\] {
+    margin-bottom: 16px
+}
+.mb-\[32px\] {
+    margin-bottom: 32px
+}
+.mb-\[5px\] {
+    margin-bottom: 5px
+}
+.mb-\[8px\] {
+    margin-bottom: 8px
+}
+.ml-\[-0\.6em\] {
+    margin-left: -0.6em
+}
+.mr-2 {
+    margin-right: 0.5rem
+}
+.mt-4 {
+    margin-top: 1rem
+}
+.mt-5 {
+    margin-top: 1.25rem
+}
+.mt-8 {
+    margin-top: 2rem
+}
+.mt-\[10px\] {
+    margin-top: 10px
+}
+.mt-\[12px\] {
+    margin-top: 12px
+}
+.mt-\[16px\] {
+    margin-top: 16px
+}
+.mt-\[20px\] {
+    margin-top: 20px
+}
+.mt-\[8px\] {
+    margin-top: 8px
+}
+.block {
+    display: block
+}
+.inline-block {
+    display: inline-block
+}
+.inline {
+    display: inline
+}
+.table {
+    display: table
+}
+.grid {
+    display: grid
+}
+.contents {
+    display: contents
+}
+.hidden {
+    display: none
+}
+.h-\[20px\] {
+    height: 20px
+}
+.h-full {
+    height: 100%
+}
+.w-\[40px\] {
+    width: 40px
+}
+.w-\[60px\] {
+    width: 60px
+}
+.w-auto {
+    width: auto
+}
+.w-full {
+    width: 100%
+}
+.max-w-\[320px\] {
+    max-width: 320px
+}
+.shrink {
+    flex-shrink: 1
+}
+.resize {
+    resize: both
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse))
+}
+.break-all {
+    word-break: break-all
+}
+.rounded {
+    border-radius: 0.25rem
+}
+.rounded-lg {
+    border-radius: 0.5rem
+}
+.border {
+    border-width: 1px
+}
+.border-0 {
+    border-width: 0px
+}
+.border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1))
+}
+.bg-\[\#e6effc\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(230 239 252 / var(--tw-bg-opacity, 1))
+}
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1))
+}
+.bg-gray-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1))
+}
+.bg-gray-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1))
+}
+.p-0 {
+    padding: 0px
+}
+.p-2 {
+    padding: 0.5rem
+}
+.p-\[20px\] {
+    padding: 20px
+}
+.px-4 {
+    padding-right: 1rem;
+    padding-left: 1rem
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+.pb-8 {
+    padding-bottom: 2rem
+}
+.pb-\[32px\] {
+    padding-bottom: 32px
+}
+.pt-\[0\.4em\] {
+    padding-top: 0.4em
+}
+.pt-\[10px\] {
+    padding-top: 10px
+}
+.text-center {
+    text-align: center
+}
+.text-right {
+    text-align: right
+}
+.indent-0 {
+    text-indent: 0px
+}
+.indent-\[-0\.6em\] {
+    text-indent: -0.6em
+}
+.text-\[12px\] {
+    font-size: 12px
+}
+.text-\[14px\] {
+    font-size: 14px
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+.font-bold {
+    font-weight: 700
+}
+.font-normal {
+    font-weight: 400
+}
+.leading-tight {
+    line-height: 1.25
+}
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity, 1))
+}
+.text-gray-700 {
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity, 1))
+}
+.underline {
+    text-decoration-line: underline
+}
+.outline {
+    outline-style: solid
+}
+.blur {
+    --tw-blur: blur(8px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.\!filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important
+}
+.filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+.transition {
+    transition-duration: 150ms;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+.empty\:hidden:empty {
+    display: none
 }
