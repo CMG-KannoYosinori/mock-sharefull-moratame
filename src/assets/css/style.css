@@ -1,5 +1,3 @@
-/* ---- main.css ---- */
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 html,
 button,
 input,
@@ -360,102 +358,13 @@ section {
   max-width: 960px;
 }
 
-/* ---- module.css ---- */
-/* A
------------------------------------------------------------
---------------------------------------------------------- */
-/* aboutKazokuHassou
---------------------------------------------------------- */
-
-/* /aboutKazokuHassou
---------------------------------------------------------- */
-/* aboutOffice
---------------------------------------------------------- */
-
-/* /aboutOffice
---------------------------------------------------------- */
-/* accordionContainer
---------------------------------------------------------- */
-
-/* accordionContainer
---------------------------------------------------------- */
-/* arrow
---------------------------------------------------------- */
-
-/* /arrow
---------------------------------------------------------- */
-/* alerts
---------------------------------------------------------- */
-
-/* /alerts
---------------------------------------------------------- */
-/* attentions
---------------------------------------------------------- */
-
-/* /attentions
---------------------------------------------------------- */
-/* attention
---------------------------------------------------------- */
-
-/* /attention
---------------------------------------------------------- */
-/* attentionAccordion
---------------------------------------------------------- */
-
-/* /attentionAccordion
---------------------------------------------------------- */
-/* /A
------------------------------------------------------------
---------------------------------------------------------- */
-/* B
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* /cardContainr
---------------------------------------------------------- */
-/* balloonPocke
---------------------------------------------------------- */
-
-/* /balloonPocke
---------------------------------------------------------- */
-/* bar
---------------------------------------------------------- */
-
-/* bar
---------------------------------------------------------- */
-/* banner
---------------------------------------------------------- */
-
-/* /banner
---------------------------------------------------------- */
-/* background-color
---------------------------------------------------------- */
 .bgc_gray01 {
   background-color: #e6e5dd;
 }
 
-/* /background-color
---------------------------------------------------------- */
-/* btnGlid
---------------------------------------------------------- */
-
-/* /btnGlid
---------------------------------------------------------- */
-/* button
---------------------------------------------------------- */
-/* btnSquare */
 .btnSquare01wrap {
   padding: 2px 0;
 }
-
-/* /btnSquare */
-/* btnRakuten */
-
-/* /btnRakuten */
-/* btnBean */
-
-/* /btnBean */
-/* goodBtn */
 
 .goodBtnWrap {
   position: relative;
@@ -504,40 +413,6 @@ section {
   text-decoration: none;
 }
 
-/* /goodBtn */
-/* btnInput */
-
-/* /btnInput */
-/* btnBar */
-
-/* /btnBar */
-/* /button
---------------------------------------------------------- */
-/* babbleList
---------------------------------------------------------- */
-
-/* /babbleList
---------------------------------------------------------- */
-/* border
---------------------------------------------------------- */
-
-/* /border
---------------------------------------------------------- */
-/* box size
---------------------------------------------------------- */
-
-/* /box size
---------------------------------------------------------- */
-/* C
------------------------------------------------------------
---------------------------------------------------------- */
-/* categoryContainer
---------------------------------------------------------- */
-
-/* /categoryContainer
---------------------------------------------------------- */
-/* color
---------------------------------------------------------- */
 .c_red {
   color: red;
 }
@@ -546,33 +421,12 @@ section {
   color: #e70033;
 }
 
-/* /color
---------------------------------------------------------- */
-/* container
---------------------------------------------------------- */
-
 .item-part {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
 }
 
-/* /container
---------------------------------------------------------- */
-/* /C
------------------------------------------------------------
---------------------------------------------------------- */
-/* D
------------------------------------------------------------
---------------------------------------------------------- */
-/* /D
------------------------------------------------------------
---------------------------------------------------------- */
-/* E
------------------------------------------------------------
---------------------------------------------------------- */
-/* everyPost
---------------------------------------------------------- */
 .everyPost .lead {
   font-weight: bold;
   font-size: 14px;
@@ -590,17 +444,6 @@ section {
   left: -24px;
 }
 
-/* /everyPost
---------------------------------------------------------- */
-/* /E
------------------------------------------------------------
---------------------------------------------------------- */
-/* F
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* form-fields
---------------------------------------------------------- */
 .textInputStyle01 {
   border: 1px solid #bfbfbf;
   border-radius: 3px;
@@ -626,6 +469,10 @@ form input::-webkit-input-placeholder {
   color: #aaa;
 }
 
+.select-area input {
+  display: none;
+}
+
 form input:-ms-input-placeholder {
   color: #aaa;
 }
@@ -634,40 +481,6 @@ form input::-moz-placeholder {
   color: #aaa;
 }
 
-/* /form-fields
---------------------------------------------------------- */
-/* firstV-modal
---------------------------------------------------------- */
-
-/* /firstV-modal
---------------------------------------------------------- */
-/* /F
------------------------------------------------------------
---------------------------------------------------------- */
-/* G
------------------------------------------------------------
---------------------------------------------------------- */
-/* gcseSearch
---------------------------------------------------------- */
-
-/* /gcseSearch
---------------------------------------------------------- */
-/* loginStatusBar
-------------------------------------------------- */
-
-/* /loginStatusBar
-------------------------------------------------- */
-/* /G
------------------------------------------------------------
---------------------------------------------------------- */
-/* goods-table
---------------------------------------------------------- */
-
-/* H
------------------------------------------------------------
---------------------------------------------------------- */
-/* heading
---------------------------------------------------------- */
 .heading.xx-large {
   font-size: 27px;
   line-height: 1.5;
@@ -882,15 +695,17 @@ mark-list
 --------------------------------------------------------- */
 /* pageTopScroll
 --------------------------------------------------------- */
-.pageTopScroll {
+.page-top-scroll {
   position: fixed;
   right: 30px;
   bottom: -10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   font-size: 14px;
   text-align: center;
 }
 
-.pageTopScroll a {
+.page-top-scroll a {
   display: block;
   transition: background-color 0.5s linear;
   border-radius: 10px;
@@ -900,12 +715,17 @@ mark-list
   text-decoration: none;
 }
 
-.pageTopScroll a:hover {
+.page-top-scroll a:hover {
   background-color: rgba(20, 20, 20, 0.9);
+}
+
+.page-top-scroll.is-visible {
+  opacity: 1;
 }
 
 /* /pageTopScroll
 --------------------------------------------------------- */
+
 /* paging
 --------------------------------------------------------- */
 .paging {
@@ -917,11 +737,13 @@ mark-list
 
 /* /paging
 --------------------------------------------------------- */
+
 /* photoList
 --------------------------------------------------------- */
 
 /* /photoList
 --------------------------------------------------------- */
+
 /* pickup-list
 --------------------------------------------------------- */
 
@@ -1010,6 +832,10 @@ mark-list
   border-bottom: 1px solid #c9c9c9;
 }
 
+.telephone-area ul {
+  display: table;
+}
+
 .st-table01 .avatar ul {
   padding-bottom: 5px;
   width: 450px;
@@ -1018,6 +844,10 @@ mark-list
 .new-signup-input li,
 .new-signup-confirm li {
   list-style-type: none;
+}
+
+.telephone-area li {
+  display: table-cell;
 }
 
 .new-signup-input .birthday li {
@@ -1363,10 +1193,10 @@ body {
   font-size: 12px;
 }
 
-.pageTopScroll a:link,
-.pageTopScroll a:active,
-.pageTopScroll a:hover,
-.pageTopScroll a:visited {
+.page-top-scroll a:link,
+.page-top-scroll a:active,
+.page-top-scroll a:hover,
+.page-top-scroll a:visited {
   color: #fff;
 }
 
@@ -2153,6 +1983,7 @@ div.block div.form table th {
 .t-table .t-table__block tbody th,
 .t-table .t-table__block tbody td {
   text-align: left;
+  white-space: normal;
   word-break: break-all;
 }
 
@@ -2849,6 +2680,7 @@ input[type="checkbox"] {
   opacity: 0;
   filter: alpha(opacity=0);
   -moz-opacity: 0;
+  display: none;
 }
 
 .c_on {
@@ -4067,8 +3899,8 @@ button {
 
 .t-button {
   margin-top: 20px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   width: 100%;
   max-width: 320px;
 }
@@ -4285,14 +4117,14 @@ a.t-button__green {
 }
 
 .t-form__input input {
+  -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
   border: 0;
   background: transparent;
   padding: 0 10px;
   width: 100%;
   height: 100%;
-  font-size: 12px;
-  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
 }
 
 .t-table__block {
@@ -4608,9 +4440,6 @@ header {
 }
 
 #menu_btn {
-  width: 48px;
-  height: 51px;
-
   appearance: none;
   cursor: pointer;
   box-sizing: border-box;
@@ -4622,14 +4451,16 @@ header {
   padding-top: 34px;
   padding-right: 0;
   padding-left: 0;
+  width: 48px;
+  height: 51px;
   color: #fff;
   font-size: 10px;
   text-align: center;
 
   @media (width >= 768px) {
+    padding-top: 36px;
     width: 58px;
     height: 62px;
-    padding-top: 36px;
   }
 }
 
@@ -4714,32 +4545,44 @@ body.is-drawer-open {
 
 /* body ------------------------------------------------- */
 
-body .select-box {
+.select-box {
   margin: 10px 0;
 }
 
-body .t-text {
+.t-text {
   padding: 0;
 }
 
-body .p-masthead {
+.p-masthead {
   color: #000;
 }
 
-body .contents {
+.contents {
   margin-top: 0;
 }
 
-body input[type="text"] {
+input[type="text"] {
   -webkit-appearance: none;
 }
 
-body .sexs input {
+.sexs input {
   -webkit-appearance: radio;
 }
 
-body .select-area label {
+.select-area label {
   color: #000;
+}
+
+.select-area label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 2px;
+  padding: 10px 20px;
+  color: #3e4956;
+  font-size: 14px;
+  line-height: 1;
 }
 
 /* header ------------------------------------------------- */
@@ -5081,6 +4924,12 @@ ul.coupon label {
 ul.coupon em {
   margin-left: 0.5em;
   color: #f76b1f;
+}
+
+.select-area input[type="text"],
+.select-area input[type="password"],
+.select-area input[type="tel"] {
+  display: block;
 }
 
 ul.coupon input[type="text"] {
@@ -5724,11 +5573,6 @@ footer {
   margin-left: auto;
   max-width: 320px;
   height: auto;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 320px;
-  height: auto;
 }
 
 /* ---- style.css ---- */
@@ -5802,29 +5646,7 @@ footer {
   margin: 10px;
 }
 
-.select-area input {
-  display: none;
-}
-
-.select-area input[type="text"],
-.select-area input[type="password"],
-.select-area input[type="tel"] {
-  display: block;
-}
-
-.select-area label {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  margin-left: 20px;
-  border-radius: 2px;
-  padding: 10px 20px;
-  color: #3e4956;
-  font-size: 14px;
-  line-height: 1;
-}
-
-.select-area label:before {
+.select-area label::before {
   position: absolute;
   top: 50%;
   left: -11px;
@@ -5837,7 +5659,7 @@ footer {
   content: "";
 }
 
-.select-area input[type="radio"]:checked + label:after {
+.select-area input[type="radio"]:checked + label::after {
   position: absolute;
   top: 50%;
   left: -5px;
@@ -5847,14 +5669,6 @@ footer {
   width: 10px;
   height: 10px;
   content: "";
-}
-
-.telephone-area ul {
-  display: table;
-}
-
-.telephone-area li {
-  display: table-cell;
 }
 
 .telephone-area .t-form__input {
@@ -5871,19 +5685,6 @@ footer {
   }
 }
 
-.t-form__input {
-  margin-top: 10px;
-  border: 1px solid #a4a4a4;
-  border-radius: 4px;
-  background: #fff;
-  height: 30px;
-  overflow: hidden;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
 .checkbox {
   display: block;
   position: relative;
@@ -5898,7 +5699,6 @@ input[type="checkbox"] {
 }
 
 .checkbox::after {
-  -webkit-transition: border-color 0.2s linear;
   position: absolute;
   top: 50%;
   left: 10px;
@@ -5912,7 +5712,6 @@ input[type="checkbox"] {
 }
 
 .checkbox::before {
-  -webkit-transition: opacity 0.2s linear;
   position: absolute;
   top: 50%;
   left: 16px;
@@ -5927,35 +5726,8 @@ input[type="checkbox"] {
   content: "";
 }
 
-input[type="checkbox"]:checked + .checkbox:before {
+input[type="checkbox"]:checked + .checkbox::before {
   opacity: 1;
-}
-
-.t-form__input input {
-  box-sizing: border-box;
-  border: 0;
-  background: transparent;
-  padding: 0 10px;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-}
-
-.pageTopScroll {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.pageTopScroll.is-visible {
-  opacity: 1;
-}
-
-/* detail/tamesu */
-.t-table .t-table__block tbody th,
-.t-table .t-table__block tbody td {
-  text-align: left;
-  white-space: normal;
-  word-break: break-all;
 }
 
 .p-item-detail {
