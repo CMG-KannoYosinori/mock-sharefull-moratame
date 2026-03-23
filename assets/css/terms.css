@@ -9,20 +9,20 @@ ol,
 ul,
 li,
 section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  font-size: 100%;
 }
 
 body {
   background: #fff;
+  padding: 20px;
+  height: 100%;
   color: #333;
   font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic ProN W3", Meiryo, sans-serif;
-  height: 100%;
-  padding: 20px;
 }
 
 section {
@@ -30,11 +30,11 @@ section {
 }
 
 a {
+  vertical-align: baseline;
   margin: 0;
+  background: transparent;
   padding: 0;
   font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
   text-decoration: none;
 }
 
@@ -43,23 +43,23 @@ a {
 }
 
 .title {
-  text-shadow: none;
-  text-align: center;
-  background: #90a1b8;
-  font-size: 14px;
-  color: #fff;
-  padding: 10px;
-  font-weight: bold;
   margin: 0;
+  background: #90a1b8;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
 }
 
 div.page,
 div.content {
   border: 0 solid;
-  padding: 0;
   background: #fff;
-  color: #000;
+  padding: 0;
   overflow: hidden;
+  color: #000;
 }
 
 li:active {
@@ -68,11 +68,11 @@ li:active {
 
 .p-terms {
   padding: 30px 0;
-  text-align: justify;
-  letter-spacing: 0.8px;
   font-size: 14px;
   line-height: 1.7;
   font-feature-settings: "palt";
+  letter-spacing: 0.8px;
+  text-align: justify;
 }
 
 .p-terms h1 {
@@ -87,11 +87,11 @@ li:active {
 
 .p-terms h3 {
   margin-top: 2em;
-  padding-right: 15px;
-  padding-left: 10px;
   border-bottom: 1px dashed #313131;
   border-left: 5px solid #8cbc00;
   background-color: #f3f3f3;
+  padding-right: 15px;
+  padding-left: 10px;
   font-size: 21px;
 }
 
