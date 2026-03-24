@@ -80,7 +80,6 @@ label {
   cursor: pointer;
 }
 
-/* ---- reset.css ---- */
 html,
 body,
 div,
@@ -157,17 +156,17 @@ td {
   font-weight: normal;
   text-align: left;
 }
+
 q {
   quotes: none;
 }
+
 q:before,
 q:after {
   content: "";
   content: none;
 }
-a img {
-  border: none;
-}
+
 details,
 footer,
 header,
@@ -178,7 +177,6 @@ section {
   display: block;
 }
 
-/* ---- layout.css ---- */
 .about .container {
   margin-right: auto;
   margin-left: auto;
@@ -302,7 +300,6 @@ section {
   border-bottom: 2px solid #b8b4a1;
 }
 
-/* grid system */
 .l-card-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,8 +345,6 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* grid system */
 
 .l-container {
   margin: 32px auto;
@@ -515,17 +510,6 @@ form input::-moz-placeholder {
   background-color: #ffff9a;
 }
 
-/* /heading
---------------------------------------------------------- */
-/* /H
------------------------------------------------------------
---------------------------------------------------------- */
-/* I
------------------------------------------------------------
---------------------------------------------------------- */
-/* ico
---------------------------------------------------------- */
-
 .icoBar02 {
   display: block;
   padding: 0 5px;
@@ -589,15 +573,6 @@ form input::-moz-placeholder {
   background-color: #11b0dd;
 }
 
-/* /ico
---------------------------------------------------------- */
-/* imgDabbleSize
---------------------------------------------------------- */
-
-/* /imgDabbleSize
---------------------------------------------------------- */
-/* itemIcon
---------------------------------------------------------- */
 .itemicon {
   padding: 0 5px;
   color: #fff;
@@ -606,95 +581,6 @@ form input::-moz-placeholder {
   text-decoration: none;
 }
 
-/* /itemIcon
---------------------------------------------------------- */
-/* /I
------------------------------------------------------------
---------------------------------------------------------- */
-/* J
------------------------------------------------------------
---------------------------------------------------------- */
-/* /J
------------------------------------------------------------
---------------------------------------------------------- */
-/* K
------------------------------------------------------------
---------------------------------------------------------- */
-/* /K
------------------------------------------------------------
---------------------------------------------------------- */
-/* L
------------------------------------------------------------
---------------------------------------------------------- */
-/* list
---------------------------------------------------------- */
-
-/* /list
---------------------------------------------------------- */
-/* list-contaier
---------------------------------------------------------- */
-
-/* /list-contaier
---------------------------------------------------------- */
-/* /L
------------------------------------------------------------
---------------------------------------------------------- */
-/* M
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* mitsukeru
---------------------------------------------------------- */
-
-/*--------------------------
-mitsukeru way
--------------------------- */
-
-/*--------------------------
-receipt
--------------------------- */
-
-/*--------------------------
-mark-list
--------------------------- */
-
-/* /mitsukeru
---------------------------------------------------------- */
-/* /M
------------------------------------------------------------
---------------------------------------------------------- */
-/* N
------------------------------------------------------------
---------------------------------------------------------- */
-/* navigation
---------------------------------------------------------- */
-
-/* /navigation
---------------------------------------------------------- */
-/* /N
------------------------------------------------------------
---------------------------------------------------------- */
-/* O
------------------------------------------------------------
---------------------------------------------------------- */
-/* overview
---------------------------------------------------------- */
-
-/* /overview
---------------------------------------------------------- */
-/* office
---------------------------------------------------------- */
-
-/* /office
---------------------------------------------------------- */
-/* /O
------------------------------------------------------------
---------------------------------------------------------- */
-/* P
------------------------------------------------------------
---------------------------------------------------------- */
-/* pageTopScroll
---------------------------------------------------------- */
 .page-top-scroll {
   position: fixed;
   right: 30px;
@@ -709,25 +595,20 @@ mark-list
   display: block;
   transition: background-color 0.5s linear;
   border-radius: 10px;
-  background-color: rgba(20, 20, 20, 0.5);
+  background-color: rgb(20 20 20 / 50%);
   padding: 10px 10px 20px;
   color: #fff;
   text-decoration: none;
 }
 
 .page-top-scroll a:hover {
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: rgb(20 20 20 / 90%);
 }
 
 .page-top-scroll.is-visible {
   opacity: 1;
 }
 
-/* /pageTopScroll
---------------------------------------------------------- */
-
-/* paging
---------------------------------------------------------- */
 .paging {
   position: relative;
   background: #d8d4c6;
@@ -735,80 +616,6 @@ mark-list
   height: 30px;
 }
 
-/* /paging
---------------------------------------------------------- */
-
-/* photoList
---------------------------------------------------------- */
-
-/* /photoList
---------------------------------------------------------- */
-
-/* pickup-list
---------------------------------------------------------- */
-
-/* /pickup-list
---------------------------------------------------------- */
-/* mo-pickupReview
---------------------------------------------------------- */
-
-/* /mo-pickupReview
---------------------------------------------------------- */
-/* pr-list
---------------------------------------------------------- */
-
-/* /pr-list
---------------------------------------------------------- */
-/* /P
------------------------------------------------------------
---------------------------------------------------------- */
-/* quickBtn
---------------------------------------------------------- */
-
-/* /quickBtn
---------------------------------------------------------- */
-/* Q
------------------------------------------------------------
---------------------------------------------------------- */
-/* /Q
------------------------------------------------------------
---------------------------------------------------------- */
-/* R
------------------------------------------------------------
---------------------------------------------------------- */
-/* reviews
---------------------------------------------------------- */
-
-/* /reviews
---------------------------------------------------------- */
-/* reviewsWrap
---------------------------------------------------------- */
-
-/* /reviewsWrap
---------------------------------------------------------- */
-/* /R
------------------------------------------------------------
---------------------------------------------------------- */
-/* S
------------------------------------------------------------
---------------------------------------------------------- */
-/* siteMap
---------------------------------------------------------- */
-
-/* /siteMap
---------------------------------------------------------- */
-/* snsBtnList
---------------------------------------------------------- */
-
-/* /snsBtnList
---------------------------------------------------------- */
-/* stamp
---------------------------------------------------------- */
-
-/* /stamp
---------------------------------------------------------- */
-/* style-table
---------------------------------------------------------- */
 .st-table01 {
   border: 1px solid #c9c9c9;
   width: 100%;
@@ -888,7 +695,7 @@ mark-list
 .badge.cardBadge {
   top: 0;
   left: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 35%);
   border-radius: 0 0 3px;
   padding: 2px 0.5em;
   color: #fff;
@@ -940,9 +747,6 @@ mark-list
 .badge.return {
   background-color: #11b0dd;
 }
-
-/* /badge
---------------------------------------------------------- */
 
 .icoBar06 {
   display: inline-block;
@@ -1098,72 +902,18 @@ mark-list
   background: #fff;
 }
 
-/* Visual Formatting
------------------------------- */
 .d {
   display: block;
 }
 
-/* Box Sizing
------------------------------- */
-
-/* Text
------------------------------- */
-
-/* ------------------------------
-css/style--pc.css の上書きスタイル
------------------------------- */
-
-/* ------------------------------
-/ css/style--pc.css の上書きスタイル
------------------------------- */
-/* ------------------------------
- css/style--sp.css の上書きスタイル
------------------------------- */
 .p-project-lists__dl.p-project-lists__dl--tame {
   width: 90%;
 }
 
-/* ------------------------------
-/ css/style--sp.css の上書きスタイル
------------------------------- */
-/* ------------------------------
-SP and PC
------------------------------- */
-
-/* ------------------------------
-/SP and PC
------------------------------- */
-/* ------------------------------
-PC
------------------------------- */
-/* ------------------------------
-/PC
------------------------------- */
-/* ------------------------------
-SP
------------------------------- */
-
-/* ------------------------------
-/SP
------------------------------- */
-/* ------------------------------
-modal-clip
------------------------------- */
 body {
   position: relative;
 }
 
-/* ------------------------------
-/ modal-clip
------------------------------- */
-/* ------------------------------
-/ SDGs
------------------------------- */
-
-/* @tailwind base; */
-
-/* ---- reset-old-style--jp.css ---- */
 .heading__sub-title {
   font-size: 12px;
 }
@@ -1200,21 +950,6 @@ body {
   color: #fff;
 }
 
-/*
-  ここからリニューアル商品ページ用のCSS
---------------------- */
-/* ---------------------
-  ここまでリニューアル商品ページ用のCSS  
-*/
-/*
-  ここからトップページ用のCSS  
---------------------- */
-
-/* ---------------------
-  ここまでトップページ用のCSS  
-*/
-
-/* ---- style--pc.css ---- */
 .contents {
   margin-right: auto;
   margin-left: auto;
@@ -1242,8 +977,6 @@ body {
   box-sizing: content-box;
 }
 
-/* badge
---------------------------------------------------------- */
 .badge {
   position: absolute;
   border-radius: 0;
@@ -1253,7 +986,7 @@ body {
 .badge.cardBadge {
   top: 0;
   left: 0;
-  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  box-shadow: rgb(0 0 0 / 30%) 1px 1px 1px;
   border-radius: 0 0 5px;
   border-bottom-right-radius: 5px;
   padding: 0 0.5em;
@@ -1309,12 +1042,6 @@ body {
   background-color: #11b0dd;
 }
 
-/* /badge
---------------------------------------------------------- */
-
-/*
-  http://www.cssportal.com/css-ribbon-generator/
-*/
 .box {
   position: relative;
 }
@@ -1331,12 +1058,11 @@ body {
   display: -ms-flexbox;
   margin-right: auto;
   margin-left: auto;
-  /*--- IE10 --- */
+
   width: 960px;
   -js-display: flex;
   -ms-flex-line-pack: stretch;
-  /*--- IE10 --- */
-  /*--- IE10 --- */
+
   justify-content: space-around;
 }
 
@@ -1361,10 +1087,8 @@ body {
 @media all and (-ms-high-contrast: none) {
   .p-masthead__nav li {
     width: auto;
-    /* IE10以下 => 結果的にIE10のみ */
   }
   .p-masthead__nav {
-    /* IE11 */
   }
   .p-masthead__nav *::-ms-backdrop,
   .p-masthead__nav li {
@@ -1435,7 +1159,6 @@ body {
   width: auto;
 }
 
-/* ---- style--sp.css ---- */
 .ico {
   display: inline-block;
   background-repeat: no-repeat;
@@ -1461,30 +1184,6 @@ body {
   background-color: #919191;
 }
 
-/* #wrapper
-  -------------------------------------------------------------------------- */
-/*doc
----
-title: wrapper
-name: wrapper
-categories: [component]
----
-横幅を制限するオブジェクトです。
-Modifierは以下のとおりです。
-* 左右の余白を追加 `--small`, `--medium`, `--large`
-```wrapper
-<div class="c-wrapper" style="background-color:#eee;margin-bottom:1rem;">c-wrapper</div>
-<div class="c-wrapper c-wrapper--medium" style="background-color:#eee;margin-bottom:1rem;">c-wrapper c-wrapper--medium</div>
-<div class="c-wrapper u-8of12" style="background-color:#eee;">c-wrapper u-8of12</div>
-```
-*/
-
-/* / ここから
-[fix]MTSD-5049 [柳沼]「シェアフルモニターアプリ_ソートアイコン修正」
-851e563a1fb1b4004a3805def82a1089c00aa218
-の 差分解決コード
------------------------------------- */
-
 .ico {
   display: inline-block;
   background-repeat: no-repeat;
@@ -1503,20 +1202,6 @@ Modifierは以下のとおりです。
   margin-bottom: 15px;
 }
 
-/* / ここまで
-[fix]MTSD-5049 [柳沼]「シェアフルモニターアプリ_ソートアイコン修正」
-851e563a1fb1b4004a3805def82a1089c00aa218
-の 差分解決コード
------------------------------------- */
-/* /A
------------------------------- */
-/* B
------------------------------- */
-
-/* /B
------------------------------- */
-/* C
------------------------------- */
 .c_red {
   color: red;
 }
@@ -1525,38 +1210,9 @@ Modifierは以下のとおりです。
   color: #00e;
 }
 
-/* /C
------------------------------- */
-/* F
------------------------------- */
-
 .font-bold {
   font-weight: bold;
 }
-
-/* /F
------------------------------- */
-/* i
------------------------------- */
-
-/* /i
------------------------------- */
-/* L
------------------------------- */
-/* /L
------------------------------- */
-/* M
------------------------------- */
-
-/* /M
------------------------------- */
-/* P
------------------------------- */
-
-/* /P
------------------------------- */
-/* S
------------------------------- */
 
 p.smsDelivery {
   margin: 0;
@@ -1568,10 +1224,6 @@ p.smsDelivery {
   padding-left: 10px;
 }
 
-/* /S
------------------------------- */
-/* T
------------------------------- */
 .text-center {
   text-align: center;
 }
@@ -1588,17 +1240,6 @@ textarea.textarea:focus {
   border-radius: 0.5rem;
 }
 
-/* /T
------------------------------- */
-/* V
------------------------------- */
-
-/* /V
------------------------------- */
-/* Z
------------------------------- */
-/* /Z
------------------------------- */
 body {
   background: #fff;
   color: #333;
@@ -1610,9 +1251,6 @@ table {
   border-collapse: collapse;
 }
 
-/*------------------------------------------------
-Content title
------------------------------------------------- */
 .title {
   margin: 0;
   background: #90a1b8;
@@ -1630,30 +1268,11 @@ Content title
   font-size: 85%;
 }
 
-/*----------------------------------------------------------
-------------------------------------------------------------
--------------------------------------------  /commonStyle */
-/* NewTameTop */
-
-/* NewTameTop */
-/*------------------------------------------------
-jQuery mobile
------------------------------------------------- */
-
-/* Android */
-
 .small {
   font-weight: 400;
   font-size: 12px;
 }
 
-/*------------------------------------------------
-Font
------------------------------------------------- */
-
-/*------------------------------------------------
-Leyout
------------------------------------------------- */
 div.page,
 div.header,
 div.content,
@@ -1693,7 +1312,6 @@ div.content h2 {
 }
 
 .button p {
-  /* margin-top: 3px; */
   color: #fff;
   font-weight: 700;
   font-size: 12px;
@@ -1706,14 +1324,6 @@ div.content h2 {
   background: #496b9a;
   background: -moz-linear-gradient(top, #b3c3d9 #496b9a);
 }
-
-/*------------------------------------------------
-jQuery mobile button
------------------------------------------------- */
-
-/*------------------------------------------------
-Header
------------------------------------------------- */
 
 .login {
   background-image: url(https://www.moratame.net/s/images/common/login.png);
@@ -1776,9 +1386,6 @@ div.header nav li a.ui-link {
   text-decoration: none;
 }
 
-/*------------------------------------------------
-Menu bar
------------------------------------------------- */
 div.menu a {
   border: 1px solid #177911;
   background: -moz-linear-gradient(top, #91cf0e, #91cf0e 50%, #64aa10 51%, #59a110);
@@ -1788,13 +1395,6 @@ div.menu a {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8dc70f',EndColorStr='#59a110');
 }
 
-/*------------------------------------------------
-Menu icon
------------------------------------------------- */
-
-/*------------------------------------------------
-Space
------------------------------------------------- */
 div.content div.container {
   background: #fff;
   padding: 0;
@@ -1809,22 +1409,9 @@ div.block div.head {
 div.block div.head a {
   padding: 0;
   color: #fff;
-  /*text-shadow: 1px 1px 1px #434343;*/
+
   text-decoration: none;
 }
-
-/*------------------------------------------------
-Container
------------------------------------------------- */
-/*------------------------------------------------
-Block
------------------------------------------------- */
-
-/*
-.head_detail_tame_w span {
-color: #444444;
-}
-*/
 
 div.block div.body {
   margin: 0 1px;
@@ -1999,9 +1586,6 @@ a.button.zip {
   width: auto;
 }
 
-/*------------------------------------------------
-Form
------------------------------------------------- */
 div.block div.input {
   margin: 5px 0 0;
 }
@@ -2070,11 +1654,6 @@ div.block div.input p {
   background-color: #d45b07;
 }
 
-/*spLimitBgColor*/
-
-/*spLimitBgColor*/
-/*---------------------------------------------- itemicon */
-/*---------------------------------------------- todayicon */
 .itemicon.itemIcoTame {
   background: #319be3;
 }
@@ -2083,9 +1662,6 @@ div.block div.input p {
   background: #f25932;
 }
 
-/*---------------------------------------------- todayicon */
-
-/*130806*/
 div.comment {
   padding: 5px 3px 0;
 }
@@ -2153,27 +1729,6 @@ div.comment td.note {
   font-size: 12px;
 }
 
-/*
-div.comment td.link a,
-div.trackback td.link a {
--webkit-border-radius: 5em;
--moz-border-radius:    5em;
--moz-box-shadow:       1px 1px 2px rgba(0, 0, 0, 0.6);
--webkit-box-shadow:    1px 1px 2px rgba(0, 0, 0, 0.6);
-width:           80px;
-height:          20px;
-background:      #b5739d;
-border:          1px solid #b5739d;
-color:           white;
-text-decoration: none;
-text-align:      center;
-padding:         3px 5px 3px 5px;
-}
-*/
-
-/*------------------------------------------------
-Footer
------------------------------------------------- */
 footer nav {
   margin-bottom: 10px;
 }
@@ -2229,31 +1784,20 @@ div.footer {
   margin-top: 5px;
 }
 
-/*footer_copy*/
-
-/*footer_copy2*/
-
-/*/footer_copy2*/
-/*/footer_copy*/
-
-/*------------------------------------------------
-Button
------------------------------------------------- */
-
 .disabled {
   margin-top: 5px;
   border: 1px solid #a9a9a9;
-  /* for IE */
+
   border-radius: 0.5em;
   background: #a9a9a9;
-  /* for webkit browsers */
+
   background: -moz-linear-gradient(top, #ccc, #a9a9a9);
   width: auto;
   height: 30px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   color: #fff;
-  /* for firefox 3.6+ */
+
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc',endColorstr='#a9a9a9');
   border: initial;
   height: initial;
@@ -2268,86 +1812,9 @@ Button
   text-shadow: none;
 }
 
-/*
-.disabled:hover {
-border: 1px solid        #585858;
-background: #91cf0e;
-background: -webkit-gradient(linear, left top, left bottom, from(#ADADAD), to(#717171));
-background: -moz-linear-gradient(top, #ADADAD #717171);
-}
-*/
-/*-------------------------------------------- .blue_grad */
-
-/*-------------------------------------------/ .blue_grad */
-/*------------------------------------------- .white_grad */
-
-/*------------------------------------------/ .white_grad */
-/*------------------------------------------- .btnGry */
-
-/*------------------------------------------/ .btnGry */
-/*--------------------------------------------- .red_grad */
-
-/*--------------------------------------------/ .red_grad */
-/*--------------------------------------------- .green_grad */
-
-/*--------------------------------------------/ .green_grad */
-/*------------------------------------------------
-Dialog
------------------------------------------------- */
-
-/*------------------------------------------------
-Icon menu
------------------------------------------------- */
-
-/*------------------------------------------------
-Todays moratame
------------------------------------------------- */
-
-/*------------------------------------------------
-photocolle main
------------------------------------------------- */
-
-/*
-
-.holding_photo2 img {
-border: 4px solid #fff;
-}
-*/
-/*------------------------------------------------
-photocolle detail
------------------------------------------------- */
-
-/*------------------------------------------------
-photocolle user
------------------------------------------------- */
-/*
-div.photouser div.photonavi a {
-display: block;
-margin: 0 auto;
-}
-
-div.photouser div.photonavi a.leftnavi {
-float:left;
-}
-
-div.photouser div.photonavi a.rightnavi {
-float:right;
-}
-*/
-/*------------------------------------------------
-photocolle edit
------------------------------------------------- */
-
-/*------------------------------------------------
-mymenu top list
------------------------------------------------- */
 div.mymenu {
   margin-top: 10px;
 }
-
-/*------------------------------------------------
-mymenu > event tab menu
------------------------------------------------- */
 
 .tab {
   position: relative;
@@ -2399,17 +1866,9 @@ mymenu > event tab menu
   line-height: 2em;
 }
 
-/* button design kanno start */
-
-/* button design kanno end */
-/* button design kanno start */
-
-/* button design kanno end */
-/* contents/about kanno edit start */
-
 .hb_cmn_btn02 {
   display: block;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 40%);
   border: 1px solid #db1d1a;
   border-radius: 4px;
   background: #e72419;
@@ -2429,7 +1888,7 @@ mymenu > event tab menu
 
 .hb_cmn_btn03 {
   display: block;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 40%);
   border: 1px solid #6e6e6e;
   border-radius: 4px;
   background: #949494;
@@ -2446,69 +1905,12 @@ mymenu > event tab menu
   -msfilter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#a5a5a5',EndColorStr='#b8b8b8');
 }
 
-/* /common
----------------------------------------------------------- */
-/* F
----------------------------------------------------------- */
-
-/* /F
----------------------------------------------------------- */
-/* hb_other
----------------------------------------------------------- */
-
-/* /hb_other
----------------------------------------------------------- */
-/* hb_category
----------------------------------------------------------- */
-
-/* /hb_category
----------------------------------------------------------- */
-/* hb_ar
----------------------------------------------------------- */
-
-/* /hb_ar
----------------------------------------------------------- */
-/* hb_menu
----------------------------------------------------------- */
-
-/* /hb_menu
----------------------------------------------------------- */
-/* hb_itmLst
----------------------------------------------------------- */
-/* header */
-
-/* local_nav */
-
-/* item list */
-
-/* hb_itmLst_glid */
-
-/* /hb_itmLst
----------------------------------------------------------- */
-/* hb_mm
----------------------------------------------------------- */
-
-/* common */
-/* header */
-
 section h1 {
   margin: 0;
   background-size: 24px 24px;
   padding: 5px 39px;
   font-size: 16px;
 }
-
-/*my status*/
-
-/* /hb_mm
----------------------------------------------------------- */
-/* tokuten */
-
-/* /hb_mm
----------------------------------------------------------- */
-/* hb_ms
----------------------------------------------------------- */
-/* myshipment */
 
 .hb_ms_date {
   margin: 0;
@@ -2580,7 +1982,6 @@ section h1 {
   line-height: 19px;
 }
 
-/*pagination*/
 .pagination {
   margin: 10px auto;
   padding: 0;
@@ -2595,7 +1996,6 @@ section h1 {
 }
 
 .pagination .ui-link {
-  /*  color: #fff;*/
 }
 
 .pagination li a {
@@ -2614,23 +2014,6 @@ section h1 {
   background-color: #fff;
   color: #000;
 }
-
-/*/pagination*/
-
-/* /hb_ms
----------------------------------------------------------- */
-/* hb_mr
----------------------------------------------------------- */
-
-/* /hb_mr
----------------------------------------------------------- */
-/* pstLst
----------------------------------------------------------- */
-
-/* /pstLst
----------------------------------------------------------- */
-/* /hb_ms
----------------------------------------------------------- */
 
 #page {
   position: relative;
@@ -2653,27 +2036,6 @@ body#body {
   background-size: 8px 8px;
   background-repeat: repeat;
 }
-
-/*autoLoading*/
-
-/*autoLoading_End*/
-
-/* NEW photocolleTop 2013.09.05
----------------------------------------------------------- */
-
-/* /NEW photocolleTop 2013.09.05
----------------------------------------------------------- */
-/* 2013.08.20 add start ------------------------- */
-/* NewTameTop */
-
-/* NewTameTop */
-/* 2013.08.20 add end   ------------------------- */
-/* NEW tameFlow 2013.08.20
----------------------------------------------------------- */
-
-/*2013.11.28*/
-
-/*2013.11.2*/
 
 input[type="checkbox"] {
   position: absolute;
@@ -2700,10 +2062,6 @@ input[type="checkbox"] {
   font-weight: 700;
 }
 
-/*2014.07.04 shindo (#977)*/
-
-/*2014.07.04 shindo (#977)*/
-
 .availableCards {
   margin: 10px;
 }
@@ -2727,12 +2085,6 @@ table th {
   width: 93%;
 }
 
-/* /NEW tameFlow 2013.08.20
----------------------------------------------------------- */
-/* NEW moraFlow 2013.08.22
-----------
------------------------------------------------- */
-
 .trigger {
   border-top: 1px solid #a4a4a4;
   border-bottom: 1px solid #a4a4a4;
@@ -2741,27 +2093,11 @@ table th {
   text-align: center;
 }
 
-/* /NEW moraFlow 2013.08.22
----------------------------------------------------------- */
-
-/* tamesu.php morau.php Btn 2013.09.10
----------------------------------------------------------- */
-/*Tame*/
-
-/*Mora*/
-
-/* /tamesu.php morau.php Btn 2013.09.10
----------------------------------------------------------- */
-/* NEW photocolle 2013.08.27
----------------------------------------------------------- */
-
-/* /NEW photocolle 2013.08.27
----------------------------------------------------------- */
 div#msgwindow {
   display: none;
   position: absolute;
   z-index: 110;
-  /* CSS3 */
+
   box-shadow: 3px 3px 5px 0 #777;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2782,7 +2118,6 @@ p.count span {
   font-weight: 700;
 }
 
-/* #header nav */
 #header nav a:link,
 #header nav a:visited,
 #header nav a:active,
@@ -2794,9 +2129,6 @@ div.block div.form input {
   font-size: 18px;
 }
 
-/* input */
-
-/* pagenation */
 .pagination {
   margin: 10px auto;
   padding: 0;
@@ -2843,7 +2175,6 @@ div.block div.title {
   text-shadow: none;
 }
 
-/* error */
 .error {
   color: red;
 }
@@ -2874,35 +2205,6 @@ p {
   color: #fff;
 }
 
-/*graph*/
-
-/*
-.enqBtnNext2 button {
-width:100%;
-height:44px;
-font-size:14px;
-color: #fff;
-font-weight:bold;
-text-shadow: none;
--moz-border-radius: .5em;
--webkit-border-radius: .5em;
-border-radius: .5em;
-border: 1px #5ea510 solid;
-background: #8ac50f;
-background: -webkit-gradient(linear, left top, left bottom, from(#8ac50f), to(#5ea510));
-background: -moz-linear-gradient(top, #8ac50f #5ea510);
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#8ac50f', EndColorStr='#5ea510')";
-}
-
-.enqBtnNext2 button:hover {
-filter:alpha(opacity=70);
--moz-opacity: 0.7;
-opacity: 0.7;
-}
-*/
-
-/*graph*/
-
 #list ul:last-child {
   border-bottom: 1px solid #ccc;
   padding: 0;
@@ -2930,24 +2232,6 @@ div.error {
   text-shadow: none;
 }
 
-/* redmine#697
------------------------------------------- */
-
-/* /redmine#697
------------------------------------------- */
-
-/*btnbar*/
-
-/* cart
------------------------------------------------- */
-
-/* /cart
------------------------------------------------- */
-/* confirmationOfOrder
------------------------------------------------- */
-
-/* /confirmationOfOrder
------------------------------------------------- */
 #recommend p.heading {
   margin: 0;
   padding: 0 13px;
@@ -2955,26 +2239,9 @@ div.error {
   font-size: 15px;
 }
 
-/* twitter-Facebook VersionUp
------------------------------------------- */
-
-/*chk*/
-
-/* reset */
-
 li:active {
   background-color: transparent;
 }
-
-/* //reset*/
-/* facebook*/
-
-/* //facebook*/
-/* twitter */
-
-/* //twitter */
-
-/*//chk*/
 
 li:hover {
   -ms-filter: alpha(opacity=70);
@@ -2987,53 +2254,11 @@ li:hover {
   -khtml-opacity: 1;
 }
 
-/* //listStyle */
-/*2014.01.22*/
-
-/* /twitter-Facebook VersionUp
------------------------------------------- */
-
 active,
 active {
   background-color: #fff;
 }
 
-/* moratame style
------------------------------------- */
-/* balloon ----------------------- */
-
-/* /balloon ---------------------- */
-/* unit -------------------------- */
-/* 1311unit01 */
-
-/* /1311unit01 */
-/* /unit ------------------------- */
-/* heading ----------------------- */
-
-/* /heading ---------------------- */
-/* button ------------------------ */
-
-/* button 2 col----------------- */
-
-/* /button 2 col --------------- */
-/* /button ----------------------- */
-/* /moratame style
------------------------------------- */
-
-/* global navigation
------------------------------------- */
-
-/* /global navigation
------------------------------------- */
-/* profile_edit 2014.02.06 yoshida ----------------------- */
-
-/* /profile_edit 2014.02.06 yoshida ---------------------- */
-/* 2014 topPage
------------------------------------------- */
-/*logoWrap*/
-
-/*//logoWrap*/
-/*navigation*/
 div.header nav li {
   display: block;
   float: none;
@@ -3063,27 +2288,6 @@ div.header nav li a.ui-link {
   text-decoration: none;
 }
 
-/*//navigation*/
-/**/
-
-/**/
-/* news */
-
-/*//news*/
-/*list*/
-/*-- mora tame repo -- */
-
-/*-- enq -- */
-/*-- sns -- */
-
-/*-- category -- */
-
-/*//list*/
-/* sns */
-
-/* //sns */
-/*-- footer -- */
-
 footer nav {
   margin-bottom: 0;
 }
@@ -3100,47 +2304,6 @@ footer nav ul li a {
   padding: 5px 5px 2px;
 }
 
-/*//footer*/
-/*app*/
-
-/*//app*/
-/* btn */
-
-/*//btn*/
-/* drawerMenuInit */
-
-/*//drawerMenuInit*/
-/*drawerMenuContents*/
-/*jqm*/
-
-/*//jqm*/
-
-/*20191010___カテゴリーをハンバーガーメニューに移動　/////  */
-
-/*--icon-sns-- */
-
-/*panel-width*/
-
-/* //drawerMenuContents*/
-/* icon */
-/*-- icon-set -- */
-
-/*-- icon-set02 -- */
-
-/* add 15/09/03*/
-
-/* /add 15/09/03*/
-/*-- icon-set02min -- */
-
-/* add 15/09/03*/
-
-/* /add 15/09/03*/
-
-/*-- /icon-set -- */
-
-/* /icon
-
-/* --scheduleBox-- */
 div.header,
 div.contents {
   overflow: visible;
@@ -3156,7 +2319,6 @@ div.header nav ul {
   width: 100%;
 }
 
-/*ui-block-a border-bottom*/
 div.header nav li:first-child {
   border-bottom: 1px solid #ccc;
 }
@@ -3164,24 +2326,6 @@ div.header nav ul {
   z-index: 9;
 }
 
-/*//detail*/
-/* //--scheduleBox-- */
-/* photocolle */
-
-/* /photocolle */
-
-/*active*/
-/*ios6*/
-
-/* /2014 topPage
------------------------------------------- */
-/* category banner
---------------------------------------------------------- */
-
-/* /category banner
---------------------------------------------------------- */
-/* address family
---------------------------------------------------------- */
 .delete {
   position: relative;
 }
@@ -3196,22 +2340,6 @@ div.header nav ul {
   width: 25%;
 }
 
-/* /address family
---------------------------------------------------------- */
-/* login
----------------------------------------------------------- */
-/* properties */
-
-/* /properties */
-/* reset */
-/* /reset */
-/* input */
-/* /input */
-/* /login
----------------------------------------------------------- */
-/* alert
------------------------------------------------------------
---------------------------------------------------------- */
 div#header div#alert {
   position: relative;
   margin: 10px;
@@ -3243,55 +2371,6 @@ div#header div#alert:after {
   width: 0;
   content: "";
 }
-
-/* /alert
------------------------------------------------------------
---------------------------------------------------------- */
-/* tameCyoufukuAlart
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* /tameCyoufukuAlart
------------------------------------------------------------
---------------------------------------------------------- */
-/* attentionAccordion
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* /attentionAccordion
------------------------------------------------------------
---------------------------------------------------------- */
-/* side_internal_nav
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* /side_internal_nav
------------------------------------------------------------
---------------------------------------------------------- */
-/* top photocolle good button
---------------------------------------------------------- */
-
-/* /top photocolle good button
---------------------------------------------------------- */
-/* /detail/tamesu2.php select address for delivery
---------------------------------------------------------- */
-
-/* /detail/tamesu2.php select address for delivery
---------------------------------------------------------- */
-/* attention
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* /attention
------------------------------------------------------------
---------------------------------------------------------- */
-/* editInsta
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* /editInsta
------------------------------------------------------------
---------------------------------------------------------- */
 
 .badge {
   display: inline-block;
@@ -3325,50 +2404,6 @@ div#header div#alert:after {
   background: #f25932;
 }
 
-/* A
------------------------------- */
-
-/* /A
------------------------------- */
-/* B
------------------------------- */
-
-/* /B
------------------------------- */
-/* C
------------------------------- */
-/* container */
-
-/* /container */
-/* .categorySelecter */
-
-/* /.categorySelecter */
-/* /C
------------------------------- */
-/* F
------------------------------- */
-/* firstV-modal
-------------------------------- */
-
-/* /firstV-modal
-------------------------------- */
-/* /F
------------------------------- */
-/* H
------------------------------- */
-
-/* /H
------------------------------- */
-/* I
------------------------------- */
-/* /I
------------------------------- */
-/* J
------------------------------- */
-/* /J
------------------------------- */
-/* L
------------------------------- */
 .label {
   display: inline-block;
   padding: 0 0.2em;
@@ -3376,43 +2411,6 @@ div#header div#alert:after {
   font-size: 10px;
   line-height: 14px;
 }
-
-/* /L
------------------------------- */
-/* P
------------------------------- */
-/* /P
------------------------------- */
-/* R
------------------------------- */
-
-/* /R
------------------------------- */
-/* T
------------------------------- */
-/* /T
------------------------------- */
-/* J
------------------------------- */
-/* /J
------------------------------- */
-/* U
------------------------------- */
-
-/* /U
------------------------------- */
-
-/* drawerMenuInit */
-
-/*//drawerMenuInit*/
-/*drawerMenuContents*/
-/*jqm*/
-
-/*//jqm*/
-
-/*panel-width*/
-
-/* //drawerMenuContents*/
 
 .p-masthead {
   box-sizing: border-box;
@@ -3555,9 +2553,6 @@ div#header div#alert:after {
   width: 100%;
 }
 
-/* about
------------------------------------------------------------
---------------------------------------------------------- */
 .about img {
   width: 100%;
   height: auto;
@@ -3582,17 +2577,6 @@ div#header div#alert:after {
   height: auto;
 }
 
-/* about
------------------------------------------------------------
---------------------------------------------------------- */
-
-/* 送料関係費 */
-
-/* referral-button */
-
-/* /referral-button */
-
-/* ---- t.css ---- */
 ol,
 ul {
   list-style: none;
@@ -3619,10 +2603,6 @@ q:before,
 q:after {
   content: "";
   content: none;
-}
-
-a img {
-  border: 0;
 }
 
 details,
@@ -3660,17 +2640,13 @@ button {
 
 .t-select__layout:before {
   background: #757575;
-  background: linear-gradient(#a4a4a4 0, #757575 100%);
-  background: -webkit-linear-gradient(#a4a4a4 0, #757575 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#a4a4a4), to(#757575));
+  background: linear-gradient(to bottom, #a4a4a4 0%, #757575 100%);
 }
 
 .t-button__default,
 .t-button__green {
   background: #eee;
-  background: linear-gradient(#fff 0, #eee 100%);
-  background: -webkit-linear-gradient(#fff 0, #eee 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
 }
 
 .t-arrow_right:after {
@@ -3795,8 +2771,8 @@ button {
   margin-top: 32px;
   border-top: 2px solid #f76b1f;
   border-bottom: 2px solid #e2e2e2;
-  background-color: #f8f8f8;
   background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+  background-color: #f8f8f8;
   width: 100%;
   min-height: 35px;
 }
@@ -3914,6 +2890,7 @@ button {
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   padding: 0 10px;
+  width: 100%;
   min-width: 250px;
   min-height: 40px;
   color: #333;
@@ -3921,7 +2898,6 @@ button {
   line-height: 2.4;
   font-family: Arial, sans-serif;
   text-align: center;
-  width: 100%;
 
   @media (width >= 768px) {
     font-size: 16px;
@@ -3945,9 +2921,8 @@ a.t-button__smallText {
 .t-button__green {
   border: 1px solid #9fc777;
   background: #4a9a00;
-  background: linear-gradient(#8bda00 0, #4a9a00 100%);
-  background: -webkit-linear-gradient(#8bda00 0, #4a9a00 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#8bda00), to(#4a9a00));
+  background: linear-gradient(to bottom, #8bda00 0%, #4a9a00 100%);
+
   color: #fff;
 }
 
@@ -4256,10 +3231,6 @@ a.t-button__green {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* IE10以上で矢印を消す */
-
-/* フォーカス時 */
-
 select:focus {
   opacity: 1;
 }
@@ -4336,7 +3307,6 @@ select:focus {
   background: #fff;
 }
 
-/* ---- t-sample.css ---- */
 * .min {
   display: none;
 }
@@ -4347,7 +3317,6 @@ select:focus {
   }
 }
 
-/* common-settings---------------------------------------- */
 .t-select__layout {
   height: 31px;
 }
@@ -4362,10 +3331,6 @@ select:focus {
   }
 }
 
-/* Modal ------------------------------------------------- */
-
-/* HanburgerMenu ------------------------------------------------- */
-/* header */
 header {
   position: relative;
   z-index: 8;
@@ -4379,7 +3344,7 @@ header {
     max-width: 1255px;
   }
 }
-/* #menu */
+
 #menu {
   position: fixed;
   top: 0;
@@ -4411,8 +3376,8 @@ header {
 }
 
 #menu li a {
-  display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  border-bottom: 1px solid rgb(255 255 255 / 50%);
   padding: 10px 0 10px 15px;
   color: #fff;
   line-height: 1.8;
@@ -4463,7 +3428,6 @@ header {
   }
 }
 
-/* menu-background */
 .menu-background {
   display: block;
   position: fixed;
@@ -4472,7 +3436,7 @@ header {
   opacity: 0;
   z-index: 9;
   transition: opacity 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0 / 50%);
   width: 0;
   height: 0;
   content: "";
@@ -4484,12 +3448,10 @@ header {
   height: 100%;
 }
 
-/* ドロワー開時は下レイヤーの縦スクロールを防止 */
 body.is-drawer-open {
   overflow: hidden;
 }
 
-/* accordion ------------------------------------------------- */
 #menu .menu__item {
   padding-bottom: 0;
   padding-left: 0;
@@ -4499,7 +3461,7 @@ body.is-drawer-open {
   cursor: pointer;
   margin: 0;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(255 255 255 / 50%);
   background: none;
   background-color: transparent;
   padding: 10px 0 10px 15px;
@@ -4540,12 +3502,8 @@ body.is-drawer-open {
   color: #004098;
 }
 
-/*newsLink------------------------------------------------- */
-
-/* body ------------------------------------------------- */
-
 .select-box {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .t-text {
@@ -4569,28 +3527,23 @@ input[type="text"] {
 }
 
 .select-area label {
-  color: #000;
-}
-
-.select-area label {
   display: inline-block;
   position: relative;
   cursor: pointer;
   margin-left: 20px;
   border-radius: 2px;
   padding: 10px 20px;
+  color: #000;
   color: #3e4956;
   font-size: 14px;
   line-height: 1;
 }
 
-/* header ------------------------------------------------- */
 .p-masthead {
   position: relative;
   border-bottom: none;
   background-image: none;
   padding: 0px;
-  /*グローバルナビゲーション----- */
 }
 
 .sp-header-menu {
@@ -4599,7 +3552,7 @@ input[type="text"] {
   right: 0;
   left: 0;
   z-index: 9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   background-color: #fff;
   height: 51px;
 }
@@ -4672,8 +3625,6 @@ input[type="text"] {
     border-bottom: 3px solid #004098;
   }
 }
-
-/* primary ------------------------------------------ */
 
 @media (width <= 639px) {
   .heading.xx-large.enclosingBtn {
@@ -4773,7 +3724,6 @@ select:invalid {
   height: auto;
 }
 
-/* icoWrap, mise-nnew-icon ---------------------------------------------------- */
 @media (max-width: 639px) {
   .heading.xx-large .icoWrap {
     width: 38px;
@@ -4782,12 +3732,8 @@ select:invalid {
     height: 26px;
   }
 }
-/* secondary -------------------------------------------------- */
 
-/* // common-settings */
-/* toppage ------------------------------------------------ */
 body.toppage {
-  /* icoWrap */
 }
 
 @media (max-width: 530px) {
@@ -4805,10 +3751,6 @@ body.toppage {
     height: 39px;
   }
 }
-
-/* /toppage */
-
-/* itemList ------------------------------------------------- */
 
 body#itemList .heading.xx-large.enclosingBtn {
   margin-bottom: 10px;
@@ -4893,19 +3835,6 @@ body#itemList .p-project-lists li .p-project-lists__block .sp_top_project_count 
   font-size: 11px;
 }
 
-/* / itemList */
-/* itemDetail ------------------------------------------------- */
-
-/* /itenDetail */
-/* itenDetail-mora ------------------------------------------------- */
-
-/* /itenDetail-mora */
-/* itemApply ------------------------------------------------- */
-body.itemApply {
-  /*availableCards*/
-}
-
-/* クーポン選択エリア */
 ul.coupon p {
   display: inline;
 }
@@ -4953,16 +3882,19 @@ ul.coupon input:checked + p {
   line-height: 1.42857143;
 }
 
-body.itemApply .contents .cards img {
+.contents .cards img {
   width: 100%;
   max-width: 300px;
   height: auto;
 }
 
-body.itemApply .c-section-heading {
-  display: block;
-  border: none;
-  padding: 6px 10px !important;
+.c-section-heading {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2;
+  background: #eee;
+  padding: 6px 10px;
 }
 
 body.itemApply .checkbox:before {
@@ -4975,66 +3907,63 @@ body.itemApply .checkbox:after {
   top: 60%;
 }
 
-body.itemApply .item-part {
+.item-part {
   margin: 15px 10px;
   line-height: 1.5;
-}
-
-@media (max-width: 530px) {
-  body.itemApply .item-part {
+  @media (max-width: 530px) {
     padding: 10px;
   }
 }
 
-body.itemApply .item-part a:hover,
-body.itemApply .item-part a:focus {
+.item-part a:hover,
+.item-part a:focus {
   text-decoration: none;
 }
 
-body.itemApply .item-part .telephone-area ul li {
+.item-part .telephone-area ul li {
   display: inline-block;
   margin-right: 3px;
   width: 70px;
 }
 
-body.itemApply .item-part .t-column-head__text:before {
+.item-part .t-column-head__text:before {
   background-color: #004098;
 }
 
-body.itemApply .st-table01 {
+.st-table01 {
   margin-top: 10px;
   width: 100%;
 }
 
 @media (max-width: 530px) {
-  body.itemApply .st-table01 {
+  .st-table01 {
     font-size: 12px;
   }
 }
 
-body.itemApply .st-table01 th {
+.st-table01 th {
   vertical-align: top;
   width: 30%;
   white-space: inherit;
 }
 
 @media (max-width: 530px) {
-  body.itemApply .st-table01 th {
+  .st-table01 th {
     padding: 8px;
   }
 }
 
-body.itemApply .st-table01 td {
+.st-table01 td {
   width: 70%;
 }
 
 @media (max-width: 530px) {
-  body.itemApply .st-table01 td {
+  .st-table01 td {
     padding: 8px;
   }
 }
 
-body.itemApply .st-table01 .form-control {
+.st-table01 .form-control {
   display: inline-block;
   transition:
     border-color ease-in-out 0.15s,
@@ -5053,17 +3982,9 @@ body.itemApply .st-table01 .form-control {
   line-height: 1.42857;
 }
 
-/* /itemApply */
-/* itemConfirm ------------------------------------------------- */
 body.itemConfirm .t-radio {
   padding: 0;
 }
-
-/* /itemConfirm */
-/* itemComplete ------------------------------------------------- */
-
-/* /itemComplete */
-/* mymenu ------------------------------------------------- */
 
 body.t-mymenu .subTabBox {
   border-bottom: #004098 solid 8px;
@@ -5269,15 +4190,6 @@ body.t-mymenu .subTabContent.is-active {
   padding: 0 15px 10px;
 }
 
-/* /mymenu */
-/* mymenu_update ------------------------------------------------- */
-
-/* /mymenu_update */
-/* inquiry ------------------------------------------------- */
-
-/* /inquiry*/
-/* faq ------------------------------------------------- */
-
 .t-accordion__title {
   font-weight: 500;
   font-size: 15px;
@@ -5296,20 +4208,10 @@ body.t-mymenu .subTabContent.is-active {
   color: #0085c3;
 }
 
-/* tentame-saininsyou ------------------------------------------- */
-
-/* t-wrappers ------------------------------------------------- */
 .t-support-menu_wrapper {
   padding-bottom: 40px;
 }
 
-/* t-wrappers */
-
-/* t-support------------------------------------------------------- */
-
-/* t-about------------------------------------------------------- */
-
-/* common_tools------------------------------------------------- */
 .t-column-head__text:before {
   background: #004098;
 }
@@ -5340,10 +4242,6 @@ body.t-mymenu .subTabContent.is-active {
   box-shadow: none;
 }
 
-/* /common_tools */
-
-/* Conponent
------------------------------- */
 .t-point-block {
   padding: 12px 16px;
 }
@@ -5385,16 +4283,6 @@ body.t-mymenu .subTabContent.is-active {
   font-family: sans-serif;
 }
 
-/* notice ----------------------------------------- */
-
-/* /Conponent
------------------------------- */
-
-/* ---- footer-common.css ---- */
-/* 共通フッター（シェアフルモニター）スタイル - Layout: .l-footer */
-
-/* スティッキーフッター: ページが短くてもフッターを画面最下部に表示 */
-
 .body-wrapper {
   display: flex;
   flex-direction: column;
@@ -5425,7 +4313,6 @@ footer {
   font-size: 10px;
 }
 
-/* 共通: ナビ・関連リンクのリスト */
 .l-footer__nav,
 .l-footer__related-links {
   margin: auto;
@@ -5450,7 +4337,6 @@ footer {
   text-decoration: none;
 }
 
-/* メインナビ専用 */
 .l-footer__nav {
   margin-bottom: 5px;
   padding: 0;
@@ -5479,7 +4365,6 @@ footer {
   }
 }
 
-/* 関連リンク: 2つ目と4つ目の区切り線なし */
 .l-footer__related-links-item:nth-child(2),
 .l-footer__related-links-item:nth-child(4) {
   border-right: none;
@@ -5489,7 +4374,6 @@ footer {
   }
 }
 
-/* コピーライト */
 .l-footer__copyright {
   box-sizing: border-box;
   margin-top: 10px;
@@ -5504,7 +4388,6 @@ footer {
   vertical-align: baseline;
 }
 
-/* ---- components.css ---- */
 .c-button {
   display: grid;
   place-items: center;
@@ -5519,26 +4402,22 @@ footer {
   height: 40px;
   text-align: center;
 
-  /* 「申し込む」のデザイン */
   &.c-button--orange {
     background: #f76b1f;
     color: #fff;
   }
 
-  /* 「クチコミを再投稿する」、「この商品についてのクチコミをもっと見る」のデザイン */
   &.c-button--review {
     background: #fff100;
     color: #000;
   }
 
-  /* 「入力内容確認へ」「SMS認証を行う」のデザイン */
   &.c-button--confirm,
   &.c-button--auth-tel {
     background: #1b94d3;
     color: #fff;
   }
 
-  /* 「内容を修正する」のデザイン */
   &.c-button--correct {
     border: 1px solid #1b94d3;
     background: #fff;
@@ -5573,18 +4452,13 @@ footer {
   height: auto;
 }
 
-/* ---- style.css ---- */
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
 }
 
 .fs-15 {
@@ -5603,22 +4477,11 @@ footer {
   border-right: 1px dotted #e5e5e5;
 }
 
-/* properties
----------------------------------------------------------------------------------------------------- */
 .monitor-attention__box {
+  margin-top: 16px;
   border-radius: 8px;
   background-color: #fceae0;
   padding: 16px;
-  margin-top: 16px;
-}
-
-.c-section-heading {
-  display: flex;
-  align-items: center;
-  border-top: solid 1px #e2e2e2;
-  border-bottom: solid 1px #e2e2e2;
-  background: #eee;
-  padding: 0 5px 0 10px;
 }
 
 .c-heading {
@@ -5637,10 +4500,6 @@ footer {
 
 .enq-section-heading {
   background: #fffad9 !important;
-}
-
-.select-box {
-  margin: 10px;
 }
 
 .select-area label::before {
@@ -5676,7 +4535,6 @@ footer {
   padding: 10px;
   font-size: 12px;
 
-  /* 768px以上の場合 */
   @media (width >= 768px) {
     font-size: 14px;
   }
@@ -5845,10 +4703,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   content: "";
 }
 
-/* /detail/tamesu */
-
-/* detail/tamesulist, detail/moraurist */
-
 .c-grid--row {
   margin-top: 1px;
   margin-left: 1px;
@@ -5858,10 +4712,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   margin-top: -1px;
   margin-left: -1px;
 }
-
-/* /detail/tamesulist, detail/moraurist */
-
-/* detail/cmt.html */
 
 .comment-textarea {
   border: 1px solid #bfbfbf;
@@ -5877,10 +4727,6 @@ input[type="checkbox"]:checked + .checkbox::before {
 .preview-box {
   margin: 20px 0;
 }
-
-/* /detail/cmt.html */
-
-/* detail/order_sbps ------------------------------------------------- */
 
 .p-order-confirm__page-alert {
   margin-top: 16px;
@@ -5926,11 +4772,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   text-align: center;
 }
 
-/* /detail/order_sbps */
-
-/* ---- utilities.css ---- */
-
-/* スクリーンリーダー用テキスト（視覚的に非表示） */
 .sr-only {
   position: absolute;
   clip-path: inset(50%);
@@ -5949,7 +4790,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   height: auto;
 }
 
-/* テキスト省略 */
 .u-text-ellipsis {
   display: -webkit-box;
   max-width: 100%;
@@ -5959,22 +4799,17 @@ input[type="checkbox"]:checked + .checkbox::before {
   -webkit-line-clamp: 1;
 }
 
-/* ※印のデザイン */
 .u-note {
   margin-left: 1em;
   text-indent: -1em;
 }
 
-/* 画像中央寄せ */
 .u-img-center {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* アンカーリンクの下線 */
-
-/* アンカーリンクの青文字 */
 .u-anchor-blue:link,
 .u-anchor-blue:visited,
 .u-anchor-blue:hover {
@@ -6119,7 +4954,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   font-size: 16px;
 }
 
-/* 再発送：変更先住所を登録に反映する（モック用ボタン見た目） */
 .sync-address-btn {
   cursor: pointer;
   border: 1px solid #a4a4a4;

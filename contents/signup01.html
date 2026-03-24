@@ -59,6 +59,7 @@
                   <div class="input-area">
                     <ul class="input-menu address1">
                       <li>
+                        <label for="name" class="sr-only">お名前</label>
                         <input type="text" class="fs-15" name="name" id="name" value="" placeholder="山田太郎" autocomplete="name" aria-labelledby="label-name" aria-required="true" />
                       </li>
                     </ul>
@@ -74,6 +75,7 @@
                   <div class="input-area">
                     <ul class="input-menu address1">
                       <li>
+                        <label for="kana" class="sr-only">フリガナ</label>
                         <input type="text" class="fs-15" name="kana" id="kana" value="" placeholder="ヤマダタロウ" aria-labelledby="label-kana" aria-required="true" />
                       </li>
                     </ul>
@@ -256,7 +258,6 @@
                   </div>
                 </div>
                 <!--/生年月日-->
-                <!-- メールアドレス / パスワード / ニックネーム / 紹介コード 入力欄は削除 -->
 
                 <!--郵便番号-->
                 <div class="select-area select-zipcode">
@@ -267,6 +268,7 @@
                   <div class="input-area">
                     <ul class="input-menu zipcode">
                       <li>
+                        <label for="zipcode" class="sr-only">郵便番号</label>
                         <input
                           type="text"
                           class="fs-15"
@@ -357,6 +359,7 @@
                   <div class="input-area">
                     <ul class="input-menu address1">
                       <li>
+                        <label for="address1" class="sr-only">市区町村・番地</label>
                         <input
                           type="text"
                           class="fs-15"
@@ -380,7 +383,10 @@
                   </div>
                   <div class="input-area">
                     <ul class="input-menu address2">
-                      <li><input type="text" class="fs-15" name="address2" id="address2" value="" placeholder="サンプルマンション101" aria-labelledby="label-address2" /></li>
+                      <li>
+                        <label for="address2" class="sr-only">建物名・部屋番号</label>
+                        <input type="text" class="fs-15" name="address2" id="address2" value="" placeholder="サンプルマンション101" aria-labelledby="label-address2" />
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -393,7 +399,10 @@
                   </div>
                   <div class="input-area">
                     <ul class="input-menu tel">
-                      <li><input type="tel" class="fs-15" name="tel" id="tel" value="" placeholder="090-1234-5678" autocomplete="tel" aria-labelledby="label-tel" aria-required="true" /></li>
+                      <li>
+                        <label for="tel" class="sr-only">電話番号</label>
+                        <input type="tel" class="fs-15" name="tel" id="tel" value="" placeholder="090-1234-5678" autocomplete="tel" aria-labelledby="label-tel" aria-required="true" />
+                      </li>
                     </ul>
                   </div>
                 </div>
