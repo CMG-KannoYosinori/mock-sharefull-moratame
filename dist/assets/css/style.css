@@ -3792,13 +3792,11 @@ button {
 
 .t-crosshead {
   position: relative;
-  margin-top: 10px;
+  margin-top: 32px;
   border-top: 2px solid #f76b1f;
   border-bottom: 2px solid #e2e2e2;
-  background: #f8f8f8;
-  background: linear-gradient(#fff 0, #f8f8f8 100%);
-  background: -webkit-linear-gradient(#fff 0, #f8f8f8 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+  background-color: #f8f8f8;
+  background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
   width: 100%;
   min-height: 35px;
 }
@@ -3910,9 +3908,9 @@ button {
   display: block;
   box-sizing: border-box;
   box-shadow:
-    0 1px 1px rgba(255, 255, 255, 0.3) inset,
-    0 0 0 rgba(0, 0, 0, 0.1),
-    0 1px 1px rgba(0, 0, 0, 0.1);
+    inset 0 1px 1px rgb(255 255 255 / 30%),
+    0 0 0 rgb(0 0 0 / 10%),
+    0 1px 1px rgb(0 0 0 / 10%);
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   padding: 0 10px;
@@ -3921,8 +3919,9 @@ button {
   color: #333;
   font-size: 14px;
   line-height: 2.4;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
+  width: 100%;
 
   @media (width >= 768px) {
     font-size: 16px;
@@ -5332,7 +5331,6 @@ body.t-mymenu .subTabContent.is-active {
   background: #307ee8;
   background: -webkit-gradient(linear, left top, left bottom, from(#4188e8), to(#307ee8));
   background: gradient(linear, left top, left bottom, from(#4188e8), to(#307ee8));
-  width: 60%;
   line-height: 1.2;
 }
 
@@ -5608,11 +5606,10 @@ footer {
 /* properties
 ---------------------------------------------------------------------------------------------------- */
 .monitor-attention__box {
-  margin-right: 10px;
-  margin-left: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #fceae0;
-  padding: 10px 0;
+  padding: 16px;
+  margin-top: 16px;
 }
 
 .c-section-heading {
