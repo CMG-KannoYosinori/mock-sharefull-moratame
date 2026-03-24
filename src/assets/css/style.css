@@ -156,17 +156,17 @@ td {
   font-weight: normal;
   text-align: left;
 }
+
 q {
   quotes: none;
 }
+
 q:before,
 q:after {
   content: "";
   content: none;
 }
-a img {
-  border: none;
-}
+
 details,
 footer,
 header,
@@ -2605,10 +2605,6 @@ q:after {
   content: none;
 }
 
-a img {
-  border: 0;
-}
-
 details,
 footer,
 header,
@@ -3380,7 +3376,7 @@ header {
 }
 
 #menu li a {
-  display: block;
+  display: grid;
   border-bottom: 1px solid rgb(255 255 255 / 50%);
   padding: 10px 0 10px 15px;
   color: #fff;
