@@ -79,7 +79,7 @@
                   <ul class="u-note text-sm">
                     <li class="t-text__middle">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank" class="u-anchor-blue">利用規約</a>に同意の上お申し込み下さい</li>
                   </ul>
-                  <button type="button" id="order-button" class="c-button c-button--orange mt-[8px]">申し込む</button>
+                  <button type="button" id="order-button" class="c-button c-button--orange mt-8">申し込む</button>
                 </form>
               </div>
             </div>
@@ -114,15 +114,11 @@
                     <!-- attention__box1 -->
                     <div class="monitor-contentsarea__box">
                       <div class="monitor-attention__box">
-                        <div class="t-text">
-                          <p class="t-text">
-                            <span style="font-weight: bold">【ご注意事項】</span>
-                          </p>
-                          <p class="t-text__small">
-                            ・当選者の発表は商品の発送を持って代えさせていただきます。<br />
-                            ・本企画の当選可否についてのお問い合わせはお答えできませんのでご了承下さい。
-                          </p>
-                        </div>
+                        <p class="font-bold">【ご注意事項】</p>
+                        <p class="t-text__small">
+                          ・当選者の発表は商品の発送を持って代えさせていただきます。<br />
+                          ・本企画の当選可否についてのお問い合わせはお答えできませんのでご了承下さい。
+                        </p>
                       </div>
                     </div>
                     <!-- /attention__box1 -->
@@ -135,9 +131,7 @@
                     <!--accordion-->
                     <div class="t-accordion t-border-top">
                       <dl id="faq01">
-                        <dt class="t-accordion__title js-t-accordion t-arrow_down fs_16">
-                          <font size="2">1.配送方法</font>
-                        </dt>
+                        <dt class="t-accordion__title js-t-accordion t-arrow_down fs_16">1.配送方法</dt>
                         <dd class="t-accordion__items" style="display: none">
                           <div class="t-accordion__item">
                             本商品は「普通郵便」でのお届けを予定しております。<br />
@@ -156,7 +150,7 @@
             <ul class="u-note text-sm">
               <li class="">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank" class="u-anchor-blue">利用規約</a>に同意の上お申し込み下さい</li>
             </ul>
-            <button type="button" id="order-button" class="c-button c-button--orange mb-[16px] mt-[8px]">申し込む</button>
+            <button type="button" id="order-button" class="c-button c-button--orange mb-[16px] mt-8">申し込む</button>
             <button type="button" id="review-button" class="c-button c-button--review">クチコミを投稿する</button>
             <script>
               $(function () {
@@ -173,9 +167,31 @@
     <!--  //body-wrapper -->
 
     <script type="module" src="../assets/js/main.js"></script>
-    <script type="module">
-      import { initAccordion } from "../assets/js/components/accordion-morau.js";
-      initAccordion();
+    <script>
+      /**
+       * 配送に関する注意事項のアコーディオンを開閉する。
+       * - `.js-t-accordion` クリック時に直後の要素（`dd`）を表示/非表示
+       * - 矢印用クラス `t-arrow_down` / `t-arrow_up` を切り替え
+       */
+      document.addEventListener("DOMContentLoaded", function () {
+        var triggers = document.querySelectorAll(".js-t-accordion");
+
+        triggers.forEach(function (trigger) {
+          var content = trigger.nextElementSibling;
+          if (!content) return;
+
+          trigger.addEventListener("click", function () {
+            var isHidden = getComputedStyle(content).display === "none";
+
+            // 表示状態を切り替える
+            content.style.display = isHidden ? "block" : "none";
+
+            // 矢印の向きを切り替える
+            trigger.classList.toggle("t-arrow_down", !isHidden);
+            trigger.classList.toggle("t-arrow_up", isHidden);
+          });
+        });
+      });
     </script>
   </body>
 </html>
