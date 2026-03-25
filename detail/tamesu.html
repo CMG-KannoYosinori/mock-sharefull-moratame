@@ -43,7 +43,7 @@
   <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
     <button
       class="sp-header-menu-component sp-header-menu-component-hbg"
-      id="menu_btn"
+      id="menu-btn"
       type="button"
       aria-controls="menu"
       aria-expanded="false"
@@ -57,7 +57,7 @@
       <ul>
         <!-- category -->
         <li class="menu__item">
-          <button class="menu__item__link js-menu__item__link" type="button">カテゴリ</button>
+          <button class="menu__link js-menu__link" type="button">カテゴリ</button>
           <ul class="submenu" style="display: none">
             <li class="t-sidemenu-sub-ttl">ためせる・もらえる</li>
             <li>
@@ -154,10 +154,11 @@
   <!-- accordion-menu -->
   <script>
     $(function () {
-      $('.js-menu__item__link').each(function () {
+      $('#menu .js-menu__link').each(function () {
         $(this).on('click', function () {
           $(this).toggleClass('on');
-          $('+.submenu', this).slideToggle();
+          // 連打でアニメーションがキューに積み上がるのを防ぐ（終端状態へのジャンプはしない）
+          $('+.submenu', this).stop(true, false).slideToggle();
           return false;
         });
       });
@@ -377,7 +378,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2026-03-13 20:33:22</p>
@@ -397,7 +398,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2026-02-21 01:24:51</p>
@@ -415,7 +416,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2026-01-31 11:38:07</p>
@@ -433,7 +434,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2026-01-02 23:03:43</p>
@@ -453,7 +454,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2025-12-26 00:16:07</p>
@@ -471,7 +472,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2025-12-18 22:39:36</p>
@@ -489,7 +490,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2025-12-17 12:00:46</p>
@@ -507,7 +508,7 @@
                       <div class="hb_ms_ctr">
                         <h3>
                           <span class="comment itemicon itemIcoAbs2">クチコミ</span>
-                          <img src="../assets/images/img/profile_icon.gif" alt="avatar image" width="72" height="72" />
+                          <img src="../assets/images/profile_icon.gif" alt="avatar image" width="72" height="72" />
                         </h3>
 
                         <p class="hb_ms_detail">投稿日時：2025-12-13 09:24:56</p>
