@@ -54,7 +54,7 @@
 
   </head>
 
-  <body id="pageTop" class="itemDetail itemApply">
+  <body id="pageTop" class="itemDetail item-apply">
     <div class="body-wrapper">
       
 
@@ -70,7 +70,7 @@
 <header class="p-masthead" role="banner">
   <div class="sp-header-menu" role="navigation" aria-label="メインメニュー">
     <button
-      class="sp-header-menu_component sp-header-menu_component-hbg"
+      class="sp-header-menu-component sp-header-menu-component-hbg"
       id="menu_btn"
       type="button"
       aria-controls="menu"
@@ -532,9 +532,9 @@
 
                     <li class="pt-[0.4em]">
                       <label>
-                        <input class="form-control form-control_paid-point" type="text" name="input_coupon_code" id="input_coupon_code" placeholder="クーポンコードを入力" />
+                        <input class="form-control form-control_paid-point" type="text" name="input-coupon-code" id="input-coupon-code" placeholder="クーポンコードを入力" />
                         <span id="apply_coupon_code">
-                          <input type="button" name="coupon_check" value="適用する" onclick="javascript: check_coupon();" />
+                          <input type="button" name="coupon_check" value="適用する" />
                         </span>
                       </label>
                       <span id="coupon_error_msg" class="c_red02 hidden indent-0"> エラー文言 </span>
@@ -617,63 +617,6 @@
 
     </div>
     <!-- /body-wrapper -->
-
-    <script language="JavaScript" type="text/JavaScript">
-      function check_coupon() {
-          $('input[name=coupon_take_flg]').val('1');
-          var url = 'coupon.exec.php';
-          var request = {
-              project_rand: $("#project_rand").val(),
-              coupon_code: $("#input_coupon_code").val(),
-          };
-          var params =  new URLSearchParams(request).toString();
-
-          $.post( url , {params:params} , function( data , status ) {
-              if (! data.hasOwnProperty('status')) {
-                  data = {
-                      status: '0',
-                      message: 'クーポン情報の取得に失敗しました。'
-                  }
-              }
-              if ( data.status == '0' ) {
-                  coupon_error(data);
-              } else if ( data.status == '1' ) {
-                  use_coupon(data);
-              }
-          }
-          , 'json'
-          );
-
-          return false;
-      }
-
-      function coupon_error(data){
-          $("#input_coupon").css("display", "none");
-          $("#input_coupon_radio").prop('disabled', true);
-          $('input[name=coupon_code]').eq(0).prop('checked', true);
-          $("#input_coupon_code").css({
-              "background-color":"#ffdddd",
-              "outline":"solid 1px #ff6666"
-          });
-          $("#coupon_error_msg").css("display", "block").html(data.message);
-
-      }
-      function use_coupon(data){
-          $("#coupon_error_msg").css("display", "none");
-          $("#input_coupon").css("display", "block");
-          $("#input_coupon_radio").prop('disabled', false).prop('checked', true)
-              .val($("#input_coupon_code").val());
-          $("#discount_display").text(data.coupon_name);
-          if (data.hasOwnProperty("residue")) {
-              $("#discount_display").append($("<span>", {text: "（残り" + data.residue + "回）"}));
-          }
-          $("#discount_display").append($("<em>", {text: data.message}));
-          $("#input_coupon_code").css({
-              "background-color":"initial",
-              "outline":"initial"
-          });
-      }
-    </script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
