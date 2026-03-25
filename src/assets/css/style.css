@@ -241,8 +241,9 @@ section {
 
 .contents .cards img {
   margin-right: 2px;
-  width: auto;
-  height: 30px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 .footer {
@@ -431,9 +432,15 @@ section {
 }
 
 .item-part {
+  margin: 15px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
+  line-height: 1.5;
+
+  @media (width <= 530px) {
+    padding: 10px;
+  }
 }
 
 .everyPost .lead {
@@ -447,7 +454,7 @@ section {
   padding-top: 24px;
 }
 
-.everyPost .unit .icoBar02 {
+.everyPost .unit .ico-bar-2 {
   position: absolute;
   top: 0;
   left: -24px;
@@ -524,7 +531,7 @@ form input::-moz-placeholder {
   background-color: #ffff9a;
 }
 
-.icoBar02 {
+.ico-bar-2 {
   display: block;
   padding: 0 5px;
   width: 90px;
@@ -536,11 +543,11 @@ form input::-moz-placeholder {
   text-decoration: none;
 }
 
-.icoBar02.twitter {
+.ico-bar-2.twitter {
   background-color: #0ba7e1;
 }
 
-.icoBar02.facebook {
+.ico-bar-2.facebook {
   background-color: #083eb3;
 }
 
@@ -631,8 +638,13 @@ form input::-moz-placeholder {
 }
 
 .st-table01 {
+  margin-top: 10px;
   border: 1px solid #c9c9c9;
   width: 100%;
+
+  @media (width <= 530px) {
+    font-size: 12px;
+  }
 }
 
 .st-table01 th,
@@ -641,12 +653,20 @@ form input::-moz-placeholder {
 }
 
 .st-table01 th {
+  vertical-align: top;
   background-color: #eee;
+  width: 30%;
   font-weight: bold;
+  white-space: inherit;
+
+  @media (width <= 530px) {
+    padding: 8px;
+  }
 }
 
 .st-table01 td {
   background-color: #fff;
+  width: 70%;
 }
 
 .st-table01 .bd-raw {
@@ -1391,9 +1411,17 @@ div.header nav li {
   text-shadow: none;
   -ms-box-sizing: border-box;
 }
+
+.item-part .telephone-area ul li {
+  display: inline-block;
+  margin-right: 3px;
+  width: 70px;
+}
+
 div.header nav li:first-child {
   border: none;
 }
+
 div.header nav li a.ui-link {
   display: block;
   padding: 10px 0;
@@ -1423,6 +1451,12 @@ div.block div.head {
   font-weight: 700;
   font-size: 15px;
 }
+
+.item-part a:hover,
+.item-part a:focus {
+  text-decoration: none;
+}
+
 div.block div.head a {
   padding: 0;
   color: #fff;
@@ -1582,6 +1616,12 @@ div.block div.form table th {
   padding-right: 10px;
   font-size: 13px;
   text-align: right;
+}
+
+@media (width <= 530px) {
+  .st-table01 td {
+    padding: 8px;
+  }
 }
 
 .t-table .t-table__block tbody th,
@@ -3777,9 +3817,6 @@ body.toppage {
   body.toppage .heading.xx-large.enclosingBtn {
     padding-left: 45px;
   }
-}
-
-@media (width <= 530px) {
   body.toppage .heading.xx-large .icoWrap {
     top: 3px;
     width: 46px;
@@ -3908,7 +3945,7 @@ ul.coupon input:checked + p {
   font-weight: bold;
 }
 
-#input_coupon_code {
+#input-coupon-code {
   display: inline-block;
   margin: 0.5em 0;
   border: 1px solid #ccc;
@@ -3916,13 +3953,7 @@ ul.coupon input:checked + p {
   padding: 6px 12px;
   width: auto;
   height: 34px;
-  line-height: 1.42857143;
-}
-
-.contents .cards img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  line-height: 1.4286;
 }
 
 .c-section-heading {
@@ -3934,70 +3965,46 @@ ul.coupon input:checked + p {
   padding: 6px 10px;
 }
 
-body.itemApply .checkbox:before {
+.checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  margin-top: -7px;
+  border-right: 4px solid #333;
+  border-bottom: 4px solid #333;
+  width: 7px;
+  height: 11px;
+  content: "";
+}
+
+body.item-apply .checkbox::before {
   top: 65%;
   left: 17px;
   transition: none;
 }
 
-body.itemApply .checkbox:after {
+.checkbox::after {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transition: border-color 0.2s linear;
+  margin-top: -10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  content: "";
+}
+
+body.item-apply .checkbox::after {
   top: 60%;
 }
 
-.item-part {
-  margin: 15px 10px;
-  line-height: 1.5;
-  @media (width <= 530px) {
-    padding: 10px;
-  }
-}
-
-.item-part a:hover,
-.item-part a:focus {
-  text-decoration: none;
-}
-
-.item-part .telephone-area ul li {
-  display: inline-block;
-  margin-right: 3px;
-  width: 70px;
-}
-
-.item-part .t-column-head__text:before {
+.item-part .t-column-head__text::before {
   background-color: #004098;
-}
-
-.st-table01 {
-  margin-top: 10px;
-  width: 100%;
-}
-
-@media (width <= 530px) {
-  .st-table01 {
-    font-size: 12px;
-  }
-}
-
-.st-table01 th {
-  vertical-align: top;
-  width: 30%;
-  white-space: inherit;
-}
-
-@media (width <= 530px) {
-  .st-table01 th {
-    padding: 8px;
-  }
-}
-
-.st-table01 td {
-  width: 70%;
-}
-
-@media (width <= 530px) {
-  .st-table01 td {
-    padding: 8px;
-  }
 }
 
 .st-table01 .form-control {
@@ -4008,7 +4015,6 @@ body.itemApply .checkbox:after {
   box-shadow: none;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background: #fff;
   background-image: none;
   background-color: #fff;
   padding: 6px;
@@ -4016,14 +4022,14 @@ body.itemApply .checkbox:after {
   height: 34px;
   color: #555;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.4286;
 }
 
-body.itemConfirm .t-radio {
+body.item-confirm .t-radio {
   padding: 0;
 }
 
-body.t-mymenu .subTabBox {
+body.t-mymenu .sub-tab-box {
   border-bottom: #004098 solid 8px;
   width: 100%;
   height: 50px;
@@ -4527,34 +4533,6 @@ footer {
   border-radius: 8px;
   padding: 12px 12px 2px 42px;
   font-size: 14px;
-}
-
-.checkbox::after {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transition: border-color 0.2s linear;
-  margin-top: -10px;
-  border: 1px solid #a4a4a4;
-  border-radius: 6px;
-  width: 22px;
-  height: 22px;
-  content: "";
-}
-
-.checkbox::before {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: rotate(45deg);
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  margin-top: -7px;
-  border-right: 4px solid #333;
-  border-bottom: 4px solid #333;
-  width: 7px;
-  height: 11px;
-  content: "";
 }
 
 input[type="checkbox"]:checked + .checkbox::before {
