@@ -973,8 +973,13 @@ body {
   max-width: 768px;
 }
 
-.contents * {
-  box-sizing: content-box;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
 }
 
 .badge {
@@ -4450,15 +4455,6 @@ footer {
   margin-left: auto;
   max-width: 320px;
   height: auto;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: #e5e7eb;
 }
 
 .fs-15 {
