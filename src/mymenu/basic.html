@@ -522,17 +522,17 @@
 
       // アコーディオンメニューの開閉
       $(function(){
-          $('.js-menu__link').each(function(){
+          $('.p-registration-info-edit .js-menu__link').each(function(){
               $(this).on('click',function(){
-                  $("+.submenu",this).slideToggle();
+                  $("+.submenu",this).stop(true, false).slideToggle();
                   return false;
               });
           });
       });
       $(function(){
-          $('.js-submenu__link').each(function(){
+          $('.p-registration-info-edit .js-submenu__link').each(function(){
               $(this).on('click',function(){
-                  $("+.submenu_child",this).slideToggle();
+                  $("+.submenu_child",this).stop(true, false).slideToggle();
                   return false;
               });
           });

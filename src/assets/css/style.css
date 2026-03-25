@@ -255,6 +255,7 @@ section {
 .contents {
   margin: 0 auto;
   width: 768px;
+  margin-top: 0;
 }
 
 .contents .cards img {
@@ -409,28 +410,16 @@ section {
 }
 
 .goodBtnWrap .goodBtn.moreGood {
-  background-image: url(https://image.moratame.net/img2014/icons/ico_good01.png);
+  background-image: url("../images/ico_good01.png");
 }
 
 .goodBtnWrap .goodBtn.moreGood:hover {
-  background-image: url(https://image.moratame.net/img2014/icons/ico_good01.png);
+  background-image: url("../images/ico_good01.png");
 }
 
 .goodBtnWrap .goodBtn.moreGood:active {
   transition-duration: 0s;
-  background-image: url(https://image.moratame.net/img2014/icons/ico_good02.png);
-}
-
-.goodBtnWrap *.goodBtn.moreGood {
-  background-image: url(https://image.moratame.net/img2014/icons/ico_good01-ltie8.png);
-}
-
-.goodBtnWrap *.goodBtn.moreGood:hover {
-  background-image: url(https://image.moratame.net/img2014/icons/ico_good01-ltie8.png);
-}
-
-.goodBtnWrap *.goodBtn.moreGood:active {
-  background-image: url(https://image.moratame.net/img2014/icons/ico_good02-ltie8.png);
+  background-image: url("../images/ico_good02.png");
 }
 
 .goodBtnWrap .counter {
@@ -1366,11 +1355,11 @@ div.content h2 {
 }
 
 .login {
-  background-image: url(https://www.moratame.net/s/images/common/login.png);
+  background-image: url("https://www.moratame.net/s/images/common/login.png");
 }
 
 .mymenu {
-  background-image: url(https://www.moratame.net/s/images/common/my_menu.png);
+  background-image: url("https://www.moratame.net/s/images/common/my_menu.png");
 }
 
 details,
@@ -1841,7 +1830,7 @@ footer nav ul li:nth-child(even) {
 }
 footer nav ul li:nth-child(odd) {
   margin-bottom: 0 !important;
-  background: url(https://image.moratame.net/s/cmn/2px_dot_ccc.png) repeat-y right top;
+  background: url("https://image.moratame.net/s/cmn/2px_dot_ccc.png") repeat-y right top;
   background-size: 1px 1px;
   width: 40% !important;
 }
@@ -2514,6 +2503,7 @@ div#header div#alert:after {
   border-bottom: none;
   background-image: none;
   padding: 0;
+  color: #000;
 }
 
 .p-project-lists {
@@ -2923,6 +2913,7 @@ button {
 
 .t-text {
   line-height: 1.6;
+  padding: 0;
 }
 
 .t-text em {
@@ -3491,7 +3482,7 @@ header {
 #menu .menu-close {
   display: none;
   position: absolute;
-  top: 4px;
+  top: 7px;
   left: -40px;
   cursor: pointer;
   border: none;
@@ -3508,13 +3499,13 @@ header {
   display: block;
 }
 
-#menu_btn {
+#menu-btn {
   appearance: none;
   cursor: pointer;
   box-sizing: border-box;
   margin: 0;
   border: none;
-  background: url(../images/btn-hbg.png);
+  background: url("../images/btn-hbg.png");
   background-size: contain;
   background-color: transparent;
   padding-top: 34px;
@@ -3561,7 +3552,8 @@ body.is-drawer-open {
   padding-bottom: 0;
   padding-left: 0;
 }
-#menu .menu__item .menu__item__link {
+
+#menu .menu__item .menu__link {
   display: block;
   cursor: pointer;
   margin: 0;
@@ -3577,50 +3569,45 @@ body.is-drawer-open {
   text-align: left;
 }
 
-#menu .menu__item .menu__item__link:after {
+#menu .menu__item .menu__link::after {
   margin-left: 8px;
   content: "\f13a";
   font-weight: 900;
   font-family: "Font Awesome 5 Free", sans-serif;
+  line-height: 1;
+  color: #fff;
 }
 
-#menu .menu__item .menu__item__link.on:after {
+#menu .menu__item .menu__link.on::after {
   content: "\f139";
   font-weight: 900;
 }
+
 #menu .menu__item .submenu {
   background: #fff;
 }
+
 #menu .menu__item .submenu li {
   border-bottom: 1px solid #004098;
   color: #004098;
 }
+
 #menu .menu__item .submenu li:last-child {
   border-bottom: none;
 }
+
 #menu .menu__item .submenu li.t-sidemenu-sub-ttl {
   background: #d8e4f4;
   padding: 10px 0 10px 15px;
   font-weight: bold;
 }
+
 #menu .menu__item .submenu a {
   color: #004098;
 }
 
 .select-box {
   margin: 10px;
-}
-
-.t-text {
-  padding: 0;
-}
-
-.p-masthead {
-  color: #000;
-}
-
-.contents {
-  margin-top: 0;
 }
 
 input[type="text"] {

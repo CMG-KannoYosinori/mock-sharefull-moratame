@@ -5,7 +5,7 @@ export function initHamburgerMenu() {
   const header = document.querySelector('header');
   const main = document.querySelector('main');
   const menu = document.getElementById('menu');
-  const menuBtn = document.getElementById('menu_btn');
+  const menuBtn = document.getElementById('menu-btn');
   const menuBackground = document.querySelector('.menu-background');
   const menuCloseBtn = document.getElementById('menu_close');
 
