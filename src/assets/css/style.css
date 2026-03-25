@@ -51,6 +51,15 @@ a:active {
   color: #393;
 }
 
+.c-paper-gray {
+  background-color: #f3f4f6;
+  padding: 16px;
+}
+
+.c-paper-gray .t-text:first-child {
+  margin-top: 0;
+}
+
 .blockLink {
   cursor: pointer;
 }
@@ -1119,20 +1128,7 @@ body {
 
 .p-masthead__nav li {
   position: relative;
-  width: 100%;
   text-align: center;
-}
-
-@media all and (-ms-high-contrast: none) {
-  .p-masthead__nav li {
-    width: auto;
-  }
-  .p-masthead__nav {
-  }
-  .p-masthead__nav *::-ms-backdrop,
-  .p-masthead__nav li {
-    width: 100%;
-  }
 }
 
 .p-masthead__nav a {
@@ -1607,7 +1603,7 @@ div.block div.form table {
 }
 
 .t-table .t-table__block tbody th {
-  width: 80px;
+  width: 90px;
 }
 
 div.block div.form table th {
@@ -3666,31 +3662,17 @@ input[type="text"] {
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 60px;
+  padding-right: 48px;
   padding-left: 0;
   width: 100%;
   max-width: 640px;
   height: 100%;
   font-size: 12px;
   list-style: none;
+
   @media (width >= 768px) {
+    padding-right: 60px;
     font-size: 16px;
-  }
-}
-
-.p-masthead__nav li {
-  width: 160px;
-}
-
-@media (width <= 959px) {
-  .p-masthead__nav li {
-    width: 115px;
-  }
-}
-
-@media (width <= 530px) {
-  .p-masthead__nav li {
-    width: 90px;
   }
 }
 
@@ -4241,25 +4223,10 @@ body.t-mymenu .sub-tab-content.is-active {
   box-shadow: none;
 }
 
-.t-point-block {
-  padding: 12px 16px;
-}
-
 .t-point-border {
   border-width: 0 0 0 4px;
   border-style: solid;
   border-color: #e53e3e;
-}
-
-.t-point__dt {
-  display: inline;
-  font-weight: bold;
-}
-
-@media (width <= 639px) {
-  .t-point__dt {
-    display: block;
-  }
 }
 
 .t-point__point {
