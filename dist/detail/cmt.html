@@ -287,17 +287,7 @@
               </form>
 
               <div class="t-button t-button2">
-                <input type="button" class="t-button__green t-button__smallText t-button__blue n js-show-preview" value="内容を確認する" />
-              </div>
-            </div>
-            <div class="preview-box p-[20px] bgc_gray01" id="sns_cmt_prv" style="display: none">
-              <div id="scp_inr">
-                <h2 class="lead mb-[10px]">プレビュー</h2>
-                <div class="unit" id="previewarea_tw">
-                  <p class="ico-bar-2 twitter">twitter</p>
-                  <textarea name="preview_tw" id="preview_tw" cols="30" rows="10" class="comment-textarea" readonly></textarea>
-                  <p id="cdlength1" class="text-right c_red02">あと<span id="count_tw"></span>文字入力できます。</p>
-                </div>
+                <input type="button" class="t-button__green t-button__smallText t-button__blue" value="内容を確認する" />
               </div>
             </div>
           </div>
@@ -368,25 +358,8 @@
       var photo_num = 1;
     </script>
 
-    <!-- 「内容を確認する」ボタンを押したときに、プレビュー欄を表示し、入力テキストをコピーするための処理 -->
     <script>
       window.location.hash = "anchor01";
-      document.addEventListener("DOMContentLoaded", function () {
-        var button = document.querySelector(".js-show-preview");
-        var preview = document.getElementById("sns_cmt_prv");
-        if (!button || !preview) return;
-
-        button.addEventListener("click", function (e) {
-          e.preventDefault();
-          var inputTextarea = document.getElementById("ct");
-          var previewTextarea = document.getElementById("preview_tw");
-          if (inputTextarea && previewTextarea) {
-            previewTextarea.value = inputTextarea.value;
-          }
-          preview.style.display = "block";
-          preview.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-      });
     </script>
 
     <script type="module" src="../assets/js/main.js"></script>
