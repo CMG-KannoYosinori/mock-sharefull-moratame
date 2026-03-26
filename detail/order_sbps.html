@@ -314,12 +314,12 @@
               <input type="hidden" name="ship_option" value="" />
 
               <div class="t-button" id="submit_btn">
-                <button onClick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue" id="submit_btn">申し込みを確定する</button>
+                <button onClick="javascript:return go_next();" class="t-button__green t-button__small-text t-button__blue" id="submit_btn">申し込みを確定する</button>
               </div>
               <div class="p-order-confirm__error"><span id="err_msg"></span></div>
               <div class="t-button">
                 <div class="t-arrow_left">
-                  <button class="t-button__default t-button__smallText" onClick="javascript:back()">戻る</button>
+                  <button class="t-button__default t-button__small-text" onClick="javascript:back()">戻る</button>
                 </div>
               </div>
               <input type="hidden" name="order_tmp_id" value="2131" />
@@ -482,10 +482,10 @@
           }
 
           if (paySum < 10 && paySum !== 0) {
-            submitBtnContainer.innerHTML = '<button type="button" class="t-button__default t-button__smallText t-button--disable">決済金額をご確認ください</button>';
+            submitBtnContainer.innerHTML = '<button type="button" class="t-button__default t-button__small-text t-button--disable">決済金額をご確認ください</button>';
             errMsgElement.textContent = "シェアフルポイントをご利用の場合、「合計」が1～9円となる決済ができません。0円または、10円以上になるようにシェアフルポイントのご利用数を変更してください。";
           } else {
-            submitBtnContainer.innerHTML = '<button onclick="javascript:return go_next();" class="t-button__green t-button__smallText t-button__blue">申し込みを確定する</button>';
+            submitBtnContainer.innerHTML = '<button onclick="javascript:return go_next();" class="t-button__green t-button__small-text t-button__blue">申し込みを確定する</button>';
             errMsgElement.textContent = "";
           }
         }
