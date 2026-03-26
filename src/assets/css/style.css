@@ -3336,8 +3336,9 @@ select:focus {
 .js-submenu__link::after {
   position: absolute;
   top: 50%;
-  right: 10px;
-  margin-top: -7px;
+  transform: translateY(-50%);
+  right: 8px;
+  margin-top: unset;
   content: "\f13a";
   color: #666;
   font-weight: 900;
@@ -3352,8 +3353,13 @@ select:focus {
 .js-menu__link {
   border-bottom: 1px solid #ddd;
   background: #eee;
-  padding: 10px 20px;
+  padding: 10px 32px 10px 20px;
   line-height: 1;
+}
+.p-registration-info-edit {
+  .js-menu__link {
+    line-height: 1.5;
+  }
 }
 
 .submenu {
