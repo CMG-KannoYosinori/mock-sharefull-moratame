@@ -888,7 +888,6 @@ ul.coupon li {
   background: #fafafa;
   padding: 10px 20px;
   line-height: 1;
-  text-indent: 2em;
 }
 
 .submenu {
@@ -3346,7 +3345,6 @@ select:focus {
   background: #fafafa;
   padding: 10px 20px;
   line-height: 1;
-  text-indent: 2em;
 }
 
 .submenu_child {
@@ -3905,10 +3903,6 @@ body.t-mymenu .is-active {
 
 body.t-mymenu .p-registration-info-edit {
   margin-top: 10px;
-}
-
-body.t-mymenu .js-submenu__link {
-  text-indent: 1em;
 }
 
 body.t-mymenu .js-submenu__link::after {
