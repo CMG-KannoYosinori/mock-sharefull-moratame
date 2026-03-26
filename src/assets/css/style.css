@@ -88,12 +88,17 @@ a:active {
   color: #0085c3;
 }
 
+a:active {
+  background-color: transparent;
+}
+
 .blockLink:hover a,
 .blockLink:active a {
   transition-duration: 0.5s;
   color: #393;
   text-decoration: underline;
 }
+
 input,
 label {
   cursor: pointer;
@@ -898,7 +903,7 @@ ul.coupon li {
   line-height: 1.75;
 }
 
-.submenu_child {
+.submenu-child {
   display: none;
   background: #fff;
 }
@@ -2012,6 +2017,10 @@ section h1 {
   padding: 0;
   list-style: none outside none;
   text-align: center;
+  margin: 10px auto;
+  padding: 0;
+  list-style: none outside none;
+  text-align: center;
 }
 
 .pagination li {
@@ -2152,22 +2161,32 @@ body.t-mymenu .tab-content-1 .pagination li a {
   background-color: #307ee8;
 }
 
+#menu a {
+  text-decoration: none;
+}
+
+#menu li a {
+  display: grid;
+  border-bottom: 1px solid rgb(255 255 255 / 50%);
+  padding: 10px 0 10px 15px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+#menu a:hover {
+  text-decoration: none;
+}
+
 #header nav a:link,
 #header nav a:visited,
 #header nav a:active,
 #header nav a:hover {
   color: #333;
 }
+
 div.block div.form input {
   margin: 5px 0 0;
   font-size: 18px;
-}
-
-.pagination {
-  margin: 10px auto;
-  padding: 0;
-  list-style: none outside none;
-  text-align: center;
 }
 
 .pagination li {
@@ -2239,13 +2258,15 @@ p {
   color: #fff;
 }
 
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 #list ul:last-child {
   border-bottom: 1px solid #ccc;
   padding: 0;
-}
-
-a:active {
-  background-color: transparent;
 }
 
 li:active {
@@ -3000,6 +3021,7 @@ a.t-button__green {
   border: 1px solid #b3b3b3;
   border-radius: 4px;
   height: 30px;
+  height: 31px;
 }
 
 .t-select__layout:before {
@@ -3347,7 +3369,7 @@ select:focus {
   line-height: 1;
 }
 
-.submenu_child {
+.submenu-child {
   display: none;
   background: #fff;
 }
@@ -3360,10 +3382,6 @@ select:focus {
   * .min {
     display: block;
   }
-}
-
-.t-select__layout {
-  height: 31px;
 }
 
 .sp-min {
@@ -3403,29 +3421,9 @@ header {
   height: 100%;
   font-size: 14px;
 }
-#menu a {
-  text-decoration: none;
-}
-#menu a:hover {
-  text-decoration: none;
-}
 
 #menu.open {
   transform: translate(0);
-}
-
-#menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#menu li a {
-  display: grid;
-  border-bottom: 1px solid rgb(255 255 255 / 50%);
-  padding: 10px 0 10px 15px;
-  color: #fff;
-  line-height: 1.8;
 }
 
 #menu .menu-close {
@@ -4318,27 +4316,15 @@ input[type="checkbox"]:checked + .checkbox::before {
   width: 50%;
 }
 
-.img-list {
-  margin: 5px 1px;
-}
-
 @media (width <= 1269px) {
   .review-box {
     width: 49.5%;
-  }
-
-  .img-list {
-    margin: 5px;
   }
 }
 
 @media (width <= 639px) {
   .review-box {
     width: 100%;
-  }
-
-  .img-list {
-    margin: 5px;
   }
 }
 

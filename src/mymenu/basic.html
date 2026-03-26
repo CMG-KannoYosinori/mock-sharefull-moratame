@@ -391,7 +391,7 @@
                     <div class="js-menu__link">ご家族・ご友人配送先住所（任意）</div>
                     <div class="submenu">
                       <div class="js-submenu__link">ご家族・ご友人配送先新規登録</div>
-                      <div class="submenu_child p-registration-info-edit__block">
+                      <div class="submenu-child p-registration-info-edit__block">
                         <div class="t-column-head">
                           <h4 class="t-column-head__text">氏名（漢字）</h4>
                         </div>
@@ -532,7 +532,7 @@
       $(function(){
           $('.p-registration-info-edit .js-submenu__link').each(function(){
               $(this).on('click',function(){
-                  $("+.submenu_child",this).stop(true, false).slideToggle();
+                  $("+.submenu-child",this).stop(true, false).slideToggle();
                   return false;
               });
           });
@@ -583,47 +583,6 @@
       //-->
     </script>
 
-    <style>
-      @media only screen and (max-width: 1614px) {
-        body.t-mymenu .tab-content-1 .review-box {
-          width: 50%;
-        }
-
-        .img-list {
-          margin: 5px 1px 5px;
-        }
-      }
-
-      @media only screen and (max-width: 1269px) {
-        body.t-mymenu .tab-content-1 .review-box {
-          width: 49.5%;
-        }
-
-        .img-list {
-          margin: 5px 5px 5px;
-        }
-      }
-
-      @media only screen and (max-width: 639px) {
-        body.t-mymenu .tab-content-1 .review-box {
-          width: 100%;
-        }
-
-        .img-list {
-          margin: 5px 5px 5px;
-        }
-      }
-
-      .review-line {
-        margin: 10px 0 10px;
-        border-top: 1px solid #ccc;
-        vertical-align: top;
-      }
-
-      .review-text {
-        font-size: 85%;
-      }
-    </style>
     <script type="text/javascript" src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script>
       /**
