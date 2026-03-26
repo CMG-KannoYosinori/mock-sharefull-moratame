@@ -1190,8 +1190,8 @@ footer nav ul li:nth-child(even) {
 .js-menu__link::after {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   right: 10px;
-  margin-top: -7px;
   content: "\f13a";
   color: #666;
   font-weight: 900;
@@ -3088,8 +3088,8 @@ a.t-button__green {
 .js-submenu__link::after {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   right: 10px;
-  margin-top: -7px;
   content: "\f13a";
   color: #666;
   font-weight: 900;
