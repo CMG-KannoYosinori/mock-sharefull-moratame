@@ -510,80 +510,92 @@
     </div>
     <!-- /body-wrapper -->
 
-    <script language="JavaScript" type="text/JavaScript">
-      <!--
+    <script type="text/javascript" src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
+    <script>
       function go_next() {
-          document.frm.submit();
+        document.frm.submit();
       }
 
       function go_quit() {
-          window.location.href = 'contents/quit.php';
+        window.location.href = "contents/quit.php";
       }
 
       // アコーディオンメニューの開閉
-      $(function(){
-          $('.p-registration-info-edit .js-menu__link').each(function(){
-              $(this).on('click',function(){
-                  $("+.submenu",this).stop(true, false).slideToggle();
-                  return false;
-              });
+      (function () {
+        const init = () => {
+          const root = document.querySelector(".p-registration-info-edit");
+          if (!root) return;
+
+          root.querySelectorAll(".js-menu__link").forEach((el) => {
+            el.addEventListener("click", (e) => {
+              const submenu = el.nextElementSibling; // 直後の `.submenu` を対象にする
+              if (submenu) $(submenu).stop(true, false).slideToggle();
+              e.preventDefault();
+              return false;
+            });
           });
-      });
-      $(function(){
-          $('.p-registration-info-edit .js-submenu__link').each(function(){
-              $(this).on('click',function(){
-                  $("+.submenu-child",this).stop(true, false).slideToggle();
-                  return false;
-              });
+
+          root.querySelectorAll(".js-submenu__link").forEach((el) => {
+            el.addEventListener("click", (e) => {
+              const submenuChild = el.nextElementSibling; // 直後の `.submenu-child` を対象にする
+              if (submenuChild) $(submenuChild).stop(true, false).slideToggle();
+              e.preventDefault();
+              return false;
+            });
           });
-      });
+        };
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", init);
+        } else {
+          init();
+        }
+      })();
 
       function deleteFamilyAddress(seq) {
-          if (seq > 0) {
-              var result = window.confirm("家族設定を削除しますか？");
-              if (result) {
-                  var param = {seq : seq};
-                  $.ajax({
-                      type: "POST",
-                      url: "/ajax/delete_family_address.php",
-                      data: JSON.stringify(param),
-                      dataType: "text",
+        if (seq > 0) {
+          var result = window.confirm("家族設定を削除しますか？");
+          if (result) {
+            var param = { seq: seq };
+            $.ajax({
+              type: "POST",
+              url: "/ajax/delete_family_address.php",
+              data: JSON.stringify(param),
+              dataType: "text",
 
-                      success: function(data) {
-                          window.location.reload();
-                      }
-                  });
-              }
-          } else {
-              return;
+              success: function (data) {
+                window.location.reload();
+              },
+            });
           }
+        } else {
+          return;
+        }
       }
 
       function movePage(pagenum) {
-          $("form[name='senddataform']").attr("action","/mymenu/basic.php");
-          $("form[name='senddataform'] input[name='p']").val(pagenum);
-          $("form[name='senddataform']").submit();
-          return false;
+        $("form[name='senddataform']").attr("action", "/mymenu/basic.php");
+        $("form[name='senddataform'] input[name='p']").val(pagenum);
+        $("form[name='senddataform']").submit();
+        return false;
       }
 
       function movePage2(pagenum) {
-          $("form[name='senddataform2']").attr("action","/mymenu/basic.php");
-          $("form[name='senddataform2'] input[name='p2']").val(pagenum);
-          $("form[name='senddataform2']").submit();
-          return false;
+        $("form[name='senddataform2']").attr("action", "/mymenu/basic.php");
+        $("form[name='senddataform2'] input[name='p2']").val(pagenum);
+        $("form[name='senddataform2']").submit();
+        return false;
       }
 
       function movePage3(pagenum) {
-          $("form[name='senddataform3']").attr("action","/mymenu/basic.php");
-          $("form[name='senddataform3'] input[name='rp']").val(pagenum);
-          $("form[name='senddataform3']").submit();
-          return false;
+        $("form[name='senddataform3']").attr("action", "/mymenu/basic.php");
+        $("form[name='senddataform3'] input[name='rp']").val(pagenum);
+        $("form[name='senddataform3']").submit();
+        return false;
       }
-
-      //-->
     </script>
-
-    <script type="text/javascript" src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script>
       /**
        * タブUI（メイン/サブ）を index 対応で切り替える。
@@ -634,7 +646,5 @@
         });
       })();
     </script>
-    <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
-    <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
