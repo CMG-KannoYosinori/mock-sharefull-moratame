@@ -81,16 +81,16 @@ body {
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Noto Sans JP", Meiryo, sans-serif;
 }
 
+a {
+  color: #313131;
+  text-decoration: none;
+}
+
 footer nav ul li a {
   display: block;
   vertical-align: top;
   padding: 5px;
   padding: 5px 5px 2px;
-}
-
-a {
-  color: #313131;
-  text-decoration: none;
 }
 
 a:hover,
@@ -487,7 +487,7 @@ footer nav ul {
   width: 70px;
 }
 
-.good-btn-wrap .goodBtn {
+.good-btn-wrap .good-btn {
   display: block;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -495,15 +495,15 @@ footer nav ul {
   line-height: 31px;
 }
 
-.good-btn-wrap .goodBtn.moreGood {
+.good-btn-wrap .good-btn.good-btn--more {
   background-image: url("../images/ico_good01.png");
 }
 
-.good-btn-wrap .goodBtn.moreGood:hover {
+.good-btn-wrap .good-btn.good-btn--more:hover {
   background-image: url("../images/ico_good01.png");
 }
 
-.good-btn-wrap .goodBtn.moreGood:active {
+.good-btn-wrap .good-btn.good-btn--more:active {
   transition-duration: 0s;
   background-image: url("../images/ico_good02.png");
 }
