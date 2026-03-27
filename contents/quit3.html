@@ -14,7 +14,7 @@
 <meta name="description" content="主婦に嬉しい食品・日用品がもらえる・ためせるお試しサイト！お得に商品が試せて、更にシェアフルポイントを貯めることもできます。">
 <meta name="keywords" content="シェアフルモニター,シェアフルポイント,プレゼント,試供品,無料,サンプリング">
 
-<title>シェアフルモニター | 再発送手続き</title>
+<title>シェアフルモニター | 再発送依頼完了</title>
 
 <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/style.css">
 <link rel="stylesheet" href="/mock-sharefull-moratame/assets/css/utilities.css">
@@ -174,107 +174,11 @@
 </header>
 <!-- //p-masthead -->
 
-      <main aria-labelledby="redelivery-heading">
+      <main aria-labelledby="redelivery-complete-heading">
         <div class="l-container">
-          <h1 id="redelivery-heading" class="c-heading">再発送手続き</h1>
-          <div class="p-registration-info-edit__block">
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">伝票番号</h4>
-            </div>
-            <p class="t-form__value">651129813111</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">商品名</h4>
-            </div>
-            <p class="t-form__value">再発送画面表示用</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">再配達理由</h4>
-            </div>
-            <p class="t-form__value">長期不在</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">お名前</h4>
-            </div>
-            <p class="t-form__value">岩井　貴寛</p>
-            <div class="t-column-head">
-              <h4 class="t-column-head__text">配達先</h4>
-            </div>
-            <p class="t-form__value">〒134-0084</p>
-            <p class="t-form__value">東京都江戸川区東葛西8-32a</p>
-            <p class="t-form__value">TEL:03-5486-3530</p>
-            <form action="redelivery/complete.php" method="post" id="frm" aria-label="再発送手続きフォーム">
-              <input type="hidden" name="redelivery_id" value="22" />
-              <input type="hidden" name="rand" value="c96f1ec2af8b2caf7682c897819cf5a9" />
-              <div class="select-area mt-8">
-                <div class="form-ttl">
-                  <h2 class="element-ttl" id="label-address-change">お届け先</h2>
-                </div>
-                <div class="input-area">
-                  <ul class="radio-menu" role="radiogroup" aria-labelledby="label-address-change">
-                    <li>
-                      <input type="radio" id="address_change_0" name="address_change" value="0" checked />
-                      <label for="address_change_0">上記の住所で再発送依頼する</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="address_change_1" name="address_change" value="1" />
-                      <label for="address_change_1">お届け先を変更する</label>
-                    </li>
-                  </ul>
-                </div>
-                <!-- NOTE: `#change_form` の表示/非表示は下部の script（setForm/initAddressChange）で制御しています。初期状態を確実に非表示にするため `style="display: none"` は削除しないでください。 -->
-                <div id="change_form" class="bg-gray-100 px-4 py-4 rounded-lg" style="display: none">
-                  <p class="mt-[20px]">下記に再配達先住所を入力してください。</p>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">お名前</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="name" type="name" id="name" value="岩井　貴寛" />
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">郵便番号（&#8251;ハイフンなしでご入力ください）</h4>
-                  </div>
-                  <ul class="t-button__group">
-                    <li>
-                      <div class="t-form__input">
-                        <input type="text" name="zip" id="zip" size="10" maxlength="7" placeholder="0000000" value="" onKeyUp="AjaxZip3.zip2addr(this,'','addr1','addr2');" />
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">都道府県</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input type="text" name="addr1" size="20" value="" placeholder="都道府県" />
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">市区町村</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="addr2" type="text" id="addr2" value="" maxlength="32" placeholder="市区町村" />
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">番地</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="house_number" type="text" id="house_number" value="" maxlength="32" placeholder="番地" />
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">マンション/建物名（&#8251;部屋番号の入力忘れにご注意ください。）</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="addr3" type="text" id="addr3" value="" maxlength="32" placeholder="マンション/建物名" />
-                  </div>
-                  <div class="t-column-head">
-                    <h4 class="t-column-head__text">電話番号（&#8251;ハイフンなしでご入力ください）</h4>
-                  </div>
-                  <div class="t-form__input">
-                    <input name="tel" type="text" id="tel" value="0354863530" maxlength="32" placeholder="00000000000" />
-                  </div>
-                  <div class="mt-4 text-center">
-                    <button type="button" class="sync-address-btn">変更先住所を登録情報にも反映する</button>
-                  </div>
-                </div>
-              </div>
-              <input type="submit" value="再発送依頼する" name="submit" class="t-button__green t-button__small-text t-button__blue" />
-            </form>
+          <h1 id="redelivery-complete-heading" class="mt-8 text-center">登録解除手続きが完了致しました。</h1>
+          <div class="t-button">
+            <button id="" class="t-button__green t-button__small-text t-button__blue">シェアフルモニタートップへ</button>
           </div>
         </div>
       </main>
@@ -326,31 +230,7 @@
 </p>
 
     </div>
-    <!-- /body-wrapper -->
 
-    <script>
-      (function () {
-        function setForm() {
-          var checked = document.querySelector('input[name="address_change"]:checked');
-          var changeForm = document.getElementById("change_form");
-          if (!changeForm) return;
-          changeForm.style.display = checked && checked.value === "1" ? "block" : "none";
-        }
-        function initAddressChange() {
-          setForm();
-          var inputs = document.querySelectorAll('input[name="address_change"]');
-          inputs.forEach(function (input) {
-            input.addEventListener("change", setForm);
-          });
-        }
-        if (document.readyState === "loading") {
-          document.addEventListener("DOMContentLoaded", initAddressChange);
-        } else {
-          initAddressChange();
-        }
-      })();
-    </script>
-    <script src="../assets/vendor/ajaxzip3/ajaxzip3.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

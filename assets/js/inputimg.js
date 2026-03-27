@@ -1,9 +1,9 @@
 $(function () {
     $("input[type='checkbox']").change(function(){
         if($(this).is(":checked")){
-            $(this).parent().addClass("c-on");
+            $(this).parent().addClass("c_on");
         }else{
-            $(this).parent().removeClass("c-on");
+            $(this).parent().removeClass("c_on");
         }
     });
     $("input[type='radio']").change(function(){
@@ -14,7 +14,7 @@ $(function () {
             // var clss = $(radio_obj).parent().attr("class");
             // var cls = clss.split(" ");
             // var c = "."+cls[0];
-            var set_c = "c-on2";
+            var set_c = "c_on2";
             if($(radio_obj).is(":checked")){
                 // $(c).removeClass(set_c);
                 $(this).parent().addClass(set_c);
