@@ -538,13 +538,13 @@ footer nav ul {
   padding: 2px 0;
 }
 
-.goodBtnWrap {
+.good-btn-wrap {
   position: relative;
   padding-right: 30px;
   width: 70px;
 }
 
-.goodBtnWrap .goodBtn {
+.good-btn-wrap .goodBtn {
   display: block;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -552,20 +552,20 @@ footer nav ul {
   line-height: 31px;
 }
 
-.goodBtnWrap .goodBtn.moreGood {
+.good-btn-wrap .goodBtn.moreGood {
   background-image: url("../images/ico_good01.png");
 }
 
-.goodBtnWrap .goodBtn.moreGood:hover {
+.good-btn-wrap .goodBtn.moreGood:hover {
   background-image: url("../images/ico_good01.png");
 }
 
-.goodBtnWrap .goodBtn.moreGood:active {
+.good-btn-wrap .goodBtn.moreGood:active {
   transition-duration: 0s;
   background-image: url("../images/ico_good02.png");
 }
 
-.goodBtnWrap .counter {
+.good-btn-wrap .counter {
   position: absolute;
   top: 50%;
   left: 73px;
@@ -3703,9 +3703,12 @@ body.t-mymenu .sub-tab-content.is-active {
 }
 
 .hb-ms-scedule {
-  display: flex;
-  flex: 0 1 auto;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 16px;
+
+  @media (width >= 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .hb-ms-scedule .schedule-box .userinfo-box {
@@ -4037,22 +4040,6 @@ input[type="checkbox"]:checked + .checkbox::before {
 
 .cost-em {
   color: #f76b1f;
-}
-
-.review-box {
-  width: 50%;
-}
-
-@media (width <= 1269px) {
-  .review-box {
-    width: 49.5%;
-  }
-}
-
-@media (width <= 639px) {
-  .review-box {
-    width: 100%;
-  }
 }
 
 .review-line {
