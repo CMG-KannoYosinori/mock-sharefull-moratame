@@ -3892,38 +3892,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   white-space: nowrap;
 }
 
-.u-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.u-text-ellipsis {
-  display: -webkit-box;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-
-.u-note {
-  margin-left: 1em;
-  text-indent: -1em;
-}
-
-.u-img-center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.u-anchor-blue:link,
-.u-anchor-blue:visited,
-.u-anchor-blue:hover {
-  color: #0085c3;
-}
-
 .c-section-heading__title {
   display: flex;
   flex-grow: 1;
@@ -4075,4 +4043,40 @@ input[type="checkbox"]:checked + .checkbox::before {
 
 .sync-address-btn:hover {
   background: #e8e8e8;
+}
+
+.u-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.u-text-ellipsis {
+  display: -webkit-box;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.u-note {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+.u-img-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.u-anchor-blue:link,
+.u-anchor-blue:visited,
+.u-anchor-blue:hover {
+  color: #0085c3;
+}
+
+.u-text-justify {
+  text-align: justify;
 }
