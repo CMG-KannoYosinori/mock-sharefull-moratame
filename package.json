@@ -21,6 +21,7 @@
     "purge:style": "purgecss --css 'src/assets/css/**/!(*utilities*).css' --content 'src/**/*.html' 'src/**/*.liquid' 'src/**/*.js' --output src/assets/css",
     "style:sort": "postcss src/assets/css/style.css --replace",
     "lint:css": "stylelint 'src/assets/css/**/*.css' --ignore-pattern 'src/assets/css/utilities.css'",
+    "lint:css:fix": "stylelint 'src/assets/css/**/*.css' --ignore-pattern 'src/assets/css/utilities.css' --fix",
     "build:css": "postcss src/tailwind/tailwind.css -o src/assets/css/utilities.css"
   },
   "devDependencies": {
