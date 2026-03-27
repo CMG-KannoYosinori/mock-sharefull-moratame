@@ -1,14 +1,57 @@
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(html, body, h1, h2, h3, h4, p, figure, blockquote, dl, dd) {
+  margin: 0;
+}
+
+:where(ul, ol) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:where(caption, th, td) {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+}
+
+:where(img, picture, svg, video, canvas) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(fieldset) {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+:where(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+
+:where(button, label) {
+  cursor: pointer;
 }
 
 html {
-  font-size: 1em;
+  background-color: #fff;
+  color: #313131;
+  font-size: 100%;
   line-height: 1.4;
+  text-size-adjust: 100%;
 }
 
 ::selection {
@@ -25,37 +68,17 @@ hr {
   height: 1px;
 }
 
-img {
-  vertical-align: middle;
-}
-
-fieldset {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
 textarea {
   resize: vertical;
 }
 
-html {
-  background-color: #fff;
-  color: #313131;
-}
-
 body {
   position: relative;
-  background: #fff;
   overflow-x: hidden;
+  background: #fff;
   color: #333;
   line-height: 1.5;
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Noto Sans JP", Meiryo, sans-serif;
-}
-
-a {
-  color: #313131;
-  text-decoration: none;
 }
 
 footer nav ul li a {
@@ -63,6 +86,11 @@ footer nav ul li a {
   vertical-align: top;
   padding: 5px;
   padding: 5px 5px 2px;
+}
+
+a {
+  color: #313131;
+  text-decoration: none;
 }
 
 a:hover,
@@ -211,108 +239,6 @@ div.menu a {
   transition-duration: 0.5s;
   color: #393;
   text-decoration: underline;
-}
-
-input,
-label {
-  cursor: pointer;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-address,
-code,
-del,
-em,
-img,
-q,
-s,
-small,
-sub,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-details,
-embed,
-footer,
-header,
-menu,
-nav,
-section {
-  vertical-align: baseline;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  font: inherit;
-  font-size: 100%;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption,
-th,
-td {
-  vertical-align: middle;
-  font-weight: normal;
-  text-align: left;
-}
-
-q {
-  quotes: none;
-}
-
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-details,
-footer,
-header,
-main,
-menu,
-nav,
-section {
-  display: block;
 }
 
 .about .container {
@@ -551,7 +477,7 @@ footer nav ul {
   max-width: 960px;
 }
 
-.btnSquare01wrap {
+.btn-square-01-wrap {
   padding: 2px 0;
 }
 
