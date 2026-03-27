@@ -47,11 +47,7 @@
 }
 
 html {
-  background-color: #fff;
-  color: #313131;
-  font-size: 100%;
-  line-height: 1.4;
-  text-size-adjust: 100%;
+  line-height: 1.5;
 }
 
 ::selection {
@@ -77,7 +73,7 @@ body {
   overflow-x: hidden;
   background: #fff;
   color: #333;
-  line-height: 1.5;
+  line-height: inherit;
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Noto Sans JP", Meiryo, sans-serif;
 }
 
