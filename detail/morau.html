@@ -297,7 +297,7 @@
                   <!--accordion-->
                   <div class="t-accordion t-border-top">
                     <dl id="faq01">
-                      <dt class="t-accordion__title js-t-accordion t-arrow_down fs_16">1.配送方法</dt>
+                      <dt class="t-accordion__title js-t-accordion t-arrow-down fs_16">1.配送方法</dt>
                       <dd class="t-accordion__items" style="display: none">
                         <div class="t-accordion__item">
                           本商品は「普通郵便」でのお届けを予定しております。<br />
@@ -382,7 +382,7 @@
       /**
        * 配送に関する注意事項のアコーディオンを開閉する。
        * - `.js-t-accordion` クリック時に直後の要素（`dd`）を表示/非表示
-       * - 矢印用クラス `t-arrow_down` / `t-arrow_up` を切り替え
+       * - 矢印用クラス `t-arrow-down` / `t-arrow-up` を切り替え
        */
       document.addEventListener("DOMContentLoaded", function () {
         var triggers = document.querySelectorAll(".js-t-accordion");
@@ -398,8 +398,8 @@
             content.style.display = isHidden ? "block" : "none";
 
             // 矢印の向きを切り替える
-            trigger.classList.toggle("t-arrow_down", !isHidden);
-            trigger.classList.toggle("t-arrow_up", isHidden);
+            trigger.classList.toggle("t-arrow-down", !isHidden);
+            trigger.classList.toggle("t-arrow-up", isHidden);
           });
         });
       });
