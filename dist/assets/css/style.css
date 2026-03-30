@@ -4069,9 +4069,14 @@ input[type="checkbox"]:checked + .checkbox::before {
   -webkit-line-clamp: 1;
 }
 
-.u-note {
+.u-indent {
   margin-left: 1em;
   text-indent: -1em;
+}
+
+.u-indent-2 {
+  margin-left: 1.4em;
+  text-indent: -1.4em;
 }
 
 .u-img-center {
