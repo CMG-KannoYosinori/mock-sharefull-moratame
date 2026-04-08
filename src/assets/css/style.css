@@ -2861,7 +2861,7 @@ header {
   transform: translate(250px);
   z-index: 10;
   transition: transform 0.3s ease-in-out;
-  background-color: #004098;
+  background-color: #3cabad;
   width: 100%;
   max-width: 250px;
   height: 100%;
@@ -2893,25 +2893,55 @@ header {
 }
 
 #menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   appearance: none;
   cursor: pointer;
   box-sizing: border-box;
   margin: 0;
   border: none;
-  background: url("../images/btn-hbg.png");
-  background-size: contain;
-  background-color: transparent;
-  padding-top: 34px;
-  padding-right: 0;
-  padding-left: 0;
+  background-color: #3cabad;
   width: 48px;
   height: 51px;
   color: #fff;
   font-size: 10px;
   text-align: center;
 
+  .menu-btn__icon {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    @media (width >= 768px) {
+      gap: 6px;
+    }
+  }
+
+  .menu-btn__bar {
+    display: block;
+    flex-shrink: 0;
+    border-radius: 9999px;
+    background-color: #fff;
+    width: 24px;
+    height: 2px;
+
+    @media (width >= 768px) {
+      width: 30px;
+      height: 3px;
+    }
+  }
+
+  .menu-btn__label {
+    display: block;
+    line-height: 1;
+  }
+
   @media (width >= 768px) {
-    padding-top: 36px;
     width: 58px;
     height: 62px;
   }
@@ -2981,8 +3011,8 @@ body.is-drawer-open {
 }
 
 #menu .menu__item .submenu li {
-  border-bottom: 1px solid #004098;
-  color: #004098;
+  border-bottom: 1px solid #3cabad;
+  color: #000;
 }
 
 #menu .menu__item .submenu li:last-child {
@@ -2990,13 +3020,13 @@ body.is-drawer-open {
 }
 
 #menu .menu__item .submenu li.t-sidemenu-sub-ttl {
-  background: #d8e4f4;
+  background: #d8f4f4;
   padding: 10px 0 10px 15px;
   font-weight: bold;
 }
 
 #menu .menu__item .submenu a {
-  color: #004098;
+  color: #000;
 }
 
 .select-box {
@@ -3046,11 +3076,11 @@ input[type="text"] {
 }
 
 .p-masthead__nav-item {
-  color: #004098;
+  color: #000;
   font-weight: bold;
 
   &.is-active {
-    border-bottom: 3px solid #004098;
+    border-bottom: 3px solid #3cabad;
   }
 }
 
@@ -3272,15 +3302,15 @@ body.t-mymenu :is(.p-mymenu-main-tab, .p-mymenu-sub-tab) {
 
 body.t-mymenu .p-mymenu-main-tab__item {
   cursor: pointer;
-  border: 3px solid #004098;
-  border-bottom: 8px solid #004098;
+  border: 3px solid #3cabad;
+  border-bottom: 8px solid #3cabad;
   border-radius: 0;
   background-color: #fff;
   padding: 10px;
   padding: 0;
   width: 50%;
   height: 100%;
-  color: #004098;
+  color: #000;
   font-weight: 500;
   font-size: 18px;
   line-height: 38px;
@@ -3301,14 +3331,14 @@ body.t-mymenu .p-mymenu-main-tab__item:last-child {
 
 body.t-mymenu .p-mymenu-sub-tab__item {
   cursor: pointer;
-  border: #004098 solid 3px;
-  border-bottom: #004098 solid 8px;
+  border: #3cabad solid 3px;
+  border-bottom: #3cabad solid 8px;
   border-radius: 0;
   background-color: #fff;
   padding: 2px 0 8px;
   width: 50%;
   height: 50px;
-  color: #004098;
+  color: #000;
   font-size: 15px;
   line-height: 36px;
 }
@@ -3322,13 +3352,13 @@ body.t-mymenu .p-mymenu-sub-tab__item {
 }
 
 body.t-mymenu .p-mymenu-sub-tab__item:last-child {
-  border-left: #004098 solid 3px;
+  border-left: #3cabad solid 3px;
 }
 
 body.t-mymenu .p-mymenu-main-tab__item.is-active,
 body.t-mymenu .p-mymenu-sub-tab__item.is-active {
-  background-color: #004098 !important;
-  color: #fff !important;
+  background-color: #3cabad;
+  color: #fff;
 }
 
 body.t-mymenu .tab-content {
@@ -3507,7 +3537,7 @@ footer {
 }
 
 .l-footer {
-  background: #004098;
+  background: #3cabad;
   width: 100%;
   color: #fff;
   font-size: 10px;
@@ -3571,7 +3601,7 @@ footer {
 .l-footer__copyright {
   box-sizing: border-box;
   margin-top: 10px;
-  background: #002d6b;
+  background: #207b7d;
   padding-top: 8px;
   padding-bottom: 10px;
   height: 28px;

@@ -137,9 +137,6 @@
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse))
 }
-.break-all {
-    word-break: break-all
-}
 .rounded {
     border-radius: 0.25rem
 }
@@ -229,10 +226,6 @@
 .text-gray-700 {
     --tw-text-opacity: 1;
     color: rgb(55 65 81 / var(--tw-text-opacity, 1))
-}
-.text-red-500 {
-    --tw-text-opacity: 1;
-    color: rgb(239 68 68 / var(--tw-text-opacity, 1))
 }
 .underline {
     text-decoration-line: underline
