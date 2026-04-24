@@ -25,7 +25,7 @@
   text-align: left;
 }
 
-:where(img, picture, svg) {
+:where(img, picture) {
   display: block;
   max-width: 100%;
   height: auto;
@@ -639,11 +639,6 @@ form input::placeholder {
   height: 36px;
 }
 
-.heading.small {
-  font-weight: bold;
-  font-size: 16px;
-}
-
 .heading.active {
   background-color: #ffff9a;
 }
@@ -675,10 +670,6 @@ form input::placeholder {
 
 .ico-bar-06.pet {
   background-color: #d45b07;
-}
-
-.ico-bar-06.report {
-  background-color: #ff7f0e;
 }
 
 .ico-bar-06.repeat {
@@ -1077,10 +1068,6 @@ footer nav ul li:nth-child(even) {
   background-color: #d45b07;
 }
 
-.badge.report {
-  background-color: #ff7f0e;
-}
-
 .badge.already {
   background-color: #919191;
 }
@@ -1240,10 +1227,6 @@ footer nav ul li:nth-child(even) {
   border-color: #e5e7eb;
 }
 
-.box {
-  position: relative;
-}
-
 .p-masthead__nav a:hover,
 .p-masthead__nav a:active {
   border-bottom: 3px solid #e52c06;
@@ -1262,11 +1245,6 @@ footer nav ul li:nth-child(even) {
 
 body.t-mymenu .tab-content-1 .container {
   width: 100%;
-}
-
-.ico {
-  display: inline-block;
-  background-repeat: no-repeat;
 }
 
 .c-label-2 {
@@ -1341,11 +1319,6 @@ textarea.textarea:focus {
   font-size: 85%;
 }
 
-.small {
-  font-weight: 400;
-  font-size: 12px;
-}
-
 div.page,
 div.header,
 div.content,
@@ -1355,12 +1328,6 @@ div.footer {
   padding: 0;
   overflow: hidden;
   color: #000;
-}
-
-.clear {
-  clear: both;
-  margin: 0;
-  padding: 0;
 }
 
 .p-project-lists__thumbnail-wrap h2 {
@@ -1409,7 +1376,7 @@ div.content h2 {
   background-image: url("https://www.moratame.net/s/images/common/my_menu.png");
 }
 
-details,
+
 footer,
 header,
 hr,
@@ -1472,17 +1439,6 @@ div.block div.head a {
   text-decoration: none;
 }
 
-div.block div.body {
-  margin: 0 1px;
-  border: 0;
-  border-radius: 0;
-  padding-bottom: 10px;
-}
-
-div.block div.body ul {
-  margin: 0;
-}
-
 .error {
   margin: 10px 0;
   box-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
@@ -1535,11 +1491,6 @@ div.block div.contents {
 
 div.block div.form {
   margin: 5px 15px;
-}
-
-div.block div.form .small {
-  font-weight: 400;
-  font-size: 10px;
 }
 
 div.block div.form ul {
@@ -2432,11 +2383,6 @@ button {
 
 .t-arrow-down {
   position: relative;
-}
-
-#browser,
-.browser {
-  display: none;
 }
 
 .t-head {

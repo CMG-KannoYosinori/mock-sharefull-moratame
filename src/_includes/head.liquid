@@ -45,11 +45,10 @@
 <title>{{ page_title }}</title>
 
 <link rel="stylesheet" href="{{ asset_base }}assets/css/style.css">
-<link rel="stylesheet" href="{{ asset_base }}assets/css/utilities.css">
 <link rel="stylesheet" href="{{ asset_base }}assets/vendor/fontawesome/css/all.css">
+{{ head_extra }}
+<link rel="stylesheet" href="{{ asset_base }}assets/css/utilities.css">
 <script src="{{ asset_base }}assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 {% if page_is_login_contents %}
   <script src="{{ asset_base }}assets/js/inputimg.js"></script>
 {% endif %}
-
-{{ head_extra }}

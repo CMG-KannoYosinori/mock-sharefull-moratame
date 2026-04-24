@@ -1,20 +1,9 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_title = 'シェアフルモニター | 会員情報入力 基本情報入力' %} {% assign page_is_login_contents = true %} {% capture head_extra %}
-    <!-- 利用規約モーダル -->
-    <link rel="stylesheet" href="../assets/vendor/colorbox/colorbox.css" />
-    <script src="../assets/vendor/colorbox/jquery.colorbox.js" charset="UTF-8"></script>
-    <!-- /利用規約モーダル -->
-    {% endcapture %} {% include 'head' %}
+    {% assign page_title = 'シェアフルモニター | 会員情報入力 基本情報入力' %} {% assign page_is_login_contents = true %} {% capture head_extra %} {% endcapture %} {% include 'head' %}
   </head>
   <body id="pageTop">
-    <!-- 利用規約モーダル -->
-    <div id="modal_wd">
-      <div class="md_background"></div>
-      <div class="md_container"></div>
-    </div>
-    <!-- /利用規約モーダル -->
     <div class="page" id="registration-page">
       <div class="body-wrapper is-no-navbar">
         <main id="contente-top" class="content">
@@ -444,7 +433,8 @@
 
                 <!-- termsOfUe -->
                 <div class="submit-area">
-                  <a class="iframe c-blue" href="../contents/step01_guide.html" aria-label="利用規約（別ウィンドウで開きます）">利用規約</a>に同意のうえ<br />「入力内容確認へ」を押してください。
+                  <a class="c-blue" href="../contents/step01_guide.html" target="_blank" rel="noopener noreferrer" aria-label="利用規約（別ウィンドウで開きます）">利用規約</a
+                  >に同意のうえ<br />「入力内容確認へ」を押してください。
                 </div>
                 <button type="submit" rel="external" class="c-button c-button--confirm">入力内容確認へ</button>
                 <!-- //termsOfUe -->
@@ -458,16 +448,4 @@
 
     <script type="module" src="../assets/js/main.js"></script>
   </body>
-  <!--モーダル colorbox-->
-  <script>
-    $(function () {
-      $(".iframe").colorbox({
-        iframe: true,
-        width: "90%",
-        height: "80%",
-        opacity: 0.7,
-      });
-    });
-  </script>
-  <!--/モーダル colorbox-->
 </html>
