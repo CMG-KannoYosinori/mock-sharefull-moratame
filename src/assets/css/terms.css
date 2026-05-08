@@ -34,26 +34,6 @@ li:active {
   text-align: justify;
 }
 
-.p-terms h3 {
-  margin-top: 2em;
-  border-bottom: 1px dashed #313131;
-  border-left: 5px solid #8cbc00;
-  background-color: #f3f3f3;
-  padding-right: 15px;
-  padding-left: 10px;
-  font-size: 21px;
-}
-
-@media (width <= 639px) {
-  .p-terms h3 {
-    font-size: 16px;
-  }
-}
-
-.p-terms h3 + div {
-  margin-top: 32px;
-}
-
 .p-terms h4 {
   margin-top: 1em;
 }
@@ -64,90 +44,50 @@ li:active {
   overflow-wrap: anywhere;
 }
 
-.p-terms ul,
-.p-terms li {
-  list-style: none;
-}
-
 .p-terms li li {
   margin-top: 1ex;
 }
 
-.p-terms__ti {
-  margin-left: 2.2em;
-  text-indent: -1.4em;
-}
+/* new */
 
-@media (width <= 639px) {
-  .p-terms__ti {
-    margin-left: 0;
-    text-indent: 0;
+.p-terms__chapter-title {
+  margin-top: 2em;
+  margin-bottom: 32px;
+  border-bottom: 1px dashed #313131;
+  border-left: 5px solid #8cbc00;
+  background-color: #f3f3f3;
+  padding-right: 15px;
+  padding-left: 10px;
+  font-size: 16px;
+
+  @media (width >= 640px) {
+    font-size: 21px;
   }
 }
 
-.p-terms__ti--0 {
-  margin-left: 0;
-  text-indent: 0;
-}
-
-.p-terms__ti--disc {
+.p-terms__clause-title {
+  margin-left: 1.2em;
   text-indent: -1.2em;
 }
 
-@media (width <= 639px) {
-  .p-terms__ti--disc {
-    text-indent: 0;
-  }
+.p-terms__chapter-lead {
+  margin-bottom: 1em;
 }
 
-.p-terms__ti--decimal--dot {
-  text-indent: -1.4em;
+.p-terms__clause-body {
+  margin-left: 1.6em;
 }
 
-@media (width <= 639px) {
-  .p-terms__ti--decimal--dot {
-    text-indent: 0;
-  }
+.p-terms__clause-list {
+  margin-left: 1.6em;
 }
 
-.p-terms__ti--decimal--dot--double {
-  text-indent: -2.2em;
+.p-terms__clause-list-item {
+  list-style: disc;
 }
 
-@media (width <= 639px) {
-  .p-terms__ti--decimal--dot--double {
-    text-indent: 0;
-  }
-}
-
-.p-terms__ti--decimal--brackets {
-  text-indent: -2em;
-}
-
-@media (width <= 639px) {
-  .p-terms__ti--decimal--brackets {
-    text-indent: 0;
-  }
-}
-
-.p-terms__ti--decimal--brackets--double {
-  text-indent: -2.6em;
-}
-
-@media (width <= 639px) {
-  .p-terms__ti--decimal--brackets--double {
-    text-indent: 0;
-  }
-}
-
-.p-terms__ti--kana-brackets {
-  text-indent: -2.2em;
-}
-
-@media (width <= 639px) {
-  .p-terms__ti--kana-brackets {
-    text-indent: 0;
-  }
+ol.p-terms__clause-list .p-terms__clause-list-item {
+  list-style: decimal;
 }
 
 .p-terms__date-revision {
