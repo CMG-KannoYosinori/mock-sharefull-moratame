@@ -30,6 +30,9 @@
     margin-right: auto;
     margin-left: auto
 }
+.-ml-\[-0\.6em\] {
+    margin-left: 0.6em
+}
 .mb-4 {
     margin-bottom: 1rem
 }
@@ -54,11 +57,11 @@
 .mb-\[8px\] {
     margin-bottom: 8px
 }
-.ml-\[-0\.6em\] {
-    margin-left: -0.6em
-}
 .mr-2 {
     margin-right: 0.5rem
+}
+.mt-2 {
+    margin-top: 0.5rem
 }
 .mt-4 {
     margin-top: 1rem
@@ -83,9 +86,6 @@
 }
 .mt-\[8px\] {
     margin-top: 8px
-}
-.-ml-\[-0\.6em\] {
-    margin-left: 0.6em
 }
 .block {
     display: block
@@ -195,9 +195,6 @@
 }
 .indent-\[-0\.6em\] {
     text-indent: -0.6em
-}
-.-indent-\[-0\.6em\] {
-    text-indent: 0.6em
 }
 .text-\[12px\] {
     font-size: 12px
