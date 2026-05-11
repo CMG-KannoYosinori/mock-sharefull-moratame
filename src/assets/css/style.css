@@ -1514,21 +1514,6 @@ div.block div.form div.button {
   color: #000;
 }
 
-.new-signup-input .input-menu.name-row {
-  display: flex;
-  gap: 8px;
-  width: 89%;
-}
-
-.new-signup-input .input-menu.name-row > li {
-  flex: 1;
-  min-width: 0;
-}
-
-.new-signup-input .input-menu.name-row li input {
-  width: 100%;
-}
-
 .new-signup-input .password li input {
   box-shadow: none;
   border: 1px solid #d2d2d2;
@@ -1749,6 +1734,21 @@ body.t-mymenu .telephone-area ul li {
 
 .new-signup-input .email li:first-child {
   padding-bottom: 10px;
+}
+
+.new-signup-input .input-menu.name-row {
+  display: flex;
+  gap: 8px;
+  width: 89%;
+}
+
+.new-signup-input .input-menu.name-row > li {
+  flex: 1;
+  min-width: 0;
+}
+
+.new-signup-input .input-menu.name-row li input {
+  width: 100%;
 }
 
 #tabs ul li {
@@ -3891,6 +3891,18 @@ input[type="checkbox"]:checked + .checkbox::before {
   height: 1px;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.select-area label.sr-only {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.select-area label.sr-only::before {
+  content: none;
 }
 
 .c-section-heading__title {
