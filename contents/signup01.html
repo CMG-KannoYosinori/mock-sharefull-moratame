@@ -45,10 +45,14 @@
                     <span class="required" aria-hidden="true">必須</span>
                   </div>
                   <div class="input-area">
-                    <ul class="input-menu address1">
+                    <ul class="input-menu address1 name-row" role="group" aria-labelledby="label-name">
                       <li>
-                        <label for="name" class="sr-only">お名前</label>
-                        <input type="text" class="fs-15" name="name" id="name" value="" placeholder="山田太郎" autocomplete="name" aria-labelledby="label-name" aria-required="true" />
+                        <label for="lastname" class="sr-only">姓</label>
+                        <input type="text" class="fs-15" name="lastname" id="lastname" value="" placeholder="山田" autocomplete="family-name" aria-label="姓" aria-required="true" />
+                      </li>
+                      <li>
+                        <label for="firstname" class="sr-only">名</label>
+                        <input type="text" class="fs-15" name="firstname" id="firstname" value="" placeholder="太郎" autocomplete="given-name" aria-label="名" aria-required="true" />
                       </li>
                     </ul>
                   </div>
@@ -61,10 +65,14 @@
                     <span class="required" aria-hidden="true">必須</span>
                   </div>
                   <div class="input-area">
-                    <ul class="input-menu address1">
+                    <ul class="input-menu address1 name-row" role="group" aria-labelledby="label-kana">
                       <li>
-                        <label for="kana" class="sr-only">フリガナ</label>
-                        <input type="text" class="fs-15" name="kana" id="kana" value="" placeholder="ヤマダタロウ" aria-labelledby="label-kana" aria-required="true" />
+                        <label for="lastname-kana" class="sr-only">セイ</label>
+                        <input type="text" class="fs-15" name="lastname_kana" id="lastname-kana" value="" placeholder="ヤマダ" aria-label="セイ" aria-required="true" />
+                      </li>
+                      <li>
+                        <label for="firstname-kana" class="sr-only">メイ</label>
+                        <input type="text" class="fs-15" name="firstname_kana" id="firstname-kana" value="" placeholder="タロウ" aria-label="メイ" aria-required="true" />
                       </li>
                     </ul>
                   </div>
@@ -386,15 +394,86 @@
                     <span class="required" aria-hidden="true">必須</span>
                   </div>
                   <div class="input-area">
-                    <ul class="input-menu tel">
+                    <ul class="input-menu tel tel-row" role="group" aria-labelledby="label-tel">
                       <li>
-                        <label for="tel" class="sr-only">電話番号</label>
-                        <input type="tel" class="fs-15" name="tel" id="tel" value="" placeholder="090-1234-5678" autocomplete="tel" aria-labelledby="label-tel" aria-required="true" />
+                        <label for="tel1" class="sr-only">電話番号 上3桁</label>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          name="tel1"
+                          id="tel1"
+                          value=""
+                          placeholder="090"
+                          maxlength="4"
+                          inputmode="numeric"
+                          autocomplete="tel-area-code"
+                          aria-label="電話番号 上3桁"
+                          aria-required="true"
+                        />
+                      </li>
+                      <li>
+                        <label for="tel2" class="sr-only">電話番号 中4桁</label>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          name="tel2"
+                          id="tel2"
+                          value=""
+                          placeholder="1234"
+                          maxlength="4"
+                          inputmode="numeric"
+                          autocomplete="tel-local-prefix"
+                          aria-label="電話番号 中4桁"
+                          aria-required="true"
+                        />
+                      </li>
+                      <li>
+                        <label for="tel3" class="sr-only">電話番号 下4桁</label>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          name="tel3"
+                          id="tel3"
+                          value=""
+                          placeholder="5678"
+                          maxlength="4"
+                          inputmode="numeric"
+                          autocomplete="tel-local-suffix"
+                          aria-label="電話番号 下4桁"
+                          aria-required="true"
+                        />
                       </li>
                     </ul>
                   </div>
                 </div>
                 <!--/電話番号-->
+                <!--メールアドレス-->
+                <div class="select-area select-email">
+                  <div class="form-ttl">
+                    <h2 class="element-ttl" id="label-email">メールアドレス</h2>
+                    <span class="required" aria-hidden="true">必須</span>
+                  </div>
+                  <div class="input-area">
+                    <ul class="input-menu email">
+                      <li>
+                        <label for="email" class="sr-only">メールアドレス</label>
+                        <input
+                          type="email"
+                          class="fs-15"
+                          name="email"
+                          id="email"
+                          value=""
+                          placeholder="example@moratame.net"
+                          autocomplete="email"
+                          inputmode="email"
+                          aria-labelledby="label-email"
+                          aria-required="true"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/メールアドレス-->
                 <!--職業-->
                 <div class="select-area select-sex">
                   <div class="form-ttl">

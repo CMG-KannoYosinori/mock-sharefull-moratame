@@ -976,7 +976,7 @@ footer nav ul li:nth-child(even) {
   border: 1px solid #d2d2d2;
   border-radius: 5px;
   background: #fff;
-  width: 30%;
+  width: 29%;
   min-height: 34px;
   line-height: 35px;
 }
@@ -1376,7 +1376,6 @@ div.content h2 {
   background-image: url("https://www.moratame.net/s/images/common/my_menu.png");
 }
 
-
 footer,
 header,
 hr,
@@ -1734,6 +1733,46 @@ body.t-mymenu .telephone-area ul li {
 
 .new-signup-input .email li:first-child {
   padding-bottom: 10px;
+}
+
+.new-signup-input .input-menu.name-row {
+  display: flex;
+  gap: 8px;
+  width: 89%;
+}
+
+.new-signup-input .input-menu.name-row > li {
+  flex: 1;
+  min-width: 0;
+}
+
+.new-signup-input .input-menu.name-row li input {
+  width: 100%;
+}
+
+.new-signup-input .input-menu.tel-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  width: 89%;
+}
+
+.new-signup-input .input-menu.tel-row > li {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.new-signup-input .input-menu.tel-row > li:not(:last-child)::after {
+  content: "-";
+  margin: 0 4px;
+  color: #666;
+}
+
+.new-signup-input .input-menu.tel-row li input {
+  width: 100%;
+  text-align: center;
 }
 
 #tabs ul li {
@@ -3131,6 +3170,7 @@ ul.coupon em {
 }
 
 .select-area input[type="text"],
+.select-area input[type="email"],
 .select-area input[type="password"],
 .select-area input[type="tel"] {
   display: block;
@@ -3875,6 +3915,18 @@ input[type="checkbox"]:checked + .checkbox::before {
   height: 1px;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.select-area label.sr-only {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.select-area label.sr-only::before {
+  content: none;
 }
 
 .c-section-heading__title {
