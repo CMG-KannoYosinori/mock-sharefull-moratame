@@ -33,22 +33,22 @@
           <div class="l-container">
             <section class="new-signup-input pb-[32px]" aria-labelledby="sms-auth-heading">
               <img src="../assets/images/milestone-3.png" alt="step3 承認コード入力" width="749" height="64" class="u-img-center u-img" />
-              <h1 class="heading-ttl" id="sms-auth-heading">SMS認証コード入力</h1>
+              <h1 class="heading-ttl" id="sms-auth-heading">メール認証コード入力</h1>
 
-              <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;" aria-label="SMS認証コード入力フォーム">
-                <p class="side-text mb-4" id="authcode-desc">SMSメッセージで届いた６桁の認証コードを入力してください</p>
+              <form action="https://stg.moratame.net/s/login/sms_auth_complete.php" method="post" id="authform" onsubmit="return false;" aria-label="メール認証コード入力フォーム">
+                <p class="side-text mb-4" id="authcode-desc">メールで届いた６桁の認証コードを入力してください</p>
                 <div class="error mb-4" id="errmsgfil" role="alert" aria-live="assertive"><span id="errmsg">認証コードの形式が異なります。</span></div>
 
-                <!--電話番号（確認表示）-->
+                <!--メールアドレス（確認表示）-->
                 <div class="select-area select-tel">
                   <div class="form-ttl">
-                    <h2 class="element-ttl">電話番号</h2>
+                    <h2 class="element-ttl">メールアドレス</h2>
                   </div>
                   <div class="input-area">
-                    <p>xxx-xxxx-xxxx</p>
+                    <p>yamada.taro@example.com</p>
                   </div>
                 </div>
-                <!--/電話番号-->
+                <!--/メールアドレス-->
 
                 <!--認証コード-->
                 <div class="select-area select-tel">
@@ -87,6 +87,7 @@
                     id="smsInputUrl"
                   />
                   <button type="button" rel="external" class="c-button c-button--confirm" onclick="javascript: ajax_auth_confirm();">認証</button>
+                  <button type="button" rel="external" class="c-button c-button--correct mt-[8px]" onclick="javascript: resendAuthCode();">承認コードを再送信</button>
                   <button type="button" rel="external" class="c-button c-button--correct mt-[8px]" formmethod="get" onclick="javascript: returnInput();">戻る</button>
                 </div>
               </form>

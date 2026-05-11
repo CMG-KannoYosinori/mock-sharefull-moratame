@@ -976,7 +976,7 @@ footer nav ul li:nth-child(even) {
   border: 1px solid #d2d2d2;
   border-radius: 5px;
   background: #fff;
-  width: 30%;
+  width: 29%;
   min-height: 34px;
   line-height: 35px;
 }
@@ -1376,7 +1376,6 @@ div.content h2 {
   background-image: url("https://www.moratame.net/s/images/common/my_menu.png");
 }
 
-
 footer,
 header,
 hr,
@@ -1749,6 +1748,31 @@ body.t-mymenu .telephone-area ul li {
 
 .new-signup-input .input-menu.name-row li input {
   width: 100%;
+}
+
+.new-signup-input .input-menu.tel-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  width: 89%;
+}
+
+.new-signup-input .input-menu.tel-row > li {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.new-signup-input .input-menu.tel-row > li:not(:last-child)::after {
+  content: "-";
+  margin: 0 4px;
+  color: #666;
+}
+
+.new-signup-input .input-menu.tel-row li input {
+  width: 100%;
+  text-align: center;
 }
 
 #tabs ul li {

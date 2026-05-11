@@ -371,10 +371,54 @@
                     <span class="required" aria-hidden="true">必須</span>
                   </div>
                   <div class="input-area">
-                    <ul class="input-menu tel">
+                    <ul class="input-menu tel tel-row" role="group" aria-labelledby="label-tel">
                       <li>
-                        <label for="tel" class="sr-only">電話番号</label>
-                        <input type="tel" class="fs-15" name="tel" id="tel" value="" placeholder="090-1234-5678" autocomplete="tel" aria-labelledby="label-tel" aria-required="true" />
+                        <label for="tel1" class="sr-only">電話番号 上3桁</label>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          name="tel1"
+                          id="tel1"
+                          value=""
+                          placeholder="090"
+                          maxlength="4"
+                          inputmode="numeric"
+                          autocomplete="tel-area-code"
+                          aria-label="電話番号 上3桁"
+                          aria-required="true"
+                        />
+                      </li>
+                      <li>
+                        <label for="tel2" class="sr-only">電話番号 中4桁</label>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          name="tel2"
+                          id="tel2"
+                          value=""
+                          placeholder="1234"
+                          maxlength="4"
+                          inputmode="numeric"
+                          autocomplete="tel-local-prefix"
+                          aria-label="電話番号 中4桁"
+                          aria-required="true"
+                        />
+                      </li>
+                      <li>
+                        <label for="tel3" class="sr-only">電話番号 下4桁</label>
+                        <input
+                          type="tel"
+                          class="fs-15"
+                          name="tel3"
+                          id="tel3"
+                          value=""
+                          placeholder="5678"
+                          maxlength="4"
+                          inputmode="numeric"
+                          autocomplete="tel-local-suffix"
+                          aria-label="電話番号 下4桁"
+                          aria-required="true"
+                        />
                       </li>
                     </ul>
                   </div>
