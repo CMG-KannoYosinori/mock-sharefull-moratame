@@ -45,10 +45,14 @@
                     <span class="required" aria-hidden="true">必須</span>
                   </div>
                   <div class="input-area">
-                    <ul class="input-menu address1">
+                    <ul class="input-menu address1 name-row" role="group" aria-labelledby="label-name">
                       <li>
-                        <label for="name" class="sr-only">お名前</label>
-                        <input type="text" class="fs-15" name="name" id="name" value="" placeholder="山田太郎" autocomplete="name" aria-labelledby="label-name" aria-required="true" />
+                        <label for="lastname" class="sr-only">姓</label>
+                        <input type="text" class="fs-15" name="lastname" id="lastname" value="" placeholder="山田" autocomplete="family-name" aria-label="姓" aria-required="true" />
+                      </li>
+                      <li>
+                        <label for="firstname" class="sr-only">名</label>
+                        <input type="text" class="fs-15" name="firstname" id="firstname" value="" placeholder="太郎" autocomplete="given-name" aria-label="名" aria-required="true" />
                       </li>
                     </ul>
                   </div>
@@ -61,10 +65,14 @@
                     <span class="required" aria-hidden="true">必須</span>
                   </div>
                   <div class="input-area">
-                    <ul class="input-menu address1">
+                    <ul class="input-menu address1 name-row" role="group" aria-labelledby="label-kana">
                       <li>
-                        <label for="kana" class="sr-only">フリガナ</label>
-                        <input type="text" class="fs-15" name="kana" id="kana" value="" placeholder="ヤマダタロウ" aria-labelledby="label-kana" aria-required="true" />
+                        <label for="lastname-kana" class="sr-only">セイ</label>
+                        <input type="text" class="fs-15" name="lastname_kana" id="lastname-kana" value="" placeholder="ヤマダ" aria-label="セイ" aria-required="true" />
+                      </li>
+                      <li>
+                        <label for="firstname-kana" class="sr-only">メイ</label>
+                        <input type="text" class="fs-15" name="firstname_kana" id="firstname-kana" value="" placeholder="タロウ" aria-label="メイ" aria-required="true" />
                       </li>
                     </ul>
                   </div>

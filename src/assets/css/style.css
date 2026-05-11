@@ -1514,6 +1514,21 @@ div.block div.form div.button {
   color: #000;
 }
 
+.new-signup-input .input-menu.name-row {
+  display: flex;
+  gap: 8px;
+  width: 89%;
+}
+
+.new-signup-input .input-menu.name-row > li {
+  flex: 1;
+  min-width: 0;
+}
+
+.new-signup-input .input-menu.name-row li input {
+  width: 100%;
+}
+
 .new-signup-input .password li input {
   box-shadow: none;
   border: 1px solid #d2d2d2;
