@@ -3454,6 +3454,15 @@ body.t-mymenu .sub-tab-content.is-active {
   padding: 0 15px 10px;
 }
 
+.p-mymenu-schedule__note {
+  margin-top: 0.25rem;
+  margin-left: 1em;
+  color: rgb(107 114 128);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-indent: -1em;
+}
+
 .t-accordion__title:hover {
   cursor: pointer;
 }
