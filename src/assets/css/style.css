@@ -3632,6 +3632,19 @@ footer {
     color: #fff;
   }
 
+  &.c-button--unavailable {
+    cursor: not-allowed;
+    background: #b9b9b9;
+    color: #fff;
+  }
+
+  &.c-button--applied {
+    cursor: default;
+    border: 1px solid #b9b9b9;
+    background: #fff;
+    color: #666;
+  }
+
   &.c-button--review {
     background: #fff100;
     color: #000;
