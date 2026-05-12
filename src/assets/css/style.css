@@ -2763,6 +2763,16 @@ a.t-button__green {
   border: 1px solid #ddd;
 }
 
+.p-registration-info-edit__validation-error {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #f1b5b5;
+  border-radius: 4px;
+  background-color: #fff1f1;
+  padding: 12px 16px;
+  color: #c33;
+}
+
 .p-registration-info-edit__block {
   padding: 20px;
 }
