@@ -161,10 +161,6 @@
     --tw-bg-opacity: 1;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1))
 }
-.bg-gray-300 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1))
-}
 .p-0 {
     padding: 0px
 }
@@ -211,10 +207,6 @@
     font-size: 0.875rem;
     line-height: 1.25rem
 }
-.text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem
-}
 .font-bold {
     font-weight: 700
 }
@@ -232,9 +224,9 @@
     --tw-text-opacity: 1;
     color: rgb(55 65 81 / var(--tw-text-opacity, 1))
 }
-.text-gray-300 {
+.text-red-500 {
     --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity, 1))
+    color: rgb(239 68 68 / var(--tw-text-opacity, 1))
 }
 .underline {
     text-decoration-line: underline
