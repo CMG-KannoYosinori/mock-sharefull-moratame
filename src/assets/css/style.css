@@ -19,6 +19,10 @@
   border-spacing: 0;
 }
 
+:root {
+  --color-feedback-error: rgb(239 68 68);
+}
+
 :where(caption, th, td) {
   vertical-align: middle;
   font-weight: normal;
@@ -540,11 +544,11 @@ footer nav ul {
 }
 
 .c-red {
-  color: red;
+  color: var(--color-feedback-error);
 }
 
 .c-red02 {
-  color: #e70033;
+  color: var(--color-feedback-error);
 }
 
 .item-part {
@@ -1445,7 +1449,7 @@ div.block div.head a {
   background: #ff5024;
   padding: 5px 0 5px 10px;
   padding-top: 4px;
-  color: red;
+  color: var(--color-feedback-error);
   font-size: 12px;
   line-height: 1.4;
   text-shadow: none;
@@ -2770,7 +2774,7 @@ a.t-button__green {
   border-radius: 4px;
   background-color: #fff1f1;
   padding: 12px 16px;
-  color: #c33;
+  color: var(--color-feedback-error);
 }
 
 .p-registration-info-edit__block {
@@ -3135,7 +3139,7 @@ input[type="text"] {
 
 .txt-alert {
   padding: 10px 0 0;
-  color: red;
+  color: var(--color-feedback-error);
   font-weight: bold;
   font-size: 14px;
   text-align: center;
@@ -3896,9 +3900,9 @@ input[type="checkbox"]:checked + .checkbox::before {
 .p-order-confirm__page-alert {
   margin-top: 16px;
   margin-bottom: 12px;
-  border: 1px solid red;
+  border: 1px solid var(--color-feedback-error);
   padding: 15px;
-  color: red;
+  color: var(--color-feedback-error);
   font-size: 13px;
   text-align: center;
 }
@@ -3933,8 +3937,14 @@ input[type="checkbox"]:checked + .checkbox::before {
 }
 
 .p-order-confirm__error {
-  color: red;
+  color: var(--color-feedback-error);
   text-align: center;
+}
+
+.p-sms-auth-confirm__message {
+  margin-top: 0.5rem;
+  color: var(--color-feedback-error);
+  font-size: 0.875rem;
 }
 
 .sr-only {
@@ -4097,6 +4107,7 @@ input[type="checkbox"]:checked + .checkbox::before {
   margin: 16px 0;
   color: #343434;
   font-size: 16px;
+  text-align: center;
 }
 
 .sync-address-btn {

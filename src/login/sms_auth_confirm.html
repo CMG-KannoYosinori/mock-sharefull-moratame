@@ -23,6 +23,7 @@
                   </div>
                   <div class="input-area">
                     <p>yamada.taro@example.com</p>
+                    <p class="mt-2">メールアドレスが間違っている場合、入力画面に戻って修正をしてください。</p>
                   </div>
                 </div>
                 <!--/メールアドレス-->
@@ -64,8 +65,14 @@
                     id="smsInputUrl"
                   />
                   <button type="button" rel="external" class="c-button c-button--confirm" onclick="javascript: ajax_auth_confirm();">認証</button>
+                  <!-- 認証コードが間違っている場合 実装不要コメントです。 -->
+                  <p class="p-sms-auth-confirm__message">※認証コードが間違っています。</p>
+                  <!-- /認証コードが間違っている場合 実装不要コメントです。 -->
                   <button type="button" rel="external" class="c-button c-button--correct mt-[8px]" onclick="javascript: resendAuthCode();">承認コードを再送信</button>
-                  <button type="button" rel="external" class="c-button c-button--correct mt-[8px]" formmethod="get" onclick="javascript: returnInput();">戻る</button>
+                  <!-- メールへ認証コードを再送コメント 実装不要コメントです。 -->
+                  <p class="p-sms-auth-confirm__message">※メールへ認証コードを再送しました。ご確認ください。</p>
+                  <!-- /メールへ認証コードを再送コメント 実装不要コメントです。 -->
+                  <button type="button" rel="external" class="c-button c-button--correct mt-[8px]" formmethod="get" onclick="javascript: returnInput();">入力画面に戻る</button>
                 </div>
               </form>
             </section>
