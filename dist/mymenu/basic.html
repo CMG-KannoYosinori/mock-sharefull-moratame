@@ -204,6 +204,9 @@
               </div>
               <!-- /subTabMenu -->
               <div class="container sub-tab-content sub-tab-content1 pt-[10px] is-active">
+                <!-- 申込商品がない場合の表示 実装不要コメントです。 -->
+                <p>お申し込み済みの商品はありません。</p>
+                <!-- /申込商品がない場合の表示 実装不要コメントです。 -->
                 <section class="hb-ms-scedule" id="content">
                   <div class="schedule-box">
                     <p class="hb-ms-date">2027年02月13日（土）発送</p>
@@ -237,7 +240,7 @@
                   <div class="schedule-box">
                     <p class="hb-ms-date">2025年09月30日（火）発送</p>
                     <div class="userinfo-box">
-                      <div class="c-red">キャンセル</div>
+                      <div>落選</div>
                       <div class="hb-ms-ctr">
                         <h3>
                           <span class="itemicon item-ico-tame item-ico-abs-2">タメ</span
@@ -267,6 +270,7 @@
                       <div class="hb-ms-btn">
                         <a href="http://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=651129813111" rel="external" class="hb-cmn-btn-02 ui-link" target="_blank">配送状況の確認</a>
                       </div>
+                      <p class="p-mymenu-schedule__note">※複数個口での発送となりますが、システムの使用上、伝票は一個口分しか表示されません。</p>
                     </div>
                   </div>
                   <div class="schedule-box">
@@ -457,6 +461,10 @@
             <div class="tab-content tab-content2">
               <h2 class="c-heading">登録情報</h2>
               <p class="t-text c-red">【ご注意】既にお申し込みいただいている商品の送付先住所は変更されません。</p>
+              <!-- バリデーションエラー文言 -->
+              <p class="p-registration-info-edit__validation-error" role="alert">入力内容をご確認ください。</p>
+              <!-- /バリデーションエラー文言 -->
+
               <!-- input_area -->
               <div class="p-registration-info-edit">
                 <!-- fontawesome -->

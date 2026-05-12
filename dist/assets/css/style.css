@@ -1752,8 +1752,8 @@ body.t-mymenu .telephone-area ul li {
 
 .new-signup-input .input-menu.tel-row {
   display: flex;
-  gap: 4px;
   align-items: center;
+  gap: 4px;
   width: 89%;
 }
 
@@ -1765,8 +1765,8 @@ body.t-mymenu .telephone-area ul li {
 }
 
 .new-signup-input .input-menu.tel-row > li:not(:last-child)::after {
-  content: "-";
   margin: 0 4px;
+  content: "-";
   color: #666;
 }
 
@@ -2763,6 +2763,16 @@ a.t-button__green {
   border: 1px solid #ddd;
 }
 
+.p-registration-info-edit__validation-error {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #f1b5b5;
+  border-radius: 4px;
+  background-color: #fff1f1;
+  padding: 12px 16px;
+  color: #c33;
+}
+
 .p-registration-info-edit__block {
   padding: 20px;
 }
@@ -3444,6 +3454,15 @@ body.t-mymenu .sub-tab-content.is-active {
   padding: 0 15px 10px;
 }
 
+.p-mymenu-schedule__note {
+  margin-top: 0.25rem;
+  margin-left: 1em;
+  color: rgb(107 114 128);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-indent: -1em;
+}
+
 .t-accordion__title:hover {
   cursor: pointer;
 }
@@ -3611,6 +3630,19 @@ footer {
   &.c-button--orange {
     background: #f76b1f;
     color: #fff;
+  }
+
+  &.c-button--unavailable {
+    cursor: not-allowed;
+    background: #b9b9b9;
+    color: #fff;
+  }
+
+  &.c-button--applied {
+    cursor: default;
+    border: 1px solid #b9b9b9;
+    background: #fff;
+    color: #666;
   }
 
   &.c-button--review {
