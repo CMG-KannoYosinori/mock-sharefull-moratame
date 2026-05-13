@@ -84,9 +84,6 @@
 .mt-\[8px\] {
     margin-top: 8px
 }
-.mt-1 {
-    margin-top: 0.25rem
-}
 .block {
     display: block
 }
@@ -223,10 +220,6 @@
 .text-gray-700 {
     --tw-text-opacity: 1;
     color: rgb(55 65 81 / var(--tw-text-opacity, 1))
-}
-.text-red-500 {
-    --tw-text-opacity: 1;
-    color: rgb(239 68 68 / var(--tw-text-opacity, 1))
 }
 .underline {
     text-decoration-line: underline
