@@ -2596,6 +2596,7 @@ a.t-button__green {
   border: 1px solid #b3b3b3;
   border-radius: 4px;
   height: 31px;
+  margin-top: 10px;
 }
 
 .t-select__layout::after {
