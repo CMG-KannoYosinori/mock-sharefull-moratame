@@ -133,6 +133,72 @@
     <div class="menu-background" aria-hidden="true"></div>
     <!-- /HBGmenu_Open -->
 
+    <!-- coming-soon -->
+    <div class="p-coming-soon">
+      <button
+        type="button"
+        id="coming-soon-btn"
+        class="p-coming-soon__toggle"
+        aria-controls="coming-soon-content"
+        aria-expanded="false"
+        aria-label="掲載予定を表示"
+      >
+        <img src="/mock-sharefull-moratame/assets/images/icon-coming-soon.png" alt="" width="51" height="51" class="p-coming-soon__icon">
+      </button>
+      <div id="coming-soon-content" class="p-coming-soon__content">
+        <h3 class="p-coming-soon__title">本日以降の掲載予定</h3>
+        <ul class="p-coming-soon__item-list">
+          <li class="p-coming-soon__item-list-item">
+            <a href="#" class="p-coming-soon__item-link">
+              <div class="p-coming-soon__item-visual-wrapper p-coming-soon__item-visual-wrapper--tame">
+                <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame+1" alt="商品画像（ピンク）" width="640" height="640" class="p-coming-soon__item-visual">
+              </div>
+              <div>
+                <p class="p-coming-soon__item-date">
+                  2026年5月20日(水)<br>
+                  18時スタート
+                </p>
+                <p class="p-coming-soon__item-maker">メーカー名メーカー名メーカー名</p>
+                <p class="p-coming-soon__item-name">商品名商品名商品名商品名商品名商品名商品名</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-coming-soon__item-list-item">
+            <a href="#" class="p-coming-soon__item-link">
+              <div class="p-coming-soon__item-visual-wrapper p-coming-soon__item-visual-wrapper--mora">
+                <img src="https://placehold.jp/30/6699dd/ffffff/640x640.png?text=Item+Img+Tame+2" alt="商品画像（ブルー）" width="640" height="640" class="p-coming-soon__item-visual">
+              </div>
+              <div>
+                <p class="p-coming-soon__item-date">
+                  2026年5月20日(水)<br>
+                  18時スタート
+                </p>
+                <p class="p-coming-soon__item-maker">メーカー名メーカー名メーカー名</p>
+                <p class="p-coming-soon__item-name">商品名商品名商品名商品名商品名商品名商品名</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-coming-soon__item-list-item">
+            <a href="#" class="p-coming-soon__item-link">
+              <div class="p-coming-soon__item-visual-wrapper p-coming-soon__item-visual-wrapper--tame">
+                <img src="https://placehold.jp/30/99dd66/ffffff/640x640.png?text=Item+Img+Tame+3" alt="商品画像（グリーン）" width="640" height="640" class="p-coming-soon__item-visual">
+              </div>
+              <div>
+                <p class="p-coming-soon__item-date">
+                  2026年5月20日(水)<br>
+                  18時スタート
+                </p>
+                <p class="p-coming-soon__item-maker">メーカー名メーカー名メーカー名</p>
+                <p class="p-coming-soon__item-name">商品名商品名商品名商品名商品名商品名商品名</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button type="button" id="coming-soon-close" class="p-coming-soon__close">閉じる</button>
+      </div>
+    </div>
+    <!-- /coming-soon -->
+
     <!-- topTabMenu_pc -->
     
     
@@ -166,12 +232,6 @@
           $('+.submenu', this).stop(true, false).slideToggle();
           return false;
         });
-      });
-      $('.p-masthead__soon').on('click', function () {
-        $('#p-masthead__soon').toggle();
-      });
-      $(document).on('click', '.s_boxHeadline', function () {
-        $('#p-masthead__soon').css('display', 'none');
       });
     });
   </script>
