@@ -4190,7 +4190,20 @@ input[type="checkbox"]:checked + .checkbox::before {
   margin-bottom: 8px;
 }
 
+.p-coming-soon__toggle {
+  position: absolute;
+  top: 0;
+  right: 48px;
+  z-index: 11;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+}
+
 .p-coming-soon__content {
+  display: none;
   position: absolute;
   top: 51px;
   z-index: 1;
@@ -4200,16 +4213,33 @@ input[type="checkbox"]:checked + .checkbox::before {
   padding: 16px;
   background-color: #ededed;
   max-width: 343px;
+}
 
-  /* display: none; */
+.p-coming-soon__content.is-open {
+  display: block;
 }
 
 .p-coming-soon__icon {
+  display: block;
   height: 51px;
   width: auto;
-  position: absolute;
-  top: 0;
-  right: 48px;
+}
+
+.p-coming-soon__close {
+  display: block;
+  box-sizing: border-box;
+  margin: 16px 0 0;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #8bbc00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
 }
 
 .p-coming-soon__item-link {

@@ -155,8 +155,17 @@
 
     <!-- coming-soon -->
     <div class="p-coming-soon">
-      <img src="{{ asset_base }}assets/images/icon-coming-soon.png" alt="掲載予定" class="p-coming-soon__icon">
-      <div class="p-coming-soon__content">
+      <button
+        type="button"
+        id="coming-soon-btn"
+        class="p-coming-soon__toggle"
+        aria-controls="coming-soon-content"
+        aria-expanded="false"
+        aria-label="掲載予定を表示"
+      >
+        <img src="{{ asset_base }}assets/images/icon-coming-soon.png" alt="" width="51" height="51" class="p-coming-soon__icon">
+      </button>
+      <div id="coming-soon-content" class="p-coming-soon__content">
         <h3 class="p-coming-soon__title">本日以降の掲載予定</h3>
         <ul class="p-coming-soon__item-list">
           <li class="p-coming-soon__item-list-item">
@@ -205,7 +214,7 @@
             </a>
           </li>
         </ul>
-        {% comment %} 閉じるボタン {% endcomment %}
+        <button type="button" id="coming-soon-close" class="p-coming-soon__close">閉じる</button>
       </div>
     </div>
     <!-- /coming-soon -->
@@ -256,12 +265,6 @@
           $('+.submenu', this).stop(true, false).slideToggle();
           return false;
         });
-      });
-      $('.p-masthead__soon').on('click', function () {
-        $('#p-masthead__soon').toggle();
-      });
-      $(document).on('click', '.s_boxHeadline', function () {
-        $('#p-masthead__soon').css('display', 'none');
       });
     });
   </script>
