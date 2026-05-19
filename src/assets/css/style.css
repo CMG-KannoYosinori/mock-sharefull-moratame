@@ -190,7 +190,7 @@ a:active {
   align-items: center;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-right: 48px;
+  padding-right: 99px;
   padding-left: 0;
   width: 100%;
   max-width: 640px;
@@ -3055,13 +3055,28 @@ input[type="text"] {
   right: 0;
   left: 0;
   z-index: 9;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   background-color: #fff;
   height: 51px;
 }
 
+.sp-header-menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 51px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  pointer-events: none;
+}
+
 @media (width >= 768px) {
   .sp-header-menu {
+    height: 62px;
+  }
+
+  .sp-header-menu::after {
     height: 62px;
   }
 }
@@ -4162,3 +4177,123 @@ input[type="checkbox"]:checked + .checkbox::before {
 .u-anchor-blue:hover {
   color: #0085c3;
 }
+
+/* 掲載予定 */
+.p-coming-soon {
+  position: relative;
+}
+
+.p-coming-soon__title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.p-coming-soon__content {
+  position: absolute;
+  top: 51px;
+  z-index: 1;
+  width: calc(100% - 32px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  background-color: #ededed;
+  max-width: 343px;
+
+  /* display: none; */
+}
+
+.p-coming-soon__icon {
+  height: 51px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 48px;
+}
+
+.p-coming-soon__item-link {
+  background-color: #fff;
+  padding: 16px;
+  max-width: 343px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &:active {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+.p-coming-soon__item-list-item:nth-child(n + 2) {
+  margin-top: 16px;
+}
+
+.p-coming-soon__item-link > div {
+  min-width: 0;
+}
+
+.p-coming-soon__item-maker,
+.p-coming-soon__item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p-coming-soon__item-date {
+  color: var(--color-feedback-error);
+}
+
+.p-coming-soon__item-visual-wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 16px;
+  }
+
+  &::before {
+    content: "";
+    top: -3px;
+    left: -3px;
+    background-color: #ccc;
+  }
+
+  &::after {
+    content: "ため";
+    top: -4px;
+    left: -4px;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  &.p-coming-soon__item-visual-wrapper--tame {
+    &::after {
+      content: "ため";
+      background-color: #319be3;
+    }
+  }
+
+  &.p-coming-soon__item-visual-wrapper--mora {
+    &::after {
+      content: "もら";
+      background-color: #f25932;
+    }
+  }
+}
+
+/* /掲載予定 */
