@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    {% assign page_title = 'シェアフルモニター | 商品名 ためせる' %} {% capture head_extra %} {% endcapture %} {% include 'head' %}
+    {% assign page_title = 'シェアフルモニター | 商品名 ためせる' %} {% capture head_extra %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/p-item-visual.css" />
+    {% endcapture %} {% include 'head' %}
   </head>
 
   <body id="pageTop" class="itemDetail">
@@ -17,7 +21,26 @@
 
             <div class="t-bx__wrapper">
               <div class="t-bx__viewport">
-                <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame" alt="商品画像" width="640" height="640" class="c-item-visual" />
+                <div class="swiper p-item-visual__swiper" aria-label="商品画像">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide" role="group" aria-roledescription="slide">
+                      <img src="https://placehold.jp/30/dd6699/ffffff/640x640.png?text=Item+Img+Tame+1" alt="商品画像（ピンク）" width="640" height="640" class="c-item-visual" />
+                    </li>
+                    <li class="swiper-slide" role="group" aria-roledescription="slide">
+                      <img src="https://placehold.jp/30/6699dd/ffffff/640x640.png?text=Item+Img+Tame+2" alt="商品画像（ブルー）" width="640" height="640" class="c-item-visual" />
+                    </li>
+                    <li class="swiper-slide" role="group" aria-roledescription="slide">
+                      <img src="https://placehold.jp/30/99dd66/ffffff/640x640.png?text=Item+Img+Tame+3" alt="商品画像（グリーン）" width="640" height="640" class="c-item-visual" />
+                    </li>
+                    <li class="swiper-slide" role="group" aria-roledescription="slide">
+                      <img src="https://placehold.jp/30/dd99aa/ffffff/640x640.png?text=Item+Img+Tame+4" alt="商品画像（ローズ）" width="640" height="640" class="c-item-visual" />
+                    </li>
+                    <li class="swiper-slide" role="group" aria-roledescription="slide">
+                      <img src="https://placehold.jp/30/ffcc88/ffffff/640x640.png?text=Item+Img+Tame+5" alt="商品画像（オレンジ）" width="640" height="640" class="c-item-visual" />
+                    </li>
+                  </ul>
+                  <div class="p-item-visual__pagination"></div>
+                </div>
               </div>
             </div>
             <!-- /carousel -->
@@ -414,6 +437,7 @@
         });
       });
     </script>
+    <script src="../assets/js/p-item-visual-swiper.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

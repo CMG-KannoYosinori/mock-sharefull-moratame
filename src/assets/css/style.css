@@ -2762,6 +2762,9 @@ a.t-button__green {
   box-sizing: border-box;
   margin-top: 20px;
   margin-bottom: 16px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .p-registration-info-edit {

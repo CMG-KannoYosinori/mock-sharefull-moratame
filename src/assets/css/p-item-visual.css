@@ -1,0 +1,33 @@
+/* project: item detail visual swiper */
+.p-item-visual__swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.p-item-visual__swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.p-item-visual__swiper .c-item-visual {
+  width: 100%;
+  max-width: 320px;
+}
+
+.p-item-visual__pagination {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.p-item-visual__pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background: #ccc;
+}
+
+.p-item-visual__pagination .swiper-pagination-bullet-active {
+  background: #d69;
+}
