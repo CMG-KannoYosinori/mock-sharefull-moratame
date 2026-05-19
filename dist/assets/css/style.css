@@ -190,7 +190,7 @@ a:active {
   align-items: center;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-right: 48px;
+  padding-right: 99px;
   padding-left: 0;
   width: 100%;
   max-width: 640px;
@@ -2593,10 +2593,10 @@ a.t-button__green {
 
 .t-select__layout {
   position: relative;
+  margin-top: 10px;
   border: 1px solid #b3b3b3;
   border-radius: 4px;
   height: 31px;
-  margin-top: 10px;
 }
 
 .t-select__layout::after {
@@ -3055,13 +3055,28 @@ input[type="text"] {
   right: 0;
   left: 0;
   z-index: 9;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   background-color: #fff;
   height: 51px;
 }
 
+.sp-header-menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  height: 51px;
+  pointer-events: none;
+  content: "";
+}
+
 @media (width >= 768px) {
   .sp-header-menu {
+    height: 62px;
+  }
+
+  .sp-header-menu::after {
     height: 62px;
   }
 }
@@ -4162,3 +4177,176 @@ input[type="checkbox"]:checked + .checkbox::before {
 .u-anchor-blue:hover {
   color: #0085c3;
 }
+
+/* 掲載予定 */
+.p-coming-soon {
+  position: relative;
+}
+
+.p-coming-soon__title {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.p-coming-soon__toggle {
+  position: absolute;
+  top: 0;
+  right: 48px;
+  z-index: 9;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  line-height: 0;
+
+  @media (width >= 768px) {
+    right: 58px;
+  }
+}
+
+.p-coming-soon__content {
+  display: none;
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #ededed;
+  padding: 16px;
+  width: calc(100% - 32px);
+  max-width: 343px;
+
+  @media (width >= 425px) {
+    right: 48px;
+    left: unset;
+    transform: translateX(0);
+  }
+
+  @media (width >= 768px) {
+    top: 62px;
+    right: 58px;
+  }
+}
+
+.p-coming-soon__content.is-open {
+  display: block;
+}
+
+.p-coming-soon__icon {
+  display: block;
+  width: auto;
+  height: 51px;
+
+  @media (width >= 768px) {
+    height: 62px;
+  }
+}
+
+.p-coming-soon__close {
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 16px 0 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #8bbc00;
+  padding: 10px 0;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.p-coming-soon__item-link {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 16px;
+  background-color: #fff;
+  padding: 16px;
+  width: 100%;
+  max-width: 343px;
+  height: 100%;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+
+  &:active {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.p-coming-soon__item-list-item:nth-child(n + 2) {
+  margin-top: 16px;
+}
+
+.p-coming-soon__item-link > div {
+  min-width: 0;
+}
+
+.p-coming-soon__item-maker,
+.p-coming-soon__item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p-coming-soon__item-date {
+  color: var(--color-feedback-error);
+  font-size: 12px;
+
+  @media (width >= 375px) {
+    font-size: 14px;
+  }
+}
+
+.p-coming-soon__item-visual-wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 32px;
+    height: 16px;
+    content: "";
+  }
+
+  &::before {
+    top: -3px;
+    left: -3px;
+    background-color: #ccc;
+    content: "";
+  }
+
+  &::after {
+    display: grid;
+    top: -4px;
+    left: -4px;
+    place-items: center;
+    background-color: #000;
+    content: "ため";
+    color: #fff;
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  &.p-coming-soon__item-visual-wrapper--tame {
+    &::after {
+      background-color: #319be3;
+      content: "ため";
+    }
+  }
+
+  &.p-coming-soon__item-visual-wrapper--mora {
+    &::after {
+      background-color: #f25932;
+      content: "もら";
+    }
+  }
+}
+
+/* /掲載予定 */
