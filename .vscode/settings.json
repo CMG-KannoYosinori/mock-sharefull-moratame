@@ -1,6 +1,7 @@
 {
   "editor.formatOnSave": true,
-  "liveServer.settings.root": "/dist",
+  // "liveServer.settings.root": "/dist",
+  "liveServer.settings.root": "/legacy/stg",
   "[liquid]": {
     "editor.defaultFormatter": "Shopify.theme-check-vscode",
     "editor.formatOnSave": true
