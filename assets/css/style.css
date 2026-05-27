@@ -4350,3 +4350,110 @@ input[type="checkbox"]:checked + .checkbox::before {
 }
 
 /* /掲載予定 */
+
+/* 20歳以上ですか？チェック */
+.p-item-adult-consent {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.p-item-adult-consent__notice {
+  margin: 0 0 14px;
+  color: var(--color-feedback-error);
+  color: #996800;
+  background: #fffad9;
+  line-height: 1.7;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.p-item-adult-consent__notice-description {
+  display: inline-block;
+  padding: 8px;
+}
+
+.p-item-adult-consent__notice-description-icon {
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -9px;
+    display: inline;
+    content: "";
+    text-align: center;
+    border: 9px solid transparent;
+    border-bottom: 16px solid #d90000;
+  }
+
+  &::after {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    content: "\ff01";
+    vertical-align: bottom;
+    color: #fff;
+  }
+}
+
+.p-item-adult-consent__control {
+  display: flex;
+  justify-content: center;
+}
+
+.p-item-adult-consent__label {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.p-item-adult-consent__input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.p-item-adult-consent__check {
+  display: inline-block;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 1px solid #a4a4a4;
+  border-radius: 2px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.p-item-adult-consent__input:checked + .p-item-adult-consent__check {
+  background: #fff
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozMUJGNTE5MUYyMzBFMzExQTM0NUI2NTVFRUQ3NDQwRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGM0I1MDNDM0VBRTExMUUzOEY3RUUxNThGNzNGRTFEMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGM0FGMzc0N0VBRTExMUUzOEY3RUUxNThGNzNGRTFEMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiYWRkYzkxYi0zNDAzLTQ4YzAtODRjNC1mOTk2MmM0MGY4OGEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzFCRjUxOTFGMjMwRTMxMUEzNDVCNjU1RUVENzQ0MEYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6oo7NYAAABWElEQVR42rRWi22DQAwlpw5wIzAClRig3QA2SDZIJ2gyQdmAdIJ2gzAAUhkhI7ABfZZ8kuM6HAnXJ1nC6PDzPX/EZpqmLKAsy2wN+r6nGDkeP2Bv8C8uS48vWAX7AVmVlAABKfOCXQ97T0nwAturd7tUBJ6lkaAaDC6h7l743wje0EMKgj3LEzCSNMFZS1BwS0rUyH5MQWDpfkTwTr5wosUqpWMMlHku/AHBD/qQ4+AtZ3NeSLJlk7rX1kHHw7EVmraR4LmhOxX1YhLAPjmDgCpColvyRG1567CjYaChiEggdS+k7sa3f2sAkpNxsFUk5ipQt7cJmKTh61oZm6uAbzCLJyMjz3UIvX7mAl6tAlizpJetQdupzLzS/WoVPEJAAV5vtR33+7iGQA6ODnSEdffsk7ldNKjpJP9w78KKLbtOtGL9yEZcsk2pdZ9najKLjfxt+Q/8CjAALb5hWW7RnrEAAAAASUVORK5CYII=")
+    center center / 12px 12px no-repeat;
+}
+
+.p-item-adult-consent__input:focus-visible + .p-item-adult-consent__check {
+  outline: 2px solid #393;
+  outline-offset: 2px;
+}
+
+.p-item-adult-consent__label-text {
+  color: #333;
+}
+
+/* /20歳以上ですか？チェック */
