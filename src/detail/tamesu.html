@@ -53,6 +53,25 @@
                   <h2 class="t-crosshead__text">商品情報</h2>
                 </div>
               </div>
+
+              <!-- adult-consent -->
+              <section class="p-item-adult-consent" aria-labelledby="item-adult-consent-notice">
+                <div class="p-item-adult-consent__notice">
+                  <p id="item-adult-consent-notice" class="p-item-adult-consent__notice-description">
+                    <span class="p-item-adult-consent__notice-description-icon"></span> この商品にお申し込みできるのは20歳以上の方に限ります。<br />
+                    同意の上、お申し込みください。
+                  </p>
+                  <div class="p-item-adult-consent__control">
+                    <label class="p-item-adult-consent__label" for="adult-permission">
+                      <input type="checkbox" id="adult-permission" name="adult_permission" value="1" class="p-item-adult-consent__input" />
+                      <span class="p-item-adult-consent__check" aria-hidden="true"></span>
+                      <span class="p-item-adult-consent__label-text">20歳以上です</span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <!-- /adult-consent -->
+
               <div class="t-table">
                 <div class="price-bgbox">
                   <table class="t-table__block price-box">
@@ -422,14 +441,19 @@
        *    `#form-order` を送信します。
        *
        * 補足:
-       *  - 以前の実装にあった `#adult-permission` / `#order_matome` のチェックは、
-       *    このページ内のHTMLに該当要素が存在しないため削除しています。
+       *  - `#adult-permission` が未チェックの場合はアラートを表示して送信を止めます。
        */
       document.addEventListener("DOMContentLoaded", function () {
         document.addEventListener("click", function (event) {
           // ボタン以外のクリックは無視
           var button = event.target && event.target.closest && event.target.closest("[id^='order-button']");
           if (!button) return;
+
+          var adultPermission = document.getElementById("adult-permission");
+          if (adultPermission && !adultPermission.checked) {
+            alert("20歳以上の方はチェックを入れてください");
+            return;
+          }
 
           var form = document.getElementById("form-order");
           if (!form) return;
