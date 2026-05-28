@@ -304,7 +304,7 @@
               </section>
               <!-- /adult-consent -->
 
-              <div class="t-table">
+              <div class="t-table t-table__no-padding">
                 <div class="price-bgbox">
                   <table class="t-table__block price-box">
                     <tbody>
@@ -315,6 +315,13 @@
                       <tr>
                         <th>残数</th>
                         <td>4,972</td>
+                      </tr>
+                      <tr>
+                        <th>ギフトコード価格</th>
+                        <td>
+                          <p>100円</p>
+                          <div class="c-balloon">この費用だけで試せます！</div>
+                        </td>
                       </tr>
                       <tr>
                         <th>
@@ -414,13 +421,147 @@
                         <th>終了日時</th>
                         <td>2026年12月11日(金) 23時59分</td>
                       </tr>
+                      <tr>
+                        <th>
+                          <p>利用可能クーポン</p>
+                        </th>
+                        <td class="">
+                          <div class="coupon">
+                            <ul class="p-item-coupon-list u-indent">
+                              <li class="p-item-coupon-list__item">
+                                <p class="p-item-coupon-list__text">・複数クーポンテスト１:<em>100円引き</em></p>
+                              </li>
+                              <li class="p-item-coupon-list__item">
+                                <p class="p-item-coupon-list__text">・複数クーポンテスト2:<em>50円引き</em></p>
+                              </li>
+                            </ul>
+                            <p class="t-text__ex">
+                              ※クーポンは次画面にて選択可能です。<br />
+                              ※利用回数がある場合は次画面にて表示されます。
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                   <form id="form-order" class="t-form">
+                    <!-- set-select -->
+                    <div class="p-item-set-select">
+                      <div class="p-item-set-select__label t-button__blue" id="order-matome-label" aria-hidden="true">1セット</div>
+                      <select name="order_matome" id="order_matome" class="p-item-set-select__select" aria-label="セット数">
+                        <option value="0">セット数を選んでください。</option>
+                        <option value="1" selected="">1セット</option>
+                        <option value="2">2セット</option>
+                        <option value="3">3セット</option>
+                        <option value="4">4セット</option>
+                        <option value="5">5セット</option>
+                        <option value="6">6セット</option>
+                        <option value="7">7セット</option>
+                        <option value="8">8セット</option>
+                        <option value="9">9セット</option>
+                        <option value="10">10セット</option>
+                        <option value="11">11セット</option>
+                        <option value="12">12セット</option>
+                        <option value="13">13セット</option>
+                        <option value="14">14セット</option>
+                        <option value="15">15セット</option>
+                        <option value="16">16セット</option>
+                        <option value="17">17セット</option>
+                        <option value="18">18セット</option>
+                        <option value="19">19セット</option>
+                        <option value="20">20セット</option>
+                        <option value="21">21セット</option>
+                        <option value="22">22セット</option>
+                        <option value="23">23セット</option>
+                        <option value="24">24セット</option>
+                        <option value="25">25セット</option>
+                        <option value="26">26セット</option>
+                        <option value="27">27セット</option>
+                        <option value="28">28セット</option>
+                        <option value="29">29セット</option>
+                        <option value="30">30セット</option>
+                        <option value="31">31セット</option>
+                        <option value="32">32セット</option>
+                        <option value="33">33セット</option>
+                        <option value="34">34セット</option>
+                        <option value="35">35セット</option>
+                        <option value="36">36セット</option>
+                        <option value="37">37セット</option>
+                        <option value="38">38セット</option>
+                        <option value="39">39セット</option>
+                        <option value="40">40セット</option>
+                        <option value="41">41セット</option>
+                        <option value="42">42セット</option>
+                        <option value="43">43セット</option>
+                        <option value="44">44セット</option>
+                        <option value="45">45セット</option>
+                        <option value="46">46セット</option>
+                        <option value="47">47セット</option>
+                        <option value="48">48セット</option>
+                        <option value="49">49セット</option>
+                        <option value="50">50セット</option>
+                        <option value="51">51セット</option>
+                        <option value="52">52セット</option>
+                        <option value="53">53セット</option>
+                        <option value="54">54セット</option>
+                        <option value="55">55セット</option>
+                        <option value="56">56セット</option>
+                        <option value="57">57セット</option>
+                        <option value="58">58セット</option>
+                        <option value="59">59セット</option>
+                        <option value="60">60セット</option>
+                        <option value="61">61セット</option>
+                        <option value="62">62セット</option>
+                        <option value="63">63セット</option>
+                        <option value="64">64セット</option>
+                        <option value="65">65セット</option>
+                        <option value="66">66セット</option>
+                        <option value="67">67セット</option>
+                        <option value="68">68セット</option>
+                        <option value="69">69セット</option>
+                        <option value="70">70セット</option>
+                        <option value="71">71セット</option>
+                        <option value="72">72セット</option>
+                        <option value="73">73セット</option>
+                        <option value="74">74セット</option>
+                        <option value="75">75セット</option>
+                        <option value="76">76セット</option>
+                        <option value="77">77セット</option>
+                        <option value="78">78セット</option>
+                        <option value="79">79セット</option>
+                        <option value="80">80セット</option>
+                        <option value="81">81セット</option>
+                        <option value="82">82セット</option>
+                        <option value="83">83セット</option>
+                        <option value="84">84セット</option>
+                        <option value="85">85セット</option>
+                        <option value="86">86セット</option>
+                        <option value="87">87セット</option>
+                        <option value="88">88セット</option>
+                        <option value="89">89セット</option>
+                        <option value="90">90セット</option>
+                        <option value="91">91セット</option>
+                        <option value="92">92セット</option>
+                        <option value="93">93セット</option>
+                        <option value="94">94セット</option>
+                        <option value="95">95セット</option>
+                        <option value="96">96セット</option>
+                        <option value="97">97セット</option>
+                        <option value="98">98セット</option>
+                        <option value="99">99セット</option>
+                        <option value="100">100セット</option>
+                      </select>
+                    </div>
+                    <!-- /set-select -->
                     <ul class="u-indent text-sm">
                       <li class="mt-[20px]">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank" class="u-anchor-blue">利用規約</a>に同意の上お申し込み下さい</li>
                       <li>※お支払い方法はクレジットカードとPayPayがご利用頂けます。</li>
                     </ul>
+                    <p class="txt-alert mt-4">
+                      お客様のこちらの商品に関する、<br />
+                      クレジットカード決済確認を行っております。<br />
+                      いましばらくお待ち下さい。
+                    </p>
                     <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
                     <div>
                       <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
@@ -437,6 +578,21 @@
                 <h2 class="t-crosshead__text">商品説明</h2>
               </div>
             </div>
+            <!-- 関連プロジェクト -->
+            <nav class="p-related-pjt" aria-label="関連プロジェクト">
+              <ul class="p-related-pjt__list">
+                <li class="p-related-pjt__item">
+                  <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=aab01" class="p-related-pjt__btn p-related-pjt__btn--amber">関連PJTテスト子1</a>
+                </li>
+                <li class="p-related-pjt__item">
+                  <a href="https://stg.tsample.tsite.jp/detail/tamesu.php?project_id=3a232" class="p-related-pjt__btn p-related-pjt__btn--light-green">関連PJTテスト子2</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /関連プロジェクト -->
+            <!-- 商品概要上部 -->
+            <div class="mt-8">商品概要上部B</div>
+            <!-- /商品概要上部 -->
             <!-- 商品概要 -->
             <div class="p-item-detail">
               <div style="min-height: 1000px; background-color: lightpink; display: grid; place-items: center; color: white; font-size: 20px; font-weight: bold; text-align: center">
@@ -727,6 +883,12 @@
             return;
           }
 
+          var orderMatome = document.getElementById("order_matome");
+          if (orderMatome && orderMatome.value === "0") {
+            alert("セット数を選んでください");
+            return;
+          }
+
           var form = document.getElementById("form-order");
           if (!form) return;
 
@@ -736,6 +898,7 @@
       });
     </script>
     <script src="../assets/js/p-item-visual-swiper.js"></script>
+    <script src="../assets/js/p-item-set-select.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
