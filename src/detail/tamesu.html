@@ -213,9 +213,10 @@
                     </tbody>
                   </table>
                   <form id="form-order" class="t-form">
-                    <div>
-                      <div>1セット</div>
-                      <select name="order_matome" id="order_matome">
+                    <!-- set-select -->
+                    <div class="p-item-set-select">
+                      <div class="p-item-set-select__label t-button__blue" id="order-matome-label" aria-hidden="true">1セット</div>
+                      <select name="order_matome" id="order_matome" class="p-item-set-select__select" aria-label="セット数">
                         <option value="0">セット数を選んでください。</option>
                         <option value="1" selected="">1セット</option>
                         <option value="2">2セット</option>
@@ -319,6 +320,7 @@
                         <option value="100">100セット</option>
                       </select>
                     </div>
+                    <!-- /set-select -->
                     <ul class="u-indent text-sm">
                       <li class="mt-[20px]">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank" class="u-anchor-blue">利用規約</a>に同意の上お申し込み下さい</li>
                       <li>※お支払い方法はクレジットカードとPayPayがご利用頂けます。</li>
@@ -589,6 +591,12 @@
             return;
           }
 
+          var orderMatome = document.getElementById("order_matome");
+          if (orderMatome && orderMatome.value === "0") {
+            alert("セット数を選んでください");
+            return;
+          }
+
           var form = document.getElementById("form-order");
           if (!form) return;
 
@@ -598,6 +606,7 @@
       });
     </script>
     <script src="../assets/js/p-item-visual-swiper.js"></script>
+    <script src="../assets/js/p-item-set-select.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
