@@ -84,6 +84,9 @@
 .mt-\[8px\] {
     margin-top: 8px
 }
+.mt-6 {
+    margin-top: 1.5rem
+}
 .block {
     display: block
 }
