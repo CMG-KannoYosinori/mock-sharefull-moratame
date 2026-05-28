@@ -3784,6 +3784,9 @@ footer {
 .t-table {
   padding: 10px;
   font-size: 12px;
+  &.t-table__no-padding {
+    padding: 0;
+  }
 
   @media (width >= 768px) {
     font-size: 14px;
@@ -4457,3 +4460,24 @@ input[type="checkbox"]:checked + .checkbox::before {
 }
 
 /* /20歳以上ですか？チェック */
+
+/* 利用可能クーポン一覧（商品詳細） */
+.p-item-coupon-list {
+  margin-left: 0.5em;
+}
+
+.p-item-coupon-list__item {
+  line-height: 1.45;
+}
+
+.p-item-coupon-list__text {
+  display: inline;
+}
+
+.coupon .p-item-coupon-list em {
+  margin-left: 0.5em;
+  color: #f76b1f;
+  font-style: normal;
+}
+
+/* /利用可能クーポン一覧（商品詳細） */
