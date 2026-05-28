@@ -568,6 +568,7 @@
                       クレジットカード決済確認を行っております。<br />
                       いましばらくお待ち下さい。
                     </p>
+
                     <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
                     <div>
                       <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
@@ -609,11 +610,34 @@
               </div>
             </div>
             <!-- /商品概要 -->
+            <!-- adult-consent -->
+            <section class="p-item-adult-consent" aria-labelledby="item-adult-consent-notice">
+              <div class="p-item-adult-consent__notice">
+                <p id="item-adult-consent-notice" class="p-item-adult-consent__notice-description">
+                  <span class="p-item-adult-consent__notice-description-icon"></span> この商品にお申し込みできるのは20歳以上の方に限ります。<br />
+                  同意の上、お申し込みください。
+                </p>
+                <div class="p-item-adult-consent__control">
+                  <label class="p-item-adult-consent__label" for="adult-permission">
+                    <input type="checkbox" id="adult-permission" name="adult_permission" value="1" class="p-item-adult-consent__input" />
+                    <span class="p-item-adult-consent__check" aria-hidden="true"></span>
+                    <span class="p-item-adult-consent__label-text">20歳以上です</span>
+                  </label>
+                </div>
+              </div>
+            </section>
+            <!-- /adult-consent -->
+
             <ul class="u-indent text-sm">
               <li class="mt-[20px]">※<a href="https://www.moratame.net/contents/syounin.php" target="_blank" class="u-anchor-blue">利用規約</a>に同意の上お申し込み下さい</li>
               <li>※お支払い方法はクレジットカードとPayPayがご利用頂けます。</li>
             </ul>
-            <p class="txt-alert"></p>
+            <p class="txt-alert mt-4">
+              お客様のこちらの商品に関する、<br />
+              クレジットカード決済確認を行っております。<br />
+              いましばらくお待ち下さい。
+            </p>
+
             <p class="family-balloon">この商品はご自宅以外に登録した家族宛てにも送ることができます</p>
             <div>
               <button type="button" id="order-button" class="c-button c-button--orange">申し込む</button>
