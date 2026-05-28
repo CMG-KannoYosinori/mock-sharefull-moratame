@@ -4531,3 +4531,78 @@ input[type="checkbox"]:checked + .checkbox::before {
 }
 
 /* /セット数選択（商品詳細） */
+
+/* 関連プロジェクト */
+.p-related-pjt__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-right: 2px;
+  padding-left: 3px;
+}
+
+.p-related-pjt__item {
+  flex: 1;
+}
+
+.p-related-pjt__item + .p-related-pjt__item {
+  margin-left: 1px;
+}
+
+.p-related-pjt__btn {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  width: 100%;
+  min-height: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+}
+
+.p-related-pjt__btn:hover,
+.p-related-pjt__btn:active,
+.p-related-pjt__btn:link,
+.p-related-pjt__btn:visited {
+  color: #212121;
+  text-decoration: none;
+}
+
+.p-related-pjt__btn--light-green {
+  background: linear-gradient(to bottom, #8bc34a 0%, #7cb342 100%);
+}
+
+.p-related-pjt__btn--light-green:hover {
+  background: linear-gradient(to bottom, #aed581 0%, #7cb342 100%);
+}
+
+.p-related-pjt__btn--amber {
+  background: linear-gradient(to bottom, #ffc107 0%, #ffb300 100%);
+}
+
+.p-related-pjt__btn--amber:hover {
+  background: linear-gradient(to bottom, #ffd54f 0%, #ffb300 100%);
+}
+
+@media (width <= 639px) {
+  .p-related-pjt__list {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .p-related-pjt__item + .p-related-pjt__item {
+    margin-left: 0;
+  }
+
+  .p-related-pjt__btn {
+    border-radius: 0;
+    font-size: 10px;
+  }
+}
+
+/* /関連プロジェクト */
