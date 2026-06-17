@@ -4606,3 +4606,11 @@ input[type="checkbox"]:checked + .checkbox::before {
 }
 
 /* /関連プロジェクト */
+
+/* PayPay（オンライン決済） */
+.paymentOption--1 li:nth-child(n + 2) {
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 16px;
+}
+/* /PayPay（オンライン決済） */
