@@ -222,7 +222,7 @@
                   <ul class="paymentOption--1">
                     <li id="pay_scredit_new">
                       <label>
-                        <input name="payment" type="radio" value="2" class="on-off--2 slidedown2" checked />
+                        <input name="payment" type="radio" value="2" id="payment_credit" class="on-off--2 slidedown2" checked />
                         新規クレジットカード
                         <div class="credit-form input_area2">
                           <table class="st-table01" id="return">
@@ -349,7 +349,7 @@
                       </label>
                     </li>
                     <li>
-                      <label> <input type="radio" />PayPay（オンライン決済）</label>
+                      <label> <input name="payment" type="radio" value="3" id="payment_paypay" />PayPay（オンライン決済）</label>
                     </li>
                   </ul>
                 </div>
@@ -361,7 +361,7 @@
                   <ul class="coupon">
                     <li>
                       <label>
-                        <input name="coupon_code" type="radio" value="" checked />
+                        <input id="coupon_none" name="coupon_code" type="radio" value="" checked />
                         <p>クーポンを使用しない</p>
                       </label>
                     </li>
@@ -414,6 +414,7 @@
       {% include 'footer' %}
     </div>
     <!-- /body-wrapper -->
+    <script src="../assets/js/p-tamesu2-apply-form.js"></script>
     <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>
