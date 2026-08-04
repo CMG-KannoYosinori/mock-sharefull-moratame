@@ -1004,6 +1004,15 @@ footer nav ul li:nth-child(even) {
   margin-right: 0;
 }
 
+/* PayPay（オンライン決済） */
+.paymentOption--1 li:nth-child(n + 2) {
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 16px;
+}
+
+/* /PayPay（オンライン決済） */
+
 .st-table01 .avatar ul li {
   float: left;
   margin: 0 10px 5px 0;
@@ -3806,7 +3815,6 @@ input[type="checkbox"]:checked + .checkbox::before {
   margin-top: 16px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #e2e2e2;
   max-width: 640px;
 }
 
@@ -4606,11 +4614,3 @@ input[type="checkbox"]:checked + .checkbox::before {
 }
 
 /* /関連プロジェクト */
-
-/* PayPay（オンライン決済） */
-.paymentOption--1 li:nth-child(n + 2) {
-  padding-top: 16px;
-  border-top: 1px solid #e0e0e0;
-  margin-top: 16px;
-}
-/* /PayPay（オンライン決済） */
