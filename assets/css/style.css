@@ -4527,6 +4527,11 @@ input[type="checkbox"]:checked + .checkbox::before {
   font-size: 15px;
 }
 
+.p-item-set-select__select option {
+  color: #333;
+  background-color: #fff;
+}
+
 .p-item-set-select__select::-ms-expand {
   display: none;
 }
