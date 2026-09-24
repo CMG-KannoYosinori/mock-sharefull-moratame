@@ -1146,6 +1146,17 @@ footer nav ul li:nth-child(even) {
   height: calc(1.5em * 2);
 }
 
+.p-card__price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f76b1f;
+}
+
+.p-card__reference {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .p-card .count {
   font-size: 14px;
 }
