@@ -1129,6 +1129,11 @@ footer nav ul li:nth-child(even) {
   }
 }
 
+.p-card__maker {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .p-card .count {
   font-size: 14px;
 }
