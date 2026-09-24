@@ -523,16 +523,16 @@ footer nav ul {
 }
 
 .good-btn-wrap .good-btn.good-btn--more {
-  background-image: url("../images/ico_good01.png");
+  background-image: url("../img/ico_good01.png");
 }
 
 .good-btn-wrap .good-btn.good-btn--more:hover {
-  background-image: url("../images/ico_good01.png");
+  background-image: url("../img/ico_good01.png");
 }
 
 .good-btn-wrap .good-btn.good-btn--more:active {
   transition-duration: 0s;
-  background-image: url("../images/ico_good02.png");
+  background-image: url("../img/ico_good02.png");
 }
 
 .good-btn-wrap .counter {
