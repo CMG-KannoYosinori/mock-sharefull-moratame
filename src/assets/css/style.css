@@ -1134,6 +1134,18 @@ footer nav ul li:nth-child(even) {
   font-weight: 600;
 }
 
+.p-card__name {
+  display: -webkit-box;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  height: calc(1.5em * 2);
+}
+
 .p-card .count {
   font-size: 14px;
 }
