@@ -472,7 +472,7 @@
                 var selected_price = $("#area_price_select option[value=" + selected_code + "]").text();
                 var selected_point = $("#point_select option[value=" + selected_code + "]").text();
                 $('input:hidden[name="shipment_area"]').val(selected_code);
-                $("#area_price").html(selected_price);
+                $("#area_price .p-item-info__amount").text(selected_price);
                 $("#t_point").html(selected_point);
               }
             </script>

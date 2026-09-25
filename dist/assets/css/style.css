@@ -2559,6 +2559,13 @@ button {
   overflow-wrap: break-word;
 }
 
+a.p-item-info__link:link,
+a.p-item-info__link:visited,
+a.p-item-info__link:hover,
+a.p-item-info__link:active {
+  color: #0085c3;
+}
+
 .t-caption {
   color: #666;
   font-size: 10px;
@@ -3849,6 +3856,11 @@ input[type="checkbox"]:checked + .checkbox::before {
   color: #f76b1f;
 }
 
+.p-item-info__amount {
+  font-size: 28px;
+  font-weight: 600;
+}
+
 .review-line {
   vertical-align: top;
   margin: 10px 0;
@@ -3920,6 +3932,21 @@ input[type="checkbox"]:checked + .checkbox::before {
   height: 0;
   pointer-events: none;
   content: "";
+}
+
+.p-item-info__reference {
+  background: #e8e5d6;
+  color: #333;
+  font-size: 12px;
+  padding: 5px 8px 4px;
+}
+
+.p-item-info__reference::after {
+  border-color: transparent transparent #e8e5d6;
+}
+
+.p-item-info__reference-price {
+  font-weight: 700;
 }
 
 .c-grid--row {
